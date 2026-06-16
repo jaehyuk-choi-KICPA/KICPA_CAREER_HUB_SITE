@@ -1,6 +1,6 @@
 {
   // Cloudflare 배포 설정 — docs/ 정적 서빙 + 방문자 카운터 Worker(/api/hit)
-  "name": "hbm",
+  "name": "hbmonster",
   "compatibility_date": "2026-06-16",
   "main": "worker.js",
   "assets": {

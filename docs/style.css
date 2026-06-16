@@ -47,6 +47,7 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .tagline br + strong, .tagline strong { color:var(--ink); }
 .tagline { line-height:1.45; }
 .updated { font-size:11.5px; color:var(--muted); padding:8px 18px 11px; }
+.visitors { margin-left:8px; color:var(--accent); font-weight:600; }
 
 .tab { display:none; margin:20px 0; }
 .tab.on { display:block; }

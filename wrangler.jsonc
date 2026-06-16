@@ -1,8 +1,20 @@
 {
-  // Cloudflare 정적 사이트 배포 설정 — 빌드 없이 docs/ 폴더를 그대로 서빙
+  // Cloudflare 배포 설정 — docs/ 정적 서빙 + 방문자 카운터 Worker(/api/hit)
   "name": "hbm",
   "compatibility_date": "2026-06-16",
+  "main": "worker.js",
   "assets": {
-    "directory": "docs"
+    "directory": "docs",
+    "binding": "ASSETS"
   }
+
+  // ── 금일 방문자수 켜기(선택) ──────────────────────────────────────────────
+  // 1) Cloudflare 대시보드 → Storage & Databases → KV → Create namespace
+  //    (이름 예: hbm-visits) → 생성된 Namespace ID 복사
+  // 2) 아래 블록의 주석을 풀고 id 자리에 그 ID를 붙여넣은 뒤 push → 자동 재배포
+  // 3) KV를 안 붙이면 카운터는 조용히 숨겨지고 사이트는 그대로 동작(위험 0)
+  //
+  // ,"kv_namespaces": [
+  //   { "binding": "VISITS", "id": "여기에_KV_네임스페이스_ID" }
+  // ]
 }

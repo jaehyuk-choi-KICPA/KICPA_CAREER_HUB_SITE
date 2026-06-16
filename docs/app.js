@@ -246,4 +246,23 @@ function initSub(prefix, data, chipRowId, chipKey, fixed) {
   else { $("jobs-empty").hidden = false; $("jobs-empty").textContent = "채용 데이터를 불러오지 못했습니다."; }
   initSub("news", news, "f-newscat", "category", null);
   initSub("insights", insights, "f-pub", "source_label", null);
+  countVisit();
 })();
+
+// 금일 방문자수(KST) — 한 브라우저당 하루 1회만 +1(중복 방지), 그 외엔 읽기만.
+// /api/hit가 없거나(로컬) KV 미설정이면 조용히 숨김(사이트 영향 0).
+async function countVisit() {
+  const el = $("visitors");
+  if (!el) return;
+  const today = new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
+  const flag = "hit:" + today;
+  const method = localStorage.getItem(flag) ? "GET" : "POST";
+  try {
+    const r = await fetch("/api/hit", { method });
+    const d = r.ok ? await r.json() : null;
+    if (d && d.count != null) {
+      el.textContent = "· 금일 방문자수 " + d.count.toLocaleString();
+      localStorage.setItem(flag, "1");
+    }
+  } catch { /* 카운터 실패는 무시 */ }
+}

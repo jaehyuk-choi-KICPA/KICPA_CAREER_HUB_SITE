@@ -48,6 +48,7 @@ jobs:
           title: "🚨 카나리아: 소스 양식 변경/공고 누락 감지"
           commit-message: "canary: 드리프트 진단 리포트"
           labels: canary, automated
+          assignees: jaehyuk-choi-KICPA   # 본인 앞 배정 = 알림 보장(검토·머지 담당)
           body: |
             자동 생성된 **진단/제안** PR입니다 (Human-in-the-loop — 자동 머지 금지).
 

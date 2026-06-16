@@ -48,6 +48,11 @@ function initTabs() {
       window.scrollTo({ top: 0 });
     });
   });
+  // 로고(회법몬) 클릭 → 채용공고 탭 최상단으로
+  const logo = document.querySelector(".brand h1");
+  if (logo) logo.addEventListener("click", () => {
+    document.querySelector('.tab-btn[data-tab="jobs"]')?.click();
+  });
 }
 
 // ===================== 채용 =====================
@@ -157,9 +162,20 @@ function initJobs(data) {
   $("sort").addEventListener("change", (e)=>{ JS.sort=e.target.value; renderJobs(); });
   $("f-new").addEventListener("change", (e)=>{ JS.onlyNew=e.target.checked; renderJobs(); });
   $("f-soon").addEventListener("change", (e)=>{ JS.onlySoon=e.target.checked; renderJobs(); });
+  const setRail = (open) => {
+    $("rail").classList.toggle("open", open);
+    const t = $("rail-toggle");
+    t.setAttribute("aria-expanded", open ? "true" : "false");
+    t.textContent = open ? "필터 닫기 ▴" : "필터 ▾";
+  };
   $("rail-toggle").addEventListener("click", () => {
-    const open = $("rail").classList.toggle("open");
+    const open = !$("rail").classList.contains("open");
+    setRail(open);
     if (open) $("rail").scrollIntoView({ behavior:"smooth", block:"start" });
+  });
+  $("rail-close").addEventListener("click", () => {
+    setRail(false);
+    $("rail-toggle").scrollIntoView({ behavior:"smooth", block:"start" });
   });
   $("reset").addEventListener("click", ()=>{
     JS.firm.clear(); JS.field.clear(); JS.status="open"; JS.onlyNew=false; JS.onlySoon=false; JS.kw=""; JS.sort="reco";

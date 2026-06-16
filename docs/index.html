@@ -13,18 +13,20 @@
   <header class="site-header">
     <div class="wrap header-row">
       <div class="brand">
-        <div class="brand-top">
-          <h1>회법몬</h1>
-          <button id="theme-toggle" class="theme-btn" aria-label="다크모드 전환" title="다크모드 전환">🌙</button>
-        </div>
-        <span class="tagline">회계법인 취업 관련 <strong>링크를 다 끌어모아요</strong> 🔗 한공회·빅4(삼일·삼정·안진·한영) 채용공고와 업계 기사를 몇 시간 간격으로 자동 수집. <span class="muted">(제가 보려고 만든 링크 모음입니다)</span></span>
+        <h1>회법몬</h1>
+        <span class="tagline">한공회·빅4(삼일·삼정·안진·한영) 채용공고 · 업계 기사 · 자체 사이트 발간물 자동 수집<br><strong>회계법인 취업 관련 링크를 다 끌어모아요 🔗</strong></span>
       </div>
-      <nav class="tabs">
-        <button class="tab-btn on" data-tab="jobs">채용공고</button>
-        <button class="tab-btn" data-tab="news">기사</button>
-        <button class="tab-btn" data-tab="insights">빅펌 인사이트</button>
-        <button class="tab-btn" data-tab="about">안내</button>
-      </nav>
+      <div class="header-right">
+        <nav class="tabs">
+          <button class="tab-btn on" data-tab="jobs">채용공고</button>
+          <button class="tab-btn" data-tab="news">기사</button>
+          <button class="tab-btn" data-tab="insights">빅펌 인사이트</button>
+        </nav>
+        <button id="theme-toggle" class="theme-btn" aria-label="다크모드 전환" title="다크모드 전환">🌙</button>
+        <nav class="tabs about-nav">
+          <button class="tab-btn" data-tab="about">안내</button>
+        </nav>
+      </div>
     </div>
     <div class="wrap updated"><span id="updated"></span></div>
   </header>
@@ -90,17 +92,17 @@
 
     <!-- ===== 안내 ===== -->
     <section id="tab-about" class="tab">
-      <p class="sec-desc">회법몬은 회계법인 취업에 필요한 링크를 <strong>자동으로 모아주는</strong> 페이지예요. (매번 사이트 돌아다니기 귀찮아서 만들었습니다 😅)</p>
+      <p class="sec-desc">회계법인 취업 정보가 여기저기 흩어져 있어, 한곳에서 모아 보려고 만든 페이지입니다.</p>
       <div class="about-card">
-        <h3>🔄 자동 수집 주기</h3>
+        <h3>🔄 얼마나 자주 갱신되나요</h3>
         <ul>
           <li>채용공고 — 약 <strong>3시간</strong>마다</li>
-          <li>업계 기사 — 약 <strong>9시간</strong>마다 (1주일 지난 기사는 자동 정리)</li>
-          <li>빅펌 인사이트 — <strong>하루 1회</strong></li>
+          <li>업계 기사 — 약 <strong>9시간</strong>마다 (오래된 기사는 일주일 뒤 자동으로 빠집니다)</li>
+          <li>빅펌 발간물 — <strong>하루 한 번</strong></li>
         </ul>
-        <h3>🧠 어떻게 모으나요</h3>
-        <p>한공회·빅4 채용/간행물 페이지를 정해진 시간마다 읽어와, <strong>수습·신입·인턴</strong> 위주로 키워드 규칙에 따라 분류·정리합니다(경력직은 제외). 본문은 가져오지 않고 <strong>제목과 원문 링크만</strong> 모읍니다.</p>
-        <h3>🔗 원문 출처 (직접 가기)</h3>
+        <h3>🧠 무엇을 가져오나요</h3>
+        <p>한공회와 빅4 사이트에서 <strong>수습·신입·인턴</strong> 채용을 위주로 모읍니다(경력직은 제외). 기사와 발간물은 원문을 옮겨오지 않고 <strong>제목과 링크만</strong> 걸어두니, 자세한 내용은 원문에서 확인해 주세요.</p>
+        <h3>🔗 원문 바로가기</h3>
         <ul class="src-links">
           <li>한국공인회계사회 —
             <a href="https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/list.face" target="_blank" rel="noopener">구인(수습CPA)</a> ·
@@ -111,7 +113,8 @@
           <li>딜로이트 안진 — <a href="https://join.deloitte.co.kr/WiseRecruit2/User/RecruitList.aspx" target="_blank" rel="noopener">채용</a></li>
           <li>EY 한영 — <a href="https://eycareers-kr.recruiter.co.kr/career/home" target="_blank" rel="noopener">채용</a></li>
         </ul>
-        <p class="muted">공개된 채용공고·간행물의 제목·링크만 비영리·학습 목적으로 모은 초안입니다. 정확한 내용은 반드시 원문에서 확인하세요.</p>
+        <p>혹시 빠진 곳이나 고쳤으면 하는 점이 있다면, 최하단 링크를 통해 자유롭게 피드백 부탁드립니다 🙏</p>
+        <p class="muted">공개된 채용공고·발간물의 제목과 링크만 모은 비영리·학습용 페이지입니다.</p>
       </div>
     </section>
   </main>

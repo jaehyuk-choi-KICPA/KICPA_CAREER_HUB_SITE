@@ -151,7 +151,8 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
   .rail { position:sticky; top:118px; }
 }
 @media (min-width:1120px) {
-  .jobs-layout { grid-template-columns:236px minmax(0,1fr) 282px; grid-template-areas:"controls controls controls" "rail results today"; }
+  /* 검색바(controls)는 rail+results 폭까지만 → 금일 박스는 우측 상단(2행 차지), 필터는 검색바 바로 아래 좌측 */
+  .jobs-layout { grid-template-columns:236px minmax(0,1fr) 282px; grid-template-areas:"controls controls today" "rail results today"; }
   .today-panel { position:sticky; top:118px; }
 }
 @media (max-width:759px) {

@@ -3,9 +3,11 @@ state.json
 feed.json
 loop.log
 
-# 정찰/검증용 임시 파일
+# 정찰/검증용 임시 파일(_ 접두 — __init__.py는 영향 없음)
 _*.json
 _*.html
+_*.png
+_*.txt
 
 # 파이썬
 __pycache__/

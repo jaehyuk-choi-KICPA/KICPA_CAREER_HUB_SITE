@@ -30,8 +30,8 @@ cd docs && python -m http.server 8000     # http://localhost:8000
 1. GitHub에 push (아래 "git" 참조).
 2. 저장소 **Settings → Pages → Source: Deploy from a branch, Branch: `main` / `/docs`**.
 3. 워크플로가 자동 갱신:
-   - `.github/workflows/scrape.yml` — 채용 **3시간**
-   - `.github/workflows/scrape-news.yml` — 기사 **9시간**
+   - `.github/workflows/scrape.yml` — 채용 **1시간**
+   - `.github/workflows/scrape-news.yml` — 기사 **6시간**
    - `.github/workflows/scrape-insights.yml` — 인사이트 **매일 1회**(Chromium 설치)
    - **검색 주기 변경**: 각 파일의 `cron:` 한 줄만 수정 후 push(코드 변경 불필요).
    - 수동 즉시 실행: 저장소 Actions 탭 → 해당 워크플로 → Run workflow.

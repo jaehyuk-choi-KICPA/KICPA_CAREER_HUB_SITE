@@ -38,7 +38,7 @@ src/
   config.py filters.py state.py util.py http_util.py record.py news.py
   run.py·kakao_pc.py·messenger_bot.js  ← 카톡봇(보류, 유지)
 docs/  index.html app.js style.css  +  data/{jobs,news,insights}.json   (GitHub Pages 루트)
-.github/workflows/  scrape.yml(채용3h) scrape-news.yml(9h) scrape-insights.yml(일1회)
+.github/workflows/  scrape.yml(채용1h) scrape-news.yml(6h) scrape-insights.yml(일1회)
 config.yaml  requirements.txt
 ```
 

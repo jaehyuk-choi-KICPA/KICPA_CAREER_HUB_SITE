@@ -31,7 +31,7 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
   backdrop-filter:saturate(140%) blur(8px); border-bottom:1px solid var(--line); }
 .header-row { display:flex; align-items:center; justify-content:space-between; gap:14px; padding:13px 18px 0; flex-wrap:wrap; }
 .brand-top { display:flex; align-items:center; gap:8px; }
-.brand h1 { margin:0; font-size:19px; font-weight:800; letter-spacing:-0.4px; }
+.brand h1 { margin:0; font-family:"Black Han Sans","Pretendard",sans-serif; font-size:28px; font-weight:400; letter-spacing:.5px; color:var(--accent); line-height:1.1; }
 .tagline { font-size:12px; color:var(--muted); }
 .tagline strong { color:var(--ink); }
 .header-right { display:flex; align-items:center; gap:10px; flex-wrap:wrap; justify-content:flex-end; }

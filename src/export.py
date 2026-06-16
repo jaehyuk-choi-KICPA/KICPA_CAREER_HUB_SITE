@@ -34,6 +34,27 @@ def _write_json(name: str, payload: dict) -> Path:
     return path
 
 
+def _write_guarded(name: str, payload: dict, items_key: str) -> bool:
+    """수집 0건이면 직전 양호본을 유지(빈 화면 방지) — 사이트가 절대 텅 비지 않게.
+
+    전 소스가 일시 장애로 0건이 나와도, 직전에 정상 데이터가 있으면 덮어쓰지 않는다.
+    (전체실패 금지: 한 번의 나쁜 수집이 살아있는 화면을 지우지 못한다.)
+    """
+    new_n = len(payload.get(items_key) or [])
+    path = _DATA_DIR / name
+    if new_n == 0 and path.exists():
+        try:
+            prev = json.loads(path.read_text(encoding="utf-8"))
+            prev_n = len(prev.get(items_key) or [])
+        except Exception:
+            prev_n = 0
+        if prev_n > 0:
+            print(f"  [유지] {name}: 0건 수집 -> 직전본({prev_n}건) 유지(빈 화면 방지, 미커밋)")
+            return False
+    _write_json(name, payload)
+    return True
+
+
 def build_jobs(cfg: dict, state: State) -> dict:
     """채용 데이터 수집·분류 → jobs payload dict."""
     adapters = build_adapters(cfg, state)
@@ -168,11 +189,11 @@ def main() -> None:
         state = State(cfg["runtime"]["state_path"])
         jobs = build_jobs(cfg, state)
         state.save()  # 마감일 캐시 갱신
-        _write_json("jobs.json", jobs)
+        _write_guarded("jobs.json", jobs, "postings")
     if part in ("all", "news"):
-        _write_json("news.json", build_news(cfg))
+        _write_guarded("news.json", build_news(cfg), "items")
     if part in ("all", "insights"):
-        _write_json("insights.json", build_insights(cfg))
+        _write_guarded("insights.json", build_insights(cfg), "items")
     print(f"  → docs/data/ ({part})")
 
 

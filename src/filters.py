@@ -1,0 +1,38 @@
+"""규칙 기반 필터 — '경력' 제외, 나머지(인턴/신입/경력무관/수습) 포함.
+
+2단계:
+  1) 소스 어댑터가 카테고리 단계에서 경력을 빼는 게 1순위(가장 정확).
+  2) 여기 텍스트 필터가 보조망(카테고리가 모호한 소스 대비).
+모든 키워드는 config로만 관리(하드코딩 금지).
+"""
+
+from __future__ import annotations
+
+from src.record import Posting
+
+
+def _haystack(p: Posting) -> str:
+    return " ".join([p.title, p.company, p.body_excerpt, p.category]).lower()
+
+
+def passes(p: Posting, cfg: dict) -> bool:
+    f = cfg["filters"]
+    text = _haystack(p)
+
+    excludes = [k.lower() for k in f.get("exclude_keywords", [])]
+    exceptions = [k.lower() for k in f.get("exclude_exceptions", [])]
+    includes = [k.lower() for k in f.get("include_keywords", [])]
+
+    # 예외(경력무관 등)가 있으면 제외 규칙을 건너뛴다
+    if not any(exc in text for exc in exceptions):
+        if any(bad in text for bad in excludes):
+            return False
+
+    # include_keywords가 비어 있으면 "제외에 안 걸린 건 전부 통과"
+    if includes:
+        return any(inc in text for inc in includes)
+    return True
+
+
+def filter_postings(postings: list[Posting], cfg: dict) -> list[Posting]:
+    return [p for p in postings if passes(p, cfg)]

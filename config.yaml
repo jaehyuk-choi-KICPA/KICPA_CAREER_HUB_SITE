@@ -1,0 +1,34 @@
+# 채용알림봇 설정 — 코드 하드코딩 금지, 운영 중 조정은 여기서.
+
+runtime:
+  max_pages: 2          # 각 게시판 목록 페이지 수집 깊이
+  poll_minutes: 180     # 실시간 폴링 주기(분). 채용공고는 하루 단위 갱신 → 3시간이면 충분
+  digest_hour: 9        # 일일 다이제스트 게시 시각(24h, 로컬)
+  state_path: state.json
+
+  # 게시 방식: kakao_pc = 노트북 단독(카톡 PC 창 자동 게시) / feed = 폰(메신저봇R)이 폴링
+  delivery: kakao_pc
+  kakao_room: "[수습/기합] KICPA(공인회계사) 채용공고 알리미"  # 카톡 PC에서 연 오픈채팅방 창 제목(정확히)
+
+  # feed 방식(폰)일 때만 사용 — LAN 서빙 + 산출물 경로
+  feed_path: feed.json
+  serve_host: 0.0.0.0
+  serve_port: 8777
+
+# 필터: "경력 제외, 나머지(인턴/신입/경력무관/수습) 포함"
+filters:
+  exclude_keywords: ["경력", "시니어", "senior", "매니저", "manager", "파트너", "partner"]
+  # 아래 단어가 하나라도 있으면 제외 규칙을 건너뜀(신입/경력 병기 공고를 살림 — 수습 타깃)
+  exclude_exceptions: ["경력무관", "신입", "인턴", "수습", "trainee", "entry"]
+  include_keywords: []   # 비우면 "제외에 안 걸린 공고는 전부 통과"(KICPA 수습 등)
+
+# 게시 메시지 템플릿(파이썬 str.format — {label}{title}{company}{deadline}{url}{posted})
+formats:
+  divider: "━━━━━━━━━━━"
+  item: |-
+    [{label}] {title}
+    🏢 {company}   📅 마감일: {deadline}
+    ▶ 공고 전문: {url}
+  digest_header: "📋 {date} 오늘 올라온 채용 공고 ({count}건)"
+  digest_line: "[{label}] {title}  📅 {deadline}  ▶ {url}"
+  digest_max_chars: 1800   # 카톡 메시지 길이 한계 대비 분할 기준

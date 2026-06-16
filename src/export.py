@@ -1,0 +1,180 @@
+"""대시보드 데이터 생성기 — 스크랩→분류→docs/data/*.json.
+
+진입점: `python -m src.export`  (채용 jobs.json. 뉴스/인사이트는 추가 예정)
+- 채용: 6소스 병렬 수집 → 경력 제외 필터 → 법인/직무/상태/D-day 부여 → docs/data/jobs.json
+- 견고성: 부분 실패해도 항상 파일 생성(전체실패 금지).
+"""
+
+from __future__ import annotations
+
+import datetime as _dt
+import json
+from pathlib import Path
+
+from src.adapters.base import safe_fetch
+from src.adapters.insights import build_insight_adapters
+from src.adapters.news_rss import build_news_adapters
+from src.classify import classify_field, classify_firm
+from src.config import load_config
+from src.filters import filter_postings
+from src.sources import build_adapters, fetch_all
+from src.state import State
+from src.util import dday, is_open, today_iso
+
+_DATA_DIR = Path("docs/data")
+
+# 정렬·요약용 법인 노출 순서(삼일 우선 — 타깃)
+_FIRM_ORDER = ["삼일", "삼정", "안진", "한영", "로컬"]
+
+
+def _write_json(name: str, payload: dict) -> Path:
+    _DATA_DIR.mkdir(parents=True, exist_ok=True)
+    path = _DATA_DIR / name
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    return path
+
+
+def build_jobs(cfg: dict, state: State) -> dict:
+    """채용 데이터 수집·분류 → jobs payload dict."""
+    adapters = build_adapters(cfg, state)
+    results = fetch_all(adapters)
+
+    postings = []
+    report = []
+    for res in results:
+        report.append((res.label, res.ok, res.count, res.error))
+        postings.extend(res.postings)
+
+    kept = filter_postings(postings, cfg)  # 경력 제외(수습/주니어 타깃)
+
+    new_cut = _recent_cutoff(cfg["dashboard"]["new_days"])
+    items = []
+    for p in kept:
+        open_ = is_open(p.deadline)
+        items.append(
+            {
+                "source": p.source,
+                "source_label": p.source_label,
+                "firm": classify_firm(p, cfg),
+                "field": classify_field(p, cfg),
+                "status": "open" if open_ else "closed",
+                "is_new": bool(p.posted_date and p.posted_date >= new_cut),
+                "title": p.title,
+                "company": p.company,
+                "deadline": p.deadline,
+                "posted_date": p.posted_date,
+                "location": p.location,
+                "emp_type": p.emp_type or p.category,  # 고용형태 없으면 구분(신입/인턴) 표시
+                "url": p.url,
+                "dday": dday(p.deadline),
+            }
+        )
+
+    # 정렬: 진행중 먼저 → 마감 임박순(dday 작은 순, None=상시는 뒤) → 마감은 최근 게시순
+    def _key(it):
+        open_first = 0 if it["status"] == "open" else 1
+        dd = it["dday"]
+        dd_key = dd if dd is not None else 10**6
+        return (open_first, dd_key, it["posted_date"] or "")
+
+    items.sort(key=_key)
+
+    soon_days = cfg["dashboard"]["soon_days"]
+    counts = {
+        "total": len(items),
+        "open": sum(1 for it in items if it["status"] == "open"),
+        "closed": sum(1 for it in items if it["status"] == "closed"),
+        "new": sum(1 for it in items if it["is_new"]),
+        "soon": sum(
+            1
+            for it in items
+            if it["status"] == "open" and it["dday"] is not None and 0 <= it["dday"] <= soon_days
+        ),
+        "by_firm": {f: sum(1 for it in items if it["firm"] == f) for f in _FIRM_ORDER},
+    }
+
+    _print_report(report, counts)
+    return {
+        "generated_at": _dt.datetime.now().isoformat(timespec="seconds"),
+        "soon_days": soon_days,
+        "counts": counts,
+        "postings": items,
+    }
+
+
+def _print_report(report, counts) -> None:
+    print(f"\n=== 채용 수집 ({_dt.datetime.now():%Y-%m-%d %H:%M:%S}) ===")
+    for label, ok, count, err in report:
+        print(f"  - {label}: {count}건" if ok else f"  - {label}: 실패 {err}")
+    print(
+        f"  필터통과 {counts['total']} (진행중 {counts['open']} / 마감 {counts['closed']} "
+        f"/ 임박 {counts['soon']})"
+    )
+
+
+def _recent_cutoff(days: int) -> str:
+    return (_dt.date.today() - _dt.timedelta(days=days)).isoformat()
+
+
+def build_news(cfg: dict) -> dict:
+    """회계·세무·딜 이슈 수집(Google News RSS) → news payload. 중복제거(URL)+최근 N일."""
+    results = fetch_all(build_news_adapters(cfg))
+    cutoff = _recent_cutoff(cfg["dashboard"]["news_recent_days"])
+    exclude = cfg["dashboard"].get("news_exclude", [])
+    seen, items = set(), []
+    for res in results:
+        for n in res.postings:
+            if n.url in seen:
+                continue
+            if n.published and n.published < cutoff:
+                continue
+            if any(x in n.title for x in exclude):  # 노이즈(시상·행사 등) 제외
+                continue
+            seen.add(n.url)
+            items.append(n.to_dict())
+    items.sort(key=lambda i: i.get("published") or "", reverse=True)
+    print(f"  이슈: {len(items)}건 (소스 {sum(1 for r in results if r.ok)}/{len(results)})")
+    return {"generated_at": _dt.datetime.now().isoformat(timespec="seconds"), "items": items}
+
+
+def build_insights(cfg: dict) -> dict:
+    """Big4 간행물 링크 수집 → insights payload. 헤드리스 렌더라 순차 실행(발행처 순서 유지)."""
+    seen, items, ok = set(), [], 0
+    adapters = build_insight_adapters(cfg)
+    for ad in adapters:
+        res = safe_fetch(ad)  # 순차: Playwright sync는 스레드 비안전
+        if res.ok:
+            ok += 1
+        for n in res.postings:
+            if n.url in seen:
+                continue
+            seen.add(n.url)
+            items.append(n.to_dict())
+    print(f"  인사이트: {len(items)}건 (발행처 {ok}/{len(adapters)})")
+    return {"generated_at": _dt.datetime.now().isoformat(timespec="seconds"), "items": items}
+
+
+def main() -> None:
+    import argparse
+
+    ap = argparse.ArgumentParser(description="대시보드 데이터 생성")
+    ap.add_argument("--part", choices=["all", "jobs", "news", "insights"], default="all",
+                    help="갱신할 스트림(워크플로별 분리 실행용)")
+    part = ap.parse_args().part
+
+    cfg = load_config()
+
+    if part in ("all", "jobs"):
+        state = State(cfg["runtime"]["state_path"])
+        jobs = build_jobs(cfg, state)
+        state.save()  # 마감일 캐시 갱신
+        _write_json("jobs.json", jobs)
+    if part in ("all", "news"):
+        _write_json("news.json", build_news(cfg))
+    if part in ("all", "insights"):
+        _write_json("insights.json", build_insights(cfg))
+    print(f"  → docs/data/ ({part})")
+
+
+if __name__ == "__main__":
+    main()

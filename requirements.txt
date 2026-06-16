@@ -1,0 +1,9 @@
+# 웹 대시보드 + 스크래퍼 (GitHub Actions/리눅스에서도 설치)
+requests>=2.31
+beautifulsoup4>=4.12
+PyYAML>=6.0
+# JS 렌더 인사이트 페이지 수집(헤드리스 크로미움). Actions: playwright install chromium 필요
+playwright>=1.40
+# 카톡 PC 게시(보류 기능) — Windows 전용이라 리눅스에선 자동 스킵
+pywinauto>=0.6.9 ; sys_platform == "win32"
+pyperclip>=1.8 ; sys_platform == "win32"

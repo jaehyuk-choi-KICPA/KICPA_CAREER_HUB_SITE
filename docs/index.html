@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>회계법인 취업 허브 — 수습회계사·입사준비자를 위한 채용·이슈·인사이트</title>
+  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;📊&lt;/text&gt;&lt;/svg&gt;" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <div class="brand">
+        <h1>회계법인 취업 허브</h1>
+        <span class="tagline">수습공인회계사(기합·미지정 포함)와 회계법인 입사 준비자를 위한 채용 검색 · 업계 이슈 · 빅펌 인사이트</span>
+      </div>
+      <div class="header-right">
+        <nav class="tabs">
+          <button class="tab-btn on" data-tab="jobs">채용공고</button>
+          <button class="tab-btn" data-tab="news">기사</button>
+          <button class="tab-btn" data-tab="insights">빅펌 인사이트</button>
+        </nav>
+        <button id="theme-toggle" class="theme-btn" aria-label="다크모드 전환" title="다크모드 전환">🌙</button>
+      </div>
+    </div>
+    <div class="wrap updated"><span id="updated"></span></div>
+  </header>
+
+  <main class="wrap">
+    <!-- ===== 채용 ===== -->
+    <section id="tab-jobs" class="tab on">
+      <div class="jobs-layout">
+        <aside class="rail" id="rail">
+          <input id="kw" type="search" placeholder="제목·회사 검색" autocomplete="off" />
+          <div class="rail-group"><h4>법인</h4><div id="f-firm" class="opts"></div></div>
+          <div class="rail-group"><h4>직무</h4><div id="f-field" class="opts"></div></div>
+          <div class="rail-group"><h4>진행 상태</h4><div id="f-status" class="opts"></div></div>
+          <div class="rail-group toggles">
+            <label><input type="checkbox" id="f-new" /> 신규만 (7일)</label>
+            <label><input type="checkbox" id="f-soon" /> 마감 임박만 (7일)</label>
+          </div>
+          <button id="reset" class="reset">필터 초기화</button>
+        </aside>
+
+        <div class="results">
+          <div class="results-head">
+            <button class="rail-toggle" id="rail-toggle">필터 ▾</button>
+            <span id="jobs-summary" class="summary"></span>
+            <select id="sort" aria-label="정렬">
+              <option value="reco">추천순(신규·임박)</option>
+              <option value="deadline">마감 임박순</option>
+              <option value="posted">최신 게시순</option>
+            </select>
+          </div>
+          <div id="jobs-list" class="cards"></div>
+          <div id="jobs-empty" class="empty" hidden>조건에 맞는 공고가 없습니다.</div>
+        </div>
+
+        <aside class="today-panel" id="today-panel">
+          <div class="today-head">
+            <span class="today-title">🆕 금일 올라온 공고</span>
+            <span class="today-count" id="today-count">0</span>
+          </div>
+          <div id="today-list" class="today-list"></div>
+          <div id="today-empty" class="today-empty" hidden>오늘 새로 올라온 공고가 없습니다.</div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== 기사 ===== -->
+    <section id="tab-news" class="tab">
+      <p class="sec-desc">회계·감사 제도/규제, 딜·M&A 동향, 회계업계 이슈 — 면접·업계 지식 중심.</p>
+      <div class="chiprow" id="f-newscat"></div>
+      <div id="news-list" class="cards"></div>
+      <div id="news-empty" class="empty" hidden>표시할 이슈가 아직 없습니다.</div>
+    </section>
+
+    <!-- ===== 인사이트 ===== -->
+    <section id="tab-insights" class="tab">
+      <p class="sec-desc">Big4(삼일·삼정·안진·한영)가 발행하는 간행물/리포트 (제목·링크만).</p>
+      <div class="chiprow" id="f-pub"></div>
+      <div id="insights-list" class="cards"></div>
+      <div id="insights-empty" class="empty" hidden>표시할 간행물이 아직 없습니다.</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="thanks">이용해 주셔서 감사합니다 🙏 더 나은 서비스를 위해 의견을 들려주세요.</p>
+      <p>
+        <a class="feedback" id="feedback-link" href="https://docs.google.com/forms/d/e/1FAIpQLScK8wygurZTwr4WLCZQHOfcbXiRRKgd_tXsklMNDbEQRujecw/viewform" target="_blank" rel="noopener">📝 만족도 조사 · 피드백 남기기</a>
+      </p>
+      <p class="muted">공개 채용공고·공식 간행물의 제목·링크만 자동 수집한 초안 · 자동 갱신 · 비영리 학습용</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

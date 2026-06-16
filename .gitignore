@@ -1,0 +1,14 @@
+# 런타임 산출물(공고 데이터 — 매 실행 생성)
+state.json
+feed.json
+loop.log
+
+# 정찰/검증용 임시 파일
+_*.json
+_*.html
+
+# 파이썬
+__pycache__/
+*.pyc
+.venv/
+venv/

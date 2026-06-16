@@ -1,0 +1,153 @@
+/* 회계법인 커리어 허브 — 포멀/미니멀 · 라이트+다크 */
+:root {
+  --bg:#f6f8fb; --card:#fff; --ink:#16202c; --muted:#667085; --line:#e6e9ef;
+  --accent:#1b4f9c; --accent-soft:#eef3fb; --new:#0f9d77; --new-soft:#e8f6f1;
+  --soon:#d64545; --warn:#c97a18; --closed:#9aa3af;
+  --seg-bg:#eef1f6; --chip-bg:#eef1f5; --header-bg:rgba(255,255,255,.92);
+  --panel-grad-a:#e8f6f1; --panel-grad-b:#ffffff; --panel-line:#cfeadf; --panel-title:#0c6b50; --panel-item-line:#dcefe6;
+  --skel:#e9edf3; --skel-hi:#f3f6fa;
+  --shadow:0 1px 2px rgba(16,32,56,.04), 0 2px 8px rgba(16,32,56,.05);
+}
+[data-theme="dark"] {
+  --bg:#0e131b; --card:#161d28; --ink:#e7ecf3; --muted:#93a0b2; --line:#27313f;
+  --accent:#5b93e0; --accent-soft:#16263b; --new:#2dba8c; --new-soft:#102420;
+  --soon:#ef6f6f; --warn:#d9a24a; --closed:#6c7787;
+  --seg-bg:#1b2330; --chip-bg:#202a38; --header-bg:rgba(16,21,30,.9);
+  --panel-grad-a:#10241f; --panel-grad-b:#161d28; --panel-line:#1f4338; --panel-title:#56c9a3; --panel-item-line:#1d3a31;
+  --skel:#1e2632; --skel-hi:#27313f;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 2px 10px rgba(0,0,0,.35);
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--bg); color:var(--ink); font-size:14.5px; line-height:1.55;
+  font-family:"Pretendard",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased; transition:background .2s, color .2s; }
+.wrap { width:100%; max-width:1180px; margin:0 auto; padding:0 18px; }
+a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:underline; }
+.muted { color:var(--muted); }
+
+/* 헤더 + 네비 */
+.site-header { position:sticky; top:0; z-index:30; background:var(--header-bg);
+  backdrop-filter:saturate(140%) blur(8px); border-bottom:1px solid var(--line); }
+.header-row { display:flex; align-items:center; justify-content:space-between; gap:14px; padding:13px 18px 0; flex-wrap:wrap; }
+.brand h1 { margin:0; font-size:19px; font-weight:800; letter-spacing:-0.4px; }
+.tagline { font-size:12px; color:var(--muted); }
+.header-right { display:flex; align-items:center; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
+.tabs { display:flex; gap:6px; background:var(--seg-bg); padding:5px; border-radius:12px; }
+.tab-btn { border:0; background:transparent; color:var(--muted); padding:9px 18px; border-radius:9px;
+  font-size:14.5px; font-weight:700; cursor:pointer; transition:all .12s; white-space:nowrap; }
+.tab-btn:hover { color:var(--ink); }
+.tab-btn.on { background:var(--accent); color:#fff; box-shadow:0 2px 8px rgba(27,79,156,.28); }
+.theme-btn { border:1px solid var(--line); background:var(--card); border-radius:10px; padding:8px 11px; font-size:15px; cursor:pointer; line-height:1; }
+.theme-btn:hover { border-color:var(--accent); }
+.updated { font-size:11.5px; color:var(--muted); padding:8px 18px 11px; }
+
+.tab { display:none; margin:20px 0; }
+.tab.on { display:block; }
+
+/* 채용 3열 */
+.jobs-layout { display:grid; gap:16px; grid-template-columns:1fr; grid-template-areas:"today" "rail" "results"; }
+.rail { grid-area:rail; } .results { grid-area:results; } .today-panel { grid-area:today; }
+.rail { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:15px; box-shadow:var(--shadow); align-self:start; }
+.rail input#kw { width:100%; padding:10px 12px; border:1px solid var(--line); border-radius:9px; font-size:14px; margin-bottom:12px; background:var(--card); color:var(--ink); }
+.rail input#kw:focus { outline:none; border-color:var(--accent); }
+.rail-group { padding:11px 0; border-top:1px solid var(--line); }
+.rail-group:first-of-type { border-top:0; padding-top:0; }
+.rail-group h4 { margin:0 0 9px; font-size:11.5px; color:var(--muted); font-weight:800; letter-spacing:.4px; text-transform:uppercase; }
+.opts { display:flex; flex-direction:column; gap:7px; }
+.opt { display:flex; align-items:center; gap:8px; font-size:13.5px; cursor:pointer; }
+.opt input { margin:0; accent-color:var(--accent); }
+.opt .cnt { margin-left:auto; font-size:11.5px; color:var(--muted); }
+.toggles { display:flex; flex-direction:column; gap:8px; }
+.toggles label { font-size:13px; display:flex; align-items:center; gap:8px; cursor:pointer; }
+.reset { margin-top:13px; width:100%; padding:9px; border:1px solid var(--line); background:var(--card); border-radius:9px; font-size:12.5px; color:var(--muted); cursor:pointer; }
+.reset:hover { border-color:#c4ccd8; color:var(--ink); }
+.rail-toggle { display:none; }
+
+.results-head { display:flex; align-items:center; gap:10px; margin-bottom:12px; flex-wrap:wrap; }
+.summary { font-size:13px; color:var(--muted); font-weight:600; }
+.results-head select { margin-left:auto; padding:9px 10px; border:1px solid var(--line); border-radius:9px; background:var(--card); color:var(--ink); font-size:13px; }
+
+/* 금일 패널 */
+.today-panel { background:linear-gradient(180deg,var(--panel-grad-a),var(--panel-grad-b)); border:1px solid var(--panel-line);
+  border-radius:14px; padding:14px; box-shadow:var(--shadow); align-self:start; }
+.today-head { display:flex; align-items:center; gap:8px; margin-bottom:10px; }
+.today-title { font-size:14px; font-weight:800; color:var(--panel-title); }
+.today-count { margin-left:auto; min-width:24px; text-align:center; background:var(--new); color:#fff;
+  font-size:12px; font-weight:800; padding:2px 9px; border-radius:999px; animation:pop 1.6s ease-in-out infinite; }
+@keyframes pop { 0%,100%{ transform:scale(1); } 50%{ transform:scale(1.12); } }
+.today-item { display:block; padding:10px 0; border-top:1px solid var(--panel-item-line); }
+.today-item:first-child { border-top:0; }
+.today-item .row1 { display:flex; align-items:center; gap:6px; margin-bottom:3px; }
+.today-item .dot { width:8px; height:8px; border-radius:50%; flex:0 0 auto; }
+.today-item .firm { font-size:11px; font-weight:700; color:var(--muted); }
+.today-item .dday { margin-left:auto; font-size:11px; font-weight:700; padding:0 6px; border-radius:5px; background:var(--chip-bg); }
+.today-item .dday.soon { background:rgba(214,69,69,.16); color:var(--soon); }
+.today-item .t { font-size:13px; font-weight:600; line-height:1.35; }
+.today-item .t a { color:var(--ink); }
+.today-empty { font-size:12.5px; color:var(--muted); padding:8px 0; }
+
+/* 카드 공통 */
+.cards { display:grid; gap:11px; grid-template-columns:1fr 1fr; }
+.cards-1 { grid-template-columns:1fr; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:13px; padding:14px 16px;
+  display:flex; flex-direction:column; gap:7px; box-shadow:var(--shadow); transition:border-color .12s, box-shadow .12s, transform .12s; }
+.card:hover { border-color:#c9d3e2; box-shadow:0 4px 16px rgba(16,40,80,.09); transform:translateY(-1px); }
+.card.closed { opacity:.5; }
+.card.is-new { border-left:3px solid var(--new); }
+.card-top { display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+.badge { font-size:11px; font-weight:700; padding:2px 9px; border-radius:6px; color:#fff; white-space:nowrap; }
+.badge.new { background:var(--new); }
+.tag { font-size:11px; color:var(--muted); border:1px solid var(--line); border-radius:6px; padding:1px 7px; white-space:nowrap; }
+.tag.cat { font-weight:700; border:0; color:#fff; }
+.card h3 { margin:0; font-size:15px; font-weight:600; line-height:1.4; }
+.card .company { font-size:13px; color:var(--muted); }
+.card-meta { display:flex; align-items:center; gap:8px; flex-wrap:wrap; font-size:12.5px; color:var(--muted); }
+.card-meta .sep { color:var(--line); }
+.dday { font-weight:700; padding:1px 7px; border-radius:6px; background:var(--chip-bg); }
+.dday.soon { background:rgba(214,69,69,.16); color:var(--soon); }
+.dday.warn { background:rgba(201,122,24,.16); color:var(--warn); }
+.dday.closed { background:var(--chip-bg); color:var(--closed); }
+
+/* 기사/인사이트 */
+.sec-desc { color:var(--muted); font-size:13px; margin:0 0 14px; }
+.chiprow { display:flex; flex-wrap:wrap; gap:7px; margin-bottom:14px; }
+.chip { border:1px solid var(--line); background:var(--card); border-radius:999px; padding:7px 15px; font-size:13px; font-weight:600; color:var(--muted); cursor:pointer; transition:all .12s; }
+.chip:hover { border-color:#c4ccd8; color:var(--ink); }
+.chip.on { background:var(--accent); border-color:var(--accent); color:#fff; }
+
+/* 스켈레톤 */
+.skeleton { background:var(--card); border:1px solid var(--line); border-radius:13px; padding:14px 16px; box-shadow:var(--shadow); }
+.skel-line { height:12px; border-radius:6px; margin:8px 0;
+  background:linear-gradient(90deg,var(--skel) 25%,var(--skel-hi) 37%,var(--skel) 63%); background-size:400% 100%; animation:shimmer 1.4s infinite; }
+.skel-line.w40 { width:40%; } .skel-line.w70 { width:70%; } .skel-line.w90 { width:90%; } .skel-line.w55 { width:55%; }
+@keyframes shimmer { 0%{ background-position:100% 0; } 100%{ background-position:0 0; } }
+
+.empty { color:var(--muted); font-size:13px; padding:20px 4px; }
+.site-footer { border-top:1px solid var(--line); margin-top:40px; padding:22px 0 48px; font-size:12.5px; color:var(--muted); }
+.site-footer p { margin:6px 0; }
+.thanks { color:var(--ink); font-weight:600; }
+.feedback { display:inline-block; font-weight:700; padding:9px 16px; border:1px solid var(--accent); border-radius:10px; background:var(--accent); color:#fff; }
+.feedback:hover { text-decoration:none; opacity:.92; }
+
+@media (min-width:760px) {
+  .jobs-layout { grid-template-columns:236px 1fr; grid-template-areas:"today today" "rail results"; }
+  .rail { position:sticky; top:118px; }
+}
+@media (min-width:1120px) {
+  .jobs-layout { grid-template-columns:236px minmax(0,1fr) 282px; grid-template-areas:"rail results today"; }
+  .today-panel { position:sticky; top:118px; }
+}
+@media (max-width:759px) {
+  .cards { grid-template-columns:1fr; }
+  .rail-toggle { display:inline-block; border:1px solid var(--line); background:var(--card); color:var(--ink); border-radius:9px; padding:9px 13px; font-size:13px; cursor:pointer; }
+  .rail { display:none; }
+  .rail.open { display:block; }
+}
+@media (max-width:480px) {
+  .header-row { padding:11px 14px 0; }
+  .tabs { gap:3px; padding:4px; }
+  .tab-btn { padding:8px 12px; font-size:13px; }
+  .theme-btn { padding:7px 9px; font-size:14px; }
+  .brand h1 { font-size:18px; }
+}

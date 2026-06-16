@@ -1,4 +1,4 @@
-name: scrape-jobs   # 채용공고 — 3시간마다
+name: scrape-jobs   # 채용공고 — 매시간
 
 on:
   schedule:
@@ -17,6 +17,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Seoul   # 금일·마감일을 한국 시간 기준으로
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

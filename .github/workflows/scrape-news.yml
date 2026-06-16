@@ -1,4 +1,4 @@
-name: scrape-news   # 기사 — 9시간마다(1주일 지난 기사 자동 제외)
+name: scrape-news   # 기사 — 6시간마다(1주일 지난 기사 자동 제외)
 
 on:
   schedule:
@@ -14,6 +14,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Seoul   # 기사 최근(7일) 컷오프를 한국 시간 기준으로
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

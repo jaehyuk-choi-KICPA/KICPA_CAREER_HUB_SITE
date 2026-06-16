@@ -2,7 +2,7 @@ name: scrape-insights   # 빅펌 인사이트 — 하루 1회(JS 렌더라 Chrom
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # 매일 00:00 UTC
+    - cron: "0 0 * * *"   # 매일 00:00 UTC = 09:00 KST (cron은 항상 UTC 기준)
   workflow_dispatch: {}
 
 permissions:
@@ -14,6 +14,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Seoul   # generated_at·발행일 표기를 한국 시간 기준으로
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

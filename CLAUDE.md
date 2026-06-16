@@ -17,7 +17,22 @@
 - **어댑터 패턴**: 소스마다 다른 HTML/JSON/RSS를 `src/adapters/*`가 **공통 레코드**로 수렴. 채용=`record.Posting`,
   뉴스/인사이트=`news.NewsItem`. **새 소스 = 어댑터 1개** + `sources.py`/`export.py` 한 줄.
 - **규칙 기반(LLM·MCP 미사용)**: 분류·필터·큐레이션 전부 키워드 규칙(`config.py`의 `dashboard`). 하드코딩 금지.
+  - **유일한 예외**: 아래 "자기검증 카나리아"의 **하루 1회 시각 점검**에서만 Claude API 사용. **코어 데이터 파이프라인
+    (수집·분류·필터·생성)은 LLM-free 유지** — 카나리아는 프로덕션 데이터를 절대 쓰지 않는 별도(out-of-band) 감시일 뿐.
 - **견고성=전체실패 금지**: 모든 어댑터 호출 `base.safe_fetch`로 감쌈(한 소스 깨져도 나머지 출력).
+- **자기검증 카나리아 (`src/canary.py`, 하루 1회)** — 스크래퍼의 숙명적 약점(소스가 HTML을 바꾸면 조용히 0건·누락)을
+  매일 감시. **감지·진단·알림은 자동, 코드 수정은 사람 게이트**(LLM은 *제안*만, 회계사가 확정 — 자율 에이전트 금지·
+  Human-in-the-loop 원칙). 계층:
+  1. **구조 체크(무료·LLM 없음)**: 소스별 수집 건수를 `canary_state.json`에 저장 → 어제 대비 **0건/급감**(임계 `drop_ratio`)
+     또는 `safe_fetch` 실패 감지.
+  2. **시각 체크(하루 1회 LLM, 키 있을 때만)**: `render.render_screenshot`로 소스 목록 페이지 스냅샷 → Claude vision에
+     "보이는 공고 수 / 정상 목록 페이지인가" 질의 → 스크래퍼 카운트와 대조(누락·양식 변경 감지).
+  3. **출력 = 진단 + 제안 Draft PR**: 드리프트 발견 시 `canary_report.md`(어디가 어떻게 깨졌는지 + LLM 수정 *제안*)를
+     담은 **Draft PR**을 자동 생성. **당신이 Claude Code로 검토·보완·머지**(절대 자동 머지·자동 프로덕션 커밋 안 함).
+  - **보안**: API 키는 코드/exe **내장 금지**, GitHub Actions **secret(`ANTHROPIC_API_KEY`)**에서만. **키 없으면 LLM
+    비활성=구조 체크만**(100% 오프라인). 전송 대상은 **공개 채용 페이지 스냅샷뿐**(사적 데이터 없음).
+  - ⚠️ **첫 도입 시 supervised 검증 필수**: LLM 시각 프롬프트/응답을 `workflow_dispatch` 수동 실행으로 한 번
+    눈으로 확인한 뒤 cron 자동화에 의존할 것(실제 양식 샘플로 프롬프트 검증 — 조서 프로젝트 동일 교훈).
 - **병렬 정책**: 채용·뉴스는 `sources.fetch_all`(ThreadPool, 도메인 간 자유), KICPA 상세는 도메인 내 ≤4.
   **인사이트는 순차**(Playwright sync 스레드 비안전).
 - **저작권 안전**: 뉴스·인사이트는 제목·링크만(본문 전재 금지).
@@ -35,10 +50,11 @@
 src/
   adapters/  kicpa·samjong·anjin·hanyoung·samil(채용) + news_rss(기사) + insights(빅펌) + base
   sources.py(조립+병렬) export.py(생성 진입점 --part) classify.py(법인/직무) render.py(헤드리스)
+  canary.py(자기검증 카나리아 — 양식변경/누락 감지, 드리프트 시 Draft PR)
   config.py filters.py state.py util.py http_util.py record.py news.py
   run.py·kakao_pc.py·messenger_bot.js  ← 카톡봇(보류, 유지)
 docs/  index.html app.js style.css  +  data/{jobs,news,insights}.json   (GitHub Pages 루트)
-.github/workflows/  scrape.yml(채용1h) scrape-news.yml(6h) scrape-insights.yml(일1회)
+.github/workflows/  scrape.yml(채용1h) scrape-news.yml(6h) scrape-insights.yml(일1회) canary.yml(자기검증 일1회)
 config.yaml  requirements.txt
 ```
 

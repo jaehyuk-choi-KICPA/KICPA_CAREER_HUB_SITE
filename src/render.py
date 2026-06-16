@@ -31,3 +31,34 @@ def render_html(url: str, *, wait_ms: int = 2500, timeout_ms: int = 30000) -> st
             return html
     except Exception:  # noqa: BLE001
         return None
+
+
+def render_screenshot(
+    url: str, path: str, *, wait_ms: int = 2500, timeout_ms: int = 30000,
+    full_page: bool = True,
+) -> str | None:
+    """페이지를 PNG로 캡처해 path에 저장(카나리아 시각 점검용). 실패 시 None."""
+    try:
+        from playwright.sync_api import sync_playwright
+    except Exception:  # noqa: BLE001 — 미설치 환경
+        return None
+    try:
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            page = browser.new_page(
+                viewport={"width": 1366, "height": 1400},
+                user_agent=(
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                    "(KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+                ),
+            )
+            try:
+                page.goto(url, wait_until="networkidle", timeout=timeout_ms)
+            except Exception:  # noqa: BLE001 — 타임아웃이어도 현재 DOM 캡처
+                pass
+            page.wait_for_timeout(wait_ms)
+            page.screenshot(path=path, full_page=full_page)
+            browser.close()
+            return path
+    except Exception:  # noqa: BLE001
+        return None

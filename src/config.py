@@ -75,6 +75,25 @@ _DEFAULTS: dict = {
         # 제목에 이 단어가 있으면 노이즈로 제외(시상·행사·동정 등)
         "news_exclude": ["시상", "수상", "기획전", "캠페인", "부고", "위촉", "임명식", "골프", "기부", "동정"],
     },
+    # 자기검증 카나리아 (하루 1회) — 소스 양식 변경/공고 누락 감지. 코드 수정은 사람 게이트.
+    "canary": {
+        "drop_ratio": 0.6,       # 어제 대비 이 비율 이상 급감하면 드리프트(예: 0.6 = 60%↓)
+        "min_baseline": 3,       # 어제 건수가 이 미만이면 급감 판정 보류(노이즈 방지)
+        "state_path": "canary_state.json",
+        "report_path": "canary_report.md",
+        "use_llm": True,         # 키 없으면 자동 비활성(구조 체크만)
+        "llm_model": "claude-opus-4-8",
+        "missing_ratio": 1.5,    # LLM이 본 공고수가 스크래퍼의 이 배↑면 누락 의심
+        # 소스 키 → 시각 점검할 '목록 페이지' URL (about 탭의 원문 출처와 동일)
+        "source_urls": {
+            "kicpa_susup": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/list.face",
+            "kicpa_cpa": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/list.face",
+            "samjong": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/init.hr",
+            "anjin": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitList.aspx",
+            "hanyoung": "https://eycareers-kr.recruiter.co.kr/career/home",
+            "samil": "https://www.pwc.com/kr/ko/career/experienced.html",
+        },
+    },
 }
 
 

@@ -33,8 +33,21 @@ cd docs && python -m http.server 8000     # http://localhost:8000
    - `.github/workflows/scrape.yml` — 채용 **1시간**
    - `.github/workflows/scrape-news.yml` — 기사 **6시간**
    - `.github/workflows/scrape-insights.yml` — 인사이트 **매일 1회**(Chromium 설치)
+   - `.github/workflows/canary.yml` — 자기검증 **매일 1회**(아래 참조)
    - **검색 주기 변경**: 각 파일의 `cron:` 한 줄만 수정 후 push(코드 변경 불필요).
    - 수동 즉시 실행: 저장소 Actions 탭 → 해당 워크플로 → Run workflow.
+
+## 자기검증 카나리아 (소스 양식 변경/공고 누락 감지)
+스크래퍼는 소스가 HTML을 바꾸면 조용히 0건/누락이 난다. `src/canary.py`가 **하루 1회** 이를 감시한다.
+- **구조 체크(무료)**: 어제 대비 0건/급감/수집실패 (`canary_state.json` 기준).
+- **시각 체크(LLM, 키 있을 때만)**: 목록 페이지 스냅샷을 Claude vision로 보고 화면 공고수·양식 정상여부를
+  스크래퍼 카운트와 대조.
+- **드리프트 시**: `canary_report.md`(진단 + LLM 수정 *제안*)를 담은 **Draft PR 자동 생성**.
+  **자동 머지·자동 프로덕션 커밋은 하지 않는다** — Claude Code로 검토·보완 후 사람이 머지(Human-in-the-loop).
+- **LLM 켜기**: 저장소 **Settings → Secrets and variables → Actions → New repository secret**에
+  `ANTHROPIC_API_KEY` 추가. 없으면 **구조 체크만**(100% 오프라인). 전송 대상은 공개 채용 페이지 스냅샷뿐.
+- ⚠️ **첫 도입**: Actions 탭에서 `canary`를 **수동 실행(Run workflow)**해 LLM 응답을 한 번 눈으로 검증한 뒤
+  cron 자동화에 의존할 것.
 
 ## 피드백
 사이트 푸터의 "만족도 조사 · 피드백" 버튼 → Google Form.

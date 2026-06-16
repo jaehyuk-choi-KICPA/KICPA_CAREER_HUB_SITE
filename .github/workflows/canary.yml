@@ -1,0 +1,55 @@
+name: canary   # 자기검증 — 하루 1회 소스 양식/누락 감지, 드리프트 시 Draft PR(사람 검토)
+
+on:
+  schedule:
+    - cron: "30 0 * * *"   # 매일 00:30 UTC = 09:30 KST (cron은 항상 UTC)
+  workflow_dispatch: {}    # 첫 도입 supervised 검증 + 수동 점검용
+
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: data-commit        # 다른 워크플로와 push 직렬화
+  cancel-in-progress: false
+
+jobs:
+  canary:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Seoul
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # 없으면 LLM 비활성=구조체크만
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: pip }
+      - run: pip install -r requirements.txt
+      - name: Install Chromium
+        run: python -m playwright install --with-deps chromium
+      - name: Run canary
+        run: python -m src.canary
+      - name: Persist baseline (canary_state.json)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add canary_state.json
+          if git diff --staged --quiet; then echo "변경 없음"; else
+            git commit -m "auto: 카나리아 기준 갱신 [skip ci]"
+            git pull --rebase --autostash origin "${{ github.ref_name }}"
+            git push
+          fi
+      - name: Open Draft PR on drift
+        if: ${{ hashFiles('canary_drift.flag') != '' }}
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: canary/drift
+          base: ${{ github.ref_name }}
+          draft: true
+          add-paths: canary_report.md
+          title: "🚨 카나리아: 소스 양식 변경/공고 누락 감지"
+          commit-message: "canary: 드리프트 진단 리포트"
+          labels: canary, automated
+          body: |
+            자동 생성된 **진단/제안** PR입니다 (Human-in-the-loop — 자동 머지 금지).
+
+            `canary_report.md`에서 어느 소스가 어떻게 깨졌는지 + LLM 수정 *제안*을 확인하고,
+            Claude Code로 해당 어댑터를 직접 검토·보완한 뒤 머지하세요.

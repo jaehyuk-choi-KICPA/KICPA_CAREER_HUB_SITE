@@ -224,7 +224,7 @@ function initSub(prefix, data, chipRowId, chipKey, fixed) {
     loadJSON("data/jobs.json"), loadJSON("data/news.json"), loadJSON("data/insights.json"),
   ]);
   const stamp = (jobs && jobs.generated_at) || "";
-  $("updated").textContent = stamp ? "마지막 갱신: " + stamp.replace("T", " ") : "데이터 없음";
+  $("updated").textContent = stamp ? "최근 업데이트: " + stamp.replace("T", " ") : "데이터 없음";
 
   if (jobs) initJobs(jobs);
   else { $("jobs-empty").hidden = false; $("jobs-empty").textContent = "채용 데이터를 불러오지 못했습니다."; }

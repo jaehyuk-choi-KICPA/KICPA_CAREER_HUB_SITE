@@ -45,9 +45,13 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .tab { display:none; margin:20px 0; }
 .tab.on { display:block; }
 
-/* 채용 3열 */
-.jobs-layout { display:grid; gap:16px; grid-template-columns:1fr; grid-template-areas:"today" "rail" "results"; }
-.rail { grid-area:rail; } .results { grid-area:results; } .today-panel { grid-area:today; }
+/* 채용 레이아웃 (controls 항상 노출 / rail·today·results) */
+.jobs-layout { display:grid; gap:14px 16px; grid-template-columns:1fr; grid-template-areas:"controls" "rail" "today" "results"; }
+.controls { grid-area:controls; } .rail { grid-area:rail; } .results { grid-area:results; } .today-panel { grid-area:today; }
+.controls { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+.controls input#kw { flex:1; min-width:0; padding:11px 13px; border:1px solid var(--line); border-radius:10px; font-size:14.5px; background:var(--card); color:var(--ink); }
+.controls input#kw:focus { outline:none; border-color:var(--accent); }
+.controls select { padding:10px; border:1px solid var(--line); border-radius:10px; background:var(--card); color:var(--ink); font-size:13px; }
 .rail { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:15px; box-shadow:var(--shadow); align-self:start; }
 .rail input#kw { width:100%; padding:10px 12px; border:1px solid var(--line); border-radius:9px; font-size:14px; margin-bottom:12px; background:var(--card); color:var(--ink); }
 .rail input#kw:focus { outline:none; border-color:var(--accent); }
@@ -131,15 +135,16 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .feedback:hover { text-decoration:none; opacity:.92; }
 
 @media (min-width:760px) {
-  .jobs-layout { grid-template-columns:236px 1fr; grid-template-areas:"today today" "rail results"; }
+  .jobs-layout { grid-template-columns:236px 1fr; grid-template-areas:"controls controls" "today today" "rail results"; }
   .rail { position:sticky; top:118px; }
 }
 @media (min-width:1120px) {
-  .jobs-layout { grid-template-columns:236px minmax(0,1fr) 282px; grid-template-areas:"rail results today"; }
+  .jobs-layout { grid-template-columns:236px minmax(0,1fr) 282px; grid-template-areas:"controls controls controls" "rail results today"; }
   .today-panel { position:sticky; top:118px; }
 }
 @media (max-width:759px) {
   .cards { grid-template-columns:1fr; }
+  .controls input#kw { flex-basis:100%; }   /* 검색바 한 줄 차지 → 필터·정렬은 아래 줄 */
   .rail-toggle { display:inline-block; border:1px solid var(--line); background:var(--card); color:var(--ink); border-radius:9px; padding:9px 13px; font-size:13px; cursor:pointer; }
   .rail { display:none; }
   .rail.open { display:block; }

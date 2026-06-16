@@ -6,15 +6,9 @@
   "assets": {
     "directory": "docs",
     "binding": "ASSETS"
-  }
-
-  // ── 금일 방문자수 켜기(선택) ──────────────────────────────────────────────
-  // 1) Cloudflare 대시보드 → Storage & Databases → KV → Create namespace
-  //    (이름 예: hbm-visits) → 생성된 Namespace ID 복사
-  // 2) 아래 블록의 주석을 풀고 id 자리에 그 ID를 붙여넣은 뒤 push → 자동 재배포
-  // 3) KV를 안 붙이면 카운터는 조용히 숨겨지고 사이트는 그대로 동작(위험 0)
-  //
-  // ,"kv_namespaces": [
-  //   { "binding": "VISITS", "id": "여기에_KV_네임스페이스_ID" }
-  // ]
+  },
+  // 금일 방문자수 카운터 저장소(KV). binding 이름 VISITS는 worker.js와 일치해야 함.
+  "kv_namespaces": [
+    { "binding": "VISITS", "id": "54e202310f484d48833545fb61dc91be" }
+  ]
 }

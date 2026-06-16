@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>회계법인 취업 허브 — 수습회계사·입사준비자를 위한 채용·이슈·인사이트</title>
+  <title>회법몬 — 회계법인 취업 링크 모아보기</title>
   <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;📊&lt;/text&gt;&lt;/svg&gt;" />
   <link rel="preconnect" href="https://cdn.jsdelivr.net" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
@@ -13,17 +13,18 @@
   <header class="site-header">
     <div class="wrap header-row">
       <div class="brand">
-        <h1>회계법인 취업 허브</h1>
-        <span class="tagline">수습공인회계사(기합·미지정 포함)와 회계법인 입사 준비자를 위한 채용 검색 · 업계 이슈 · 빅펌 인사이트</span>
+        <div class="brand-top">
+          <h1>회법몬</h1>
+          <button id="theme-toggle" class="theme-btn" aria-label="다크모드 전환" title="다크모드 전환">🌙</button>
+        </div>
+        <span class="tagline">회계법인 취업 관련 <strong>링크를 다 끌어모아요</strong> 🔗 한공회·빅4(삼일·삼정·안진·한영) 채용공고와 업계 기사를 몇 시간 간격으로 자동 수집. <span class="muted">(제가 보려고 만든 링크 모음입니다)</span></span>
       </div>
-      <div class="header-right">
-        <nav class="tabs">
-          <button class="tab-btn on" data-tab="jobs">채용공고</button>
-          <button class="tab-btn" data-tab="news">기사</button>
-          <button class="tab-btn" data-tab="insights">빅펌 인사이트</button>
-        </nav>
-        <button id="theme-toggle" class="theme-btn" aria-label="다크모드 전환" title="다크모드 전환">🌙</button>
-      </div>
+      <nav class="tabs">
+        <button class="tab-btn on" data-tab="jobs">채용공고</button>
+        <button class="tab-btn" data-tab="news">기사</button>
+        <button class="tab-btn" data-tab="insights">빅펌 인사이트</button>
+        <button class="tab-btn" data-tab="about">안내</button>
+      </nav>
     </div>
     <div class="wrap updated"><span id="updated"></span></div>
   </header>
@@ -85,6 +86,33 @@
       <div class="chiprow" id="f-pub"></div>
       <div id="insights-list" class="cards"></div>
       <div id="insights-empty" class="empty" hidden>표시할 간행물이 아직 없습니다.</div>
+    </section>
+
+    <!-- ===== 안내 ===== -->
+    <section id="tab-about" class="tab">
+      <p class="sec-desc">회법몬은 회계법인 취업에 필요한 링크를 <strong>자동으로 모아주는</strong> 페이지예요. (매번 사이트 돌아다니기 귀찮아서 만들었습니다 😅)</p>
+      <div class="about-card">
+        <h3>🔄 자동 수집 주기</h3>
+        <ul>
+          <li>채용공고 — 약 <strong>3시간</strong>마다</li>
+          <li>업계 기사 — 약 <strong>9시간</strong>마다 (1주일 지난 기사는 자동 정리)</li>
+          <li>빅펌 인사이트 — <strong>하루 1회</strong></li>
+        </ul>
+        <h3>🧠 어떻게 모으나요</h3>
+        <p>한공회·빅4 채용/간행물 페이지를 정해진 시간마다 읽어와, <strong>수습·신입·인턴</strong> 위주로 키워드 규칙에 따라 분류·정리합니다(경력직은 제외). 본문은 가져오지 않고 <strong>제목과 원문 링크만</strong> 모읍니다.</p>
+        <h3>🔗 원문 출처 (직접 가기)</h3>
+        <ul class="src-links">
+          <li>한국공인회계사회 —
+            <a href="https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/list.face" target="_blank" rel="noopener">구인(수습CPA)</a> ·
+            <a href="https://www.kicpa.or.kr/home/jobOffrSrchGnrl/list.face" target="_blank" rel="noopener">구인(CPA)</a>
+          </li>
+          <li>삼일 PwC — <a href="https://www.pwc.com/kr/ko/career/experienced.html" target="_blank" rel="noopener">채용</a></li>
+          <li>삼정 KPMG — <a href="https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/init.hr" target="_blank" rel="noopener">채용</a></li>
+          <li>딜로이트 안진 — <a href="https://join.deloitte.co.kr/WiseRecruit2/User/RecruitList.aspx" target="_blank" rel="noopener">채용</a></li>
+          <li>EY 한영 — <a href="https://eycareers-kr.recruiter.co.kr/career/home" target="_blank" rel="noopener">채용</a></li>
+        </ul>
+        <p class="muted">공개된 채용공고·간행물의 제목·링크만 비영리·학습 목적으로 모은 초안입니다. 정확한 내용은 반드시 원문에서 확인하세요.</p>
+      </div>
     </section>
   </main>
 

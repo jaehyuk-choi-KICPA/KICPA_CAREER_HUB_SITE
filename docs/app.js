@@ -141,7 +141,7 @@ function countBy(key) { const m={}; for (const it of JOBS) m[it[key]]=(m[it[key]
 function buildOpts(rowId, values, type, getOn, onToggle, counts) {
   const chips = values.map((v) => {
     const label = Array.isArray(v) ? v[0] : v, val = Array.isArray(v) ? v[1] : v;
-    const cnt = counts ? el("span", { class:"cnt", text: String(counts[label] || 0) }) : null;
+    const cnt = counts ? el("span", { class:"cnt", text: "(" + (counts[label] || 0) + ")" }) : null;
     const chip = el("button", { type:"button", class:"filter-chip" }, [el("span", { text:label }), cnt]);
     const sync = () => chip.classList.toggle("on", getOn(val));
     sync();

@@ -31,8 +31,8 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
   backdrop-filter:saturate(140%) blur(8px); border-bottom:1px solid var(--line); }
 .header-row { display:flex; align-items:center; justify-content:space-between; gap:14px; padding:13px 18px 0; flex-wrap:wrap; }
 .brand-top { display:flex; align-items:center; gap:8px; }
-.brand h1 { margin:0; font-family:"Black Han Sans","Pretendard",sans-serif; font-size:28px; font-weight:400; letter-spacing:.5px; color:var(--accent); line-height:1.1; cursor:pointer; user-select:none; }
-.brand h1 .ver { font-size:.46em; vertical-align:.55em; margin-left:5px; color:var(--muted); letter-spacing:0; }
+.brand h1 { margin:0; font-family:"Black Han Sans","Pretendard",sans-serif; font-size:36px; font-weight:400; letter-spacing:.5px; color:var(--accent); line-height:1.1; cursor:pointer; user-select:none; }
+.brand h1 .ver { font-size:.42em; vertical-align:.55em; margin-left:6px; color:var(--muted); letter-spacing:0; }
 .tagline { font-size:12px; color:var(--muted); }
 .tagline strong { color:var(--ink); }
 .header-right { display:flex; align-items:center; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
@@ -144,7 +144,6 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .card .company { font-size:13px; color:var(--muted); }
 .card-meta { display:flex; align-items:center; gap:8px; flex-wrap:wrap; font-size:12.5px; color:var(--muted); }
 .card-meta .sep { color:var(--line); }
-.card-meta .meta-new { margin-left:auto; }   /* NEW 배지를 카드 우측하단으로 */
 .dday { font-weight:700; padding:1px 7px; border-radius:6px; background:var(--chip-bg); }
 .dday.soon { background:rgba(214,69,69,.16); color:var(--soon); }
 .dday.warn { background:rgba(201,122,24,.16); color:var(--warn); }
@@ -188,31 +187,23 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
   .today-col { position:sticky; top:118px; }
 }
 @media (max-width:759px) {
-  /* 검색·필터·정렬 바를 금일 패널/금일 기사·인사이트 아래로 이동 */
-  .jobs-layout { grid-template-areas:"today" "controls" "rail" "results"; }
-  .cards { grid-template-columns:1fr 1fr; gap:9px; }   /* 한 행 2칸 */
+  .cards { grid-template-columns:1fr; gap:9px; }   /* 기사·인사이트는 한 줄 */
+  #jobs-list { grid-template-columns:1fr 1fr; }     /* 채용공고만 2열 유지 */
   .card { padding:12px 13px; gap:6px; }
   .card h3 { font-size:13.5px; }
   .card .company { font-size:12px; }
   .card-meta { font-size:11.5px; gap:5px; }
-  .meta-deadline { display:none; }                     /* 마감날짜는 우측 D-day로 갈음 → 모바일 숨김 */
-  /* 필터·정렬을 오른쪽으로 정렬(오른손 조작) */
-  .controls { justify-content:flex-end; }
-  .controls input#kw { flex-basis:100%; }   /* 검색바 한 줄 차지 → 필터·정렬은 아래 줄 우측 */
+  .meta-deadline { display:none; }                  /* 마감날짜는 우측 D-day로 갈음 → 모바일 숨김 */
+  .controls input#kw { flex-basis:100%; }   /* 검색바 한 줄 차지 → 필터·정렬은 아래 줄 */
   .rail-toggle { display:inline-block; border:1px solid var(--line); background:var(--card); color:var(--ink); border-radius:9px; padding:9px 13px; font-size:13px; cursor:pointer; }
   .rail { display:none; }
   .rail.open { display:block; }
   .rail-close { display:block; width:100%; margin-top:10px; padding:11px; border:1px solid var(--accent); background:var(--card); color:var(--accent); border-radius:9px; font-size:13.5px; font-weight:700; cursor:pointer; }
-  /* 헤더: 안내(좌) · 모드전환(중간) · 채용/기사/인사이트 탭(우) */
-  .header-right { width:100%; justify-content:space-between; gap:8px; }
-  .about-nav { order:1; margin-left:0; }
-  .theme-btn { order:2; }
-  .tabs:not(.about-nav) { order:3; }
 }
 @media (max-width:480px) {
   .header-row { padding:11px 14px 0; }
   .tabs { gap:3px; padding:4px; }
   .tab-btn { padding:8px 12px; font-size:13px; }
   .theme-btn { padding:7px 9px; font-size:14px; }
-  .brand h1 { font-size:18px; }
+  .brand h1 { font-size:25px; }
 }

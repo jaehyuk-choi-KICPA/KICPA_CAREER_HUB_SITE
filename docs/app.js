@@ -101,9 +101,18 @@ function jobCard(it) {
   parts.push(el("span", { class:"meta-deadline", text:"📅 " + (it.deadline || "상시") }));  // 모바일에선 숨김(우측 D-day로 갈음)
   if (it.posted_date) parts.push(el("span", { text:"게시 " + it.posted_date }));
   parts.forEach((p, i) => { if (i) meta.appendChild(el("span", { class:"sep", text:"·" })); meta.appendChild(p); });
-  if (it.is_new) meta.appendChild(el("span", { class:"badge new meta-new", text:"NEW" }));   // NEW = 우측하단
+  // NEW 배지는 제거(정보량 절감) — 신규는 카드 좌측 초록 테두리(.is-new)로 표시
   return el("article", { class:"card" + (it.status==="closed"?" closed":"") + (it.is_new?" is-new":"") },
     [top, title, company, meta]);
+}
+
+// 진행상태 분류: 진행중(open=마감일 있는 진행) / 마감(closed) / 상설(open이지만 마감일 없는 상시채용)
+function matchStatus(it, status) {
+  const standing = it.dday === null || it.dday === undefined;
+  if (status === "open") return it.status === "open" && !standing;
+  if (status === "closed") return it.status === "closed";
+  if (status === "standing") return it.status === "open" && standing;
+  return true;
 }
 
 function renderJobs() {
@@ -111,7 +120,7 @@ function renderJobs() {
   let list = JOBS.filter((it) => {
     if (JS.firm.size && !JS.firm.has(it.firm)) return false;
     if (JS.field.size && !JS.field.has(it.field)) return false;
-    if (JS.status !== "all" && it.status !== JS.status) return false;
+    if (!matchStatus(it, JS.status)) return false;
     if (JS.onlyNew && !it.is_new) return false;
     if (kw && !((it.title + " " + (it.company||"")).toLowerCase().includes(kw))) return false;
     return true;
@@ -146,6 +155,18 @@ function renderToday(genStamp) {
 
 function countBy(key) { const m={}; for (const it of JOBS) m[it[key]]=(m[it[key]]||0)+1; return m; }
 
+// 법인별 카운트 = 현재 선택된 진행상태(진행중/마감/상설)에 해당하는 건만 집계
+function firmCountsByStatus() {
+  const m = {}; FIRM_ORDER.forEach((f)=>m[f]=0);
+  for (const it of JOBS) if (matchStatus(it, JS.status) && m[it.firm] !== undefined) m[it.firm]++;
+  return m;
+}
+// 법인 칩을 현재 상태 기준 카운트로 (재)렌더 — 상태 변경 시 호출
+function renderFirmChips() {
+  buildOpts("f-firm", FIRM_ORDER, "checkbox", (v)=>JS.firm.has(v),
+    (v)=>{ JS.firm.has(v)?JS.firm.delete(v):JS.firm.add(v); renderJobs(); }, firmCountsByStatus());
+}
+
 // 필터를 사이트 톤과 통일된 칩 버튼으로 렌더(복수선택=checkbox형, 단일선택=radio형 모두 지원).
 // 선택 상태는 .on 클래스로 직접 관리(getOn으로 동기화) — 체크박스 제거로 이질감 해소.
 function buildOpts(rowId, values, type, getOn, onToggle, counts) {
@@ -168,14 +189,12 @@ function initJobs(data) {
   JOBS = data.postings || [];
   const c = data.counts || {};
   $("jobs-summary").textContent = `진행중 ${c.open||0} · 신규 ${c.new||0} · 마감 ${c.closed||0}`;
-  const firmC = c.by_firm || countBy("firm"), fieldC = countBy("field");
 
-  buildOpts("f-firm", FIRM_ORDER, "checkbox", (v)=>JS.firm.has(v),
-    (v)=>{ JS.firm.has(v)?JS.firm.delete(v):JS.firm.add(v); renderJobs(); }, firmC);
+  renderFirmChips();   // 법인 칩 = 선택 상태 기준 동적 카운트
   buildOpts("f-field", FIELD_ORDER, "checkbox", (v)=>JS.field.has(v),
-    (v)=>{ JS.field.has(v)?JS.field.delete(v):JS.field.add(v); renderJobs(); }, fieldC);
-  buildOpts("f-status", [["진행중","open"],["마감","closed"],["전체","all"]], "radio",
-    (v)=>JS.status===v, (v)=>{ JS.status=v; renderJobs(); });
+    (v)=>{ JS.field.has(v)?JS.field.delete(v):JS.field.add(v); renderJobs(); });   // 직무는 카운트 미표시
+  buildOpts("f-status", [["진행중","open"],["마감","closed"],["상설","standing"]], "radio",
+    (v)=>JS.status===v, (v)=>{ JS.status=v; renderFirmChips(); renderJobs(); });   // 상태 바뀌면 법인 카운트 갱신
 
   if (!_controlsBound) { bindControls(data); _controlsBound = true; }
   renderJobs();
@@ -231,7 +250,26 @@ function newsCard(it) {
   return el("article", { class:"card" }, kids);
 }
 
-function initSub(prefix, data, chipRowId, chipKey, fixed) {
+// 인사이트 카드: 공통 '인사이트' 태그 제거, 발행 법인을 법인색 태그로 표시
+const INSIGHT_FIRM = { "삼일PwC":"삼일", "삼정KPMG":"삼정", "딜로이트안진":"안진", "EY한영":"한영" };
+function insightCard(it) {
+  const firm = INSIGHT_FIRM[it.source_label];
+  const color = (firm && FIRM_COLOR[firm]) || "#667085";
+  const left = el("div", { class:"top-left" }, [
+    el("span", { class:"tag cat", style:`background:${color}`, text: it.source_label || it.source || "인사이트" }),
+  ]);
+  const right = el("div", { class:"top-right" }, [
+    it._today ? el("span", { class:"today-dot", title:"오늘 올라옴" }) : null,
+  ]);
+  const top = el("div", { class:"card-top" }, [left, right]);
+  const title = el("h3", {}, [el("a", { href:it.url, target:"_blank", rel:"noopener", text:it.title })]);
+  const kids = [top, title];
+  if (it.published) kids.push(el("div", { class:"card-meta" }, [el("span", { text:it.published })]));
+  return el("article", { class:"card" }, kids);
+}
+
+function initSub(prefix, data, chipRowId, chipKey, fixed, cardFn) {
+  const renderCard = cardFn || newsCard;
   const items = (data && data.items) || [];
   if (!items.length) { $(prefix+"-empty").hidden = false; return; }
   let selected = null;  // 단일선택: null=전체, 같은 칩 다시 누르면 해제
@@ -239,7 +277,7 @@ function initSub(prefix, data, chipRowId, chipKey, fixed) {
   const chips = [];
   const render = () => {
     const list = selected ? items.filter((i)=>i[chipKey]===selected) : items;
-    $(prefix+"-list").replaceChildren(...list.map(newsCard));
+    $(prefix+"-list").replaceChildren(...list.map(renderCard));
     $(prefix+"-empty").hidden = list.length > 0;
     chips.forEach((c)=> c.classList.toggle("on", c.dataset.v === selected));
   };
@@ -295,5 +333,5 @@ function initSub(prefix, data, chipRowId, chipKey, fixed) {
   if (jobs) initJobs(jobs);
   else { $("jobs-empty").hidden = false; $("jobs-empty").textContent = "채용 데이터를 불러오지 못했습니다."; }
   initSub("news", news, "f-newscat", "category", null);
-  initSub("insights", insights, "f-pub", "source_label", null);
+  initSub("insights", insights, "f-pub", "source_label", null, insightCard);
 })();

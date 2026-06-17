@@ -1,0 +1,39 @@
+name: run-all   # 외부 핑거(cron-job.org 등)로 트리거 — 채용+기사+인사이트 일괄 수집/커밋. GitHub cron 드롭 우회
+
+on:
+  repository_dispatch:
+    types: [run-all]      # 외부에서 POST /repos/.../dispatches {"event_type":"run-all"}
+  workflow_dispatch: {}    # 수동 실행
+
+permissions:
+  contents: write
+concurrency:
+  group: data-commit       # 다른 스크랩 워크플로와 push 직렬화(충돌 방지)
+  cancel-in-progress: false
+
+jobs:
+  run-all:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Seoul
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: pip }
+      - run: pip install -r requirements.txt
+      - name: Install Chromium (인사이트 렌더용)
+        run: python -m playwright install --with-deps chromium
+      - name: Scrape all (채용+기사+인사이트)
+        run: python -m src.export
+      - name: Commit data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/jobs.json docs/data/news.json docs/data/insights.json \
+                  docs/data/status.json insights_seen.json state.json docs/sitemap.xml
+          if git diff --staged --quiet; then echo "변경 없음"; else
+            git commit -m "auto: run-all 통합 수집"
+            git pull --rebase --autostash origin "${{ github.ref_name }}"
+            git push
+          fi

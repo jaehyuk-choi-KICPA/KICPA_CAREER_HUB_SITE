@@ -84,7 +84,11 @@ src/
   config.py filters.py state.py util.py http_util.py record.py news.py
   run.py·kakao_pc.py·messenger_bot.js  ← 카톡봇(보류, 유지)
 docs/  index.html app.js style.css  CNAME  +  data/{jobs,news,insights}.json + data/status.json(점검시각)   (GitHub Pages 루트, hbmons.com)
-.github/workflows/  scrape.yml(채용30분) scrape-news.yml(2h) scrape-insights.yml(일2회) canary.yml(양식감시 일1회) freshness.yml(신선도 매시간) sitecheck.yml(종단점검 3h)
+.github/workflows/  scrape.yml(채용30분) scrape-news.yml(2h) scrape-insights.yml(일2회) canary.yml(양식감시 일1회) freshness.yml(신선도 매시간) sitecheck.yml(종단점검 3h) run-all.yml(외부핑거 통합실행)
+```
+> **GitHub cron은 무료·public에서 자주 드롭됨**(실측: 예약 실행이 거의 안 뜸). 안정적 주기 실행은 외부 핑거
+> (cron-job.org 등)가 `repository_dispatch{event_type:run-all}`로 `run-all.yml`을 호출 → 채용+기사+인사이트 일괄.
+> cron 워크플로들은 보조로 유지.
 
 ### 자동화 신뢰성 = 3층 모니터링 (변경 시 함께 고려)
 1. **실행됐나** → `freshness.py`(데이터 나이로 스케줄 드롭 감지). 2. **누락 없이 수집됐나** → `canary.py`(소스 양식/건수).

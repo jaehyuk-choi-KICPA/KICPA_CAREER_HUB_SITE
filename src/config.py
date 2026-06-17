@@ -81,13 +81,15 @@ _DEFAULTS: dict = {
         ],
         "soon_days": 7,          # 마감 임박 기준(일)
         "new_days": 7,           # '신규' 채용 기준(게시 N일 이내)
-        "news_recent_days": 14,  # 기사 기본 보존 기간(N일 지난 기사 제외) — 수량 확보 위해 10→14
+        "news_recent_days": 21,  # 기사 기본 보존 기간(N일 지난 기사 제외) — 수량 확보 위해 확대
         # 카테고리별 보존기간 override — 저빈도·고관련(채용/시험·딜)은 더 오래 노출(감사·세무는 기본값)
         "news_recent_days_by_category": {
-            "채용·시험": 60,
-            "딜·M&A": 30,
+            "채용·시험": 75,
+            "딜·M&A": 35,
         },
-        "news_per_category": 40, # 카테고리별 뉴스 최대 건수(수량 확보 — RSS는 더 많이 주므로 상향)
+        "news_per_category": 50, # 카테고리별 뉴스 최대 건수(수량 확보 — RSS는 더 많이 주므로 상향)
+        # 출처(매체) 제외 — 정치색 강한 매체 등(source_label 부분일치)
+        "news_exclude_sources": ["뉴스타파"],
         # 기사 4분류(좁은→넓은 순 = dedup 선점 순서). 채용·시험에 업계동향 흡수, 감사에 제도·규제 흡수.
         "news_queries": {
             "채용·시험": ("수습 공인회계사 OR 공인회계사 시험 OR 한국공인회계사회 OR CPA 합격 OR 회계사 채용 OR "

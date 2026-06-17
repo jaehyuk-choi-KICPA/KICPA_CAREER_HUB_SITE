@@ -151,12 +151,15 @@ def build_news(cfg: dict) -> dict:
     by_cat = d.get("news_recent_days_by_category", {})
     cutoffs = {c: _recent_cutoff(by_cat.get(c, default_days)) for c in order}
     exclude = d.get("news_exclude", [])
+    excl_src = d.get("news_exclude_sources", [])
     require = [k.lower() for k in d.get("news_require_any", [])]
     seen, seen_title, items = set(), set(), []
     for res in results:
         for n in res.postings:
             tkey = " ".join(n.title.split()).lower()  # 같은 헤드라인이 매체만 달라 중복되는 것 제거
             if n.url in seen or tkey in seen_title:
+                continue
+            if any(s in (n.source_label or "") for s in excl_src):  # 정치색 매체 등 출처 제외
                 continue
             if n.published and n.published < cutoffs.get(n.category, _recent_cutoff(default_days)):
                 continue

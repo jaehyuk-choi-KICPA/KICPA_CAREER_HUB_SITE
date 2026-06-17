@@ -68,8 +68,9 @@
   `news_recent_days_by_category`로 보존기간 길게(채용 45·딜 21). 넓은 OR 쿼리 노이즈는 `news_require_any`
   도메인어 게이트로, 매체만 다른 동일 헤드라인은 **제목 정규화 dedup**으로 제거. config 순서=dedup 선점 순서.
 - **링크 점검**: 스트림별 샘플 HTTP. 단 뉴스는 `news.google.com/rss/...` redirect라 200=Google 도달일 뿐(실기사 아님).
-- **기사 수량 레버**(58→94 실측): 안전=`news_per_category`(20→40, RSS는 더 줌)·보존기간 확대. **위험=쿼리 확장**
-  (앞순위 넓히면 dedup 선점으로 뒷순위 잠식, 딜에 일반어 넣으면 require_any 게이트가 컷→0). 채용·딜은 공급 한계라 품질>수량.
+- **기사 수량 레버**(58→116 실측, 종합 7.9→8.9): 안전=`news_per_category`(20→50)→풀린 뒤엔 **`news_recent_days`(→21)**가
+  주 레버(세무·감사 건수가 limit 미만이면 recency가 한계). **위험=쿼리 확장**(앞순위 넓히면 dedup 선점으로 뒷순위 잠식,
+  딜 일반어는 require_any 게이트가 컷→0). 채용·딜은 공급 한계라 품질>수량. 정치색 매체는 `news_exclude_sources`(예: 뉴스타파).
 - **시각검증 노하우**: SPA 글 경로는 render_html 후 anchor href의 **경로 prefix 빈도**를 세어 진짜 글 패턴을 찾는다.
 
 ## 구조

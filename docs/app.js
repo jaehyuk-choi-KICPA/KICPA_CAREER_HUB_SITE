@@ -60,7 +60,7 @@ function initTabs() {
 }
 
 // ===================== 채용 =====================
-const JS = { firm:new Set(), field:new Set(), status:"open", onlyNew:false, kw:"", sort:"reco" };
+const JS = { firm:new Set(), field:new Set(), status:"open", onlyNew:false, kw:"", sort:"deadline" };
 let JOBS = [];
 
 function ddayInfo(it) {
@@ -106,10 +106,8 @@ function renderJobs() {
   const openFirst = (a,b) => (a.status==="open"?0:1) - (b.status==="open"?0:1);
   list.sort((a, b) => {
     if (JS.sort === "posted") return (b.posted_date||"").localeCompare(a.posted_date||"");
-    if (JS.sort === "deadline") return openFirst(a,b) || ((a.dday??1e6)-(b.dday??1e6));
-    // reco: 신규 먼저 → 진행중 → 임박순
-    const an=a.is_new?0:1, bn=b.is_new?0:1;
-    return (an-bn) || openFirst(a,b) || ((a.dday??1e6)-(b.dday??1e6));
+    // deadline (default): 진행중 먼저 → 마감 임박순
+    return openFirst(a,b) || ((a.dday??1e6)-(b.dday??1e6));
   });
   $("jobs-list").replaceChildren(...list.map(jobCard));
   $("jobs-empty").hidden = list.length > 0;
@@ -195,8 +193,8 @@ function bindControls(data) {
     $("rail-toggle").scrollIntoView({ behavior:"smooth", block:"start" });
   });
   $("reset").addEventListener("click", ()=>{
-    JS.firm.clear(); JS.field.clear(); JS.status="open"; JS.onlyNew=false; JS.kw=""; JS.sort="reco";
-    $("kw").value=""; $("sort").value="reco";
+    JS.firm.clear(); JS.field.clear(); JS.status="open"; JS.onlyNew=false; JS.kw=""; JS.sort="deadline";
+    $("kw").value=""; $("sort").value="deadline";
     $("f-new").classList.remove("on");
     initJobs(data);   // 칩 재생성(상태 반영) — 컨트롤은 이미 바인딩되어 건너뜀
   });

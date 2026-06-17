@@ -153,6 +153,13 @@ def build_news(cfg: dict) -> dict:
     exclude = d.get("news_exclude", [])
     excl_src = d.get("news_exclude_sources", [])
     require = [k.lower() for k in d.get("news_require_any", [])]
+    # 제목 기반 채용·시험 강제 보정 — RSS '감사' 쿼리가 가져온 기사라도 제목에 채용·수습 키워드 있으면 재분류
+    hire_kw = [k.lower() for k in d.get("news_hire_title_keywords", [])]
+    if hire_kw:
+        for res in results:
+            for n in res.postings:
+                if n.category != "채용·시험" and any(k in n.title.lower() for k in hire_kw):
+                    n.category = "채용·시험"
     seen, seen_title, items = set(), set(), []
     for res in results:
         for n in res.postings:

@@ -74,6 +74,9 @@
   주 레버(세무·감사 건수가 limit 미만이면 recency가 한계). **위험=쿼리 확장**(앞순위 넓히면 dedup 선점으로 뒷순위 잠식,
   딜 일반어는 require_any 게이트가 컷→0). 채용·딜은 공급 한계라 품질>수량. 정치색 매체는 `news_exclude_sources`(예: 뉴스타파).
 - **시각검증 노하우**: SPA 글 경로는 render_html 후 anchor href의 **경로 prefix 빈도**를 세어 진짜 글 패턴을 찾는다.
+- **기사 카테고리 오분류**: RSS 분류는 "어느 쿼리가 가져왔나"로 결정 → 채용·수습 기사가 "감사" 쿼리에만 잡히면
+  `감사`로 고정됨. 해결: `news_hire_title_keywords`(config)로 제목 기반 **사후 보정 pre-pass**(export.py `build_news`)
+  — 채용·수습 키워드가 제목에 있으면 카테고리를 `채용·시험`으로 강제 재분류(dedup 전 처리).
 
 ## 구조
 ```
@@ -88,9 +91,12 @@ src/
 docs/  index.html app.js style.css  CNAME  +  data/{jobs,news,insights}.json + data/status.json(점검시각)   (GitHub Pages 루트, hbmons.com)
 .github/workflows/  scrape.yml(채용30분) scrape-news.yml(2h) scrape-insights.yml(일2회) canary.yml(양식감시 일1회) freshness.yml(신선도 매시간) sitecheck.yml(종단점검 3h) run-all.yml(외부핑거 통합실행)
 ```
-> **GitHub cron은 무료·public에서 자주 드롭됨**(실측: 예약 실행이 거의 안 뜸). 안정적 주기 실행은 외부 핑거
-> (cron-job.org 등)가 `repository_dispatch{event_type:run-all}`로 `run-all.yml`을 호출 → 채용+기사+인사이트 일괄.
-> cron 워크플로들은 보조로 유지.
+> **GitHub cron은 무료·public에서 자주 드롭됨**(실측: 예약 실행이 거의 안 뜸). 안정적 주기 실행은 **외부 핑거
+> (cron-job.org, 30분 간격)**가 `repository_dispatch{event_type:run-all}`로 `run-all.yml`을 호출 →
+> 채용+기사+인사이트 일괄. cron 워크플로들은 보조로 유지.
+> **외부 핑거 설정 요약**: cron-job.org → POST `https://api.github.com/repos/jaehyuk-choi-KICPA/KICPA_CAREER_HUB_SITE/dispatches`
+> Headers: `Accept: application/vnd.github+json` · `Authorization: Bearer <PAT(Contents+Actions R/W)>` ·
+> `X-GitHub-Api-Version: 2022-11-28` · `Content-Type: application/json` / Body: `{"event_type":"run-all"}`
 
 ### 자동화 신뢰성 = 3층 모니터링 (변경 시 함께 고려)
 1. **실행됐나** → `freshness.py`(데이터 나이로 스케줄 드롭 감지). 2. **누락 없이 수집됐나** → `canary.py`(소스 양식/건수).

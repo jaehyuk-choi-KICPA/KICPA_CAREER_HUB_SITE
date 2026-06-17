@@ -196,6 +196,7 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 @media (max-width:759px) {
   /* 검색·필터·정렬 바를 금일 패널/금일 기사·인사이트 아래로 */
   .jobs-layout { grid-template-areas:"today" "controls" "rail" "results"; }
+  .today-mini-row { display:none; }                /* 금일 기사·금일 인사이트 미니박스는 PC 전용 */
   .cards { grid-template-columns:1fr; gap:9px; }   /* 기사·인사이트는 한 줄 */
   #jobs-list { grid-template-columns:1fr 1fr; }     /* 채용공고만 2열 유지 */
   .card { padding:12px 13px; gap:6px; }

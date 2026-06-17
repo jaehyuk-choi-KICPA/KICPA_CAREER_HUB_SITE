@@ -133,6 +133,30 @@ function renderJobs() {
   });
   $("jobs-list").replaceChildren(...list.map(jobCard));
   $("jobs-empty").hidden = list.length > 0;
+  $("jobs-summary").textContent = list.length + "건";   // 결과 건수 즉시 피드백
+  renderActiveFilters();
+}
+
+// 결과 영역 상단에 선택된 필터를 제거가능 칩으로 노출(레일을 다시 열지 않고 해제)
+function syncChips(sel) { document.querySelectorAll(sel + " .filter-chip").forEach((c) => c._sync && c._sync()); }
+function clearFirm(v)  { JS.firm.delete(v); renderFirmChips(); renderJobs(); }
+function clearField(v) { JS.field.delete(v); syncChips("#f-field"); renderJobs(); }
+function clearStatus() { JS.status = "open"; renderFirmChips(); syncChips("#f-status"); renderJobs(); }
+function clearKw()     { JS.kw = ""; $("kw").value = ""; renderJobs(); }
+const STATUS_LABEL = { closed:"마감", standing:"상설" };
+function renderActiveFilters() {
+  const box = $("active-filters"); if (!box) return;
+  const chips = [];
+  const add = (label, onX) => {
+    const x = el("button", { type:"button", class:"x", text:"✕" });
+    x.addEventListener("click", onX);
+    chips.push(el("span", { class:"afilter" }, [el("span", { text:label }), x]));
+  };
+  JS.firm.forEach((f) => add(f, () => clearFirm(f)));
+  JS.field.forEach((f) => add(f, () => clearField(f)));
+  if (STATUS_LABEL[JS.status]) add(STATUS_LABEL[JS.status], clearStatus);   // 기본(진행중)은 칩 미표시
+  if (JS.kw.trim()) add('"' + JS.kw.trim() + '"', clearKw);
+  box.replaceChildren(...chips);
 }
 
 function todayItem(it) {
@@ -187,8 +211,6 @@ let _controlsBound = false;   // reset이 initJobs를 재호출해도 컨트롤 
 
 function initJobs(data) {
   JOBS = data.postings || [];
-  const c = data.counts || {};
-  $("jobs-summary").textContent = `진행중 ${c.open||0} · 신규 ${c.new||0} · 마감 ${c.closed||0}`;
 
   renderFirmChips();   // 법인 칩 = 선택 상태 기준 동적 카운트
   buildOpts("f-field", FIELD_ORDER, "checkbox", (v)=>JS.field.has(v),
@@ -204,11 +226,6 @@ function initJobs(data) {
 function bindControls(data) {
   $("kw").addEventListener("input", (e)=>{ JS.kw=e.target.value; renderJobs(); });
   $("sort").addEventListener("change", (e)=>{ JS.sort=e.target.value; renderJobs(); });
-  const bindToggle = (id, key) => {
-    const b = $(id);
-    b.addEventListener("click", () => { JS[key] = !JS[key]; b.classList.toggle("on", JS[key]); renderJobs(); });
-  };
-  bindToggle("f-new", "onlyNew");
   const setRail = (open) => {
     $("rail").classList.toggle("open", open);
     const t = $("rail-toggle");
@@ -223,12 +240,6 @@ function bindControls(data) {
   $("rail-close").addEventListener("click", () => {
     setRail(false);
     $("rail-toggle").scrollIntoView({ behavior:"smooth", block:"start" });
-  });
-  $("reset").addEventListener("click", ()=>{
-    JS.firm.clear(); JS.field.clear(); JS.status="open"; JS.onlyNew=false; JS.kw=""; JS.sort="deadline";
-    $("kw").value=""; $("sort").value="deadline";
-    $("f-new").classList.remove("on");
-    initJobs(data);   // 칩 재생성(상태 반영) — 컨트롤은 이미 바인딩되어 건너뜀
   });
 }
 

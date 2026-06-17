@@ -47,7 +47,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" />
   <!-- ?v= 토큰은 위 헤더의 표시 버전과 동일하게 유지: CSS/JS 수정 시 같이 올리면 캐시 갱신됨 -->
-  <link rel="stylesheet" href="style.css?v=1.05b" />
+  <link rel="stylesheet" href="style.css?v=1.05c" />
 </head>
 <body>
   <header class="site-header">
@@ -89,10 +89,6 @@
           <div class="rail-group"><h4>법인</h4><div id="f-firm" class="opts"></div></div>
           <div class="rail-group"><h4>직무</h4><div id="f-field" class="opts"></div></div>
           <div class="rail-group"><h4>진행 상태</h4><div id="f-status" class="opts"></div></div>
-          <div class="rail-group toggles">
-            <button type="button" id="f-new" class="filter-chip wide">최근 게시만 (7일)</button>
-          </div>
-          <button id="reset" class="reset">필터 초기화</button>
           <button id="rail-close" class="rail-close">▴ 필터 닫기</button>
         </aside>
 
@@ -117,7 +113,10 @@
         </div>
 
         <div class="results">
-          <div class="results-head"><span id="jobs-summary" class="summary"></span></div>
+          <div class="results-head">
+            <span id="jobs-summary" class="summary"></span>
+            <div id="active-filters" class="active-filters"></div>
+          </div>
           <div id="jobs-list" class="cards"></div>
           <div id="jobs-empty" class="empty" hidden>조건에 맞는 공고가 없습니다.</div>
         </div>
@@ -180,6 +179,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=1.05b"></script>
+  <script src="app.js?v=1.05c"></script>
 </body>
 </html>

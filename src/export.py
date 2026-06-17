@@ -153,6 +153,10 @@ def build_news(cfg: dict) -> dict:
     exclude = d.get("news_exclude", [])
     excl_src = d.get("news_exclude_sources", [])
     require = [k.lower() for k in d.get("news_require_any", [])]
+    # 외국(미국 제외) 세무·감사 이슈 차단 — 외국명 있고 한국/미국/국제 마커 없으면 제외
+    foreign_cats = set(d.get("news_foreign_filter_categories", []))
+    foreign_countries = [k.lower() for k in d.get("news_foreign_countries", [])]
+    keep_markers = [k.lower() for k in d.get("news_keep_markers", [])]
     # 제목 기반 채용·시험 강제 보정 — RSS '감사' 쿼리가 가져온 기사라도 제목에 채용·수습 키워드 있으면 재분류
     hire_kw = [k.lower() for k in d.get("news_hire_title_keywords", [])]
     if hire_kw:
@@ -174,6 +178,10 @@ def build_news(cfg: dict) -> dict:
                 continue
             if require and not any(k in n.title.lower() for k in require):  # 도메인 무관 기사 제외
                 continue
+            if foreign_cats and n.category in foreign_cats:   # 외국(미국 제외) 세무·감사 이슈 차단
+                tl = n.title.lower()
+                if any(c in tl for c in foreign_countries) and not any(m in tl for m in keep_markers):
+                    continue
             seen.add(n.url)
             seen_title.add(tkey)
             items.append(n.to_dict())

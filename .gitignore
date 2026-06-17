@@ -17,6 +17,7 @@ freshness_drift.flag
 sitecheck_fail.flag
 sitecheck_report.md
 sitecheck_shot.png
+sitecheck_result.json
 
 # 비밀 — API 키 등(절대 커밋 금지)
 .env

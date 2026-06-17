@@ -131,8 +131,13 @@ _DEFAULTS: dict = {
         "updated_max_minutes": 360,   # 헤더 '최근 업데이트'가 이보다 오래면 이상(스케줄 드롭은 freshness가 별도 감지)
         "report_path": "sitecheck_report.md",
         "screenshot_path": "sitecheck_shot.png",
+        "result_path": "sitecheck_result.json",   # 루프 분기용(status·class·failed)
         "use_llm": True,              # 키 없으면 자동 비활성=결정론 검사만
         "llm_model": "claude-opus-4-8",
+        # 타당성(plausibility): '오늘 신규'가 총건수의 이 비율↑이고 총 ≥ min이면 비현실적(예: 48/48=전량 신규)
+        "implausible_today_ratio": 0.8,
+        "min_total_for_ratio": 8,
+        "max_attempts": 3,            # 셀프힐링 재실행 상한
     },
     # 자기검증 카나리아 (하루 1회) — 소스 양식 변경/공고 누락 감지. 코드 수정은 사람 게이트.
     "canary": {

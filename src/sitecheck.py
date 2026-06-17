@@ -36,6 +36,7 @@ class Check:
     name: str
     ok: bool
     detail: str = ""
+    recoverable: bool = False   # 실패가 '재실행으로 회복 가능'한 부류면 True(신선도·일시 로드오류)
 
 
 @dataclass
@@ -92,7 +93,8 @@ def run_deterministic(cfg: dict, base_url: str, shot_path: str | None) -> Result
                     age = (_dt.datetime.now() - ts).total_seconds() / 60.0
                     ok = age <= sc["updated_max_minutes"]
                     res.checks.append(Check("업데이트 신선도", ok,
-                                            f"{int(age)}분 전 (임계 {sc['updated_max_minutes']}분)"))
+                                            f"{int(age)}분 전 (임계 {sc['updated_max_minutes']}분)",
+                                            recoverable=True))   # 낡음 → 재스크랩으로 회복
                 except Exception:  # noqa: BLE001
                     res.notes.append("업데이트 시각 파싱 실패")
             else:
@@ -121,6 +123,10 @@ def run_deterministic(cfg: dict, base_url: str, shot_path: str | None) -> Result
                 # 데이터가 있는데 화면 0 = 렌더/배포 깨짐
                 ok = not (have > 0 and shown == 0)
                 res.checks.append(Check(f"{key} 카드 렌더", ok, f"화면 {shown} / 데이터 {have}"))
+
+            # 파생 지표 타당성('오늘 신규'가 비현실적으로 큰가) — 렌더 검사가 못 잡는 의미 오류(예: 48/48)
+            for chk in _plausibility_checks(cfg, data):
+                res.checks.append(chk)
 
             # 스크린샷(LLM·증거용) — 채용 탭으로 복귀 후
             if shot_path:
@@ -180,6 +186,92 @@ def run_vision(cfg: dict, shot_path: str) -> Check | None:
         return Check("LLM 비전", True, f"(점검 생략: {type(e).__name__})")  # 비전 오류는 실패로 치지 않음
 
 
+# ----------------------------------------------------------------------------- 타당성/분류/제안
+
+def _plausibility_checks(cfg: dict, data: dict) -> list[Check]:
+    """파생 '오늘 신규' 수가 비현실적인지(렌더 검사가 못 보는 의미 오류). 전부 recoverable=False(코드 버그)."""
+    sc = cfg["sitecheck"]
+    ratio = sc.get("implausible_today_ratio", 0.8)
+    min_total = sc.get("min_total_for_ratio", 8)
+
+    def judge(label: str, today_n, total: int) -> Check | None:
+        if today_n is None or total <= 0:
+            return None
+        if today_n < 0 or today_n > total:
+            return Check(label, False, f"비정상 값 {today_n}/{total}", recoverable=False)
+        if total >= min_total and (today_n >= total or today_n / total > ratio):
+            return Check(label, False, f"비현실적 — 오늘 신규 {today_n}/{total}(전량/대부분)", recoverable=False)
+        return Check(label, True, f"오늘 {today_n}/{total}", recoverable=False)
+
+    out: list[Check] = []
+    ins = data.get("insights") or {}
+    c = judge("인사이트 금일수 타당성", ins.get("today_count"), len(ins.get("items") or []))
+    if c:
+        out.append(c)
+    news = data.get("news") or {}
+    nitems, nday = news.get("items") or [], (news.get("generated_at") or "")[:10]
+    if nitems and nday:
+        c = judge("기사 금일수 타당성", sum(1 for i in nitems if i.get("published") == nday), len(nitems))
+        if c:
+            out.append(c)
+    jobs = data.get("jobs") or {}
+    jitems, jday = jobs.get("postings") or [], (jobs.get("generated_at") or "")[:10]
+    if jitems and jday:
+        c = judge("채용 금일수 타당성", sum(1 for i in jitems if i.get("posted_date") == jday), len(jitems))
+        if c:
+            out.append(c)
+    return out
+
+
+def _classify_and_write(cfg: dict, res: Result) -> str:
+    """실패를 분류해 result.json 기록. 반환: 'ok'|'recoverable'|'code'."""
+    failed = res.failed
+    if not failed:
+        cls = "ok"
+    elif all(c.recoverable for c in failed):
+        cls = "recoverable"   # 재실행으로 회복 가능(신선도·일시)
+    else:
+        cls = "code"          # 코드/배포 버그 — 재실행 무의미, 사람 검토
+    try:
+        Path(cfg["sitecheck"]["result_path"]).write_text(
+            json.dumps({"status": "pass" if cls == "ok" else "fail", "class": cls,
+                        "failed": [c.name for c in failed]}, ensure_ascii=False, indent=2),
+            encoding="utf-8")
+    except Exception:  # noqa: BLE001
+        pass
+    return cls
+
+
+def _suggest_fix(cfg: dict, report_text: str) -> str:
+    """실패 리포트 + 관련 소스 일부를 LLM에 주고 수정 *방향*을 제안(사람 검토용). 키 없으면 빈 문자열."""
+    try:
+        from src.canary import _anthropic_client
+        client = _anthropic_client()
+    except Exception:  # noqa: BLE001
+        client = None
+    if not client:
+        return ""
+    try:
+        srcs = []
+        for f in ("src/export.py", "src/sitecheck.py", "docs/app.js"):
+            try:
+                srcs.append(f"[{f}]\n" + Path(f).read_text(encoding="utf-8")[:4500])
+            except Exception:  # noqa: BLE001
+                pass
+        prompt = (
+            "회법몬(정적 채용/기사 사이트) 종단 점검이 실패했습니다. 아래 [리포트]의 실패 항목 원인을 진단하고 "
+            "어느 파일/함수를 어떻게 고치면 되는지 5줄 이내로 제안하세요. 사람이 검토할 *제안*이며 추정이면 밝히세요.\n\n"
+            f"[리포트]\n{report_text}\n\n[관련 소스 일부]\n" + "\n\n".join(srcs)[:12000]
+        )
+        msg = client.messages.create(
+            model=cfg["sitecheck"].get("llm_model", "claude-opus-4-8"), max_tokens=500,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        return "".join(b.text for b in msg.content if getattr(b, "type", "") == "text").strip()
+    except Exception as e:  # noqa: BLE001
+        return f"(제안 생성 실패: {type(e).__name__})"
+
+
 # ----------------------------------------------------------------------------- 리포트/메인
 
 def build_report(res: Result, url: str, llm_on: bool) -> str:
@@ -211,12 +303,25 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="라이브 사이트 종단 검증")
     ap.add_argument("--url", default=None, help="검증 대상 URL(기본: config sitecheck.site_url)")
     ap.add_argument("--no-llm", action="store_true", help="LLM 비전 생략(결정론만)")
+    ap.add_argument("--suggest", action="store_true", help="실패 시 LLM 수정 제안을 리포트에 첨부(사람 검토용)")
+    ap.add_argument("--explain", action="store_true",
+                    help="재점검 없이 기존 리포트에 LLM 수정 제안만 덧붙임(워크플로 루프용)")
     args = ap.parse_args()
 
     cfg = load_config()
     sc = cfg["sitecheck"]
     url = args.url or sc["site_url"]
     shot = sc["screenshot_path"]
+
+    if args.explain:   # 브라우저 재점검 없이 기존 리포트에 제안만 추가
+        rp = Path(sc["report_path"])
+        report = rp.read_text(encoding="utf-8") if rp.exists() else "(리포트 없음)"
+        sug = _suggest_fix(cfg, report)
+        if sug:
+            report += "\n## LLM 수정 제안 (사람 검토용 — 확정 아님)\n\n> " + sug.replace("\n", "\n> ") + "\n"
+            rp.write_text(report, encoding="utf-8")
+        print("explain: 제안 첨부 완료" if sug else "explain: 제안 없음(키 없음/실패)")
+        return
 
     res = run_deterministic(cfg, url, shot)
     llm_on = False
@@ -226,8 +331,16 @@ def main() -> None:
             res.checks.append(vc)
             llm_on = True
 
+    cls = _classify_and_write(cfg, res)   # result.json (status·class·failed) — 루프 분기용
     report = build_report(res, url, llm_on)
+    report += f"\n_분류: **{cls}**" + ("(재실행으로 회복 가능)" if cls == "recoverable"
+                                       else "(코드/배포 — 사람 검토)" if cls == "code" else "") + "_\n"
+    if args.suggest and res.failed:
+        sug = _suggest_fix(cfg, report)
+        if sug:
+            report += "\n## LLM 수정 제안 (사람 검토용 — 확정 아님)\n\n> " + sug.replace("\n", "\n> ") + "\n"
     Path(sc["report_path"]).write_text(report, encoding="utf-8")
+
     fail = bool(res.failed)
     if fail:
         Path("sitecheck_fail.flag").write_text("1", encoding="utf-8")
@@ -236,7 +349,7 @@ def main() -> None:
     except UnicodeEncodeError:
         import sys
         sys.stdout.buffer.write(report.encode("utf-8", "replace"))
-    print(f"\n-> {sc['report_path']} (fail={'YES' if fail else 'no'})")
+    print(f"\n-> {sc['report_path']} (fail={'YES' if fail else 'no'}, class={cls})")
 
 
 if __name__ == "__main__":

@@ -1,4 +1,4 @@
-name: sitecheck   # 라이브 종단(e2e) 점검 — 배포된 화면이 의도대로 보이는지. 이상 시 GitHub 이슈(사람 검토)
+name: sitecheck   # 라이브 종단(e2e) 셀프힐링 — 점검→(회복가능)재실행 반복→(코드버그)이슈 제안. Human-in-the-loop
 
 on:
   schedule:
@@ -6,10 +6,10 @@ on:
   workflow_dispatch: {}
 
 permissions:
-  contents: read
+  contents: write       # 회복 가능 이상 시 재스크랩 커밋(코드 수정은 절대 안 함)
   issues: write
 concurrency:
-  group: sitecheck
+  group: data-commit    # 스크랩 워크플로와 push 직렬화(재실행이 커밋하므로)
   cancel-in-progress: false
 
 jobs:
@@ -27,14 +27,34 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Install Chromium
         run: python -m playwright install --with-deps chromium
-      - name: Run sitecheck (플래핑 방지 1회 재시도)
+      - name: Self-healing loop (점검 → 회복가능이면 재스크랩 → 반복, 코드버그면 중단)
         run: |
-          python -m src.sitecheck || true
-          if [ -f sitecheck_fail.flag ]; then
-            echo "1차 실패 — 60초 후 재시도"; sleep 60
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for i in 1 2 3; do
             rm -f sitecheck_fail.flag
             python -m src.sitecheck || true
-          fi
+            if [ ! -f sitecheck_fail.flag ]; then echo "attempt $i: PASS"; break; fi
+            CLS=$(python -c "import json;print(json.load(open('sitecheck_result.json'))['class'])" 2>/dev/null || echo code)
+            echo "attempt $i: FAIL (class=$CLS)"
+            if [ "$CLS" = "recoverable" ]; then
+              echo "→ 회복 시도: 스크랩 재실행 후 배포 대기"
+              python -m src.export || true
+              git add docs/data/jobs.json docs/data/news.json docs/data/insights.json \
+                      docs/data/status.json insights_seen.json state.json docs/sitemap.xml
+              if ! git diff --staged --quiet; then
+                git commit -m "auto: 셀프힐링 재수집"
+                git pull --rebase --autostash origin "${{ github.ref_name }}"
+                git push
+              fi
+              sleep 150   # Pages 배포 반영 대기 후 라이브 재점검
+            else
+              echo "→ 코드/배포 버그: 재실행으로 못 고침, 루프 중단(사람 검토)"; break
+            fi
+          done
+      - name: LLM 수정 제안 첨부 (실패 지속 시, 키 있을 때만)
+        if: ${{ hashFiles('sitecheck_fail.flag') != '' }}
+        run: python -m src.sitecheck --explain || true
       - name: Upload screenshot artifact
         if: ${{ hashFiles('sitecheck_shot.png') != '' }}
         uses: actions/upload-artifact@v4
@@ -43,13 +63,14 @@ jobs:
         if: ${{ hashFiles('sitecheck_fail.flag') != '' }}
         run: |
           gh label create sitecheck -c B60205 -d "라이브 종단 점검" --force 2>/dev/null || true
+          gh label create needs-human -c FBCA04 -d "사람 검토·수정 필요" --force 2>/dev/null || true
           RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
           printf '\n\n— 스크린샷·로그: %s\n' "$RUN_URL" >> sitecheck_report.md
           NUM=$(gh issue list --label sitecheck --state open --json number --jq '.[0].number')
           if [ -n "$NUM" ]; then
             gh issue comment "$NUM" --body-file sitecheck_report.md
           else
-            gh issue create --title "🚨 사이트 종단 점검 실패" --label sitecheck \
+            gh issue create --title "🚨 사이트 종단 점검 실패" --label sitecheck,needs-human \
               --assignee jaehyuk-choi-KICPA --body-file sitecheck_report.md
           fi
       - name: Auto-close issue on recovery

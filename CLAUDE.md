@@ -85,9 +85,11 @@ docs/  index.html app.js style.css  CNAME  +  data/{jobs,news,insights}.json + d
 
 ### 자동화 신뢰성 = 3층 모니터링 (변경 시 함께 고려)
 1. **실행됐나** → `freshness.py`(데이터 나이로 스케줄 드롭 감지). 2. **누락 없이 수집됐나** → `canary.py`(소스 양식/건수).
-3. **사용자가 실제로 제대로 보나** → `sitecheck.py`(라이브 URL을 브라우저로 열어 헤더 시각·탭별 카드수 vs 데이터·콘솔에러 + 선택적 LLM 비전).
+3. **사용자가 실제로 제대로 보나** → `sitecheck.py`(라이브 URL을 브라우저로 열어 헤더 시각·탭별 카드수 vs 데이터·콘솔에러 + **타당성** + 선택적 LLM 비전).
+- **타당성(plausibility)**: 렌더 검사는 *의미 오류*를 못 잡는다(예: '금일 인사이트 48/48'=전량 신규는 화면엔 멀쩡한 숫자). sitecheck가 `오늘신규/총`이 `implausible_today_ratio`↑면 이상 처리(파생 지표는 반드시 별도 타당성 검사).
+- **셀프힐링(sitecheck.yml)**: 실패를 `recoverable`(신선도·일시 → **스크랩 재실행→재점검 무인 반복**, max_attempts 상한)과 `code`(타당성·렌더·콘솔 → **재실행 안 함**)로 분류. 코드 버그는 `--explain`(LLM 진단·수정 *제안*)을 담아 **GitHub 이슈**로 올림(라벨 sitecheck,needs-human, 복구 시 auto-close). **코드 자동수정·자동머지 절대 금지 — 적용은 사람이 Claude Code로.**
 - **점검 시각**: 헤더 "최근 업데이트"는 `docs/data/status.json`의 `last_run`(export `main`이 매 실행 기록 — 0건이라 데이터가 안 바뀌어도 전진). 폴백은 jobs `generated_at`. **pagebuild와 무관**.
-- LLM은 카나리아·sitecheck의 **out-of-band 점검**에만(키 없으면 결정론만). 자동 수정·자동 머지 금지(Human-in-the-loop).
+- LLM은 카나리아·sitecheck의 **out-of-band 점검·제안**에만(키 없으면 결정론만). 자동 수정·자동 머지 금지(Human-in-the-loop).
 config.yaml  requirements.txt
 ```
 

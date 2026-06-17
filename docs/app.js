@@ -52,10 +52,19 @@ function initTabs() {
       window.scrollTo({ top: 0 });
     });
   });
-  // 로고(회법몬) 클릭 → 채용공고 탭 최상단으로
+  // 로고(회법몬) 클릭 → 채용공고 탭 최상단 + 데이터 새로고침
   const logo = document.querySelector(".brand h1");
-  if (logo) logo.addEventListener("click", () => {
+  if (logo) logo.addEventListener("click", async () => {
     document.querySelector('.tab-btn[data-tab="jobs"]')?.click();
+    const upd = $("updated");
+    const prev = upd.textContent;
+    upd.textContent = "새로고침 중…";
+    const [jobs, status] = await Promise.all([
+      loadJSON("data/jobs.json"), loadJSON("data/status.json"),
+    ]);
+    const stamp = (status && status.last_run) || (jobs && jobs.generated_at) || "";
+    upd.textContent = stamp ? "최근 업데이트: " + stamp.replace("T", " ") : prev;
+    if (jobs) initJobs(jobs);
   });
 }
 

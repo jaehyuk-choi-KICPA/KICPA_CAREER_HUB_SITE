@@ -211,12 +211,14 @@ def _mark_insight_new(items: list[dict]) -> int:
     except Exception:  # noqa: BLE001
         state = {}
     today = _dt.date.today().isoformat()
+    # baseline(최초 1회)의 기존 목록은 '과거'(어제)로 백필 → 같은 날 다음 실행에서 전량 신규로 오인되지 않게.
+    backfill = (_dt.date.today() - _dt.timedelta(days=1)).isoformat()
     cnt = 0
     for it in items:
         u = it["url"]
         if u not in state:
-            state[u] = today
-        it["is_new"] = (state[u] == today) and not baseline
+            state[u] = backfill if baseline else today
+        it["is_new"] = state[u] == today
         if it["is_new"]:
             cnt += 1
     cur = {it["url"] for it in items}

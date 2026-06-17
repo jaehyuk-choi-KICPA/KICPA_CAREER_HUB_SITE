@@ -19,6 +19,7 @@ jobs:
       TZ: Asia/Seoul
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # 없으면 LLM 비전 자동 비활성=결정론만
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"   # Node20 deprecation 경고 제거
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

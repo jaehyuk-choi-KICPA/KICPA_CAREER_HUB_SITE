@@ -18,6 +18,7 @@ jobs:
     env:
       TZ: Asia/Seoul
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # 없으면 LLM 비활성=구조체크만
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"   # Node20 deprecation 경고 제거
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

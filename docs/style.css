@@ -104,15 +104,20 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .today-item .t a { color:var(--ink); }
 .today-empty { font-size:12.5px; color:var(--muted); padding:8px 0; }
 
-/* 금일 기사/인사이트 미니 박스 (PC 전용 — 1120px↑에서만 노출) */
-.today-mini-row { display:none; }
-@media (min-width:1120px) { .today-mini-row { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:12px; } }
-.today-mini { display:flex; flex-direction:column; align-items:flex-start; gap:6px; cursor:pointer;
-  background:var(--card); border:1px solid var(--line); border-radius:14px; padding:13px 14px;
+/* 금일 기사/인사이트 미니 박스 — 모바일 포함 전 폭 노출(모바일은 더 작게, PC가 더 크게) */
+.today-mini-row { display:grid; grid-template-columns:1fr 1fr; gap:7px; margin-top:9px; }
+.today-mini { display:flex; flex-direction:column; align-items:flex-start; gap:3px; cursor:pointer;
+  background:var(--card); border:1px solid var(--line); border-radius:11px; padding:8px 10px;
   box-shadow:var(--shadow); transition:border-color .12s, box-shadow .12s, transform .12s; font-family:inherit; text-align:left; }
 .today-mini:hover { border-color:#c9d3e2; box-shadow:0 4px 16px rgba(16,40,80,.09); transform:translateY(-1px); }
-.today-mini .tm-t { font-size:12.5px; font-weight:800; color:var(--muted); }
-.today-mini .tm-n { font-size:22px; font-weight:800; color:var(--accent); line-height:1; }
+.today-mini .tm-t { font-size:10.5px; font-weight:800; color:var(--muted); }
+.today-mini .tm-n { font-size:16px; font-weight:800; color:var(--accent); line-height:1; }
+@media (min-width:1120px) {   /* PC = 더 크게 */
+  .today-mini-row { gap:10px; margin-top:12px; }
+  .today-mini { gap:6px; border-radius:14px; padding:13px 14px; }
+  .today-mini .tm-t { font-size:12.5px; }
+  .today-mini .tm-n { font-size:22px; }
+}
 
 /* 당일 올라온 기사/인사이트 빨간 점 */
 .today-dot { width:9px; height:9px; border-radius:50%; background:#e5484d; flex:0 0 auto;

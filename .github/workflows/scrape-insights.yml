@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TZ: Asia/Seoul   # generated_at·발행일 표기를 한국 시간 기준으로
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"   # Node20 deprecation 경고 제거
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

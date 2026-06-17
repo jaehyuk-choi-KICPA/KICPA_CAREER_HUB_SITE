@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-18T06:31:37",
+  "generated_at": "2026-06-18T07:01:19",
   "soon_days": 7,
   "counts": {
-    "total": 63,
-    "open": 40,
+    "total": 64,
+    "open": 41,
     "closed": 23,
-    "new": 14,
+    "new": 15,
     "soon": 16,
     "by_firm": {
       "삼일": 9,
       "삼정": 3,
       "안진": 6,
       "한영": 19,
-      "로컬": 19,
+      "로컬": 20,
       "기타": 7
     }
   },
@@ -544,6 +544,22 @@
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1781684191145",
       "dday": 12
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "택스",
+      "status": "open",
+      "is_new": true,
+      "title": "[삼화회계법인] 이전가격팀 수습회계사 채용공고",
+      "company": "삼화회계법인",
+      "deadline": "2026-07-03",
+      "posted_date": "2026-06-18",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1781733127433",
+      "dday": 15
     },
     {
       "source": "samjong",

@@ -253,10 +253,12 @@ function initSub(prefix, data, chipRowId, chipKey, fixed) {
   $("news-list").replaceChildren(...skel(4));
   $("insights-list").replaceChildren(...skel(4));
 
-  const [jobs, news, insights] = await Promise.all([
+  const [jobs, news, insights, status] = await Promise.all([
     loadJSON("data/jobs.json"), loadJSON("data/news.json"), loadJSON("data/insights.json"),
+    loadJSON("data/status.json"),
   ]);
-  const stamp = (jobs && jobs.generated_at) || "";
+  // 헤더 시각 = 점검 시각(last_run): 변화 없어도 자동화가 돌면 전진. 없으면 jobs 생성시각 폴백.
+  const stamp = (status && status.last_run) || (jobs && jobs.generated_at) || "";
   $("updated").textContent = stamp ? "최근 업데이트: " + stamp.replace("T", " ") : "데이터 없음";
 
   // 당일 올라온 항목 표시(_today) — 기사=오늘 발행, 인사이트=오늘 최초발견(is_new)

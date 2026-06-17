@@ -77,10 +77,17 @@ src/
   sources.py(조립+병렬) export.py(생성 진입점 --part) classify.py(법인/직무) render.py(헤드리스)
   canary.py(자기검증 카나리아 — 양식변경/누락 감지, 드리프트 시 Draft PR)
   freshness.py(신선도 모니터 — 데이터가 낡았는지=스케줄 드롭 감지, STALE 시 Draft PR)
+  sitecheck.py(라이브 종단 e2e — 배포된 화면이 의도대로 보이는지, 실패 시 GitHub 이슈)
   config.py filters.py state.py util.py http_util.py record.py news.py
   run.py·kakao_pc.py·messenger_bot.js  ← 카톡봇(보류, 유지)
-docs/  index.html app.js style.css  CNAME  +  data/{jobs,news,insights}.json   (GitHub Pages 루트, hbmons.com)
-.github/workflows/  scrape.yml(채용30분) scrape-news.yml(2h) scrape-insights.yml(일2회) canary.yml(양식감시 일1회) freshness.yml(신선도 매시간)
+docs/  index.html app.js style.css  CNAME  +  data/{jobs,news,insights}.json + data/status.json(점검시각)   (GitHub Pages 루트, hbmons.com)
+.github/workflows/  scrape.yml(채용30분) scrape-news.yml(2h) scrape-insights.yml(일2회) canary.yml(양식감시 일1회) freshness.yml(신선도 매시간) sitecheck.yml(종단점검 3h)
+
+### 자동화 신뢰성 = 3층 모니터링 (변경 시 함께 고려)
+1. **실행됐나** → `freshness.py`(데이터 나이로 스케줄 드롭 감지). 2. **누락 없이 수집됐나** → `canary.py`(소스 양식/건수).
+3. **사용자가 실제로 제대로 보나** → `sitecheck.py`(라이브 URL을 브라우저로 열어 헤더 시각·탭별 카드수 vs 데이터·콘솔에러 + 선택적 LLM 비전).
+- **점검 시각**: 헤더 "최근 업데이트"는 `docs/data/status.json`의 `last_run`(export `main`이 매 실행 기록 — 0건이라 데이터가 안 바뀌어도 전진). 폴백은 jobs `generated_at`. **pagebuild와 무관**.
+- LLM은 카나리아·sitecheck의 **out-of-band 점검**에만(키 없으면 결정론만). 자동 수정·자동 머지 금지(Human-in-the-loop).
 config.yaml  requirements.txt
 ```
 

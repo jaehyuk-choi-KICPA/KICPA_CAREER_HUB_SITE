@@ -1,0 +1,61 @@
+name: sitecheck   # 라이브 종단(e2e) 점검 — 배포된 화면이 의도대로 보이는지. 이상 시 GitHub 이슈(사람 검토)
+
+on:
+  schedule:
+    - cron: "0 */3 * * *"   # 3시간마다. cron은 UTC 기준
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: sitecheck
+  cancel-in-progress: false
+
+jobs:
+  sitecheck:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Seoul
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # 없으면 LLM 비전 자동 비활성=결정론만
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: pip }
+      - run: pip install -r requirements.txt
+      - name: Install Chromium
+        run: python -m playwright install --with-deps chromium
+      - name: Run sitecheck (플래핑 방지 1회 재시도)
+        run: |
+          python -m src.sitecheck || true
+          if [ -f sitecheck_fail.flag ]; then
+            echo "1차 실패 — 60초 후 재시도"; sleep 60
+            rm -f sitecheck_fail.flag
+            python -m src.sitecheck || true
+          fi
+      - name: Upload screenshot artifact
+        if: ${{ hashFiles('sitecheck_shot.png') != '' }}
+        uses: actions/upload-artifact@v4
+        with: { name: sitecheck-shot, path: sitecheck_shot.png, retention-days: 7 }
+      - name: Open/append GitHub issue on failure
+        if: ${{ hashFiles('sitecheck_fail.flag') != '' }}
+        run: |
+          gh label create sitecheck -c B60205 -d "라이브 종단 점검" --force 2>/dev/null || true
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          printf '\n\n— 스크린샷·로그: %s\n' "$RUN_URL" >> sitecheck_report.md
+          NUM=$(gh issue list --label sitecheck --state open --json number --jq '.[0].number')
+          if [ -n "$NUM" ]; then
+            gh issue comment "$NUM" --body-file sitecheck_report.md
+          else
+            gh issue create --title "🚨 사이트 종단 점검 실패" --label sitecheck \
+              --assignee jaehyuk-choi-KICPA --body-file sitecheck_report.md
+          fi
+      - name: Auto-close issue on recovery
+        if: ${{ hashFiles('sitecheck_fail.flag') == '' }}
+        run: |
+          NUM=$(gh issue list --label sitecheck --state open --json number --jq '.[0].number')
+          if [ -n "$NUM" ]; then
+            gh issue comment "$NUM" --body "✅ 종단 점검 정상 복구 — 자동 종료합니다."
+            gh issue close "$NUM"
+          fi

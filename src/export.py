@@ -237,18 +237,46 @@ def main() -> None:
     part = ap.parse_args().part
 
     cfg = load_config()
+    ran: dict[str, str] = {}  # 이번에 돈 스트림 → generated_at
 
     if part in ("all", "jobs"):
         state = State(cfg["runtime"]["state_path"])
         jobs = build_jobs(cfg, state)
         state.save()  # 마감일 캐시 갱신
         _write_guarded("jobs.json", jobs, "postings")
+        ran["jobs"] = jobs.get("generated_at", "")
     if part in ("all", "news"):
-        _write_guarded("news.json", build_news(cfg), "items")
+        news = build_news(cfg)
+        _write_guarded("news.json", news, "items")
+        ran["news"] = news.get("generated_at", "")
     if part in ("all", "insights"):
-        _write_guarded("insights.json", build_insights(cfg), "items")
-    _update_sitemap_lastmod()  # 검색엔진 재크롤 신호: 사이트맵 lastmod를 오늘로
+        ins = build_insights(cfg)
+        _write_guarded("insights.json", ins, "items")
+        ran["insights"] = ins.get("generated_at", "")
+    _update_status(ran)         # 변화 없어도 '점검 시각(last_run)' 항상 기록
+    _update_sitemap_lastmod()   # 검색엔진 재크롤 신호: 사이트맵 lastmod를 오늘로
     print(f"  → docs/data/ ({part})")
+
+
+def _update_status(ran: dict[str, str]) -> None:
+    """docs/data/status.json에 last_run(점검 시각)과 스트림별 생성 시각을 머지 기록.
+
+    수집 0건으로 데이터가 안 바뀌어도 자동화가 돌았다는 사실(last_run)은 항상 남긴다 → 헤더 시각 전진.
+    부분 실행(--part)을 고려해 기존 값을 읽고 이번에 돈 스트림만 갱신.
+    """
+    path = _DATA_DIR / "status.json"
+    now = _dt.datetime.now().isoformat(timespec="seconds")
+    try:
+        cur = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    except Exception:  # noqa: BLE001
+        cur = {}
+    cur["last_run"] = now
+    for k, v in ran.items():
+        cur[k] = v or now
+    try:
+        path.write_text(json.dumps(cur, ensure_ascii=False, indent=2), encoding="utf-8")
+    except Exception:  # noqa: BLE001
+        pass
 
 
 def _update_sitemap_lastmod() -> None:

@@ -125,6 +125,15 @@ _DEFAULTS: dict = {
             "insights.json": {"label": "빅펌 인사이트", "expected_minutes": 720},
         },
     },
+    # 라이브 종단(e2e) 검증 — 배포된 화면이 의도대로 보이는지(canary·freshness가 못 보는 '사용자 화면').
+    "sitecheck": {
+        "site_url": "https://hbmons.com",
+        "updated_max_minutes": 360,   # 헤더 '최근 업데이트'가 이보다 오래면 이상(스케줄 드롭은 freshness가 별도 감지)
+        "report_path": "sitecheck_report.md",
+        "screenshot_path": "sitecheck_shot.png",
+        "use_llm": True,              # 키 없으면 자동 비활성=결정론 검사만
+        "llm_model": "claude-opus-4-8",
+    },
     # 자기검증 카나리아 (하루 1회) — 소스 양식 변경/공고 누락 감지. 코드 수정은 사람 게이트.
     "canary": {
         "drop_ratio": 0.6,       # 어제 대비 이 비율 이상 급감하면 드리프트(예: 0.6 = 60%↓)

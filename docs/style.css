@@ -53,7 +53,7 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 
 /* 채용 레이아웃 (controls 항상 노출 / rail·today·results) */
 .jobs-layout { display:grid; gap:14px 16px; grid-template-columns:1fr; grid-template-areas:"controls" "rail" "today" "results"; }
-.controls { grid-area:controls; } .rail { grid-area:rail; } .results { grid-area:results; } .today-panel { grid-area:today; }
+.controls { grid-area:controls; } .rail { grid-area:rail; } .results { grid-area:results; } .today-col { grid-area:today; align-self:start; }
 .controls { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
 .controls input#kw { flex:1; min-width:0; padding:11px 13px; border:1px solid var(--line); border-radius:10px; font-size:14.5px; background:var(--card); color:var(--ink); }
 .controls input#kw:focus { outline:none; border-color:var(--accent); }
@@ -103,6 +103,21 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .today-item .t { font-size:13px; font-weight:600; line-height:1.35; }
 .today-item .t a { color:var(--ink); }
 .today-empty { font-size:12.5px; color:var(--muted); padding:8px 0; }
+
+/* 금일 기사/인사이트 미니 박스 (PC 전용 — 1120px↑에서만 노출) */
+.today-mini-row { display:none; }
+@media (min-width:1120px) { .today-mini-row { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:12px; } }
+.today-mini { display:flex; flex-direction:column; align-items:flex-start; gap:6px; cursor:pointer;
+  background:var(--card); border:1px solid var(--line); border-radius:14px; padding:13px 14px;
+  box-shadow:var(--shadow); transition:border-color .12s, box-shadow .12s, transform .12s; font-family:inherit; text-align:left; }
+.today-mini:hover { border-color:#c9d3e2; box-shadow:0 4px 16px rgba(16,40,80,.09); transform:translateY(-1px); }
+.today-mini .tm-t { font-size:12.5px; font-weight:800; color:var(--muted); }
+.today-mini .tm-n { font-size:22px; font-weight:800; color:var(--accent); line-height:1; }
+
+/* 당일 올라온 기사/인사이트 빨간 점 */
+.today-dot { width:9px; height:9px; border-radius:50%; background:#e5484d; flex:0 0 auto;
+  box-shadow:0 0 0 0 rgba(229,72,77,.55); animation:reddot 1.6s ease-out infinite; }
+@keyframes reddot { 0%{ box-shadow:0 0 0 0 rgba(229,72,77,.55); } 70%{ box-shadow:0 0 0 7px rgba(229,72,77,0); } 100%{ box-shadow:0 0 0 0 rgba(229,72,77,0); } }
 
 /* 카드 공통 */
 .cards { display:grid; gap:11px; grid-template-columns:1fr 1fr; }
@@ -161,7 +176,7 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 @media (min-width:1120px) {
   /* 검색바(controls)는 rail+results 폭까지만 → 금일 박스는 우측 상단(2행 차지), 필터는 검색바 바로 아래 좌측 */
   .jobs-layout { grid-template-columns:236px minmax(0,1fr) 282px; grid-template-areas:"controls controls today" "rail results today"; }
-  .today-panel { position:sticky; top:118px; }
+  .today-col { position:sticky; top:118px; }
 }
 @media (max-width:759px) {
   .cards { grid-template-columns:1fr; }

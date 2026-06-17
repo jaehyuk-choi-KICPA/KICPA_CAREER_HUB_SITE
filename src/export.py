@@ -188,8 +188,44 @@ def build_insights(cfg: dict) -> dict:
     # 트레이니 관련도 순 정렬(제목 내 키워드 수 ↓) — 동점은 발행처 순서 유지(stable)
     rel = [k.lower() for k in cfg["dashboard"].get("insight_relevance_keywords", [])]
     items.sort(key=lambda it: sum(1 for k in rel if k in it["title"].lower()), reverse=True)
-    print(f"  인사이트: {len(items)}건 (발행처 {ok}/{len(adapters)})")
-    return {"generated_at": _dt.datetime.now().isoformat(timespec="seconds"), "items": items}
+    today_count = _mark_insight_new(items)  # 발행일이 없어 first_seen 추적으로 '금일 신규' 판정
+    print(f"  인사이트: {len(items)}건 (발행처 {ok}/{len(adapters)}), 금일 {today_count}")
+    return {"generated_at": _dt.datetime.now().isoformat(timespec="seconds"),
+            "today_count": today_count, "items": items}
+
+
+def _mark_insight_new(items: list[dict]) -> int:
+    """각 인사이트에 is_new(오늘 최초 발견) 부여하고 금일 신규수 반환. insights_seen.json에 first_seen 영속.
+
+    인사이트는 발행일이 없어 '최초 발견일'로 신규를 판정한다. **최초 1회(baseline)는 전량 is_new=False**
+    (기존 목록을 '오늘 신규'로 오인 방지). 0건 수집 시 상태를 건드리지 않음(베이스라인 보호).
+    """
+    for it in items:
+        it["is_new"] = False
+    if not items:
+        return 0
+    seen_path = Path("insights_seen.json")
+    baseline = not seen_path.exists()
+    try:
+        state = json.loads(seen_path.read_text(encoding="utf-8")) if not baseline else {}
+    except Exception:  # noqa: BLE001
+        state = {}
+    today = _dt.date.today().isoformat()
+    cnt = 0
+    for it in items:
+        u = it["url"]
+        if u not in state:
+            state[u] = today
+        it["is_new"] = (state[u] == today) and not baseline
+        if it["is_new"]:
+            cnt += 1
+    cur = {it["url"] for it in items}
+    state = {u: d for u, d in state.items() if u in cur}  # 현재 목록 url만 유지(무한증가 방지)
+    try:
+        seen_path.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
+    except Exception:  # noqa: BLE001
+        pass
+    return cnt
 
 
 def main() -> None:

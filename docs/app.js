@@ -206,6 +206,7 @@ function bindControls(data) {
 function newsCard(it) {
   const catColor = NEWS_CAT_COLOR[it.category];
   const top = el("div", { class:"card-top" }, [
+    it._today ? el("span", { class:"today-dot", title:"오늘 올라옴" }) : null,
     it.category ? el("span", { class:"tag cat", style:`background:${catColor||"#667085"}`, text: it.category }) : null,
     el("span", { class:"tag", text: it.source_label || it.source || "" }),
   ]);
@@ -257,6 +258,23 @@ function initSub(prefix, data, chipRowId, chipKey, fixed) {
   ]);
   const stamp = (jobs && jobs.generated_at) || "";
   $("updated").textContent = stamp ? "최근 업데이트: " + stamp.replace("T", " ") : "데이터 없음";
+
+  // 당일 올라온 항목 표시(_today) — 기사=오늘 발행, 인사이트=오늘 최초발견(is_new)
+  const newsToday = ((news && news.generated_at) || "").slice(0, 10);
+  if (news && news.items) news.items.forEach((i) => { i._today = !!i.published && i.published === newsToday; });
+  if (insights && insights.items) insights.items.forEach((i) => { i._today = !!i.is_new; });
+
+  // PC 전용 미니 박스: 금일 수 + 클릭 시 탭 이동
+  const newsN = (news && news.items) ? news.items.filter((i) => i._today).length : 0;
+  const insN = insights ? (insights.today_count != null ? insights.today_count
+    : ((insights.items || []).filter((i) => i._today).length)) : 0;
+  const setMini = (btnId, numId, n, tab) => {
+    const b = $(btnId); if (!b) return;
+    $(numId).textContent = String(n);
+    b.addEventListener("click", () => document.querySelector(`.tab-btn[data-tab="${tab}"]`)?.click());
+  };
+  setMini("mini-news", "mini-news-n", newsN, "news");
+  setMini("mini-insights", "mini-insights-n", insN, "insights");
 
   if (jobs) initJobs(jobs);
   else { $("jobs-empty").hidden = false; $("jobs-empty").textContent = "채용 데이터를 불러오지 못했습니다."; }

@@ -47,7 +47,6 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .tagline br + strong, .tagline strong { color:var(--ink); }
 .tagline { line-height:1.45; }
 .updated { font-size:11.5px; color:var(--muted); padding:8px 18px 11px; }
-.visitors { margin-left:8px; color:var(--accent); font-weight:600; }
 
 .tab { display:none; margin:20px 0; }
 .tab.on { display:block; }
@@ -65,12 +64,18 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .rail-group { padding:11px 0; border-top:1px solid var(--line); }
 .rail-group:first-of-type { border-top:0; padding-top:0; }
 .rail-group h4 { margin:0 0 9px; font-size:11.5px; color:var(--muted); font-weight:800; letter-spacing:.4px; text-transform:uppercase; }
-.opts { display:flex; flex-direction:column; gap:7px; }
-.opt { display:flex; align-items:center; gap:8px; font-size:13.5px; cursor:pointer; }
-.opt input { margin:0; accent-color:var(--accent); }
-.opt .cnt { margin-left:auto; font-size:11.5px; color:var(--muted); }
-.toggles { display:flex; flex-direction:column; gap:8px; }
-.toggles label { font-size:13px; display:flex; align-items:center; gap:8px; cursor:pointer; }
+/* 필터 칩(법인·직무=복수, 진행상태=단일, 토글) — 한 행 2개 그리드 */
+.opts { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+#f-status { grid-template-columns:repeat(3,1fr); }   /* 진행중/마감/전체 한 줄 */
+.filter-chip { display:flex; align-items:center; justify-content:center; gap:6px; width:100%;
+  border:1px solid var(--line); background:var(--card); color:var(--muted); border-radius:9px;
+  padding:9px 8px; font-size:13px; font-weight:600; line-height:1.2; cursor:pointer;
+  font-family:inherit; transition:all .12s; }
+.filter-chip:hover { border-color:#c4ccd8; color:var(--ink); }
+.filter-chip.on { background:var(--accent); border-color:var(--accent); color:#fff; }
+.filter-chip .cnt { font-size:11px; color:var(--muted); }
+.filter-chip.on .cnt { color:rgba(255,255,255,.85); }
+.toggles { display:grid; grid-template-columns:1fr; gap:8px; }   /* 토글은 전체폭 1열 */
 .reset { margin-top:13px; width:100%; padding:9px; border:1px solid var(--line); background:var(--card); border-radius:9px; font-size:12.5px; color:var(--muted); cursor:pointer; }
 .reset:hover { border-color:#c4ccd8; color:var(--ink); }
 .rail-toggle { display:none; }

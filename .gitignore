@@ -11,6 +11,8 @@ _*.txt
 
 # 카나리아: 드리프트 플래그는 런타임 전용(canary_state.json·canary_report.md는 추적)
 canary_drift.flag
+# 신선도 모니터: 플래그는 런타임 전용(freshness_report.md·freshness_shot.png는 PR로 추적)
+freshness_drift.flag
 
 # 비밀 — API 키 등(절대 커밋 금지)
 .env

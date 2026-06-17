@@ -7,7 +7,7 @@
   <meta name="description" content="회법몬 — 한국공인회계사회·빅4(삼일·삼정·안진·한영) 회계법인 채용공고와 회계·세무·딜 업계 기사, 빅펌 발간물을 자동으로 모아보는 사이트. 수습공인회계사·회계법인 입사 준비자용." />
   <meta name="keywords" content="회법몬, 회계법인 채용, 수습공인회계사, 빅4 채용, 삼일 삼정 안진 한영 채용, 한공회 수습, 회계사 취업" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://hbmonster.trackingsite.workers.dev/" />
+  <link rel="canonical" href="https://hbmons.com/" />
   <!-- 구글 서치콘솔 인증: 발급받은 태그로 아래 한 줄 교체 후 푸시 -->
   <!-- <meta name="google-site-verification" content="여기에_발급_코드" /> -->
   <!-- 소셜 공유(카톡·페북 등) 미리보기 -->
@@ -15,8 +15,8 @@
   <meta property="og:site_name" content="회법몬" />
   <meta property="og:title" content="회법몬 — 회계법인 채용공고·업계기사 모아보기" />
   <meta property="og:description" content="한공회·빅4 채용공고와 회계·세무·딜 기사를 한곳에. 수습공인회계사·회계법인 입사 준비자용." />
-  <meta property="og:url" content="https://hbmonster.trackingsite.workers.dev/" />
-  <meta property="og:image" content="https://hbmonster.trackingsite.workers.dev/og.png" />
+  <meta property="og:url" content="https://hbmons.com/" />
+  <meta property="og:image" content="https://hbmons.com/og.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <script type="application/ld+json">
   {
@@ -24,7 +24,7 @@
     "@type": "WebSite",
     "name": "회법몬",
     "alternateName": "회계법인 취업 허브",
-    "url": "https://hbmonster.trackingsite.workers.dev/",
+    "url": "https://hbmons.com/",
     "description": "한공회·빅4 회계법인 채용공고와 회계·세무·딜 업계 기사를 자동으로 모아보는 사이트."
   }
   </script>
@@ -55,7 +55,7 @@
         </nav>
       </div>
     </div>
-    <div class="wrap updated"><span id="updated"></span><span id="visitors" class="visitors"></span></div>
+    <div class="wrap updated"><span id="updated"></span></div>
   </header>
 
   <main class="wrap">
@@ -78,8 +78,8 @@
           <div class="rail-group"><h4>직무</h4><div id="f-field" class="opts"></div></div>
           <div class="rail-group"><h4>진행 상태</h4><div id="f-status" class="opts"></div></div>
           <div class="rail-group toggles">
-            <label><input type="checkbox" id="f-new" /> 신규만 (7일)</label>
-            <label><input type="checkbox" id="f-soon" /> 마감 임박만 (7일)</label>
+            <button type="button" id="f-new" class="filter-chip wide">🆕 신규만 (7일)</button>
+            <button type="button" id="f-soon" class="filter-chip wide">⏰ 마감 임박만 (7일)</button>
           </div>
           <button id="reset" class="reset">필터 초기화</button>
           <button id="rail-close" class="rail-close">▴ 필터 닫기</button>

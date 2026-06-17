@@ -48,6 +48,9 @@ _DEFAULTS: dict = {
             "안진": ["안진", "deloitte", "딜로이트"],
             "한영": ["한영", "ey", "ernst"],
         },
+        # KICPA 보드 공고 중 회사명/제목에 이 키워드가 있으면 '로컬'(회계·세무 법인), 없으면 '기타'(일반기업·공공 등)
+        "local_keywords": ["회계법인", "세무법인", "회계사무소", "세무회계", "감사반",
+                           "accounting", "tax firm"],
         # 채용 직무축: 제목+회사 키워드 → 분야 (위에서부터 우선 매칭, 미매칭=기타)
         "field_keywords": {
             "딜": ["deal", "m&a", "m＆a", "인수", "valuation", "가치평가", "실사",
@@ -74,6 +77,21 @@ _DEFAULTS: dict = {
         },
         # 제목에 이 단어가 있으면 노이즈로 제외(시상·행사·동정 등)
         "news_exclude": ["시상", "수상", "기획전", "캠페인", "부고", "위촉", "임명식", "골프", "기부", "동정"],
+    },
+    # 신선도(누락) 모니터 — 스케줄 드롭으로 데이터가 낡았는지 감지. 카나리아(HTML 양식)와는 별개.
+    "freshness": {
+        "site_url": "https://hbmons.com",     # 시각 증거 스크린샷 대상(라이브 사이트)
+        "data_dir": "docs/data",
+        "stale_multiplier": 2,                 # STALE = 나이 > 기대간격×배수 + grace
+        "grace_minutes": 20,                   # GitHub 스케줄 지연 흡수 여유
+        "report_path": "freshness_report.md",
+        "screenshot_path": "freshness_shot.png",
+        # 데이터 파일 → (라벨, 기대 갱신 간격(분)). 워크플로 cron과 일치시킬 것.
+        "streams": {
+            "jobs.json": {"label": "채용공고", "expected_minutes": 30},
+            "news.json": {"label": "기사", "expected_minutes": 120},
+            "insights.json": {"label": "빅펌 인사이트", "expected_minutes": 720},
+        },
     },
     # 자기검증 카나리아 (하루 1회) — 소스 양식 변경/공고 누락 감지. 코드 수정은 사람 게이트.
     "canary": {

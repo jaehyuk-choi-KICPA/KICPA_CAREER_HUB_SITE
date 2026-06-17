@@ -1,7 +1,7 @@
 "use strict";
 
-const FIRM_ORDER = ["삼일", "삼정", "안진", "한영", "로컬"];
-const FIRM_COLOR = { 삼일:"#d9692a", 삼정:"#1a6fb5", 안진:"#2e8b57", 한영:"#b59312", 로컬:"#6b7684" };
+const FIRM_ORDER = ["삼일", "삼정", "안진", "한영", "로컬", "기타"];
+const FIRM_COLOR = { 삼일:"#d9692a", 삼정:"#1a6fb5", 안진:"#2e8b57", 한영:"#b59312", 로컬:"#6b7684", 기타:"#8a94a6" };
 const FIELD_ORDER = ["딜", "감사", "택스", "기타"];
 
 function el(tag, props = {}, kids = []) {
@@ -15,7 +15,11 @@ function el(tag, props = {}, kids = []) {
   return n;
 }
 const $ = (id) => document.getElementById(id);
-async function loadJSON(p) { try { const r = await fetch(p, {cache:"no-store"}); return r.ok ? await r.json() : null; } catch { return null; } }
+async function loadJSON(p) {
+  // 캐시버스트: Pages CDN이 옛 JSON을 서빙하지 않도록 매 로드 고유 쿼리 부여(브라우저 no-store와 별개)
+  const u = p + (p.includes("?") ? "&" : "?") + "v=" + Date.now();
+  try { const r = await fetch(u, {cache:"no-store"}); return r.ok ? await r.json() : null; } catch { return null; }
+}
 
 // ---- 테마(다크모드) ----
 function applyTheme(t) {
@@ -132,18 +136,23 @@ function renderToday(genStamp) {
 
 function countBy(key) { const m={}; for (const it of JOBS) m[it[key]]=(m[it[key]]||0)+1; return m; }
 
+// 필터를 사이트 톤과 통일된 칩 버튼으로 렌더(복수선택=checkbox형, 단일선택=radio형 모두 지원).
+// 선택 상태는 .on 클래스로 직접 관리(getOn으로 동기화) — 체크박스 제거로 이질감 해소.
 function buildOpts(rowId, values, type, getOn, onToggle, counts) {
-  $(rowId).replaceChildren(...values.map((v) => {
+  const chips = values.map((v) => {
     const label = Array.isArray(v) ? v[0] : v, val = Array.isArray(v) ? v[1] : v;
-    const input = el("input", { type });
-    if (type === "radio") input.name = rowId;
-    input.checked = getOn(val);
     const cnt = counts ? el("span", { class:"cnt", text: String(counts[label] || 0) }) : null;
-    const opt = el("label", { class:"opt" }, [input, el("span", { text:label }), cnt]);
-    input.addEventListener("change", () => onToggle(val));
-    return opt;
-  }));
+    const chip = el("button", { type:"button", class:"filter-chip" }, [el("span", { text:label }), cnt]);
+    const sync = () => chip.classList.toggle("on", getOn(val));
+    sync();
+    chip._sync = sync;
+    chip.addEventListener("click", () => { onToggle(val); chips.forEach((c) => c._sync()); });
+    return chip;
+  });
+  $(rowId).replaceChildren(...chips);
 }
+
+let _controlsBound = false;   // reset이 initJobs를 재호출해도 컨트롤 리스너 중복 바인딩 방지
 
 function initJobs(data) {
   JOBS = data.postings || [];
@@ -158,10 +167,20 @@ function initJobs(data) {
   buildOpts("f-status", [["진행중","open"],["마감","closed"],["전체","all"]], "radio",
     (v)=>JS.status===v, (v)=>{ JS.status=v; renderJobs(); });
 
+  if (!_controlsBound) { bindControls(data); _controlsBound = true; }
+  renderJobs();
+  renderToday(data.generated_at);
+}
+
+function bindControls(data) {
   $("kw").addEventListener("input", (e)=>{ JS.kw=e.target.value; renderJobs(); });
   $("sort").addEventListener("change", (e)=>{ JS.sort=e.target.value; renderJobs(); });
-  $("f-new").addEventListener("change", (e)=>{ JS.onlyNew=e.target.checked; renderJobs(); });
-  $("f-soon").addEventListener("change", (e)=>{ JS.onlySoon=e.target.checked; renderJobs(); });
+  const bindToggle = (id, key) => {
+    const b = $(id);
+    b.addEventListener("click", () => { JS[key] = !JS[key]; b.classList.toggle("on", JS[key]); renderJobs(); });
+  };
+  bindToggle("f-new", "onlyNew");
+  bindToggle("f-soon", "onlySoon");
   const setRail = (open) => {
     $("rail").classList.toggle("open", open);
     const t = $("rail-toggle");
@@ -179,11 +198,10 @@ function initJobs(data) {
   });
   $("reset").addEventListener("click", ()=>{
     JS.firm.clear(); JS.field.clear(); JS.status="open"; JS.onlyNew=false; JS.onlySoon=false; JS.kw=""; JS.sort="reco";
-    $("kw").value=""; $("f-new").checked=false; $("f-soon").checked=false; $("sort").value="reco";
-    initJobs(data); renderJobs();
+    $("kw").value=""; $("sort").value="reco";
+    $("f-new").classList.remove("on"); $("f-soon").classList.remove("on");
+    initJobs(data);   // 칩 재생성(상태 반영) — 컨트롤은 이미 바인딩되어 건너뜀
   });
-  renderJobs();
-  renderToday(data.generated_at);
 }
 
 // ===================== 기사/인사이트 =====================
@@ -246,23 +264,4 @@ function initSub(prefix, data, chipRowId, chipKey, fixed) {
   else { $("jobs-empty").hidden = false; $("jobs-empty").textContent = "채용 데이터를 불러오지 못했습니다."; }
   initSub("news", news, "f-newscat", "category", null);
   initSub("insights", insights, "f-pub", "source_label", null);
-  countVisit();
 })();
-
-// 금일 방문자수(KST) — 한 브라우저당 하루 1회만 +1(중복 방지), 그 외엔 읽기만.
-// /api/hit가 없거나(로컬) KV 미설정이면 조용히 숨김(사이트 영향 0).
-async function countVisit() {
-  const el = $("visitors");
-  if (!el) return;
-  const today = new Date(Date.now() + 9 * 3600 * 1000).toISOString().slice(0, 10);
-  const flag = "hit:" + today;
-  const method = localStorage.getItem(flag) ? "GET" : "POST";
-  try {
-    const r = await fetch("/api/hit", { method });
-    const d = r.ok ? await r.json() : null;
-    if (d && d.count != null) {
-      el.textContent = "· 금일 방문자수 " + d.count.toLocaleString();
-      localStorage.setItem(flag, "1");
-    }
-  } catch { /* 카운터 실패는 무시 */ }
-}

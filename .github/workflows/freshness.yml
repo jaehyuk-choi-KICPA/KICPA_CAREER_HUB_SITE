@@ -1,0 +1,52 @@
+name: freshness   # 신선도(누락) 모니터 — 데이터가 낡았는지(스케줄 드롭) 감지, STALE 시 Draft PR(사람 검토)
+
+on:
+  schedule:
+    - cron: "0 * * * *"   # 매시간 가벼운 점검(텍스트만 — Chromium 미설치). cron은 UTC 기준
+  workflow_dispatch: {}    # 수동 점검
+
+permissions:
+  contents: write          # Draft PR 브랜치 커밋용
+  pull-requests: write
+concurrency:
+  group: freshness         # 자체 직렬화(데이터 커밋 워크플로와는 별개)
+  cancel-in-progress: false
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Seoul       # 데이터 나이를 한국 시간 기준으로
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: pip }
+      - run: pip install -r requirements.txt
+      - name: Check freshness (가벼움 — Chromium 불필요)
+        run: python -m src.freshness
+      - name: Capture site screenshot (STALE일 때만)
+        if: ${{ hashFiles('freshness_drift.flag') != '' }}
+        run: |
+          python -m playwright install --with-deps chromium
+          python -m src.freshness --shot
+      - name: Open Draft PR on stale
+        if: ${{ hashFiles('freshness_drift.flag') != '' }}
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: monitor/freshness   # 같은 브랜치 재사용 → 중복 PR 없이 갱신(스팸 방지)
+          base: ${{ github.ref_name }}
+          draft: true
+          add-paths: |
+            freshness_report.md
+            freshness_shot.png
+          title: "🚨 신선도: 데이터 갱신 누락(스케줄 드롭) 의심"
+          commit-message: "freshness: 신선도 이상 리포트"
+          labels: freshness, automated
+          assignees: jaehyuk-choi-KICPA   # 본인 앞 배정 = 알림 보장
+          body: |
+            자동 생성 **알림**입니다(Human-in-the-loop). 일부 스트림 데이터가 기대 갱신 간격보다
+            오래 낡았습니다 — 원인은 대개 **GitHub Actions 스케줄 지연·드롭**입니다.
+
+            `freshness_report.md`의 신선도 표와 라이브 사이트 스냅샷을 확인하세요.
+            잦으면 cron 빈도를 더 올리거나 외부 핑거(`repository_dispatch`)를 고려하세요.
+            (소스 자체 양식 변경/공고 누락은 카나리아가 별도로 감시합니다.)

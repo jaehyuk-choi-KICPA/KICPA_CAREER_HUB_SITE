@@ -6,10 +6,11 @@ from src.record import Posting
 
 
 def classify_firm(p: Posting, cfg: dict) -> str:
-    """법인 라벨: 삼일/삼정/안진/한영/로컬.
+    """법인 라벨: 삼일/삼정/안진/한영/로컬/기타.
 
-    1차: source 기준(Big4 어댑터→해당 법인, KICPA→로컬).
-    2차: 로컬이면 회사명·제목에 Big4 키워드가 있을 때 그 법인으로 보정(로컬 보드 안의 Big4 공고).
+    1차: source 기준(Big4 어댑터→해당 법인, KICPA→로컬군).
+    2차: 로컬군이면 회사명·제목에 Big4 키워드가 있을 때 그 법인으로 보정(로컬 보드 안의 Big4 공고).
+    3차: 그래도 Big4가 아니면 회계·세무 법인(local_keywords)이면 '로컬', 아니면 '기타'(일반기업·공공 등).
     """
     d = cfg["dashboard"]
     firm = d["firm_by_source"].get(p.source, "로컬")
@@ -20,7 +21,9 @@ def classify_firm(p: Posting, cfg: dict) -> str:
     for label, kws in d["firm_keywords"].items():
         if any(k.lower() in text for k in kws):
             return label
-    return "로컬"
+    if any(k.lower() in text for k in d.get("local_keywords", [])):
+        return "로컬"
+    return "기타"
 
 
 def classify_field(p: Posting, cfg: dict) -> str:

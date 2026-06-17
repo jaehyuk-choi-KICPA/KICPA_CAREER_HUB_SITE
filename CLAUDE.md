@@ -8,8 +8,9 @@
 > 연혁: 원래 "채용알림봇"(카톡 오픈채팅 자동게시)→ GUI 게시 불안정으로 보류 → 스크래퍼 자산을 살려 웹으로 피벗.
 
 ## 콘텐츠 3스트림 (채용이 메인)
-1. **채용공고** — KICPA 2보드 + 삼정·안진·한영·삼일(6어댑터). 분류: 법인(삼일/삼정/안진/한영/로컬) ×
+1. **채용공고** — KICPA 2보드 + 삼정·안진·한영·삼일(6어댑터). 분류: 법인(삼일/삼정/안진/한영/로컬/기타) ×
    직무(딜/감사/택스/기타) × 상태(진행중/마감) × NEW(게시 N일). 카드에 고용형태·근무지·D-day.
+   (로컬=KICPA 보드의 회계·세무 법인 / 기타=그 외 일반기업·공공 등. `config.dashboard.local_keywords`로 구분.)
 2. **기사** — Google News RSS(`news_rss.py`), 카테고리 제도·규제/세무/딜·M&A/회계업계. 제목+출처+링크만, 노이즈 제외, 7일 보존.
 3. **빅펌 인사이트** — 삼일·삼정·안진·한영 간행물(`insights.py`). 사이트가 JS(SPA)라 **Playwright 헤드리스**(`render.py`)로 렌더 후 링크 추출.
 
@@ -51,10 +52,11 @@ src/
   adapters/  kicpa·samjong·anjin·hanyoung·samil(채용) + news_rss(기사) + insights(빅펌) + base
   sources.py(조립+병렬) export.py(생성 진입점 --part) classify.py(법인/직무) render.py(헤드리스)
   canary.py(자기검증 카나리아 — 양식변경/누락 감지, 드리프트 시 Draft PR)
+  freshness.py(신선도 모니터 — 데이터가 낡았는지=스케줄 드롭 감지, STALE 시 Draft PR)
   config.py filters.py state.py util.py http_util.py record.py news.py
   run.py·kakao_pc.py·messenger_bot.js  ← 카톡봇(보류, 유지)
-docs/  index.html app.js style.css  +  data/{jobs,news,insights}.json   (GitHub Pages 루트)
-.github/workflows/  scrape.yml(채용1h) scrape-news.yml(6h) scrape-insights.yml(일1회) canary.yml(자기검증 일1회)
+docs/  index.html app.js style.css  CNAME  +  data/{jobs,news,insights}.json   (GitHub Pages 루트, hbmons.com)
+.github/workflows/  scrape.yml(채용30분) scrape-news.yml(2h) scrape-insights.yml(일2회) canary.yml(양식감시 일1회) freshness.yml(신선도 매시간)
 config.yaml  requirements.txt
 ```
 

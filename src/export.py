@@ -24,7 +24,7 @@ from src.util import dday, is_open, today_iso
 _DATA_DIR = Path("docs/data")
 
 # 정렬·요약용 법인 노출 순서(삼일 우선 — 타깃)
-_FIRM_ORDER = ["삼일", "삼정", "안진", "한영", "로컬"]
+_FIRM_ORDER = ["삼일", "삼정", "안진", "한영", "로컬", "기타"]
 
 
 def _write_json(name: str, payload: dict) -> Path:

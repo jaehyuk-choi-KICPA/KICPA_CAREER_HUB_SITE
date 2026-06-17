@@ -1,18 +1,19 @@
 {
-  "generated_at": "2026-06-17T09:17:52",
+  "generated_at": "2026-06-17T11:39:49",
   "soon_days": 7,
   "counts": {
-    "total": 52,
-    "open": 33,
+    "total": 58,
+    "open": 39,
     "closed": 19,
-    "new": 14,
+    "new": 15,
     "soon": 14,
     "by_firm": {
       "삼일": 8,
       "삼정": 4,
-      "안진": 0,
+      "안진": 6,
       "한영": 20,
-      "로컬": 20
+      "로컬": 15,
+      "기타": 5
     }
   },
   "postings": [
@@ -241,6 +242,54 @@
       "dday": 7
     },
     {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "기타",
+      "status": "open",
+      "is_new": false,
+      "title": "경영자문부문 IT 전략/기획 컨설턴트",
+      "company": "딜로이트 안진",
+      "deadline": "2026-06-25",
+      "posted_date": "2026-05-11",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5096",
+      "dday": 8
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "기타",
+      "status": "open",
+      "is_new": false,
+      "title": "경영자문부문 Cyber & Resilience 정보보호 컨설턴트",
+      "company": "딜로이트 안진",
+      "deadline": "2026-06-25",
+      "posted_date": "2026-05-11",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5095",
+      "dday": 8
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "기타",
+      "status": "open",
+      "is_new": false,
+      "title": "경영자문부문 Discovery Forensic Lab 단기 인턴",
+      "company": "딜로이트 안진",
+      "deadline": "2026-06-25",
+      "posted_date": "2026-05-13",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5099",
+      "dday": 8
+    },
+    {
       "source": "samil",
       "source_label": "삼일PwC",
       "firm": "삼일",
@@ -307,7 +356,7 @@
     {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
-      "firm": "로컬",
+      "firm": "기타",
       "field": "딜",
       "status": "open",
       "is_new": false,
@@ -318,6 +367,22 @@
       "location": "서울 영등포구",
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1779445079853",
+      "dday": 13
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "딜",
+      "status": "open",
+      "is_new": false,
+      "title": "경영자문부문 Valuation 정규직(Consultant)",
+      "company": "딜로이트 안진",
+      "deadline": "2026-06-30",
+      "posted_date": "2026-05-27",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5119",
       "dday": 13
     },
     {
@@ -419,7 +484,7 @@
     {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
-      "firm": "로컬",
+      "firm": "기타",
       "field": "기타",
       "status": "open",
       "is_new": true,
@@ -447,6 +512,22 @@
       "emp_type": "정규직",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1780403067081",
       "dday": 13
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "딜",
+      "status": "open",
+      "is_new": true,
+      "title": "경영자문부문 RS그룹 NPL 신입 및 경력직",
+      "company": "딜로이트 안진",
+      "deadline": "2026-07-02",
+      "posted_date": "2026-06-15",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5126",
+      "dday": 15
     },
     {
       "source": "samjong",
@@ -481,9 +562,25 @@
       "dday": 44
     },
     {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "기타",
+      "status": "open",
+      "is_new": false,
+      "title": "SAP 모듈 유지보수(Application Management Service) 전문인력",
+      "company": "딜로이트 안진",
+      "deadline": "2026-09-30",
+      "posted_date": "2026-05-27",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5110",
+      "dday": 105
+    },
+    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
-      "firm": "로컬",
+      "firm": "기타",
       "field": "기타",
       "status": "open",
       "is_new": true,
@@ -547,7 +644,7 @@
     {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
-      "firm": "로컬",
+      "firm": "기타",
       "field": "기타",
       "status": "closed",
       "is_new": false,
@@ -563,7 +660,7 @@
     {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
-      "firm": "로컬",
+      "firm": "기타",
       "field": "기타",
       "status": "closed",
       "is_new": false,

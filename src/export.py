@@ -72,12 +72,13 @@ def build_jobs(cfg: dict, state: State) -> dict:
     items = []
     for p in kept:
         open_ = is_open(p.deadline)
+        firm = classify_firm(p, cfg)
         items.append(
             {
                 "source": p.source,
                 "source_label": p.source_label,
-                "firm": classify_firm(p, cfg),
-                "field": classify_field(p, cfg),
+                "firm": firm,
+                "field": classify_field(p, cfg, firm),
                 "status": "open" if open_ else "closed",
                 "is_new": bool(p.posted_date and p.posted_date >= new_cut),
                 "title": p.title,
@@ -139,17 +140,27 @@ def _recent_cutoff(days: int) -> str:
 
 def build_news(cfg: dict) -> dict:
     """회계·세무·딜 이슈 수집(Google News RSS) → news payload. 중복제거(URL)+최근 N일."""
+    d = cfg["dashboard"]
     results = fetch_all(build_news_adapters(cfg))
-    cutoff = _recent_cutoff(cfg["dashboard"]["news_recent_days"])
-    exclude = cfg["dashboard"].get("news_exclude", [])
+    # 중복제거를 config의 카테고리 순서(좁은→넓은)대로 처리해 좁은 카테고리가 선점하게 함
+    order = list(d["news_queries"].keys())
+    results.sort(key=lambda r: order.index(r.label) if r.label in order else len(order))
+    # 카테고리별 보존기간(저빈도·고관련은 더 길게) — 없으면 기본값
+    default_days = d["news_recent_days"]
+    by_cat = d.get("news_recent_days_by_category", {})
+    cutoffs = {c: _recent_cutoff(by_cat.get(c, default_days)) for c in order}
+    exclude = d.get("news_exclude", [])
+    require = [k.lower() for k in d.get("news_require_any", [])]
     seen, items = set(), []
     for res in results:
         for n in res.postings:
             if n.url in seen:
                 continue
-            if n.published and n.published < cutoff:
+            if n.published and n.published < cutoffs.get(n.category, _recent_cutoff(default_days)):
                 continue
             if any(x in n.title for x in exclude):  # 노이즈(시상·행사 등) 제외
+                continue
+            if require and not any(k in n.title.lower() for k in require):  # 도메인 무관 기사 제외
                 continue
             seen.add(n.url)
             items.append(n.to_dict())
@@ -171,6 +182,9 @@ def build_insights(cfg: dict) -> dict:
                 continue
             seen.add(n.url)
             items.append(n.to_dict())
+    # 트레이니 관련도 순 정렬(제목 내 키워드 수 ↓) — 동점은 발행처 순서 유지(stable)
+    rel = [k.lower() for k in cfg["dashboard"].get("insight_relevance_keywords", [])]
+    items.sort(key=lambda it: sum(1 for k in rel if k in it["title"].lower()), reverse=True)
     print(f"  인사이트: {len(items)}건 (발행처 {ok}/{len(adapters)})")
     return {"generated_at": _dt.datetime.now().isoformat(timespec="seconds"), "items": items}
 

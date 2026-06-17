@@ -22,6 +22,12 @@ def passes(p: Posting, cfg: dict) -> bool:
     excludes = [k.lower() for k in f.get("exclude_keywords", [])]
     exceptions = [k.lower() for k in f.get("exclude_exceptions", [])]
     includes = [k.lower() for k in f.get("include_keywords", [])]
+    hard = [k.lower() for k in f.get("hard_exclude_keywords", [])]
+
+    # 강한 제외: 제목이 명백히 경력 대상이면 본문 예외(신입 병기)와 무관하게 제외
+    title = p.title.lower()
+    if any(h in title for h in hard):
+        return False
 
     # 예외(경력무관 등)가 있으면 제외 규칙을 건너뛴다
     if not any(exc in text for exc in exceptions):

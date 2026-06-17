@@ -72,7 +72,8 @@ def build_insight_adapters(cfg: dict) -> list[Adapter]:
         JSInsightAdapter("insight_anjin", "딜로이트안진",
                          "https://www.deloitte.com/kr/ko/our-thinking/deloitte-insights.html",
                          "https://www.deloitte.com",
-                         r"/kr/ko/our-thinking/[^/]+/[^/?#]+\.html"),
+                         # .html 강제 제거(삼정·한영과 동일) — 딜로이트 SPA의 비-.html 글 경로도 포착
+                         r"/kr/ko/our-thinking/[^/]+/[^/?#]{6,}"),
         JSInsightAdapter("insight_hanyoung", "EY한영",
                          "https://www.ey.com/ko_kr/insights",
                          "https://www.ey.com",

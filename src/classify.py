@@ -26,10 +26,15 @@ def classify_firm(p: Posting, cfg: dict) -> str:
     return "기타"
 
 
-def classify_field(p: Posting, cfg: dict) -> str:
-    """직무분야 라벨: 딜/감사/택스/기타 (제목+회사 키워드, 미매칭=기타)."""
+def classify_field(p: Posting, cfg: dict, firm: str = "기타") -> str:
+    """직무분야 라벨: 딜/감사/택스/기타 (제목+회사 키워드 우선, 미매칭은 법인별 디폴트).
+
+    미매칭 시 로컬 회계법인 공고(audit_default_firms)는 '감사'로 — 수습/스태프 직무가 대체로 감사라
+    타깃(수습공인회계사)에게 '기타'로 묻히지 않게 한다. Big4·기타는 '기타' 유지(자문·디지털 오분류 방지).
+    """
+    d = cfg["dashboard"]
     text = f"{p.title} {p.company}".lower()
-    for label, kws in cfg["dashboard"]["field_keywords"].items():
+    for label, kws in d["field_keywords"].items():
         if any(k.lower() in text for k in kws):
             return label
-    return "기타"
+    return "감사" if firm in d.get("audit_default_firms", []) else "기타"

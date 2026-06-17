@@ -81,6 +81,19 @@ function ddayInfo(it) {
   return { t:"D-" + d, c: d <= 3 ? "soon" : d <= 7 ? "warn" : "" };
 }
 
+// D-day 배지 엘리먼트. 당일마감(dday=0)은 '오늘'+'마감' 두 토큰으로 — 모바일에서만 2줄로 쌓아 칸 무너짐 방지.
+function ddayBadge(it) {
+  const dd = ddayInfo(it);
+  const span = el("span", { class:"dday " + dd.c });
+  if (it.status !== "closed" && it.dday === 0) {
+    span.classList.add("today2");
+    span.append(el("span", { text:"오늘" }), el("span", { text:"마감" }));
+  } else {
+    span.textContent = dd.t;
+  }
+  return span;
+}
+
 function jobCard(it) {
   const dd = ddayInfo(it);
   // 좌측=법인·직무 / 우측=상태표시(NEW·D-day) 통일 배치
@@ -89,7 +102,7 @@ function jobCard(it) {
     el("span", { class:"tag", text:it.field }),
   ]);
   const right = el("div", { class:"top-right" }, [
-    el("span", { class:"dday " + dd.c, text:dd.t }),   // D-day = 우측상단
+    ddayBadge(it),   // D-day = 우측상단 (당일마감은 모바일에서 2줄)
   ]);
   const top = el("div", { class:"card-top" }, [left, right]);
   const title = el("h3", {}, [el("a", { href:it.url, target:"_blank", rel:"noopener", text:it.title })]);

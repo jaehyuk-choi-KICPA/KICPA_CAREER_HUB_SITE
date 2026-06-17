@@ -204,6 +204,8 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
   .card .company { font-size:12px; }
   .card-meta { font-size:11.5px; gap:5px; }
   .meta-deadline { display:none; }                  /* 마감날짜는 우측 D-day로 갈음 → 모바일 숨김 */
+  .dday.today2 { display:inline-flex; flex-direction:column; align-items:center;
+    line-height:1.05; padding-top:2px; padding-bottom:2px; }   /* '오늘'/'마감' 2줄 네모꼴(모바일만) */
   .controls input#kw { flex-basis:100%; }   /* 검색바 한 줄 차지 → 필터·정렬은 아래 줄 */
   .rail-toggle { display:inline-block; border:1px solid var(--line); background:var(--card); color:var(--ink); border-radius:9px; padding:9px 13px; font-size:13px; cursor:pointer; }
   .rail { display:none; }

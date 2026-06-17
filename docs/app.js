@@ -40,7 +40,7 @@ function skel(n) {
   ]));
 }
 
-const NEWS_CAT_COLOR = { "제도·규제":"#1b4f9c", "세무":"#8a5a1b", "딜·M&A":"#0f9d77", "회계업계":"#7a4fb0", "인사이트":"#c2410c" };
+const NEWS_CAT_COLOR = { "채용·시험":"#1b4f9c", "감사":"#7a4fb0", "세무":"#8a5a1b", "딜·M&A":"#0f9d77", "인사이트":"#c2410c" };
 
 // ---- 탭 전환 ----
 function initTabs() {
@@ -60,7 +60,7 @@ function initTabs() {
 }
 
 // ===================== 채용 =====================
-const JS = { firm:new Set(), field:new Set(), status:"open", onlyNew:false, onlySoon:false, kw:"", sort:"reco" };
+const JS = { firm:new Set(), field:new Set(), status:"open", onlyNew:false, kw:"", sort:"reco" };
 let JOBS = [];
 
 function ddayInfo(it) {
@@ -100,7 +100,6 @@ function renderJobs() {
     if (JS.field.size && !JS.field.has(it.field)) return false;
     if (JS.status !== "all" && it.status !== JS.status) return false;
     if (JS.onlyNew && !it.is_new) return false;
-    if (JS.onlySoon && !(it.status==="open" && it.dday!==null && it.dday>=0 && it.dday<=7)) return false;
     if (kw && !((it.title + " " + (it.company||"")).toLowerCase().includes(kw))) return false;
     return true;
   });
@@ -180,7 +179,6 @@ function bindControls(data) {
     b.addEventListener("click", () => { JS[key] = !JS[key]; b.classList.toggle("on", JS[key]); renderJobs(); });
   };
   bindToggle("f-new", "onlyNew");
-  bindToggle("f-soon", "onlySoon");
   const setRail = (open) => {
     $("rail").classList.toggle("open", open);
     const t = $("rail-toggle");
@@ -197,9 +195,9 @@ function bindControls(data) {
     $("rail-toggle").scrollIntoView({ behavior:"smooth", block:"start" });
   });
   $("reset").addEventListener("click", ()=>{
-    JS.firm.clear(); JS.field.clear(); JS.status="open"; JS.onlyNew=false; JS.onlySoon=false; JS.kw=""; JS.sort="reco";
+    JS.firm.clear(); JS.field.clear(); JS.status="open"; JS.onlyNew=false; JS.kw=""; JS.sort="reco";
     $("kw").value=""; $("sort").value="reco";
-    $("f-new").classList.remove("on"); $("f-soon").classList.remove("on");
+    $("f-new").classList.remove("on");
     initJobs(data);   // 칩 재생성(상태 반영) — 컨트롤은 이미 바인딩되어 건너뜀
   });
 }

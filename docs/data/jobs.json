@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-06-17T12:12:59",
+  "generated_at": "2026-06-17T12:37:02",
   "soon_days": 7,
   "counts": {
-    "total": 54,
-    "open": 35,
-    "closed": 19,
+    "total": 60,
+    "open": 38,
+    "closed": 22,
     "new": 13,
-    "soon": 14,
+    "soon": 15,
     "by_firm": {
       "삼일": 7,
       "삼정": 4,
-      "안진": 5,
+      "안진": 6,
       "한영": 19,
-      "로컬": 14,
-      "기타": 5
+      "로컬": 18,
+      "기타": 6
     }
   },
   "postings": [
@@ -48,6 +48,22 @@
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/118731",
       "dday": 0
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "안진",
+      "field": "기타",
+      "status": "open",
+      "is_new": false,
+      "title": "[딜로이트 안진회계법인] 경영자문부문 기업조사 컨설턴트 계약직(정규직 전환형)",
+      "company": "안진회계법인",
+      "deadline": "2026-06-18",
+      "posted_date": "2026-05-19",
+      "location": "서울 영등포구",
+      "emp_type": "계약직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1779178886240",
+      "dday": 1
     },
     {
       "source": "hanyoung",
@@ -386,6 +402,22 @@
       "dday": 13
     },
     {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "택스",
+      "status": "open",
+      "is_new": false,
+      "title": "세무 기장 직원(경력 및 신입) 구합니다.",
+      "company": "대성회계법인",
+      "deadline": "2026-06-30",
+      "posted_date": "2026-06-01",
+      "location": "서울 강남구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1780297049873",
+      "dday": 13
+    },
+    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "로컬",
@@ -498,6 +530,22 @@
       "dday": 23
     },
     {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "status": "open",
+      "is_new": false,
+      "title": "[예인회계법인] 기장 및 업무지원 직원을 모십니다.",
+      "company": "예인회계법인",
+      "deadline": "2026-07-15",
+      "posted_date": "2026-06-08",
+      "location": "서울 전체",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1780906295353",
+      "dday": 28
+    },
+    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "로컬",
@@ -576,6 +624,54 @@
       "emp_type": "신입/경력",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/117600",
       "dday": null
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "status": "closed",
+      "is_new": false,
+      "title": "<총무부 직원 모집 ( 신입 및 2년 이내 경력)>",
+      "company": "대명회계법인",
+      "deadline": "2026-05-19",
+      "posted_date": "2026-06-08",
+      "location": "지역무관 지역무관",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1776647546333",
+      "dday": -29
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "status": "closed",
+      "is_new": false,
+      "title": "종합소득세 아르바이트 모집",
+      "company": "안세회계법인 강남본부",
+      "deadline": "2026-05-23",
+      "posted_date": "2026-05-22",
+      "location": "서울 강남구",
+      "emp_type": "계약직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1776131493764",
+      "dday": -25
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "기타",
+      "field": "기타",
+      "status": "closed",
+      "is_new": false,
+      "title": "[한국장학재단] 2026년 상반기 수시채용(WEST사업 운영지원, 현장실습지원 사업관리, 취업지원관(중앙취업지원센터), 미화) (~05/28 18:00)",
+      "company": "한국장학재단",
+      "deadline": "2026-05-28",
+      "posted_date": "2026-05-21",
+      "location": "지역무관 지역무관",
+      "emp_type": "계약직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1779356480742",
+      "dday": -20
     },
     {
       "source": "kicpa_susup",

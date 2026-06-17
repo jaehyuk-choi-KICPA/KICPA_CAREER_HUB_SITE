@@ -1,7 +1,7 @@
 # 채용알림봇 설정 — 코드 하드코딩 금지, 운영 중 조정은 여기서.
 
 runtime:
-  max_pages: 2          # 각 게시판 목록 페이지 수집 깊이
+  max_pages: 8          # KICPA 목록 수집 깊이(상한). 빈 페이지서 자동중단되니 넉넉히 — CPA보드 45건=5p 누락 방지
   poll_minutes: 180     # 실시간 폴링 주기(분). 채용공고는 하루 단위 갱신 → 3시간이면 충분
   digest_hour: 9        # 일일 다이제스트 게시 시각(24h, 로컬)
   state_path: state.json

@@ -151,10 +151,11 @@ def build_news(cfg: dict) -> dict:
     cutoffs = {c: _recent_cutoff(by_cat.get(c, default_days)) for c in order}
     exclude = d.get("news_exclude", [])
     require = [k.lower() for k in d.get("news_require_any", [])]
-    seen, items = set(), []
+    seen, seen_title, items = set(), set(), []
     for res in results:
         for n in res.postings:
-            if n.url in seen:
+            tkey = " ".join(n.title.split()).lower()  # 같은 헤드라인이 매체만 달라 중복되는 것 제거
+            if n.url in seen or tkey in seen_title:
                 continue
             if n.published and n.published < cutoffs.get(n.category, _recent_cutoff(default_days)):
                 continue
@@ -163,6 +164,7 @@ def build_news(cfg: dict) -> dict:
             if require and not any(k in n.title.lower() for k in require):  # 도메인 무관 기사 제외
                 continue
             seen.add(n.url)
+            seen_title.add(tkey)
             items.append(n.to_dict())
     items.sort(key=lambda i: i.get("published") or "", reverse=True)
     print(f"  이슈: {len(items)}건 (소스 {sum(1 for r in results if r.ok)}/{len(results)})")

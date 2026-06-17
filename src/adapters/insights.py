@@ -72,8 +72,9 @@ def build_insight_adapters(cfg: dict) -> list[Adapter]:
         JSInsightAdapter("insight_anjin", "딜로이트안진",
                          "https://www.deloitte.com/kr/ko/our-thinking/deloitte-insights.html",
                          "https://www.deloitte.com",
-                         # .html 강제 제거(삼정·한영과 동일) — 딜로이트 SPA의 비-.html 글 경로도 포착
-                         r"/kr/ko/our-thinking/[^/]+/[^/?#]{6,}"),
+                         # 실제 발간물은 /our-thinking/ 이 아니라 산업·서비스 하위 perspectives|research|analysis leaf
+                         # (예: /kr/ko/services/tax/perspectives/<글>.html). 메뉴/섹션 랜딩 링크와 구분됨.
+                         r"/kr/ko/.+/(perspectives|research|analysis|blogs)/[^/?#]+\.html"),
         JSInsightAdapter("insight_hanyoung", "EY한영",
                          "https://www.ey.com/ko_kr/insights",
                          "https://www.ey.com",

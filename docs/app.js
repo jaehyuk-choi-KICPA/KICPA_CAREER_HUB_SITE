@@ -89,8 +89,7 @@ function jobCard(it) {
     el("span", { class:"tag", text:it.field }),
   ]);
   const right = el("div", { class:"top-right" }, [
-    it.is_new ? el("span", { class:"badge new", text:"NEW" }) : null,
-    el("span", { class:"dday " + dd.c, text:dd.t }),
+    el("span", { class:"dday " + dd.c, text:dd.t }),   // D-day = 우측상단
   ]);
   const top = el("div", { class:"card-top" }, [left, right]);
   const title = el("h3", {}, [el("a", { href:it.url, target:"_blank", rel:"noopener", text:it.title })]);
@@ -102,6 +101,7 @@ function jobCard(it) {
   parts.push(el("span", { class:"meta-deadline", text:"📅 " + (it.deadline || "상시") }));  // 모바일에선 숨김(우측 D-day로 갈음)
   if (it.posted_date) parts.push(el("span", { text:"게시 " + it.posted_date }));
   parts.forEach((p, i) => { if (i) meta.appendChild(el("span", { class:"sep", text:"·" })); meta.appendChild(p); });
+  if (it.is_new) meta.appendChild(el("span", { class:"badge new meta-new", text:"NEW" }));   // NEW = 우측하단
   return el("article", { class:"card" + (it.status==="closed"?" closed":"") + (it.is_new?" is-new":"") },
     [top, title, company, meta]);
 }

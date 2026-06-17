@@ -139,10 +139,12 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .badge.new { background:var(--new); }
 .tag { font-size:11px; color:var(--muted); border:1px solid var(--line); border-radius:6px; padding:1px 7px; white-space:nowrap; }
 .tag.cat { font-weight:700; border:0; color:#fff; }
-.card h3 { margin:0; font-size:15px; font-weight:600; line-height:1.4; }
+.card h3 { margin:0; font-size:15px; font-weight:600; line-height:1.4;
+  display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:3; overflow:hidden; }  /* 긴 제목 3줄 말줄임(2열 카드 높이 균일화) */
 .card .company { font-size:13px; color:var(--muted); }
 .card-meta { display:flex; align-items:center; gap:8px; flex-wrap:wrap; font-size:12.5px; color:var(--muted); }
 .card-meta .sep { color:var(--line); }
+.card-meta .meta-new { margin-left:auto; }   /* NEW 배지를 카드 우측하단으로 */
 .dday { font-weight:700; padding:1px 7px; border-radius:6px; background:var(--chip-bg); }
 .dday.soon { background:rgba(214,69,69,.16); color:var(--soon); }
 .dday.warn { background:rgba(201,122,24,.16); color:var(--warn); }

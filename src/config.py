@@ -88,6 +88,8 @@ _DEFAULTS: dict = {
             "딜·M&A": 35,
         },
         "news_per_category": 50, # 카테고리별 뉴스 최대 건수(수량 확보 — RSS는 더 많이 주므로 상향)
+        "news_neardup_jaccard": 0.6,  # 제목 단어집합 Jaccard 이 값↑이면 같은 이슈 근접중복으로 보고 1건만(최신 대표)
+        "news_max_per_day_per_cat": 8,  # 같은 (카테고리,발행일) 최대 N건 — 한 사건이 매체별로 도배하는 것 방지
         # 출처(매체) 제외 — 정치색 강한 매체 등(source_label 부분일치)
         "news_exclude_sources": ["뉴스타파"],
         # 기사 4분류(좁은→넓은 순 = dedup 선점 순서). 채용·시험에 업계동향 흡수, 감사에 제도·규제 흡수.

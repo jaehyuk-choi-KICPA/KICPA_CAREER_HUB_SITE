@@ -171,8 +171,42 @@ def build_news(cfg: dict) -> dict:
             seen_title.add(tkey)
             items.append(n.to_dict())
     items.sort(key=lambda i: i.get("published") or "", reverse=True)
-    print(f"  이슈: {len(items)}건 (소스 {sum(1 for r in results if r.ok)}/{len(results)})")
+    before = len(items)
+    items = _dedup_near(items, d.get("news_neardup_jaccard", 0.6))  # 같은 이슈 매체별 근접중복 제거(최신 대표)
+    cap = d.get("news_max_per_day_per_cat", 0)
+    if cap:                                  # 한 사건이 하루치 카테고리를 도배하지 않게 (카테고리,발행일)별 상한
+        bucket: dict = {}
+        capped = []
+        for it in items:                     # 이미 최신순
+            key = (it.get("category"), (it.get("published") or "")[:10])
+            if bucket.get(key, 0) >= cap:
+                continue
+            bucket[key] = bucket.get(key, 0) + 1
+            capped.append(it)
+        items = capped
+    print(f"  이슈: {len(items)}건 (원본 {before} → 근접중복·일자상한 적용, 소스 {sum(1 for r in results if r.ok)}/{len(results)})")
     return {"generated_at": _dt.datetime.now().isoformat(timespec="seconds"), "items": items}
+
+
+def _title_sig(title: str) -> frozenset:
+    """제목 → 핵심 단어집합(말머리·끝의 '- 출처' 제거, 2자 이상 토큰). 근접중복 비교용."""
+    t = title.lower()
+    t = re.sub(r"\[[^\]]*\]", " ", t)        # [말머리] 제거
+    t = re.sub(r"\s[-|][^-|]*$", "", t)       # 끝의 '- 출처' / '| 출처' 제거
+    return frozenset(re.findall(r"[0-9a-z가-힣]{2,}", t))
+
+
+def _dedup_near(items: list[dict], th: float) -> list[dict]:
+    """제목 단어집합 Jaccard ≥ th면 같은 이슈로 보고 1건만 유지. 입력이 최신순이라 **최신이 대표**로 남음."""
+    kept: list[dict] = []
+    sigs: list[frozenset] = []
+    for it in items:
+        sig = _title_sig(it.get("title", ""))
+        if sig and any((len(sig & s) / len(sig | s)) >= th for s in sigs):
+            continue
+        sigs.append(sig)
+        kept.append(it)
+    return kept
 
 
 def build_insights(cfg: dict) -> dict:

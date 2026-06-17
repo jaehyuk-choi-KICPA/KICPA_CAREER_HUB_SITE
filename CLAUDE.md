@@ -67,6 +67,8 @@
 - **기사 4분류**(채용·시험←회계업계 / 감사←제도·규제 / 딜·M&A / 세무). 저빈도·고관련 카테고리는
   `news_recent_days_by_category`로 보존기간 길게(채용 45·딜 21). 넓은 OR 쿼리 노이즈는 `news_require_any`
   도메인어 게이트로, 매체만 다른 동일 헤드라인은 **제목 정규화 dedup**으로 제거. config 순서=dedup 선점 순서.
+  같은 사건 매체별 도배는 어휘 Jaccard로는 못 묶음(의미 군집은 임베딩 필요) → `news_neardup_jaccard`(거의동일만)
+  + **`news_max_per_day_per_cat`**((카테고리,발행일) 상한)으로 도배 차단(05-31 수습이슈 20→8).
 - **링크 점검**: 스트림별 샘플 HTTP. 단 뉴스는 `news.google.com/rss/...` redirect라 200=Google 도달일 뿐(실기사 아님).
 - **기사 수량 레버**(58→116 실측, 종합 7.9→8.9): 안전=`news_per_category`(20→50)→풀린 뒤엔 **`news_recent_days`(→21)**가
   주 레버(세무·감사 건수가 limit 미만이면 recency가 한계). **위험=쿼리 확장**(앞순위 넓히면 dedup 선점으로 뒷순위 잠식,

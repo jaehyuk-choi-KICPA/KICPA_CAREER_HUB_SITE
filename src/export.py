@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import datetime as _dt
 import json
+import re
 from pathlib import Path
 
 from src.adapters.base import safe_fetch
@@ -210,7 +211,26 @@ def main() -> None:
         _write_guarded("news.json", build_news(cfg), "items")
     if part in ("all", "insights"):
         _write_guarded("insights.json", build_insights(cfg), "items")
+    _update_sitemap_lastmod()  # 검색엔진 재크롤 신호: 사이트맵 lastmod를 오늘로
     print(f"  → docs/data/ ({part})")
+
+
+def _update_sitemap_lastmod() -> None:
+    """docs/sitemap.xml의 lastmod를 오늘(KST) 날짜로 갱신(SEO 신선도 신호). 실패는 무시."""
+    p = Path("docs/sitemap.xml")
+    if not p.exists():
+        return
+    try:
+        txt = p.read_text(encoding="utf-8")
+        today = _dt.date.today().isoformat()
+        if "<lastmod>" in txt:
+            new = re.sub(r"<lastmod>.*?</lastmod>", f"<lastmod>{today}</lastmod>", txt)
+        else:
+            new = txt.replace("</loc>", f"</loc>\n    <lastmod>{today}</lastmod>", 1)
+        if new != txt:
+            p.write_text(new, encoding="utf-8")
+    except Exception:  # noqa: BLE001
+        pass
 
 
 if __name__ == "__main__":

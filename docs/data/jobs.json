@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-17T17:39:39",
+  "generated_at": "2026-06-17T17:56:07",
   "soon_days": 7,
   "counts": {
-    "total": 63,
-    "open": 41,
+    "total": 64,
+    "open": 42,
     "closed": 22,
-    "new": 14,
+    "new": 15,
     "soon": 15,
     "by_firm": {
       "삼일": 9,
       "삼정": 4,
       "안진": 6,
       "한영": 19,
-      "로컬": 18,
+      "로컬": 19,
       "기타": 7
     }
   },
@@ -543,6 +543,22 @@
       "location": "서울 강남구",
       "emp_type": "정규직",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1780403067081",
+      "dday": 13
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "status": "open",
+      "is_new": true,
+      "title": "[성우회계법인] 수습~경력(3년차) 회계사님을 모십니다.",
+      "company": "성우회계법인",
+      "deadline": "2026-06-30",
+      "posted_date": "2026-06-17",
+      "location": "서울 영등포구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1781686511790",
       "dday": 13
     },
     {

@@ -76,7 +76,14 @@
 - **시각검증 노하우**: SPA 글 경로는 render_html 후 anchor href의 **경로 prefix 빈도**를 세어 진짜 글 패턴을 찾는다.
 - **기사 카테고리 오분류**: RSS 분류는 "어느 쿼리가 가져왔나"로 결정 → 채용·수습 기사가 "감사" 쿼리에만 잡히면
   `감사`로 고정됨. 해결: `news_hire_title_keywords`(config)로 제목 기반 **사후 보정 pre-pass**(export.py `build_news`)
-  — 채용·수습 키워드가 제목에 있으면 카테고리를 `채용·시험`으로 강제 재분류(dedup 전 처리).
+  — 채용·수습 키워드가 제목에 있으면 카테고리를 `채용·시험`으로 강제 재분류(dedup 전 처리). 한공회장 발언·선발인원
+  이슈도 여기 포함(예: "한공회장","선발 과도","선발 인원").
+- **KICPA 목록 깜빡임(공고 유실)**: 살아있는 공고를 KICPA가 **목록 페이지에서 일시적으로 내렸다 올림**(상세페이지는
+  status 200 유지) → 스크랩이 그 순간을 놓쳐 카드가 깜빡 사라짐(실측: 기술보증기금 공고 18:32 있다 19:02 사라짐).
+  해결: **지속성(grace) 레이어** — `state.update`가 공고별 `last_seen` 기록, `state.carry_forward`가 이번 스크랩에
+  빠졌어도 **마감 전 + last_seen이 `jobs_grace_days`(2일) 이내**면 복원(export.py `build_jobs`). grace 넘으면 자동 탈락
+  (좀비 방지), `prune_expired`로 마감분 정리. state.json은 run-all.yml이 커밋(CI 간 영속). **목록 카운트가 1~2건씩
+  깜빡이면 소스 목록 변동이지 스크랩 버그 아님 → grace로 흡수.**
 - **외국 세무·감사 노이즈**: 넓은 OR 쿼리가 베트남·일본 등 **외국 국내 제도** 기사를 끌어옴(한국 독자 무관).
   해결: `news_foreign_filter_categories`(세무·감사만) + `news_foreign_countries`(미국 제외 외국명) +
   `news_foreign_sources`(외국 매체 source_label — 제목에 국가명 없어도 출처가 Vietnam.vn 등이면 차단) +

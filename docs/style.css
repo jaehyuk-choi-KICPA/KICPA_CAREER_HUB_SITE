@@ -132,7 +132,9 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .card:hover { border-color:#c9d3e2; box-shadow:0 4px 16px rgba(16,40,80,.09); transform:translateY(-1px); }
 .card.closed { opacity:.5; }
 .card.is-new { border-left:3px solid var(--new); }
-.card-top { display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+.card-top { display:flex; align-items:center; gap:6px 8px; flex-wrap:wrap; }
+.card-top .top-left { display:flex; align-items:center; gap:6px; flex-wrap:wrap; min-width:0; }
+.card-top .top-right { display:flex; align-items:center; gap:6px; margin-left:auto; flex:0 0 auto; }
 .badge { font-size:11px; font-weight:700; padding:2px 9px; border-radius:6px; color:#fff; white-space:nowrap; }
 .badge.new { background:var(--new); }
 .tag { font-size:11px; color:var(--muted); border:1px solid var(--line); border-radius:6px; padding:1px 7px; white-space:nowrap; }
@@ -184,12 +186,26 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
   .today-col { position:sticky; top:118px; }
 }
 @media (max-width:759px) {
-  .cards { grid-template-columns:1fr; }
-  .controls input#kw { flex-basis:100%; }   /* 검색바 한 줄 차지 → 필터·정렬은 아래 줄 */
+  /* 검색·필터·정렬 바를 금일 패널/금일 기사·인사이트 아래로 이동 */
+  .jobs-layout { grid-template-areas:"today" "controls" "rail" "results"; }
+  .cards { grid-template-columns:1fr 1fr; gap:9px; }   /* 한 행 2칸 */
+  .card { padding:12px 13px; gap:6px; }
+  .card h3 { font-size:13.5px; }
+  .card .company { font-size:12px; }
+  .card-meta { font-size:11.5px; gap:5px; }
+  .meta-deadline { display:none; }                     /* 마감날짜는 우측 D-day로 갈음 → 모바일 숨김 */
+  /* 필터·정렬을 오른쪽으로 정렬(오른손 조작) */
+  .controls { justify-content:flex-end; }
+  .controls input#kw { flex-basis:100%; }   /* 검색바 한 줄 차지 → 필터·정렬은 아래 줄 우측 */
   .rail-toggle { display:inline-block; border:1px solid var(--line); background:var(--card); color:var(--ink); border-radius:9px; padding:9px 13px; font-size:13px; cursor:pointer; }
   .rail { display:none; }
   .rail.open { display:block; }
   .rail-close { display:block; width:100%; margin-top:10px; padding:11px; border:1px solid var(--accent); background:var(--card); color:var(--accent); border-radius:9px; font-size:13.5px; font-weight:700; cursor:pointer; }
+  /* 헤더: 안내(좌) · 모드전환(중간) · 채용/기사/인사이트 탭(우) */
+  .header-right { width:100%; justify-content:space-between; gap:8px; }
+  .about-nav { order:1; margin-left:0; }
+  .theme-btn { order:2; }
+  .tabs:not(.about-nav) { order:3; }
 }
 @media (max-width:480px) {
   .header-row { padding:11px 14px 0; }

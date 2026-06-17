@@ -82,20 +82,24 @@ function ddayInfo(it) {
 }
 
 function jobCard(it) {
-  const top = el("div", { class:"card-top" }, [
+  const dd = ddayInfo(it);
+  // 좌측=법인·직무 / 우측=상태표시(NEW·D-day) 통일 배치
+  const left = el("div", { class:"top-left" }, [
     el("span", { class:"badge", style:`background:${FIRM_COLOR[it.firm]||"#6b7684"}`, text:it.firm }),
-    it.is_new ? el("span", { class:"badge new", text:"NEW" }) : null,
     el("span", { class:"tag", text:it.field }),
   ]);
+  const right = el("div", { class:"top-right" }, [
+    it.is_new ? el("span", { class:"badge new", text:"NEW" }) : null,
+    el("span", { class:"dday " + dd.c, text:dd.t }),
+  ]);
+  const top = el("div", { class:"card-top" }, [left, right]);
   const title = el("h3", {}, [el("a", { href:it.url, target:"_blank", rel:"noopener", text:it.title })]);
   const company = el("div", { class:"company", text:it.company || "-" });
-  const dd = ddayInfo(it);
   const meta = el("div", { class:"card-meta" });
   const parts = [];
   if (it.emp_type) parts.push(el("span", { text:it.emp_type }));
   if (it.location) parts.push(el("span", { text:"📍" + it.location }));
-  parts.push(el("span", { class:"dday " + dd.c, text:dd.t }));
-  parts.push(el("span", { text:"📅 " + (it.deadline || "상시") }));
+  parts.push(el("span", { class:"meta-deadline", text:"📅 " + (it.deadline || "상시") }));  // 모바일에선 숨김(우측 D-day로 갈음)
   if (it.posted_date) parts.push(el("span", { text:"게시 " + it.posted_date }));
   parts.forEach((p, i) => { if (i) meta.appendChild(el("span", { class:"sep", text:"·" })); meta.appendChild(p); });
   return el("article", { class:"card" + (it.status==="closed"?" closed":"") + (it.is_new?" is-new":"") },
@@ -212,11 +216,14 @@ function bindControls(data) {
 // ===================== 기사/인사이트 =====================
 function newsCard(it) {
   const catColor = NEWS_CAT_COLOR[it.category];
-  const top = el("div", { class:"card-top" }, [
-    it._today ? el("span", { class:"today-dot", title:"오늘 올라옴" }) : null,
+  const left = el("div", { class:"top-left" }, [
     it.category ? el("span", { class:"tag cat", style:`background:${catColor||"#667085"}`, text: it.category }) : null,
     el("span", { class:"tag", text: it.source_label || it.source || "" }),
   ]);
+  const right = el("div", { class:"top-right" }, [
+    it._today ? el("span", { class:"today-dot", title:"오늘 올라옴" }) : null,
+  ]);
+  const top = el("div", { class:"card-top" }, [left, right]);
   const title = el("h3", {}, [el("a", { href:it.url, target:"_blank", rel:"noopener", text:it.title })]);
   const kids = [top, title];
   if (it.summary) kids.push(el("div", { class:"company", text:it.summary }));

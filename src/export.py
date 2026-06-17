@@ -69,6 +69,17 @@ def build_jobs(cfg: dict, state: State) -> dict:
 
     kept = filter_postings(postings, cfg)  # 경력 제외(수습/주니어 타깃)
 
+    # 지속성(grace): KICPA가 살아있는 공고를 목록서 일시적으로 내려 깜빡이는 문제 대응.
+    # 이번에 빠졌어도 마감 전·최근 목격분은 복원(상세는 살아있음). grace_days 넘으면 자동 탈락.
+    present_uids = {p.uid for p in kept}
+    state.update(kept)                      # 본 공고의 last_seen 갱신 + 신규 기록
+    grace_days = cfg["dashboard"].get("jobs_grace_days", 2)
+    carried = state.carry_forward(present_uids, grace_days)
+    state.prune_expired()                   # 마감 지난 좀비 제거
+    if carried:
+        print(f"  [복원] 목록 일시 누락 {len(carried)}건 유지(grace {grace_days}일)")
+    kept = kept + carried
+
     new_cut = _recent_cutoff(cfg["dashboard"]["new_days"])
     items = []
     for p in kept:

@@ -42,8 +42,12 @@ class State:
         }
 
     def update(self, postings: list[Posting]) -> list[Posting]:
-        """스크랩 결과를 반영하고 **이번에 새로 발견된** 공고 리스트를 반환."""
+        """스크랩 결과를 반영하고 **이번에 새로 발견된** 공고 리스트를 반환.
+
+        매 호출 시 본 공고의 last_seen(마지막 목격 시각)을 갱신한다 → carry_forward의 grace 판정 기준.
+        """
         now = _dt.datetime.now().isoformat(timespec="seconds")
+        today = _dt.date.today().isoformat()
         new: list[Posting] = []
         for p in postings:
             e = self.entries.get(p.uid)
@@ -51,15 +55,39 @@ class State:
                 self.entries[p.uid] = {
                     **p.to_dict(),
                     "first_seen": now,
+                    "last_seen": today,
                     "notified": False,
                 }
                 new.append(p)
             else:
-                # 가변 필드 갱신(마감일이 뒤늦게 채워지는 경우 등)
-                for k in ("title", "company", "deadline", "posted_date", "category"):
+                # 가변 필드 갱신(마감일·근무지·고용형태가 뒤늦게 채워지는 경우 등) + 목격 시각 갱신
+                for k in ("title", "company", "deadline", "posted_date", "category",
+                          "location", "emp_type", "source_label", "url"):
                     if getattr(p, k):
                         e[k] = getattr(p, k)
+                e["last_seen"] = today
         return new
+
+    def carry_forward(self, present_uids: set[str], grace_days: int,
+                      today: str | None = None) -> list[Posting]:
+        """이번 스크랩에 빠졌지만 **아직 마감 전이고 최근(grace_days 이내) 목격된** 공고를 복원.
+
+        KICPA가 살아있는 공고를 목록에서 일시적으로 내렸다 올리며 깜빡이는 문제 대응
+        (상세페이지는 살아있음). last_seen이 grace_days를 넘으면 더는 유지하지 않아 좀비 공고를 막는다.
+        """
+        today = today or _dt.date.today().isoformat()
+        cutoff = (_dt.date.today() - _dt.timedelta(days=grace_days)).isoformat()
+        fields = set(Posting.__dataclass_fields__)
+        out: list[Posting] = []
+        for uid, e in self.entries.items():
+            if uid in present_uids:
+                continue
+            if not is_open(e.get("deadline", ""), today=today):
+                continue
+            if (e.get("last_seen") or "") < cutoff:   # 너무 오래 안 보이면 복원 중단
+                continue
+            out.append(Posting(**{k: e.get(k, "") for k in fields}))
+        return out
 
     def mark_notified(self, uids: list[str], posted_date: str | None = None) -> None:
         """notified 처리. posted_date를 주면 '그날 게시한 공고'로 기록(일일 다이제스트용).

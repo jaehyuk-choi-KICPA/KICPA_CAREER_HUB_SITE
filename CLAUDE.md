@@ -79,8 +79,10 @@
   — 채용·수습 키워드가 제목에 있으면 카테고리를 `채용·시험`으로 강제 재분류(dedup 전 처리).
 - **외국 세무·감사 노이즈**: 넓은 OR 쿼리가 베트남·일본 등 **외국 국내 제도** 기사를 끌어옴(한국 독자 무관).
   해결: `news_foreign_filter_categories`(세무·감사만) + `news_foreign_countries`(미국 제외 외국명) +
-  `news_keep_markers`(한국·미국·국제공통=국제/글로벌/OECD/IFRS/국세청 등). 제목에 외국명 있고 keep 마커가 하나도
-  없으면 제외. **딜·M&A는 적용 안 함**(해외 인수 등 한국 관련성). 미국은 유지(keep 마커에 포함).
+  `news_foreign_sources`(외국 매체 source_label — 제목에 국가명 없어도 출처가 Vietnam.vn 등이면 차단) +
+  `news_keep_markers`(한국·미국·국제공통=국제/글로벌/OECD/IFRS/국세청 등). 제목 국가명 **또는** 외국매체이고
+  keep 마커가 하나도 없으면 제외. **딜·M&A는 적용 안 함**(해외 인수 등 한국 관련성). 미국은 유지(keep 마커 포함).
+  ⚠️ 외국 기사는 제목이 번역돼 국가명이 안 보일 수 있음 → **출처(source_label) 점검이 핵심**(예: Vietnam.vn).
 
 ## 구조
 ```

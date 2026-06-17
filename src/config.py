@@ -99,6 +99,11 @@ _DEFAULTS: dict = {
             "브라질", "러시아", "스페인", "이탈리아", "네덜란드", "스위스", "멕시코",
             "사우디", "아랍에미리트", "uae", "튀르키예", "터키",
         ],
+        # 외국 매체(출처) 키워드 — source_label에 있으면 외국 기사로 간주(제목에 국가명 없어도 차단)
+        "news_foreign_sources": [
+            "vietnam", ".vn", "japan", "nikkei", "china", "xinhua", "thai", "indonesia",
+            "jakarta", "manila", "bangkok", "straits", "taipei",
+        ],
         # 위 외국명이 있어도 이 마커(한국·미국·국제공통)가 제목에 있으면 유지
         "news_keep_markers": [
             "한국", "국내", "우리나라", "한공회", "국세청", "금감원", "금융위", "증선위",

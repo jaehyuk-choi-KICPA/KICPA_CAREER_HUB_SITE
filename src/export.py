@@ -201,7 +201,8 @@ def build_news(cfg: dict) -> dict:
             items.append(n.to_dict())
     items.sort(key=lambda i: i.get("published") or "", reverse=True)
     before = len(items)
-    items = _dedup_near(items, d.get("news_neardup_jaccard", 0.6))  # 같은 이슈 매체별 근접중복 제거(최신 대표)
+    items = _dedup_near(items, d.get("news_neardup_jaccard", 0.6),
+                        d.get("news_neardup_overlap", 0.67), d.get("news_neardup_min_tokens", 4))
     cap = d.get("news_max_per_day_per_cat", 0)
     if cap:                                  # 한 사건이 하루치 카테고리를 도배하지 않게 (카테고리,발행일)별 상한
         bucket: dict = {}
@@ -225,16 +226,39 @@ def _title_sig(title: str) -> frozenset:
     return frozenset(re.findall(r"[0-9a-z가-힣]{2,}", t))
 
 
-def _dedup_near(items: list[dict], th: float) -> list[dict]:
-    """제목 단어집합 Jaccard ≥ th면 같은 이슈로 보고 1건만 유지. 입력이 최신순이라 **최신이 대표**로 남음."""
+def _same_issue(a: frozenset, b: frozenset, th: float, ov_th: float, min_tok: int) -> bool:
+    """두 제목 단어집합이 같은 이슈인지. 1차=Jaccard≥th(매체만 다른 거의동일). 2차=포함도(겹침/작은쪽)≥ov_th
+    **이면서** 공통토큰≥min_tok (같은 사건을 다른 표현으로 쓴 헤드라인 — 단, 공통토큰 하한으로 오병합 방지)."""
+    if not (a and b):
+        return False
+    inter = len(a & b)
+    if inter / len(a | b) >= th:
+        return True
+    return inter >= min_tok and inter / min(len(a), len(b)) >= ov_th
+
+
+def _dedup_near(items: list[dict], th: float, ov_th: float = 0.67, min_tok: int = 4) -> list[dict]:
+    """제목 단어집합으로 같은 이슈를 **군집화**(`_same_issue`). 입력이 최신순이라 **최신이 대표**로 남고,
+    나머지(같은 주제의 이전 매체 기사)는 대표의 `dupes`에 첨부(제목·링크·출처·발행일) → 카드에서
+    '동일 주제 기사 N개'로 펼쳐 보여준다. (버리지 않고 통합 — 도배는 줄이되 정보는 보존.)"""
     kept: list[dict] = []
     sigs: list[frozenset] = []
     for it in items:
         sig = _title_sig(it.get("title", ""))
-        if sig and any((len(sig & s) / len(sig | s)) >= th for s in sigs):
-            continue
-        sigs.append(sig)
-        kept.append(it)
+        matched = -1
+        if sig:
+            for idx, s in enumerate(sigs):
+                if _same_issue(sig, s, th, ov_th, min_tok):
+                    matched = idx
+                    break
+        if matched >= 0:
+            kept[matched].setdefault("dupes", []).append({
+                "title": it.get("title"), "url": it.get("url"),
+                "source_label": it.get("source_label"), "published": it.get("published"),
+            })
+        else:
+            sigs.append(sig)
+            kept.append(it)
     return kept
 
 

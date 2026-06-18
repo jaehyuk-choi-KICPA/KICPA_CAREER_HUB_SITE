@@ -155,6 +155,21 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .card .company { font-size:13px; color:var(--muted); }
 .card-meta { display:flex; align-items:center; gap:8px; flex-wrap:wrap; font-size:12.5px; color:var(--muted); }
 .card-meta .sep { color:var(--line); }
+/* 같은 주제 중복 기사 묶음 — 우측 하단 토글 + 펼침 목록(잡코리아식 깔끔 UI) */
+.dupes { margin-top:8px; display:flex; flex-direction:column; }
+.dupes-toggle { align-self:flex-end; width:max-content; cursor:pointer; list-style:none; user-select:none;
+  display:inline-flex; align-items:center; gap:4px; font-size:12px; font-weight:700; color:var(--accent);
+  padding:2px 8px; border:1px solid var(--panel-line); border-radius:999px; background:var(--chip-bg); }
+.dupes-toggle::-webkit-details-marker { display:none; }
+.dupes-toggle::after { content:"▾"; font-size:10px; transition:transform .15s ease; }
+.dupes[open] .dupes-toggle::after { transform:rotate(180deg); }
+.dupes-toggle:hover { border-color:var(--accent); }
+.dupes-list { list-style:none; margin:8px 0 0; padding:9px 11px; border:1px solid var(--panel-line);
+  border-radius:10px; background:var(--panel-grad-b,var(--chip-bg)); display:flex; flex-direction:column; gap:8px; }
+.dupes-list li { display:flex; gap:8px; align-items:baseline; font-size:12.5px; line-height:1.4; }
+.dupes-list a { color:var(--ink); }
+.dupes-list a:hover { text-decoration:underline; }
+.dupe-src { margin-left:auto; flex:0 0 auto; font-size:11px; color:var(--muted); white-space:nowrap; }
 .dday { font-weight:700; padding:1px 7px; border-radius:6px; background:var(--chip-bg); }
 .dday.soon { background:rgba(214,69,69,.16); color:var(--soon); }
 .dday.warn { background:rgba(201,122,24,.16); color:var(--warn); }

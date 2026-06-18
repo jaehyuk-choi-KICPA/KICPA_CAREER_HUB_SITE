@@ -278,6 +278,17 @@ function newsCard(it) {
   const kids = [top, title];
   if (it.summary) kids.push(el("div", { class:"company", text:it.summary }));
   if (it.published) kids.push(el("div", { class:"card-meta" }, [el("span", { text:it.published })]));
+  // 같은 주제 중복 기사 묶음 — 네이티브 <details>로 우측 하단에 깔끔히 펼침(클릭 시 제목+링크 좌르르)
+  if (it.dupes && it.dupes.length) {
+    const lis = it.dupes.map((d) => el("li", {}, [
+      el("a", { href:d.url, target:"_blank", rel:"noopener", text:d.title || "(제목 없음)" }),
+      d.source_label ? el("span", { class:"dupe-src", text:d.source_label }) : null,
+    ]));
+    kids.push(el("details", { class:"dupes" }, [
+      el("summary", { class:"dupes-toggle", text:`동일 주제 기사 ${it.dupes.length}개` }),
+      el("ul", { class:"dupes-list" }, lis),
+    ]));
+  }
   return el("article", { class:"card" }, kids);
 }
 

@@ -110,6 +110,9 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .today-item .dday.soon { background:rgba(214,69,69,.16); color:var(--soon); }
 .today-item .t { font-size:13px; font-weight:600; line-height:1.35; }
 .today-item .t a { color:var(--ink); }
+/* 어제(가장 최근 날짜 아님) 공고 — 글씨를 흐리게 해 '조금 지난 것'임을 직관적으로 표시 */
+.today-item.is-old { opacity:.62; }
+.today-item.is-old .t a { color:var(--muted); }
 .today-empty { font-size:12.5px; color:var(--muted); padding:8px 0; }
 
 /* 금일 기사/인사이트 미니 박스 — 모바일 포함 전 폭 노출(모바일은 더 작게, PC가 더 크게) */

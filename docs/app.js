@@ -172,7 +172,7 @@ function renderActiveFilters() {
   box.replaceChildren(...chips);
 }
 
-function todayItem(it) {
+function todayItem(it, isOld) {
   const dd = ddayInfo(it);
   const row1 = el("div", { class:"row1" }, [
     el("span", { class:"dot", style:`background:${FIRM_COLOR[it.firm]||"#6b7684"}` }),
@@ -180,7 +180,8 @@ function todayItem(it) {
     el("span", { class:"dday " + dd.c, text:dd.t }),
   ]);
   const t = el("div", { class:"t" }, [el("a", { href:it.url, target:"_blank", rel:"noopener", text:it.title })]);
-  return el("div", { class:"today-item" }, [row1, t]);
+  // 가장 최근 날짜가 아닌(=어제) 공고는 흐리게(.is-old) — 직관적으로 '조금 지난 것'임을 표시
+  return el("div", { class:"today-item" + (isOld?" is-old":"") }, [row1, t]);
 }
 function renderToday(genStamp) {
   // 최근 2일(어제·오늘) 게시 공고 — 자정 지나면 창이 하루씩 이동(18일이면 17·18, 19일이면 18·19).
@@ -192,7 +193,7 @@ function renderToday(genStamp) {
   const items = JOBS.filter((it) => it.status !== "closed" && it.posted_date && it.posted_date >= since);
   $("today-count").textContent = String(items.length);
   $("today-empty").hidden = items.length > 0;
-  $("today-list").replaceChildren(...items.slice(0, 12).map(todayItem));
+  $("today-list").replaceChildren(...items.slice(0, 12).map((it) => todayItem(it, it.posted_date !== today)));
 }
 
 function countBy(key) { const m={}; for (const it of JOBS) m[it[key]]=(m[it[key]]||0)+1; return m; }

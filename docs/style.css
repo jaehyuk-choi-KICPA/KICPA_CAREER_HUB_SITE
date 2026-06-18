@@ -31,14 +31,14 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
   backdrop-filter:saturate(140%) blur(8px); border-bottom:1px solid var(--line); }
 .header-row { display:flex; align-items:center; justify-content:space-between; gap:14px; padding:13px 18px 0; flex-wrap:wrap; }
 .brand-top { display:flex; align-items:center; gap:8px; }
-.brand h1 { margin:0; font-family:"Black Han Sans","Pretendard",sans-serif; font-size:36px; font-weight:400; letter-spacing:.5px; color:var(--accent); line-height:1.1; cursor:pointer; user-select:none; }
+.brand h1 { margin:0; font-family:"Jua","Pretendard",sans-serif; font-size:34px; font-weight:400; letter-spacing:0; color:var(--accent); line-height:1.1; cursor:pointer; user-select:none; }
 .brand h1 .ver { font-size:.42em; vertical-align:.55em; margin-left:6px; color:var(--muted); letter-spacing:0; }
 .tagline { font-size:12px; color:var(--muted); }
 .tagline strong { color:var(--ink); }
 .header-right { display:flex; align-items:center; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
 .tabs { display:flex; gap:6px; background:var(--seg-bg); padding:5px; border-radius:12px; }
 .tab-btn { border:0; background:transparent; color:var(--muted); padding:9px 18px; border-radius:9px;
-  font-size:14.5px; font-weight:700; cursor:pointer; transition:all .12s; white-space:nowrap; }
+  font-size:15.5px; font-weight:700; cursor:pointer; transition:all .12s; white-space:nowrap; }
 .tab-btn:hover { color:var(--ink); }
 .tab-btn.on { background:var(--accent); color:#fff; box-shadow:0 2px 8px rgba(27,79,156,.28); }
 /* 탭 신규 점 — 안 본 새 기사가 있을 때 표시(브라우저별). [hidden]이면 숨김 */
@@ -74,7 +74,7 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 #f-status { grid-template-columns:repeat(3,1fr); }   /* 진행중/마감/전체 한 줄 */
 .filter-chip { display:flex; align-items:center; justify-content:center; gap:6px; width:100%;
   border:1px solid var(--line); background:var(--card); color:var(--muted); border-radius:9px;
-  padding:9px 8px; font-size:13px; font-weight:600; line-height:1.2; cursor:pointer;
+  padding:9px 8px; font-size:14px; font-weight:600; line-height:1.2; cursor:pointer;
   font-family:inherit; transition:all .12s; }
 .filter-chip:hover { border-color:#c4ccd8; color:var(--ink); }
 .filter-chip.on { background:var(--accent); border-color:var(--accent); color:#fff; }
@@ -112,14 +112,13 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .today-item .firm { font-size:11px; font-weight:700; color:var(--muted); }
 .today-item .dday { margin-left:auto; font-size:11px; font-weight:700; padding:0 6px; border-radius:5px; background:var(--chip-bg); }
 .today-item .dday.soon { background:rgba(214,69,69,.16); color:var(--soon); }
-.today-item .t { font-size:13px; font-weight:600; line-height:1.35; }
+.today-item .t { font-size:14px; font-weight:600; line-height:1.4; }
 .today-item .t a { color:var(--ink); }
 /* 어제(가장 최근 날짜 아님) 공고 — 글씨를 흐리게 해 '조금 지난 것'임을 직관적으로 표시 */
 .today-item.is-old { opacity:.62; }
 .today-item.is-old .t a { color:var(--muted); }
-/* 맨 위(가장 최근) 공고 '최신' 배지 */
-.today-item .latest-badge { font-size:10px; font-weight:800; color:#fff; background:var(--new,#e5484d);
-  padding:0 6px; border-radius:999px; line-height:16px; }
+/* 패널 제목의 정렬 안내 '(최신순)' — 작고 옅게 */
+.today-title .today-sort { font-size:11px; font-weight:600; color:var(--muted); }
 .today-empty { font-size:12.5px; color:var(--muted); padding:8px 0; }
 
 /* 금일 기사/인사이트 미니 박스 — 모바일 포함 전 폭 노출(모바일은 더 작게, PC가 더 크게) */
@@ -129,12 +128,12 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
   box-shadow:var(--shadow); transition:border-color .12s, box-shadow .12s, transform .12s; font-family:inherit; text-align:left; }
 .today-mini:hover { border-color:#c9d3e2; box-shadow:0 4px 16px rgba(16,40,80,.09); transform:translateY(-1px); }
 .today-mini .tm-t { font-size:10.5px; font-weight:800; color:var(--muted); }
-.today-mini .tm-n { font-size:16px; font-weight:800; color:var(--accent); line-height:1; }
+.today-mini .tm-n { font-size:15px; font-weight:700; color:var(--accent); line-height:1; }
 @media (min-width:1120px) {   /* PC = 더 크게 */
   .today-mini-row { gap:10px; margin-top:12px; }
   .today-mini { gap:6px; border-radius:14px; padding:13px 14px; }
   .today-mini .tm-t { font-size:12.5px; }
-  .today-mini .tm-n { font-size:22px; }
+  .today-mini .tm-n { font-size:18px; }
 }
 
 /* 당일 올라온 기사/인사이트 빨간 점 */
@@ -192,7 +191,7 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .about-card p { margin:7px 0; }
 .about-card .src-links a { font-weight:600; }
 .chiprow { display:flex; flex-wrap:wrap; gap:7px; margin-bottom:14px; }
-.chip { border:1px solid var(--line); background:var(--card); border-radius:999px; padding:7px 15px; font-size:13px; font-weight:600; color:var(--muted); cursor:pointer; transition:all .12s; }
+.chip { border:1px solid var(--line); background:var(--card); border-radius:999px; padding:7px 15px; font-size:14px; font-weight:600; color:var(--muted); cursor:pointer; transition:all .12s; }
 .chip:hover { border-color:#c4ccd8; color:var(--ink); }
 .chip.on { background:var(--accent); border-color:var(--accent); color:#fff; }
 

@@ -2,7 +2,8 @@
 
 const FIRM_ORDER = ["삼일", "삼정", "안진", "한영", "로컬", "기타"];
 const FIRM_COLOR = { 삼일:"#d9692a", 삼정:"#1a6fb5", 안진:"#2e8b57", 한영:"#b59312", 로컬:"#6b7684", 기타:"#8a94a6" };
-const FIELD_ORDER = ["딜", "감사", "택스", "기타"];
+const FIELD_ORDER = ["감사", "택스", "딜", "기타"];        // 채용 직무 필터 순서(기사와 일관: 감사·택스·딜)
+const NEWS_CAT_ORDER = ["채용·시험", "감사", "세무", "딜·M&A"];  // 기사 카테고리 필터 순서(감사·세무(택스)·딜 일관)
 
 function el(tag, props = {}, kids = []) {
   const n = document.createElement(tag);
@@ -110,6 +111,22 @@ function ddayBadge(it) {
   return span;
 }
 
+// 카드 제목에서 선행 [회사명](아래 .company와 중복)을 제거해 가독성↑. 매칭 안 되면 원제목 유지.
+function displayJobTitle(it) {
+  let t = (it.title || "").trim();
+  const co = (it.company || "").trim();
+  if (!co) return t;
+  const coN = co.replace(/\s+/g, "");
+  const m = t.match(/^\[([^\]]*)\]\s*/);
+  if (m) {                                  // 선행 [회사명] 또는 [회사명 …]
+    const inner = m[1].replace(/\s+/g, "");
+    if (inner === coN || inner.includes(coN) || coN.includes(inner)) t = t.slice(m[0].length);
+  } else if (t.replace(/\s+/g, "").startsWith(coN)) {   // 대괄호 없이 평문 선행
+    t = t.slice(co.length).replace(/^[\s\-–·:|]+/, "");
+  }
+  return t.trim() || it.title;
+}
+
 function jobCard(it) {
   const dd = ddayInfo(it);
   // 좌측=법인·직무 / 우측=상태표시(NEW·D-day) 통일 배치
@@ -121,7 +138,7 @@ function jobCard(it) {
     ddayBadge(it),   // D-day = 우측상단 (당일마감은 모바일에서 2줄)
   ]);
   const top = el("div", { class:"card-top" }, [left, right]);
-  const title = el("h3", {}, [el("a", { href:it.url, target:"_blank", rel:"noopener", text:it.title })]);
+  const title = el("h3", {}, [el("a", { href:it.url, target:"_blank", rel:"noopener", text:displayJobTitle(it) })]);
   const company = el("div", { class:"company", text:it.company || "-" });
   const meta = el("div", { class:"card-meta" });
   const parts = [];
@@ -188,16 +205,15 @@ function renderActiveFilters() {
   box.replaceChildren(...chips);
 }
 
-function todayItem(it, isOld, isTop) {
+function todayItem(it, isOld) {
   const dd = ddayInfo(it);
   const row1 = el("div", { class:"row1" }, [
     el("span", { class:"dot", style:`background:${FIRM_COLOR[it.firm]||"#6b7684"}` }),
     el("span", { class:"firm", text:it.firm }),
-    isTop ? el("span", { class:"latest-badge", text:"최신" }) : null,   // 맨 위=가장 최근임을 직관 표시
     el("span", { class:"dday " + dd.c, text:dd.t }),
   ]);
   const t = el("div", { class:"t" }, [el("a", { href:it.url, target:"_blank", rel:"noopener", text:it.title })]);
-  // 가장 최근 날짜가 아닌(=어제) 공고는 흐리게(.is-old) — 직관적으로 '조금 지난 것'임을 표시
+  // 가장 최근 날짜가 아닌(=어제) 공고는 흐리게(.is-old). 정렬 기준은 패널 제목 '(최신순)'으로 안내.
   return el("div", { class:"today-item" + (isOld?" is-old":"") }, [row1, t]);
 }
 function renderToday(genStamp) {
@@ -211,7 +227,10 @@ function renderToday(genStamp) {
     .sort((a, b) => (b.posted_date || "").localeCompare(a.posted_date || ""));   // 최신 게시일이 위로
   $("today-count").textContent = String(items.length);
   $("today-empty").hidden = items.length > 0;
-  $("today-list").replaceChildren(...items.slice(0, 12).map((it, i) => todayItem(it, it.posted_date !== today, i === 0)));
+  // 정렬은 최신순(제목 '(최신순)'으로 안내). 가장 최근 게시일과 다른(=어제) 공고는 흐리게.
+  const maxDate = items.length ? items[0].posted_date : "";
+  $("today-list").replaceChildren(...items.slice(0, 12).map((it) =>
+    todayItem(it, it.posted_date !== maxDate)));
 }
 
 function countBy(key) { const m={}; for (const it of JOBS) m[it[key]]=(m[it[key]]||0)+1; return m; }
@@ -405,6 +424,6 @@ function initSub(prefix, data, chipRowId, chipKey, fixed, cardFn) {
 
   if (jobs) initJobs(jobs);
   else { $("jobs-empty").hidden = false; $("jobs-empty").textContent = "채용 데이터를 불러오지 못했습니다."; }
-  initSub("news", news, "f-newscat", "category", null);
+  initSub("news", news, "f-newscat", "category", NEWS_CAT_ORDER);
   initSub("insights", insights, "f-pub", "source_label", null, insightCard);
 })();

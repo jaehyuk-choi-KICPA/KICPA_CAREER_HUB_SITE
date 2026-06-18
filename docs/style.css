@@ -38,8 +38,8 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .header-right { display:flex; align-items:center; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
 .tabs { display:flex; gap:18px; background:transparent; padding:0; }   /* 밑줄 탭(채움 X, 텀 둠) */
 .tab-btn { border:0; background:transparent; color:var(--muted); padding:5px 1px; border-radius:0;
-  border-bottom:2.5px solid transparent; font-size:15.5px; font-weight:700; cursor:pointer;
-  transition:all .12s; white-space:nowrap; }
+  border-bottom:2.5px solid var(--line); font-size:15.5px; font-weight:700; cursor:pointer;
+  transition:all .12s; white-space:nowrap; }   /* 미선택도 옅은 밑줄(탭 가시성) — 탭끼리 gap으로 간격 */
 .tab-btn:hover { color:var(--ink); }
 .tab-btn.on { color:var(--accent); border-bottom-color:var(--accent); }
 /* 탭 신규 점 — 안 본 새 기사가 있을 때 표시(브라우저별). [hidden]이면 숨김 */
@@ -123,7 +123,7 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .today-empty { font-size:12.5px; color:var(--muted); padding:8px 0; }
 
 /* 금일 기사/인사이트 미니 박스 — 모바일 포함 전 폭 노출(모바일은 더 작게, PC가 더 크게) */
-.today-mini-row { display:grid; grid-template-columns:1fr; gap:7px; margin-top:9px; }
+.today-mini-row { display:grid; grid-template-columns:1fr 1fr; gap:7px; margin-top:9px; }   /* 금일 기사 박스 절반 폭 */
 .today-mini { display:flex; flex-direction:column; align-items:flex-start; gap:3px; cursor:pointer;
   background:var(--card); border:1px solid var(--line); border-radius:11px; padding:8px 10px;
   box-shadow:var(--shadow); transition:border-color .12s, box-shadow .12s, transform .12s; font-family:inherit; text-align:left; }
@@ -195,7 +195,7 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .chiprow { display:flex; flex-wrap:wrap; gap:16px; margin-bottom:14px; }
 /* 카테고리 '구분탭' — 박스 채우지 않고 색글씨 탭(카테고리별 색은 인라인). 선택 시 굵게+밑줄 */
 .chip { border:0; background:transparent; padding:5px 2px; font-size:14.5px; font-weight:600; color:var(--muted);
-  cursor:pointer; border-bottom:2.5px solid transparent; transition:all .12s; }
+  cursor:pointer; border-bottom:2.5px solid var(--line); transition:all .12s; }   /* 미선택도 옅은 밑줄 */
 .chip:hover { color:var(--ink); }
 .chip.on { color:var(--accent); font-weight:800; border-bottom-color:currentColor; }
 

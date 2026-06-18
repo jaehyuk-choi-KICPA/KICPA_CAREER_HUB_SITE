@@ -3,6 +3,7 @@
 const FIRM_ORDER = ["삼일", "삼정", "안진", "한영", "로컬", "기타"];
 const FIRM_COLOR = { 삼일:"#d9692a", 삼정:"#1a6fb5", 안진:"#2e8b57", 한영:"#b59312", 로컬:"#6b7684", 기타:"#8a94a6" };
 const FIRM_FULL = { 삼일:"삼일PwC", 삼정:"삼정KPMG", 안진:"Deloitte안진", 한영:"EY한영", 로컬:"로컬", 기타:"기타" };  // 인사이트와 동일 풀네임
+const FIRM_EN = { 삼일:"PwC", 삼정:"KPMG", 안진:"Deloitte", 한영:"EY", 로컬:"로컬", 기타:"기타" };  // 채용 카드용(모바일 공간 절약)
 const FIELD_ORDER = ["감사", "택스", "딜", "기타"];        // 채용 직무 필터 순서(기사와 일관: 감사·택스·딜)
 const NEWS_CAT_ORDER = ["채용·시험", "감사", "세무", "딜·M&A"];  // 기사 카테고리 필터 순서(감사·세무(택스)·딜 일관)
 
@@ -132,7 +133,7 @@ function jobCard(it) {
   const dd = ddayInfo(it);
   // 좌측=법인·직무 / 우측=상태표시(NEW·D-day) 통일 배치
   const left = el("div", { class:"top-left" }, [
-    el("span", { class:"firm-tag", style:`color:${FIRM_COLOR[it.firm]||"#6b7684"}`, text:FIRM_FULL[it.firm]||it.firm }),
+    el("span", { class:"firm-tag", style:`color:${FIRM_COLOR[it.firm]||"#6b7684"}`, text:FIRM_EN[it.firm]||it.firm }),
     el("span", { class:"tag", text:it.field }),
   ]);
   const right = el("div", { class:"top-right" }, [

@@ -190,7 +190,8 @@ function renderToday(genStamp) {
   const dt = new Date(today + "T00:00:00Z");
   dt.setUTCDate(dt.getUTCDate() - 1);
   const since = dt.toISOString().slice(0, 10);   // 어제
-  const items = JOBS.filter((it) => it.status !== "closed" && it.posted_date && it.posted_date >= since);
+  const items = JOBS.filter((it) => it.status !== "closed" && it.posted_date && it.posted_date >= since)
+    .sort((a, b) => (b.posted_date || "").localeCompare(a.posted_date || ""));   // 최신 게시일이 위로
   $("today-count").textContent = String(items.length);
   $("today-empty").hidden = items.length > 0;
   $("today-list").replaceChildren(...items.slice(0, 12).map((it) => todayItem(it, it.posted_date !== today)));

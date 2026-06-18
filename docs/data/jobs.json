@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-18T12:31:26",
+  "generated_at": "2026-06-18T12:43:19",
   "soon_days": 7,
   "counts": {
-    "total": 64,
-    "open": 41,
+    "total": 67,
+    "open": 44,
     "closed": 23,
-    "new": 15,
+    "new": 17,
     "soon": 16,
     "by_firm": {
-      "삼일": 9,
+      "삼일": 10,
       "삼정": 3,
-      "안진": 6,
+      "안진": 7,
       "한영": 19,
-      "로컬": 20,
+      "로컬": 21,
       "기타": 7
     }
   },
@@ -328,6 +328,22 @@
       "field": "기타",
       "status": "open",
       "is_new": false,
+      "title": "French & European Business Group팀 신입/경력직 채용",
+      "company": "삼일PwC",
+      "deadline": "2026-06-26",
+      "posted_date": "",
+      "location": "",
+      "emp_type": "신입, 경력직",
+      "url": "https://www.pwc.com/kr/ko/career/experienced/r260608-1.html",
+      "dday": 8
+    },
+    {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "기타",
+      "status": "open",
+      "is_new": false,
       "title": "총무팀(General Affair) 메일룸 인턴 채용",
       "company": "삼일PwC",
       "deadline": "2026-06-29",
@@ -482,6 +498,22 @@
       "dday": 12
     },
     {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "status": "open",
+      "is_new": true,
+      "title": "신입, 경력직원 채용",
+      "company": "한경회계법인",
+      "deadline": "2026-06-30",
+      "posted_date": "2026-06-14",
+      "location": "서울 송파구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1781429126756",
+      "dday": 12
+    },
+    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "기타",
@@ -544,6 +576,22 @@
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1781684191145",
       "dday": 12
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "딜",
+      "status": "open",
+      "is_new": true,
+      "title": "경영자문부문 RS그룹 NPL 신입 및 경력직",
+      "company": "딜로이트 안진",
+      "deadline": "2026-07-02",
+      "posted_date": "2026-06-15",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5126",
+      "dday": 14
     },
     {
       "source": "kicpa_susup",

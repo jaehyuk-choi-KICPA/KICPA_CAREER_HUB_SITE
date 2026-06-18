@@ -1,9 +1,7 @@
 name: scrape-insights   # 빅펌 인사이트 — 하루 2회(JS 렌더라 Chromium 필요)
 
 on:
-  schedule:
-    - cron: "0 0,12 * * *"   # 매일 00:00·12:00 UTC = 09:00·21:00 KST (cron은 항상 UTC 기준)
-  workflow_dispatch: {}
+  workflow_dispatch: {}    # 수동 전용 — 정기 수집은 외부 핑거→run-all이 담당(cron 중복 제거)
 
 permissions:
   contents: write

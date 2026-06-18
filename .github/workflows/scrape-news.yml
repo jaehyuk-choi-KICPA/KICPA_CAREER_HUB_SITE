@@ -1,9 +1,7 @@
 name: scrape-news   # 기사 — 2시간마다(1주일 지난 기사 자동 제외)
 
 on:
-  schedule:
-    - cron: "0 */2 * * *"   # 2시간마다(업계 기사)
-  workflow_dispatch: {}
+  workflow_dispatch: {}    # 수동 전용 — 정기 수집은 외부 핑거→run-all이 담당(cron 중복 제거)
 
 permissions:
   contents: write

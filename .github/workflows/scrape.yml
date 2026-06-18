@@ -1,9 +1,7 @@
 name: scrape-jobs   # 채용공고 — 30분마다
 
 on:
-  schedule:
-    - cron: "*/30 * * * *"   # 30분마다(채용공고) — 스케줄 드롭을 빈도로 흡수
-  workflow_dispatch: {}
+  workflow_dispatch: {}    # 수동 전용 — 정기 수집은 외부 핑거→run-all이 담당(cron 중복 제거)
   push:
     branches: [main, master]
     paths: ["src/**", "config.yaml", ".github/workflows/scrape.yml"]

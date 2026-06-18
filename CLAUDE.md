@@ -129,11 +129,12 @@ src/
   config.py filters.py state.py util.py http_util.py record.py news.py embeds.py(뉴스 의미군집 — Voyage 임베딩, 키 있을 때만)
   run.py·kakao_pc.py·messenger_bot.js  ← 카톡봇(보류, 유지)
 docs/  index.html app.js style.css  CNAME  +  data/{jobs,news,insights}.json + data/status.json(점검시각)   (GitHub Pages 루트, hbmons.com)
-.github/workflows/  scrape.yml(채용30분) scrape-news.yml(2h) scrape-insights.yml(일2회) canary.yml(양식감시 — **수동 전용**, cron 없음·하루1회 직접 실행) freshness.yml(신선도 매시간) sitecheck.yml(종단점검 3h) run-all.yml(외부핑거 통합실행)
+.github/workflows/  scrape.yml·scrape-news.yml·scrape-insights.yml(수집 — **cron 제거·수동 전용**, 정기 수집은 외부핑거→run-all이 전담) canary.yml(양식감시 — **수동 전용**, cron 없음·하루1회 직접 실행) freshness.yml(신선도 매시간 — 외부핑거 죽음 감지 감시견) sitecheck.yml(종단점검 3h) run-all.yml(외부핑거 통합실행=정기 수집 주경로)
 ```
 > **GitHub cron은 무료·public에서 자주 드롭됨**(실측: 예약 실행이 거의 안 뜸). 안정적 주기 실행은 **외부 핑거
 > (cron-job.org, 30분 간격)**가 `repository_dispatch{event_type:run-all}`로 `run-all.yml`을 호출 →
-> 채용+기사+인사이트 일괄. cron 워크플로들은 보조로 유지.
+> 채용+기사+인사이트 일괄. **수집 cron(scrape·scrape-news·scrape-insights)은 외부핑거와 중복이라 제거(수동 전용).**
+> 모니터링 cron(freshness 매시간·sitecheck 3h)은 유지 — 특히 freshness가 **외부핑거가 죽으면 데이터 신선도로 감지**.
 > **외부 핑거 설정 요약**: cron-job.org → POST `https://api.github.com/repos/jaehyuk-choi-KICPA/KICPA_CAREER_HUB_SITE/dispatches`
 > Headers: `Accept: application/vnd.github+json` · `Authorization: Bearer <PAT(Contents+Actions R/W)>` ·
 > `X-GitHub-Api-Version: 2022-11-28` · `Content-Type: application/json` / Body: `{"event_type":"run-all"}`

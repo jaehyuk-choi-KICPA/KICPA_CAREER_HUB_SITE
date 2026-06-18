@@ -19,7 +19,7 @@ runtime:
 filters:
   exclude_keywords: ["경력", "시니어", "senior", "매니저", "manager", "파트너", "partner"]
   # 아래 단어가 하나라도 있으면 제외 규칙을 건너뜀(신입/경력 병기 공고를 살림 — 수습 타깃)
-  exclude_exceptions: ["경력무관", "신입", "인턴", "수습", "trainee", "entry"]
+  exclude_exceptions: ["경력무관", "무관", "신입", "인턴", "수습", "trainee", "entry"]
   include_keywords: []   # 비우면 "제외에 안 걸린 공고는 전부 통과"(KICPA 수습 등)
 
 # 게시 메시지 템플릿(파이썬 str.format — {label}{title}{company}{deadline}{url}{posted})

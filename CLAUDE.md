@@ -63,7 +63,8 @@
 - **KICPA CPA보드는 45건=5페이지**(수습보드 17=2p). `max_pages` 상한이 낮으면 조용히 누락 → 8로 상향
   (어댑터가 빈 페이지서 자동중단). **카나리아 카운트가 10의 배수에 딱 걸리면 페이지 상한 의심.**
 - **채용 직무 미매칭**: 로컬 회계법인 공고는 `audit_default_firms`로 **'감사' 디폴트**(수습≈감사). Big4·기타는 기타 유지.
-  경력 누출은 제목 기반 `hard_exclude_keywords`(본문 예외 무시)로 차단.
+  경력 누출은 제목 기반 `hard_exclude_keywords`로 차단하되, **제목에 신입/수습/경력무관/무관/인턴이 병기되면 유지**
+  (신입·경력 동시모집 이중타깃 보존 — hard-exclude는 제목 한정 예외 검사. `filters.passes`). 순수 경력 제목만 제외.
 - **기사 4분류**(채용·시험←회계업계 / 감사←제도·규제 / 딜·M&A / 세무). 저빈도·고관련 카테고리는
   `news_recent_days_by_category`로 보존기간 길게(채용 45·딜 21). 넓은 OR 쿼리 노이즈는 `news_require_any`
   도메인어 게이트로, 매체만 다른 동일 헤드라인은 **제목 정규화 dedup**으로 제거. config 순서=dedup 선점 순서.
@@ -90,6 +91,15 @@
   `news_keep_markers`(한국·미국·국제공통=국제/글로벌/OECD/IFRS/국세청 등). 제목 국가명 **또는** 외국매체이고
   keep 마커가 하나도 없으면 제외. **딜·M&A는 적용 안 함**(해외 인수 등 한국 관련성). 미국은 유지(keep 마커 포함).
   ⚠️ 외국 기사는 제목이 번역돼 국가명이 안 보일 수 있음 → **출처(source_label) 점검이 핵심**(예: Vietnam.vn).
+- **카나리아는 큐레이션 의도-인지여야 한다**: 카나리아가 라이브 페이지의 *모든* 공고를 세어 스크래퍼(필터된)
+  카운트와 비교하면 **우리가 의도적으로 경력을 거르는 걸 몰라 상시 거짓 '누락 의심'**이 뜬다. 해결: `canary._project_context(cfg)`
+  가 `filters`의 제외/예외 키워드를 디제스트한 **의도 문자열**을 `_vision_check`(공고 전부→**신입 지원가능분만** 카운트)·
+  `_suggest_fix`에 주입 → '신입/수습 관점'으로 판정. 출력물 의도 점검 가드도 카나리아에 둠:
+  `_check_insight_order`(신규 인사이트가 상단 아님)·`_check_filter_leakage`(경력 전용 공고 누출). 결정론·LLM 불필요.
+  카나리아 워크플로는 **수동 전용**(cron 없음 — 하루 1회 직접 실행).
+- **인사이트는 그날 신규를 상단으로**: 관련성 정렬에 신규가 묻혀 직관성이 떨어짐 → `export.build_insights`가
+  `_mark_insight_new` 이후 `is_new` 우선 **stable sort**로 그날 신규를 최상단 부상(그룹 내 관련성 순서 보존).
+  프론트는 JSON 순서대로 렌더 + `is_new`→`today-dot` 표시(JS 무변경).
 
 ## 구조
 ```
@@ -102,7 +112,7 @@ src/
   config.py filters.py state.py util.py http_util.py record.py news.py
   run.py·kakao_pc.py·messenger_bot.js  ← 카톡봇(보류, 유지)
 docs/  index.html app.js style.css  CNAME  +  data/{jobs,news,insights}.json + data/status.json(점검시각)   (GitHub Pages 루트, hbmons.com)
-.github/workflows/  scrape.yml(채용30분) scrape-news.yml(2h) scrape-insights.yml(일2회) canary.yml(양식감시 일1회) freshness.yml(신선도 매시간) sitecheck.yml(종단점검 3h) run-all.yml(외부핑거 통합실행)
+.github/workflows/  scrape.yml(채용30분) scrape-news.yml(2h) scrape-insights.yml(일2회) canary.yml(양식감시 — **수동 전용**, cron 없음·하루1회 직접 실행) freshness.yml(신선도 매시간) sitecheck.yml(종단점검 3h) run-all.yml(외부핑거 통합실행)
 ```
 > **GitHub cron은 무료·public에서 자주 드롭됨**(실측: 예약 실행이 거의 안 뜸). 안정적 주기 실행은 **외부 핑거
 > (cron-job.org, 30분 간격)**가 `repository_dispatch{event_type:run-all}`로 `run-all.yml`을 호출 →

@@ -255,6 +255,9 @@ def build_insights(cfg: dict) -> dict:
     rel = [k.lower() for k in cfg["dashboard"].get("insight_relevance_keywords", [])]
     items.sort(key=lambda it: sum(1 for k in rel if k in it["title"].lower()), reverse=True)
     today_count = _mark_insight_new(items)  # 발행일이 없어 first_seen 추적으로 '금일 신규' 판정
+    # 금일 신규(is_new)는 그날만큼은 최상단으로 부상 — 관련성 정렬에 묻혀 직관성 떨어지는 문제 해결.
+    # stable sort라 신규/비신규 각 그룹 내부의 관련성 순서는 보존(마킹 이후에 재정렬해야 is_new를 안다).
+    items.sort(key=lambda it: 0 if it.get("is_new") else 1)
     print(f"  인사이트: {len(items)}건 (발행처 {ok}/{len(adapters)}), 금일 {today_count}")
     return {"generated_at": _dt.datetime.now().isoformat(timespec="seconds"),
             "today_count": today_count, "items": items}

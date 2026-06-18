@@ -57,6 +57,31 @@ class SourceCheck:
         return bool(self.alerts)
 
 
+# ----------------------------------------------------------------------------- 프로젝트 의도
+
+def _project_context(cfg: dict) -> str:
+    """이 사이트의 큐레이션 의도(=무엇을 의도적으로 거르고 남기는가)를 config에서 디제스트한다.
+
+    카나리아 오탐의 근본 원인: 라이브 소스 페이지는 경력 공고까지 *전부* 보이지만, 스크래퍼는
+    의도적으로 신입/수습만 남긴다. 이 컨텍스트를 LLM 프롬프트에 주입해 '원시 총계'가 아니라
+    '신입/수습 관점의 의도된 출력'으로 판정하게 한다(코어 LLM-free 유지 — 여기선 점검용 컨텍스트일 뿐).
+    config가 실행 가능한 권위 출처라 CLAUDE.md 산문 대신 cfg에서 디제스트한다.
+    """
+    f = cfg.get("filters", {})
+    drop = list(dict.fromkeys(  # 순서 보존 dedup
+        list(f.get("exclude_keywords", [])) + list(f.get("hard_exclude_keywords", []))))
+    keep = list(f.get("exclude_exceptions", []))
+    return (
+        "[프로젝트 의도] 이 사이트(회법몬)는 **수습공인회계사·신입** 대상만 큐레이션합니다. "
+        "경력직/시니어/팀장/N년이상 등 명백한 경력 전용 공고는 **의도적으로 제외**하고, "
+        "신입/수습/경력무관/무관/인턴(또는 신입·경력 병기) 공고는 **유지**합니다.\n"
+        f"- 제외(경력) 키워드: {', '.join(drop)}\n"
+        f"- 유지(신입/예외) 키워드: {', '.join(keep)}\n"
+        "따라서 라이브 소스 목록 페이지에는 경력 공고도 함께 보이지만 스크래퍼 수집수는 더 적은 게 **정상**입니다. "
+        "누락 여부는 '신입/수습이 지원 가능한 공고' 기준으로만 판단하세요."
+    )
+
+
 # ----------------------------------------------------------------------------- LLM (선택)
 
 def _anthropic_client():
@@ -70,15 +95,21 @@ def _anthropic_client():
         return None
 
 
-def _vision_check(client, model: str, png_path: str) -> dict | None:
-    """스냅샷을 보고 {visible_postings:int, looks_like_listing:bool, note:str} 반환."""
+def _vision_check(client, model: str, png_path: str, context: str) -> dict | None:
+    """스냅샷을 보고 {entry_visible:int, looks_like_listing:bool, note:str} 반환.
+
+    visible_postings(전부 세기)가 아니라 **신입/수습이 지원 가능한 공고만** 센다(context의 큐레이션 의도 반영).
+    이래야 스크래퍼의 필터된 카운트와 사과-대-사과 비교가 되어 상시 거짓 '누락 의심'이 사라진다.
+    """
     try:
         img = Path(png_path).read_bytes()
         b64 = base64.standard_b64encode(img).decode()
         prompt = (
-            "이 이미지는 한 회계법인/채용 사이트의 '채용공고 목록' 페이지 스크린샷입니다. "
+            context + "\n\n"
+            "이 이미지는 위 사이트가 수집하는 한 회계법인/채용 소스의 '채용공고 목록' 페이지 스크린샷입니다. "
             "다음을 JSON으로만 답하세요(설명 금지): "
-            '{"visible_postings": <화면에 보이는 개별 채용공고 항목 수(정수)>, '
+            '{"entry_visible": <화면에 보이는 공고 중 **신입/수습이 지원 가능한** 항목 수(정수). '
+            "순수 경력직/시니어/팀장/N년이상 공고는 세지 마세요>, "
             '"looks_like_listing": <정상적인 공고 목록 페이지면 true, 오류/점검/빈화면/양식붕괴면 false>, '
             '"note": "<이상점 한 줄, 정상이면 빈 문자열>"}'
         )
@@ -101,18 +132,21 @@ def _vision_check(client, model: str, png_path: str) -> dict | None:
         return None
 
 
-def _suggest_fix(client, model: str, key: str, html: str | None) -> str:
-    """드리프트 난 소스의 어댑터 코드 + 현재 HTML 일부를 주고 수정 *제안*(텍스트)을 받는다."""
+def _suggest_fix(client, model: str, key: str, html: str | None, context: str) -> str:
+    """드리프트 난 소스의 어댑터 코드 + 현재 HTML 일부를 주고 수정 *제안*(텍스트)을 받는다.
+
+    프로젝트 의도(context)를 함께 줘서, 원시 페이지 구조가 아니라 '의도된 큐레이션 출력' 기준으로 진단하게 한다.
+    """
     try:
         src_path = _ADAPTER_FILE.get(key)
         adapter_src = Path(src_path).read_text(encoding="utf-8") if src_path else ""
         snippet = (html or "")[:6000]
         prompt = (
             f"채용 스크래퍼의 '{key}' 어댑터가 0건/누락을 내고 있습니다. 소스 사이트가 HTML 구조를 "
-            "바꿨을 가능성이 큽니다. 아래 [어댑터 코드]와 [현재 페이지 HTML 일부]를 비교해, "
+            "바꿨을 가능성이 큽니다. 아래 [프로젝트 의도]를 전제로 [어댑터 코드]와 [현재 페이지 HTML 일부]를 비교해, "
             "무엇이 깨졌는지 진단하고 **구체적 수정 방향(바뀐 셀렉터/엔드포인트 등)**을 5줄 이내로 제안하세요. "
             "이건 사람이 검토할 *제안*이며, 확실하지 않으면 추정임을 밝히세요.\n\n"
-            f"[어댑터 코드]\n{adapter_src}\n\n[현재 페이지 HTML 일부]\n{snippet}"
+            f"{context}\n\n[어댑터 코드]\n{adapter_src}\n\n[현재 페이지 HTML 일부]\n{snippet}"
         )
         msg = client.messages.create(
             model=model, max_tokens=600,
@@ -142,6 +176,7 @@ def run(cfg: dict) -> list[SourceCheck]:
     client = _anthropic_client() if cc.get("use_llm") else None
     model = cc.get("llm_model", "claude-opus-4-8")
     urls = cc.get("source_urls", {})
+    context = _project_context(cfg)   # LLM에 큐레이션 의도 주입 → '신입 관점' 판정(오탐 제거)
 
     checks: list[SourceCheck] = []
     for res in results:
@@ -162,9 +197,9 @@ def run(cfg: dict) -> list[SourceCheck]:
         # --- 시각 체크(LLM, 키 있을 때만) ---
         if client and key in urls:
             png = render_screenshot(urls[key], f"_canary_{key}.png")
-            vis = _vision_check(client, model, png) if png else None
+            vis = _vision_check(client, model, png, context) if png else None
             if vis:
-                chk.llm_visible = vis.get("visible_postings")
+                chk.llm_visible = vis.get("entry_visible")
                 chk.llm_note = vis.get("note", "") or ""
                 if vis.get("looks_like_listing") is False:
                     chk.alerts.append(f"화면상 정상 목록 아님: {chk.llm_note or '양식 붕괴/오류 의심'}")
@@ -176,9 +211,14 @@ def run(cfg: dict) -> list[SourceCheck]:
 
         # --- 드리프트 시 수정 제안 ---
         if chk.drift and client and key in urls:
-            chk.suggestion = _suggest_fix(client, model, key, render_html(urls[key]))
+            chk.suggestion = _suggest_fix(client, model, key, render_html(urls[key]), context)
 
         checks.append(chk)
+
+    # --- 출력물 의도 점검(소스 수집과 별개, 결정론·LLM 불필요) ---
+    for extra in (_check_insight_order(cfg), _check_filter_leakage(cfg)):
+        if extra:
+            checks.append(extra)
 
     # 오늘 카운트 저장(다음 비교 기준)
     try:
@@ -192,6 +232,71 @@ def run(cfg: dict) -> list[SourceCheck]:
     return checks
 
 
+def _load_data(name: str) -> dict | None:
+    """docs/data/<name>.json 안전 로드 — 없거나 깨지면 None(카나리아 자신은 절대 안 깨짐)."""
+    try:
+        p = Path("docs/data") / name
+        return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def _check_insight_order(cfg: dict) -> SourceCheck | None:
+    """빅펌 인사이트가 '금일 신규 상단' 규칙을 지키는지 결정론 점검(LLM 불필요).
+
+    관련성 정렬에 신규가 묻히면 직관성이 떨어진다 → 비신규 뒤에 신규(is_new)가 오면 위반.
+    """
+    data = _load_data("insights.json")
+    if not data:
+        return None
+    items = data.get("items") or []
+    chk = SourceCheck(key="insights_order", label="빅펌 인사이트 정렬",
+                      count=len(items), prev=None, ok=True)
+    seen_non_new = False
+    buried = 0
+    for it in items:
+        if it.get("is_new"):
+            if seen_non_new:
+                buried += 1
+        else:
+            seen_non_new = True
+    if buried:
+        chk.alerts.append(f"신규 인사이트가 상단에 있지 않음(신규 {buried}건이 비신규 뒤에 위치)")
+        chk.suggestion = ("export.py build_insights에서 _mark_insight_new 이후 "
+                          "`items.sort(key=lambda it: 0 if it.get('is_new') else 1)` (stable) 추가 필요.")
+    return chk
+
+
+def _check_filter_leakage(cfg: dict) -> SourceCheck | None:
+    """경력 전용 공고가 채용 목록에 새어들었는지 결정론 점검(LLM 불필요).
+
+    제목에 hard_exclude_keywords가 있고 exclude_exceptions(신입/수습/경력무관/무관 등)가 하나도 없으면
+    순수 경력 공고가 누출된 것. 이중타깃(신입 병기) 드롭은 jobs.json에 없어 직접 못 보므로 정보성만.
+    """
+    if not cfg.get("canary", {}).get("check_filter_leakage", True):
+        return None
+    data = _load_data("jobs.json")
+    if not data:
+        return None
+    items = data.get("postings") or []   # jobs.json은 'postings' 키
+    f = cfg.get("filters", {})
+    hard = [k.lower() for k in f.get("hard_exclude_keywords", [])]
+    exc = [k.lower() for k in f.get("exclude_exceptions", [])]
+    leaked = []
+    for it in items:
+        title = (it.get("title") or "").lower()
+        if any(h in title for h in hard) and not any(e in title for e in exc):
+            leaked.append(it.get("title", ""))
+    chk = SourceCheck(key="filter_leakage", label="필터 누출(경력 전용 공고)",
+                      count=len(items), prev=None, ok=True)
+    if leaked:
+        sample = "; ".join(leaked[:3])
+        chk.alerts.append(f"경력 전용 공고 {len(leaked)}건 누출 의심 — 예: {sample}")
+        chk.suggestion = ("filters.passes의 hard-exclude 가드 점검 — 제목에 경력 키워드가 있고 신입/예외 "
+                          "병기가 없는 공고가 통과되고 있음. 어댑터 카테고리 단계 누락 가능성도 확인.")
+    return chk
+
+
 def build_report(checks: list[SourceCheck], llm_on: bool) -> str:
     drift = [c for c in checks if c.drift]
     head = "🚨 드리프트 감지" if drift else "✅ 이상 없음"
@@ -199,7 +304,7 @@ def build_report(checks: list[SourceCheck], llm_on: bool) -> str:
         f"# 카나리아 자기검증 리포트 — {head}",
         f"_{_dt.datetime.now():%Y-%m-%d %H:%M} · 시각점검(LLM): {'ON' if llm_on else 'OFF(키 없음·구조체크만)'}_",
         "",
-        "| 소스 | 수집 | 어제 | 화면(LLM) | 상태 |",
+        "| 소스 | 수집 | 어제 | 화면-신입(LLM) | 상태 |",
         "|---|---:|---:|---:|---|",
     ]
     for c in checks:

@@ -20,7 +20,7 @@ _DEFAULTS: dict = {
     },
     "filters": {
         "exclude_keywords": ["경력", "시니어", "senior", "매니저", "manager", "파트너", "partner"],
-        "exclude_exceptions": ["경력무관", "신입", "인턴", "수습", "trainee", "entry"],
+        "exclude_exceptions": ["경력무관", "무관", "신입", "인턴", "수습", "trainee", "entry"],
         # 강한 제외(제목에 있으면 본문 예외 무시) — 제목이 명백히 경력 대상인 공고
         "hard_exclude_keywords": ["경력직", "시니어", "senior", "수석", "팀장", "년 이상", "년이상"],
         "include_keywords": [],
@@ -183,6 +183,7 @@ _DEFAULTS: dict = {
         "use_llm": True,         # 키 없으면 자동 비활성(구조 체크만)
         "llm_model": "claude-opus-4-8",
         "missing_ratio": 1.5,    # LLM이 본 공고수가 스크래퍼의 이 배↑면 누락 의심
+        "check_filter_leakage": True,   # 채용 목록에 경력 전용 공고 누출 결정론 점검(jobs.json)
         # 소스 키 → 시각 점검할 '목록 페이지' URL (about 탭의 원문 출처와 동일)
         "source_urls": {
             "kicpa_susup": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/list.face",

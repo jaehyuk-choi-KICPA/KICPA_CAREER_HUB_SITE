@@ -20,6 +20,30 @@
 
 ---
 
+## 2026-06-18 — 카나리아 의도-인지화 + 인사이트 신규 상단 + 신입·경력 이중타깃 보존
+
+- **증상/계기:** 카나리아 지적이 전부 틀림. 원인은 카나리아 시각점검이 라이브 소스 페이지의 *모든* 공고를
+  세어 스크래퍼 카운트와 비교 → 우리가 의도적으로 경력 공고를 거르는 걸 몰라 상시 거짓 '누락 의심'. 또
+  ① 신입·경력 동시모집 공고가 제목의 '경력직/년 이상' 한 단어 때문에 통째로 탈락(이중타깃 유실),
+  ② 빅펌 인사이트가 관련성 정렬에 묻혀 그날 신규가 중간에 위치(직관성 저하).
+- **무엇을:** (a) 카나리아 LLM 프롬프트에 **큐레이션 의도**를 주입해 '신입/수습 관점'으로 판정,
+  (b) hard-exclude가 제목에 신입/수습/경력무관/무관/인턴이 병기되면 살리도록, (c) 인사이트 신규를 그날 상단 부상,
+  (d) 카나리아에 출력물 의도 점검 가드 2종 추가.
+- **어디에 얹었나(플로우):**
+  - `canary._project_context(cfg)` 신설 — `filters`의 제외/예외 키워드를 디제스트해 의도 문자열 생성 →
+    `_vision_check`(visible_postings→**entry_visible**, 신입 지원가능 공고만 카운트)·`_suggest_fix`에 주입,
+    `run`에서 1회 계산해 전달(코어 LLM-free 유지, 점검용 컨텍스트일 뿐).
+  - `filters.passes`(28-30) hard-exclude 가드를 `... and not any(exc in title for exc in exceptions)`로 —
+    제목 한정 예외 검사(본문만의 신입은 순수 경력 제목을 못 구제). `exclude_exceptions`에 `"무관"` 추가(config.py+config.yaml).
+  - `export.build_insights`에서 `_mark_insight_new` **이후** `items.sort(key=lambda it: 0 if it.get('is_new') else 1)`
+    (stable — 그룹 내 관련성 순서 보존). 프론트는 JSON 순서대로 렌더하므로 JS 변경 불필요.
+  - `canary._check_insight_order`(insights.json: 비신규 뒤 신규 위반 감지) +
+    `canary._check_filter_leakage`(jobs.json: 제목에 hard 키워드 있고 예외 없는 순수 경력 누출 감지) →
+    `run`이 소스 루프 후 append, 기존 리포트·drift·Draft PR 경로에 자동 합류. 토글 `canary.check_filter_leakage`.
+- **효과/검증:** `filters.passes` 6케이스 ALL PASS(이중타깃 유지·순수 경력 제외 확인). 결정론 가드 2종을 실제
+  `docs/data/*.json`로 실행 — 인사이트 48건 정렬 위반 0, jobs 63건 누출 0(정상). 전 파일 `py_compile` OK.
+  ※ 카나리아 워크플로는 **cron 제거·수동 전용**(workflow_dispatch)으로 전환 — 하루 1회 직접 실행.
+
 ## 2026-06-18 — 공고 '깜빡임' 방지: 지속성(grace) 레이어
 
 - **증상/계기:** 기술보증기금 공고가 화면에서 사라졌다 나타났다 반복. 추적해 보니 KICPA가 *살아있는* 공고를

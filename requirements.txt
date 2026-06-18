@@ -6,6 +6,8 @@ PyYAML>=6.0
 playwright>=1.40
 # 자기검증 카나리아의 하루 1회 시각점검(Claude vision). 키 없으면 미사용(구조체크만)
 anthropic>=0.40
+# 뉴스 의미 군집(임베딩) — VOYAGE_API_KEY 있을 때만 사용(없으면 어휘 군집만, 가벼운 HTTP 클라이언트)
+voyageai>=0.2
 # 카톡 PC 게시(보류 기능) — Windows 전용이라 리눅스에선 자동 스킵
 pywinauto>=0.6.9 ; sys_platform == "win32"
 pyperclip>=1.8 ; sys_platform == "win32"

@@ -12,6 +12,7 @@ import json
 import re
 from pathlib import Path
 
+from src import embeds
 from src.adapters.base import safe_fetch
 from src.adapters.insights import build_insight_adapters
 from src.adapters.news_rss import build_news_adapters
@@ -203,6 +204,7 @@ def build_news(cfg: dict) -> dict:
     before = len(items)
     items = _dedup_near(items, d.get("news_neardup_jaccard", 0.6),
                         d.get("news_neardup_overlap", 0.67), d.get("news_neardup_min_tokens", 4))
+    items = embeds.refine(items, _title_sig, cfg)  # 의미 군집 보조(VOYAGE 키 있을 때만, 의심 쌍에 한해)
     cap = d.get("news_max_per_day_per_cat", 0)
     if cap:                                  # 한 사건이 하루치 카테고리를 도배하지 않게 (카테고리,발행일)별 상한
         bucket: dict = {}

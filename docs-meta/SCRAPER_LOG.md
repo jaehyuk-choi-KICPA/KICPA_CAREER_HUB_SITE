@@ -20,6 +20,22 @@
 
 ---
 
+## 2026-06-18 — 의미 군집(임베딩) 2단계 — 어휘로 못 묶는 같은 사건 보조 병합(Voyage, 게이트)
+
+- **증상/계기:** 어휘(Jaccard·포함도) 군집은 '발전공기업 통합' 5건처럼 같은 사건을 매체마다 다른 표현으로 쓴
+  헤드라인을 못 묶음(어휘 겹침이 낮음). 의미 군집엔 임베딩이 정석.
+- **무엇을:** 1단계 어휘 군집 뒤 **2단계 임베딩 보조 병합**을 추가. 단 **'걸릴 때만'** — 어휘로 안 묶였지만
+  같은 카테고리+공통 핵심토큰 ≥N인 **의심 쌍이 있을 때만** Voyage 임베딩을 호출하고, 코사인 ≥ 임계면 병합.
+- **어디에 얹었나(플로우):** `src/embeds.py` 신설(`refine`) — VOYAGE_API_KEY 있을 때만 작동(없으면 no-op
+  =어휘 군집만, 오프라인·무키 보장 유지). `export.build_news`가 `_dedup_near`(어휘) 직후 `embeds.refine(items, _title_sig, cfg)`
+  호출. URL→벡터는 `news_vectors.json`에 캐시(새 기사만 임베딩 → 비용·시간 최소, run-all·scrape-news가 커밋).
+  config(`dashboard`): `news_embed_enabled`·`news_embed_model`(voyage-3.5-lite)·`news_embed_threshold`(0.82)·
+  `news_embed_candidate_min_tokens`(1)·`news_embed_cache_path`. requirements에 `voyageai`, 워크플로에 `VOYAGE_API_KEY` secret.
+- **효과/검증:** fake client 단위검증 — 발전공기업 2건 병합(대표+dupe), 무관·타카테고리는 미병합. 키/패키지 없는
+  로컬은 어휘만으로 동일 결과(폴백 무결성). 모든 외부호출 try/except(임베딩 깨져도 어휘 결과 반환).
+  ⚠️ **비용:** 제목 짧고+캐시+의심쌍 한정이라 월 센트 단위(대개 free tier). 진짜 트레이드오프는 비용이 아니라
+  '코어 생성 경로에 외부 의존성 추가' — 키 없으면 자동 폴백으로 흡수.
+
 ## 2026-06-18 — 중복 기사 '버리기→묶기'(군집화) + 같은 사건 보조 매칭
 
 - **증상/계기:** 딜·M&A 등에서 같은 사건을 매체별로 다른 표현으로 쓴 헤드라인이 여러 건 노출(도배). 기존

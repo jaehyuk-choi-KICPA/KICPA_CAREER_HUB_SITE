@@ -92,6 +92,12 @@ _DEFAULTS: dict = {
         "news_neardup_jaccard": 0.6,  # 제목 단어집합 Jaccard 이 값↑이면 같은 이슈로 군집화(최신 대표, 나머지는 dupes)
         "news_neardup_overlap": 0.67,   # 보조: 포함도(겹침/작은쪽) 이 값↑ + 공통토큰 하한 충족 시 같은 사건(다른 표현)으로 군집
         "news_neardup_min_tokens": 4,   # 보조 군집의 공통 핵심토큰 최소 개수(오병합 방지 하한)
+        # 의미 군집(임베딩) — 어휘로 못 묶는 같은 사건(다른 표현)을 보조 병합. VOYAGE_API_KEY 있을 때만 작동(없으면 어휘만=폴백).
+        "news_embed_enabled": True,
+        "news_embed_model": "voyage-3.5-lite",   # 경량·다국어·저비용
+        "news_embed_threshold": 0.82,            # 코사인 이 값↑이면 같은 사건으로 병합(보수적·오병합 방지)
+        "news_embed_candidate_min_tokens": 1,    # '걸릴 때만': 같은 카테고리+공통토큰 이 수↑인 의심 쌍만 임베딩 호출
+        "news_embed_cache_path": "news_vectors.json",  # URL→벡터 캐시(새 기사만 임베딩 → 비용·시간 최소)
         "news_max_per_day_per_cat": 8,  # 같은 (카테고리,발행일) 최대 N건 — 한 사건이 매체별로 도배하는 것 방지
         # 외국(미국 제외) 세무·감사 이슈 차단 — 제목에 외국명이 있고 한국/미국/국제 마커가 하나도 없으면 제외.
         # (세무·감사에만 적용; 딜·M&A는 해외 인수 등 한국 독자 관련성이 있어 제외 안 함)

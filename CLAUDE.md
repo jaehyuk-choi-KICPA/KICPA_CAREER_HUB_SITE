@@ -20,6 +20,9 @@
 - **규칙 기반(LLM·MCP 미사용)**: 분류·필터·큐레이션 전부 키워드 규칙(`config.py`의 `dashboard`). 하드코딩 금지.
   - **유일한 예외**: 아래 "자기검증 카나리아"의 **하루 1회 시각 점검**에서만 Claude API 사용. **코어 데이터 파이프라인
     (수집·분류·필터·생성)은 LLM-free 유지** — 카나리아는 프로덕션 데이터를 절대 쓰지 않는 별도(out-of-band) 감시일 뿐.
+  - **게이트된 예외(임베딩)**: 뉴스 의미 군집 2단계(`src/embeds.py`)는 **생성 LLM이 아닌 결정론적 벡터 유사도**로,
+    같은 사건 중복을 묶는 데만 쓴다. **`VOYAGE_API_KEY` 있을 때만**(없으면 어휘 군집 폴백=오프라인 유지), 어휘로
+    애매한 의심 쌍에 한해 호출. 큐레이션 규칙 자체는 여전히 키워드 기반.
 - **견고성=전체실패 금지**: 모든 어댑터 호출 `base.safe_fetch`로 감쌈(한 소스 깨져도 나머지 출력).
 - **자기검증 카나리아 (`src/canary.py`, 하루 1회)** — 스크래퍼의 숙명적 약점(소스가 HTML을 바꾸면 조용히 0건·누락)을
   매일 감시. **감지·진단·알림은 자동, 코드 수정은 사람 게이트**(LLM은 *제안*만, 회계사가 확정 — 자율 에이전트 금지·
@@ -74,6 +77,9 @@
   (거의동일) **또는** 2차 `news_neardup_overlap`(포함도)+`news_neardup_min_tokens`(공통토큰 하한, 오병합 방지)로
   같은 사건·다른 표현도 일부 포착. **과병합보다 안전 우선(보수적 하한)** — 같은 사건이 여러 묶음으로 남을 순
   있어도 서로 다른 주제는 안 합침. 추가로 **`news_max_per_day_per_cat`**(대표 기준 (카테고리,발행일) 상한)도 유지.
+  **2단계 의미 군집(임베딩, `src/embeds.py`)**: 어휘로 못 묶는 같은 사건(다른 표현)을 보조 병합. **`VOYAGE_API_KEY`
+  있을 때만** 작동(없으면 어휘만=폴백, 오프라인 유지). **'걸릴 때만'** — 어휘 미병합 + 같은 카테고리+공통토큰 ≥N인
+  **의심 쌍에 한해** 임베딩 호출(코사인 ≥ `news_embed_threshold` 병합). URL→벡터는 `news_vectors.json` 캐시(새 기사만).
 - **링크 점검**: 스트림별 샘플 HTTP. 단 뉴스는 `news.google.com/rss/...` redirect라 200=Google 도달일 뿐(실기사 아님).
 - **기사 수량 레버**(58→116 실측, 종합 7.9→8.9): 안전=`news_per_category`(20→50)→풀린 뒤엔 **`news_recent_days`(→21)**가
   주 레버(세무·감사 건수가 limit 미만이면 recency가 한계). **위험=쿼리 확장**(앞순위 넓히면 dedup 선점으로 뒷순위 잠식,
@@ -120,7 +126,7 @@ src/
   canary.py(자기검증 카나리아 — 양식변경/누락 감지, 드리프트 시 Draft PR)
   freshness.py(신선도 모니터 — 데이터가 낡았는지=스케줄 드롭 감지, STALE 시 Draft PR)
   sitecheck.py(라이브 종단 e2e — 배포된 화면이 의도대로 보이는지, 실패 시 GitHub 이슈)
-  config.py filters.py state.py util.py http_util.py record.py news.py
+  config.py filters.py state.py util.py http_util.py record.py news.py embeds.py(뉴스 의미군집 — Voyage 임베딩, 키 있을 때만)
   run.py·kakao_pc.py·messenger_bot.js  ← 카톡봇(보류, 유지)
 docs/  index.html app.js style.css  CNAME  +  data/{jobs,news,insights}.json + data/status.json(점검시각)   (GitHub Pages 루트, hbmons.com)
 .github/workflows/  scrape.yml(채용30분) scrape-news.yml(2h) scrape-insights.yml(일2회) canary.yml(양식감시 — **수동 전용**, cron 없음·하루1회 직접 실행) freshness.yml(신선도 매시간) sitecheck.yml(종단점검 3h) run-all.yml(외부핑거 통합실행)

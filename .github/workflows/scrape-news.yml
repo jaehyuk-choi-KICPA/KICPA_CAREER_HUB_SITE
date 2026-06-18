@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TZ: Asia/Seoul   # 기사 최근(7일) 컷오프를 한국 시간 기준으로
+      VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}   # 뉴스 의미 군집(없으면 어휘 군집만)
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"   # Node20 deprecation 경고 제거
     steps:
       - uses: actions/checkout@v4
@@ -27,7 +28,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/data/news.json docs/data/status.json
+          git add docs/data/news.json docs/data/status.json news_vectors.json
           if git diff --staged --quiet; then echo "변경 없음"; else
             git commit -m "auto: 기사 갱신"
             git pull --rebase --autostash origin "${{ github.ref_name }}"

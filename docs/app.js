@@ -183,8 +183,13 @@ function todayItem(it) {
   return el("div", { class:"today-item" }, [row1, t]);
 }
 function renderToday(genStamp) {
+  // 최근 2일(어제·오늘) 게시 공고 — 자정 지나면 창이 하루씩 이동(18일이면 17·18, 19일이면 18·19).
+  // 기준일은 데이터 생성일(genStamp). UTC로 날짜 계산해 로컬 타임존에 따른 off-by-one 방지.
   const today = (genStamp || "").slice(0, 10);
-  const items = JOBS.filter((it) => it.status !== "closed" && it.posted_date && it.posted_date === today);
+  const dt = new Date(today + "T00:00:00Z");
+  dt.setUTCDate(dt.getUTCDate() - 1);
+  const since = dt.toISOString().slice(0, 10);   // 어제
+  const items = JOBS.filter((it) => it.status !== "closed" && it.posted_date && it.posted_date >= since);
   $("today-count").textContent = String(items.length);
   $("today-empty").hidden = items.length > 0;
   $("today-list").replaceChildren(...items.slice(0, 12).map(todayItem));

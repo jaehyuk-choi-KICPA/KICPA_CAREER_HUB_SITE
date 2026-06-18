@@ -263,6 +263,40 @@ def build_insights(cfg: dict) -> dict:
             "today_count": today_count, "items": items}
 
 
+_EN_MONTHS = {
+    "jan": 1, "january": 1, "feb": 2, "february": 2, "mar": 3, "march": 3,
+    "apr": 4, "april": 4, "may": 5, "jun": 6, "june": 6, "jul": 7, "july": 7,
+    "aug": 8, "august": 8, "sep": 9, "sept": 9, "september": 9, "oct": 10, "october": 10,
+    "nov": 11, "november": 11, "dec": 12, "december": 12,
+}
+_RE_EN_MONTH = re.compile(
+    r"\b(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|"
+    r"aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\.?\s+(20\d{2})", re.I)
+_RE_KO_YM = re.compile(r"(20\d{2})\s*년\s*(\d{1,2})\s*월")
+_RE_NUM_YM = re.compile(r"\b(20\d{2})[.\-/](\d{1,2})\b")
+
+
+def _other_month_only(title: str, cur_ym: tuple[int, int]) -> bool:
+    """제목에 '연-월'이 명시돼 있고, 그중 **이번 달이 하나도 없으면** True(금일 후보에서 제외).
+
+    최소 안전장치: 발행월을 알 수 있는 간행물(예: '2026.05', '2026년 5월호', 'May 2026')이 지난 달 것이면
+    '금일'에 뜨지 않게 한다. 월 표기가 없으면 판단 보류(False) → 기존 first_seen 로직을 그대로 따른다.
+    제목에 이번 달이 한 번이라도 언급되면(예: 본문에 과거 날짜가 섞여도) 최신으로 인정해 오탐을 줄인다.
+    """
+    t = title or ""
+    found: list[tuple[int, int]] = []
+    for m in _RE_EN_MONTH.finditer(t):
+        mon = _EN_MONTHS.get(m.group(1).lower().rstrip("."))
+        if mon:
+            found.append((int(m.group(2)), mon))
+    for rx in (_RE_KO_YM, _RE_NUM_YM):
+        for m in rx.finditer(t):
+            yr, mon = int(m.group(1)), int(m.group(2))
+            if 1 <= mon <= 12:
+                found.append((yr, mon))
+    return bool(found) and cur_ym not in found
+
+
 def _mark_insight_new(items: list[dict]) -> int:
     """각 인사이트에 is_new(오늘 최초 발견) 부여하고 금일 신규수 반환. insights_seen.json에 first_seen 영속.
 
@@ -279,15 +313,18 @@ def _mark_insight_new(items: list[dict]) -> int:
         state = json.loads(seen_path.read_text(encoding="utf-8")) if not baseline else {}
     except Exception:  # noqa: BLE001
         state = {}
-    today = _dt.date.today().isoformat()
+    _td = _dt.date.today()
+    today = _td.isoformat()
+    cur_ym = (_td.year, _td.month)
     # baseline(최초 1회)의 기존 목록은 '과거'(어제)로 백필 → 같은 날 다음 실행에서 전량 신규로 오인되지 않게.
-    backfill = (_dt.date.today() - _dt.timedelta(days=1)).isoformat()
+    backfill = (_td - _dt.timedelta(days=1)).isoformat()
     cnt = 0
     for it in items:
         u = it["url"]
         if u not in state:
             state[u] = backfill if baseline else today
-        it["is_new"] = state[u] == today
+        # '금일' = 오늘 최초 발견. 단 제목에 발행월이 명시돼 있고 이번 달이 아니면 금일에서 제외(최소 안전장치).
+        it["is_new"] = state[u] == today and not _other_month_only(it["title"], cur_ym)
         if it["is_new"]:
             cnt += 1
     # 현재 목록에 없는 항목도 first_seen을 **보존**한다. 법인별 상한(~12건) 경계에서 새 글이 올라오면

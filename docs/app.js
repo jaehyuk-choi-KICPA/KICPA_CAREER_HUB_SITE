@@ -2,6 +2,7 @@
 
 const FIRM_ORDER = ["삼일", "삼정", "안진", "한영", "로컬", "기타"];
 const FIRM_COLOR = { 삼일:"#d9692a", 삼정:"#1a6fb5", 안진:"#2e8b57", 한영:"#b59312", 로컬:"#6b7684", 기타:"#8a94a6" };
+const FIRM_FULL = { 삼일:"삼일PwC", 삼정:"삼정KPMG", 안진:"Deloitte안진", 한영:"EY한영", 로컬:"로컬", 기타:"기타" };  // 인사이트와 동일 풀네임
 const FIELD_ORDER = ["감사", "택스", "딜", "기타"];        // 채용 직무 필터 순서(기사와 일관: 감사·택스·딜)
 const NEWS_CAT_ORDER = ["채용·시험", "감사", "세무", "딜·M&A"];  // 기사 카테고리 필터 순서(감사·세무(택스)·딜 일관)
 
@@ -131,7 +132,7 @@ function jobCard(it) {
   const dd = ddayInfo(it);
   // 좌측=법인·직무 / 우측=상태표시(NEW·D-day) 통일 배치
   const left = el("div", { class:"top-left" }, [
-    el("span", { class:"badge", style:`background:${FIRM_COLOR[it.firm]||"#6b7684"}`, text:it.firm }),
+    el("span", { class:"firm-tag", style:`color:${FIRM_COLOR[it.firm]||"#6b7684"}`, text:FIRM_FULL[it.firm]||it.firm }),
     el("span", { class:"tag", text:it.field }),
   ]);
   const right = el("div", { class:"top-right" }, [
@@ -209,7 +210,7 @@ function todayItem(it, isOld) {
   const dd = ddayInfo(it);
   const row1 = el("div", { class:"row1" }, [
     el("span", { class:"dot", style:`background:${FIRM_COLOR[it.firm]||"#6b7684"}` }),
-    el("span", { class:"firm", text:it.firm }),
+    el("span", { class:"firm", text:FIRM_FULL[it.firm]||it.firm }),   // 풀네임, 글자색은 기본(점만 색)
     el("span", { class:"dday " + dd.c, text:dd.t }),
   ]);
   const t = el("div", { class:"t" }, [el("a", { href:it.url, target:"_blank", rel:"noopener", text:it.title })]);
@@ -223,12 +224,13 @@ function renderToday(genStamp) {
   const dt = new Date(today + "T00:00:00Z");
   dt.setUTCDate(dt.getUTCDate() - 1);
   const since = dt.toISOString().slice(0, 10);   // 어제
-  const items = JOBS.filter((it) => it.status !== "closed" && it.posted_date && it.posted_date >= since)
-    .sort((a, b) => (b.posted_date || "").localeCompare(a.posted_date || ""));   // 최신 게시일이 위로
+  const items = JOBS.filter((it) => it.status !== "closed" && it.posted_date && it.posted_date >= since);
+  // '올라온 순' = 발견시각(first_seen) 최신순 — 같은 게시일이라도 방금 잡힌 공고가 위로(게시일은 날짜뿐이라 타이).
+  items.sort((a, b) => (b.first_seen || b.posted_date || "").localeCompare(a.first_seen || a.posted_date || ""));
   $("today-count").textContent = String(items.length);
   $("today-empty").hidden = items.length > 0;
-  // 정렬은 최신순(제목 '(최신순)'으로 안내). 가장 최근 게시일과 다른(=어제) 공고는 흐리게.
-  const maxDate = items.length ? items[0].posted_date : "";
+  // 가장 최근 게시일이 아닌(=어제) 공고는 흐리게(게시일 기준).
+  const maxDate = items.reduce((m, it) => (it.posted_date > m ? it.posted_date : m), "");
   $("today-list").replaceChildren(...items.slice(0, 12).map((it) =>
     todayItem(it, it.posted_date !== maxDate)));
 }
@@ -335,25 +337,46 @@ function newsCard(it) {
   return el("article", { class:"card" }, kids);
 }
 
-// 인사이트 카드: 공통 '인사이트' 태그 제거, 발행 법인을 법인색 태그로 표시
-const INSIGHT_FIRM = { "삼일PwC":"삼일", "삼정KPMG":"삼정", "딜로이트안진":"안진", "EY한영":"한영" };
-function insightCard(it) {
-  const firm = INSIGHT_FIRM[it.source_label];
-  const color = (firm && FIRM_COLOR[firm]) || "#667085";
-  const left = el("div", { class:"top-left" }, [
-    el("span", { class:"tag cat", style:`background:${color}`, text: it.source_label || it.source || "인사이트" }),
+// 인사이트: 법인별 4박스(삼일·삼정·안진·한영). 박스마다 로드 시 랜덤 추천 1편 + 펼치기(최신순) 전체 목록.
+const INSIGHT_FIRM = { "삼일PwC":"삼일", "삼정KPMG":"삼정", "Deloitte안진":"안진", "EY한영":"한영" };
+const INSIGHT_ORDER = ["삼일PwC", "삼정KPMG", "Deloitte안진", "EY한영"];
+
+function firmBox(label, list) {
+  const color = FIRM_COLOR[INSIGHT_FIRM[label]] || "#667085";
+  const head = el("div", { class:"firm-head" }, [
+    el("span", { class:"firm-name", style:`color:${color}`, text:label }),
+    el("span", { class:"firm-cap", text:"· 오늘의 추천" }),
   ]);
-  const right = el("div", { class:"top-right" }, [
-    it._today ? el("span", { class:"today-dot", title:"오늘 올라옴" }) : null,
-  ]);
-  const top = el("div", { class:"card-top" }, [left, right]);
-  const title = el("h3", {}, [el("a", { href:it.url, target:"_blank", rel:"noopener", text:it.title })]);
-  const kids = [top, title];
-  if (it.published) kids.push(el("div", { class:"card-meta" }, [el("span", { text:it.published })]));
-  return el("article", { class:"card" }, kids);
+  // 전체 테두리를 법인색 연하게(모던) — 좌측 단색 테두리(채용 NEW)와 양식이 달라 혼동 없음
+  const box = el("article", { class:"insight-firm", style:`border-color:${color}59` }, [head]);
+  if (!list.length) {
+    box.appendChild(el("div", { class:"firm-empty", text:"불러올 간행물이 아직 없어요." }));
+    return box;
+  }
+  const pick = list[Math.floor(Math.random() * list.length)];   // 로드(새로고침)마다 랜덤
+  box.appendChild(el("div", { class:"firm-pick" },
+    [el("a", { href:pick.url, target:"_blank", rel:"noopener", text:pick.title })]));
+  const lis = list.map((it) => el("li", {},
+    [el("a", { href:it.url, target:"_blank", rel:"noopener", text:it.title })]));
+  box.appendChild(el("details", { class:"firm-more" }, [
+    el("summary", { class:"firm-toggle", text:`펼치기 (최신순) · ${list.length}편` }),
+    el("ul", { class:"firm-list" }, lis),
+  ]));
+  return box;
 }
 
-function initSub(prefix, data, chipRowId, chipKey, fixed, cardFn) {
+function renderInsights(insights) {
+  const items = (insights && insights.items) || [];
+  const grid = $("insights-grid");
+  if (!grid) return;
+  if (!items.length) { $("insights-empty").hidden = false; grid.replaceChildren(); return; }
+  $("insights-empty").hidden = true;
+  const byFirm = {};
+  items.forEach((it) => { (byFirm[it.source_label] = byFirm[it.source_label] || []).push(it); });
+  grid.replaceChildren(...INSIGHT_ORDER.map((label) => firmBox(label, byFirm[label] || [])));
+}
+
+function initSub(prefix, data, chipRowId, chipKey, fixed, cardFn, colors) {
   const renderCard = cardFn || newsCard;
   const items = (data && data.items) || [];
   if (!items.length) { $(prefix+"-empty").hidden = false; return; }
@@ -369,6 +392,7 @@ function initSub(prefix, data, chipRowId, chipKey, fixed, cardFn) {
   const row = $(chipRowId);
   values.forEach((v) => {
     const chip = el("span", { class:"chip", text:v });
+    if (colors && colors[v]) chip.style.color = colors[v];   // 카테고리별 색글씨(박스 대신)
     chip.dataset.v = v;
     chip.addEventListener("click", () => { selected = (selected === v) ? null : v; render(); });
     chips.push(chip);
@@ -388,7 +412,7 @@ function initSub(prefix, data, chipRowId, chipKey, fixed, cardFn) {
   // 로딩 스켈레톤
   $("jobs-list").replaceChildren(...skel(6));
   $("news-list").replaceChildren(...skel(4));
-  $("insights-list").replaceChildren(...skel(4));
+  $("insights-grid").replaceChildren(...skel(4));
 
   const [jobs, news, insights, status] = await Promise.all([
     loadJSON("data/jobs.json"), loadJSON("data/news.json"), loadJSON("data/insights.json"),
@@ -398,10 +422,9 @@ function initSub(prefix, data, chipRowId, chipKey, fixed, cardFn) {
   const stamp = (status && status.last_run) || (jobs && jobs.generated_at) || "";
   $("updated").textContent = stamp ? "최근 업데이트: " + stamp.replace("T", " ") : "데이터 없음";
 
-  // 당일 올라온 항목 표시(_today) — 기사=오늘 발행, 인사이트=오늘 최초발견(is_new)
+  // 당일 발행 기사 표시(_today) — 기사 신규 점/금일수에 사용. (인사이트는 v1.09에서 '금일' 개념 제거.)
   const newsToday = ((news && news.generated_at) || "").slice(0, 10);
   if (news && news.items) news.items.forEach((i) => { i._today = !!i.published && i.published === newsToday; });
-  if (insights && insights.items) insights.items.forEach((i) => { i._today = !!i.is_new; });
 
   // 기사 신규 점: 현재 '오늘 발행' url 집합 → seen 정리(현재분만 보관) + 탭 점 초기화
   if (news && news.items) {
@@ -410,20 +433,16 @@ function initSub(prefix, data, chipRowId, chipKey, fixed, cardFn) {
     updateNewsTabDot();
   }
 
-  // PC 전용 미니 박스: 금일 수 + 클릭 시 탭 이동
+  // PC 전용 미니 박스: 금일 기사 수 + 클릭 시 기사 탭 이동
   const newsN = (news && news.items) ? news.items.filter((i) => i._today).length : 0;
-  const insN = insights ? (insights.today_count != null ? insights.today_count
-    : ((insights.items || []).filter((i) => i._today).length)) : 0;
-  const setMini = (btnId, numId, n, tab) => {
-    const b = $(btnId); if (!b) return;
-    $(numId).textContent = String(n);
-    b.addEventListener("click", () => document.querySelector(`.tab-btn[data-tab="${tab}"]`)?.click());
-  };
-  setMini("mini-news", "mini-news-n", newsN, "news");
-  setMini("mini-insights", "mini-insights-n", insN, "insights");
+  const miniNews = $("mini-news");
+  if (miniNews) {
+    $("mini-news-n").textContent = String(newsN);
+    miniNews.addEventListener("click", () => document.querySelector('.tab-btn[data-tab="news"]')?.click());
+  }
 
   if (jobs) initJobs(jobs);
   else { $("jobs-empty").hidden = false; $("jobs-empty").textContent = "채용 데이터를 불러오지 못했습니다."; }
-  initSub("news", news, "f-newscat", "category", NEWS_CAT_ORDER);
-  initSub("insights", insights, "f-pub", "source_label", null, insightCard);
+  initSub("news", news, "f-newscat", "category", NEWS_CAT_ORDER);   // 색 없이 중립 밑줄 탭
+  renderInsights(insights);
 })();

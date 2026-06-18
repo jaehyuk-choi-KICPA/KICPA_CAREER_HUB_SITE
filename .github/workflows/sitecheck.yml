@@ -41,7 +41,7 @@ jobs:
               echo "→ 회복 시도: 스크랩 재실행 후 배포 대기"
               python -m src.export || true
               git add docs/data/jobs.json docs/data/news.json docs/data/insights.json \
-                      docs/data/status.json insights_seen.json state.json docs/sitemap.xml
+                      docs/data/status.json state.json docs/sitemap.xml
               if ! git diff --staged --quiet; then
                 git commit -m "auto: 셀프힐링 재수집"
                 git pull --rebase --autostash origin "${{ github.ref_name }}"

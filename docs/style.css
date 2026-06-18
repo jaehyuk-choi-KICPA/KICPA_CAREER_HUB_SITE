@@ -36,11 +36,12 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .tagline { font-size:12px; color:var(--muted); }
 .tagline strong { color:var(--ink); }
 .header-right { display:flex; align-items:center; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
-.tabs { display:flex; gap:6px; background:var(--seg-bg); padding:5px; border-radius:12px; }
-.tab-btn { border:0; background:transparent; color:var(--muted); padding:9px 18px; border-radius:9px;
-  font-size:15.5px; font-weight:700; cursor:pointer; transition:all .12s; white-space:nowrap; }
+.tabs { display:flex; gap:18px; background:transparent; padding:0; }   /* 밑줄 탭(채움 X, 텀 둠) */
+.tab-btn { border:0; background:transparent; color:var(--muted); padding:5px 1px; border-radius:0;
+  border-bottom:2.5px solid transparent; font-size:15.5px; font-weight:700; cursor:pointer;
+  transition:all .12s; white-space:nowrap; }
 .tab-btn:hover { color:var(--ink); }
-.tab-btn.on { background:var(--accent); color:#fff; box-shadow:0 2px 8px rgba(27,79,156,.28); }
+.tab-btn.on { color:var(--accent); border-bottom-color:var(--accent); }
 /* 탭 신규 점 — 안 본 새 기사가 있을 때 표시(브라우저별). [hidden]이면 숨김 */
 .tab-btn .tab-new { display:inline-block; width:7px; height:7px; margin-left:5px; border-radius:50%;
   background:#e5484d; vertical-align:middle; }
@@ -112,7 +113,7 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .today-item .firm { font-size:11px; font-weight:700; color:var(--muted); }
 .today-item .dday { margin-left:auto; font-size:11px; font-weight:700; padding:0 6px; border-radius:5px; background:var(--chip-bg); }
 .today-item .dday.soon { background:rgba(214,69,69,.16); color:var(--soon); }
-.today-item .t { font-size:14px; font-weight:600; line-height:1.4; }
+.today-item .t { font-size:13px; font-weight:600; line-height:1.35; }
 .today-item .t a { color:var(--ink); }
 /* 어제(가장 최근 날짜 아님) 공고 — 글씨를 흐리게 해 '조금 지난 것'임을 직관적으로 표시 */
 .today-item.is-old { opacity:.62; }
@@ -122,7 +123,7 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .today-empty { font-size:12.5px; color:var(--muted); padding:8px 0; }
 
 /* 금일 기사/인사이트 미니 박스 — 모바일 포함 전 폭 노출(모바일은 더 작게, PC가 더 크게) */
-.today-mini-row { display:grid; grid-template-columns:1fr 1fr; gap:7px; margin-top:9px; }
+.today-mini-row { display:grid; grid-template-columns:1fr; gap:7px; margin-top:9px; }
 .today-mini { display:flex; flex-direction:column; align-items:flex-start; gap:3px; cursor:pointer;
   background:var(--card); border:1px solid var(--line); border-radius:11px; padding:8px 10px;
   box-shadow:var(--shadow); transition:border-color .12s, box-shadow .12s, transform .12s; font-family:inherit; text-align:left; }
@@ -153,6 +154,7 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .card-top .top-left { display:flex; align-items:center; gap:6px; flex-wrap:wrap; min-width:0; }
 .card-top .top-right { display:flex; align-items:center; gap:6px; margin-left:auto; flex:0 0 auto; }
 .badge { font-size:11px; font-weight:700; padding:2px 9px; border-radius:6px; color:#fff; white-space:nowrap; }
+.firm-tag { font-size:12.5px; font-weight:800; white-space:nowrap; }   /* 채용 카드 법인명 — 색글씨(인라인 색) */
 .badge.new { background:var(--new); }
 .tag { font-size:11px; color:var(--muted); border:1px solid var(--line); border-radius:6px; padding:1px 7px; white-space:nowrap; }
 .tag.cat { font-weight:700; border:0; color:#fff; }
@@ -190,10 +192,39 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .about-card li { margin:5px 0; }
 .about-card p { margin:7px 0; }
 .about-card .src-links a { font-weight:600; }
-.chiprow { display:flex; flex-wrap:wrap; gap:7px; margin-bottom:14px; }
-.chip { border:1px solid var(--line); background:var(--card); border-radius:999px; padding:7px 15px; font-size:14px; font-weight:600; color:var(--muted); cursor:pointer; transition:all .12s; }
-.chip:hover { border-color:#c4ccd8; color:var(--ink); }
-.chip.on { background:var(--accent); border-color:var(--accent); color:#fff; }
+.chiprow { display:flex; flex-wrap:wrap; gap:16px; margin-bottom:14px; }
+/* 카테고리 '구분탭' — 박스 채우지 않고 색글씨 탭(카테고리별 색은 인라인). 선택 시 굵게+밑줄 */
+.chip { border:0; background:transparent; padding:5px 2px; font-size:14.5px; font-weight:600; color:var(--muted);
+  cursor:pointer; border-bottom:2.5px solid transparent; transition:all .12s; }
+.chip:hover { color:var(--ink); }
+.chip.on { color:var(--accent); font-weight:800; border-bottom-color:currentColor; }
+
+/* ===== 인사이트 4박스(법인별) — v1.09 ===== */
+.insights-head { margin-bottom:14px; }
+.insights-title { margin:0 0 4px; font-size:18px; font-weight:800; color:var(--ink); }
+.insights-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; }          /* PC 2×2 */
+.insight-firm { background:var(--card); border:1px solid var(--line);
+  border-radius:12px; padding:13px 15px; box-shadow:var(--shadow); display:flex; flex-direction:column; }
+.insight-firm .firm-head { display:flex; align-items:baseline; gap:6px; margin-bottom:8px; }
+.insight-firm .firm-name { font-size:14px; font-weight:800; }
+.insight-firm .firm-cap { font-size:11.5px; color:var(--muted); }
+.insight-firm .firm-pick a { font-size:15px; font-weight:600; line-height:1.4; color:var(--ink);
+  display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2; overflow:hidden; }
+.insight-firm .firm-pick a:hover { color:var(--accent); }
+.insight-firm .firm-empty { font-size:13px; color:var(--muted); padding:4px 0; }
+/* 펼치기(최신순) — 뉴스 .dupes 패턴 미러 */
+.firm-more { margin-top:10px; display:flex; flex-direction:column; }
+.firm-toggle { align-self:flex-start; width:max-content; cursor:pointer; list-style:none; user-select:none;
+  font-size:12px; font-weight:700; color:var(--accent); padding:2px 9px; border:1px solid var(--line);
+  border-radius:999px; background:var(--chip-bg); }
+.firm-toggle::-webkit-details-marker { display:none; }
+.firm-toggle::after { content:" ▾"; font-size:10px; }
+.firm-more[open] .firm-toggle::after { content:" ▴"; }
+.firm-toggle:hover { border-color:var(--accent); }
+.firm-list { list-style:none; margin:9px 0 0; padding:0; display:flex; flex-direction:column; gap:8px; }
+.firm-list li { font-size:13px; line-height:1.4; }
+.firm-list a { color:var(--ink); }
+.firm-list a:hover { color:var(--accent); text-decoration:underline; }
 
 /* 스켈레톤 */
 .skeleton { background:var(--card); border:1px solid var(--line); border-radius:13px; padding:14px 16px; box-shadow:var(--shadow); }
@@ -222,7 +253,8 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
   /* 검색·필터·정렬 바를 금일 패널/금일 기사·인사이트 아래로 */
   .jobs-layout { grid-template-areas:"today" "controls" "rail" "results"; }
   .today-mini-row { display:none; }                /* 금일 기사·금일 인사이트 미니박스는 PC 전용 */
-  .cards { grid-template-columns:1fr; gap:9px; }   /* 기사·인사이트는 한 줄 */
+  .cards { grid-template-columns:1fr; gap:9px; }   /* 기사는 한 줄 */
+  .insights-grid { grid-template-columns:1fr; }     /* 인사이트 4박스도 모바일은 한 줄(법인별 1행) */
   #jobs-list { grid-template-columns:1fr 1fr; }     /* 채용공고만 2열 유지 */
   .card { padding:12px 13px; gap:6px; }
   .card h3 { font-size:13.5px; }

@@ -108,18 +108,14 @@
   카운트와 비교하면 **우리가 의도적으로 경력을 거르는 걸 몰라 상시 거짓 '누락 의심'**이 뜬다. 해결: `canary._project_context(cfg)`
   가 `filters`의 제외/예외 키워드를 디제스트한 **의도 문자열**을 `_vision_check`(공고 전부→**신입 지원가능분만** 카운트)·
   `_suggest_fix`에 주입 → '신입/수습 관점'으로 판정. 출력물 의도 점검 가드도 카나리아에 둠:
-  `_check_insight_order`(신규 인사이트가 상단 아님)·`_check_filter_leakage`(경력 전용 공고 누출). 결정론·LLM 불필요.
-  카나리아 워크플로는 **수동 전용**(cron 없음 — 하루 1회 직접 실행).
-- **인사이트는 그날 신규를 상단으로**: 관련성 정렬에 신규가 묻혀 직관성이 떨어짐 → `export.build_insights`가
-  `_mark_insight_new` 이후 `is_new` 우선 **stable sort**로 그날 신규를 최상단 부상(그룹 내 관련성 순서 보존).
-  프론트는 JSON 순서대로 렌더 + `is_new`→`today-dot` 표시(JS 무변경).
-- **인사이트 '금일' 오인 = first_seen 보존으로 해결**: 인사이트는 발행일이 없어 `is_new`=*오늘 최초 발견*으로
-  판정(`_mark_insight_new`, `insights_seen.json`). 법인별 상한(~12) 경계에서 새 글이 오면 오래된 글이 목록에서
-  잠시 밀려나는데, 이때 state에서 **삭제하면 재등장 시 신규로 오인**(jobs 깜빡임과 동일). → 현재 목록에 없어도
-  first_seen **보존**(MAX_SEEN 상한 초과 시 부재·오래된 것만 정리). **'금일 인사이트'가 오래된 글로 보이면
-  상한 경계 churn 의심 → 보존 로직 점검.** + **월 파싱 안전장치**(`_other_month_only`): 제목의 발행월
-  (`2026.05`/`2026년 5월호`/`May 2026`)이 이번 달이 아니면 is_new=False(이번 달 언급이 하나라도 있으면 유지=오탐↓,
-  월 미표기는 보류). 과거 newsletter가 오늘 처음 잡혀도 '금일' 안 뜨게.
+  `_check_filter_leakage`(경력 전용 공고 누출). 결정론·LLM 불필요. 카나리아 워크플로는 **수동 전용**(cron 없음).
+- **인사이트는 법인별 4박스(v1.09)**: '금일/신규' 개념은 발행일이 없어 억지 판정→가독성·정확도 낮아 **전면 폐기**
+  (`_mark_insight_new`·`_other_month_only`·`insights_seen.json` 삭제, payload=`{generated_at,items}`만). `build_insights`는
+  **법인별 스크랩 순서(≈최신순) 그대로** 수집만. 프론트(`renderInsights`)가 `source_label`로 **4박스(삼일PwC·삼정KPMG·
+  Deloitte안진·EY한영, PC 2×2/모바일 1열)** 그룹핑 → 박스별 **랜덤 추천 1편**(로드마다) + **펼치기(최신순)** 전체.
+  법인색은 연한 전체 테두리. (어댑터 라벨 `Deloitte안진`.)
+- **'새로 올라온 공고'는 발견시각(first_seen) 최신순**: 게시일은 날짜뿐이라 같은 날 공고가 마감순으로 밀린다 →
+  `build_jobs`가 state의 `first_seen`을 item에 노출, 프론트가 first_seen 내림차순 정렬(방금 올라온 게 위로). 법인은 풀네임.
 
 ## 구조
 ```

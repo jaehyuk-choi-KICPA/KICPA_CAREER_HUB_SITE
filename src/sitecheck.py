@@ -204,10 +204,7 @@ def _plausibility_checks(cfg: dict, data: dict) -> list[Check]:
         return Check(label, True, f"오늘 {today_n}/{total}", recoverable=False)
 
     out: list[Check] = []
-    ins = data.get("insights") or {}
-    c = judge("인사이트 금일수 타당성", ins.get("today_count"), len(ins.get("items") or []))
-    if c:
-        out.append(c)
+    # (v1.09) 인사이트 '금일수' 타당성 체크 제거 — 금일/신규 개념 폐기. 뉴스·채용 금일수는 아래 유지.
     news = data.get("news") or {}
     nitems, nday = news.get("items") or [], (news.get("generated_at") or "")[:10]
     if nitems and nday:

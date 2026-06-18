@@ -20,6 +20,21 @@
 
 ---
 
+## 2026-06-18 — (v1.09) 인사이트 '금일' 폐기·단순화 + 채용 first_seen 노출 + build_news 핫픽스
+
+- **build_news 핫픽스(긴급):** `build_news`가 일자상한 적용 블록·print·`return`을 잃어 **None 반환** → `_write_guarded`에서
+  AttributeError로 전체/뉴스 export('Scrape all' 단계) 크래시(run-all·scrape-news 연속 실패). 일자상한 루프 + return 복원.
+- **인사이트 단순화:** `build_insights`에서 관련성 정렬·`_mark_insight_new`·`today_count`·is_new 정렬 전부 제거. 함수
+  `_mark_insight_new`·`_other_month_only`·`_EN_MONTHS`/월 regex 삭제, `insights_seen.json` 폐기(git rm). 페이로드 =
+  `{generated_at, items}`만, **법인별 스크랩 순서(≈사이트 최신순) 그대로**. 프론트가 source_label로 4박스 그룹핑 →
+  박스별 랜덤 추천 + 펼치기(최신순). 어댑터 라벨 `딜로이트안진`→`Deloitte안진`(영문 prefix 통일).
+- **채용 first_seen 노출:** `build_jobs` item에 `first_seen`(state.entries의 발견시각) 추가 → 프론트 '새로 올라온 공고'가
+  게시일(날짜뿐) 대신 **발견시각 최신순**으로 정렬(같은 날 타이로 방금 올라온 공고가 밀리던 문제 해결).
+- **모니터/워크플로 정리:** canary `_check_insight_order` 제거(is_new 없음), sitecheck '인사이트 금일수 타당성' 체크 제거,
+  scrape-insights·run-all·sitecheck의 git add에서 `insights_seen.json` 제거.
+- **검증:** 무키 news export 정상 반환(이슈 86), insights payload에 today_count/is_new 없음·4법인×12·insights_seen 미생성,
+  헤드리스로 4박스·랜덤·펼치기·새공고 first_seen 정렬(삼정 인턴 최상단) 확인. py_compile 전부 OK.
+
 ## 2026-06-18 — 임베딩 관련성 게이트(#1) + 카테고리 보정(#2) (enrich, 키 있을 때만)
 
 - **증상/계기:** 넓은 OR 쿼리가 키워드 게이트(`news_require_any`)는 통과하지만 의미상 무관한 기사를 통과시키고,

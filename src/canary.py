@@ -216,7 +216,7 @@ def run(cfg: dict) -> list[SourceCheck]:
         checks.append(chk)
 
     # --- 출력물 의도 점검(소스 수집과 별개, 결정론·LLM 불필요) ---
-    for extra in (_check_insight_order(cfg), _check_filter_leakage(cfg)):
+    for extra in (_check_filter_leakage(cfg),):
         if extra:
             checks.append(extra)
 
@@ -239,32 +239,6 @@ def _load_data(name: str) -> dict | None:
         return json.loads(p.read_text(encoding="utf-8")) if p.exists() else None
     except Exception:  # noqa: BLE001
         return None
-
-
-def _check_insight_order(cfg: dict) -> SourceCheck | None:
-    """빅펌 인사이트가 '금일 신규 상단' 규칙을 지키는지 결정론 점검(LLM 불필요).
-
-    관련성 정렬에 신규가 묻히면 직관성이 떨어진다 → 비신규 뒤에 신규(is_new)가 오면 위반.
-    """
-    data = _load_data("insights.json")
-    if not data:
-        return None
-    items = data.get("items") or []
-    chk = SourceCheck(key="insights_order", label="빅펌 인사이트 정렬",
-                      count=len(items), prev=None, ok=True)
-    seen_non_new = False
-    buried = 0
-    for it in items:
-        if it.get("is_new"):
-            if seen_non_new:
-                buried += 1
-        else:
-            seen_non_new = True
-    if buried:
-        chk.alerts.append(f"신규 인사이트가 상단에 있지 않음(신규 {buried}건이 비신규 뒤에 위치)")
-        chk.suggestion = ("export.py build_insights에서 _mark_insight_new 이후 "
-                          "`items.sort(key=lambda it: 0 if it.get('is_new') else 1)` (stable) 추가 필요.")
-    return chk
 
 
 def _check_filter_leakage(cfg: dict) -> SourceCheck | None:

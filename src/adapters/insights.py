@@ -69,7 +69,7 @@ def build_insight_adapters(cfg: dict) -> list[Adapter]:
                          "https://kpmg.com/kr/ko/insights.html",
                          "https://kpmg.com",
                          r"/kr/ko/insights/[^/]+/[^/?#]+"),
-        JSInsightAdapter("insight_anjin", "딜로이트안진",
+        JSInsightAdapter("insight_anjin", "Deloitte안진",
                          "https://www.deloitte.com/kr/ko/our-thinking/deloitte-insights.html",
                          "https://www.deloitte.com",
                          # 실제 발간물은 /our-thinking/ 이 아니라 산업·서비스 하위 perspectives|research|analysis leaf

@@ -102,6 +102,8 @@ def build_jobs(cfg: dict, state: State) -> dict:
                 "emp_type": p.emp_type or p.category,  # 고용형태 없으면 구분(신입/인턴) 표시
                 "url": p.url,
                 "dday": dday(p.deadline),
+                # 발견시각 — '새로 올라온 공고' 패널의 진짜 올라온 순 정렬용(게시일은 날짜뿐이라 같은 날 타이 해소)
+                "first_seen": (state.entries.get(p.uid) or {}).get("first_seen", ""),
             }
         )
 
@@ -268,7 +270,11 @@ def _dedup_near(items: list[dict], th: float, ov_th: float = 0.67, min_tok: int 
 
 
 def build_insights(cfg: dict) -> dict:
-    """Big4 간행물 링크 수집 → insights payload. 헤드리스 렌더라 순차 실행(발행처 순서 유지)."""
+    """Big4 간행물 링크 수집 → insights payload. 헤드리스 순차(법인 순서 삼일→삼정→안진→한영 유지).
+
+    v1.09: '금일/신규' 판정 제거. 법인별 스크랩 순서(≈사이트 최신순) 그대로 수집만(URL dedup, 법인당 cap은 어댑터).
+    프론트가 source_label로 4박스 그룹핑 → 박스별 랜덤 추천 + 펼치기(최신순)로 노출.
+    """
     seen, items, ok = set(), [], 0
     adapters = build_insight_adapters(cfg)
     for ad in adapters:
@@ -280,97 +286,8 @@ def build_insights(cfg: dict) -> dict:
                 continue
             seen.add(n.url)
             items.append(n.to_dict())
-    # 트레이니 관련도 순 정렬(제목 내 키워드 수 ↓) — 동점은 발행처 순서 유지(stable)
-    rel = [k.lower() for k in cfg["dashboard"].get("insight_relevance_keywords", [])]
-    items.sort(key=lambda it: sum(1 for k in rel if k in it["title"].lower()), reverse=True)
-    today_count = _mark_insight_new(items)  # 발행일이 없어 first_seen 추적으로 '금일 신규' 판정
-    # 금일 신규(is_new)는 그날만큼은 최상단으로 부상 — 관련성 정렬에 묻혀 직관성 떨어지는 문제 해결.
-    # stable sort라 신규/비신규 각 그룹 내부의 관련성 순서는 보존(마킹 이후에 재정렬해야 is_new를 안다).
-    items.sort(key=lambda it: 0 if it.get("is_new") else 1)
-    print(f"  인사이트: {len(items)}건 (발행처 {ok}/{len(adapters)}), 금일 {today_count}")
-    return {"generated_at": _dt.datetime.now().isoformat(timespec="seconds"),
-            "today_count": today_count, "items": items}
-
-
-_EN_MONTHS = {
-    "jan": 1, "january": 1, "feb": 2, "february": 2, "mar": 3, "march": 3,
-    "apr": 4, "april": 4, "may": 5, "jun": 6, "june": 6, "jul": 7, "july": 7,
-    "aug": 8, "august": 8, "sep": 9, "sept": 9, "september": 9, "oct": 10, "october": 10,
-    "nov": 11, "november": 11, "dec": 12, "december": 12,
-}
-_RE_EN_MONTH = re.compile(
-    r"\b(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|"
-    r"aug(?:ust)?|sep(?:t(?:ember)?)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)\.?\s+(20\d{2})", re.I)
-_RE_KO_YM = re.compile(r"(20\d{2})\s*년\s*(\d{1,2})\s*월")
-_RE_NUM_YM = re.compile(r"\b(20\d{2})[.\-/](\d{1,2})\b")
-
-
-def _other_month_only(title: str, cur_ym: tuple[int, int]) -> bool:
-    """제목에 '연-월'이 명시돼 있고, 그중 **이번 달이 하나도 없으면** True(금일 후보에서 제외).
-
-    최소 안전장치: 발행월을 알 수 있는 간행물(예: '2026.05', '2026년 5월호', 'May 2026')이 지난 달 것이면
-    '금일'에 뜨지 않게 한다. 월 표기가 없으면 판단 보류(False) → 기존 first_seen 로직을 그대로 따른다.
-    제목에 이번 달이 한 번이라도 언급되면(예: 본문에 과거 날짜가 섞여도) 최신으로 인정해 오탐을 줄인다.
-    """
-    t = title or ""
-    found: list[tuple[int, int]] = []
-    for m in _RE_EN_MONTH.finditer(t):
-        mon = _EN_MONTHS.get(m.group(1).lower().rstrip("."))
-        if mon:
-            found.append((int(m.group(2)), mon))
-    for rx in (_RE_KO_YM, _RE_NUM_YM):
-        for m in rx.finditer(t):
-            yr, mon = int(m.group(1)), int(m.group(2))
-            if 1 <= mon <= 12:
-                found.append((yr, mon))
-    return bool(found) and cur_ym not in found
-
-
-def _mark_insight_new(items: list[dict]) -> int:
-    """각 인사이트에 is_new(오늘 최초 발견) 부여하고 금일 신규수 반환. insights_seen.json에 first_seen 영속.
-
-    인사이트는 발행일이 없어 '최초 발견일'로 신규를 판정한다. **최초 1회(baseline)는 전량 is_new=False**
-    (기존 목록을 '오늘 신규'로 오인 방지). 0건 수집 시 상태를 건드리지 않음(베이스라인 보호).
-    """
-    for it in items:
-        it["is_new"] = False
-    if not items:
-        return 0
-    seen_path = Path("insights_seen.json")
-    baseline = not seen_path.exists()
-    try:
-        state = json.loads(seen_path.read_text(encoding="utf-8")) if not baseline else {}
-    except Exception:  # noqa: BLE001
-        state = {}
-    _td = _dt.date.today()
-    today = _td.isoformat()
-    cur_ym = (_td.year, _td.month)
-    # baseline(최초 1회)의 기존 목록은 '과거'(어제)로 백필 → 같은 날 다음 실행에서 전량 신규로 오인되지 않게.
-    backfill = (_td - _dt.timedelta(days=1)).isoformat()
-    cnt = 0
-    for it in items:
-        u = it["url"]
-        if u not in state:
-            state[u] = backfill if baseline else today
-        # '금일' = 오늘 최초 발견. 단 제목에 발행월이 명시돼 있고 이번 달이 아니면 금일에서 제외(최소 안전장치).
-        it["is_new"] = state[u] == today and not _other_month_only(it["title"], cur_ym)
-        if it["is_new"]:
-            cnt += 1
-    # 현재 목록에 없는 항목도 first_seen을 **보존**한다. 법인별 상한(~12건) 경계에서 새 글이 올라오면
-    # 오래된 글이 잠시 목록에서 밀려나는데, 이때 삭제해 버리면 그 글이 재정렬로 다시 올라올 때
-    # first_seen=오늘로 재기록돼 **오래된 인사이트가 '금일'로 오인**된다(목록 깜빡임 → 거짓 신규).
-    # → 현재 목록은 항상 보존하고, 무한증가는 상한 초과 시 '부재 + first_seen 오래된 것'부터만 정리.
-    cur = {it["url"] for it in items}
-    MAX_SEEN = 600
-    if len(state) > MAX_SEEN:
-        evictable = sorted((d, u) for u, d in state.items() if u not in cur)  # first_seen 오래된 순
-        for _, u in evictable[: len(state) - MAX_SEEN]:
-            del state[u]
-    try:
-        seen_path.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
-    except Exception:  # noqa: BLE001
-        pass
-    return cnt
+    print(f"  인사이트: {len(items)}건 (발행처 {ok}/{len(adapters)})")
+    return {"generated_at": _dt.datetime.now().isoformat(timespec="seconds"), "items": items}
 
 
 def main() -> None:

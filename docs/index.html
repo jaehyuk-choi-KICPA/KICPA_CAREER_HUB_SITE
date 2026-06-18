@@ -47,13 +47,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&display=swap" />
   <!-- ?v= 토큰은 위 헤더의 표시 버전과 동일하게 유지: CSS/JS 수정 시 같이 올리면 캐시 갱신됨 -->
-  <link rel="stylesheet" href="style.css?v=1.08a" />
+  <link rel="stylesheet" href="style.css?v=1.09" />
 </head>
 <body>
   <header class="site-header">
     <div class="wrap header-row">
       <div class="brand">
-        <h1 title="채용공고 처음으로">회법몬<span class="ver">1.08</span></h1>
+        <h1 title="채용공고 처음으로">회법몬<span class="ver">1.09</span></h1>
         <span class="tagline">회계법인 취업 관련 링크를 자동으로 끌어모아요 🔗 <span class="muted">(안내 참조)</span></span>
       </div>
       <div class="header-right">
@@ -101,13 +101,10 @@
             <div id="today-list" class="today-list"></div>
             <div id="today-empty" class="today-empty" hidden>최근 2일간 새로 올라온 공고가 없습니다.</div>
           </aside>
-          <!-- PC 전용: 금일 기사/인사이트 수 (클릭 시 해당 탭 이동) -->
+          <!-- PC 전용: 금일 기사 수 (클릭 시 기사 탭 이동) -->
           <div class="today-mini-row">
             <button type="button" class="today-mini" id="mini-news" title="기사 탭으로 이동">
               <span class="tm-t">📰 금일 기사</span><span class="tm-n" id="mini-news-n">0</span>
-            </button>
-            <button type="button" class="today-mini" id="mini-insights" title="빅펌 인사이트 탭으로 이동">
-              <span class="tm-t">📑 금일 인사이트</span><span class="tm-n" id="mini-insights-n">0</span>
             </button>
           </div>
         </div>
@@ -133,9 +130,10 @@
 
     <!-- ===== 인사이트 ===== -->
     <section id="tab-insights" class="tab">
-      <p class="sec-desc">Big4(삼일·삼정·안진·한영)가 발행하는 간행물/리포트 (제목·링크만).</p>
-      <div class="chiprow" id="f-pub"></div>
-      <div id="insights-list" class="cards"></div>
+      <div class="insights-head">
+        <h2 class="insights-title">오늘의 인사이트</h2>
+      </div>
+      <div id="insights-grid" class="insights-grid"></div>
       <div id="insights-empty" class="empty" hidden>표시할 간행물이 아직 없습니다.</div>
     </section>
 
@@ -182,6 +180,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=1.08a"></script>
+  <script src="app.js?v=1.09"></script>
 </body>
 </html>

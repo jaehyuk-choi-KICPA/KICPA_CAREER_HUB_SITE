@@ -214,7 +214,7 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .insight-firm .firm-empty { font-size:13px; color:var(--muted); padding:4px 0; }
 /* 펼치기(최신순) — 뉴스 .dupes 패턴 미러 */
 .firm-more { margin-top:10px; display:flex; flex-direction:column; }
-.firm-toggle { align-self:flex-start; width:max-content; cursor:pointer; list-style:none; user-select:none;
+.firm-toggle { align-self:flex-end; width:max-content; cursor:pointer; list-style:none; user-select:none;
   font-size:12px; font-weight:700; color:var(--accent); padding:2px 9px; border:1px solid var(--line);
   border-radius:999px; background:var(--chip-bg); }
 .firm-toggle::-webkit-details-marker { display:none; }

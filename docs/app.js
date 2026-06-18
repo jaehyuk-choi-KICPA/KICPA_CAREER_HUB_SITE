@@ -38,6 +38,9 @@ function updateNewsTabDot(){             // 탭 점 = 안 본 신규(_today)가 
 function clearNewsTabDot(){ _seenSet("tabseen_news", NEWS_TODAY_URLS.slice()); updateNewsTabDot(); }
 // 카드 점은 항목별 제거, 탭 점은 아무 신규 클릭/펼치기 시 함께 해제(독립 — 다른 카드 점은 유지)
 function dismissNews(url, dotEl){ markSeenNews(url); if (dotEl && dotEl.remove) dotEl.remove(); clearNewsTabDot(); }
+// '새로 올라온 공고' 방문 표시 — 사용자가 누른 공고만 흐리게(브라우저별 기억). 정렬은 최신순이라 날짜 흐림은 불필요.
+function isVisitedJob(url){ return _seenGet("visited_jobs").includes(url); }
+function markVisitedJob(url){ const s = _seenGet("visited_jobs"); if (!s.includes(url)) { s.push(url); _seenSet("visited_jobs", s); } }
 
 // ---- 테마(다크모드) ----
 function applyTheme(t) {
@@ -207,16 +210,19 @@ function renderActiveFilters() {
   box.replaceChildren(...chips);
 }
 
-function todayItem(it, isOld) {
+function todayItem(it) {
   const dd = ddayInfo(it);
   const row1 = el("div", { class:"row1" }, [
     el("span", { class:"dot", style:`background:${FIRM_COLOR[it.firm]||"#6b7684"}` }),
     el("span", { class:"firm", text:FIRM_FULL[it.firm]||it.firm }),   // 풀네임, 글자색은 기본(점만 색)
     el("span", { class:"dday " + dd.c, text:dd.t }),
   ]);
-  const t = el("div", { class:"t" }, [el("a", { href:it.url, target:"_blank", rel:"noopener", text:it.title })]);
-  // 가장 최근 날짜가 아닌(=어제) 공고는 흐리게(.is-old). 정렬 기준은 패널 제목 '(최신순)'으로 안내.
-  return el("div", { class:"today-item" + (isOld?" is-old":"") }, [row1, t]);
+  const a = el("a", { href:it.url, target:"_blank", rel:"noopener", text:it.title });
+  // 정렬은 최신순(패널 제목 안내) — 날짜 흐림 대신 '내가 누른' 공고만 흐리게(.is-old). 클릭 시 즉시 반영.
+  const wrap = el("div", { class:"today-item" + (isVisitedJob(it.url) ? " is-old" : "") },
+    [row1, el("div", { class:"t" }, [a])]);
+  a.addEventListener("click", () => { markVisitedJob(it.url); wrap.classList.add("is-old"); });
+  return wrap;
 }
 function renderToday(genStamp) {
   // 최근 2일(어제·오늘) 게시 공고 — 자정 지나면 창이 하루씩 이동(18일이면 17·18, 19일이면 18·19).
@@ -230,10 +236,7 @@ function renderToday(genStamp) {
   items.sort((a, b) => (b.first_seen || b.posted_date || "").localeCompare(a.first_seen || a.posted_date || ""));
   $("today-count").textContent = String(items.length);
   $("today-empty").hidden = items.length > 0;
-  // 가장 최근 게시일이 아닌(=어제) 공고는 흐리게(게시일 기준).
-  const maxDate = items.reduce((m, it) => (it.posted_date > m ? it.posted_date : m), "");
-  $("today-list").replaceChildren(...items.slice(0, 12).map((it) =>
-    todayItem(it, it.posted_date !== maxDate)));
+  $("today-list").replaceChildren(...items.slice(0, 12).map(todayItem));
 }
 
 function countBy(key) { const m={}; for (const it of JOBS) m[it[key]]=(m[it[key]]||0)+1; return m; }

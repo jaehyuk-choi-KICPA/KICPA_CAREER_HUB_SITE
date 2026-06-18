@@ -99,10 +99,12 @@ _DEFAULTS: dict = {
         "news_embed_candidate_min_tokens": 1,    # '걸릴 때만': 같은 카테고리+공통토큰 이 수↑인 의심 쌍만 임베딩 호출
         "news_embed_cache_path": "news_vectors.json",  # URL→벡터 캐시(새 기사만 임베딩 → 비용·시간 최소)
         # 관련성 게이트(#1)·카테고리 보정(#2) — 카테고리 프로토타입 코사인. 키워드 1차, 임베딩 보수적 보조.
-        "news_embed_relevance_enabled": True,    # 키워드 require_any 통과분 중 의미상 오프도메인을 추가 드롭
-        "news_embed_category_enabled": True,     # 쿼리기반 카테고리를 프로토타입 최근접으로 보정
-        "news_embed_relevance_floor": 0.30,      # max(4개 프로토타입 코사인) < 이 값 → 드롭(보수적·실데이터 튜닝 전 잠정)
-        "news_embed_category_margin": 0.08,      # (best - 현재) > 이 값일 때만 재배정(churn 방지·잠정)
+        # ⚠️ 실데이터 튜닝(embed_tune, 41건): 제목 코사인이 0.41~0.53로 좁고 노이즈/신호가 겹쳐(정상 세법기사<지방세 PR)
+        #    관련성 드롭은 정상기사 오드롭 위험 → floor 낮춰 dormant. 카테고리 flip은 대부분 오답(법인세→딜) → 비활성.
+        "news_embed_relevance_enabled": True,    # 단 floor 낮아 현 데이터 드롭 0(미래 ~0 garbage만 걸리는 안전망)
+        "news_embed_category_enabled": False,    # 재배정 flip 대부분 오답이라 비활성(프로토타입 개선 시 재검토)
+        "news_embed_relevance_floor": 0.25,      # max(4개 프로토타입 코사인) < 이 값 → 드롭. 실측 min 0.41이라 현재 드롭 0
+        "news_embed_category_margin": 0.15,      # 재활성 시 기준(현 데이터 최대 마진 0.087 → 0 flip=안전)
         "news_max_per_day_per_cat": 8,  # 같은 (카테고리,발행일) 최대 N건 — 한 사건이 매체별로 도배하는 것 방지
         # 외국(미국 제외) 세무·감사 이슈 차단 — 제목에 외국명이 있고 한국/미국/국제 마커가 하나도 없으면 제외.
         # (세무·감사에만 적용; 딜·M&A는 해외 인수 등 한국 독자 관련성이 있어 제외 안 함)

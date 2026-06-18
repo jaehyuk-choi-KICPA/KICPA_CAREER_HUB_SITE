@@ -33,8 +33,12 @@
   config: `news_embed_relevance_enabled`·`news_embed_category_enabled`·`news_embed_relevance_floor`(0.30)·
   `news_embed_category_margin`(0.08). 키 없으면 enrich no-op → 키워드/쿼리 분류 그대로(폴백).
 - **효과/검증:** fake client 단위 — 오프도메인 드롭·오분류 재배정·온도메인/마진미달 불변, 무키 폴백 확인.
-  ⚠️ 두 임계값은 **잠정 보수값** — secret 등록 후 실데이터 코사인 분포로 확정(온도메인 하단보다 약간 아래로 floor,
-  확신 flip만 남게 margin).
+- **실데이터 튜닝(`src/embed_tune.py`, 41건, voyage-3.5-lite):** max_sim 분포가 **0.41~0.53로 좁고 노이즈/신호가
+  겹침**(정상 '세법개정안' 0.439 < 저가치 '지방세 감사패' 0.444) → 어떤 floor도 정상기사 오드롭. 카테고리 재배정
+  후보는 마진 0.002~0.087로 작고 **상위 flip이 대부분 오답**(1위 '법인세 손금 불가'를 세무→딜로). 결론:
+  voyage-lite로 짧은 한국어 제목+키워드 게이트 통과분(도메인 균질)은 **비변별적**. → **관련성 floor 0.25(dormant
+  안전망)·카테고리 enabled=False**로 확정. 노이즈(지방세 PR)는 키워드 `news_exclude`, 채용 오분류는
+  `news_hire_title_keywords`가 더 적합한 레버. 임베딩 **군집(refine/dedup)은 별개로 유효**.
 
 ## 2026-06-18 — 의미 군집(임베딩) 2단계 — 어휘로 못 묶는 같은 사건 보조 병합(Voyage, 게이트)
 

@@ -290,8 +290,16 @@ def _mark_insight_new(items: list[dict]) -> int:
         it["is_new"] = state[u] == today
         if it["is_new"]:
             cnt += 1
+    # 현재 목록에 없는 항목도 first_seen을 **보존**한다. 법인별 상한(~12건) 경계에서 새 글이 올라오면
+    # 오래된 글이 잠시 목록에서 밀려나는데, 이때 삭제해 버리면 그 글이 재정렬로 다시 올라올 때
+    # first_seen=오늘로 재기록돼 **오래된 인사이트가 '금일'로 오인**된다(목록 깜빡임 → 거짓 신규).
+    # → 현재 목록은 항상 보존하고, 무한증가는 상한 초과 시 '부재 + first_seen 오래된 것'부터만 정리.
     cur = {it["url"] for it in items}
-    state = {u: d for u, d in state.items() if u in cur}  # 현재 목록 url만 유지(무한증가 방지)
+    MAX_SEEN = 600
+    if len(state) > MAX_SEEN:
+        evictable = sorted((d, u) for u, d in state.items() if u not in cur)  # first_seen 오래된 순
+        for _, u in evictable[: len(state) - MAX_SEEN]:
+            del state[u]
     try:
         seen_path.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
     except Exception:  # noqa: BLE001

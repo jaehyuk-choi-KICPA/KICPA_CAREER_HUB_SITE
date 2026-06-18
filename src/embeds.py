@@ -70,6 +70,70 @@ def _cosine(a, b) -> float:
     return s / ((da ** 0.5) * (db ** 0.5)) if da and db else 0.0
 
 
+def _prototypes(client, model: str, queries: dict) -> dict:
+    """카테고리별 프로토타입 벡터 — `news_queries` 값(자연어 OR 문구)을 임베딩. 실패 시 {}.
+
+    매회 4건만 임베딩(저렴) — 캐시 안 함. 프로토타입은 'query' 성격이라 input_type='query'.
+    """
+    cats = [c for c, q in queries.items() if q]
+    texts = [queries[c] for c in cats]
+    if not texts:
+        return {}
+    try:
+        res = client.embed(texts, model=model, input_type="query")
+        return {c: v for c, v in zip(cats, res.embeddings)}
+    except Exception:  # noqa: BLE001
+        return {}
+
+
+def enrich(items: list[dict], sig_fn, cfg: dict, client=None) -> list[dict]:
+    """관련성 게이트(#1) + 카테고리 보정(#2) — 카테고리 프로토타입과의 코사인으로 보수적 보조.
+
+    제목 벡터는 news_vectors.json 캐시 공유(이후 refine이 재사용 → 중복 임베딩 없음). 키 없으면 no-op(폴백).
+    - 관련성: max(4개 코사인) < relevance_floor → 오프도메인 드롭(키워드 require_any 통과분에 한 번 더 좁힘).
+    - 카테고리: best != 현재 & (best-현재) > category_margin → 재배정(표시·일자상한에만 반영, recency 재적용 안 함).
+    벡터 없는 item은 드롭·재배정 안 함(데이터 결손이 과드롭 유발 금지). 순서 보존.
+    """
+    d = cfg["dashboard"]
+    rel_on = d.get("news_embed_relevance_enabled", True)
+    cat_on = d.get("news_embed_category_enabled", True)
+    if (not rel_on and not cat_on) or len(items) < 1:
+        return items
+    client = client or _client()
+    if client is None:
+        return items  # 키 없음 → 키워드/쿼리 분류 그대로(폴백)
+
+    model = d.get("news_embed_model", "voyage-3.5-lite")
+    cache_path = d.get("news_embed_cache_path", "news_vectors.json")
+    floor = d.get("news_embed_relevance_floor", 0.30)
+    margin = d.get("news_embed_category_margin", 0.08)
+
+    protos = _prototypes(client, model, d.get("news_queries", {}))
+    if not protos:
+        return items
+
+    url_to_text = {it["url"]: it.get("title", "") for it in items if it.get("url")}
+    keep_urls = set(url_to_text)   # 드롭 전 전체 — refine이 필요로 하는 벡터 보존
+    vecs = _vectors(client, model, url_to_text, keep_urls, cache_path)
+
+    out = []
+    for it in items:
+        vec = vecs.get(it.get("url"))
+        if vec is None:
+            out.append(it)            # 벡터 결손 → 손대지 않음
+            continue
+        sims = {c: _cosine(vec, pv) for c, pv in protos.items()}
+        if rel_on and sims and max(sims.values()) < floor:
+            continue                  # 오프도메인 드롭
+        if cat_on and sims:
+            best = max(sims, key=sims.get)
+            cur = it.get("category")
+            if best != cur and cur in sims and (sims[best] - sims[cur]) > margin:
+                it["category"] = best  # 보수적 재배정
+        out.append(it)
+    return out
+
+
 def refine(items: list[dict], sig_fn, cfg: dict, client=None) -> list[dict]:
     """어휘 1차 군집된 대표 리스트를 받아, 의심 쌍을 임베딩 코사인으로 추가 병합한다.
 

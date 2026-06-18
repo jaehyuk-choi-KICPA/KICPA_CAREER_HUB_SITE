@@ -41,6 +41,10 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
   font-size:14.5px; font-weight:700; cursor:pointer; transition:all .12s; white-space:nowrap; }
 .tab-btn:hover { color:var(--ink); }
 .tab-btn.on { background:var(--accent); color:#fff; box-shadow:0 2px 8px rgba(27,79,156,.28); }
+/* 탭 신규 점 — 안 본 새 기사가 있을 때 표시(브라우저별). [hidden]이면 숨김 */
+.tab-btn .tab-new { display:inline-block; width:7px; height:7px; margin-left:5px; border-radius:50%;
+  background:#e5484d; vertical-align:middle; }
+.tab-btn .tab-new[hidden] { display:none; }
 .theme-btn { border:1px solid var(--line); background:var(--card); border-radius:10px; padding:8px 11px; font-size:15px; cursor:pointer; line-height:1; }
 .theme-btn:hover { border-color:var(--accent); }
 .about-nav { margin-left:6px; }   /* 안내 탭을 다크토글에서 약간 띄움 */
@@ -113,6 +117,9 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 /* 어제(가장 최근 날짜 아님) 공고 — 글씨를 흐리게 해 '조금 지난 것'임을 직관적으로 표시 */
 .today-item.is-old { opacity:.62; }
 .today-item.is-old .t a { color:var(--muted); }
+/* 맨 위(가장 최근) 공고 '최신' 배지 */
+.today-item .latest-badge { font-size:10px; font-weight:800; color:#fff; background:var(--new,#e5484d);
+  padding:0 6px; border-radius:999px; line-height:16px; }
 .today-empty { font-size:12.5px; color:var(--muted); padding:8px 0; }
 
 /* 금일 기사/인사이트 미니 박스 — 모바일 포함 전 폭 노출(모바일은 더 작게, PC가 더 크게) */

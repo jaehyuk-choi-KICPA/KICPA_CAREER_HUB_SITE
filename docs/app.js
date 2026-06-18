@@ -21,6 +21,21 @@ async function loadJSON(p) {
   try { const r = await fetch(u, {cache:"no-store"}); return r.ok ? await r.json() : null; } catch { return null; }
 }
 
+// ---- 기사 신규 표시(브라우저별 기억) — 카드 점(항목별)과 탭 점(독립) ----
+function _seenGet(k){ try { return JSON.parse(localStorage.getItem(k) || "[]"); } catch { return []; } }
+function _seenSet(k, arr){ try { localStorage.setItem(k, JSON.stringify(arr)); } catch (e) {} }
+let NEWS_TODAY_URLS = [];                 // 현재 '오늘 발행' 기사 url(데이터 로드 시 채움)
+function isSeenNews(url){ return _seenGet("seen_news").includes(url); }
+function markSeenNews(url){ const s = _seenGet("seen_news"); if (!s.includes(url)) { s.push(url); _seenSet("seen_news", s); } }
+function updateNewsTabDot(){             // 탭 점 = 안 본 신규(_today)가 하나라도 남았나
+  const seen = _seenGet("tabseen_news");
+  const dot = document.querySelector('.tab-btn[data-tab="news"] .tab-new');
+  if (dot) dot.hidden = !NEWS_TODAY_URLS.some((u) => !seen.includes(u));
+}
+function clearNewsTabDot(){ _seenSet("tabseen_news", NEWS_TODAY_URLS.slice()); updateNewsTabDot(); }
+// 카드 점은 항목별 제거, 탭 점은 아무 신규 클릭/펼치기 시 함께 해제(독립 — 다른 카드 점은 유지)
+function dismissNews(url, dotEl){ markSeenNews(url); if (dotEl && dotEl.remove) dotEl.remove(); clearNewsTabDot(); }
+
 // ---- 테마(다크모드) ----
 function applyTheme(t) {
   document.documentElement.setAttribute("data-theme", t);
@@ -49,6 +64,7 @@ function initTabs() {
       document.querySelectorAll(".tab-btn").forEach((b) => b.classList.toggle("on", b === btn));
       const t = btn.dataset.tab;
       document.querySelectorAll(".tab").forEach((s) => s.classList.toggle("on", s.id === "tab-" + t));
+      if (t === "news") clearNewsTabDot();   // 기사 탭 방문 = 탭 점 해제(카드 점은 유지 — 독립)
       window.scrollTo({ top: 0 });
     });
   });
@@ -172,11 +188,12 @@ function renderActiveFilters() {
   box.replaceChildren(...chips);
 }
 
-function todayItem(it, isOld) {
+function todayItem(it, isOld, isTop) {
   const dd = ddayInfo(it);
   const row1 = el("div", { class:"row1" }, [
     el("span", { class:"dot", style:`background:${FIRM_COLOR[it.firm]||"#6b7684"}` }),
     el("span", { class:"firm", text:it.firm }),
+    isTop ? el("span", { class:"latest-badge", text:"최신" }) : null,   // 맨 위=가장 최근임을 직관 표시
     el("span", { class:"dday " + dd.c, text:dd.t }),
   ]);
   const t = el("div", { class:"t" }, [el("a", { href:it.url, target:"_blank", rel:"noopener", text:it.title })]);
@@ -194,7 +211,7 @@ function renderToday(genStamp) {
     .sort((a, b) => (b.posted_date || "").localeCompare(a.posted_date || ""));   // 최신 게시일이 위로
   $("today-count").textContent = String(items.length);
   $("today-empty").hidden = items.length > 0;
-  $("today-list").replaceChildren(...items.slice(0, 12).map((it) => todayItem(it, it.posted_date !== today)));
+  $("today-list").replaceChildren(...items.slice(0, 12).map((it, i) => todayItem(it, it.posted_date !== today, i === 0)));
 }
 
 function countBy(key) { const m={}; for (const it of JOBS) m[it[key]]=(m[it[key]]||0)+1; return m; }
@@ -270,24 +287,31 @@ function newsCard(it) {
     it.category ? el("span", { class:"tag cat", style:`background:${catColor||"#667085"}`, text: it.category }) : null,
     el("span", { class:"tag", text: it.source_label || it.source || "" }),
   ]);
-  const right = el("div", { class:"top-right" }, [
-    it._today ? el("span", { class:"today-dot", title:"오늘 올라옴" }) : null,
-  ]);
+  const isNew = !!it._today && !isSeenNews(it.url);   // 신규 && 아직 안 본 것만 점 표시
+  const dot = isNew ? el("span", { class:"today-dot", title:"오늘 올라옴" }) : null;
+  const right = el("div", { class:"top-right" }, [dot]);
   const top = el("div", { class:"card-top" }, [left, right]);
-  const title = el("h3", {}, [el("a", { href:it.url, target:"_blank", rel:"noopener", text:it.title })]);
-  const kids = [top, title];
+  const titleA = el("a", { href:it.url, target:"_blank", rel:"noopener", text:it.title });
+  const kids = [top, el("h3", {}, [titleA])];
   if (it.summary) kids.push(el("div", { class:"company", text:it.summary }));
   if (it.published) kids.push(el("div", { class:"card-meta" }, [el("span", { text:it.published })]));
   // 같은 주제 중복 기사 묶음 — 네이티브 <details>로 우측 하단에 깔끔히 펼침(클릭 시 제목+링크 좌르르)
+  let details = null;
   if (it.dupes && it.dupes.length) {
     const lis = it.dupes.map((d) => el("li", {}, [
       el("a", { href:d.url, target:"_blank", rel:"noopener", text:d.title || "(제목 없음)" }),
       d.source_label ? el("span", { class:"dupe-src", text:d.source_label }) : null,
     ]));
-    kids.push(el("details", { class:"dupes" }, [
+    details = el("details", { class:"dupes" }, [
       el("summary", { class:"dupes-toggle", text:`동일 주제 기사 ${it.dupes.length}개` }),
       el("ul", { class:"dupes-list" }, lis),
-    ]));
+    ]);
+    kids.push(details);
+  }
+  // 해제: 제목 클릭 또는 '동일 주제' 펼치기만으로도 그 카드 점 + 탭 점 제거(브라우저별 기억)
+  if (isNew) {
+    titleA.addEventListener("click", () => dismissNews(it.url, dot));
+    if (details) details.addEventListener("toggle", () => { if (details.open) dismissNews(it.url, dot); });
   }
   return el("article", { class:"card" }, kids);
 }
@@ -359,6 +383,13 @@ function initSub(prefix, data, chipRowId, chipKey, fixed, cardFn) {
   const newsToday = ((news && news.generated_at) || "").slice(0, 10);
   if (news && news.items) news.items.forEach((i) => { i._today = !!i.published && i.published === newsToday; });
   if (insights && insights.items) insights.items.forEach((i) => { i._today = !!i.is_new; });
+
+  // 기사 신규 점: 현재 '오늘 발행' url 집합 → seen 정리(현재분만 보관) + 탭 점 초기화
+  if (news && news.items) {
+    NEWS_TODAY_URLS = news.items.filter((i) => i._today && i.url).map((i) => i.url);
+    _seenSet("seen_news", _seenGet("seen_news").filter((u) => NEWS_TODAY_URLS.includes(u)));
+    updateNewsTabDot();
+  }
 
   // PC 전용 미니 박스: 금일 수 + 클릭 시 탭 이동
   const newsN = (news && news.items) ? news.items.filter((i) => i._today).length : 0;

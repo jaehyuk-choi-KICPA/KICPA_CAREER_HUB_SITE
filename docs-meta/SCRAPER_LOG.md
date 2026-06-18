@@ -20,6 +20,22 @@
 
 ---
 
+## 2026-06-18 — 임베딩 관련성 게이트(#1) + 카테고리 보정(#2) (enrich, 키 있을 때만)
+
+- **증상/계기:** 넓은 OR 쿼리가 키워드 게이트(`news_require_any`)는 통과하지만 의미상 무관한 기사를 통과시키고,
+  카테고리가 '어느 쿼리가 가져왔나'로만 정해져 오분류가 남음.
+- **무엇을:** 카테고리 4개 프로토타입 벡터와 기사 제목의 코사인으로 ① 오프도메인 드롭 ② 카테고리 보수적 재배정.
+  키워드 규칙은 1차 유지, 임베딩은 보조(과드롭·churn 방지 하한).
+- **어디에 얹었나(플로우):** `embeds._prototypes`(news_queries 값 4건 임베딩, input_type='query', 매회·캐시 안 함) +
+  `embeds.enrich(items, _title_sig, cfg)`. `export.build_news`에서 **정렬 직후·`_dedup_near` 직전(5.5단계)** 호출 —
+  dict 단계라 dedup 우선순위 불변, 재배정이 refine 동일카테고리 군집·일자상한 버킷에 반영. 제목 벡터는
+  `news_vectors.json` 공유(refine 재사용 → 중복 임베딩 없음). **재배정 카테고리에 recency 재적용 안 함**(over-drop 방지·의도).
+  config: `news_embed_relevance_enabled`·`news_embed_category_enabled`·`news_embed_relevance_floor`(0.30)·
+  `news_embed_category_margin`(0.08). 키 없으면 enrich no-op → 키워드/쿼리 분류 그대로(폴백).
+- **효과/검증:** fake client 단위 — 오프도메인 드롭·오분류 재배정·온도메인/마진미달 불변, 무키 폴백 확인.
+  ⚠️ 두 임계값은 **잠정 보수값** — secret 등록 후 실데이터 코사인 분포로 확정(온도메인 하단보다 약간 아래로 floor,
+  확신 flip만 남게 margin).
+
 ## 2026-06-18 — 의미 군집(임베딩) 2단계 — 어휘로 못 묶는 같은 사건 보조 병합(Voyage, 게이트)
 
 - **증상/계기:** 어휘(Jaccard·포함도) 군집은 '발전공기업 통합' 5건처럼 같은 사건을 매체마다 다른 표현으로 쓴

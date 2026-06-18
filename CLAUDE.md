@@ -80,6 +80,9 @@
   **2단계 의미 군집(임베딩, `src/embeds.py`)**: 어휘로 못 묶는 같은 사건(다른 표현)을 보조 병합. **`VOYAGE_API_KEY`
   있을 때만** 작동(없으면 어휘만=폴백, 오프라인 유지). **'걸릴 때만'** — 어휘 미병합 + 같은 카테고리+공통토큰 ≥N인
   **의심 쌍에 한해** 임베딩 호출(코사인 ≥ `news_embed_threshold` 병합). URL→벡터는 `news_vectors.json` 캐시(새 기사만).
+  + **`embeds.enrich`(관련성 게이트#1·카테고리 보정#2)**: 카테고리 4개 프로토타입 코사인으로 오프도메인 드롭
+  (`news_embed_relevance_floor`)·보수적 재배정(`news_embed_category_margin`). `build_news` 정렬 직후·`_dedup_near`
+  직전 호출(제목 벡터 캐시 공유). 키워드 1차 유지, 키 없으면 폴백. 재배정엔 recency 재적용 안 함(over-drop 방지).
 - **링크 점검**: 스트림별 샘플 HTTP. 단 뉴스는 `news.google.com/rss/...` redirect라 200=Google 도달일 뿐(실기사 아님).
 - **기사 수량 레버**(58→116 실측, 종합 7.9→8.9): 안전=`news_per_category`(20→50)→풀린 뒤엔 **`news_recent_days`(→21)**가
   주 레버(세무·감사 건수가 limit 미만이면 recency가 한계). **위험=쿼리 확장**(앞순위 넓히면 dedup 선점으로 뒷순위 잠식,

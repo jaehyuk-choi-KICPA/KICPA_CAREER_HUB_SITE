@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-18T18:12:14",
+  "generated_at": "2026-06-18T19:49:24",
   "soon_days": 7,
   "counts": {
-    "total": 69,
-    "open": 46,
+    "total": 70,
+    "open": 47,
     "closed": 23,
-    "new": 20,
+    "new": 21,
     "soon": 16,
     "by_firm": {
       "삼일": 10,
-      "삼정": 3,
+      "삼정": 4,
       "안진": 7,
       "한영": 21,
       "로컬": 21,
@@ -370,6 +370,22 @@
       "dday": 8
     },
     {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "기타",
+      "status": "open",
+      "is_new": true,
+      "title": "[인턴] SG본부 ESG＆Strategy팀 인턴 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-06-28",
+      "posted_date": "2026-06-18",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000894&receive_div_cd=N",
+      "dday": 10
+    },
+    {
       "source": "samil",
       "source_label": "삼일PwC",
       "firm": "삼일",
@@ -530,22 +546,6 @@
       "dday": 12
     },
     {
-      "source": "kicpa_cpa",
-      "source_label": "구인(CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "status": "open",
-      "is_new": true,
-      "title": "신입, 경력직원 채용",
-      "company": "한경회계법인",
-      "deadline": "2026-06-30",
-      "posted_date": "2026-06-14",
-      "location": "",
-      "emp_type": "",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1781429126756",
-      "dday": 12
-    },
-    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "기타",
@@ -607,6 +607,22 @@
       "location": "지역무관 지역무관",
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1781684191145",
+      "dday": 12
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "status": "open",
+      "is_new": true,
+      "title": "신입, 경력직원 채용",
+      "company": "한경회계법인",
+      "deadline": "2026-06-30",
+      "posted_date": "2026-06-18",
+      "location": "",
+      "emp_type": "",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1781429126756",
       "dday": 12
     },
     {

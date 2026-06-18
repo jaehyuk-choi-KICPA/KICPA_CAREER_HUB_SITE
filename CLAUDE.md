@@ -84,9 +84,14 @@
   (`news_embed_relevance_floor`)·보수적 재배정(`news_embed_category_margin`). `build_news` 정렬 직후·`_dedup_near`
   직전 호출(제목 벡터 캐시 공유). 키워드 1차 유지, 키 없으면 폴백. 재배정엔 recency 재적용 안 함(over-drop 방지).
 - **링크 점검**: 스트림별 샘플 HTTP. 단 뉴스는 `news.google.com/rss/...` redirect라 200=Google 도달일 뿐(실기사 아님).
-- **기사 수량 레버**(58→116 실측, 종합 7.9→8.9): 안전=`news_per_category`(20→50)→풀린 뒤엔 **`news_recent_days`(→21)**가
+- **기사 수량 레버**(58→116 실측, 종합 7.9→8.9): 안전=`news_per_category`(20→50→**75**)→풀린 뒤엔 **`news_recent_days`(→21)**가
   주 레버(세무·감사 건수가 limit 미만이면 recency가 한계). **위험=쿼리 확장**(앞순위 넓히면 dedup 선점으로 뒷순위 잠식,
   딜 일반어는 require_any 게이트가 컷→0). 채용·딜은 공급 한계라 품질>수량. 정치색 매체는 `news_exclude_sources`(예: 뉴스타파).
+  - ⚠️ **`news_per_category`는 강력한 레버(과소평가 금지)**: 구글뉴스 RSS는 **관련도순**이라 최신 기사가 피드 뒤쪽에도
+    흩어져, 상한이 낮으면 **뒤쪽 신선기사를 통째 유실**(실측: 50→100 시 세무 40→85·감사 39→72로 거의 2배). 75 권장.
+  - ⚠️ **`news_embed_threshold` 과소 = 과병합**: 0.82는 짧은 한국어 제목에서 별개 사건을 union-find 전이연결로 한
+    카드에 합침(선발 과도 발언↔수습처 확대 발표). **0.88**이 동일사건(권혁 세무조사 등)은 유지하며 오병합만 끊음.
+    표시 대표 수가 비정상적으로 적으면(딜 0건 등) per_category·threshold·딜 recency(60)부터 의심.
 - **시각검증 노하우**: SPA 글 경로는 render_html 후 anchor href의 **경로 prefix 빈도**를 세어 진짜 글 패턴을 찾는다.
 - **기사 카테고리 오분류**: RSS 분류는 "어느 쿼리가 가져왔나"로 결정 → 채용·수습 기사가 "감사" 쿼리에만 잡히면
   `감사`로 고정됨. 해결: `news_hire_title_keywords`(config)로 제목 기반 **사후 보정 pre-pass**(export.py `build_news`)

@@ -209,6 +209,18 @@ def build_news(cfg: dict) -> dict:
                         d.get("news_neardup_overlap", 0.67), d.get("news_neardup_min_tokens", 4))
     items = embeds.refine(items, _title_sig, cfg)  # 의미 군집 보조(VOYAGE 키 있을 때만, 의심 쌍에 한해)
     cap = d.get("news_max_per_day_per_cat", 0)
+    if cap:                                  # 한 사건이 하루치 카테고리를 도배하지 않게 (카테고리,발행일)별 상한
+        bucket: dict = {}
+        capped = []
+        for it in items:                     # 이미 최신순
+            key = (it.get("category"), (it.get("published") or "")[:10])
+            if bucket.get(key, 0) >= cap:
+                continue
+            bucket[key] = bucket.get(key, 0) + 1
+            capped.append(it)
+        items = capped
+    print(f"  이슈: {len(items)}건 (원본 {before} → 근접중복·일자상한 적용, 소스 {sum(1 for r in results if r.ok)}/{len(results)})")
+    return {"generated_at": _dt.datetime.now().isoformat(timespec="seconds"), "items": items}
 
 
 def _title_sig(title: str) -> frozenset:

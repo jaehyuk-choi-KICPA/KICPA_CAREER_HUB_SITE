@@ -218,7 +218,7 @@ _DEFAULTS: dict = {
             "kicpa_cpa": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/list.face",
             "samjong": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/init.hr",
             "anjin": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitList.aspx",
-            "hanyoung": "https://eycareers-kr.recruiter.co.kr/career/home",
+            "hanyoung": "https://eycareers-kr.recruiter.co.kr/career/jobs",
             "samil": "https://www.pwc.com/kr/ko/career/experienced.html",
         },
     },

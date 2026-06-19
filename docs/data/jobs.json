@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-19T10:01:31",
+  "generated_at": "2026-06-19T10:31:26",
   "soon_days": 7,
   "counts": {
     "total": 70,
-    "open": 44,
-    "closed": 26,
-    "new": 20,
+    "open": 45,
+    "closed": 25,
+    "new": 21,
     "soon": 19,
     "by_firm": {
       "삼일": 10,
@@ -613,6 +613,23 @@
       "first_seen": "2026-06-18T12:43:19"
     },
     {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "택스",
+      "status": "open",
+      "is_new": true,
+      "title": "[장애인 채용] 세무부문 행정지원",
+      "company": "EY한영",
+      "deadline": "2026-06-30",
+      "posted_date": "2026-06-19",
+      "location": "",
+      "emp_type": "신입/경력",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/117226",
+      "dday": 11,
+      "first_seen": "2026-06-19T10:31:26"
+    },
+    {
       "source": "anjin",
       "source_label": "딜로이트안진",
       "firm": "안진",
@@ -984,23 +1001,6 @@
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1780296110231",
       "dday": -14,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "택스",
-      "status": "closed",
-      "is_new": false,
-      "title": "[장애인 채용] 세무부문 행정지원",
-      "company": "EY한영",
-      "deadline": "2026-06-07",
-      "posted_date": "2026-05-29",
-      "location": "",
-      "emp_type": "신입/경력",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/117226",
-      "dday": -12,
       "first_seen": ""
     },
     {

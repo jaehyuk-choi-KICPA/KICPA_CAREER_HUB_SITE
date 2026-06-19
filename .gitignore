@@ -23,9 +23,15 @@ sitecheck_result.json
 .env
 .env.*
 *.key
+*.pem
+.secrets/
+.playwright-mcp/
 
 # 파이썬
 __pycache__/
 *.pyc
 .venv/
 venv/
+.pytest_cache/
+_review/
+review-*.png

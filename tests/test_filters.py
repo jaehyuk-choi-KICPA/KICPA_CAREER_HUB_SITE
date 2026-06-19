@@ -1,0 +1,46 @@
+"""filters.py — '경력 제외, 신입·수습·인턴 포함' 규칙(타깃 적합도의 핵심 게이트)."""
+from __future__ import annotations
+
+from src.filters import filter_postings, passes
+
+from tests.conftest import make_posting
+
+
+def test_career_only_excluded(cfg):
+    # '경력'만 있는 제목 → 제외
+    assert passes(make_posting(title="회계 경력직 채용"), cfg) is False
+
+
+def test_entry_and_career_kept(cfg):
+    # 신입·경력 동시모집 → 예외(신입)로 유지(수습 타깃 보존)
+    assert passes(make_posting(title="신입·경력 동시 채용"), cfg) is True
+
+
+def test_hard_exclude_title_only(cfg):
+    # 제목이 명백히 경력 전용(hard) → 제외
+    assert passes(make_posting(title="회계 경력직 5년 이상 채용"), cfg) is False
+
+
+def test_hard_exclude_rescued_by_title_exception(cfg):
+    # hard라도 제목에 신입/수습 병기 시 유지(이중타깃 보존)
+    assert passes(make_posting(title="경력직/신입 채용"), cfg) is True
+
+
+def test_trainee_kept(cfg):
+    assert passes(make_posting(title="수습 공인회계사 채용"), cfg) is True
+
+
+def test_plain_posting_passes(cfg):
+    # 제외 키워드 없으면 통과(include_keywords 비어있음)
+    assert passes(make_posting(title="감사 스태프 채용"), cfg) is True
+
+
+def test_filter_postings_filters_list(cfg):
+    items = [
+        make_posting(title="수습 공인회계사 채용"),     # 유지
+        make_posting(title="시니어 매니저 경력 채용"),   # 제외
+        make_posting(title="감사 인턴 채용"),            # 유지
+    ]
+    kept = filter_postings(items, cfg)
+    assert len(kept) == 2
+    assert all("수습" in p.title or "인턴" in p.title for p in kept)

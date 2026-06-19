@@ -1,67 +1,104 @@
-# 회계법인 취업 허브 (KICPA_CAREER_HUB_SITE)
+# 회법몬 (KICPA Career Hub)
 
-빅4·로컬 회계법인의 **수습공인회계사(기합 포함)·회계법인 입사 준비자**를 위한 정적 웹 대시보드.
-**채용공고 검색 + 회계·세무·딜 업계 뉴스 + Big4 인사이트 링크**를 자동 수집해 GitHub Pages로 서빙한다.
-서버·노트북 불필요(GitHub Actions가 주기 수집·커밋).
+[![site](https://img.shields.io/badge/live-hbmons.com-1b4f9c)](https://hbmons.com)
+[![tests](https://github.com/jaehyuk-choi-KICPA/KICPA_CAREER_HUB_SITE/actions/workflows/tests.yml/badge.svg)](https://github.com/jaehyuk-choi-KICPA/KICPA_CAREER_HUB_SITE/actions/workflows/tests.yml)
+![python](https://img.shields.io/badge/python-3.11-blue)
+![license](https://img.shields.io/badge/data-titles%20%26%20links%20only-lightgrey)
 
-## 문서 (`docs-meta/`)
-- [사용설명서](docs-meta/사용설명서.md) — 운영·배포·설정·문제해결 안내
-- [패치노트](docs-meta/PATCHNOTES.md) — 빌드별 UI 개선·새 기능(블로그용)
-- [수집 엔진 개선 일지](docs-meta/SCRAPER_LOG.md) — 스크랩 툴 보완 흐름(빌드와 독립)
+> 빅4·로컬 회계법인의 **수습공인회계사·회계법인 입사 준비자**를 위해, 흩어진 **채용공고 + 회계·세무·딜 업계 뉴스 + Big4 인사이트**를
+> 자동으로 모아 한 화면에 보여주는 **서버리스 정적 웹 대시보드**. → **라이브: [hbmons.com](https://hbmons.com)**
+
+수습 CPA 준비자는 한국공인회계사회·삼일·삼정·안진·한영 등 **6개+ 사이트를 매번 따로** 확인해야 한다.
+회법몬은 이 소스들을 **자동 수집 → 법인 × 직무 × 진행상태로 분류·필터 → 한 화면**으로 정리하고, 업계 뉴스·빅펌 간행물까지 묶는다.
+**서버·노트북 상시구동 불필요** — 외부 스케줄러가 GitHub Actions를 트리거해 수집·커밋하고, GitHub Pages가 서빙한다.
+
+---
+
+## 핵심 설계 결정 — *왜* 이렇게 만들었나
+
+> 회계 도메인 데이터를 다루므로 **재현성·검증가능성·환각 차단**을 최우선으로 두고 설계했다.
+
+| 결정 | 이유 |
+|---|---|
+| **어댑터 패턴** (소스→공통 레코드 `Posting`) | 사이트마다 다른 HTML/RSS/JSON을 한 스키마로 수렴. 이후 단계(필터·분류·중복제거)는 한 형태만 다룸. **새 소스 = 어댑터 1개.** |
+| **규칙 기반 코어 (LLM-free)** | 분류·필터·큐레이션은 전부 키워드 규칙(`config.yaml`). **결정론·재현성·비용 0·오프라인 동작**, 그리고 데이터 파이프라인에서 **LLM 환각을 원천 배제**. |
+| **LLM은 '판단'에만, 그것도 게이트** | 뉴스 의미 군집은 *어휘로 애매한 의심 쌍에 한해* 임베딩 호출(키 있을 때만, 없으면 어휘 폴백=오프라인 유지). 시각 점검도 프로덕션 데이터를 안 쓰는 out-of-band. |
+| **Human-in-the-loop** | 소스가 깨지면 **감지·진단은 자동, 코드 수정은 사람.** LLM은 *제안*만 하고 Draft PR로 올림 — 자동 머지·자동 프로덕션 커밋 없음. |
+| **견고성 = 전체 실패 금지** | 모든 어댑터 호출을 `safe_fetch`로 격리 → **한 소스가 깨져도 나머지는 정상 출력.** |
+
+## 신뢰성 엔지니어링 — 운영하며 쌓은 것
+
+개인 토이가 아니라 **실제로 24/7 돌아가는** 자동화라, 스크래퍼의 숙명적 약점(소스가 조용히 바뀌거나 스케줄이 드롭되면 *말없이* 낡은 데이터)을 **3층으로 감시**한다.
+
+- **`freshness`** — 데이터 나이로 *스케줄이 돌았나* 감지(STALE 시 Draft PR).
+- **`canary`** — 소스별 수집 건수·양식 급변 감지(0건/급감/양식변경). 선택적 LLM 시각 점검.
+- **`sitecheck`** — 배포된 **라이브 화면**을 브라우저로 열어 *사용자가 실제로 제대로 보나* 종단 점검 + 파생지표 **타당성** 검사 + 셀프힐링.
+
+> **실제 인시던트 대응 예:** `run-all` 한 실행이 동시성 그룹(`data-commit`) 잠금을 쥔 채 **행에 걸려 수집이 수 시간 정지** → 원인 규명 후 `timeout-minutes`를 추가해 *행 걸린 run이 그룹을 장기 점유하지 못하게* 재발 차단. (모니터링이 없었다면 조용히 낡았을 사고.)
+>
+> **소스 깜빡임 대응:** KICPA가 살아있는 공고를 목록에서 잠깐 내렸다 올리는 현상 → `state`의 **grace 레이어**(`last_seen`/`carry_forward`)로 흡수해 카드가 깜빡 사라지지 않게.
 
 ## 콘텐츠 3스트림
-1. **채용공고(메인)** — KICPA(수습CPA·CPA) + 삼정·안진·한영·삼일. **법인 × 직무(딜/감사/택스/기타) ×
-   진행상태** 좌측 필터 레일 검색 + 신규(NEW)·마감 D-day + 우측 "금일 올라온 공고" 패널.
-2. **기사** — Google News RSS 4분류(채용·시험/감사/세무/딜·M&A) (면접·업계지식 중심, 노이즈 제외, 기본 21일 보존).
-3. **빅펌 인사이트** — 삼일·삼정·안진·한영 간행물 링크(헤드리스 렌더). 제목·링크만(저작권 안전).
 
-## 구조
+1. **채용공고 (메인)** — KICPA(수습CPA·CPA) + 삼정·안진·한영·삼일. **법인 ×직무(딜/감사/택스/기타) ×진행상태** 필터 + NEW·마감 D-day + "새로 올라온 공고" 패널.
+2. **기사** — Google News RSS 4분류(채용·시험/감사/세무/딜·M&A). 제목·출처·링크만, 노이즈 제외, 중복은 군집화.
+3. **빅펌 인사이트** — 삼일·삼정·안진·한영 간행물 링크(SPA라 헤드리스 렌더). 저작권 안전(제목·링크만).
+
+## 아키텍처
+
 ```
-GitHub Actions(cron) → python -m src.export → docs/data/*.json 커밋 → GitHub Pages(docs/) 서빙
+외부 스케줄러(cron-job.org) ──repository_dispatch──► GitHub Actions(run-all)
+                                                          │
+            6 어댑터(병렬)  ─safe_fetch→ 공통 레코드 ─► 필터 ─► 규칙 분류 ─► (게이트)임베딩 군집
+                                                          │
+                                          docs/data/*.json 커밋 ─► GitHub Pages(docs/) ─► 바닐라 SPA
+                                                          │
+                       모니터링 3층: freshness · canary · sitecheck (이상 시 Draft PR / GitHub Issue)
 ```
-- 소스마다 사이트가 달라 **어댑터 패턴**(소스→공통 레코드)으로 흡수. 채용·뉴스는 병렬, 인사이트는 순차(헤드리스).
-- 프론트: 바닐라 HTML/CSS/JS(빌드 도구 없음), 다크모드, 모바일 반응형.
+
+## 기술 스택
+
+**Python** (스크래퍼·규칙 엔진·상태기계) · **바닐라 JS/CSS** (프론트, 빌드도구 없음, 다크모드·반응형) ·
+**GitHub Actions** (CI/CD·스케줄·셀프힐링) · **Playwright** (SPA 헤드리스 렌더) · **GitHub Pages** (서빙) ·
+선택적 **Anthropic / Voyage API** (out-of-band 시각점검·의미군집, 키 없으면 자동 비활성).
+
+## 테스트
+
+순수 로직(필터·분류·상태기계·날짜 파싱)에 대한 **pytest 단위 테스트**. 규칙이 곧 사양이므로 실제 `config`로 검증한다.
+
+```bash
+pip install pytest PyYAML
+python -m pytest tests/ -v
+```
 
 ## 로컬 실행
+
 ```bash
 pip install -r requirements.txt
-python -m playwright install chromium     # 인사이트(JS 렌더)용 1회
-python -m src.export                      # docs/data/{jobs,news,insights}.json 생성
+python -m playwright install chromium      # 인사이트(SPA 렌더)용 1회
+python -m src.export                       # docs/data/{jobs,news,insights}.json 생성
 #   부분만:  python -m src.export --part jobs|news|insights
-cd docs && python -m http.server 8000     # http://localhost:8000
+cd docs && python -m http.server 8000      # http://localhost:8000
 ```
 
 ## 배포 (GitHub Pages)
-1. GitHub에 push (아래 "git" 참조).
-2. 저장소 **Settings → Pages → Source: Deploy from a branch, Branch: `main` / `/docs`**.
-3. 워크플로가 자동 갱신:
-   - `.github/workflows/scrape.yml` — 채용 **30분** (cron 보조)
-   - `.github/workflows/scrape-news.yml` — 기사 **2시간** (cron 보조)
-   - `.github/workflows/scrape-insights.yml` — 인사이트 **하루 2회**(09·21시 KST, Chromium 설치, cron 보조)
-   - `.github/workflows/run-all.yml` — 채용+기사+인사이트 **일괄 수집** (외부 핑거 트리거 전용)
-   - `.github/workflows/canary.yml` — 자기검증(소스 양식/공고 누락) **매일 1회**(아래 참조)
-   - `.github/workflows/freshness.yml` — 신선도 모니터(스케줄 드롭으로 데이터가 낡았는지) **매시간**, STALE 시 Draft PR
-   - **안정적 주기 실행**: GitHub cron은 무료·public에서 드롭이 잦음 → **cron-job.org 등 외부 핑거**가
-     `repository_dispatch{event_type:run-all}`로 `run-all.yml`을 30분마다 호출(개별 cron은 보조).
-   - **검색 주기 변경**: `run-all.yml`의 외부 핑거 interval 또는 개별 워크플로 `cron:` 수정.
-   - 수동 즉시 실행: 저장소 Actions 탭 → 해당 워크플로 → Run workflow.
 
-## 자기검증 카나리아 (소스 양식 변경/공고 누락 감지)
-스크래퍼는 소스가 HTML을 바꾸면 조용히 0건/누락이 난다. `src/canary.py`가 **하루 1회** 이를 감시한다.
-- **구조 체크(무료)**: 어제 대비 0건/급감/수집실패 (`canary_state.json` 기준).
-- **시각 체크(LLM, 키 있을 때만)**: 목록 페이지 스냅샷을 Claude vision로 보고 화면 공고수·양식 정상여부를
-  스크래퍼 카운트와 대조.
-- **드리프트 시**: `canary_report.md`(진단 + LLM 수정 *제안*)를 담은 **Draft PR 자동 생성**.
-  **자동 머지·자동 프로덕션 커밋은 하지 않는다** — Claude Code로 검토·보완 후 사람이 머지(Human-in-the-loop).
-- **LLM 켜기**: 저장소 **Settings → Secrets and variables → Actions → New repository secret**에
-  `ANTHROPIC_API_KEY` 추가. 없으면 **구조 체크만**(100% 오프라인). 전송 대상은 공개 채용 페이지 스냅샷뿐.
-- ⚠️ **첫 도입**: Actions 탭에서 `canary`를 **수동 실행(Run workflow)**해 LLM 응답을 한 번 눈으로 검증한 뒤
-  cron 자동화에 의존할 것.
+1. `main`에 push → **Settings → Pages → Deploy from branch: `main` / `/docs`**.
+2. 자동 갱신은 **외부 핑거(cron-job.org 등)가 `repository_dispatch{event_type:run-all}`로 `run-all.yml`을 30분마다 호출**.
+   - GitHub 무료·public cron은 드롭이 잦아, **정기 수집은 외부 핑거가 전담**(개별 `scrape*.yml`은 수동 보조).
+   - 모니터링(`freshness` 매시간 · `sitecheck` 3시간)은 GitHub cron 유지.
+3. (선택) LLM 점검: **Settings → Secrets → Actions**에 `ANTHROPIC_API_KEY` 추가. 없으면 결정론 검사만(오프라인).
 
-## 피드백
-사이트 푸터의 "만족도 조사 · 피드백" 버튼 → Google Form.
+## 문서 (`docs-meta/`)
+
+- [사용설명서](docs-meta/사용설명서.md) — 운영·배포·설정·문제해결
+- [패치노트](docs-meta/PATCHNOTES.md) — 빌드별 UI 개선·새 기능
+- [수집 엔진 개선 일지](docs-meta/SCRAPER_LOG.md) — 스크랩 툴 보완 흐름
+
+## 원칙 (저작권·개인정보)
+
+공개된 채용공고·공식 간행물의 **제목과 링크만** 수집한다(본문 전재·UGC·개인정보 없음). 비영리.
 
 ---
-## (보류) 카카오톡 자동 게시 — 레거시
-초기엔 카톡 오픈채팅 자동 게시(`run.py`·`kakao_pc.py`·`messenger_bot.js`)였으나 GUI 자동화 불안정으로 보류.
-코드는 보존. 현재 제품은 위 웹 대시보드.
+
+<sub>※ 초기엔 카카오톡 오픈채팅 자동 게시(`run.py`·`kakao_pc.py`)로 시작했으나 GUI 자동화 불안정으로 웹 대시보드로 피벗. 레거시 코드는 보존.</sub>

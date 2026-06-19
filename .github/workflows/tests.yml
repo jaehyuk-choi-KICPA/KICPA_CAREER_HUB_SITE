@@ -1,0 +1,27 @@
+name: tests   # 순수 로직(필터·분류·상태기계·날짜) 단위 테스트 — push/PR 시 자동 실행
+
+on:
+  push:
+    paths:
+      - "src/**"
+      - "tests/**"
+      - "config.yaml"
+      - ".github/workflows/tests.yml"
+  pull_request: {}
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: pip }
+      - name: Install (테스트는 네트워크·브라우저 불필요 — 경량 의존만)
+        run: pip install pytest PyYAML
+      - name: Run unit tests
+        run: python -m pytest tests/ -v

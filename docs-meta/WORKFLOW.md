@@ -223,9 +223,9 @@ flowchart LR
 │   ├── freshness.yml            ← 신선도 감시 (1h cron)
 │   ├── sitecheck.yml            ← 종단 점검 (3h cron)
 │   ├── canary.yml               ← 양식 감시 (수동)
-│   ├── scrape.yml               ← 채용 단독 (수동)
-│   ├── scrape-news.yml          ← 기사 단독 (수동)
-│   └── scrape-insights.yml      ← 인사이트 단독 (수동)
+│   ├── scrape.yml               ← 채용 단독 (수동) <-외부 핑거로 가동
+│   ├── scrape-news.yml          ← 기사 단독 (수동) <-외부 핑거로 가동
+│   └── scrape-insights.yml      ← 인사이트 단독 (수동) <-외부 핑거로 가동
 ├── docs-meta/                   ← 개발 문서 (GitHub Pages 미서빙)
 │   ├── WORKFLOW.md              ← ★ 이 파일 (워크플로우 시각화)
 │   ├── PATCHNOTES.md            ← UI/기능 빌드 이력

@@ -108,7 +108,10 @@ def run_deterministic(cfg: dict, base_url: str, shot_path: str | None) -> Result
             }
             tabs = [("jobs", "#jobs-list .card", "postings"),
                     ("news", "#news-list .card", "items"),
-                    ("insights", "#insights-list .card", "items")]
+                    # 인사이트는 v1.09에서 법인별 4박스로 재설계 → 컨테이너 #insights-grid,
+                    # 카드 class가 아니라 <article.insight-firm> 안 <ul.firm-list><li>(글 목록).
+                    # 접힌 <details>도 DOM에 전체 글이 있어 데이터 items 수와 직접 대조된다.
+                    ("insights", "#insights-grid .firm-list li", "items")]
             for key, sel, dkey in tabs:
                 if key != "jobs":
                     try:

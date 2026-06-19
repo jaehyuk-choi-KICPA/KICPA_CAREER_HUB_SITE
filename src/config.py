@@ -185,8 +185,7 @@ _DEFAULTS: dict = {
             "jobs.json": {"label": "채용공고", "expected_minutes": 30},
             "news.json": {"label": "기사", "expected_minutes": 120},
             "insights.json": {"label": "빅펌 인사이트", "expected_minutes": 720},
-            # 푸시 발송 관측성 — notifier가 매 run 기록. 누락되면 발송 단계가 조용히 죽은 것.
-            "notify_status.json": {"label": "푸시 발송", "expected_minutes": 30},
+            # "notify_status.json": {"label": "푸시 발송", "expected_minutes": 30},  # notifier 미운영 중
         },
     },
     # 라이브 종단(e2e) 검증 — 배포된 화면이 의도대로 보이는지(canary·freshness가 못 보는 '사용자 화면').

@@ -132,64 +132,29 @@ function displayJobTitle(it) {
   return t.trim() || it.title;
 }
 
-// 자격: 수습CPA(공인회계사·수습 대상) vs 자격무관(CPA 아니어도 지원 가능)
-function qualKind(it) {
-  const hay = ((it.title || "") + " " + (it.emp_type || "")).toLowerCase();
-  if (/무관|학력무관|경력무관/.test(hay)) return "자격무관";
-  if (/수습|cpa|공인회계사|회계사/.test(hay)) return "수습CPA";
-  return "자격무관";
-}
-// 채용 종류: 인턴 / 파트타임 / 정규직
-function empKind(it) {
-  const hay = ((it.title || "") + " " + (it.emp_type || "")).toLowerCase();
-  if (/인턴|intern/.test(hay)) return "인턴";
-  if (/파트|part|시간제|아르바이트/.test(hay)) return "파트타임";
-  return "정규직";
-}
-// 잡코리아식 D-day: D-n, 오늘마감=D-0, 마감/상시
-function ddayText(it) {
-  if (it.status === "closed") return "마감";
-  const d = it.dday;
-  if (d === null || d === undefined) return "상시";
-  if (d < 0) return "마감";
-  return "D-" + d;
-}
-function ddayClass(it) {
-  if (it.status === "closed") return "closed";
-  const d = it.dday;
-  if (d === null || d === undefined) return "always";
-  if (d < 0) return "closed";
-  return "soon";   // 진행중 D-day = 빨강(얇은)
-}
-
 function jobCard(it) {
-  const fc = FIRM_COLOR[it.firm] || "#6b7684";
-  // 좌측 배지: 법인명(중앙) + 직무 박스 + 게시일(직무 아래)
-  const badge = el("div", { class:"jr-badge" }, [
-    el("span", { class:"jr-fn", style:`color:${fc}`, text:FIRM_EN[it.firm] || it.firm }),
-    el("div", { class:"jr-tags" }, [    // 직무 + 채용종류 나란히(빠싹)
-      it.field ? el("span", { class:"jr-ft", text:it.field }) : null,
-      el("span", { class:"jr-type", text:empKind(it) }),
-    ]),
-    it.posted_date ? el("span", { class:"jr-date", text:it.posted_date.slice(5) }) : null,
+  const dd = ddayInfo(it);
+  // 좌측=법인·직무 / 우측=상태표시(NEW·D-day) 통일 배치
+  const left = el("div", { class:"top-left" }, [
+    el("span", { class:"firm-tag", style:`color:${FIRM_COLOR[it.firm]||"#6b7684"}`, text:FIRM_EN[it.firm]||it.firm }),
+    el("span", { class:"tag", text:it.field }),
   ]);
-  // 본문 2행: 제목(검정) / 회사명 | 자격 | [채용종류]  (한 줄 유지)
-  const titleP = el("p", { class:"jr-title" }, [
-    el("a", { href:it.url, target:"_blank", rel:"noopener", text:displayJobTitle(it) }),
+  const right = el("div", { class:"top-right" }, [
+    ddayBadge(it),   // D-day = 우측상단 (당일마감은 모바일에서 2줄)
   ]);
-  if (it.is_new) titleP.appendChild(el("span", { class:"jr-new", text:"NEW" }));
-  const meta = el("div", { class:"jr-meta" }, [
-    el("span", { class:"jr-co", text:it.company || "-" }),
-    el("span", { class:"jr-bar", text:"|" }),
-    el("span", { class:"jr-qual", text:qualKind(it) }),
-  ]);
-  const body = el("div", { class:"jr-body" }, [titleP, meta]);
-  // 우측: D-day만 컴팩트하게(좌측 배지가 정보 대부분 담당)
-  const right = el("div", { class:"jr-right" }, [
-    el("span", { class:"jr-dday " + ddayClass(it), text:ddayText(it) }),
-  ]);
-  return el("article", { class:"card jobrow" + (it.status==="closed"?" closed":"") + (it.is_new?" is-new":"") },
-    [badge, body, right]);
+  const top = el("div", { class:"card-top" }, [left, right]);
+  const title = el("h3", {}, [el("a", { href:it.url, target:"_blank", rel:"noopener", text:displayJobTitle(it) })]);
+  const company = el("div", { class:"company", text:it.company || "-" });
+  const meta = el("div", { class:"card-meta" });
+  const parts = [];
+  if (it.emp_type) parts.push(el("span", { text:it.emp_type }));
+  if (it.location) parts.push(el("span", { text:"📍" + it.location }));
+  parts.push(el("span", { class:"meta-deadline", text:"📅 " + (it.deadline || "상시") }));  // 모바일에선 숨김(우측 D-day로 갈음)
+  if (it.posted_date) parts.push(el("span", { text:"게시 " + it.posted_date }));
+  parts.forEach((p, i) => { if (i) meta.appendChild(el("span", { class:"sep", text:"·" })); meta.appendChild(p); });
+  // NEW 배지는 제거(정보량 절감) — 신규는 카드 좌측 초록 테두리(.is-new)로 표시
+  return el("article", { class:"card" + (it.status==="closed"?" closed":"") + (it.is_new?" is-new":"") },
+    [top, title, company, meta]);
 }
 
 // 진행상태 분류: 진행중(open=마감일 있는 진행) / 마감(closed) / 상설(open이지만 마감일 없는 상시채용)
@@ -213,10 +178,7 @@ function renderJobs() {
   });
   const openFirst = (a,b) => (a.status==="open"?0:1) - (b.status==="open"?0:1);
   list.sort((a, b) => {
-    if (JS.sort === "posted") {
-      const cmp = (b.posted_date||"").localeCompare(a.posted_date||"");
-      return cmp || (b.first_seen||b.posted_date||"").localeCompare(a.first_seen||a.posted_date||"");
-    }
+    if (JS.sort === "posted") return (b.posted_date||"").localeCompare(a.posted_date||"");
     // deadline (default): 진행중 먼저 → 마감 임박순
     return openFirst(a,b) || ((a.dday??1e6)-(b.dday??1e6));
   });
@@ -263,21 +225,18 @@ function todayItem(it) {
   return wrap;
 }
 function renderToday(genStamp) {
-  // 발견시각(first_seen)으로부터 24시간 이내인 공고만 — 지난 건 하나씩 자동 탈락(롤링). 최대 5개.
-  // 기준 '지금'은 데이터 생성시각(genStamp)≈수집시각(라이브에선 ≈현재). first_seen 없으면 게시일 폴백.
-  const ref = genStamp ? Date.parse(genStamp) : Date.now();
-  const DAY = 24 * 3600 * 1000;
-  const items = JOBS.filter((it) => {
-    if (it.status === "closed") return false;
-    const fs = it.first_seen ? Date.parse(it.first_seen) : NaN;
-    if (!isNaN(fs)) return (ref - fs) <= DAY;             // 24h 이내 발견
-    return it.posted_date && (ref - Date.parse(it.posted_date)) <= DAY;  // 폴백
-  });
-  // 최신순(발견시각 내림차순)
+  // 최근 2일(어제·오늘) 게시 공고 — 자정 지나면 창이 하루씩 이동(18일이면 17·18, 19일이면 18·19).
+  // 기준일은 데이터 생성일(genStamp). UTC로 날짜 계산해 로컬 타임존에 따른 off-by-one 방지.
+  const today = (genStamp || "").slice(0, 10);
+  const dt = new Date(today + "T00:00:00Z");
+  dt.setUTCDate(dt.getUTCDate() - 1);
+  const since = dt.toISOString().slice(0, 10);   // 어제
+  const items = JOBS.filter((it) => it.status !== "closed" && it.posted_date && it.posted_date >= since);
+  // '올라온 순' = 발견시각(first_seen) 최신순 — 같은 게시일이라도 방금 잡힌 공고가 위로(게시일은 날짜뿐이라 타이).
   items.sort((a, b) => (b.first_seen || b.posted_date || "").localeCompare(a.first_seen || a.posted_date || ""));
   $("today-count").textContent = String(items.length);
   $("today-empty").hidden = items.length > 0;
-  $("today-list").replaceChildren(...items.slice(0, 5).map(todayItem));   // 최대 5개
+  $("today-list").replaceChildren(...items.slice(0, 12).map(todayItem));
 }
 
 function countBy(key) { const m={}; for (const it of JOBS) m[it[key]]=(m[it[key]]||0)+1; return m; }
@@ -446,95 +405,9 @@ function initSub(prefix, data, chipRowId, chipKey, fixed, cardFn, colors) {
   render();
 }
 
-// ===================== 웹 푸시 알림 =====================
-// 구독: '알림받기' 클릭 → SW 등록 → 권한 → pushManager.subscribe(VAPID) → Worker에 POST.
-// SW는 구독을 누른 사용자에게만 등록(미구독자는 SW 없음). VAPID_PUBLIC은 config.yaml과 동일값.
-const PUSH = {
-  VAPID_PUBLIC: "BMaDEvHyYyXHAtio4NhGA-ga-Ai1aCCHqgt8gW7f-wtYO9NREogsPn1lI945yn6Q_S3sZUqUfyzcYhNFsVhw1Gk",
-  WORKER_URL: "https://hbmons-push.trackingsite.workers.dev",   // push.hbmons.com 커스텀 도메인 연결 시 교체
-};
-function urlBase64ToUint8Array(b64) {
-  const pad = "=".repeat((4 - (b64.length % 4)) % 4);
-  const s = (b64 + pad).replace(/-/g, "+").replace(/_/g, "/");
-  const raw = atob(s); const arr = new Uint8Array(raw.length);
-  for (let i = 0; i < raw.length; i++) arr[i] = raw.charCodeAt(i);
-  return arr;
-}
-const _isIOS = () => /iP(hone|ad|od)/.test(navigator.userAgent) ||
-  (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
-const _standalone = () => matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
-function setPushBtn(on) {
-  const b = $("push-toggle"); if (!b) return;
-  b.dataset.state = on ? "on" : "off";
-  b.classList.toggle("on", on);
-  b.textContent = "🔔";   // 항상 종 아이콘 — 구독 중이면 .on(초록 배경)으로 구분
-  b.title = on ? "새 공고 알림 받는 중 — 끄려면 클릭" : "새 채용공고 알림 받기";
-}
-async function pushSubscribe() {
-  if (_isIOS() && !_standalone()) {
-    alert("아이폰은 먼저 '홈 화면에 추가'(공유 ⬆️ → 홈 화면에 추가) 후, 홈 화면 아이콘으로 열어야 알림을 받을 수 있어요. (iOS 16.4 이상)");
-    return;
-  }
-  try {
-    const reg = await navigator.serviceWorker.register("/sw.js");
-    const perm = await Notification.requestPermission();
-    if (perm !== "granted") {
-      alert("브라우저 알림이 차단돼 있어요. 주소창 좌측 자물쇠 → 알림을 '허용'으로 바꿔주세요.");
-      return;
-    }
-    const sub = await reg.pushManager.subscribe({
-      userVisibleOnly: true,
-      applicationServerKey: urlBase64ToUint8Array(PUSH.VAPID_PUBLIC),
-    });
-    const res = await fetch(PUSH.WORKER_URL + "/subscribe", {
-      method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(sub),
-    });
-    if (!res.ok) throw new Error("subscribe " + res.status);
-    localStorage.setItem("push_subscribed", "1");
-    setPushBtn(true);
-    alert("알림을 켰어요! 새 채용공고가 올라오면 바로 알려드릴게요. 🔔");
-  } catch (e) {
-    console.warn("push subscribe error", e);
-    alert("알림 설정 중 문제가 생겼어요. 잠시 후 다시 시도해주세요.");
-  }
-}
-async function pushUnsubscribe() {
-  try {
-    const reg = await navigator.serviceWorker.getRegistration();
-    const sub = reg && (await reg.pushManager.getSubscription());
-    if (sub) {
-      await fetch(PUSH.WORKER_URL + "/unsubscribe", {
-        method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ endpoint: sub.endpoint }),
-      }).catch(() => {});
-      await sub.unsubscribe().catch(() => {});
-    }
-    localStorage.removeItem("push_subscribed");
-    setPushBtn(false);
-  } catch (e) { console.warn("push unsubscribe error", e); }
-}
-function initPush() {
-  const btn = $("push-toggle"); if (!btn) return;
-  const supported = "serviceWorker" in navigator && "PushManager" in window && "Notification" in window;
-  if (!supported) { btn.hidden = true; return; }   // 미지원 브라우저 → 버튼 숨김(점진적 향상)
-  btn.hidden = false;
-  setPushBtn(false);
-  (async () => {   // 기존 구독 상태 복원
-    if (Notification.permission === "granted" && localStorage.getItem("push_subscribed")) {
-      const reg = await navigator.serviceWorker.getRegistration();
-      const sub = reg && (await reg.pushManager.getSubscription());
-      if (sub) setPushBtn(true); else localStorage.removeItem("push_subscribed");
-    }
-  })();
-  btn.addEventListener("click", () => {
-    btn.dataset.state === "on" ? pushUnsubscribe() : pushSubscribe();
-  });
-}
-
 // ===================== 부트 =====================
 (async function () {
   initTabs();
-  initPush();
   const tt = $("theme-toggle");
   if (tt) tt.addEventListener("click", () => {
     const next = document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";

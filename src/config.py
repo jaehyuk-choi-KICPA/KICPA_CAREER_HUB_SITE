@@ -121,6 +121,7 @@ _DEFAULTS: dict = {
         "news_foreign_sources": [
             "vietnam", ".vn", "japan", "nikkei", "china", "xinhua", "thai", "indonesia",
             "jakarta", "manila", "bangkok", "straits", "taipei",
+            "investing.com",   # 미국·외국 주총 proxy 기사 번역본 (감사인 비준·승인 노이즈)
         ],
         # 위 외국명이 있어도 이 마커(한국·미국·국제공통)가 제목에 있으면 유지
         "news_keep_markers": [
@@ -142,13 +143,21 @@ _DEFAULTS: dict = {
         # 기사 4분류(좁은→넓은 순 = dedup 선점 순서). 채용·시험에 업계동향 흡수, 감사에 제도·규제 흡수.
         "news_queries": {
             "채용·시험": ("수습 공인회계사 OR 공인회계사 시험 OR 한국공인회계사회 OR CPA 합격 OR 회계사 채용 OR "
-                          "회계법인 채용 OR 빅4 회계 OR 공인회계사 업계 OR 감사보수 OR 회계사 연봉 OR 회계법인 실적 OR "
+                          "회계법인 채용 OR 빅4 회계 OR 공인회계사 업계 OR 회계사 연봉 OR 회계법인 실적 OR "
                           "실무수습기관 OR 미지정 회계사 OR 회계사 수습처"),
-            "딜·M&A": ("인수합병 OR M&A OR IPO OR 기업가치평가 OR 구조조정 OR 사모펀드 회계법인 OR "
-                       "실사 회계법인 OR 재무자문 회계법인"),
+            "딜·M&A": ("인수합병 OR M&A OR IPO OR 기업공개 OR 기업가치평가 OR 구조조정 OR "
+                       "사모펀드 OR 바이아웃 OR 실사 OR 재무자문 OR 리그테이블 OR 경영권 OR 매각"),
             "세무": "세법개정 OR 조세정책 OR 세무조사 OR 법인세 OR 상속증여세 OR 국제조세",
-            "감사": ("회계기준 OR 감사기준 OR K-IFRS OR 내부회계관리제도 OR 회계감독 OR 금융감독원 회계 OR "
-                     "감사의견 OR 외부감사 OR 회계감리"),
+            # 감사는 구글 RSS 100건 상한 + 관련도순 정렬 때문에 단일 쿼리로는 오늘 기사가 뒤로 밀림.
+            # 2개 풀로 분리 → 각각 최대 100건, 합산 후 URL 기준 dedup.
+            "감사": [
+                # 풀 A: 기준·제도·의견
+                ("회계기준 OR 감사기준 OR K-IFRS OR 내부회계관리제도 OR 회계감독 OR "
+                 "금융감독원 회계 OR 감사의견 OR 외부감사 OR 회계감리"),
+                # 풀 B: 보수·부정·감사인·제재
+                ("감사보수 OR 분식회계 OR 지정감사 OR 표준감사시간 OR 외감법 OR 외감 OR "
+                 "감사인 OR 증선위 OR 회계처리"),
+            ],
         },
         # 제목에 이 단어가 있으면 노이즈로 제외(시상·행사·동정 등)
         "news_exclude": ["시상", "수상", "기획전", "캠페인", "부고", "위촉", "임명식", "골프", "기부", "동정"],
@@ -158,6 +167,7 @@ _DEFAULTS: dict = {
             "세무", "세금", "세법", "조세", "국세", "법인세", "상속세", "증여세", "양도세",
             "부가세", "과세", "관세", "ifrs", "공시", "내부회계", "재무제표",
             "m&a", "m＆a", "인수합병", "ipo", "기업가치", "실사", "사모", "구조조정",
+            "매각", "바이아웃", "증선위",
             "딜로이트", "삼일", "삼정", "안진", "한영", "kpmg", "pwc", " ey ", "빅4", "빅four",
             "금감원", "금융감독원", "한공회", "세정", "수습", "기장",
         ],
@@ -175,6 +185,8 @@ _DEFAULTS: dict = {
             "jobs.json": {"label": "채용공고", "expected_minutes": 30},
             "news.json": {"label": "기사", "expected_minutes": 120},
             "insights.json": {"label": "빅펌 인사이트", "expected_minutes": 720},
+            # 푸시 발송 관측성 — notifier가 매 run 기록. 누락되면 발송 단계가 조용히 죽은 것.
+            "notify_status.json": {"label": "푸시 발송", "expected_minutes": 30},
         },
     },
     # 라이브 종단(e2e) 검증 — 배포된 화면이 의도대로 보이는지(canary·freshness가 못 보는 '사용자 화면').
@@ -210,6 +222,20 @@ _DEFAULTS: dict = {
             "hanyoung": "https://eycareers-kr.recruiter.co.kr/career/home",
             "samil": "https://www.pwc.com/kr/ko/career/experienced.html",
         },
+    },
+    # 웹 푸시 채용 알림 — 새 공고를 구독자에게 발송(src/notifier.py). 코어 LLM-free.
+    # enabled=false면 발송 비활성(seed/dry-run은 가능). 검증 후 true로 전환.
+    "notifications": {
+        "enabled": False,
+        "worker_url": "https://hbmons-push.trackingsite.workers.dev",   # 구독 저장 Worker(push.hbmons.com 연결 시 교체)
+        "vapid_public": "",        # 브라우저 applicationServerKey(공개키 — app.js와 동일값)
+        "vapid_subject": "mailto:michael005009@gmail.com",  # VAPID claims sub
+        "only_new_open": True,     # 진행중(마감 전) 신규만 발송, 만료 미발송분은 게시 없이 억제
+        "ttl_seconds": 86400,      # 푸시 TTL(미수신 기기 보관 시간)
+        "max_per_run": 25,         # 한 run에서 발송할 공고 상한(콜드스타트 폭주 방지)
+        "title_format": "{title}",
+        "body_format": "{label} · 마감 {deadline} ({dday_label})",
+        "status_path": "docs/data/notify_status.json",  # 발송 관측성(freshness가 조용한 실패 감지)
     },
 }
 

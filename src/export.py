@@ -202,7 +202,8 @@ def build_news(cfg: dict) -> dict:
             seen.add(n.url)
             seen_title.add(tkey)
             items.append(n.to_dict())
-    items.sort(key=lambda i: i.get("published") or "", reverse=True)
+    # 시각 포함 published_at로 정렬(같은 날 기사도 진짜 최신순). 없으면 날짜로 폴백.
+    items.sort(key=lambda i: i.get("published_at") or i.get("published") or "", reverse=True)
     # 의미 관련성 게이트(#1) + 카테고리 보정(#2) — VOYAGE 키 있을 때만(없으면 키워드/쿼리 분류 그대로).
     # 재배정 카테고리에 recency(cutoffs) 재적용 안 함 — over-drop 방지(의도). 표시·일자상한에만 반영.
     items = embeds.enrich(items, _title_sig, cfg)

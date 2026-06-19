@@ -18,7 +18,8 @@ class NewsItem:
     source_label: str    # 표시 출처(언론사/발행처명)
     title: str
     url: str
-    published: str = ""  # yyyy-mm-dd (가능하면)
+    published: str = ""  # yyyy-mm-dd (가능하면) — 표시·보존기간용
+    published_at: str = ""  # yyyy-mm-ddTHH:MM:SS — 정렬용(같은 날 시각 tiebreaker). 없으면 published로 폴백
     summary: str = ""    # 1줄(선택)
     category: str = ""   # 딜/세무/회계/기타 또는 인사이트
 

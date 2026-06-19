@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-06-19T11:01:28",
+  "generated_at": "2026-06-19T11:31:31",
   "soon_days": 7,
   "counts": {
-    "total": 70,
-    "open": 45,
+    "total": 71,
+    "open": 46,
     "closed": 25,
-    "new": 21,
-    "soon": 19,
+    "new": 22,
+    "soon": 20,
     "by_firm": {
       "삼일": 10,
       "삼정": 4,
       "안진": 7,
-      "한영": 21,
+      "한영": 22,
       "로컬": 21,
       "기타": 7
     }
@@ -237,6 +237,23 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5099",
       "dday": 6,
       "first_seen": "2026-06-17T20:17:10"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "status": "open",
+      "is_new": true,
+      "title": "AI Center 인턴",
+      "company": "EY한영",
+      "deadline": "2026-06-25",
+      "posted_date": "2026-06-19",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/119362",
+      "dday": 6,
+      "first_seen": "2026-06-19T11:31:31"
     },
     {
       "source": "samil",

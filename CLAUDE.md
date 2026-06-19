@@ -60,62 +60,16 @@
 4. **재검증·채점** 후 **핵심 시사점을 메모리에 1건씩 적립**(다음 루프가 참조).
 > 채점 이력·시사점은 `memory/MEMORY.md` 인덱스 참조. 누적된 교훈을 무시하지 말고 매 루프 먼저 읽을 것.
 
-### 축적 시사점 (메모리에 없는 항목만 — 나머지는 `memory/` 참조)
-> 안진 인사이트 URL·KICPA 페이지네이션·채용 직무 디폴트·KICPA grace·외국 기사 필터·수량 레버 등은 메모리에 있음.
+## 구조 · 워크플로우
+> 파일 맵·전체 파이프라인·모니터링 3층·외부 핑거 설정은 **`docs-meta/WORKFLOW.md`** 참조.
 
-- **기사 4분류**(채용·시험←회계업계 / 감사←제도·규제 / 딜·M&A / 세무). 저빈도·고관련 카테고리는
-  `news_recent_days_by_category`로 보존기간 길게(채용 45·딜 60). 넓은 OR 쿼리 노이즈는 `news_require_any`
-  도메인어 게이트로, 매체만 다른 동일 헤드라인은 **제목 정규화 dedup**으로 제거. config 순서=dedup 선점 순서.
-  대응: **중복을 버리지 않고 군집화**(`_dedup_near`→대표=최신 1건, 나머지는 `dupes`에 첨부 → 프론트 카드가
-  '동일 주제 기사 N개'로 펼침). 매칭=`_same_issue` — 1차 `news_neardup_jaccard` **또는** 2차 `news_neardup_overlap`+
-  `news_neardup_min_tokens`(오병합 방지). **과병합보다 안전 우선.** `news_max_per_day_per_cat`(카테고리,일자 상한).
-  **2단계 의미 군집(임베딩, `src/embeds.py`)**: 어휘로 못 묶는 같은 사건을 보조 병합. `VOYAGE_API_KEY` 있을 때만.
-  `embeds.enrich`(관련성 게이트#1·카테고리 보정#2): 카테고리 프로토타입 코사인으로 오프도메인 드롭·보수적 재배정.
-  감사 쿼리는 **구글 RSS 100건 상한 우회를 위해 2개 풀로 분리**(풀A: 기준·제도·의견 / 풀B: 감사보수·감사인·증선위 등,
-  `build_news_adapters`가 `list[str]` 지원).
-- **기사 카테고리 오분류**: RSS 분류는 "어느 쿼리가 가져왔나"로 결정 → 채용·수습 기사가 "감사" 쿼리에만 잡히면
-  `감사`로 고정됨. 해결: `news_hire_title_keywords`(config)로 제목 기반 **사후 보정 pre-pass**(export.py `build_news`)
-  — 채용·수습 키워드가 제목에 있으면 `채용·시험`으로 재분류(dedup 전). 한공회장 발언·선발인원 이슈도 여기 포함.
-- **카나리아는 큐레이션 의도-인지여야 한다**: 라이브 페이지 *모든* 공고를 세어 필터된 스크래퍼 카운트와 비교하면
-  의도적 경력 필터링을 몰라 상시 거짓 '누락 의심'이 뜬다. `canary._project_context(cfg)`가 필터 의도 문자열을
-  `_vision_check`·`_suggest_fix`에 주입 → '신입/수습 관점'으로 판정. `_check_filter_leakage`(경력 누출 결정론).
-  카나리아 워크플로는 **수동 전용**(cron 없음).
-- **인사이트는 법인별 4박스(v1.09)**: 발행일 없어 '금일/신규' 억지 판정 전면 폐기(payload=`{generated_at,items}`만).
-  `build_insights`는 스크랩 순서 그대로. 프론트(`renderInsights`)가 `source_label`로 **4박스(삼일PwC·삼정KPMG·
-  Deloitte안진·EY한영, PC 2×2/모바일 1열)** 그룹핑 → 박스별 랜덤 추천 1편(로드마다) + 펼치기 전체. (어댑터 라벨 `Deloitte안진`.)
-- **'새로 올라온 공고'는 발견시각(first_seen) 최신순**: 게시일은 날짜뿐이라 같은 날 공고가 마감순으로 밀린다 →
-  `build_jobs`가 state의 `first_seen`을 item에 노출, 프론트가 first_seen 내림차순 정렬. 법인은 풀네임.
+⚠️ **GitHub 무료 public cron은 자주 드롭됨** — 정기 수집 주경로는 **외부 핑거(cron-job.org)**가 `run-all.yml`을 호출.  
+수집 개별 yml(`scrape·scrape-news·scrape-insights`)은 수동 전용. 모니터링 cron(`freshness` 1h·`sitecheck` 3h)은 유지.
 
-## 구조
-```
-src/
-  adapters/  kicpa·samjong·anjin·hanyoung·samil(채용) + news_rss(기사) + insights(빅펌) + base
-  sources.py(조립+병렬) export.py(생성 진입점 --part) classify.py(법인/직무) render.py(헤드리스)
-  canary.py(자기검증 카나리아 — 양식변경/누락 감지, 드리프트 시 Draft PR)
-  freshness.py(신선도 모니터 — 데이터가 낡았는지=스케줄 드롭 감지, STALE 시 Draft PR)
-  sitecheck.py(라이브 종단 e2e — 배포된 화면이 의도대로 보이는지, 실패 시 GitHub 이슈)
-  config.py filters.py state.py util.py http_util.py record.py news.py embeds.py(뉴스 의미군집 — Voyage 임베딩, 키 있을 때만)
-  run.py·kakao_pc.py·messenger_bot.js  ← 카톡봇(보류, 유지)
-docs/  index.html app.js style.css  CNAME  +  data/{jobs,news,insights}.json + data/status.json(점검시각)   (GitHub Pages 루트, hbmons.com)
-.github/workflows/  scrape.yml·scrape-news.yml·scrape-insights.yml(수집 — **cron 제거·수동 전용**, 정기 수집은 외부핑거→run-all이 전담) canary.yml(양식감시 — **수동 전용**, cron 없음·하루1회 직접 실행) freshness.yml(신선도 매시간 — 외부핑거 죽음 감지 감시견) sitecheck.yml(종단점검 3h) run-all.yml(외부핑거 통합실행=정기 수집 주경로)
-```
-> **GitHub cron은 무료·public에서 자주 드롭됨**(실측: 예약 실행이 거의 안 뜸). 안정적 주기 실행은 **외부 핑거
-> (cron-job.org, 30분 간격)**가 `repository_dispatch{event_type:run-all}`로 `run-all.yml`을 호출 →
-> 채용+기사+인사이트 일괄. **수집 cron(scrape·scrape-news·scrape-insights)은 외부핑거와 중복이라 제거(수동 전용).**
-> 모니터링 cron(freshness 매시간·sitecheck 3h)은 유지 — 특히 freshness가 **외부핑거가 죽으면 데이터 신선도로 감지**.
-> **외부 핑거 설정 요약**: cron-job.org → POST `https://api.github.com/repos/jaehyuk-choi-KICPA/KICPA_CAREER_HUB_SITE/dispatches`
-> Headers: `Accept: application/vnd.github+json` · `Authorization: Bearer <PAT(Contents+Actions R/W)>` ·
-> `X-GitHub-Api-Version: 2022-11-28` · `Content-Type: application/json` / Body: `{"event_type":"run-all"}`
-
-### 자동화 신뢰성 = 3층 모니터링 (변경 시 함께 고려)
-1. **실행됐나** → `freshness.py`(데이터 나이로 스케줄 드롭 감지). 2. **누락 없이 수집됐나** → `canary.py`(소스 양식/건수).
-3. **사용자가 실제로 제대로 보나** → `sitecheck.py`(라이브 URL을 브라우저로 열어 헤더 시각·탭별 카드수 vs 데이터·콘솔에러 + **타당성** + 선택적 LLM 비전).
-- **타당성(plausibility)**: 렌더 검사는 *의미 오류*를 못 잡는다(예: '금일 인사이트 48/48'=전량 신규는 화면엔 멀쩡한 숫자). sitecheck가 `오늘신규/총`이 `implausible_today_ratio`↑면 이상 처리(파생 지표는 반드시 별도 타당성 검사).
-- **셀프힐링(sitecheck.yml)**: 실패를 `recoverable`(신선도·일시 → **스크랩 재실행→재점검 무인 반복**, max_attempts 상한)과 `code`(타당성·렌더·콘솔 → **재실행 안 함**)로 분류. 코드 버그는 `--explain`(LLM 진단·수정 *제안*)을 담아 **GitHub 이슈**로 올림(라벨 sitecheck,needs-human, 복구 시 auto-close). **코드 자동수정·자동머지 절대 금지 — 적용은 사람이 Claude Code로.**
-- **점검 시각**: 헤더 "최근 업데이트"는 `docs/data/status.json`의 `last_run`(export `main`이 매 실행 기록 — 0건이라 데이터가 안 바뀌어도 전진). 폴백은 jobs `generated_at`. **pagebuild와 무관**.
-- LLM은 카나리아·sitecheck의 **out-of-band 점검·제안**에만(키 없으면 결정론만). 자동 수정·자동 머지 금지(Human-in-the-loop).
-config.yaml  requirements.txt
-```
+### 자동화 신뢰성 = 3층 (변경 시 함께 고려)
+1. **실행됐나** → `freshness.py` 2. **수집됐나** → `canary.py` (수동, 의도-인지 필수) 3. **제대로 보이나** → `sitecheck.py`
+- **셀프힐링**: sitecheck `recoverable`(신선도 실패) → 재실행 자동반복 / `code`(타당성·렌더) → 재실행 안 함, GitHub 이슈.
+- LLM은 out-of-band 점검·제안만. **코드 자동수정·자동머지 절대 금지(Human-in-the-loop).**
 
 ## 실행 / 배포
 ```

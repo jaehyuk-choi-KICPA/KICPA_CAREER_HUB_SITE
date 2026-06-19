@@ -36,6 +36,9 @@ jobs:
                   docs/data/status.json news_vectors.json state.json docs/sitemap.xml
           if git diff --staged --quiet; then echo "변경 없음"; else
             git commit -m "auto: run-all 통합 수집"
-            git pull --rebase --autostash origin "${{ github.ref_name }}"
+            # 재생성 산출물(jobs/news/insights/status·캐시)은 '최신 수집이 이김'이 정확한 의미.
+            # 외부/수동 푸시가 run에 겹쳐 origin이 전진하면 rebase가 JSON에서 충돌 → -X theirs로
+            # 이번 수집본을 채택해 자동 해소(전체실패 금지). 충돌 미발생 시 영향 없음.
+            git pull --rebase --autostash -X theirs origin "${{ github.ref_name }}"
             git push
           fi

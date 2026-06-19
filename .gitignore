@@ -8,6 +8,10 @@ _*.json
 _*.html
 _*.png
 _*.txt
+_*.log
+
+# 임베딩 캐시(재생성 가능, 키 없으면 생략)
+news_vectors.json
 
 # 카나리아: 드리프트 플래그는 런타임 전용(canary_state.json·canary_report.md는 추적)
 canary_drift.flag
@@ -35,3 +39,6 @@ venv/
 .pytest_cache/
 _review/
 review-*.png
+
+# Claude Code 개인 로컬 설정(권한 등) — 커밋 제외
+.claude/settings.local.json

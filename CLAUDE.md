@@ -126,8 +126,9 @@ cd docs && python -m http.server 8000              # 로컬 확인
 
 ## 기록 규칙 (빌드 / 수집툴) — 빌드업 시 필수, 트랙 분리
 기록 문서는 **`docs-meta/`** 에 통합 관리(루트엔 CLAUDE.md·README만 유지 — 자동로드·GitHub 렌더 보존).
-> **세션 시작 시 보조 참고자료**: `docs-meta/`의 **PATCHNOTES.md**(빌드/변경 이력)·**SCRAPER_LOG.md**(수집 엔진 보완 흐름)·
+> **세션 시작 시 보조 참고자료**: `docs-meta/`의 **WORKFLOW.md**(전체 워크플로우 시각화)·**PATCHNOTES.md**(빌드/변경 이력)·**SCRAPER_LOG.md**(수집 엔진 보완 흐름)·
 > **사용설명서.md**(운영·배포·설정)를 관련 작업 전 우선 확인할 것. (전량 통독 불필요 — 작업 맥락에 맞는 문서만 펼쳐 참고.)
+> **WORKFLOW.md 연동 규칙**: `.github/workflows/*.yml` · `src/export.py` · `src/sources.py` · `src/adapters/*` · `src/config.py` 변경 시 `docs-meta/WORKFLOW.md`도 함께 수정한다.
 사용자가 변경 흐름을 추적·블로그화할 수 있도록 **두 트랙**으로 나눠 기록한다. 자동수집(`auto:`) 커밋은 제외.
 - **빌드 트랙 → `docs-meta/PATCHNOTES.md`**: **UI 개선·새 기능**이 있을 때만(= 공식 표시버전이 올라갈 때) 최상단에 새 버전 엔트리.
   분류 **🎨 UI 개선 / ✨ 새로운 기능** 항상 표기(없으면 '변경 없음'), 각 항목 [무엇]+[배경]. **블로그 복붙용 한국어 톤**.

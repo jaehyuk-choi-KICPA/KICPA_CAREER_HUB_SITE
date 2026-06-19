@@ -14,6 +14,7 @@ concurrency:
 jobs:
   run-all:
     runs-on: ubuntu-latest
+    timeout-minutes: 25      # 정상 ~10분. 행 걸려도 25분에 자동 종료 → data-commit 그룹 장기 점유 방지(수집 정지 사고 재발 차단)
     env:
       TZ: Asia/Seoul
       VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}   # 뉴스 의미 군집(없으면 어휘 군집만)

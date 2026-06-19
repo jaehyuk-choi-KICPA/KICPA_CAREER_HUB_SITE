@@ -15,6 +15,7 @@ concurrency:
 jobs:
   sitecheck:
     runs-on: ubuntu-latest
+    timeout-minutes: 30      # 셀프힐링 재시도(최대 3회·각 sleep 150s) 여유 + 행 방지. data-commit 그룹 공유라 장기 점유 차단
     env:
       TZ: Asia/Seoul
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # 없으면 LLM 비전 자동 비활성=결정론만

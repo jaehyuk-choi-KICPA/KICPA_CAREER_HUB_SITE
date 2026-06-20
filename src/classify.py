@@ -38,3 +38,35 @@ def classify_field(p: Posting, cfg: dict, firm: str = "기타") -> str:
         if any(k.lower() in text for k in kws):
             return label
     return "감사" if firm in d.get("audit_default_firms", []) else "기타"
+
+
+def _detail_text(p: Posting) -> str:
+    """판정용 종합 텍스트 — 제목+회사+상세발췌+고용형태+구분(소스가 주는 만큼)."""
+    return f"{p.title} {p.company} {p.body_excerpt} {p.emp_type} {p.category}".lower()
+
+
+def classify_qualification(p: Posting, cfg: dict) -> str:
+    """자격요건 라벨: 수습CPA / 자격무관.
+
+    KICPA 수습보드(kicpa_susup)는 무조건 수습CPA(합격자 대상 보드). 그 외엔 모집대상 종합 텍스트에
+    수습/공인회계사/CPA 등 키워드가 있고 제외어가 없으면 수습CPA, 아니면 자격무관(보수적 기본).
+    """
+    d = cfg["dashboard"]
+    if p.source == "kicpa_susup":
+        return "수습CPA"
+    text = _detail_text(p)
+    if any(k.lower() in text for k in d.get("qual_exclude_keywords", [])):
+        return "자격무관"
+    if any(k.lower() in text for k in d.get("qual_susup_keywords", [])):
+        return "수습CPA"
+    return "자격무관"
+
+
+def classify_emp_kind(p: Posting, cfg: dict) -> str:
+    """채용구분 라벨: 인턴 / 계약직 / 파트타임 / 정규직 (우선순위 매칭, 미매칭 기본=정규직)."""
+    d = cfg["dashboard"]
+    text = _detail_text(p)
+    for label, kws in d.get("empkind_keywords", {}).items():
+        if any(k.lower() in text for k in kws):
+            return label
+    return "정규직"

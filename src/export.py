@@ -16,7 +16,7 @@ from src import embeds
 from src.adapters.base import safe_fetch
 from src.adapters.insights import build_insight_adapters
 from src.adapters.news_rss import build_news_adapters
-from src.classify import classify_field, classify_firm
+from src.classify import classify_emp_kind, classify_field, classify_firm, classify_qualification
 from src.config import load_config
 from src.filters import filter_postings
 from src.sources import build_adapters, fetch_all
@@ -81,19 +81,23 @@ def build_jobs(cfg: dict, state: State) -> dict:
         print(f"  [복원] 목록 일시 누락 {len(carried)}건 유지(grace {grace_days}일)")
     kept = kept + carried
 
-    new_cut = _recent_cutoff(cfg["dashboard"]["new_days"])
+    # NEW = '올라온 지 24시간 이내'. 게시일은 날짜뿐이라 24h 정밀도가 안 나오므로 발견시각(first_seen) 기준.
+    new_ts_cut = (_dt.datetime.now() - _dt.timedelta(hours=24)).isoformat(timespec="seconds")
     items = []
     for p in kept:
         open_ = is_open(p.deadline)
         firm = classify_firm(p, cfg)
+        first_seen = (state.entries.get(p.uid) or {}).get("first_seen", "")
         items.append(
             {
                 "source": p.source,
                 "source_label": p.source_label,
                 "firm": firm,
-                "field": classify_field(p, cfg, firm),
+                "field": classify_field(p, cfg, firm),         # (레거시) 프론트 자격요건 전환 전까지 병행
+                "qualification": classify_qualification(p, cfg),  # 수습CPA / 자격무관
+                "emp_kind": classify_emp_kind(p, cfg),            # 인턴 / 계약직 / 파트타임 / 정규직
                 "status": "open" if open_ else "closed",
-                "is_new": bool(p.posted_date and p.posted_date >= new_cut),
+                "is_new": bool(first_seen >= new_ts_cut),        # 발견시각이 24h 이내(빈 문자열은 자동 False)
                 "title": p.title,
                 "company": p.company,
                 "deadline": p.deadline,
@@ -103,7 +107,7 @@ def build_jobs(cfg: dict, state: State) -> dict:
                 "url": p.url,
                 "dday": dday(p.deadline),
                 # 발견시각 — '새로 올라온 공고' 패널의 진짜 올라온 순 정렬용(게시일은 날짜뿐이라 같은 날 타이 해소)
-                "first_seen": (state.entries.get(p.uid) or {}).get("first_seen", ""),
+                "first_seen": first_seen,
             }
         )
 
@@ -128,6 +132,10 @@ def build_jobs(cfg: dict, state: State) -> dict:
             if it["status"] == "open" and it["dday"] is not None and 0 <= it["dday"] <= soon_days
         ),
         "by_firm": {f: sum(1 for it in items if it["firm"] == f) for f in _FIRM_ORDER},
+        "by_qualification": {q: sum(1 for it in items if it["qualification"] == q)
+                             for q in ("수습CPA", "자격무관")},
+        "by_emp_kind": {k: sum(1 for it in items if it["emp_kind"] == k)
+                        for k in ("인턴", "정규직", "계약직", "파트타임")},
     }
 
     _print_report(report, counts)
@@ -167,6 +175,8 @@ def build_news(cfg: dict) -> dict:
     exclude = d.get("news_exclude", [])
     excl_src = d.get("news_exclude_sources", [])
     require = [k.lower() for k in d.get("news_require_any", [])]
+    gov_action = d.get("news_local_gov_action", [])      # 지자체 행정 홍보 제외용
+    gov_keep = d.get("news_local_gov_keep", [])
     # 외국(미국 제외) 세무·감사 이슈 차단 — 외국명/외국매체 있고 한국/미국/국제 마커 없으면 제외
     foreign_cats = set(d.get("news_foreign_filter_categories", []))
     foreign_countries = [k.lower() for k in d.get("news_foreign_countries", [])]
@@ -193,6 +203,12 @@ def build_news(cfg: dict) -> dict:
                 continue
             if require and not any(k in n.title.lower() for k in require):  # 도메인 무관 기사 제외
                 continue
+            if gov_action and not any(k in n.title for k in gov_keep):  # 지자체 행정 홍보(○○시/군 + 세미나·유예 등) 제외
+                toks = n.title.replace(",", " ").replace("…", " ").split()
+                has_city = any(len(t) >= 3 and t.endswith(("시", "군")) for t in toks)
+                if (has_city and any(a in n.title for a in gov_action)) or \
+                   ("보조금" in n.title and ("역량" in n.title or "집행" in n.title)):
+                    continue
             if foreign_cats and n.category in foreign_cats:   # 외국(미국 제외) 세무·감사 이슈 차단
                 tl = n.title.lower()
                 sl = (n.source_label or "").lower()

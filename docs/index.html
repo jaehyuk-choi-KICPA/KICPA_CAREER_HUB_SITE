@@ -40,35 +40,40 @@
     "description": "한공회·빅4 회계법인 채용공고와 회계·세무·딜 업계 기사를 자동으로 모아보는 사이트."
   }
   </script>
-  <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;📊&lt;/text&gt;&lt;/svg&gt;" />
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="icon.svg" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#1b4f9c" />
   <link rel="preconnect" href="https://cdn.jsdelivr.net" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&display=swap" />
   <!-- ?v= 캐시 토큰: 표시 버전(.ver)과 별개로 CSS/JS 수정 시마다 올려 캐시 갱신(버전 동결 중엔 접미사 a,b…) -->
-  <link rel="stylesheet" href="style.css?v=1.09c" />
+  <link rel="stylesheet" href="style.css?v=1.1a" />
 </head>
 <body>
   <header class="site-header">
+    <div class="updated-bar"><div class="wrap"><span id="updated"></span></div></div>
     <div class="wrap header-row">
       <div class="brand">
-        <h1 title="채용공고 처음으로">회법몬<span class="ver">1.09</span></h1>
-        <span class="tagline">회계법인 취업 관련 링크를 자동으로 끌어모아요 🔗 <span class="muted">(안내 참조)</span></span>
+        <div class="brand-top">
+          <h1 title="채용공고 처음으로">회법몬<span class="ver">ver1.1</span></h1>
+          <button id="theme-toggle" class="theme-btn" aria-label="다크모드 전환" title="다크모드 전환">🌙</button>
+        </div>
       </div>
-      <div class="header-right">
-        <nav class="tabs">
-          <button class="tab-btn on" data-tab="jobs">채용공고</button>
-          <button class="tab-btn" data-tab="news">기사<span class="tab-new" hidden></span></button>
-          <button class="tab-btn" data-tab="insights">빅펌 인사이트</button>
-        </nav>
-        <button id="theme-toggle" class="theme-btn" aria-label="다크모드 전환" title="다크모드 전환">🌙</button>
-        <nav class="tabs about-nav">
-          <button class="tab-btn" data-tab="about">안내</button>
-        </nav>
-      </div>
+      <nav class="tabs top-nav">
+        <button class="tab-btn" data-tab="about">ℹ️ 이용안내</button>
+      </nav>
     </div>
-    <div class="wrap updated"><span id="updated"></span></div>
+    <div class="wrap header-sub">
+      <nav class="tabs main-nav">
+        <button class="tab-btn on" data-tab="jobs">채용공고</button>
+        <button class="tab-btn" data-tab="news">기사<span class="tab-new" hidden></span></button>
+        <button class="tab-btn" data-tab="insights">인사이트</button>
+      </nav>
+    </div>
   </header>
 
   <main class="wrap">
@@ -83,11 +88,19 @@
             <option value="deadline" selected>마감 임박순</option>
             <option value="posted">최근 게시순</option>
           </select>
+          <button class="alert-add" id="alert-add" type="button" title="새 공고 알림 받기">🔔 채용알림</button>
+          <div class="alert-note" id="alert-note" hidden>
+            <span class="alert-q">🔔 어떤 새 공고 알림을 받을까요?</span>
+            <button class="alert-opt" type="button" data-scope="all">전체 <em>(일반·인턴 포함)</em></button>
+            <button class="alert-opt" type="button" data-scope="susup">수습CPA 전용</button>
+            <span class="alert-msg" id="alert-msg"></span>
+          </div>
         </div>
 
         <aside class="rail" id="rail">
           <div class="rail-group"><h4>법인</h4><div id="f-firm" class="opts"></div></div>
-          <div class="rail-group"><h4>직무</h4><div id="f-field" class="opts"></div></div>
+          <div class="rail-group"><h4>자격요건</h4><div id="f-qual" class="opts"></div></div>
+          <div class="rail-group"><h4>채용구분</h4><div id="f-empkind" class="opts"></div></div>
           <div class="rail-group"><h4>진행 상태</h4><div id="f-status" class="opts"></div></div>
           <button id="rail-close" class="rail-close">▴ 필터 닫기</button>
         </aside>
@@ -95,11 +108,11 @@
         <div class="today-col">
           <aside class="today-panel" id="today-panel">
             <div class="today-head">
-              <span class="today-title">🆕 새로 올라온 공고 <span class="today-sort">(최신순)</span></span>
+              <span class="today-title">🆕 방금 올라온 공고 <span class="today-sort">(24시간·최신순)</span></span>
               <span class="today-count" id="today-count">0</span>
             </div>
             <div id="today-list" class="today-list"></div>
-            <div id="today-empty" class="today-empty" hidden>최근 2일간 새로 올라온 공고가 없습니다.</div>
+            <div id="today-empty" class="today-empty" hidden>최근 24시간 내 새로 올라온 공고가 없습니다.</div>
           </aside>
           <!-- PC 전용: 금일 기사 수 (클릭 시 기사 탭 이동) -->
           <div class="today-mini-row">
@@ -122,7 +135,6 @@
 
     <!-- ===== 기사 ===== -->
     <section id="tab-news" class="tab">
-      <p class="sec-desc">수습 CPA 취준에 필요한 채용 동향·업계 지식 중심.</p>
       <div class="chiprow" id="f-newscat"></div>
       <div id="news-list" class="cards"></div>
       <div id="news-empty" class="empty" hidden>표시할 이슈가 아직 없습니다.</div>
@@ -139,21 +151,40 @@
 
     <!-- ===== 안내 ===== -->
     <section id="tab-about" class="tab">
-      <p class="sec-desc"><strong>회법몬</strong>은 수습공인회계사 및 회계법인 입사 준비자용 페이지입니다.</p>
+      <div class="about-lead"><img src="icon.svg" alt="회법몬" class="lead-logo" /> <strong>회법몬</strong>은 <strong>수습공인회계사·회계법인 입사 준비자</strong>를 위해 회계법인 채용공고와 업계 뉴스·빅펌 발간물을 한곳에 자동으로 모아주는 페이지입니다.</div>
       <div class="about-card">
-        <h3>🔄 얼마나 자주 갱신되나요</h3>
+        <p class="about-note">🕑 상단의 <strong>‘최근 서치’</strong>는 마지막으로 공고·기사를 <strong>수집·점검한 시각</strong>이에요. 별도 새로고침 없이 자동으로 계속 갱신됩니다.</p>
+
+        <h3>누구를 위한 곳인가요?</h3>
+        <ul>
+          <li>수습처(<strong>회계법인·공기업·일반기업 등</strong>)를 찾는 <strong>수습·신입 공인회계사</strong></li>
+          <li>빅4·로컬 회계법인 입사를 준비하는 분</li>
+          <li>빅4의 <strong>다양한 인턴</strong>(단기·정규전환형 등)을 노리는 분</li>
+          <li>회계·세무·딜 업계 동향을 빠르게 훑고 싶은 분</li>
+        </ul>
+
+        <h3>무엇을 모아오나요?</h3>
+        <p>한국공인회계사회와 빅4(삼일·삼정·안진·한영) 채용 사이트에서 <strong>수습·신입 공인회계사</strong>와 <strong>빅4의 다양한 인턴</strong>(단기·정규전환형 등) 공고를 위주로 모읍니다. 경력직만 대상으로 하는 공고는 제외하고, 신입·경력을 함께 뽑는 공고는 포함합니다. 회계법인뿐 아니라 한공회 구인란의 <strong>공기업·일반기업 등 기타 기관(수습처 포함)</strong> 공고도 함께 담아요.</p>
+        <p>기사·발간물은 원문을 옮겨오지 않고 <strong>제목과 링크만</strong> 연결합니다 — 자세한 내용은 원문에서 확인해 주세요.</p>
+
+        <h3>얼마나 자주 갱신되나요?</h3>
         <ul>
           <li>채용공고 — 약 <strong>30분</strong>마다</li>
           <li>업계 기사 — 약 <strong>3시간</strong>마다 (오래된 기사는 일정 기간 뒤 자동으로 빠집니다)</li>
           <li>빅펌 발간물 — 약 <strong>반나절</strong>에 한 번</li>
         </ul>
-        <h3>🧠 무엇을 가져오나요</h3>
-        <p>한공회와 빅4 사이트에서 <strong>수습·신입·인턴</strong> 채용을 위주로 모읍니다(경력직만 대상으로 하는 공고는 제외, 신입·경력 동시 모집은 포함). 기사와 발간물은 원문을 옮겨오지 않고 <strong>제목과 링크만</strong> 걸어두니, 자세한 내용은 원문에서 확인해 주세요.</p>
-        <p>회계법인 채용뿐 아니라, 한국공인회계사회 구인란에 올라오는 <strong>공기업·일반기업 등 기타 기관</strong>의 공고도 함께 포함하고 있습니다.</p>
-        <h3>🆕 '새로 올라온 공고'란</h3>
-        <p>채용 화면 오른쪽(모바일은 상단)의 <strong>'새로 올라온 공고'</strong> 칸은 <strong>최근 이틀치(어제·오늘)</strong> 새 공고를 모아 보여줍니다. 자정이 지나면 기간이 하루씩 자동으로 넘어갑니다(예: 18일엔 17·18일, 19일엔 18·19일).</p>
-        <p>가장 최근에 올라온 공고가 <strong>맨 위</strong>에 옵니다.</p>
-        <h3>🔗 원문 바로가기</h3>
+
+        <h3>‘방금 올라온 공고’는 무엇인가요?</h3>
+        <p>채용 화면 오른쪽(모바일은 상단)의 <strong>‘방금 올라온 공고’</strong> 칸은 <strong>최근 24시간</strong> 안에 처음 수집된 공고만 <strong>최신순</strong>으로 보여줍니다.</p>
+
+        <h3>채용알림은 어떻게 받나요?</h3>
+        <p>채용 화면 검색줄의 <strong>‘🔔 채용알림’</strong>을 누르고 알림을 켜면, 새 공고가 올라올 때 브라우저 푸시로 알려드립니다. 받을 범위를 고를 수 있어요.</p>
+        <ul>
+          <li><strong>전체</strong> — 일반·인턴 등 모든 새 공고</li>
+          <li><strong>수습CPA 전용</strong> — KICPA 합격자(수습)를 대상으로 하는 공고만</li>
+        </ul>
+        <p class="muted">알림 설정은 이 브라우저(기기)에 저장됩니다. 끄려면 브라우저의 사이트 알림 설정에서 해제하면 돼요.</p>
+        <h3>공식 채용 페이지 바로가기</h3>
         <ul class="src-links">
           <li>한국공인회계사회 —
             <a href="https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/list.face" target="_blank" rel="noopener">구인(수습CPA)</a> ·
@@ -164,10 +195,12 @@
           <li>딜로이트 안진 — <a href="https://join.deloitte.co.kr/WiseRecruit2/User/RecruitList.aspx" target="_blank" rel="noopener">채용</a></li>
           <li>EY 한영 — <a href="https://eycareers-kr.recruiter.co.kr/career/home" target="_blank" rel="noopener">채용</a></li>
         </ul>
-        <p>혹시 빠진 곳이나 고쳤으면 하는 점이 있다면, 최하단 링크를 통해 자유롭게 피드백 부탁드립니다.</p>
-        <p class="muted">공개된 채용공고·발간물의 제목과 링크만 모은 비영리 페이지입니다.</p>
+        <h3>의견 보내기</h3>
+        <p>빠진 곳이나 고쳤으면 하는 점이 있다면 <strong>최하단 링크</strong>로 자유롭게 알려주세요. 큰 힘이 됩니다.</p>
+        <p class="muted">공개된 채용공고·발간물의 <strong>제목과 링크만</strong> 모은 비영리 페이지입니다.</p>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
@@ -180,6 +213,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=1.09c"></script>
+  <script src="app.js?v=1.1a"></script>
 </body>
 </html>

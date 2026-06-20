@@ -66,6 +66,18 @@ _DEFAULTS: dict = {
         # 직무 미매칭 시 '감사' 디폴트로 둘 법인(로컬 회계법인 수습/스태프 직무는 대체로 감사).
         # Big4·기타는 자문/디지털/일반직이 많아 디폴트 적용 안 함(기타 유지) — 오분류 방지.
         "audit_default_firms": ["로컬"],
+        # === 자격요건축(수습CPA/자격무관) — 직무분류 대체. 제목+회사+상세(body_excerpt)+고용형태+구분 텍스트로 판정 ===
+        # KICPA 수습보드(kicpa_susup)는 무조건 수습CPA. 그 외엔 아래 키워드가 있으면 수습CPA, 없으면 자격무관(보수적).
+        "qual_susup_keywords": ["수습", "공인회계사", "cpa", "회계사", "신입회계사", "회계사 시험", "회계사 합격"],
+        # 위 키워드가 있어도 이 단어가 있으면 자격무관으로(경력 전용 등). filter_postings가 경력만 공고는 이미 제외.
+        "qual_exclude_keywords": ["경력무관", "자격무관"],
+        # === 채용구분축(인턴/계약직/파트타임/정규직) — 우선순위 매칭, 미매칭 기본=정규직 ===
+        "empkind_keywords": {
+            "인턴": ["인턴", "intern", "체험형"],
+            "계약직": ["계약직", "기간제", "contract"],
+            "파트타임": ["파트타임", "시간제", "part-time", "아르바이트"],
+            "정규직": ["정규직", "정규"],
+        },
         # 뉴스/이슈 카테고리(단순화): 키워드 → 카테고리 (미매칭=기타)
         "news_keywords": {
             "딜": ["m&a", "m＆a", "인수", "합병", "ipo", "상장", "deal", "사모", "pe", "vc", "투자유치"],
@@ -86,7 +98,7 @@ _DEFAULTS: dict = {
         # 카테고리별 보존기간 override — 저빈도·고관련(채용/시험·딜)은 더 오래 노출(감사·세무는 기본값)
         "news_recent_days_by_category": {
             "채용·시험": 75,
-            "딜·M&A": 60,
+            "딜·M&A": 30,   # 60→30: 딜 누적 비중 완화(고볼륨이라 길게 둘 필요 없음)
         },
         "news_per_category": 75, # 카테고리별 RSS 수집 상한. 구글뉴스는 관련도순이라 최신 기사가 뒤쪽에도 흩어짐
                                  # → 50에서 자르면 신선기사를 통째 유실(실측: 세무·감사 거의 2배 회복). 75로 상향.
@@ -139,7 +151,7 @@ _DEFAULTS: dict = {
             "합격자 수", "회계사 선발", "선발인원",
         ],
         # 출처(매체) 제외 — 정치색 강한 매체 등(source_label 부분일치)
-        "news_exclude_sources": ["뉴스타파"],
+        "news_exclude_sources": ["뉴스타파", "대한민국 정책브리핑", "Naver Blog"],   # 정치색·보도자료·블로그 출처 제외
         # 기사 4분류(좁은→넓은 순 = dedup 선점 순서). 채용·시험에 업계동향 흡수, 감사에 제도·규제 흡수.
         "news_queries": {
             "채용·시험": ("수습 공인회계사 OR 공인회계사 시험 OR 한국공인회계사회 OR CPA 합격 OR 회계사 채용 OR "
@@ -160,7 +172,12 @@ _DEFAULTS: dict = {
             ],
         },
         # 제목에 이 단어가 있으면 노이즈로 제외(시상·행사·동정 등)
-        "news_exclude": ["시상", "수상", "기획전", "캠페인", "부고", "위촉", "임명식", "골프", "기부", "동정"],
+        "news_exclude": ["시상", "수상", "기획전", "캠페인", "부고", "위촉", "임명식", "골프", "기부", "동정",
+                         "코인", "암호화폐", "(보도설명)", "(해명)"],   # 코인·보도자료성 제외
+        # 지자체 행정 홍보 제외 — ○○시/군 + 행정 액션(세미나·컨설팅·유예 등)이 함께면 제외. 국가기관 언급 시 유지.
+        "news_local_gov_action": ["세미나", "컨설팅", "유예", "우대", "이자보전", "역량 강화", "역량강화", "선정"],
+        "news_local_gov_keep": ["국세청", "기재부", "기획재정부", "금감원", "금융감독원", "증선위", "한공회",
+                                "한국공인회계사회", "국세"],
         # 관련성 게이트: 제목에 아래 도메인어가 하나도 없으면 제외(넓은 OR 쿼리의 엉뚱한 매칭 차단)
         "news_require_any": [
             "회계", "회계사", "공인회계사", "cpa", "회계법인", "감사", "감사인", "회계감리",
@@ -225,9 +242,9 @@ _DEFAULTS: dict = {
     # 웹 푸시 채용 알림 — 새 공고를 구독자에게 발송(src/notifier.py). 코어 LLM-free.
     # enabled=false면 발송 비활성(seed/dry-run은 가능). 검증 후 true로 전환.
     "notifications": {
-        "enabled": False,
+        "enabled": True,
         "worker_url": "https://hbmons-push.trackingsite.workers.dev",   # 구독 저장 Worker(push.hbmons.com 연결 시 교체)
-        "vapid_public": "",        # 브라우저 applicationServerKey(공개키 — app.js와 동일값)
+        "vapid_public": "BP7FISRizBQtx8OHcwaspl-KTupAl_R82zTL7o0PqzhqrGj6-bxqY3X-92rNYhVXySuntQaO6fxIOVtDFHYA1Yg",  # applicationServerKey(app.js와 동일값)
         "vapid_subject": "mailto:michael005009@gmail.com",  # VAPID claims sub
         "only_new_open": True,     # 진행중(마감 전) 신규만 발송, 만료 미발송분은 게시 없이 억제
         "ttl_seconds": 86400,      # 푸시 TTL(미수신 기기 보관 시간)

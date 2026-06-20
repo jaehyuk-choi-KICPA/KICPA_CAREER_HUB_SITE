@@ -29,19 +29,34 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 /* 헤더 + 네비 */
 .site-header { position:sticky; top:0; z-index:30; background:var(--header-bg);
   backdrop-filter:saturate(140%) blur(8px); border-bottom:1px solid var(--line); }
-.header-row { display:flex; align-items:center; justify-content:space-between; gap:14px; padding:13px 18px 0; flex-wrap:wrap; }
-.brand-top { display:flex; align-items:center; gap:8px; }
+/* 헤더 2행: (1행) [로고 + 다크토글] … [이용안내] / 로고 아래 최근 서치 (2행) 채용공고·기사·인사이트 */
+.header-row { display:flex; align-items:flex-start; justify-content:space-between; gap:14px; padding:12px 18px 4px; flex-wrap:wrap; }
+.brand { display:flex; flex-direction:column; align-items:flex-start; gap:5px; }
+.brand-top { display:flex; align-items:center; gap:9px; }   /* 로고 + 다크모드 토글 */
 .brand h1 { margin:0; font-family:"Jua","Pretendard",sans-serif; font-size:34px; font-weight:400; letter-spacing:0; color:var(--accent); line-height:1.1; cursor:pointer; user-select:none; }
 .brand h1 .ver { font-size:.42em; vertical-align:.55em; margin-left:6px; color:var(--muted); letter-spacing:0; }
 .tagline { font-size:12px; color:var(--muted); }
 .tagline strong { color:var(--ink); }
-.header-right { display:flex; align-items:center; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
-.tabs { display:flex; gap:18px; background:transparent; padding:0; }   /* 밑줄 탭(채움 X, 텀 둠) */
-.tab-btn { border:0; background:transparent; color:var(--muted); padding:5px 1px; border-radius:0;
-  border-bottom:2.5px solid var(--line); font-size:15.5px; font-weight:700; cursor:pointer;
-  transition:all .12s; white-space:nowrap; }   /* 미선택도 옅은 밑줄(탭 가시성) — 탭끼리 gap으로 간격 */
+.tabs { display:flex; gap:4px; background:transparent; padding:0; }   /* 알약 탭 — 간격 좁게 */
+/* 헤더 2행: (1행) 로고 … 우측 안내·채용알림 / (2행) 가운데 채용공고·기사·인사이트·다크모드 … 우측 최근 서치 */
+.top-nav { display:flex; gap:4px; }
+/* 이용안내 = 다크토글처럼 박스 버튼 */
+.top-nav .tab-btn { font-size:13.5px; padding:7px 12px; border:1px solid var(--line); border-radius:10px; font-weight:600; }
+.top-nav .tab-btn:hover { color:var(--ink); border-color:var(--accent); background:transparent; }
+.top-nav .tab-btn.on { background:var(--accent-soft); color:var(--accent); border-color:var(--accent); }
+.header-sub { display:flex; justify-content:center; padding:5px 18px 8px; }
+.main-nav { display:flex; align-items:center; gap:16px; }
+/* 탭 아래 옅은 투명 바 — 최근 서치(마지막 수집·점검) */
+/* 최근 서치 — 제목 위 옅은 회색 행(PC 왼쪽 정렬) */
+.updated-bar { background:rgba(27,79,156,.045); border-bottom:1px solid var(--line); }
+.updated-bar .wrap { padding-top:5px; padding-bottom:5px; text-align:left; }
+.updated-bar #updated { background:transparent; color:var(--muted); padding:0; font-weight:600; font-size:11.5px; }
+/* 탭 전환 = 잡코리아 샘플 스타일(알약 + 선택 시 옅은 파란 배경 + 하단 액센트 라인) */
+.tab-btn { border:0; background:transparent; color:var(--muted); padding:6px 12px; border-radius:8px;
+  border-bottom:2px solid transparent; font-size:14px; font-weight:700; cursor:pointer;
+  transition:background .12s, color .12s; white-space:nowrap; }
 .tab-btn:hover { color:var(--ink); }
-.tab-btn.on { color:var(--accent); border-bottom-color:var(--accent); }
+.tab-btn.on { color:var(--accent); border-bottom-color:var(--accent); background:var(--accent-soft); }
 /* 탭 신규 점 — 안 본 새 기사가 있을 때 표시(브라우저별). [hidden]이면 숨김 */
 .tab-btn .tab-new { display:inline-block; width:7px; height:7px; margin-left:5px; border-radius:50%;
   background:#e5484d; vertical-align:middle; }
@@ -52,24 +67,43 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .tagline br + strong, .tagline strong { color:var(--ink); }
 .tagline { line-height:1.45; }
 .updated { font-size:11.5px; color:var(--muted); padding:8px 18px 11px; }
-#updated { display:inline-flex; align-items:center; background:var(--accent-soft); color:var(--accent); font-weight:600; padding:3px 11px; border-radius:999px; font-size:11px; }
+#updated { display:inline-flex; align-items:center; background:var(--accent-soft); color:var(--accent); font-weight:700; padding:3px 11px; border-radius:999px; font-size:11.5px; white-space:nowrap; }
 
 .tab { display:none; margin:20px 0; }
-.tab.on { display:block; }
+.tab.on { display:block; animation:tabfade .18s ease-out; }   /* 탭 전환 시 살짝 페이드 */
+@keyframes tabfade { from { opacity:0; transform:translateY(3px); } to { opacity:1; transform:none; } }
 
 /* 채용 레이아웃 (controls 항상 노출 / rail·today·results) */
 .jobs-layout { display:grid; gap:14px 16px; grid-template-columns:1fr; grid-template-areas:"controls" "rail" "today" "results"; }
 .controls { grid-area:controls; } .rail { grid-area:rail; } .results { grid-area:results; } .today-col { grid-area:today; align-self:start; }
-.controls { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+/* 검색/필터/정렬 = 잡코리아풍 옅은 파란 묶음(해시태그 없음) */
+.controls { display:flex; gap:8px; align-items:center; flex-wrap:wrap;
+  background:var(--accent-soft); border:1px solid #d7e3f7; border-radius:14px; padding:11px 12px; }
 .controls input#kw { flex:1; min-width:0; padding:11px 13px; border:1px solid var(--line); border-radius:10px; font-size:14.5px; background:var(--card); color:var(--ink); }
 .controls input#kw:focus { outline:none; border-color:var(--accent); }
 .controls select { padding:10px; border:1px solid var(--line); border-radius:10px; background:var(--card); color:var(--ink); font-size:13px; }
+/* 채용알림(준비중) — 검색 박스에 녹인 버튼 + 펼침 안내 */
+.alert-add { padding:10px 13px; border:1px solid var(--accent); background:var(--card); color:var(--accent);
+  border-radius:10px; font-size:13px; font-weight:700; cursor:pointer; font-family:inherit; white-space:nowrap; line-height:1; }
+.alert-add:hover { background:#fff; }
+.alert-add.on { background:var(--accent); color:#fff; }
+.alert-note { flex-basis:100%; margin-top:2px; display:flex; align-items:center; flex-wrap:wrap; gap:8px;
+  background:var(--card); border:1px dashed var(--accent); border-radius:10px; padding:9px 12px; }
+.alert-note[hidden] { display:none; }   /* 채용알림 클릭 전엔 숨김(display:flex가 [hidden] 무력화하던 것 교정) */
+.alert-q { font-size:12.5px; font-weight:700; color:var(--accent); }
+.alert-opt { padding:6px 12px; border:1px solid var(--accent); background:var(--card); color:var(--accent);
+  border-radius:999px; font-size:12.5px; font-weight:700; cursor:pointer; font-family:inherit; white-space:nowrap; }
+.alert-opt em { font-style:normal; font-weight:500; opacity:.75; }
+.alert-opt:hover { background:var(--accent-soft); }
+.alert-opt.on { background:var(--accent); color:#fff; }
+.alert-msg { flex-basis:100%; font-size:12px; color:var(--ink2); }
+.alert-msg:empty { display:none; }
 .rail { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:15px; box-shadow:var(--shadow); align-self:start; }
 .rail input#kw { width:100%; padding:10px 12px; border:1px solid var(--line); border-radius:9px; font-size:14px; margin-bottom:12px; background:var(--card); color:var(--ink); }
 .rail input#kw:focus { outline:none; border-color:var(--accent); }
 .rail-group { padding:11px 0; border-top:1px solid var(--line); }
 .rail-group:first-of-type { border-top:0; padding-top:0; }
-.rail-group h4 { margin:0 0 9px; font-size:11.5px; color:var(--muted); font-weight:800; letter-spacing:.4px; text-transform:uppercase; }
+.rail-group h4 { margin:0 0 9px; font-size:11.5px; color:var(--muted); font-weight:800; letter-spacing:.4px; text-transform:uppercase; text-align:center; }
 /* 필터 칩(법인·직무=복수, 진행상태=단일, 토글) — 한 행 2개 그리드 */
 .opts { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
 #f-status { grid-template-columns:repeat(3,1fr); }   /* 진행중/마감/전체 한 줄 */
@@ -143,11 +177,13 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 @keyframes reddot { 0%{ box-shadow:0 0 0 0 rgba(229,72,77,.55); } 70%{ box-shadow:0 0 0 7px rgba(229,72,77,0); } 100%{ box-shadow:0 0 0 0 rgba(229,72,77,0); } }
 
 /* 카드 공통 */
-.cards { display:grid; gap:11px; grid-template-columns:1fr 1fr; }
+.cards { display:grid; gap:11px; grid-template-columns:repeat(2, minmax(0,1fr)); }  /* minmax(0) — 카드 콘텐츠가 열 폭 넘어 가로 스크롤 나는 것 방지 */
 .cards-1 { grid-template-columns:1fr; }
 .card { background:var(--card); border:1px solid var(--line); border-radius:13px; padding:14px 16px;
   display:flex; flex-direction:column; gap:7px; box-shadow:var(--shadow); transition:border-color .12s, box-shadow .12s, transform .12s; }
 .card:hover { border-color:#c9d3e2; box-shadow:0 4px 16px rgba(16,40,80,.09); transform:translateY(-1px); }
+.card.clickable { cursor:pointer; }                                  /* 카드 전체 클릭 → 링크 */
+.card.clickable:active { transform:translateY(0) scale(.985); }      /* 살짝 눌림 피드백 */
 .card.closed { opacity:.5; }
 .card.is-new { border-left:3px solid var(--new); }
 .card-top { display:flex; align-items:center; gap:6px 8px; flex-wrap:wrap; }
@@ -161,8 +197,16 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .card h3 { margin:0; font-size:15px; font-weight:600; line-height:1.4;
   display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:3; overflow:hidden; }  /* 긴 제목 3줄 말줄임(2열 카드 높이 균일화) */
 .card .company { font-size:13px; color:var(--muted); }
-.card-meta { display:flex; align-items:center; gap:8px; flex-wrap:wrap; font-size:12.5px; color:var(--muted); }
+.card-meta { display:flex; align-items:center; gap:7px; flex-wrap:nowrap; overflow:hidden; font-size:12.5px; color:var(--muted); }
+.card-meta > * { flex:0 0 auto; }
+.card-meta .org { flex:0 1 auto; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }  /* 아래행 한 줄 유지 — 기관명만 말줄임 */
 .card-meta .sep { color:var(--line); }
+/* D-day: 진한 빨강·박스 없음(잡코리아풍). soon/warn까지 명시해 전역 .dday.soon/.warn 칩 배경을 무력화 */
+.card-meta .dday, .card-meta .dday.soon, .card-meta .dday.warn {
+  background:transparent; padding:0; font-weight:600; color:#c92a2a; }
+.card-meta .dday.d0 { background:rgba(201,42,42,.12); padding:1px 7px; border-radius:6px; }  /* D-0(당일마감)만 박스 강조 */
+.card-meta .dday.closed { color:var(--closed); font-weight:500; }   /* 마감은 회색 */
+.card h3 a { color:var(--ink); }   /* 채용·기사 카드 제목 검정(파란 링크색 → ink) */
 /* 같은 주제 중복 기사 묶음 — 우측 하단 토글 + 펼침 목록(잡코리아식 깔끔 UI) */
 .dupes { margin-top:8px; display:flex; flex-direction:column; }
 .dupes-toggle { align-self:flex-end; width:max-content; cursor:pointer; list-style:none; user-select:none;
@@ -185,19 +229,31 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 
 /* 기사/인사이트 */
 .sec-desc { color:var(--muted); font-size:13px; margin:0 0 14px; }
-.about-card { background:var(--card); border:1px solid var(--line); border-radius:13px; padding:18px 20px; box-shadow:var(--shadow); max-width:720px; }
-.about-card h3 { font-size:15px; margin:18px 0 8px; }
-.about-card h3:first-child { margin-top:0; }
-.about-card ul { margin:0 0 8px; padding-left:18px; }
-.about-card li { margin:5px 0; }
-.about-card p { margin:7px 0; }
+/* 안내 탭 상단 강조 박스(타깃 한 줄) */
+.about-lead { max-width:720px; margin:0 auto 14px; background:var(--accent-soft); border:1px solid #cfe0f6; border-radius:12px;
+  padding:14px 18px; font-size:14.5px; font-weight:600; color:var(--ink); line-height:1.6; text-align:center; }
+.about-lead .lead-logo { width:22px; height:22px; border-radius:6px; vertical-align:-5px; margin-right:3px; }
+.about-card { background:var(--card); border:1px solid var(--line); border-radius:13px; padding:22px 24px; box-shadow:var(--shadow); max-width:720px; margin:0 auto; text-align:center; }
+.alert-soon { text-align:center; }
+.alert-soon h3 { font-size:17px; }
+.about-card h3 { font-size:17px; font-weight:700; color:var(--ink); margin:32px 0 13px; text-align:center; }
+.about-card > :first-child { margin-top:0; }
+/* 상단 안내 콜아웃(최근 서치 설명) — 가운데 정렬 */
+.about-note { background:var(--accent-soft); border:1px solid #cfe0f6; border-radius:10px;
+  padding:12px 16px; margin:0 auto 8px; font-size:13.5px; color:var(--ink2); line-height:1.6; text-align:center; }
+.about-card ul { list-style:none; margin:12px 0; padding:0; }
+.about-card li { margin:8px 0; }
+.about-card li::before { content:"•"; color:var(--accent); font-weight:800; margin-right:7px; }   /* 가운데정렬 목록에 점 */
+.about-card p { margin:12px 0; line-height:1.65; }
 .about-card .src-links a { font-weight:600; }
-.chiprow { display:flex; flex-wrap:wrap; gap:16px; margin-bottom:14px; }
-/* 카테고리 '구분탭' — 박스 채우지 않고 색글씨 탭(카테고리별 색은 인라인). 선택 시 굵게+밑줄 */
-.chip { border:0; background:transparent; padding:5px 2px; font-size:14.5px; font-weight:600; color:var(--muted);
-  cursor:pointer; border-bottom:2.5px solid var(--line); transition:all .12s; }   /* 미선택도 옅은 밑줄 */
-.chip:hover { color:var(--ink); }
-.chip.on { color:var(--accent); font-weight:800; border-bottom-color:currentColor; }
+/* 기사 카테고리 = 잡코리아 샘플 세그먼트 컨트롤(전체·채용·감사·세무·딜) — 선택 시 액센트 채움 */
+.chiprow { display:flex; gap:0; margin-bottom:16px; background:var(--card); border:1px solid var(--line);
+  border-radius:12px; padding:4px; }
+.chip { flex:1; border:0; background:transparent; padding:9px 6px; font-size:13px; font-weight:700; color:var(--muted);
+  cursor:pointer; border-radius:9px; transition:background .12s, color .12s; white-space:nowrap;
+  text-align:center; font-family:inherit; }
+.chip:hover { color:var(--ink); background:var(--chip-bg); }
+.chip.on { background:var(--accent); color:#fff; }
 
 /* ===== 인사이트 4박스(법인별) — v1.09 ===== */
 .insights-head { margin-bottom:14px; }
@@ -255,7 +311,7 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
   .today-mini-row { display:none; }                /* 금일 기사·금일 인사이트 미니박스는 PC 전용 */
   .cards { grid-template-columns:1fr; gap:9px; }   /* 기사는 한 줄 */
   .insights-grid { grid-template-columns:1fr; }     /* 인사이트 4박스도 모바일은 한 줄(법인별 1행) */
-  #jobs-list { grid-template-columns:1fr 1fr; }     /* 채용공고만 2열 유지 */
+  #jobs-list { grid-template-columns:repeat(2, minmax(0,1fr)); }     /* 채용공고만 2열 유지(minmax(0)=콘텐츠 넘침 방지) */
   .card { padding:12px 13px; gap:6px; }
   .card h3 { font-size:13.5px; }
   .card .company { font-size:12px; }

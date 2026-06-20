@@ -1,0 +1,13 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="hbmons">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2563b0"/>
+      <stop offset="1" stop-color="#163d78"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <text x="232" y="282" text-anchor="middle" dominant-baseline="central"
+        font-family="Pretendard, Arial, sans-serif" font-size="235" font-weight="800"
+        letter-spacing="-6" fill="#ffffff">hb</text>
+  <circle cx="392" cy="330" r="26" fill="#3ddc97"/>
+</svg>

@@ -1,0 +1,91 @@
+name: monitor   # 통합 사이트 점검(6h) — 소스 급감(canary) + 라이브 종단·신선도 셀프힐링(sitecheck).
+                # 신선도(서버 최근 업데이트 미갱신=recoverable)만 자동 재수집, 그 외(렌더·타당성·코드)는 이슈로 에스컬레이션(Human-in-the-loop).
+                # ⚠️ 첫 도입 supervised 검증 필수 → cron은 휴면(주석). workflow_dispatch로 한 번 눈으로 검증한 뒤
+                #    cron을 활성화하고 freshness.yml(1h)·sitecheck.yml(3h)의 cron을 폐기(수동 전용 전환)할 것.
+
+on:
+  # schedule:
+  #   - cron: "0 */6 * * *"   # (supervised 검증 후 주석 해제) 6시간마다, UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write       # 신선도 미갱신 시 재스크랩 커밋(코드 수정은 절대 안 함)
+  issues: write
+concurrency:
+  group: data-commit    # 스크랩(run-all)·sitecheck와 push 직렬화
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30      # 셀프힐링 재시도(최대 3회·각 sleep 150s) 여유
+    env:
+      TZ: Asia/Seoul
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}   # 없으면 LLM 비전 자동 비활성=결정론만
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: pip }
+      - run: pip install -r requirements.txt
+      - name: Install Chromium
+        run: python -m playwright install --with-deps chromium
+      # 1) 소스 수집수 급감/0건(구조·무료) — 드리프트면 canary가 리포트/플래그 생성(코드 자동수정 없음, 사람 게이트)
+      - name: Canary (소스 급감 구조 점검)
+        run: python -m src.canary || true
+      # 2) 라이브 종단·신선도 셀프힐링 — 신선도(recoverable)면 재스크랩→배포대기→재점검, 코드버그면 중단(이슈)
+      - name: Self-healing loop (신선도 미갱신만 자동 재수집)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for i in 1 2 3; do
+            rm -f sitecheck_fail.flag
+            python -m src.sitecheck || true
+            if [ ! -f sitecheck_fail.flag ]; then echo "attempt $i: PASS"; break; fi
+            CLS=$(python -c "import json;print(json.load(open('sitecheck_result.json'))['class'])" 2>/dev/null || echo code)
+            echo "attempt $i: FAIL (class=$CLS)"
+            if [ "$CLS" = "recoverable" ]; then
+              echo "→ 신선도 미갱신: 재스크랩 후 배포 대기"
+              python -m src.export || true
+              git add docs/data/jobs.json docs/data/news.json docs/data/insights.json \
+                      docs/data/status.json state.json docs/sitemap.xml
+              if ! git diff --staged --quiet; then
+                git commit -m "auto: 모니터 셀프힐링 재수집"
+                git pull --rebase --autostash origin "${{ github.ref_name }}"
+                git push
+              fi
+              sleep 150   # Pages 배포 반영 대기 후 라이브 재점검
+            else
+              echo "→ 코드/배포 버그: 재실행으로 못 고침, 루프 중단(사람 검토)"; break
+            fi
+          done
+      - name: LLM 수정 제안 첨부 (실패 지속 시, 키 있을 때만)
+        if: ${{ hashFiles('sitecheck_fail.flag') != '' }}
+        run: python -m src.sitecheck --explain || true
+      - name: Upload screenshot artifact
+        if: ${{ hashFiles('sitecheck_shot.png') != '' }}
+        uses: actions/upload-artifact@v4
+        with: { name: monitor-shot, path: sitecheck_shot.png, retention-days: 7 }
+      - name: Open/append GitHub issue on failure
+        if: ${{ hashFiles('sitecheck_fail.flag') != '' }}
+        run: |
+          gh label create monitor -c B60205 -d "통합 사이트 점검" --force 2>/dev/null || true
+          gh label create needs-human -c FBCA04 -d "사람 검토·수정 필요" --force 2>/dev/null || true
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          printf '\n\n— 스크린샷·로그: %s\n' "$RUN_URL" >> sitecheck_report.md
+          NUM=$(gh issue list --label monitor --state open --json number --jq '.[0].number')
+          if [ -n "$NUM" ]; then
+            gh issue comment "$NUM" --body-file sitecheck_report.md
+          else
+            gh issue create --title "🚨 통합 사이트 점검 실패" --label monitor,needs-human \
+              --assignee jaehyuk-choi-KICPA --body-file sitecheck_report.md
+          fi
+      - name: Auto-close issue on recovery
+        if: ${{ hashFiles('sitecheck_fail.flag') == '' }}
+        run: |
+          NUM=$(gh issue list --label monitor --state open --json number --jq '.[0].number')
+          if [ -n "$NUM" ]; then
+            gh issue comment "$NUM" --body "✅ 통합 점검 정상 복구 — 자동 종료합니다."
+            gh issue close "$NUM"
+          fi

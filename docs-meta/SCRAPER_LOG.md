@@ -20,6 +20,19 @@
 
 ---
 
+## 2026-06-21 — 자격요건·채용구분 분류 신설(직무 대체) + is_new 24h + 기사 게이트·균형정렬
+
+- **증상/계기:** 채용 직무분류(딜/감사/택스/기타)가 수습공인회계사 타깃엔 덜 결정적. 기사 화면이 딜로 도배(코인·블로그·해외 IPO·지자체 행정 노이즈 + dedup 비대칭).
+- **무엇을 / 어디에:**
+  1. **자격요건·채용구분 분류** — `classify.py`에 `classify_qualification`(수습CPA/자격무관)·`classify_emp_kind`(인턴/정규직/계약직/파트타임). 판정 입력 = 제목+회사+`body_excerpt`+`emp_type`+`category` 종합(`_detail_text`). KICPA 수습보드(`kicpa_susup`)=무조건 수습CPA, 그 외 `qual_susup_keywords` 매칭·`qual_exclude_keywords` 미해당이면 수습CPA. config에 `qual_susup_keywords`·`qual_exclude_keywords`·`empkind_keywords` 추가. `export.py build_jobs`가 `qualification`·`emp_kind` + `counts.by_*` 출력(`field`는 레거시 병행).
+  2. **NEW=게시 24h** — `export.py`가 발견시각(`first_seen`) 24h 이내를 `is_new`로(게시일은 날짜뿐이라 24h 정밀도엔 발견시각 사용). 프론트 '방금 올라온 공고' 패널도 `is_new` 기준으로 통일.
+  3. **기사 게이트(노이즈 차단)** — config `news_exclude`(코인·암호화폐·(보도설명)·(해명))·`news_exclude_sources`(대한민국 정책브리핑·Naver Blog)·신규 `news_local_gov_action`/`news_local_gov_keep`. `export.py build_news` 루프에 **지자체 행정 게이트**(○○시/군 + 세미나·유예 등, 국가기관 언급 시 유지) 1블록.
+  4. **딜 편중 완화** — 딜 보존 60→30일(`news_recent_days_by_category`). 프론트 `app.js spreadCategories`(같은 카테고리 3연속 방지) — dedup 압축 비대칭(감사/세무는 같은 사건 다매체→1건, 딜은 개별 건→다수)으로 '전체' 상단이 딜로 도배되는 것 완화.
+- **효과/검증:** `export` 재수집 OK(채용 68·기사 159). 게이트 누락 0(코인·보도·블로그·지자체 제거 확인). 기사 분포 감사62·세무34·딜45로 딜 독점 해소. 자격요건 수습CPA18/자격무관50, 채용구분 인턴29/정규34/계약4/파트1.
+- **남은 튜닝(시각 반복검토 필요):** 딜 쿼리 추가 축소(일반 IPO/매각·해외 노이즈), `when:` 최신창 연산자, 영풍 같은 대형 단일사건 dedup 임계. Big4 모집대상 상세수집(`body_excerpt`)으로 수습CPA 판정 정밀화.
+
+---
+
 ## 2026-06-19 — 감사 쿼리 2풀 분리 + 딜 쿼리 단순화 + 정렬 tiebreaker + Investing.com 차단
 
 - **증상/계기:** 06-19 감사 기사 1건(당일분 거의 없음). 딜 건수도 18건으로 낮음. 기사 카드 같은 날 내 순서가 뒤죽박죽.

@@ -1,0 +1,21 @@
+# 회법몬 웹 푸시 구독 저장소 Worker — 배포: cd worker && wrangler deploy
+# 1회 셋업:
+#   wrangler login                                   # 브라우저 OAuth 'Allow'
+#   wrangler kv namespace create SUBS                # → 출력된 id를 아래 kv_namespaces.id에 붙여넣기
+#   wrangler secret put READ_TOKEN                   # Actions의 SUBS_READ_TOKEN과 동일 값
+#   wrangler deploy
+#   (선택) Cloudflare 대시보드 → Workers → 이 Worker → Settings → Domains & Routes
+#          → Custom Domain 으로 push.hbmons.com 연결(DNS가 이미 Cloudflare라 클릭만).
+
+name = "hbmons-push"
+main = "subscriptions.js"
+compatibility_date = "2024-11-01"
+
+# 구독 저장 KV (wrangler kv namespace create SUBS 후 id 채우기)
+kv_namespaces = [
+  { binding = "SUBS", id = "8bcb4fecba604ab5bc0c8b203982c8e7" }
+]
+
+[vars]
+ALLOWED_ORIGIN = "https://hbmons.com,https://www.hbmons.com"
+# READ_TOKEN 은 vars 아님 — `wrangler secret put READ_TOKEN` 으로 별도 등록(시크릿).

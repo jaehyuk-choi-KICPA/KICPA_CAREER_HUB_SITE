@@ -8,6 +8,8 @@ playwright>=1.40
 anthropic>=0.40
 # 뉴스 의미 군집(임베딩) — VOYAGE_API_KEY 있을 때만 사용(없으면 어휘 군집만, 가벼운 HTTP 클라이언트)
 voyageai>=0.2
+# 웹 푸시 채용 알림(src/notifier.py) — VAPID 서명 발송. Actions에서 발송 시 필요
+pywebpush>=1.14
 # 카톡 PC 게시(보류 기능) — Windows 전용이라 리눅스에선 자동 스킵
 pywinauto>=0.6.9 ; sys_platform == "win32"
 pyperclip>=1.8 ; sys_platform == "win32"

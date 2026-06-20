@@ -42,3 +42,6 @@ review-*.png
 
 # Claude Code 개인 로컬 설정(권한 등) — 커밋 제외
 .claude/settings.local.json
+
+# Cloudflare wrangler 로컬 캐시(계정 정보) — 커밋 금지
+worker/.wrangler/

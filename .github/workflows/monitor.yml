@@ -1,11 +1,11 @@
 name: monitor   # 통합 사이트 점검(6h) — 소스 급감(canary) + 라이브 종단·신선도 셀프힐링(sitecheck).
                 # 신선도(서버 최근 업데이트 미갱신=recoverable)만 자동 재수집, 그 외(렌더·타당성·코드)는 이슈로 에스컬레이션(Human-in-the-loop).
-                # ⚠️ 첫 도입 supervised 검증 필수 → cron은 휴면(주석). workflow_dispatch로 한 번 눈으로 검증한 뒤
-                #    cron을 활성화하고 freshness.yml(1h)·sitecheck.yml(3h)의 cron을 폐기(수동 전용 전환)할 것.
+                # cron 5시간 간격 활성(첫 실행이 곧 supervised 검증). 안정 확인되면 freshness.yml(1h)·sitecheck.yml(3h)
+                # cron을 폐기(수동 전용 전환)해 중복 제거 권장 — 현재는 안전을 위해 병행.
 
 on:
-  # schedule:
-  #   - cron: "0 */6 * * *"   # (supervised 검증 후 주석 해제) 6시간마다, UTC
+  schedule:
+    - cron: "0 */5 * * *"   # 5시간 간격(UTC): 00·05·10·15·20시
   workflow_dispatch: {}
 
 permissions:

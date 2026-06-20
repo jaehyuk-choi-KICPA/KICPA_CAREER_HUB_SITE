@@ -155,6 +155,14 @@ function initTabs() {
 // ===================== 채용 =====================
 const JS = { firm:new Set(), qual:new Set(), empkind:new Set(), status:"open", onlyNew:false, kw:"", sort:"deadline" };
 let JOBS = [];
+let DATA_GEN = "";   // jobs.generated_at(수집 시각) — 카드 'NEW 초록테두리' 신선도(3일) 기준점
+// 초록테두리 = 처음 수집(first_seen)된 지 3일 이내. 패널 '방금 올라온 공고'(24h, is_new)와 분리.
+function isFresh3(it) {
+  if (!it.first_seen) return false;
+  const g = Date.parse(DATA_GEN) || Date.now();
+  const f = Date.parse(it.first_seen);
+  return isFinite(f) && (g - f) <= 3 * 86400 * 1000;
+}
 
 function ddayInfo(it) {
   if (it.status === "closed") return { t:"마감", c:"closed" };
@@ -224,8 +232,8 @@ function jobCard(it) {
     el("span", { class:"sep", text:"|" }),
     el("span", { class:"dday " + dd.c, text:dd.t }),   // .card-meta 스코프에서 진한 빨강·가늘게
   ]);
-  // NEW(게시 24h) = 카드 좌측 초록 테두리(.is-new)
-  return makeCardClickable(el("article", { class:"card" + (it.status==="closed"?" closed":"") + (it.is_new?" is-new":"") },
+  // NEW(수집 3일 이내) = 카드 좌측 초록 테두리(.is-new)
+  return makeCardClickable(el("article", { class:"card" + (it.status==="closed"?" closed":"") + (isFresh3(it)?" is-new":"") },
     [top, title, meta]), it.url);
 }
 
@@ -350,6 +358,7 @@ let _controlsBound = false;   // reset이 initJobs를 재호출해도 컨트롤 
 
 function initJobs(data) {
   JOBS = data.postings || [];
+  DATA_GEN = data.generated_at || "";
 
   renderFirmChips();   // 법인 칩 = 선택 상태 기준 동적 카운트
   buildOpts("f-qual", QUAL_ORDER, "checkbox", (v)=>JS.qual.has(v),

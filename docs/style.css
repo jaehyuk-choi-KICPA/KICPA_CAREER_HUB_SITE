@@ -2,6 +2,7 @@
 :root {
   --bg:#f6f8fb; --card:#fff; --ink:#16202c; --muted:#667085; --line:#e6e9ef;
   --accent:#1b4f9c; --accent-soft:#eef3fb; --new:#0f9d77; --new-soft:#e8f6f1;
+  --search-bg:#e2ecfa; --search-line:#bdd4f1;   /* 검색 그룹 = accent-soft보다 한 단계 진한 잡코리아 톤 */
   --soon:#d64545; --warn:#c97a18; --closed:#9aa3af;
   --seg-bg:#eef1f6; --chip-bg:#eef1f5; --header-bg:rgba(255,255,255,.92);
   --panel-grad-a:#e8f6f1; --panel-grad-b:#ffffff; --panel-line:#cfeadf; --panel-title:#0c6b50; --panel-item-line:#dcefe6;
@@ -11,6 +12,7 @@
 [data-theme="dark"] {
   --bg:#0e131b; --card:#161d28; --ink:#e7ecf3; --muted:#93a0b2; --line:#27313f;
   --accent:#5b93e0; --accent-soft:#16263b; --new:#2dba8c; --new-soft:#102420;
+  --search-bg:#16263b; --search-line:#2b3a4d;   /* 다크는 기존 톤 유지 */
   --soon:#ef6f6f; --warn:#d9a24a; --closed:#6c7787;
   --seg-bg:#1b2330; --chip-bg:#202a38; --header-bg:rgba(16,21,30,.9);
   --panel-grad-a:#10241f; --panel-grad-b:#161d28; --panel-line:#1f4338; --panel-title:#56c9a3; --panel-item-line:#1d3a31;
@@ -78,7 +80,7 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .controls { grid-area:controls; } .rail { grid-area:rail; } .results { grid-area:results; } .today-col { grid-area:today; align-self:start; }
 /* 검색/필터/정렬 = 잡코리아풍 옅은 파란 묶음(해시태그 없음) */
 .controls { display:flex; gap:8px; align-items:center; flex-wrap:wrap;
-  background:var(--accent-soft); border:1px solid #d7e3f7; border-radius:14px; padding:11px 12px; }
+  background:var(--search-bg); border:1px solid var(--search-line); border-radius:14px; padding:11px 12px; }
 .controls input#kw { flex:1; min-width:0; padding:11px 13px; border:1px solid var(--line); border-radius:10px; font-size:14.5px; background:var(--card); color:var(--ink); }
 .controls input#kw:focus { outline:none; border-color:var(--accent); }
 .controls select { padding:10px; border:1px solid var(--line); border-radius:10px; background:var(--card); color:var(--ink); font-size:13px; }

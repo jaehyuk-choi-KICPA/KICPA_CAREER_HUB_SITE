@@ -63,7 +63,7 @@
 > 채점 이력·시사점은 `memory/MEMORY.md` 인덱스 참조. 누적된 교훈을 무시하지 말고 매 루프 먼저 읽을 것.
 
 ## 구조 · 워크플로우
-> 파일 맵·전체 파이프라인·모니터링 3층·외부 핑거 설정은 **`docs-meta/WORKFLOW.md`** 참조.
+> 파일 맵·전체 파이프라인·모니터링(통합 `monitor.yml` 5h + 레거시 3층)·채용알림(웹푸시)·외부 핑거 설정은 **`docs-meta/WORKFLOW.md`** 참조.
 
 ⚠️ **GitHub 무료 public cron은 자주 드롭됨** — 정기 수집 주경로는 **외부 핑거(cron-job.org)**가 `run-all.yml`을 호출(수집 후 **채용알림 푸시 발송**도 수행).  
 수집 개별 yml(`scrape·scrape-news·scrape-insights`)은 수동 전용. 모니터링은 **통합 `monitor.yml`(5h)**이 주축(freshness 1h·sitecheck 3h는 안정화까지 병행 후 폐기 예정).

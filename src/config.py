@@ -208,7 +208,7 @@ _DEFAULTS: dict = {
     # 라이브 종단(e2e) 검증 — 배포된 화면이 의도대로 보이는지(canary·freshness가 못 보는 '사용자 화면').
     "sitecheck": {
         "site_url": "https://hbmons.com",
-        "updated_max_minutes": 360,   # 헤더 '최근 업데이트'가 이보다 오래면 이상(스케줄 드롭은 freshness가 별도 감지)
+        "updated_max_minutes": 360,   # 헤더 '최근 서치'가 이보다 오래면 이상(스케줄 드롭은 freshness가 별도 감지)
         "report_path": "sitecheck_report.md",
         "screenshot_path": "sitecheck_shot.png",
         "result_path": "sitecheck_result.json",   # 루프 분기용(status·class·failed)

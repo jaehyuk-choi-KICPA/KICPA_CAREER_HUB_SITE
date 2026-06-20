@@ -79,7 +79,7 @@ def run_deterministic(cfg: dict, base_url: str, shot_path: str | None) -> Result
             page.goto(base_url, wait_until="networkidle", timeout=30000)
             page.wait_for_timeout(1800)
 
-            # 헤더 '최근 업데이트' 존재·최신
+            # 헤더 '최근 서치' 존재·최신 (라벨 텍스트 무관 — _TS_RE로 시각만 추출)
             updated_txt = ""
             try:
                 updated_txt = page.inner_text("#updated").strip()
@@ -167,7 +167,7 @@ def run_vision(cfg: dict, shot_path: str) -> Check | None:
         prompt = (
             "이 이미지는 회계법인 채용/기사 모음 사이트(회법몬)의 채용 탭 스크린샷입니다. JSON으로만 답하세요: "
             '{"renders_ok": <카드 목록이 정상적으로 보이면 true, 빈 화면·깨짐·레이아웃 붕괴·겹침·오류면 false>, '
-            '"updated_shown": <상단에 "최근 업데이트" 시각이 보이면 true>, '
+            '"updated_shown": <상단에 "최근 서치"(마지막 갱신) 시각이 보이면 true>, '
             '"note": "<이상점 한 줄, 정상이면 빈 문자열>"}'
         )
         msg = client.messages.create(

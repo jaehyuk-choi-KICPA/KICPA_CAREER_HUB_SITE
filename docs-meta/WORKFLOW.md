@@ -49,12 +49,13 @@ flowchart TD
         FRESH["freshness.yml (1h)<br/>freshness.py<br/>status.json 나이 체크"]
         SITE["sitecheck.yml (3h)<br/>sitecheck.py<br/>라이브 URL 헤드리스 종단점검"]
         CANARY["canary.yml (수동)<br/>canary.py<br/>소스 구조·건수 + LLM 시각"]
+        MON["monitor.yml (5h · 통합)<br/>canary+sitecheck<br/>신선도만 자동 재수집"]
         DRAFT_PR["Draft PR<br/>(freshness · canary)"]
-        GH_ISSUE["GitHub Issue<br/>(sitecheck)"]
+        GH_ISSUE["GitHub Issue<br/>(monitor · sitecheck)"]
     end
 
     EXT -->|"repository_dispatch{run-all}"| RUN_ALL
-    GH_CRON --> FRESH & SITE
+    GH_CRON --> MON & FRESH & SITE
     MANUAL --> SCRAPE & SCRAPE_N & SCRAPE_I & CANARY
 
     RUN_ALL --> EXPORT
@@ -75,6 +76,8 @@ flowchart TD
     SITE -->|"렌더·타당성 이상"| GH_ISSUE
     SITE -->|"신선도 실패"| RUN_ALL
     CANARY -->|"건수·양식 드리프트"| DRAFT_PR
+    MON -->|"신선도 미갱신"| RUN_ALL
+    MON -->|"렌더·코드 이상"| GH_ISSUE
 ```
 
 > **추가 흐름**: `run-all`은 수집 후 **푸시 발송**(`src/notifier.py` → 구독자)도 수행한다(§5.5 채용알림). 모니터링은 **통합 `monitor.yml`(5h)**이 canary+sitecheck를 묶어 점검하며 신선도 미갱신만 자동 재수집한다(§5).

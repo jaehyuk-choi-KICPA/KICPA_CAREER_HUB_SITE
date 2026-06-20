@@ -85,6 +85,26 @@ async function subscribePush(scope, msgEl) {
     say("알림 신청 중 문제가 발생했어요" + (e && e.message ? ": " + e.message : "."));
   }
 }
+async function unsubscribePush(msgEl) {
+  const say = (t) => { if (msgEl) msgEl.textContent = t; };
+  try {
+    const reg = "serviceWorker" in navigator ? await navigator.serviceWorker.getRegistration() : null;
+    const sub = reg && (await reg.pushManager.getSubscription());
+    if (sub) {
+      try {
+        await fetch(WORKER_URL.replace(/\/$/, "") + "/unsubscribe", {
+          method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ endpoint: sub.endpoint }),
+        });
+      } catch (_) { /* 저장소 정리 실패는 비치명적 — 브라우저 구독은 해제 */ }
+      await sub.unsubscribe();
+    }
+    localStorage.removeItem("push_scope");
+    say("🔕 새 공고 알림을 껐어요.");
+  } catch (e) {
+    say("알림 끄기 중 문제가 발생했어요" + (e && e.message ? ": " + e.message : "."));
+  }
+}
 
 // ---- 스켈레톤 ----
 function skel(n) {
@@ -333,15 +353,27 @@ function bindControls(data) {
   $("sort").addEventListener("change", (e)=>{ JS.sort=e.target.value; renderJobs(); });
   const aBtn = $("alert-add"), aNote = $("alert-note");   // 채용알림(웹 푸시) — 검색 박스에 녹임
   if (aBtn && aNote) {
+    const reflect = () => {   // 패널 열 때 현재 구독 상태(scope) 반영
+      const cur = localStorage.getItem("push_scope");
+      aNote.querySelectorAll(".alert-opt").forEach((o) => o.classList.toggle("on", o.dataset.scope === cur));
+      const m = $("alert-msg");
+      if (m) m.textContent = cur ? (cur === "susup" ? "현재 ‘수습CPA 전용’ 알림 켜짐" : "현재 ‘전체’ 알림 켜짐") : "";
+    };
     aBtn.addEventListener("click", () => {
       aNote.hidden = !aNote.hidden;
       aBtn.classList.toggle("on", !aNote.hidden);
+      if (!aNote.hidden) reflect();
     });
     aNote.querySelectorAll(".alert-opt").forEach((opt) => {
       opt.addEventListener("click", () => {
         aNote.querySelectorAll(".alert-opt").forEach((o) => o.classList.toggle("on", o === opt));
         subscribePush(opt.dataset.scope, $("alert-msg"));
       });
+    });
+    const off = $("alert-off");
+    if (off) off.addEventListener("click", async () => {
+      await unsubscribePush($("alert-msg"));
+      aNote.querySelectorAll(".alert-opt").forEach((o) => o.classList.remove("on"));
     });
   }
   const setRail = (open) => {

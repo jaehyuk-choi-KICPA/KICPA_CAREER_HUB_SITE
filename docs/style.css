@@ -141,8 +141,12 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
   border-radius:14px; padding:14px; box-shadow:var(--shadow); align-self:start; }
 .today-head { display:flex; align-items:center; gap:8px; margin-bottom:10px; }
 .today-title { font-size:14px; font-weight:800; color:var(--panel-title); }
+/* 'NEW' 배지 — 🆕 이모지(기기별 회색 렌더) 대체. CSS라 어디서나 동일 */
+.new-pill { display:inline-block; background:var(--new); color:#fff; font-size:9.5px; font-weight:800;
+  letter-spacing:.4px; padding:2px 5px; border-radius:5px; vertical-align:1.5px; margin-right:1px; }
 .today-count { margin-left:auto; min-width:24px; text-align:center; background:var(--new); color:#fff;
   font-size:12px; font-weight:800; padding:2px 9px; border-radius:999px; animation:pop 1.6s ease-in-out infinite; }
+.today-count[hidden] { display:none; }
 @keyframes pop { 0%,100%{ transform:scale(1); } 50%{ transform:scale(1.12); } }
 .today-item { display:block; padding:10px 0; border-top:1px solid var(--panel-item-line); }
 .today-item:first-child { border-top:0; }

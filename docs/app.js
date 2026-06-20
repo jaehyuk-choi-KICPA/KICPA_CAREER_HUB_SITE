@@ -305,6 +305,7 @@ function renderToday(genStamp) {
   // '올라온 순' = 발견시각(first_seen) 최신순 — 방금 잡힌 공고가 위로.
   items.sort((a, b) => (b.first_seen || b.posted_date || "").localeCompare(a.first_seen || a.posted_date || ""));
   $("today-count").textContent = String(items.length);
+  $("today-count").hidden = items.length === 0;   // 0이면 초록 배지 숨김(빈 상태에 '0' 강조 안 함)
   $("today-empty").hidden = items.length > 0;
   $("today-list").replaceChildren(...items.slice(0, 12).map(todayItem));
 }

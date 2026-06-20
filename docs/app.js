@@ -71,7 +71,7 @@ async function subscribePush(scope, msgEl) {
     const isStandalone = window.navigator.standalone === true
       || window.matchMedia("(display-mode: standalone)").matches;
     if (isIOS && !isStandalone) {
-      say("아이폰·아이패드는 공유 버튼(⬆️) → '홈 화면에 추가' 후, 추가된 회법몬 아이콘으로 열어 알림을 켤 수 있어요.");
+      say("📱 아이폰은 공유(⬆️) → ‘홈 화면에 추가’ → 추가된 아이콘으로 열기. 그 다음 알림을 켤 수 있어요.");
     } else {
       say("이 브라우저는 푸시 알림을 지원하지 않아요.");
     }

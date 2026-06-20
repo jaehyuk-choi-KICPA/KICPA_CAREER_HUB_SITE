@@ -30,7 +30,7 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .site-header { position:sticky; top:0; z-index:30; background:var(--header-bg);
   backdrop-filter:saturate(140%) blur(8px); border-bottom:1px solid var(--line); }
 /* 헤더 2행: (1행) [로고 + 다크토글] … [이용안내] / 로고 아래 최근 서치 (2행) 채용공고·기사·인사이트 */
-.header-row { display:flex; align-items:flex-start; justify-content:space-between; gap:14px; padding:12px 18px 4px; flex-wrap:wrap; }
+.header-row { display:flex; align-items:center; justify-content:space-between; gap:14px; padding:12px 18px 4px; flex-wrap:wrap; }
 .brand { display:flex; flex-direction:column; align-items:flex-start; gap:5px; }
 .brand-top { display:flex; align-items:center; gap:9px; }   /* 로고 + 다크모드 토글 */
 .brand h1 { margin:0; font-family:"Jua","Pretendard",sans-serif; font-size:34px; font-weight:400; letter-spacing:0; color:var(--accent); line-height:1.1; cursor:pointer; user-select:none; }
@@ -61,7 +61,7 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .tab-btn .tab-new { display:inline-block; width:7px; height:7px; margin-left:5px; border-radius:50%;
   background:#e5484d; vertical-align:middle; }
 .tab-btn .tab-new[hidden] { display:none; }
-.theme-btn { border:1px solid var(--line); background:var(--card); border-radius:10px; padding:8px 11px; font-size:15px; cursor:pointer; line-height:1; }
+.theme-btn { border:1px solid var(--line); background:var(--card); border-radius:8px; padding:4px 7px; font-size:12.5px; cursor:pointer; line-height:1; }
 .theme-btn:hover { border-color:var(--accent); }
 .about-nav { margin-left:6px; }   /* 안내 탭을 다크토글에서 약간 띄움 */
 .tagline br + strong, .tagline strong { color:var(--ink); }
@@ -338,6 +338,6 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
   .header-row { padding:11px 14px 0; }
   .tabs { gap:3px; padding:4px; }
   .tab-btn { padding:8px 12px; font-size:13px; }
-  .theme-btn { padding:7px 9px; font-size:14px; }
+  .theme-btn { padding:4px 7px; font-size:12.5px; }
   .brand h1 { font-size:25px; }
 }

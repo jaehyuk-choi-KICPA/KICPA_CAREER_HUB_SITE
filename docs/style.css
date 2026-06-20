@@ -249,6 +249,12 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .about-card li::before { content:"•"; color:var(--accent); font-weight:800; margin-right:7px; }   /* 가운데정렬 목록에 점 */
 .about-card p { margin:12px 0; line-height:1.65; }
 .about-card .src-links a { font-weight:600; }
+/* 안내 페이지 설명용 스크린샷(공고 카드·샘플 알림) */
+.help-figure { margin:14px auto 4px; max-width:420px; }
+.help-shot { display:block; width:100%; height:auto; border-radius:12px; }
+.help-shot--card { border:1px solid var(--line); box-shadow:var(--shadow); }
+.help-shot--notify { box-shadow:0 6px 20px rgba(0,0,0,.12); }
+.help-figure figcaption { margin-top:8px; font-size:12.5px; color:var(--ink2); text-align:center; }
 /* 기사 카테고리 = 잡코리아 샘플 세그먼트 컨트롤(전체·채용·감사·세무·딜) — 선택 시 액센트 채움 */
 .chiprow { display:flex; gap:0; margin-bottom:16px; background:var(--card); border:1px solid var(--line);
   border-radius:12px; padding:4px; }

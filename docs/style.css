@@ -313,6 +313,10 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 @media (min-width:760px) {
   .jobs-layout { grid-template-columns:236px 1fr; grid-template-areas:"controls controls" "today today" "rail results"; }
   .rail { position:sticky; top:118px; }
+  /* PC 알림 패널 = 한 줄 가로 배치(질문·옵션·끄기). 모바일은 기본(세로 3행) 유지 */
+  .alert-note { flex-direction:row; align-items:center; flex-wrap:wrap; }
+  .alert-opts { display:contents; }          /* 전체·수습CPA 버튼이 행에 직접 배치 */
+  .alert-off { margin-left:auto; align-self:auto; }
 }
 @media (min-width:1120px) {
   /* 검색바(controls)는 rail+results 폭까지만 → 금일 박스는 우측 상단(2행 차지), 필터는 검색바 바로 아래 좌측 */

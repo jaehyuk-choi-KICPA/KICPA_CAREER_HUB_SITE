@@ -71,7 +71,7 @@ async function subscribePush(scope, msgEl) {
     const isStandalone = window.navigator.standalone === true
       || window.matchMedia("(display-mode: standalone)").matches;
     if (isIOS && !isStandalone) {
-      say("📱 아이폰은 공유(⬆️) → ‘홈 화면에 추가’ → 추가된 아이콘으로 열기. 그 다음 알림을 켤 수 있어요.");
+      say("📱 아이폰은 사파리 화면 맨 아래 가운데 ‘공유’ 버튼(네모에 위 화살표 ⬆️) → ‘홈 화면에 추가’ → 추가된 아이콘으로 열기. 그 다음 알림을 켤 수 있어요.");
     } else {
       say("이 브라우저는 푸시 알림을 지원하지 않아요.");
     }
@@ -250,8 +250,14 @@ function renderJobs() {
     return true;
   });
   const openFirst = (a,b) => (a.status==="open"?0:1) - (b.status==="open"?0:1);
+  // 최근 게시순 정렬키: 게시일(일단위) 우선, 없으면 발견일(first_seen 날짜)로 폴백 → 게시일 비공개 공고도 묻히지 않음
+  const postedKey = (it) => it.posted_date || (it.first_seen||"").slice(0,10) || "";
   list.sort((a, b) => {
-    if (JS.sort === "posted") return (b.posted_date||"").localeCompare(a.posted_date||"");
+    if (JS.sort === "posted") {
+      // 1차: 게시일 최신순 → 2차: 같은 날이면 발견시각(first_seen) 최신순 tiebreaker(일단위 동률 해소)
+      return postedKey(b).localeCompare(postedKey(a))
+        || (b.first_seen||"").localeCompare(a.first_seen||"");
+    }
     // deadline (default): 진행중 먼저 → 마감 임박순
     return openFirst(a,b) || ((a.dday??1e6)-(b.dday??1e6));
   });

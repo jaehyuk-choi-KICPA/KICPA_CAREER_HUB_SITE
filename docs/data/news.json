@@ -1,126 +1,26 @@
 {
-  "generated_at": "2026-06-20T12:01:41",
+  "generated_at": "2026-06-20T12:31:40",
   "items": [
     {
-      "source": "gnews_딜·M&A",
-      "source_label": "네이트",
-      "title": "스페이스X IPO 0주 배정 논란…코리아 패싱과 제도적 한계 남겼다",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1Rd0d1Tnk0bFUtQWl0VGR4NEZ4REllQ2ZDN3poa3Yta05QVkp3c1dYZkhWS1dyZXVkaEZnY3RGeUNNcjhnUnhrUmhnRWNVU1NMUkJr?oc=5",
+      "source": "gnews_감사",
+      "source_label": "디지털데일리",
+      "title": "영풍, 회계기준 위반 ‘고의성’ 논란 부각…전 대표 해임권고 상당 조치",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5sY01pQVBIbkpNbG9lcFY2ZUtxYkc1UDhnTFJWZ1YzVmQ5N2duWDgxRExNM0wwbjQtR1IyZzdxQ3ZzdDdHRURfZlZGQVJ5TDRoeU5DSGJPN0EwSzUxcU95QmtVc2c?oc=5",
       "published": "2026-06-20",
-      "published_at": "2026-06-20T02:48:00",
-      "summary": "",
-      "category": "딜·M&A",
-      "dupes": [
-        {
-          "title": "[김이코의 기업분석]'역대 최고의 IPO' 스페이스X, 지금 들어가도 될까",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE16eUN4aFlnVHJTLWlGQnpqR0NUVmt1elJ6Z0VKcFowYkVrbFBXeTV6S3U4N0Rjbmg3c0M5RzdPT3RIN01lanBDLW1nYjJJUXBIanVKaQ?oc=5",
-          "source_label": "미디어펜",
-          "published": "2026-06-20"
-        },
-        {
-          "title": "일론 머스크 혼자가 아니다…스페이스X IPO 수혜 받은 억만장자들",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5YTFFoRmZUaTNXR3hiSEpWSVJqd1RnakcxWHRpc2E1VXZ3dDhVcy1KU2VrLVMxb1J1RmFIbzI0TGt0dWhlbVdBdzQxQ0tKUTBXZndJdk9vUUxnMFJDTWZWNl9oZFZ2NWNnc2tid0NMUDBDSkE?oc=5",
-          "source_label": "디지털투데이",
-          "published": "2026-06-20"
-        },
-        {
-          "title": "XRP 원장, IPO 판도 바꾼다…스페이스X 투자 기회 내부자만 독식",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUzJDMk5CY0dXMThfMDlzZlA4aUdMWFFWLW5ZTlY3QkdXTFFRY2h6di0xWE5wUlFMblpsYnJVTy1HN2tJQkkwbjBpaDZUMGc2S3hJYmxkSTFveWFKdFctekxGbjByXzZ2SDJYMmRsN3hGbFh3QkpfLXE0T0Z1ZVc0RGp2OEJSQUp4?oc=5",
-          "source_label": "글로벌이코노믹",
-          "published": "2026-06-19"
-        },
-        {
-          "title": "스페이스X, IPO 열기 식었나...상장 후 첫 주가 연속 하락",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4yVkMwZHF5cDdkSGFNYnZZOHRhVWRON2ZTZDVhQXZnZEJCX0lCRkM4QXhEdE1Ca0RCRTlLSjBNWWhxd080R3Bzd1M5MFZ6d0JtTW9pejJuMWVSQ0JMUEQxcVdyRHBYV0R2Umc?oc=5",
-          "source_label": "AI타임스",
-          "published": "2026-06-19"
-        },
-        {
-          "title": "스페이스X, IPO 직후 200억달러 채권 발행 추진",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOQ1ZwMGh5TWxSbEt3WU9EclhKR3dyREVmYXFwaWJ4dTRFQXVxVzhzNDlTbEJfemFnWmduRzMwNjRyb01qUnFYSWRwbUFvM0RMbzQwVDZxRjU0cDdneXMxQnEzdG5fd191VGlJOVdOdUREVnFiblZaWTN2dURJWHZ5ak54Y1FQaVk?oc=5",
-          "source_label": "글로벌이코노믹",
-          "published": "2026-06-18"
-        },
-        {
-          "title": "스페이스X, 200억달러 회사채 추진···IPO 이어 대규모 자금조달",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1yM1pPcTg4dmFnQkRMUmRaZC0tRTBhWXkxLVhBRlVZN0psZGxPcjlEaFYzclM1anRPT182T3daMVg2bTdYYXRIZU04SFRYclVUVjdZdm9vcVJzd9IBX0FVX3lxTE9CamlzVnE3NnZBUzk2SUxhcTJtenhkOHhQcHNnMnI3RHJLZExldmJ4M25kMWU2eUpWb0ROQUJncS1FcjMxZ3czWjBNc0JLbHNXdjN4WUVQLVpmZlBSWEtB?oc=5",
-          "source_label": "경향신문",
-          "published": "2026-06-18"
-        },
-        {
-          "title": "스페이스X·앤트로픽·오픈AI IPO 시즌 개막…AI 돈잔치의 진짜 승자는?",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9qSTQ1Rkp0WTRMSVQwRVg4VldHTmZHV1J3SlVtOEJEN0hUcGE0N0lJNHk3R3BXd3paQkVfeVlmQk4tNWtMTE1tRUxZU3pUdGlUckY3WC1n?oc=5",
-          "source_label": "스브스프리미엄",
-          "published": "2026-06-18"
-        },
-        {
-          "title": "'해외 IPO 참여 불가능해지나'…'투자자 보호' 명분 아래 쌓이는 불만",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSE9YZmVneFVYOHlZMlVncHJyaU9xSXdnX0txUjlrblBsM1hyUTBUbFBLc0pBSXNRcWV1cEJ1NjNHNlQ0Z2trX3Z2Z1RpcGRnUEJRbnhUelZBQUNvUEVtaS1pVXg4OUlOVElMeHQydGxib3hqUUhBb2Z1cW5XaWFYa1ZMaw?oc=5",
-          "source_label": "인베스트조선",
-          "published": "2026-06-17"
-        },
-        {
-          "title": "스페이스X IPO 앞둔 광풍…\"10년전 페이스북 사례 잊지 마세요\"",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE95ZHd3NVRtbk5HZXlMa1ZnS0xpUHNnNVJDTTVhN1ZuMVhlT0FfT3NjOXRCRS1OQ3p6MWNfNElzQkpsem9uVkVTdjkxWXhRbVNGTVN2WnVFdURTdVRucUlnclp2dTJFSTRkdWZCcjBQX0o?oc=5",
-          "source_label": "연합인포맥스",
-          "published": "2026-06-10"
-        }
-      ]
-    },
-    {
-      "source": "gnews_딜·M&A",
-      "source_label": "meconomynews.com",
-      "title": "회사 매각 불구, 애경산업 노사 올해도 상생 위해 맞손",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5NcWFtY2t3bHRndDF6VDIzbExTSFU4aXI3YVQ4aTk3UjhfY0x4dkZDUEZHM0hENUR6OGVwNVNwSkJ4VllBNkhlZVB3dGpqR21JSzNPT3I4bzNxWUQ4aDI3VFFBUmczbnM0X1JhSWl2M2c?oc=5",
-      "published": "2026-06-20",
-      "published_at": "2026-06-20T02:42:12",
-      "summary": "",
-      "category": "딜·M&A"
-    },
-    {
-      "source": "gnews_딜·M&A",
-      "source_label": "데일리팜",
-      "title": "사모펀드 IMM, 대웅 계열사 시지바이오 최대 1.1조에 인수",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBjeG9uTmhyX25jZ1VQbE5XS0RfVkJXcnZNMkxoeUQ5V3hMcDFuakMzU1VMUnBsbzRwekh0WjVxUDFJNkk2RjVvd1VLZVRXVmpwTURlT3ZR?oc=5",
-      "published": "2026-06-20",
-      "published_at": "2026-06-20T02:30:34",
-      "summary": "",
-      "category": "딜·M&A"
-    },
-    {
-      "source": "gnews_딜·M&A",
-      "source_label": "아시아경제",
-      "title": "[2025년도 경평]구조조정 앞둔 발전5사…경평 성적표는 제각각",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBWZGVub0R1Njk4OGxzVzZLcDlOZ0pBcUdTQ0FOQ0tHdENCTXVzVTA0b3FSUk1vVmdvRnFXOUIwWUQ4U3k1dTQwWE9lUV9IWTdMUFRNT09BWGV6S2lNX0E5Zg?oc=5",
-      "published": "2026-06-20",
-      "published_at": "2026-06-20T02:00:00",
-      "summary": "",
-      "category": "딜·M&A"
-    },
-    {
-      "source": "gnews_딜·M&A",
-      "source_label": "ebn.co.kr",
-      "title": "BMW, 실적 경고 후 노사 협의 착수…유럽 구조조정 가능성 부상",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94elhLMFdKNHE0LVc3aF83Rm9hRHNnU053XzBOMXRKS3p4UXk0UEpSNFJPWGxDWms5M3dxcmMweVIyd2FhaUVDS1g3aVF0V0NIMzZ4LUs0VVppM283X0RTWUp4QVNVYm9J?oc=5",
-      "published": "2026-06-20",
-      "published_at": "2026-06-20T01:55:16",
-      "summary": "",
-      "category": "딜·M&A"
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "네이트",
-      "title": "영풍, 증선위 중징계에 대표이사 해임 권고 위기",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA2Q0kyeFNNNGR4eXVUZGVCMEhjenQ1ektWa1Nta25tTjBUbVZ3ZDhYRXgxX2F4OTdzRWQ1bjEzRXR3cUFPSUxsTHFSaGhzdzdKVjNUQ3lBYzdXWU5sNzV6ZFg5MUduQTZZY3psdzBWZnB6R3A2WHpPeg?oc=5",
-      "published": "2026-06-20",
-      "published_at": "2026-06-20T01:46:00",
+      "published_at": "2026-06-20T03:19:05",
       "summary": "",
       "category": "감사",
       "dupes": [
         {
-          "title": "증선위 중징계 받은 영풍⋯왜 '대표이사 해임 권고' 내려졌나",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB1TmZiZElxVzFxRTgyeTFMREhQQ1l2c0VfLUhYNW8xYTM5SU9iZW5BT19LX3ExazZxbXlJbWtuLV90UFZOSDRBallGZ2pMOW16QnMw?oc=5",
+          "title": "영풍, 증선위 중징계에 대표이사 해임 권고 위기",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA2Q0kyeFNNNGR4eXVUZGVCMEhjenQ1ektWa1Nta25tTjBUbVZ3ZDhYRXgxX2F4OTdzRWQ1bjEzRXR3cUFPSUxsTHFSaGhzdzdKVjNUQ3lBYzdXWU5sNzV6ZFg5MUduQTZZY3psdzBWZnB6R3A2WHpPeg?oc=5",
           "source_label": "네이트",
+          "published": "2026-06-20"
+        },
+        {
+          "title": "증선위 중징계 받은 영풍⋯왜 '대표이사 해임 권고' 내려졌나",
+          "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE40STQzZFROZUQ0WVFhZEF2Z05iaXNaY01PVG9fSmlKVS1MN3RNcUFFcF9Wc2lLd3BvcElVSnkyMGV6SjlzMDJOSXNJcmg?oc=5",
+          "source_label": "아이뉴스24",
           "published": "2026-06-19"
         },
         {
@@ -391,31 +291,89 @@
     },
     {
       "source": "gnews_딜·M&A",
+      "source_label": "ebn.co.kr",
+      "title": "정의선, 보스턴다이내믹스 100% 품었다…휴머노이드 IPO·지배구조 개편 '시동'",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBXZUNESXpaZ3FtcmRzdDlzbHJLTFBXQ1J5ZXVQVUJpbjU1YWpHbEo3UUk4dU53TGFJc3lNNFJRUW04TG8zMk5HSjRBSEIwaS00alNRdzlXYjE3NU5SZUhNYS15dGtLeTVU?oc=5",
+      "published": "2026-06-20",
+      "published_at": "2026-06-20T03:13:32",
+      "summary": "",
+      "category": "딜·M&A"
+    },
+    {
+      "source": "gnews_딜·M&A",
+      "source_label": "데일리비즈온",
+      "title": "[D-BIZ 글로벌 동향] 스페이스X, 사상 최대 규모 IPO로 나스닥 상장…EBC, SPCX 거래 서비스 본격 개시",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE42eTJTR2tCa2dPODhlOUZkSDdfNnh5UWpybzE2Vl9BYWxpWXVxeWp1YTUxZTc0cXJlQmZlVmRDQ3hZNEpiRlZ5VnRtelhocnN0UHdCTElQdTJ6b3VlTU9pa3p0VHlmVzdkV3BkRw?oc=5",
+      "published": "2026-06-20",
+      "published_at": "2026-06-20T03:06:52",
+      "summary": "",
+      "category": "딜·M&A"
+    },
+    {
+      "source": "gnews_딜·M&A",
+      "source_label": "meconomynews.com",
+      "title": "회사 매각 불구, 애경산업 노사 올해도 상생 위해 맞손",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5NcWFtY2t3bHRndDF6VDIzbExTSFU4aXI3YVQ4aTk3UjhfY0x4dkZDUEZHM0hENUR6OGVwNVNwSkJ4VllBNkhlZVB3dGpqR21JSzNPT3I4bzNxWUQ4aDI3VFFBUmczbnM0X1JhSWl2M2c?oc=5",
+      "published": "2026-06-20",
+      "published_at": "2026-06-20T02:42:12",
+      "summary": "",
+      "category": "딜·M&A"
+    },
+    {
+      "source": "gnews_딜·M&A",
+      "source_label": "데일리팜",
+      "title": "사모펀드 IMM, 대웅 계열사 시지바이오 최대 1.1조에 인수",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBjeG9uTmhyX25jZ1VQbE5XS0RfVkJXcnZNMkxoeUQ5V3hMcDFuakMzU1VMUnBsbzRwekh0WjVxUDFJNkk2RjVvd1VLZVRXVmpwTURlT3ZR?oc=5",
+      "published": "2026-06-20",
+      "published_at": "2026-06-20T02:30:34",
+      "summary": "",
+      "category": "딜·M&A"
+    },
+    {
+      "source": "gnews_딜·M&A",
+      "source_label": "마켓인",
+      "title": "사모펀드 인수전의 새 계산법…율곡 매각 변수 된 고용안정",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE90NWxlbGpmdDJ0U2djYUc0V2VseFR2aFQ1Sjg1ZkFUcXFlaGdFWHJkVjJyZW12cGdnQ3hHUUp6SFAwYUdRcm9iTGNOVmg4aGJLVlpuUnRUYjNjdUxIaHpQZ25WRVFkSG9OeElSWVFQbFpaQQ?oc=5",
+      "published": "2026-06-20",
+      "published_at": "2026-06-20T02:10:02",
+      "summary": "",
+      "category": "딜·M&A"
+    },
+    {
+      "source": "gnews_딜·M&A",
+      "source_label": "아시아경제",
+      "title": "[2025년도 경평]구조조정 앞둔 발전5사…경평 성적표는 제각각",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBWZGVub0R1Njk4OGxzVzZLcDlOZ0pBcUdTQ0FOQ0tHdENCTXVzVTA0b3FSUk1vVmdvRnFXOUIwWUQ4U3k1dTQwWE9lUV9IWTdMUFRNT09BWGV6S2lNX0E5Zg?oc=5",
+      "published": "2026-06-20",
+      "published_at": "2026-06-20T02:00:00",
+      "summary": "",
+      "category": "딜·M&A",
+      "dupes": [
+        {
+          "title": "“발전5사 하나로 묶는다”…기후부, 내달 구조조정안 수립",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9NRWo2LWNYY2xUakFFT0lieEFRVkpUamRTVWwxY3dMMXFOQjNiUjd0SHNHUmprVnNvbjhvU3dYT1dwdlV5UkI0ZmkwTkVqdw?oc=5",
+          "source_label": "전자신문",
+          "published": "2026-06-18"
+        }
+      ]
+    },
+    {
+      "source": "gnews_딜·M&A",
+      "source_label": "ebn.co.kr",
+      "title": "BMW, 실적 경고 후 노사 협의 착수…유럽 구조조정 가능성 부상",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE94elhLMFdKNHE0LVc3aF83Rm9hRHNnU053XzBOMXRKS3p4UXk0UEpSNFJPWGxDWms5M3dxcmMweVIyd2FhaUVDS1g3aVF0V0NIMzZ4LUs0VVppM283X0RTWUp4QVNVYm9J?oc=5",
+      "published": "2026-06-20",
+      "published_at": "2026-06-20T01:55:16",
+      "summary": "",
+      "category": "딜·M&A"
+    },
+    {
+      "source": "gnews_딜·M&A",
       "source_label": "Investing.com 한국어",
       "title": "스타벅스, 글로벌 구조조정 일환으로 런던·홍콩 사무소 인력 감축",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5YaDBYeWxobVlfWWRpQkQxNjc5LXlmYWZDZ0Q3Nl9Lb2JWVWVCS0JKbDFxYjhkSVZBQldESTF1ZmNmVVI0QjF4SG15ZW1XcjRKOWN2R1Vwb0RqUlVMWGF0MEFfWmhpRkk3Mnc?oc=5",
       "published": "2026-06-20",
       "published_at": "2026-06-20T00:43:00",
-      "summary": "",
-      "category": "딜·M&A"
-    },
-    {
-      "source": "gnews_딜·M&A",
-      "source_label": "2news.co.kr",
-      "title": "샘 올트먼의 월드코인, 오픈AI IPO 기대감에 급등세",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1wVXJ3TkJGb2RyUE16TVZJRm5pSnlZQWlLTllXSXU0MVdxeU1UQ0RJWVdFcFduSmRrU0xua3p5bTN0NjJ1VV9OUUcwdmRIa212Z0lTSV9PRDd2RXF1bE5GdEZjMGNaVGo1?oc=5",
-      "published": "2026-06-20",
-      "published_at": "2026-06-20T00:40:00",
-      "summary": "",
-      "category": "딜·M&A"
-    },
-    {
-      "source": "gnews_딜·M&A",
-      "source_label": "신아일보",
-      "title": "[캠코 공매] 차주 남양주 호평동 '공동주택' 등 압류재산 매각",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5pa3hRWXdFR1c3Y1pkajFwNmw4ekx5QlVHSlNaVHZlTUZJM1Njc1VZekhsWjE1Zmp3am5qSUxRbGlsc0Y2SmVYS0duSlNzbWdnMERJN1RBczNJMU9zR3RNMDZNek9DZ2RWOHdadUlYclQ?oc=5",
-      "published": "2026-06-20",
-      "published_at": "2026-06-20T00:09:47",
       "summary": "",
       "category": "딜·M&A"
     },
@@ -592,94 +550,16 @@
       "category": "세무",
       "dupes": [
         {
-          "title": "[단독] 국세청, 우리카드 고강도 세무조사…독자망 구축·계열사 거래 현미경 검증",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBKeW04R3VTb2l3VjI2VlRldU94TFhqZzI5aHhMVXpvT3hsM3loZktIZHUtYjFrV05DeEY1LUhKd0RfVkxMV3pEOV9iSVFDZGUybVFDNFk0SmQta3R6OGdEMUFIWDFfdHdQ0gFsQVVfeXFMT3VDVmdHaGlEYVd2Y19Kb1lOd2ZWcUpJOXBEdkRlampwZTdMN2wwNHNyQVQ1V3hYREs4T0RwNmEtYzE0TkxqaFVhMGN6N0dId3NiUXd4Y0VYT2lVTVhjbGtMWF80YXJnYmphd2t0?oc=5",
-          "source_label": "필드뉴스",
-          "published": "2026-06-19"
-        },
-        {
           "title": "고려아연 특별세무조사…'원아시아-SWNC-세원' 자금흐름까지 들여다보나",
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1mVVl0UkwwYnF1ZnZNWFRPRVluMWU2OWRBbTkzSE9PRkdPV2RsUHlEU01Xc2lKVWZOaThLY25jQXEza3RnWnk0aC11ZUE0M2psd0JR?oc=5",
           "source_label": "네이트",
           "published": "2026-06-18"
         },
         {
-          "title": "‘고액 체납 1위’ 선박왕 권혁, 국세청 특별세무조사…형사처벌 정조준",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4ycUg3WThIRHZabnZfVVNta0hlRTJ6TEdiMVRtZVVyUWlfcGpYck5CY1pKTGhMaFoyU01ONkwxaFBvbXNnSUpMTXJ4WmVNeEJBVVhsd1RhS19TdzhXaHFtNHh1bk00djA5NGhN0gFvQVVfeXFMT0NqckdjX2gzalptRnBiaUVsdTllaU9fTzl0VUQ3ZTgwRnBqUS1wQjhHYTVWMW5wOElCR0htLVVYczNtUWJoa0NKMno4NzQ0REwtQV9uQW9RckU2b0lIOEJKOVJJWGtnYV9fMGxOMUFR?oc=5",
-          "source_label": "뉴스로드",
-          "published": "2026-06-17"
-        },
-        {
-          "title": "국세청, '고액 체납 1위' 시도그룹 권혁 회장 특별세무조사",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBwb040d255WWlWeTR0dURUeXVXYVlwS3FhUHJIb2dabDE2aE1XdUxHY2ltYmU1X29kQmk1b0o1SW9UWGYzbFZWTEhrMmt4X3dUWHNlRS0wdkliRHF5U2c?oc=5",
-          "source_label": "YTN",
-          "published": "2026-06-12"
-        },
-        {
-          "title": "국세청 '고액 체납 1위' 시도그룹 권혁 회장 특별세무조사",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBfRlFFVkhQSGF0YWFCYm9iR0tWMTBzVlpzWnNqQ1JISkxKamJ1STFYWm5rY25OSWlqQms0eFl2ZUpkdFl3YmphY2JaYUI2RWsxdXpOSEswV2Rsa03SAWBBVV95cUxQSUM5RFVKdHkwV2NrQm5HeWl5NGE2ZVd4aWhyT1M0T0JfOGVlcjN0WmkxRm9CdXJZNDF4bVNETHZQY1NjeXhnUW5wQWxkWlVFREFNNDR0Z2JkRkhicTAzaGw?oc=5",
-          "source_label": "연합뉴스",
-          "published": "2026-06-12"
-        },
-        {
           "title": "불법 자금유출 혐의…국세청, 고려아연 특별세무조사 실시",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBkMGlCcVNWNkJjelozQXF6M1lSRnNhWVhHem5VYUZfTGp5SE9CcHBOaDJWNTJFeVlLYXdUVHJ5anZGREFiY3JJZWd4ZlJOVUFsaHFKbzZoaXN3UdIBVEFVX3lxTE5GMzNSVkMwbTNXUkdFczBsTk1yb3VhcmF5X0pfRmZLdE1idm1DNTBKTHZPaTd6UThTaEZTZ3FyWWVIRkZMMjMyME03ZHNWQ3B2ZVAwRQ?oc=5",
           "source_label": "한국경제",
           "published": "2026-06-15"
-        },
-        {
-          "title": "현금부자·슈퍼카 세무조사…국세청이 숨긴 의도는?",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE15WHltZ1Y5bTdiNFBpNF9GeUJaMXExUGpHSHZWUmJ5WXdiS0tiUFl4VDdDNkNnNEtGRFJwdHdNa0V1a2UwV1BqVFNBOWRhU2trSHFIM2w1WlVTa0lhV29IcldIc28?oc=5",
-          "source_label": "택스워치",
-          "published": "2026-06-15"
-        },
-        {
-          "title": "국세청, ‘개인 체납 1위’ 권혁 시도그룹 회장 특별세무조사 착수",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE02M1BROEtqVXZQdURPaEc1ZGVCTTBVYmZ1T0ZCZU91bWFXeWtUVlVXZmxrTks0VVpNb2hPcE12UWhKTVFqRHVOS2RVa0NuUTVPTkFLMExJeFQ2Nk5PQTRDcVExQmVkVzBHN0E?oc=5",
-          "source_label": "intn.co.kr",
-          "published": "2026-06-13"
-        },
-        {
-          "title": "국세청, '체납 1위' 권혁 특별 세무조사 착수",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5vQTJZUUZjX18zYXhiWUhiY2JxYWRwYlgtMngzdkRsNTFZRk13b0NMZzFzLVhWamVfSEhMUFdTQ1V6OVpfZm1ZV3d2ZXZaZC1jVWh6QXFtd1RYRkJsel9ISdIBYEFVX3lxTE5vQTJZUUZjX18zYXhiWUhiY2JxYWRwYlgtMngzdkRsNTFZRk13b0NMZzFzLVhWamVfSEhMUFdTQ1V6OVpfZm1ZV3d2ZXZaZC1jVWh6QXFtd1RYRkJsel9ISQ?oc=5",
-          "source_label": "연합뉴스",
-          "published": "2026-06-13"
-        },
-        {
-          "title": "국세청, ′체납 1위′ 권혁 특별 세무조사 착수",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBDMmxKX096aUNRQ202SGQ0eXQwczBaTHUwR19heE1zaXA0ZGJwVjNjMHFtd3lJSE4yUzNMMFVvLWJTNHlkenRKOEdPNzFzLWh3OENKQ2VGV3dIQVFMOURPS3NNeHJiVTA?oc=5",
-          "source_label": "연합뉴스TV",
-          "published": "2026-06-13"
-        },
-        {
-          "title": "국세청, 시도그룹 권혁 회장 특별세무조사",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBEX0xBVFVRRzJrZkJOM0lfSmNaWk44TVdwaUFxSW80blYwM2FMVE9fWWgwc2RUU1E4U1BpZXRGeDE2Q3pRRlVLY3pQZ0d2SFZiaGFKbnlqNkpSR00?oc=5",
-          "source_label": "KBS 뉴스",
-          "published": "2026-06-12"
-        },
-        {
-          "title": "국세청 ‘고액 체납 1위’ 시도그룹 권혁 회장 특별세무조사 진행",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOaTh4SVo5ekF4cU51c0ZJVjJTNFlHMG5mOHBkc29WVTd0dkJlVENyQzRGWnJ0ckZETVFqVDhxc3dsRXYtZnRoR2hGMXBHZ2w2dlh0blZ2TDlWaktlM21SOVVvY2U5YkVSM1lycUFuNzd0YVR0X2dPOWlPR09PeFE5eVRxY3hnQ3lUNk11VGVR?oc=5",
-          "source_label": "조선일보",
-          "published": "2026-06-12"
-        },
-        {
-          "title": "국세청, 개인체납 1위 '선박왕' 권혁 특별세무조사…압수수색 착수",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBrRFlrOG5vRXh3Mm4wdVFubjRRQWh6dTRyUVQ5THpoZGNPWFVuS3liMUhkbEN2MmNjMXA4QUl3R1RKYl9PSF9lQUh5VmlNanM?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-06-12"
-        },
-        {
-          "title": "국세청, '체납왕' 권혁, 특별 세무조사 착수",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1HSUJLR3ptNjJNUWxncGR4SWZnYlVvU0dSYThUOThzSlJabnpoRlcwQXR0N05qNUV1V1BQaG9tMmIxSk9Za2lKTGdSdG5saDc3UndjdA?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-06-12"
-        },
-        {
-          "title": "국세청 '고액 체납 1위' 시도그룹 권혁 회장 특별 세무조사",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA4dmZGVFNIZ24yODFUTlNFbTRiUGd1OFlQZzBKYWRnZWlqWS1NUk5YVVRfWW9lR2E0b3FIaHc3cGZxb1FhNnBjQUtMMjhmOGM?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-06-12"
         }
       ]
     },
@@ -692,6 +572,24 @@
       "published_at": "2026-06-19T02:06:12",
       "summary": "",
       "category": "감사"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "필드뉴스",
+      "title": "[단독] 국세청, 우리카드 고강도 세무조사…독자망 구축·계열사 거래 현미경 검증",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBKeW04R3VTb2l3VjI2VlRldU94TFhqZzI5aHhMVXpvT3hsM3loZktIZHUtYjFrV05DeEY1LUhKd0RfVkxMV3pEOV9iSVFDZGUybVFDNFk0SmQta3R6OGdEMUFIWDFfdHdQ0gFsQVVfeXFMT3VDVmdHaGlEYVd2Y19Kb1lOd2ZWcUpJOXBEdkRlampwZTdMN2wwNHNyQVQ1V3hYREs4T0RwNmEtYzE0TkxqaFVhMGN6N0dId3NiUXd4Y0VYT2lVTVhjbGtMWF80YXJnYmphd2t0?oc=5",
+      "published": "2026-06-19",
+      "published_at": "2026-06-19T00:00:00",
+      "summary": "",
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "현금부자·슈퍼카 세무조사…국세청이 숨긴 의도는?",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE15WHltZ1Y5bTdiNFBpNF9GeUJaMXExUGpHSHZWUmJ5WXdiS0tiUFl4VDdDNkNnNEtGRFJwdHdNa0V1a2UwV1BqVFNBOWRhU2trSHFIM2w1WlVTa0lhV29IcldIc28?oc=5",
+          "source_label": "택스워치",
+          "published": "2026-06-15"
+        }
+      ]
     },
     {
       "source": "gnews_딜·M&A",
@@ -822,14 +720,14 @@
       "category": "감사"
     },
     {
-      "source": "gnews_딜·M&A",
-      "source_label": "중앙일보",
-      "title": "삼전닉스와 맞짱 뜰 中 D램…IPO 한방에 시총 1위 넘본다",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB3TlE4VW1HX0hFSVlaOFNwNkt6d2tvZHBMMFZMbnJhLUNoOUxUY09YZ0pueEVMMlR2THFmTlBtcm42T3JIc0JzRWFjalMtemJZd08xdWJB?oc=5",
+      "source": "gnews_세무",
+      "source_label": "네이트",
+      "title": "'전기차 전환기'에 필요한 조세 정책 [기고]",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0tOFNWT01oeld3V0pBeXZHVGJLZkQyeEVkRFp3SGx1RGR1Zk1pbXNwZHppVldUUUtsNGozcDNZczRQME9wQWF3d2Ezdktpc205RzI4?oc=5",
       "published": "2026-06-17",
-      "published_at": "2026-06-17T20:09:16",
+      "published_at": "2026-06-17T19:31:00",
       "summary": "",
-      "category": "딜·M&A"
+      "category": "세무"
     },
     {
       "source": "gnews_감사",
@@ -1104,26 +1002,68 @@
       "category": "딜·M&A"
     },
     {
-      "source": "gnews_딜·M&A",
-      "source_label": "v.daum.net",
-      "title": "사모펀드 약정액 167조 돌파…“M&A 대신 대출”",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE96M2Rtdnh5Rkx4VG9URHY0TFp2UUlGbS1FUWpLZzVvOGI2c1RiM25OZkVSUUVid2puRm85TkxyWTZGc2VhUHNqTklHXzd1Mnc?oc=5",
+      "source": "gnews_세무",
+      "source_label": "뉴스로드",
+      "title": "‘고액 체납 1위’ 선박왕 권혁, 국세청 특별세무조사…형사처벌 정조준",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4ycUg3WThIRHZabnZfVVNta0hlRTJ6TEdiMVRtZVVyUWlfcGpYck5CY1pKTGhMaFoyU01ONkwxaFBvbXNnSUpMTXJ4WmVNeEJBVVhsd1RhS19TdzhXaHFtNHh1bk00djA5NGhN0gFvQVVfeXFMT0NqckdjX2gzalptRnBiaUVsdTllaU9fTzl0VUQ3ZTgwRnBqUS1wQjhHYTVWMW5wOElCR0htLVVYczNtUWJoa0NKMno4NzQ0REwtQV9uQW9RckU2b0lIOEJKOVJJWGtnYV9fMGxOMUFR?oc=5",
       "published": "2026-06-17",
-      "published_at": "2026-06-17T06:11:18",
+      "published_at": "2026-06-17T06:06:46",
       "summary": "",
-      "category": "딜·M&A",
+      "category": "세무",
       "dupes": [
         {
-          "title": "기관전용 사모펀드 투자 12% 늘어…기업대출 등 비경영참여 급증",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB5QUtqVlJ5a0VTdnZ4MlpVc1Q1enBpQlRlemR2UWlQLTMtLV9NYTFNY2xraFlBYnk5a0hwYm9ZU2dEZzZ3M3l0R1JyT2xhR1E?oc=5",
+          "title": "국세청 '고액 체납 1위' 시도그룹 권혁 회장 특별세무조사",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1jSGdlV0lZVnlPeTlaOXJ3cEtLSGRSNlk0NEJUYkgwaFNTNDl0VFRDYlg1X19oVW1zRVBGVVpSMlN0OUlHazZad0ktZ2pabjA?oc=5",
           "source_label": "v.daum.net",
-          "published": "2026-06-17"
+          "published": "2026-06-12"
         },
         {
-          "title": "비경영참여 투자 늘린 사모펀드…드라이파우더도 43조 ‘역대 최대’",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1EU05ETlJ3Z21vZXl1OHB4XzU1RC10VENfZVU4UzdCQldQSmFhak5QUmJQb2FUbkhublozVG03N21McDBnRmdXWlhZSWI3SktSdVHSAVNBVV95cUxNVkxLZTBXUTIwdzd4SWpuUWQxQWFuNVUwRVRnUnhlNUd4Y1JTWXZZZFdKZnpwOXZJUzFjTUVCMVBoZmtwSFRpbDItV3oyNEVLSkJwUQ?oc=5",
-          "source_label": "서울경제",
-          "published": "2026-06-17"
+          "title": "국세청, ‘개인 체납 1위’ 권혁 시도그룹 회장 특별세무조사 착수",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE02M1BROEtqVXZQdURPaEc1ZGVCTTBVYmZ1T0ZCZU91bWFXeWtUVlVXZmxrTks0VVpNb2hPcE12UWhKTVFqRHVOS2RVa0NuUTVPTkFLMExJeFQ2Nk5PQTRDcVExQmVkVzBHN0E?oc=5",
+          "source_label": "intn.co.kr",
+          "published": "2026-06-13"
+        },
+        {
+          "title": "국세청, '체납 1위' 권혁 특별 세무조사 착수",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5vQTJZUUZjX18zYXhiWUhiY2JxYWRwYlgtMngzdkRsNTFZRk13b0NMZzFzLVhWamVfSEhMUFdTQ1V6OVpfZm1ZV3d2ZXZaZC1jVWh6QXFtd1RYRkJsel9ISdIBYEFVX3lxTE5vQTJZUUZjX18zYXhiWUhiY2JxYWRwYlgtMngzdkRsNTFZRk13b0NMZzFzLVhWamVfSEhMUFdTQ1V6OVpfZm1ZV3d2ZXZaZC1jVWh6QXFtd1RYRkJsel9ISQ?oc=5",
+          "source_label": "연합뉴스",
+          "published": "2026-06-13"
+        },
+        {
+          "title": "국세청, ′체납 1위′ 권혁 특별 세무조사 착수",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBDMmxKX096aUNRQ202SGQ0eXQwczBaTHUwR19heE1zaXA0ZGJwVjNjMHFtd3lJSE4yUzNMMFVvLWJTNHlkenRKOEdPNzFzLWh3OENKQ2VGV3dIQVFMOURPS3NNeHJiVTA?oc=5",
+          "source_label": "연합뉴스TV",
+          "published": "2026-06-13"
+        },
+        {
+          "title": "국세청 ‘고액 체납 1위’ 시도그룹 권혁 회장 특별세무조사 진행",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOaTh4SVo5ekF4cU51c0ZJVjJTNFlHMG5mOHBkc29WVTd0dkJlVENyQzRGWnJ0ckZETVFqVDhxc3dsRXYtZnRoR2hGMXBHZ2w2dlh0blZ2TDlWaktlM21SOVVvY2U5YkVSM1lycUFuNzd0YVR0X2dPOWlPR09PeFE5eVRxY3hnQ3lUNk11VGVR?oc=5",
+          "source_label": "조선일보",
+          "published": "2026-06-12"
+        },
+        {
+          "title": "국세청, '선박왕' 시도그룹 권혁 회장 특별세무조사 착수‥압수수색까지",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5IeGx6dExRYk1tQVJQSGZlaWxzYmFJbDR5ZFEwYm00d09DRzhvNm5oY3lJUUs2bnJaQU9VVTg2b29IS0Rzb0p4ZlozTFZ6d08tNTZ0ZkN5X3dOTTRGaWdCZW1lTF9SUXVLMGtBQzc1b0xVUXgx0gF0QVVfeXFMUHNmeUp5RVNSX3hYNGRNV0lINGxnekxGMDdCOVItU3pXS01iclNYVkZocXBsTGIxdk9zeERLejQ0c1dxcVQtY0pNSTMydjRfR1FnZjNqeGwyNlZTV2dfTlJKRVhVVS1aZ2RXeVpoSnZfV2l5ZEI?oc=5",
+          "source_label": "MBC 뉴스",
+          "published": "2026-06-12"
+        },
+        {
+          "title": "국세청, 개인체납 1위 '선박왕' 권혁 특별세무조사…압수수색 착수",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBrRFlrOG5vRXh3Mm4wdVFubjRRQWh6dTRyUVQ5THpoZGNPWFVuS3liMUhkbEN2MmNjMXA4QUl3R1RKYl9PSF9lQUh5VmlNanM?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-06-12"
+        },
+        {
+          "title": "국세청 '고액 체납 1위' 시도그룹 권혁 회장 특별 세무조사",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA4dmZGVFNIZ24yODFUTlNFbTRiUGd1OFlQZzBKYWRnZWlqWS1NUk5YVVRfWW9lR2E0b3FIaHc3cGZxb1FhNnBjQUtMMjhmOGM?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-06-12"
+        },
+        {
+          "title": "‘체납왕’ 권혁의 국내영업소, 특별 세무조사…‘압색 영장’도 발부",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1lUFlGTzI5MlRUT1hwanYyN3NtYVJVMUZIVjlJWFNaQ1lyMDlvbFAwbkR0Q3FHVGFBOXkzRUE4Q1g0MWktODY2dXlhYjh6LWQybjlmaFU3V2ZEeEROc3NvOFJOeWVzV0NVVlB1aVNCb1hKN00?oc=5",
+          "source_label": "마켓인",
+          "published": "2026-06-12"
         }
       ]
     },
@@ -1136,6 +1076,44 @@
       "published_at": "2026-06-17T05:58:01",
       "summary": "",
       "category": "세무"
+    },
+    {
+      "source": "gnews_딜·M&A",
+      "source_label": "인베스트조선",
+      "title": "'해외 IPO 참여 불가능해지나'…'투자자 보호' 명분 아래 쌓이는 불만",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSE9YZmVneFVYOHlZMlVncHJyaU9xSXdnX0txUjlrblBsM1hyUTBUbFBLc0pBSXNRcWV1cEJ1NjNHNlQ0Z2trX3Z2Z1RpcGRnUEJRbnhUelZBQUNvUEVtaS1pVXg4OUlOVElMeHQydGxib3hqUUhBb2Z1cW5XaWFYa1ZMaw?oc=5",
+      "published": "2026-06-17",
+      "published_at": "2026-06-17T05:17:00",
+      "summary": "",
+      "category": "딜·M&A"
+    },
+    {
+      "source": "gnews_감사",
+      "source_label": "스마트투데이",
+      "title": "[우리금융X동양생명] ⑤금감원이 요구한 회계법인 추가에 \"의무 아니다\"",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8yNGlUb01wLVlKaDZfc3dQYkw4UHVoaVloam5IZFh4TXBvLWxMNUFzQVRDM1BQeGRuSXlqcWI5dWNxWW43N0hwMDNuMGFaWVI1NmlPRm1OdGd3eERYTmpV?oc=5",
+      "published": "2026-06-17",
+      "published_at": "2026-06-17T04:28:00",
+      "summary": "",
+      "category": "감사"
+    },
+    {
+      "source": "gnews_딜·M&A",
+      "source_label": "v.daum.net",
+      "title": "기관전용 사모펀드 투자 12% 늘어…기업대출 등 비경영참여 급증",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB5QUtqVlJ5a0VTdnZ4MlpVc1Q1enBpQlRlemR2UWlQLTMtLV9NYTFNY2xraFlBYnk5a0hwYm9ZU2dEZzZ3M3l0R1JyT2xhR1E?oc=5",
+      "published": "2026-06-17",
+      "published_at": "2026-06-17T03:01:58",
+      "summary": "",
+      "category": "딜·M&A",
+      "dupes": [
+        {
+          "title": "비경영참여 투자 늘린 사모펀드…드라이파우더도 43조 ‘역대 최대’",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1EU05ETlJ3Z21vZXl1OHB4XzU1RC10VENfZVU4UzdCQldQSmFhak5QUmJQb2FUbkhublozVG03N21McDBnRmdXWlhZSWI3SktSdVHSAVNBVV95cUxNVkxLZTBXUTIwdzd4SWpuUWQxQWFuNVUwRVRnUnhlNUd4Y1JTWXZZZFdKZnpwOXZJUzFjTUVCMVBoZmtwSFRpbDItV3oyNEVLSkJwUQ?oc=5",
+          "source_label": "서울경제",
+          "published": "2026-06-17"
+        }
+      ]
     },
     {
       "source": "gnews_세무",
@@ -1154,16 +1132,6 @@
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1WX0ZyMS1sQi16UUhVTVpDekJBSkdxRC1mai00TENJdDdyZGI4UjBWcWJsRmc4ajNjNnZ0dHVXQ3Q1YmM0N1Q1WDk2RVN2YTZwRGtQS2Rjd3Eycm9MdDJxVFhCWEdMYlg0SFhDTnVZTmk?oc=5",
       "published": "2026-06-17",
       "published_at": "2026-06-17T01:39:00",
-      "summary": "",
-      "category": "딜·M&A"
-    },
-    {
-      "source": "gnews_딜·M&A",
-      "source_label": "뉴데일리",
-      "title": "현금 200조 쌓이는 삼성전자 … 반도체 호황 타고 M&A 큰손 나서나",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9nUG5CSVY1Nzc4cWNOcy0tNGVZLWFYcmFlMTFRclNpQVdyc2NMWU9Vc19zYi1UWUhJZmpaamRHZTlpSUxSRl9rMDdiZmtKb3NDSFhJRG1Zb1VGQXhENFZIamtPQjRiMC1jRFNFeEd0OElPZWNISFBVX2VkVdIBgAFBVV95cUxNWWZLTHQ5QWhWNWFNVmt4R25WX19sVG45NXZ0Vng4NGFoU0ZtQ1YwRUY2T3JPR3BTcTJlQVF0aUJZZVdBRURCZHZ5UHRaSVZXX1B3OU1OYU9HOUJyRkNFa0Jma3hLVFNxVTdpYzdLQnU2ZEFIUG5XYmNtZ0N6UGFhUg?oc=5",
-      "published": "2026-06-17",
-      "published_at": "2026-06-17T01:33:34",
       "summary": "",
       "category": "딜·M&A"
     },
@@ -1367,21 +1335,21 @@
     },
     {
       "source": "gnews_딜·M&A",
-      "source_label": "연합뉴스",
-      "title": "'중국판 인스타그램' 샤오훙수, 이달 홍콩 IPO 신청 추진",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1rZjVUM0xzdElHSllYbThHcklrMmtsUG1WajJfaERISTBnd2dHc3BORFA2eHM2WF9TZWQ0RnkwakZOOTBUdHZqYWhfVHNwUjhvSGFuVlVTYUxXQUdOZ3kyejdqSy1OLTlwRDk3UFRRb3RzNFdQUjhPOVlrc9IBYEFVX3lxTE00TVBYYmFVQ3lMUDVHWkZJd1ZTVEhyLUVIMXlTZmVqOGFuMl9uRThBSzQtblgtWk1Qb3FIbUNHSWFVNlpmMHFBbi1Yb2JudHVBZXhTTTdMemp2Yk5jX25iXw?oc=5",
-      "published": "2026-06-16",
-      "published_at": "2026-06-16T01:09:44",
-      "summary": "",
-      "category": "딜·M&A"
-    },
-    {
-      "source": "gnews_딜·M&A",
       "source_label": "연합인포맥스",
       "title": "증권사도 물렸다…중앙그룹 사태에 독이 된 IPO 주관",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE45bk9DeW1NTTdiWXN4b0V3eUVVQ1NrcGxfNUd4TjVfb0xvbHBzSTdiV2JxU253RnpOazVNVTloeGtTa0s5T2hXbHNWSHktbHo1U3JmQ3hfTjcwWUJRYTFaWk9aM0xYOHlEVHgySkVzTlA?oc=5",
       "published": "2026-06-15",
       "published_at": "2026-06-15T23:49:00",
+      "summary": "",
+      "category": "딜·M&A"
+    },
+    {
+      "source": "gnews_딜·M&A",
+      "source_label": "연합뉴스",
+      "title": "우리운용 \"미국단기채공모주 펀드, 스페이스X IPO 물량 받아\"",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5TOXJsNlNFYUZsdXB2LU9TR3R0ZlZSbzlOV0xFY0xkRGZJTXNTcTRmQkVtOXN0dGs3Vk16bFdHWHBiY0hocEdUM2M4dGJ2MVc4Wm1Ta0x4WXFXeUtHcFRSSNIBYEFVX3lxTE5TOXJsNlNFYUZsdXB2LU9TR3R0ZlZSbzlOV0xFY0xkRGZJTXNTcTRmQkVtOXN0dGs3Vk16bFdHWHBiY0hocEdUM2M4dGJ2MVc4Wm1Ta0x4WXFXeUtHcFRSSA?oc=5",
+      "published": "2026-06-15",
+      "published_at": "2026-06-15T08:25:06",
       "summary": "",
       "category": "딜·M&A"
     },
@@ -1397,99 +1365,11 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "v.daum.net",
-      "title": "재정회계법인 나철호 대표, 상속·증여 관련 서적 동시 출간",
-      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5ZSXRPdWdvZTV6bFk0bzFJN05lVVVud3FEQWpLMzRrR3hSNHhLTUFzWURJc3Nmai10X0lTVVJaQWdmSnN0dmc?oc=5",
-      "published": "2026-06-15",
-      "published_at": "2026-06-15T04:14:42",
-      "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "재정회계법인 나철호 대표, 상속·증여 실무서 2권 동시 출간",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5fbnBJUWxCaG14TXBaNUs4enNyenV2VkNIM1lDbVotaFpsZzJKU2RpWlV0MDkxZlVkamNCVUtiYlBDSHgyOTZKSW5MckVWaUE?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-06-15"
-        },
-        {
-          "title": "나철호 재정회계법인 대표, 상속·증여 서적 2권 동시 출간",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9NdGZuN3NQTnFpeHZvQUFiVmgzaGlGX3ZsMFFXd3JDUTBzTGRjVW9LTmpoQkV2a212OFNSZHNkbVpobmk3ZnFKUVA1WlpHVm42Q0tCT2tDSWZNZmNSMDdJ?oc=5",
-          "source_label": "조세일보",
-          "published": "2026-06-14"
-        },
-        {
-          "title": "[신간] 상속·증여의 지침서...나철호 회계사의 ‘2027 상속을 지금 준비하라’ 10판",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9RS093T1Axajh6Mkc3eXZUbUs0Z1VOUGJKZmtwUzZRTWRoa1FKVGs0T0l5WEI2OUppZEwxYll3aG4wSVhrd1d4VUpCcUZwYnRZU3lTamdOazVPNkhvbWlhZjdlUUdFc1E?oc=5",
-          "source_label": "법률저널",
-          "published": "2026-06-12"
-        },
-        {
-          "title": "유튜브 꿀팁만 믿으면 안돼요…'상속·증여세 오해 그리고 진실'",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9KRHVNamZ5NUZVUkJHcHdmMllFMkNFRWtqTGVwd3BjWURnTElpMW9kTi1HenJjU1UtX1FzMWx6QXFsd2dUemVKLTBjd2VaR1paaUNDVjgtcW9OU295WkNqU2ZSMWJGck5MUWNBNw?oc=5",
-          "source_label": "대한민국 정책브리핑",
-          "published": "2026-06-05"
-        },
-        {
-          "title": "상속 · 증여세 오해 그리고 진실",
-          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQS1NKU3d5czFFdHhRV2F2Z1Z2T0RvUTdzTWxGOXdia2xlWGtWYkYzYjYzWlhYb0dqcmF1a01saGFXUnhJTDJWU1dlOU9UeVlSV2E5d3J5dVVGWE5hZ3lWMEFyaktjOTJPU29JcXg2TzJTUHd1UVJsUUNqbXdURXlBNC1sUEUxUUpLdE9KcQ?oc=5",
-          "source_label": "국세청",
-          "published": "2026-05-31"
-        },
-        {
-          "title": "국세청, 상속·증여세 ‘오해와 진실’ 공개… “가족 간 송금·생활비도 기준 따져야”",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9GOGRrOXBFbE44aFZOd1ZWZ3BqZy1ncl94OFN2RDdKeTJvSXRWX3NfclpibVdGSjR0S3ltcnhDMTR2Ym9YLVNzX0pZQlpPVjg?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-06-01"
-        },
-        {
-          "title": "유튜브 절세 꿀팁 믿었다간 낭패…상속·증여세 오해 바로 알기",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1RTTBsNDFFTmpBSlliSl9Nb2RZUmVJZ3l3djQ2NzFLOFZIeU1hMHNjOGlLcmg4M1pqSjdmc291dUExdHVydzlDaHN2NUFvVlV6UUZjbzdOWkcxUQ?oc=5",
-          "source_label": "경북매일",
-          "published": "2026-06-01"
-        },
-        {
-          "title": "국세청, 온라인서 떠도는 상속·증여세 절세팁 바로잡는다",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE95YU93NTR2a3c1dUw4VVQ2TUJuVWdaZ0NlSHJaMGY3UHJoaGx1alhDemxDZVVhbG9FNk1tc1FXLUVOcDhaMkFkU0FDbG9sckhSZDdVMQ?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-05-31"
-        },
-        {
-          "title": "“유튜브 절세 꿀팁 믿어도 될까?”…국세청, 「상속･증여세 오해 그리고 진실」 배포",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBacGtGeDNJcEc5TFNHYVJYQ0JtUEtmUUt1dGNYcDJxRng5SEJWOEZFR24wNXpTbUxOY3NTMXg4MlFaaFo2MXdwRVlJNENfRGNSRTk4THVRSHltajJISloxVnBmMUJkYUxjWWNJd2tMaw?oc=5",
-          "source_label": "조세플러스",
-          "published": "2026-05-31"
-        },
-        {
-          "title": "‘유튜브 절세 꿀팁’ 믿어도 될까…국세청, ‘상속·증여세 오해와 진실’ 공개",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5PbnJZT2laMHFvdU92WVBxNUM4ckhxS3lQdGxZWTdfR3hhRkxrNUdkNHZlQWZGRERNdWhFY1VEbV94d2RYM0cyc1d2NGFQQWxxSHBieFcxMGJMWjJsaTBnU0lmY2NxY3Qzakh6Zw?oc=5",
-          "source_label": "세정일보",
-          "published": "2026-05-31"
-        },
-        {
-          "title": "국세청, 유튜브 엉터리 상속·증여 절세팁 바로잡기 나섰다",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE94STlLOXRsN3VmUmMxa3lmZ3JxMm9CS3QzT2s2Q0Q0S0hRS2IwNG5zWWlValdsUGpfWS1nak9JTDF1SHZxRF9oQzB5VkVMQVYzbkI4V0RoZ281R3PSAWBBVV95cUxNUnhmc2U4aXFlNm5EWjRzR041NHVTZTRBb25pVFN1aEFaOXdrSEZ0dkJ0enRyVldMYUN5RHMyMjBlcmJZLWtMTTc5NjJPcjdCcThPSHlDaDRCQWpsLXNwMFU?oc=5",
-          "source_label": "연합뉴스",
-          "published": "2026-05-30"
-        }
-      ]
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "KBS 뉴스",
-      "title": "음성군, 세무조사 사전 신청·컨설팅 운영",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBuNmpzX0tlNHIwcVN2bTJydFdFUjZfWHFjZFItVDF0Q3l1VmwtX19uOHJ3bDRLQjZtSHpJUVdSTE40QjZfekxWWG1ydmJfNWZ6WUh1SEV3QXFsTjQ?oc=5",
-      "published": "2026-06-15",
-      "published_at": "2026-06-15T01:40:00",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "intn.co.kr",
-      "title": "세무법인HKL '稅相 읽기'(32) 세무조사 적법 절차 무시한 처분은 무효 - 납세자 권리는 행정 편의의 희생양이 될 수 없다",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9DN01qWWNreVpDZE9PckdNZUd5VHgtVXhnb0p4eTl5aFNwTXlNRUl2aGNQZDF6Ny1La0NBLUNlVVdvTDNvN1k4TENqV2U3YXlDX3ZxUmo4YXU3RmFXT1Rma2RWUW5uUWJ2Zmc?oc=5",
-      "published": "2026-06-15",
-      "published_at": "2026-06-15T00:00:00",
+      "source_label": "한국경제",
+      "title": "\"타사 보험설계사 쓰고 수수료 줬다\"…대법 \"세금 비용처리 안돼\"",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9GeHc5VmJFYXNKX0JHbi01S3d6b0dPcVhzclBFMzltcmZobTJrMFA2MnY3bjF0Z0ZWSi1GVkUxRzdxa0VrdzFDRkNPWUZ5NmlJS0MyZTh0OXRWd9IBVEFVX3lxTE5oZTVyald5N0pMR0lpbUsyUzM3OWVueEw1N0NBaExiSVV5UmhZLXBkVlo4R3FNU1VjS3k0YWtWVjhFcXVJSjc1bGdIV1hIc1czcGxZbg?oc=5",
+      "published": "2026-06-14",
+      "published_at": "2026-06-14T23:42:35",
       "summary": "",
       "category": "세무"
     },
@@ -1502,16 +1382,6 @@
       "published_at": "2026-06-14T23:42:29",
       "summary": "",
       "category": "딜·M&A"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "v.daum.net",
-      "title": "부산시, 고용우수기업 15개사 선정…세무조사 유예 혜택",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBfUVBFaVdMSlhwYTVHWXdPZ3p1TGcyWjRzYUlmc0QwcGZBaF9LaG1FcGdXUFNMR3daZEpGTU1VSE1QN0RRQ2FRSzd4M0dZMmpwUmtUYQ?oc=5",
-      "published": "2026-06-14",
-      "published_at": "2026-06-14T23:00:53",
-      "summary": "",
-      "category": "세무"
     },
     {
       "source": "gnews_딜·M&A",
@@ -1544,26 +1414,6 @@
       "category": "세무"
     },
     {
-      "source": "gnews_세무",
-      "source_label": "한국개발연구원(KDI)",
-      "title": "주요국 조세정책의 최신 트렌드 톺아보기(2) - 소비세제 및 재산세제",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNVXdWSTd1dnRqMkpLWjU1NThCenEwNVJJMnNpRFJkcG50amNaTTVJcVdDVmVMeC03SHpGRkI2R3RfekloQlp6cWluZTEybUx6Sm1SZVVCeHk0ejAyWkZGNnktbGVTdDM5TVNSQThmUUxyVFBvUTZNWmVJelh3MlhlelU3dHl3MVBTVkFieFNvbTFBZEJxZUtKZVZKZVFoY1VBZmZZcXVSb2Z0QVU5YnNXaWpzR0VCRVhtb0xMTzEwaw?oc=5",
-      "published": "2026-06-11",
-      "published_at": "2026-06-11T08:24:58",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "한국개발연구원(KDI)",
-      "title": "외국인투자 관련 조세정책동향(2026년 상반기)",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9rekN6enVKUlk0cG9qZmY4MGhpbzdUT2FlbVhxdUQxZnFka3FDM1pxaWVuRGV2bjJEdlFZQzl6Wi1zanZZNXRBTmU4MzFDQXdtTVM2MVlGQ3VLUGlYOHZ5S2Y0VUdub2xqOXBr?oc=5",
-      "published": "2026-06-09",
-      "published_at": "2026-06-09T17:29:29",
-      "summary": "",
-      "category": "세무"
-    },
-    {
       "source": "gnews_채용·시험",
       "source_label": "v.daum.net",
       "title": "수습 회계사 인위적 배정…감사 품질 부작용 우려[CPA 미지정 잔혹사]②",
@@ -1584,16 +1434,6 @@
       "category": "채용·시험"
     },
     {
-      "source": "gnews_세무",
-      "source_label": "intn.co.kr",
-      "title": "세무사회, 6월 회원보수교육 실시…상속·증여세 실무 핵심 집중 점검",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB1RUgtMlZDMEU4LVhVaEwzSmllTXljcmdOck1FaGNDclFWQ0w0WjhFOEVfLU5Ca0RPdjBpa2ZWVWhmdm1GemRBX2dXVkhqcDNwZmMxNUdFNE9iR0V6ZmZuak9HU1Z2WGFWb2c?oc=5",
-      "published": "2026-06-08",
-      "published_at": "2026-06-08T07:00:00",
-      "summary": "",
-      "category": "세무"
-    },
-    {
       "source": "gnews_감사",
       "source_label": "v.daum.net",
       "title": "영림원소프트랩, 삼정 KPMG와 새 국제회계기준 대응 세미나 개최",
@@ -1605,13 +1445,43 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "법률신문",
-      "title": "론스타판결이 우리 국제조세에 미친 영향",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1odVhOTlRoNC1ZenA5Vnl6aEE4QXg5TUtqZEd0MzU3c2J1MkJXZ1NJelNneV9MMDhocmZNY3JpTHdDSS1GUEUxMVVMeFYxeUFha09wR2lUZnBYMUo2eHdPUTkya0M2YzNFRC1FdjlR0gFyQVVfeXFMT3N0QXhVYTJCMXZscjM5QlNEZ3BUMzltLUJ3SEtRZ2FqMGt2dFFKMXc1OGJ1MXZrVTFXa3hSZS1VaGZsODV3YjVXeXhCV1pRcm1xQ0I2RENtNFdhdkowWWI4VmFqcGZmV09aM0syLXdvT1JB?oc=5",
-      "published": "2026-06-07",
-      "published_at": "2026-06-07T21:30:53",
+      "source_label": "intn.co.kr",
+      "title": "세무사회, 6월 회원보수교육 실시…상속·증여세 실무 핵심 집중 점검",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB1RUgtMlZDMEU4LVhVaEwzSmllTXljcmdOck1FaGNDclFWQ0w0WjhFOEVfLU5Ca0RPdjBpa2ZWVWhmdm1GemRBX2dXVkhqcDNwZmMxNUdFNE9iR0V6ZmZuak9HU1Z2WGFWb2c?oc=5",
+      "published": "2026-06-08",
+      "published_at": "2026-06-08T06:30:44",
       "summary": "",
       "category": "세무"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "대한민국 정책브리핑",
+      "title": "유튜브 꿀팁만 믿으면 안돼요…'상속·증여세 오해 그리고 진실'",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9KRHVNamZ5NUZVUkJHcHdmMllFMkNFRWtqTGVwd3BjWURnTElpMW9kTi1HenJjU1UtX1FzMWx6QXFsd2dUemVKLTBjd2VaR1paaUNDVjgtcW9OU295WkNqU2ZSMWJGck5MUWNBNw?oc=5",
+      "published": "2026-06-05",
+      "published_at": "2026-06-05T07:00:00",
+      "summary": "",
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "상속 · 증여세 오해 그리고 진실",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQS1NKU3d5czFFdHhRV2F2Z1Z2T0RvUTdzTWxGOXdia2xlWGtWYkYzYjYzWlhYb0dqcmF1a01saGFXUnhJTDJWU1dlOU9UeVlSV2E5d3J5dVVGWE5hZ3lWMEFyaktjOTJPU29JcXg2TzJTUHd1UVJsUUNqbXdURXlBNC1sUEUxUUpLdE9KcQ?oc=5",
+          "source_label": "국세청",
+          "published": "2026-05-31"
+        },
+        {
+          "title": "국세청, 온라인서 떠도는 상속·증여세 절세팁 바로잡는다",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE04bnZRUXVMSlQ5dVptVVpFRG9TUmdiWnVIanB4Wks0UkFxbUlaVVN5RmFHUWZrR1N0TGhwU3BadVJ3aGJ4Y2ZmbVRfb0tkSU5mMmhfNHNBV0RvOEE?oc=5",
+          "source_label": "경기일보",
+          "published": "2026-05-31"
+        },
+        {
+          "title": "국세청, 유튜브 엉터리 상속·증여 절세팁 바로잡기 나섰다",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE94STlLOXRsN3VmUmMxa3lmZ3JxMm9CS3QzT2s2Q0Q0S0hRS2IwNG5zWWlValdsUGpfWS1nak9JTDF1SHZxRF9oQzB5VkVMQVYzbkI4V0RoZ281R3PSAWBBVV95cUxNUnhmc2U4aXFlNm5EWjRzR041NHVTZTRBb25pVFN1aEFaOXdrSEZ0dkJ0enRyVldMYUN5RHMyMjBlcmJZLWtMTTc5NjJPcjdCcThPSHlDaDRCQWpsLXNwMFU?oc=5",
+          "source_label": "연합뉴스",
+          "published": "2026-05-30"
+        }
+      ]
     },
     {
       "source": "gnews_감사",
@@ -1622,16 +1492,6 @@
       "published_at": "2026-06-05T07:00:00",
       "summary": "",
       "category": "감사"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "조세일보",
-      "title": "비용처리 잘못한 회계법인들…국세청 세무조사로 세금 추징",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1tTUZrZ1FwdFBCRnZLVjVFdEppU0FvZ2UwSXllXzRPdlB5b0JkN090V3FxNTNUSDR6Z0hqYjJtMkY2U0tLVWVDQ1I3cncyRE9ib0ltYjhtSFZnckxTNFpN?oc=5",
-      "published": "2026-06-04",
-      "published_at": "2026-06-04T07:00:00",
-      "summary": "",
-      "category": "세무"
     },
     {
       "source": "gnews_채용·시험",

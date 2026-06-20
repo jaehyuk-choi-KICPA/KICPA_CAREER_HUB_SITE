@@ -66,7 +66,16 @@ function urlB64ToUint8(base64) {
 async function subscribePush(scope, msgEl) {
   const say = (t) => { if (msgEl) msgEl.textContent = t; };
   if (!("serviceWorker" in navigator) || !("PushManager" in window)) {
-    say("이 브라우저는 푸시 알림을 지원하지 않아요."); return;
+    // iOS는 일반 Safari 탭에서 PushManager가 없음 — '홈 화면에 추가'(PWA) 후에만 가능.
+    const isIOS = /iP(hone|ad|od)/.test(navigator.userAgent);
+    const isStandalone = window.navigator.standalone === true
+      || window.matchMedia("(display-mode: standalone)").matches;
+    if (isIOS && !isStandalone) {
+      say("아이폰·아이패드는 공유 버튼(⬆️) → '홈 화면에 추가' 후, 추가된 회법몬 아이콘으로 열어 알림을 켤 수 있어요.");
+    } else {
+      say("이 브라우저는 푸시 알림을 지원하지 않아요.");
+    }
+    return;
   }
   try {
     const perm = await Notification.requestPermission();

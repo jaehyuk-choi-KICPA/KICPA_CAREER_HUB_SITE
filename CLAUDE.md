@@ -65,11 +65,13 @@
 ## 구조 · 워크플로우
 > 파일 맵·전체 파이프라인·모니터링 3층·외부 핑거 설정은 **`docs-meta/WORKFLOW.md`** 참조.
 
-⚠️ **GitHub 무료 public cron은 자주 드롭됨** — 정기 수집 주경로는 **외부 핑거(cron-job.org)**가 `run-all.yml`을 호출.  
-수집 개별 yml(`scrape·scrape-news·scrape-insights`)은 수동 전용. 모니터링 cron(`freshness` 1h·`sitecheck` 3h)은 유지.
+⚠️ **GitHub 무료 public cron은 자주 드롭됨** — 정기 수집 주경로는 **외부 핑거(cron-job.org)**가 `run-all.yml`을 호출(수집 후 **채용알림 푸시 발송**도 수행).  
+수집 개별 yml(`scrape·scrape-news·scrape-insights`)은 수동 전용. 모니터링은 **통합 `monitor.yml`(5h)**이 주축(freshness 1h·sitecheck 3h는 안정화까지 병행 후 폐기 예정).
 
-### 자동화 신뢰성 = 3층 (변경 시 함께 고려)
-1. **실행됐나** → `freshness.py` 2. **수집됐나** → `canary.py` (수동, 의도-인지 필수) 3. **제대로 보이나** → `sitecheck.py`
+- **채용알림(웹 푸시)**: 새 공고를 구독자 브라우저로 푸시(전체/수습CPA scope). 구독 저장=Cloudflare Worker(`worker/`), 발송=`src/notifier.py`(run-all 스텝). VAPID 개인키·READ 토큰은 GitHub Secret·wrangler secret에서만(코드엔 공개키만). 상세=WORKFLOW.md §5.5 / 사용설명서. 원래 카톡 "채용알림봇"(보류)의 웹 재구현.
+
+### 자동화 신뢰성 = 통합 monitor.yml(5h) + 레거시 3층 (변경 시 함께 고려)
+1. **실행됐나** → `freshness.py` 2. **수집됐나** → `canary.py` (수동, 의도-인지 필수) 3. **제대로 보이나** → `sitecheck.py` → **`monitor.yml`(5h)이 canary+sitecheck 통합 점검**
 - **셀프힐링**: sitecheck `recoverable`(신선도 실패) → 재실행 자동반복 / `code`(타당성·렌더) → 재실행 안 함, GitHub 이슈.
 - LLM은 out-of-band 점검·제안만. **코드 자동수정·자동머지 절대 금지(Human-in-the-loop).**
 

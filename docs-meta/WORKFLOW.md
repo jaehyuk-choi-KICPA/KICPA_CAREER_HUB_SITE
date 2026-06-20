@@ -11,7 +11,7 @@
 flowchart TD
     subgraph TRIGGER["⏰ 트리거"]
         EXT["cron-job.org<br/>30분 간격<br/>repository_dispatch"]
-        GH_CRON["GitHub Cron<br/>freshness 1h / sitecheck 3h"]
+        GH_CRON["GitHub Cron<br/>monitor 5h(통합) · freshness 1h · sitecheck 3h"]
         MANUAL["수동 실행<br/>canary / scrape 개별"]
     end
 
@@ -77,6 +77,8 @@ flowchart TD
     CANARY -->|"건수·양식 드리프트"| DRAFT_PR
 ```
 
+> **추가 흐름**: `run-all`은 수집 후 **푸시 발송**(`src/notifier.py` → 구독자)도 수행한다(§5.5 채용알림). 모니터링은 **통합 `monitor.yml`(5h)**이 canary+sitecheck를 묶어 점검하며 신선도 미갱신만 자동 재수집한다(§5).
+
 ---
 
 ## 2. 채용공고 파이프라인 상세
@@ -93,7 +95,7 @@ flowchart LR
     end
 
     subgraph PROC["처리"]
-        C["classify.py<br/>firm · field<br/>(local→감사 디폴트)"]
+        C["classify.py<br/>firm · 자격요건(수습CPA/자격무관)<br/>· 채용구분(인턴/정규/계약/파트)<br/>모집대상 텍스트 키워드 판정"]
         F["filters.py<br/>경력 제외<br/>신입/수습 예외 보존"]
         ST["state.py<br/>first_seen 기록<br/>grace(2일) 유실 복원"]
         SORT["마감 임박순 정렬<br/>진행중 > 마감"]
@@ -104,7 +106,8 @@ flowchart LR
     SRC --> C --> F --> ST --> SORT --> OUT
 ```
 
-**핵심 필드**: `firm` · `field` · `status(open/closed)` · `dday` · `posted_date` · `first_seen` · `is_new`
+**핵심 필드**: `firm` · `qualification`(수습CPA/자격무관) · `emp_kind`(인턴/정규직/계약직/파트타임) · `status(open/closed)` · `dday` · `posted_date` · `first_seen` · `is_new`(발견 24h)
+*(구 `field`(직무)는 폐기 — export에서 레거시 병행만)*
 
 ---
 
@@ -121,9 +124,10 @@ flowchart LR
     end
 
     subgraph FILTER2["필터"]
-        RD["recency 필터<br/>카테고리별 보존기간<br/>채용45·딜60·세무21·감사21일"]
+        RD["recency 필터<br/>카테고리별 보존기간<br/>채용75·딜30·세무21·감사21일"]
         FF["외국 기사 필터<br/>세무·감사만 적용<br/>news_foreign_sources/countries"]
         RA["require_any 게이트<br/>도메인어 없으면 제외"]
+        GT["노이즈 게이트<br/>보도자료·지자체 행정·코인·Naver Blog"]
         HT["hire_title 보정<br/>채용 키워드 제목→채용·시험 재분류"]
     end
 
@@ -137,10 +141,11 @@ flowchart LR
     SORT2["published_at 내림차순 정렬<br/>시각 tiebreaker"]
     OUT2["docs/data/news.json"]
 
-    RSS --> URL --> RD --> FF --> RA --> HT --> SORT2 --> NEAR --> EMB --> CAP --> OUT2
+    RSS --> URL --> RD --> FF --> RA --> GT --> HT --> SORT2 --> NEAR --> EMB --> CAP --> OUT2
 ```
 
 **풀 분리 이유**: Google RSS는 관련도순 100건 상한 → 단일 감사 쿼리는 오늘 기사가 100위 밖으로 밀림 → 2풀로 각 100건 확보.
+**딜 편중 보정**: 딜 보존 60→30일 축소 + 프론트 `spreadCategories`(전체 탭, 같은 카테고리 3연속 방지)로 dedup 압축 비대칭(감사/세무는 1건으로 묶이고 딜은 개별 건이라 다수)에 따른 딜 도배 완화.
 
 ---
 
@@ -165,16 +170,38 @@ flowchart LR
 
 ---
 
-## 5. 모니터링 3층
+## 5. 모니터링 (통합 monitor.yml 5h + 레거시 3층 병행)
+
+**통합**: `monitor.yml`(5h cron `0 */5 * * *`)이 canary(소스 급감 구조점검) + sitecheck(라이브 종단·신선도 셀프힐링)를
+**한 잡**으로 묶어 점검한다. **신선도 미갱신(recoverable)일 때만 자동 재수집**, 그 외(렌더·타당성·코드)는 `monitor`/`needs-human`
+라벨 GitHub 이슈로 에스컬레이션. 안정 확인 전까지 아래 레거시 3층도 병행하며, 이후 freshness·sitecheck의 cron을 폐기(수동 전용)해 중복 제거 예정.
 
 | 층 | 파일 | 주기 | 감지 대상 | 출력 |
 |---|---|---|---|---|
+| **통합** | **`monitor.yml`** (canary+sitecheck) | **5h** | 소스 급감 + 라이브 종단·신선도 | 이슈 / 신선도시 자동 재수집 |
 | 실행됐나 | `freshness.py` | 1h | `status.json` 나이 > 임계 (외부핑거 죽음) | Draft PR |
 | 수집됐나 | `canary.py` | 수동 | 소스별 건수 급감·0건·양식 변경 | Draft PR + LLM 진단 |
 | 제대로 보이나 | `sitecheck.py` | 3h | 라이브 URL 렌더·카드수·콘솔 에러·타당성 | GitHub Issue |
 
-**셀프힐링**: sitecheck가 `recoverable` 판정 시 scrape 재실행 → 재점검 (최대 attempts 상한).  
+**셀프힐링**: monitor/sitecheck가 `recoverable`(신선도 미갱신) 판정 시 scrape 재실행 → 재점검 (최대 attempts 상한).  
 **Human-in-the-loop**: LLM은 진단·제안만, 코드 수정·머지는 사람이 Claude Code로.
+
+---
+
+## 5.5 채용알림 (웹 푸시) 파이프라인
+
+```mermaid
+flowchart LR
+    BTN["프론트 '🔔 채용알림'<br/>scope: 전체 / 수습CPA"] -->|"PushManager.subscribe(VAPID 공개키)"| SW["sw.js 등록"]
+    SW -->|"POST /subscribe {endpoint,keys,scope}"| WK["Cloudflare Worker<br/>hbmons-push.*.workers.dev<br/>KV에 scope 포함 저장"]
+    RUN["run-all.yml → src/notifier.py"] -->|"GET /list (Bearer)"| WK
+    RUN -->|"state.json 신규(notified=False) × scope 매칭"| PUSH["pywebpush(VAPID 서명)<br/>→ 구독자 브라우저"]
+```
+
+- **scope**: `수습CPA 전용` 구독자는 `classify_qualification`이 수습CPA인 공고만, `전체`는 인턴·일반 포함 전부 수신.
+- **콜드스타트 억제**: 활성화 직전 `python -m src.notifier --seed`로 기존 공고를 baseline(notified=True) 처리 → 가입 직후 폭주 없음.
+- **보안**: VAPID 개인키(`VAPID_PRIVATE_KEY`)·구독 read 토큰(`SUBS_READ_TOKEN`)은 **GitHub Secret에서만**. Worker `READ_TOKEN`은 `wrangler secret`. 코드/커밋엔 **공개키만**.
+- **구성요소**: `docs/sw.js`(수신) · `docs/app.js subscribePush()`(구독) · `worker/subscriptions.js`(KV 저장) · `src/notifier.py`(발송) · `config.notifications`(enabled·worker_url·vapid_public). 견고성: 발송 실패가 run을 막지 않음(`|| true`), 미발송분은 notified=False로 남아 다음 run 재시도.
 
 ---
 
@@ -189,8 +216,9 @@ flowchart LR
 │   ├── export.py                ← 수집 진입점 (--part jobs|news|insights)
 │   ├── sources.py               ← ThreadPool 병렬 fetch 조율
 │   ├── state.py                 ← 채용공고 상태 영속 (first_seen · grace)
-│   ├── classify.py              ← 법인/직무 분류 규칙
+│   ├── classify.py              ← 법인/자격요건(수습CPA·자격무관)/채용구분(인턴·정규·계약·파트) 분류
 │   ├── filters.py               ← 경력 제외 필터
+│   ├── notifier.py              ← 웹 푸시 채용알림 발송(pywebpush·VAPID·scope)
 │   ├── news.py                  ← NewsItem 데이터클래스
 │   ├── record.py                ← Posting 데이터클래스
 │   ├── embeds.py                ← Voyage 임베딩 (키 있을 때만)
@@ -211,21 +239,29 @@ flowchart LR
 │       └── insights.py          ← Big4 간행물 (Playwright)
 ├── docs/                        ← GitHub Pages 루트 (hbmons.com)
 │   ├── index.html               ← SPA 껍데기
-│   ├── app.js                   ← 전체 프론트 로직
+│   ├── app.js                   ← 전체 프론트 로직 (필터 2축·카드·푸시 구독)
 │   ├── style.css                ← 스타일
+│   ├── sw.js                    ← 푸시 서비스워커 (수신, 캐시 없음)
+│   ├── manifest.json            ← PWA 매니페스트 (아이콘·테마색)
+│   ├── icon.svg / icon-192·512.png / favicon.ico / apple-touch-icon.png  ← 로고/아이콘
 │   └── data/
-│       ├── jobs.json            ← 채용공고 (Actions가 갱신)
+│       ├── jobs.json            ← 채용공고 (qualification·emp_kind 포함)
 │       ├── news.json            ← 기사 (Actions가 갱신)
 │       ├── insights.json        ← 인사이트 (Actions가 갱신)
-│       └── status.json          ← 마지막 수집 시각
+│       ├── status.json          ← 마지막 수집 시각
+│       └── notify_status.json   ← 푸시 발송 관측성
 ├── .github/workflows/
-│   ├── run-all.yml              ← 주 수집 (외부핑거 → repository_dispatch)
-│   ├── freshness.yml            ← 신선도 감시 (1h cron)
-│   ├── sitecheck.yml            ← 종단 점검 (3h cron)
+│   ├── run-all.yml              ← 주 수집 (외부핑거 → repository_dispatch) + 푸시 발송(notifier)
+│   ├── monitor.yml              ← 통합 점검 (5h cron · canary+sitecheck 셀프힐링)
+│   ├── freshness.yml            ← 신선도 감시 (1h cron · monitor 안정화 후 폐기 예정)
+│   ├── sitecheck.yml            ← 종단 점검 (3h cron · monitor 안정화 후 폐기 예정)
 │   ├── canary.yml               ← 양식 감시 (수동)
 │   ├── scrape.yml               ← 채용 단독 (수동) <-외부 핑거로 가동
 │   ├── scrape-news.yml          ← 기사 단독 (수동) <-외부 핑거로 가동
 │   └── scrape-insights.yml      ← 인사이트 단독 (수동) <-외부 핑거로 가동
+├── worker/                      ← Cloudflare Worker (푸시 구독 저장소, 정적 사이트의 미니 백엔드)
+│   ├── subscriptions.js         ← /subscribe·/list·/unsubscribe (KV, scope 저장)
+│   └── wrangler.toml            ← 배포 설정 (KV 바인딩·ALLOWED_ORIGIN)
 ├── docs-meta/                   ← 개발 문서 (GitHub Pages 미서빙)
 │   ├── WORKFLOW.md              ← ★ 이 파일 (워크플로우 시각화)
 │   ├── PATCHNOTES.md            ← UI/기능 빌드 이력

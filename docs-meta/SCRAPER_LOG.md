@@ -20,6 +20,16 @@
 
 ---
 
+## 2026-06-21 (2) — 채용알림 웹푸시 가동 + 통합 모니터 cron(5h)
+
+- **무엇을 / 어디에:**
+  1. **채용알림 발송 가동** — `run-all.yml`에 `python -m src.notifier` 스텝 + 시크릿 env(`VAPID_PRIVATE_KEY`·`SUBS_READ_TOKEN`) + `notify_status.json` 커밋. `notifier.py`에 **scope 필터**(`_is_susup` → `classify_qualification`): 수습CPA 전용 구독자는 수습CPA 공고만 발송. `worker/subscriptions.js`가 구독 record에 `scope` 저장. config `notifications.enabled=true`, VAPID 키쌍 재발급(공개키→config·app.js, 개인키→GitHub Secret). Cloudflare Worker 배포(wrangler). `requirements.txt`에 pywebpush.
+  2. **통합 모니터** — `monitor.yml`(cron `0 */5 * * *`)이 canary(소스 급감)+sitecheck(신선도 셀프힐링)를 묶어 5시간 점검. 신선도 미갱신만 자동 재수집, 그 외 `monitor`/`needs-human` 이슈. freshness(1h)·sitecheck(3h)는 안정화까지 병행.
+- **검증/효과:** VAPID 서명 OK · Worker /subscribe scope 저장·/list Bearer·미인증 401 확인 · seed 43건 억제(콜드스타트 방지) · notifier 클린 실행 · 라이브(hbmons.com)에 새 VAPID 공개키·sw.js·manifest 배포 확인.
+- **남은:** monitor 첫 cron 실행(=supervised 검증) 후 안정 시 freshness/sitecheck cron 폐기. 브라우저 구독→수신 실테스트. [[insight-notifier-inactive]] 갱신(이제 가동).
+
+---
+
 ## 2026-06-21 — 자격요건·채용구분 분류 신설(직무 대체) + is_new 24h + 기사 게이트·균형정렬
 
 - **증상/계기:** 채용 직무분류(딜/감사/택스/기타)가 수습공인회계사 타깃엔 덜 결정적. 기사 화면이 딜로 도배(코인·블로그·해외 IPO·지자체 행정 노이즈 + dedup 비대칭).

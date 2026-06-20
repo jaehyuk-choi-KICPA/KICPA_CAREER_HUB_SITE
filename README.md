@@ -6,11 +6,11 @@
 
 빅4와 로컬 회계법인의 수습공인회계사·입사 준비자를 위해, 흩어져 있는 채용공고와 회계·세무·딜 업계 뉴스, 빅펌 인사이트를 한 화면에 모아 보여주는 정적 웹 대시보드입니다. 라이브: **[hbmons.com](https://hbmons.com)**
 
-수습 CPA를 준비하면 한국공인회계사회와 삼일·삼정·안진·한영 등 여러 사이트를 매번 따로 확인해야 합니다. 회법몬은 이 소스들을 자동으로 모아 법인·직무·진행상태로 분류해 한 곳에 정리하고, 업계 뉴스와 빅펌 간행물 링크까지 함께 보여줍니다. 서버나 노트북을 상시 켜둘 필요 없이, 외부 스케줄러가 GitHub Actions를 깨워 수집·커밋하면 GitHub Pages가 서빙합니다.
+수습 CPA를 준비하면 한국공인회계사회와 삼일·삼정·안진·한영 등 여러 사이트를 매번 따로 확인해야 합니다. 회법몬은 이 소스들을 자동으로 모아 법인·자격요건(수습CPA/자격무관)·채용구분(인턴/정규직/계약직/파트타임)·진행상태로 분류해 한 곳에 정리하고, 업계 뉴스와 빅펌 간행물 링크, 새 공고 브라우저 푸시 알림까지 함께 제공합니다. 서버나 노트북을 상시 켜둘 필요 없이, 외부 스케줄러가 GitHub Actions를 깨워 수집·커밋하면 GitHub Pages가 서빙합니다.
 
 ## 미리보기
 
-| 채용공고 (법인·직무·상태 필터, 새 공고 패널) | 기사 (4분류, 같은 주제 묶기) |
+| 채용공고 (법인·자격요건·채용구분·상태 필터, 푸시 알림) | 기사 (4분류, 같은 주제 묶기) |
 |:---:|:---:|
 | [![채용공고](assets/shot-jobs.png)](https://hbmons.com) | [![기사](assets/shot-news.png)](https://hbmons.com) |
 
@@ -36,7 +36,7 @@
 
 ## 콘텐츠
 
-1. 채용공고 — KICPA(수습·CPA)와 삼정·안진·한영·삼일. 법인, 직무(딜/감사/택스/기타), 진행상태로 필터링하고 마감 D-day와 새 공고 패널을 보여줍니다.
+1. 채용공고 — KICPA(수습·CPA)와 삼정·안진·한영·삼일. 법인, 자격요건(수습CPA/자격무관), 채용구분(인턴/정규직/계약직/파트타임), 진행상태로 필터링하고 마감 D-day·새 공고 패널·**브라우저 푸시 알림**(전체/수습CPA 범위 선택)을 제공합니다.
 2. 기사 — Google News RSS를 4개 카테고리(채용·시험/감사/세무/딜·M&A)로. 제목·출처·링크만 담고, 같은 사건의 중복 기사는 묶습니다.
 3. 빅펌 인사이트 — 삼일·삼정·안진·한영 간행물 링크. SPA라 헤드리스 렌더로 가져오고, 저작권상 제목·링크만 답니다.
 
@@ -49,7 +49,8 @@
                                                           │
                                           docs/data/*.json 커밋 ─► GitHub Pages(docs/) ─► 바닐라 SPA
                                                           │
-                       모니터링 세 겹: freshness, canary, sitecheck (이상 시 Draft PR / GitHub Issue)
+                       모니터링: 통합 monitor(5h, canary+sitecheck) + freshness (이상 시 자동 재수집 / GitHub Issue)
+            채용알림: 새 공고 → notifier(VAPID) → Cloudflare Worker 구독자에게 웹 푸시(전체/수습CPA)
 ```
 
 ## 기술 스택
@@ -78,7 +79,7 @@ cd docs && python -m http.server 8000      # http://localhost:8000
 ## 배포 (GitHub Pages)
 
 1. `main`에 push한 뒤, Settings → Pages → Deploy from branch에서 `main` / `/docs` 선택.
-2. 정기 수집은 외부 스케줄러(cron-job.org 등)가 `repository_dispatch{event_type:run-all}`로 `run-all.yml`을 30분마다 호출합니다. GitHub 무료·public cron은 드롭이 잦아 정기 수집은 외부 핑거가 맡고, 개별 `scrape*.yml`은 수동 보조로 둡니다. 모니터링(freshness 매시간, sitecheck 3시간)만 GitHub cron을 씁니다.
+2. 정기 수집은 외부 스케줄러(cron-job.org 등)가 `repository_dispatch{event_type:run-all}`로 `run-all.yml`을 30분마다 호출합니다. GitHub 무료·public cron은 드롭이 잦아 정기 수집은 외부 핑거가 맡고, 개별 `scrape*.yml`은 수동 보조로 둡니다. 모니터링은 통합 monitor(5시간, canary+sitecheck)와 freshness(매시간)가 GitHub cron을 씁니다(sitecheck는 monitor 안정화 후 폐기 예정). 새 공고는 notifier가 Cloudflare Worker 구독자에게 웹 푸시로 알립니다.
 3. LLM 점검을 켜려면 Settings → Secrets → Actions에 `ANTHROPIC_API_KEY`를 추가합니다. 없으면 결정론 검사만 돕니다.
 
 ## 문서 (`docs-meta/`)

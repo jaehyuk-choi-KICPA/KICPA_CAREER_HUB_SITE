@@ -63,8 +63,42 @@ function urlB64ToUint8(base64) {
   const raw = atob(b64);
   return Uint8Array.from([...raw].map((c) => c.charCodeAt(0)));
 }
+// ── 인앱 브라우저(카톡·네이버앱·인스타 등) 감지 — 서비스워커/푸시가 막혀 알림이 안 됨 ──
+function inAppBrowserName() {
+  const ua = navigator.userAgent || "";
+  if (/KAKAOTALK/i.test(ua)) return "카카오톡";
+  if (/KAKAOSTORY/i.test(ua)) return "카카오스토리";
+  if (/NAVER\(inapp/i.test(ua)) return "네이버 앱";
+  if (/DaumApps/i.test(ua)) return "다음 앱";
+  if (/Instagram/i.test(ua)) return "인스타그램";
+  if (/FBAN|FBAV|FB_IAB/i.test(ua)) return "페이스북";
+  if (/\bLine\//i.test(ua)) return "라인";
+  if (/\bBAND\b/i.test(ua)) return "밴드";
+  return "";
+}
+function isInAppBrowser() { return inAppBrowserName() !== ""; }
+
+// 진입 시 1회: 인앱 브라우저면 상단에 안내 배너(닫기 가능) — 푸시·일부 기능이 막히니 외부 브라우저로 열라 안내.
+function showInAppNotice() {
+  const name = inAppBrowserName();
+  if (!name) return;
+  const close = el("button", { "aria-label":"닫기", text:"✕",
+    style:"flex:0 0 auto;border:0;background:transparent;color:inherit;font-size:15px;cursor:pointer;line-height:1;padding:0 2px;" });
+  const bar = el("div", { role:"note",
+    style:"background:#fff7ed;color:#7c2d12;border-bottom:1px solid #fdba74;padding:9px 14px;font-size:13px;line-height:1.5;display:flex;gap:10px;align-items:flex-start;justify-content:center;" }, [
+    el("span", { text:`📱 ${name} 인앱 브라우저예요. 새 공고 ‘알림(푸시)’은 여기서 작동하지 않아요 — 우측 상단 메뉴(⋮ 또는 공유)에서 ‘다른 브라우저로 열기’로 크롬·사파리에서 열어주세요.` }),
+    close,
+  ]);
+  close.addEventListener("click", () => bar.remove());
+  document.body.insertBefore(bar, document.body.firstChild);
+}
+
 async function subscribePush(scope, msgEl) {
   const say = (t) => { if (msgEl) msgEl.textContent = t; };
+  if (isInAppBrowser()) {
+    say(`📱 ${inAppBrowserName()} 인앱 브라우저에서는 알림을 켤 수 없어요. 우측 상단 메뉴(⋮ 또는 공유)에서 ‘다른 브라우저로 열기’를 눌러 크롬·사파리에서 연 뒤 다시 켜주세요.`);
+    return;
+  }
   if (!("serviceWorker" in navigator) || !("PushManager" in window)) {
     // iOS는 일반 Safari 탭에서 PushManager가 없음 — '홈 화면에 추가'(PWA) 후에만 가능.
     const isIOS = /iP(hone|ad|od)/.test(navigator.userAgent);
@@ -557,6 +591,7 @@ function initSub(prefix, data, chipRowId, chipKey, fixed, cardFn, colors) {
 
 // ===================== 부트 =====================
 (async function () {
+  showInAppNotice();   // 카톡 등 인앱 브라우저 진입 시 상단 안내 배너
   initTabs();
   const tt = $("theme-toggle");
   if (tt) tt.addEventListener("click", () => {

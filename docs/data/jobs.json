@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-06-22T00:00:35",
+  "generated_at": "2026-06-22T00:01:38",
   "soon_days": 7,
   "counts": {
-    "total": 65,
-    "open": 39,
+    "total": 66,
+    "open": 40,
     "closed": 26,
-    "new": 0,
+    "new": 1,
     "soon": 15,
     "by_firm": {
       "삼일": 10,
       "삼정": 4,
       "안진": 6,
       "한영": 22,
-      "로컬": 19,
+      "로컬": 20,
       "기타": 4
     },
     "by_qualification": {
       "수습CPA": 16,
-      "자격무관": 49
+      "자격무관": 50
     },
     "by_emp_kind": {
       "인턴": 29,
-      "정규직": 32,
+      "정규직": 33,
       "계약직": 3,
       "파트타임": 1
     }
@@ -705,10 +705,10 @@
       "company": "서율회계법인 여의도지점",
       "deadline": "2026-07-31",
       "posted_date": "2026-06-21",
-      "location": "서울 영등포구",
-      "emp_type": "정규직",
+      "location": "",
+      "emp_type": "",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1782050529930",
-      "dday": 40,
+      "dday": 39,
       "first_seen": "2026-06-21T23:31:28"
     },
     {

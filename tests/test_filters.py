@@ -71,3 +71,10 @@ def test_negated_exception_not_rescued(cfg):
     assert passes(make_posting(title="세무기장 경력 3년이상 모집(신입불가)"), cfg) is False
     # 단, 진짜 신입 병기는 그대로 유지
     assert passes(make_posting(title="세무기장 경력/신입 모집"), cfg) is True
+
+
+def test_year_experience_hard_excluded(cfg):
+    # 'N년차'·'경력사원' = 경력 전용 → 제외. 단 제목에 신입 병기면 유지.
+    assert passes(make_posting(title="회계 경력 3년차 채용"), cfg) is False
+    assert passes(make_posting(title="경력사원 모집"), cfg) is False
+    assert passes(make_posting(title="회계 신입 3년차까지 환영"), cfg) is True

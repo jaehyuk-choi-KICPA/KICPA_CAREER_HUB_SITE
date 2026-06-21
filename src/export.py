@@ -75,7 +75,9 @@ def build_jobs(cfg: dict, state: State) -> dict:
     present_uids = {p.uid for p in kept}
     state.update(kept)                      # 본 공고의 last_seen 갱신 + 신규 기록
     grace_days = cfg["dashboard"].get("jobs_grace_days", 2)
-    carried = state.carry_forward(present_uids, grace_days)
+    # grace 복원분도 현재 필터를 통과해야 함 — 경력공고 등 '필터로 빠진' 건이 state에 남아
+    # grace로 되살아나는 것 방지(목록서 일시 누락=복원 대상 / 필터 제외=복원 금지).
+    carried = filter_postings(state.carry_forward(present_uids, grace_days), cfg)
     state.prune_expired()                   # 마감 지난 좀비 제거
     if carried:
         print(f"  [복원] 목록 일시 누락 {len(carried)}건 유지(grace {grace_days}일)")

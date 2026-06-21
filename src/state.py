@@ -41,6 +41,14 @@ class State:
             if e.get("native_id") and e.get("deadline")
         }
 
+    def bodies_by_native_id(self) -> dict[str, str]:
+        """KICPA 상세 본문 캐시용: native_id -> body_excerpt(있는 것만). 한 번 긁은 본문 재사용."""
+        return {
+            e["native_id"]: e["body_excerpt"]
+            for e in self.entries.values()
+            if e.get("native_id") and e.get("body_excerpt")
+        }
+
     def update(self, postings: list[Posting]) -> list[Posting]:
         """스크랩 결과를 반영하고 **이번에 새로 발견된** 공고 리스트를 반환.
 
@@ -62,8 +70,8 @@ class State:
             else:
                 # 가변 필드 갱신(마감일·근무지·고용형태가 뒤늦게 채워지는 경우 등) + 목격 시각 갱신
                 for k in ("title", "company", "deadline", "posted_date", "category",
-                          "location", "emp_type", "source_label", "url"):
-                    if getattr(p, k):
+                          "location", "emp_type", "source_label", "url", "body_excerpt"):
+                    if getattr(p, k):   # 빈 값은 덮어쓰지 않음(캐시된 body를 carried 빈값이 지우지 않게)
                         e[k] = getattr(p, k)
                 e["last_seen"] = today
         return new

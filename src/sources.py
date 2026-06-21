@@ -18,9 +18,10 @@ from src.adapters.samjong import SamjongAdapter
 def build_adapters(cfg: dict, state) -> list[Adapter]:
     max_pages = cfg["runtime"]["max_pages"]
     deadline_cache = state.deadlines_by_native_id()
+    body_cache = state.bodies_by_native_id()
 
     adapters: list[Adapter] = []
-    adapters += build_kicpa_adapters(max_pages, deadline_cache)  # 수습CPA + CPA
+    adapters += build_kicpa_adapters(max_pages, deadline_cache, body_cache)  # 수습CPA + CPA
     adapters.append(SamjongAdapter())   # 삼정 KPMG
     adapters.append(AnjinAdapter())     # 딜로이트 안진
     adapters.append(HanyoungAdapter())  # EY 한영

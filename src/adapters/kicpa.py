@@ -34,6 +34,7 @@ class KicpaAdapter(Adapter):
         label: str,
         max_pages: int = 2,
         deadline_cache: dict[str, str] | None = None,
+        body_cache: dict[str, str] | None = None,
     ):
         self.board = board
         self.source = source
@@ -41,6 +42,8 @@ class KicpaAdapter(Adapter):
         self.max_pages = max_pages
         # native_id -> deadline(yyyy-mm-dd). 이미 아는 공고는 상세를 다시 안 받는다.
         self.deadline_cache = deadline_cache or {}
+        # native_id -> body_excerpt(모집대상 본문). 한 번 긁으면 캐시 재사용(매 run 재요청 방지).
+        self.body_cache = body_cache or {}
 
     def _list_url(self) -> str:
         return f"{_BASE}/{self.board}/list.face"
@@ -61,13 +64,16 @@ class KicpaAdapter(Adapter):
             if not new:  # 더 이상 새 행이 없으면 페이지 순회 중단
                 break
 
-        # 마감일 보강: 캐시 적용 후, 미보유분만 상세 요청(같은 도메인이라 동시성 ≤4로 제한)
+        # 마감일·본문 보강: 캐시 적용 후, 미보유분만 상세 요청(같은 도메인이라 동시성 ≤4로 제한)
         need: list[Posting] = []
         for p in out:
-            cached = self.deadline_cache.get(p.native_id)
-            if cached:
-                p.deadline = cached
-            else:
+            cd = self.deadline_cache.get(p.native_id)
+            cb = self.body_cache.get(p.native_id)
+            if cd:
+                p.deadline = cd
+            if cb:
+                p.body_excerpt = cb
+            if not cd or not cb:   # 마감일·본문 중 하나라도 없으면 상세 1회 보강(본문은 캐시되면 재요청 안 함)
                 need.append(p)
         if need:
             from concurrent.futures import ThreadPoolExecutor
@@ -110,7 +116,12 @@ class KicpaAdapter(Adapter):
         return postings
 
     def _enrich_deadline(self, p: Posting) -> None:
-        """상세페이지에서 마감일·근무지역·고용형태를 채운다. 실패해도 조용히 통과."""
+        """상세페이지에서 마감일·근무지역·고용형태 + 모집대상/자격요건 본문(body_excerpt)을 채운다.
+
+        KICPA 목록/th표엔 모집대상·자격요건이 없고 상세 본문(`div.txt_infor`)에만 있다.
+        같은 페이지를 이미 받으므로 추가 요청 없이 본문을 긁어 body_excerpt에 담으면,
+        필터(`filters.passes`)·분류(`classify_qualification`)가 제목 너머 **모집대상까지** 보게 된다.
+        실패해도 조용히 통과."""
         try:
             r = get(self._detail_url(p.native_id), encoding="utf-8")
             soup = BeautifulSoup(r.text, "html.parser")
@@ -128,16 +139,22 @@ class KicpaAdapter(Adapter):
                     p.location = " ".join(val.split())[:30]
                 elif label == "고용형태":
                     p.emp_type = " ".join(val.split())[:20]
+            # 모집대상·자격요건·담당업무 본문 → body_excerpt (제목 외 모집대상까지 필터·분류가 보게)
+            body_el = soup.select_one(".txt_infor") or soup.select_one("td.txt_left.last")
+            if body_el:
+                p.body_excerpt = " ".join(body_el.get_text(" ", strip=True).split())[:1000]
         except Exception:  # noqa: BLE001 — 보강 실패는 비치명적
             pass
 
 
 def build_kicpa_adapters(
-    max_pages: int = 2, deadline_cache: dict[str, str] | None = None
+    max_pages: int = 2, deadline_cache: dict[str, str] | None = None,
+    body_cache: dict[str, str] | None = None,
 ) -> list[KicpaAdapter]:
-    """KICPA 두 보드 어댑터를 생성. deadline_cache는 native_id->마감일 캐시."""
+    """KICPA 두 보드 어댑터를 생성. deadline_cache/body_cache는 native_id->값 캐시."""
     cache = deadline_cache or {}
+    bcache = body_cache or {}
     return [
-        KicpaAdapter("jobOffrSrchNewGnrl", "kicpa_susup", "구인(수습CPA)", max_pages, cache),
-        KicpaAdapter("jobOffrSrchGnrl", "kicpa_cpa", "구인(CPA)", max_pages, cache),
+        KicpaAdapter("jobOffrSrchNewGnrl", "kicpa_susup", "구인(수습CPA)", max_pages, cache, bcache),
+        KicpaAdapter("jobOffrSrchGnrl", "kicpa_cpa", "구인(CPA)", max_pages, cache, bcache),
     ]

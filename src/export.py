@@ -85,11 +85,19 @@ def build_jobs(cfg: dict, state: State) -> dict:
 
     # NEW = '올라온 지 24시간 이내'. 게시일은 날짜뿐이라 24h 정밀도가 안 나오므로 발견시각(first_seen) 기준.
     new_ts_cut = (_dt.datetime.now() - _dt.timedelta(hours=24)).isoformat(timespec="seconds")
+    new_posted_max = cfg["dashboard"].get("new_posted_max_age_days", 2)
     items = []
     for p in kept:
         open_ = is_open(p.deadline)
         firm = classify_firm(p, cfg)
         first_seen = (state.entries.get(p.uid) or {}).get("first_seen", "")
+        # '방금 올라온'=발견 24h 이내 AND 게시일이 오래되지 않음(게시일 모르면 게이트 미적용).
+        # 19일 게시 공고를 22일에 처음 수집해도 NEW로 안 뜨게(발견시각만 보던 오표시 차단).
+        try:
+            _posted_age = (_dt.date.today() - _dt.date.fromisoformat(p.posted_date)).days
+        except Exception:  # noqa: BLE001 — 게시일 없음/형식 이상 → 게이트 미적용(발견시각만으로 판정)
+            _posted_age = None
+        posted_ok = _posted_age is None or _posted_age <= new_posted_max
         items.append(
             {
                 "source": p.source,
@@ -99,7 +107,7 @@ def build_jobs(cfg: dict, state: State) -> dict:
                 "qualification": classify_qualification(p, cfg),  # 수습CPA / 자격무관
                 "emp_kind": classify_emp_kind(p, cfg),            # 인턴 / 계약직 / 파트타임 / 정규직
                 "status": "open" if open_ else "closed",
-                "is_new": bool(first_seen >= new_ts_cut),        # 발견시각이 24h 이내(빈 문자열은 자동 False)
+                "is_new": bool(first_seen >= new_ts_cut and posted_ok),  # 발견 24h 이내 + 게시일 최근(오래된 공고 뒤늦은 수집 제외)
                 "title": p.title,
                 "company": p.company,
                 "deadline": p.deadline,

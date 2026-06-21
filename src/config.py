@@ -24,6 +24,9 @@ _DEFAULTS: dict = {
         # 강한 제외(제목에 있으면 본문 예외 무시) — 제목이 명백히 경력 대상인 공고
         "hard_exclude_keywords": ["경력직", "시니어", "senior", "수석", "팀장", "년 이상", "년이상"],
         "include_keywords": [],
+        # 경력 필터 면제 소스 — 보드 자체가 타깃을 확정해 올라온 건 그대로 수용(제목이 '경력직'이어도
+        # 모집대상에 신입/경력 병기인 경우 등). 수습CPA 보드(kicpa_susup)가 대표 케이스.
+        "bypass_sources": ["kicpa_susup"],
     },
     "formats": {
         "divider": "━━━━━━━━━━━",

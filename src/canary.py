@@ -256,8 +256,11 @@ def _check_filter_leakage(cfg: dict) -> SourceCheck | None:
     f = cfg.get("filters", {})
     hard = [k.lower() for k in f.get("hard_exclude_keywords", [])]
     exc = [k.lower() for k in f.get("exclude_exceptions", [])]
+    bypass = set(f.get("bypass_sources", []))   # 면제 소스(수습CPA 보드 등)는 경력 제목이어도 정상 — 누출 아님
     leaked = []
     for it in items:
+        if it.get("source") in bypass:
+            continue
         title = (it.get("title") or "").lower()
         if any(h in title for h in hard) and not any(e in title for e in exc):
             leaked.append(it.get("title", ""))

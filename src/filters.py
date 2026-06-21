@@ -17,6 +17,12 @@ def _haystack(p: Posting) -> str:
 
 def passes(p: Posting, cfg: dict) -> bool:
     f = cfg["filters"]
+
+    # 면제 소스: 보드 자체가 타깃 확정(수습CPA 보드 등) → 경력 필터 없이 그대로 수용.
+    # 제목이 '경력직'이라도 모집대상에 신입/경력이 병기된 보드 공고를 떨구지 않게 한다.
+    if p.source in f.get("bypass_sources", []):
+        return True
+
     text = _haystack(p)
 
     excludes = [k.lower() for k in f.get("exclude_keywords", [])]

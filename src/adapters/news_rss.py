@@ -7,6 +7,7 @@
 from __future__ import annotations
 
 import datetime as _dt
+import time
 import urllib.parse
 import xml.etree.ElementTree as ET
 
@@ -53,10 +54,19 @@ class GoogleNewsAdapter(Adapter):
     def fetch(self) -> list[NewsItem]:
         q = urllib.parse.quote(self.query)
         url = f"{_BASE}?q={q}&hl=ko&gl=KR&ceid=KR:ko"
-        r = get(url, headers={"User-Agent": "Mozilla/5.0"}, encoding="utf-8")
-        root = ET.fromstring(r.text)
+        # 구글뉴스 RSS는 가끔 200인데 item이 0개인 '빈 피드'를 준다(일시 throttle). 도메인 쿼리는
+        # 사실상 항상 결과가 있으므로 0건이면 짧게 쉬고 재시도 — 한 회차 빈응답이 카테고리를 통째로
+        # 0건으로 비우는 사고를 막는다(실측: 세무 쿼리가 한 회차 빈응답→세무 0건 발생, 재시도 시 100건 복구).
+        items: list = []
+        for attempt in range(3):
+            r = get(url, headers={"User-Agent": "Mozilla/5.0"}, encoding="utf-8")
+            items = list(ET.fromstring(r.text).iter("item"))
+            if items:
+                break
+            if attempt < 2:
+                time.sleep(1.5)
         out: list[NewsItem] = []
-        for item in root.iter("item"):
+        for item in items:
             title = (item.findtext("title") or "").strip()
             link = (item.findtext("link") or "").strip()
             if not title or not link:

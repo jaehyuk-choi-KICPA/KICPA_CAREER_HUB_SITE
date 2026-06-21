@@ -1,0 +1,28 @@
+name: push-test   # 수동 시험 알림 — 구독자에게 '시험 푸시' 1건 발송. state 미변경(멱등). VAPID 개인키는 Secret에만.
+
+on:
+  workflow_dispatch:
+    inputs:
+      body:
+        description: "알림 본문(비우면 기본 문구)"
+        required: false
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}   # 웹 푸시 서명 개인키(라이브 공개키와 쌍)
+      SUBS_READ_TOKEN: ${{ secrets.SUBS_READ_TOKEN }}       # 구독 저장소(Worker) /list Bearer
+      PUSH_BODY: ${{ inputs.body }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11", cache: pip }
+      - run: pip install -r requirements.txt
+      - name: Send test push (구독자 전원)
+        run: python scripts/push_test.py

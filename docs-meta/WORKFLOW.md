@@ -205,6 +205,7 @@ flowchart LR
 - **콜드스타트 억제**: 활성화 직전 `python -m src.notifier --seed`로 기존 공고를 baseline(notified=True) 처리 → 가입 직후 폭주 없음.
 - **보안**: VAPID 개인키(`VAPID_PRIVATE_KEY`)·구독 read 토큰(`SUBS_READ_TOKEN`)은 **GitHub Secret에서만**. Worker `READ_TOKEN`은 `wrangler secret`. 코드/커밋엔 **공개키만**.
 - **구성요소**: `docs/sw.js`(수신) · `docs/app.js subscribePush()`(구독) · `worker/subscriptions.js`(KV 저장) · `src/notifier.py`(발송) · `config.notifications`(enabled·worker_url·vapid_public). 견고성: 발송 실패가 run을 막지 않음(`|| true`), 미발송분은 notified=False로 남아 다음 run 재시도.
+- **시험 발송(수동)**: `push-test.yml`(workflow_dispatch) → `scripts/push_test.py`가 구독자 전원에게 '시험 알림' 1건 발송. **state 미변경(멱등)**. VAPID 개인키가 GitHub Secret에만 있어 로컬 발송이 불가하므로, 푸시 동작 점검은 Actions에서 이 워크플로를 돌려 확인한다(입력 `body`로 본문 커스텀 가능).
 
 ---
 
@@ -255,6 +256,7 @@ flowchart LR
 │       └── notify_status.json   ← 푸시 발송 관측성
 ├── .github/workflows/
 │   ├── run-all.yml              ← 주 수집 (외부핑거 → repository_dispatch) + 푸시 발송(notifier)
+│   ├── push-test.yml            ← 수동 시험 푸시 (scripts/push_test.py · state 미변경)
 │   ├── monitor.yml              ← 통합 점검 (5h cron · canary+sitecheck 셀프힐링)
 │   ├── freshness.yml            ← 신선도 감시 (1h cron · monitor 안정화 후 폐기 예정)
 │   ├── sitecheck.yml            ← 종단 점검 (3h cron · monitor 안정화 후 폐기 예정)

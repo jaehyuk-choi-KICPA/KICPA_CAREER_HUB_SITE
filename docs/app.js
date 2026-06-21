@@ -86,7 +86,14 @@ function showInAppNotice() {
     style:"flex:0 0 auto;border:0;background:transparent;color:inherit;font-size:15px;cursor:pointer;line-height:1;padding:0 2px;" });
   const bar = el("div", { role:"note",
     style:"background:#fff7ed;color:#7c2d12;border-bottom:1px solid #fdba74;padding:9px 14px;font-size:13px;line-height:1.5;display:flex;gap:10px;align-items:flex-start;justify-content:center;" }, [
-    el("span", { text:`📱 ${name} 인앱 브라우저예요. 새 공고 ‘알림(푸시)’은 여기서 작동하지 않아요 — 우측 상단 메뉴(⋮ 또는 공유)에서 ‘다른 브라우저로 열기’로 크롬·사파리에서 열어주세요.` }),
+    el("div", { style:"flex:1 1 auto;" }, [
+      el("div", { text:`📱 ${name} 인앱 브라우저는 새 공고 ‘알림(푸시)’을 지원하지 않아요.` }),
+      el("div", { style:"margin-top:3px;" }, [
+        el("span", { text:"우측 상단 메뉴(⋮ 또는 공유) → ‘다른 브라우저로 열기’ → " }),
+        el("strong", { text:"삼성인터넷·사파리·크롬·엣지" }),
+        el("span", { text:"에서 열어주세요." }),
+      ]),
+    ]),
     close,
   ]);
   close.addEventListener("click", () => bar.remove());
@@ -96,7 +103,7 @@ function showInAppNotice() {
 async function subscribePush(scope, msgEl) {
   const say = (t) => { if (msgEl) msgEl.textContent = t; };
   if (isInAppBrowser()) {
-    say(`📱 ${inAppBrowserName()} 인앱 브라우저에서는 알림을 켤 수 없어요. 우측 상단 메뉴(⋮ 또는 공유)에서 ‘다른 브라우저로 열기’를 눌러 크롬·사파리에서 연 뒤 다시 켜주세요.`);
+    if (msgEl) msgEl.innerHTML = `📱 ${inAppBrowserName()} 인앱 브라우저에서는 알림을 켤 수 없어요. 우측 상단 메뉴(⋮ 또는 공유) → ‘다른 브라우저로 열기’ → <strong>삼성인터넷·사파리·크롬·엣지</strong>에서 연 뒤 다시 켜주세요.`;
     return;
   }
   if (!("serviceWorker" in navigator) || !("PushManager" in window)) {

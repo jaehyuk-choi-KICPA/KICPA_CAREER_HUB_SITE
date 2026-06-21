@@ -81,8 +81,18 @@ async function subscribePush(scope, msgEl) {
     const perm = await Notification.requestPermission();
     if (perm !== "granted") { say("알림 권한이 거부되었어요. 브라우저 설정에서 허용해 주세요."); return; }
     const reg = await navigator.serviceWorker.register("/sw.js");
-    const sub = (await reg.pushManager.getSubscription()) ||
-      (await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: urlB64ToUint8(VAPID_PUBLIC) }));
+    // 기존 구독이 현재 VAPID 공개키와 다르면(키 재발급 등) 폐기 후 재구독 — 안 그러면 stale 키에 묶여 수신 불가.
+    const wantKey = urlB64ToUint8(VAPID_PUBLIC);
+    let sub = await reg.pushManager.getSubscription();
+    if (sub) {
+      const have = sub.options && sub.options.applicationServerKey
+        ? new Uint8Array(sub.options.applicationServerKey) : null;
+      const sameKey = have && have.length === wantKey.length && have.every((b, i) => b === wantKey[i]);
+      if (!sameKey) { try { await sub.unsubscribe(); } catch (_) { /* 브라우저측 해제 실패는 무시 */ } sub = null; }
+    }
+    if (!sub) {
+      sub = await reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: wantKey });
+    }
     const body = Object.assign({}, sub.toJSON(), { scope });
     const r = await fetch(WORKER_URL.replace(/\/$/, "") + "/subscribe", {
       method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body),

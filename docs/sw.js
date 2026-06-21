@@ -28,7 +28,11 @@ self.addEventListener("push", (event) => {
 
 self.addEventListener("notificationclick", (event) => {
   event.notification.close();
-  const target = (event.notification.data && event.notification.data.url) || "https://hbmons.com/";
+  const raw = (event.notification.data && event.notification.data.url) || "https://hbmons.com/";
+  // 공고로 바로 가되 '뒤로 가기' 시 회법몬 홈이 뜨도록 홈(?goto)을 경유. 홈/내부 URL이면 그대로.
+  const target = (/^https?:\/\//i.test(raw) && raw.indexOf("hbmons.com") === -1)
+    ? "https://hbmons.com/?goto=" + encodeURIComponent(raw)
+    : raw;
   event.waitUntil(
     (async () => {
       const all = await self.clients.matchAll({ type: "window", includeUncontrolled: true });

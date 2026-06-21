@@ -11,7 +11,10 @@ name = "hbmons-push"
 main = "subscriptions.js"
 compatibility_date = "2024-11-01"
 
-# 구독 저장 KV (wrangler kv namespace create SUBS 후 id 채우기)
+# 구독 저장 KV — 이 id(8bcb…)가 배포 워커의 실제 SUBS 바인딩 = 구독 데이터가 실제로 들어있는 곳(검증됨).
+# ⚠️ wrangler 4.x는 `kv key list/get`을 기본 LOCAL(미니플레어 빈 상태)로 읽어 비어보임 → 라이브는 반드시 `--remote`:
+#   wrangler kv key list --namespace-id 8bcb4fecba604ab5bc0c8b203982c8e7 --remote   # sub: 키 개수 = 구독자 수
+#   (54e2=HBM-visits는 방문자 카운터용 별개 네임스페이스. 가장 확실한 카운트는 워커 GET /list 의 count.)
 kv_namespaces = [
   { binding = "SUBS", id = "8bcb4fecba604ab5bc0c8b203982c8e7" }
 ]

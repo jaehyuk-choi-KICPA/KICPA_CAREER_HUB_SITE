@@ -15,6 +15,23 @@ def _haystack(p: Posting) -> str:
     return " ".join([p.title, p.company, p.body_excerpt, p.category]).lower()
 
 
+def _exception_present(s: str, exceptions: list[str], negators: list[str]) -> bool:
+    """예외어(신입/수습/경력무관 등)가 '부정 맥락'이 아닌 채로 등장하면 True.
+    '신입불가'·'신입 제외'처럼 예외어 바로 뒤에 부정어가 붙으면 예외로 치지 않는다
+    — 경력 전용 공고가 '신입' 글자만 보고 오구제되는 부분일치 버그를 막는다."""
+    for exc in exceptions:
+        start = 0
+        while True:
+            i = s.find(exc, start)
+            if i < 0:
+                break
+            tail = s[i + len(exc):].lstrip(" )/·,.-")
+            if not any(neg and tail.startswith(neg) for neg in negators):
+                return True
+            start = i + len(exc)
+    return False
+
+
 def passes(p: Posting, cfg: dict) -> bool:
     f = cfg["filters"]
 
@@ -27,17 +44,19 @@ def passes(p: Posting, cfg: dict) -> bool:
 
     excludes = [k.lower() for k in f.get("exclude_keywords", [])]
     exceptions = [k.lower() for k in f.get("exclude_exceptions", [])]
+    negators = [k.lower() for k in f.get("exception_negators", [])]
     includes = [k.lower() for k in f.get("include_keywords", [])]
     hard = [k.lower() for k in f.get("hard_exclude_keywords", [])]
 
     # 강한 제외: 제목이 명백히 경력 대상이면 제외. 단 **제목에 신입/수습/경력무관/무관/인턴이 병기**되면
     # 신입+경력 동시모집이므로 유지(예외 단어를 '제목 한정'으로 검사 — 본문만의 신입은 순수 경력 제목을 못 구제).
+    # '신입불가'처럼 부정 맥락의 예외어는 _exception_present가 걸러낸다.
     title = p.title.lower()
-    if any(h in title for h in hard) and not any(exc in title for exc in exceptions):
+    if any(h in title for h in hard) and not _exception_present(title, exceptions, negators):
         return False
 
     # 예외(경력무관 등)가 있으면 제외 규칙을 건너뛴다
-    if not any(exc in text for exc in exceptions):
+    if not _exception_present(text, exceptions, negators):
         if any(bad in text for bad in excludes):
             return False
 

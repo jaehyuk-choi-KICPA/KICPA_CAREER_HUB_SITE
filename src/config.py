@@ -21,6 +21,9 @@ _DEFAULTS: dict = {
     "filters": {
         "exclude_keywords": ["경력", "시니어", "senior", "매니저", "manager", "파트너", "partner"],
         "exclude_exceptions": ["경력무관", "무관", "신입", "인턴", "수습", "trainee", "entry"],
+        # 예외어 바로 뒤에 이 부정어가 붙으면 예외로 안 침 — '신입불가'·'신입 제외'의 '신입'이
+        # 경력 전용 공고를 오구제하는 부분일치 버그 방지(서율회계법인 '경력 3년이상(신입불가)' 실측).
+        "exception_negators": ["불가", "제외", "불가능", "안됨", "안 됨", "아님", "없음", "x"],
         # 강한 제외(제목에 있으면 본문 예외 무시) — 제목이 명백히 경력 대상인 공고
         "hard_exclude_keywords": ["경력직", "시니어", "senior", "수석", "팀장", "년 이상", "년이상"],
         "include_keywords": [],

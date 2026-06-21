@@ -63,3 +63,11 @@ def test_bypass_only_applies_to_listed_source(cfg):
     # 면제는 등록된 소스에만 — 다른 보드(kicpa_cpa)의 경력 전용 제목은 여전히 제외
     p = _make_posting(title="회계 경력직 5년 이상 채용", source="kicpa_cpa")
     assert passes(p, cfg) is False
+
+
+def test_negated_exception_not_rescued(cfg):
+    # '신입불가'의 '신입'이 경력 전용 공고를 오구제하면 안 됨(부분일치 버그 회귀 방지).
+    # 실측: kicpa_cpa '세무기장 경력 3년이상 모집(신입불가)'가 통과되던 문제.
+    assert passes(make_posting(title="세무기장 경력 3년이상 모집(신입불가)"), cfg) is False
+    # 단, 진짜 신입 병기는 그대로 유지
+    assert passes(make_posting(title="세무기장 경력/신입 모집"), cfg) is True

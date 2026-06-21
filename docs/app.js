@@ -464,9 +464,20 @@ function newsCard(it) {
   return makeCardClickable(el("article", { class:"card" }, kids), it.url);
 }
 
-// 인사이트: 법인별 4박스(삼일·삼정·안진·한영). 박스마다 로드 시 랜덤 추천 1편 + 펼치기(최신순) 전체 목록.
+// 인사이트: 법인별 4박스(삼일·삼정·안진·한영). 박스마다 하루 단위 고정 추천 1편 + 펼치기(최신순) 전체 목록.
 const INSIGHT_FIRM = { "삼일PwC":"삼일", "삼정KPMG":"삼정", "Deloitte안진":"안진", "EY한영":"한영" };
 const INSIGHT_ORDER = ["삼일PwC", "삼정KPMG", "Deloitte안진", "EY한영"];
+
+// 하루 단위 고정 추천 — 같은 날엔 같은 글, 자정(로컬) 지나면 갱신. seed에 법인 label을 섞어 박스마다 다르게.
+function _dailyKey() {
+  const d = new Date();
+  return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+}
+function _dailyIndex(seed, n) {
+  let h = 2166136261;                                   // FNV-1a 류 결정론 해시
+  for (let i = 0; i < seed.length; i++) { h ^= seed.charCodeAt(i); h = Math.imul(h, 16777619); }
+  return Math.abs(h) % n;
+}
 
 function firmBox(label, list) {
   const color = FIRM_COLOR[INSIGHT_FIRM[label]] || "#667085";
@@ -480,7 +491,7 @@ function firmBox(label, list) {
     box.appendChild(el("div", { class:"firm-empty", text:"불러올 간행물이 아직 없어요." }));
     return box;
   }
-  const pick = list[Math.floor(Math.random() * list.length)];   // 로드(새로고침)마다 랜덤
+  const pick = list[_dailyIndex(_dailyKey() + "|" + label, list.length)];   // 하루 단위 고정(자정 지나면 갱신·법인별 상이)
   box.appendChild(el("div", { class:"firm-pick" },
     [el("a", { href:pick.url, target:"_blank", rel:"noopener", text:pick.title })]));
   const lis = list.map((it) => el("li", {},

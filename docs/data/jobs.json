@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-06-21T23:01:37",
+  "generated_at": "2026-06-21T23:31:28",
   "soon_days": 7,
   "counts": {
-    "total": 68,
-    "open": 41,
+    "total": 69,
+    "open": 42,
     "closed": 27,
-    "new": 0,
+    "new": 1,
     "soon": 16,
     "by_firm": {
       "삼일": 10,
       "삼정": 4,
       "안진": 6,
       "한영": 22,
-      "로컬": 21,
+      "로컬": 22,
       "기타": 5
     },
     "by_qualification": {
       "수습CPA": 18,
-      "자격무관": 50
+      "자격무관": 51
     },
     "by_emp_kind": {
       "인턴": 29,
-      "정규직": 34,
+      "정규직": 35,
       "계약직": 4,
       "파트타임": 1
     }
@@ -729,6 +729,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1779434757812",
       "dday": 40,
       "first_seen": "2026-06-17T20:17:10"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "택스",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[서율회계법인 여의도지점] 세무기장 경력 3년이상 모집(신입불가)- 면접비 지원",
+      "company": "서율회계법인 여의도지점",
+      "deadline": "2026-07-31",
+      "posted_date": "2026-06-21",
+      "location": "서울 영등포구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1782050529930",
+      "dday": 40,
+      "first_seen": "2026-06-21T23:31:28"
     },
     {
       "source": "anjin",

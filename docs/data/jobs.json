@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-06-22T13:31:28",
+  "generated_at": "2026-06-22T14:01:33",
   "soon_days": 7,
   "counts": {
-    "total": 67,
-    "open": 41,
+    "total": 68,
+    "open": 42,
     "closed": 26,
-    "new": 1,
-    "soon": 15,
+    "new": 2,
+    "soon": 16,
     "by_firm": {
       "삼일": 10,
       "삼정": 4,
       "안진": 6,
       "한영": 22,
-      "로컬": 21,
+      "로컬": 22,
       "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 21,
+      "수습CPA": 22,
       "자격무관": 46
     },
     "by_emp_kind": {
       "인턴": 30,
-      "정규직": 30,
+      "정규직": 31,
       "계약직": 4,
       "파트타임": 3
     }
@@ -273,6 +273,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/119257",
       "dday": 4,
       "first_seen": "2026-06-18T15:01:24"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "운강공인회계사감사반(개인회계사사무소) 수습회계사 모집",
+      "company": "공인회계사송관수사무소",
+      "deadline": "2026-06-26",
+      "posted_date": "2026-06-22",
+      "location": "서울 송파구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782104244810",
+      "dday": 4,
+      "first_seen": "2026-06-22T14:01:33"
     },
     {
       "source": "samjong",

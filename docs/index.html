@@ -3,23 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- 알림(푸시) 클릭 → 회법몬 홈을 거쳐 공고로 보내, 공고에서 '뒤로 가기' 하면 회법몬 홈이 뜨게 한다(?goto). -->
-  <script>
-    (function () {
-      try {
-        var m = location.search.match(/[?&]goto=([^&]+)/);
-        if (!m) return;
-        var u = decodeURIComponent(m[1]);
-        if (!/^https?:\/\//i.test(u)) return;       // http(s)만 허용(스킴 악용 차단)
-        // 결정론적으로 히스토리 [회법몬 홈, 공고]를 만든다(브라우저 push/replace heuristic 회피):
-        //   replaceState로 현재 항목을 깨끗한 홈(goto 제거)으로 → pushState로 홈을 한 칸 확정 추가
-        //   → location.replace로 그 칸을 공고로 교체. 결과: 공고에서 뒤로 가면 회법몬 홈.
-        history.replaceState(null, "", "/");
-        history.pushState(null, "", "/");
-        location.replace(u);
-      } catch (e) { /* 무시: 실패해도 일반 홈 로드 */ }
-    })();
-  </script>
   <!-- Google Analytics 4 (소유자용 방문 분석) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-R1JVPZ5FR6"></script>
   <script>

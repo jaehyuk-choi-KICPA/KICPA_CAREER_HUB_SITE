@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-06-22T18:01:36",
+  "generated_at": "2026-06-22T18:29:04",
   "soon_days": 7,
   "counts": {
-    "total": 68,
-    "open": 42,
-    "closed": 26,
-    "new": 5,
+    "total": 64,
+    "open": 40,
+    "closed": 24,
+    "new": 4,
     "soon": 16,
     "by_firm": {
       "삼일": 10,
       "삼정": 4,
       "안진": 8,
       "한영": 22,
-      "로컬": 20,
+      "로컬": 17,
       "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 23,
+      "수습CPA": 19,
       "자격무관": 45
     },
     "by_emp_kind": {
       "인턴": 29,
-      "정규직": 33,
+      "정규직": 29,
       "계약직": 4,
       "파트타임": 2
     }
@@ -385,25 +385,6 @@
       "location": "",
       "emp_type": "",
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5119",
-      "dday": 8,
-      "first_seen": "2026-06-17T20:17:10"
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "[우리회계법인] 수습공인회계사 채용 공고",
-      "company": "우리회계법인",
-      "deadline": "2026-06-30",
-      "posted_date": "2026-06-05",
-      "location": "서울 강남구",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1780625545782",
       "dday": 8,
       "first_seen": "2026-06-17T20:17:10"
     },
@@ -1032,44 +1013,6 @@
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/118140",
       "dday": -11,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "[위드회계법인] 수습공인회계사 채용 공고",
-      "company": "(유)위드회계법인",
-      "deadline": "2026-06-12",
-      "posted_date": "2026-05-26",
-      "location": "서울 강남구",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1778657845525",
-      "dday": -10,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "[삼덕회계법인] 수습공인회계사 채용 공고",
-      "company": "삼덕회계법인",
-      "deadline": "2026-06-12",
-      "posted_date": "2026-05-27",
-      "location": "서울 종로구",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1779845032504",
-      "dday": -10,
       "first_seen": ""
     },
     {

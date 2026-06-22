@@ -3,7 +3,27 @@ from __future__ import annotations
 
 import datetime as _dt
 
-from src.export import _dedup_near, _recent_cutoff, _same_issue, _title_sig
+from src.export import _dedup_cross_source, _dedup_near, _recent_cutoff, _same_issue, _title_sig
+
+from tests.conftest import make_posting
+
+
+class TestDedupCrossSource:
+    def test_kicpa_repost_vs_firm_ats(self, cfg):
+        # 한공회 재게시('[회사명] 제목') + 빅4 ATS(같은 제목) = 1건, 빅4 ATS(직접 지원) 보존
+        kicpa = make_posting(source="kicpa_susup", company="딜로이트 안진회계법인",
+                             title="[딜로이트 안진회계법인] 2026 신입회계사 정기채용")
+        ats = make_posting(source="anjin", company="딜로이트 안진",
+                           title="2026 신입회계사 정기채용")
+        for order in ([kicpa, ats], [ats, kicpa]):
+            out = _dedup_cross_source(order, cfg)
+            assert len(out) == 1
+            assert out[0].source == "anjin"
+
+    def test_distinct_titles_kept(self, cfg):
+        a = make_posting(source="anjin", title="2026 신입회계사 정기채용")
+        b = make_posting(source="anjin", title="2026 경력 컨설턴트 채용")
+        assert len(_dedup_cross_source([a, b], cfg)) == 2
 
 
 class TestTitleSig:

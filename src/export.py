@@ -28,6 +28,34 @@ _DATA_DIR = Path("docs/data")
 # 정렬·요약용 법인 노출 순서(삼일 우선 — 타깃)
 _FIRM_ORDER = ["삼일", "삼정", "안진", "한영", "로컬", "기타"]
 
+_FIRM_ATS_SOURCES = {"samil", "samjong", "anjin", "hanyoung"}   # 빅4 자체 ATS(직접 지원 링크)
+
+
+def _dedup_cross_source(postings: list, cfg: dict) -> list:
+    """한공회 재게시 + 빅4 자체 ATS에 같은 공고가 중복되는 것 제거(예: 한공회 '[딜로이트 안진회계법인]
+    2026 신입회계사 정기채용' = 안진 ATS '2026 신입회계사 정기채용'). (법인, 정규화제목) 동일하면 1건만.
+    한공회 재게시 제목 앞 '[회사명]' 접두는 떼고 비교하고, **빅4 자체 ATS(직접 지원)**를 우선 보존."""
+    def _norm(t: str) -> str:
+        t = re.sub(r"^\s*\[[^\]]*\]\s*", "", t or "")       # 앞 [회사명] 접두 제거
+        return re.sub(r"[\s\[\]()·,./-]", "", t).lower()      # 공백·구두점 제거 + 소문자
+
+    out: list = []
+    index: dict = {}        # (firm, norm_title) -> out 인덱스
+    for p in postings:
+        key = (classify_firm(p, cfg), _norm(p.title))
+        if not key[1]:                       # 제목 비면 dedup 불가 → 그대로
+            out.append(p)
+            continue
+        if key in index:
+            ex = out[index[key]]
+            # 빅4 자체 ATS가 한공회 재게시보다 우선(직접 지원 링크). 그 외엔 먼저 본 것 유지.
+            if p.source in _FIRM_ATS_SOURCES and ex.source not in _FIRM_ATS_SOURCES:
+                out[index[key]] = p
+            continue
+        index[key] = len(out)
+        out.append(p)
+    return out
+
 
 def _write_json(name: str, payload: dict) -> Path:
     _DATA_DIR.mkdir(parents=True, exist_ok=True)
@@ -96,6 +124,8 @@ def build_jobs(cfg: dict, state: State) -> dict:
             p.body_excerpt = st.get("body_excerpt", "")
         if not p.deadline:
             p.deadline = st.get("deadline", "")
+
+    kept = _dedup_cross_source(kept, cfg)   # 한공회 재게시 + 빅4 자체 ATS 동일 공고 중복 제거
 
     # NEW = '올라온 지 24시간 이내'. 게시일은 날짜뿐이라 24h 정밀도가 안 나오므로 발견시각(first_seen) 기준.
     new_ts_cut = (_dt.datetime.now() - _dt.timedelta(hours=24)).isoformat(timespec="seconds")

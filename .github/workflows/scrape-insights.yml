@@ -30,6 +30,6 @@ jobs:
           git add docs/data/insights.json docs/data/status.json
           if git diff --staged --quiet; then echo "변경 없음"; else
             git commit -m "auto: 인사이트 갱신"
-            git pull --rebase --autostash origin "${{ github.ref_name }}"
+            git pull --rebase --autostash -X theirs origin "${{ github.ref_name }}"
             git push
           fi

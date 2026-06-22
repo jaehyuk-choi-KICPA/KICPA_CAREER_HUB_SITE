@@ -20,6 +20,14 @@
 
 ---
 
+## 2026-06-22 (4) — scrape 워크플로 커밋 충돌 수정(`-X theirs` 누락)
+
+- **증상/계기:** `src/**` 변경 push 시 트리거되는 **scrape-jobs**(scrape.yml)가 "Commit jobs.json" 스텝에서 실패(export는 성공). 원인: 커밋 직전 `git pull --rebase`가 run-all 등 동시 커밋과 **jobs.json 충돌**을 만났는데 **`-X theirs`가 없어** 리베이스가 멈춤 → 스텝 실패. run-all.yml엔 `-X theirs`가 있는데 scrape 계열 3종엔 빠져 있었음.
+- **무엇을 / 어디에:** `scrape.yml`·`scrape-news.yml`·`scrape-insights.yml`의 `git pull --rebase --autostash origin` → **`... -X theirs origin`**(재생성 산출물은 '최신 수집이 이김'이 정확 — run-all과 동일 정책).
+- **효과/검증:** 재생성 JSON 충돌을 자동 해소해 커밋 스텝 실패 제거. (이 커밋이 scrape 재트리거 → 동일 패턴으로 성공 확인.)
+
+---
+
 ## 2026-06-22 (3) — 뉴스 노이즈 차단: '관사'(공관 행정)
 
 - **증상/계기:** 딜·M&A에 **"전임 대구시장 관사 매각 검토…추경호 '관사 사용 안해'"**가 노출. `매각` 키워드로 들어온 **공관(관사) 행정·정치 기사**로 회계·딜과 무관.

@@ -1,9 +1,22 @@
 """classify.py — 법인(firm)·직무(field) 규칙 분류."""
 from __future__ import annotations
 
-from src.classify import classify_field, classify_firm
+from src.classify import classify_emp_kind, classify_field, classify_firm
 
 from tests.conftest import make_posting
+
+
+class TestClassifyEmpKind:
+    def test_parttime_variants(self, cfg):
+        # 'PART TIME'(공백)·'PARTTIME'(붙임)·'Part-Time'·emp_type 모두 파트타임으로
+        assert classify_emp_kind(make_posting(title="회계 보조 PART TIME 모집"), cfg) == "파트타임"
+        assert classify_emp_kind(make_posting(title="회계 보조 PARTTIME"), cfg) == "파트타임"
+        assert classify_emp_kind(make_posting(title="세무 도우미", emp_type="Part-Time"), cfg) == "파트타임"
+
+    def test_part_not_overmatched(self, cfg):
+        # 바 '파트'/'part'는 오탐 금지 — '수습 파트'(부서)·'Parthenon'(브랜드)
+        assert classify_emp_kind(make_posting(title="[한미회계법인] 4본부 수습 파트 채용"), cfg) != "파트타임"
+        assert classify_emp_kind(make_posting(title="EY Parthenon VCS팀", emp_type="인턴"), cfg) == "인턴"
 
 
 class TestClassifyFirm:

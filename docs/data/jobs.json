@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-06-22T15:36:50",
+  "generated_at": "2026-06-22T15:58:48",
   "soon_days": 7,
   "counts": {
-    "total": 66,
-    "open": 40,
+    "total": 67,
+    "open": 41,
     "closed": 26,
     "new": 3,
     "soon": 16,
     "by_firm": {
       "삼일": 10,
       "삼정": 4,
-      "안진": 6,
+      "안진": 7,
       "한영": 22,
       "로컬": 20,
       "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 21,
+      "수습CPA": 22,
       "자격무관": 45
     },
     "by_emp_kind": {
       "인턴": 30,
       "정규직": 29,
       "계약직": 4,
-      "파트타임": 3
+      "파트타임": 4
     }
   },
   "postings": [
@@ -660,7 +660,7 @@
       "firm": "로컬",
       "field": "감사",
       "qualification": "수습CPA",
-      "emp_kind": "정규직",
+      "emp_kind": "파트타임",
       "status": "open",
       "is_new": true,
       "title": "[한미회계법인] 4본부 수습 파트 채용",
@@ -691,6 +691,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782092077022",
       "dday": 28,
       "first_seen": "2026-06-22T11:01:30"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "기타",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "2026 신입회계사 정기채용",
+      "company": "딜로이트 안진",
+      "deadline": "2026-07-24",
+      "posted_date": "2026-06-22",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5130",
+      "dday": 32,
+      "first_seen": "2026-06-22T15:58:48"
     },
     {
       "source": "kicpa_susup",

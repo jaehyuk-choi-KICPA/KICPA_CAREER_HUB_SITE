@@ -20,6 +20,14 @@
 
 ---
 
+## 2026-06-22 (6) — 파트타임 분류: 'PART TIME'·'PARTTIME' 변형 인식
+
+- **증상/계기:** 파트타임 공고가 **정규직**으로 분류됨. `empkind_keywords.파트타임`에 `part-time`(하이픈)만 있어 **`PART TIME`(공백)·`PARTTIME`(붙임)**을 못 잡음(미매칭 → 기본값 정규직).
+- **무엇을 / 어디에:** `config.dashboard.empkind_keywords.파트타임`에 **`part time`·`parttime`** 추가. ⚠️ 바 `파트`/`part`는 **금지**(오탐: '수습 파트'=부서, 'Parthenon'=EY 브랜드) — 시간 의미 붙은 변형만.
+- **효과/검증:** 단위검증 — PART TIME/PARTTIME/Part-Time/emp_type 모두 파트타임, '수습 파트'·Parthenon은 오탐 안 됨. 회귀 테스트(`TestClassifyEmpKind`) 추가, 전체 **71 통과**.
+
+---
+
 ## 2026-06-22 (5) — 기장직원(사무보조) 역할 노이즈 제외
 
 - **증상/계기:** KICPA 일반 보드(kicpa_cpa)에 **세무 기장직원** 공고가 다수("세무 기장 직원", "기장 및 업무지원 직원" 등) — 수습CPA·회계사 타깃과 무관한 사무보조.

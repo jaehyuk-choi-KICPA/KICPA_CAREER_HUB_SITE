@@ -35,6 +35,12 @@ def _exception_present(s: str, exceptions: list[str], negators: list[str]) -> bo
 def passes(p: Posting, cfg: dict) -> bool:
     f = cfg["filters"]
 
+    # 역할 노이즈 제외(기장 직원 등 사무보조 — 수습CPA·회계사 타깃과 무관). 제목 기준, **면제 소스보다 우선**
+    # (어느 보드든 기장직원은 노이즈). 본문이 아닌 제목만 봐서 '기장 업무 포함' 수습공고 오제거 방지.
+    title_l = p.title.lower()
+    if any(k.lower() in title_l for k in f.get("title_exclude_keywords", [])):
+        return False
+
     # 면제 소스: 보드 자체가 타깃 확정(수습CPA 보드 등) → 경력 필터 없이 그대로 수용.
     # 제목이 '경력직'이라도 모집대상에 신입/경력이 병기된 보드 공고를 떨구지 않게 한다.
     if p.source in f.get("bypass_sources", []):

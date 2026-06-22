@@ -78,3 +78,11 @@ def test_year_experience_hard_excluded(cfg):
     assert passes(make_posting(title="회계 경력 3년차 채용"), cfg) is False
     assert passes(make_posting(title="경력사원 모집"), cfg) is False
     assert passes(make_posting(title="회계 신입 3년차까지 환영"), cfg) is True
+
+
+def test_title_noise_excluded(cfg):
+    # 기장직원(사무보조) = 역할 노이즈 → 제외(면제 소스보다 우선). '기장 업무 포함' 수습공고는 유지.
+    assert passes(make_posting(title="세무 기장 직원 채용"), cfg) is False
+    assert passes(make_posting(title="기장 및 업무지원 직원 모집"), cfg) is False
+    assert passes(make_posting(title="경력 기장직원을 모십니다", source="kicpa_susup"), cfg) is False  # 면제보다 우선
+    assert passes(make_posting(title="수습 공인회계사 채용(기장 업무 포함)"), cfg) is True

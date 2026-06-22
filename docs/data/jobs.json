@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-22T15:31:33",
+  "generated_at": "2026-06-22T15:35:20",
   "soon_days": 7,
   "counts": {
-    "total": 70,
-    "open": 44,
+    "total": 66,
+    "open": 40,
     "closed": 26,
     "new": 4,
     "soon": 16,
@@ -12,16 +12,16 @@
       "삼정": 4,
       "안진": 6,
       "한영": 22,
-      "로컬": 23,
-      "기타": 5
+      "로컬": 20,
+      "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 23,
-      "자격무관": 47
+      "수습CPA": 21,
+      "자격무관": 45
     },
     "by_emp_kind": {
-      "인턴": 31,
-      "정규직": 32,
+      "인턴": 30,
+      "정규직": 29,
       "계약직": 4,
       "파트타임": 3
     }
@@ -389,25 +389,6 @@
       "first_seen": "2026-06-17T20:17:10"
     },
     {
-      "source": "kicpa_cpa",
-      "source_label": "구인(CPA)",
-      "firm": "로컬",
-      "field": "택스",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "세무 기장 직원(경력 및 신입) 구합니다.",
-      "company": "대성회계법인",
-      "deadline": "2026-06-30",
-      "posted_date": "2026-06-01",
-      "location": "",
-      "emp_type": "",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1780297049873",
-      "dday": 8,
-      "first_seen": "2026-06-17T20:17:10"
-    },
-    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "로컬",
@@ -560,25 +541,6 @@
       "first_seen": "2026-06-18T12:43:19"
     },
     {
-      "source": "kicpa_cpa",
-      "source_label": "구인(CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "자격무관",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "[신우회계법인] 경력 기장직원을 모십니다.",
-      "company": "신우회계법인",
-      "deadline": "2026-06-30",
-      "posted_date": "2026-06-19",
-      "location": "",
-      "emp_type": "",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1781594497466",
-      "dday": 8,
-      "first_seen": "2026-06-22T01:09:21"
-    },
-    {
       "source": "hanyoung",
       "source_label": "EY한영",
       "firm": "한영",
@@ -690,25 +652,6 @@
       "emp_type": "공채",
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000886&receive_div_cd=O",
       "dday": 18,
-      "first_seen": "2026-06-17T20:17:10"
-    },
-    {
-      "source": "kicpa_cpa",
-      "source_label": "구인(CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "[예인회계법인] 기장 및 업무지원 직원을 모십니다.",
-      "company": "예인회계법인",
-      "deadline": "2026-07-15",
-      "posted_date": "2026-06-08",
-      "location": "",
-      "emp_type": "",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1780906295353",
-      "dday": 23,
       "first_seen": "2026-06-17T20:17:10"
     },
     {

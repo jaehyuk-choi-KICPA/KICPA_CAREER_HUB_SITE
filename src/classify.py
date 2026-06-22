@@ -45,6 +45,12 @@ def _detail_text(p: Posting) -> str:
     return f"{p.title} {p.company} {p.body_excerpt} {p.emp_type} {p.category}".lower()
 
 
+def _emp_text(p: Posting) -> str:
+    """채용구분(emp_kind) 판정용 — **본문(body_excerpt) 제외**. 본문 프로즈('파트타임 협의 가능',
+    'Full-time(…파트타임…)' 등)가 고용형태를 오분류시키므로 제목·회사·고용형태·구분(구조화 필드)만 본다."""
+    return f"{p.title} {p.company} {p.emp_type} {p.category}".lower()
+
+
 def classify_qualification(p: Posting, cfg: dict) -> str:
     """자격요건 라벨: 수습CPA / 자격무관.
 
@@ -65,7 +71,7 @@ def classify_qualification(p: Posting, cfg: dict) -> str:
 def classify_emp_kind(p: Posting, cfg: dict) -> str:
     """채용구분 라벨: 인턴 / 계약직 / 파트타임 / 정규직 (우선순위 매칭, 미매칭 기본=정규직)."""
     d = cfg["dashboard"]
-    text = _detail_text(p)
+    text = _emp_text(p)   # 본문 제외(프로즈 오분류 방지) — 구조화 필드만
     for label, kws in d.get("empkind_keywords", {}).items():
         if any(k.lower() in text for k in kws):
             return label

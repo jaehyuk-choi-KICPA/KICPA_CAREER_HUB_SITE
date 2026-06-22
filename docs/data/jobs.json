@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T16:31:30",
+  "generated_at": "2026-06-22T16:50:08",
   "soon_days": 7,
   "counts": {
     "total": 67,
@@ -20,10 +20,10 @@
       "자격무관": 45
     },
     "by_emp_kind": {
-      "인턴": 30,
-      "정규직": 29,
+      "인턴": 29,
+      "정규직": 33,
       "계약직": 4,
-      "파트타임": 4
+      "파트타임": 1
     }
   },
   "postings": [
@@ -394,7 +394,7 @@
       "firm": "로컬",
       "field": "감사",
       "qualification": "수습CPA",
-      "emp_kind": "인턴",
+      "emp_kind": "정규직",
       "status": "open",
       "is_new": false,
       "title": "[우리회계법인] 수습공인회계사 채용 공고",
@@ -413,7 +413,7 @@
       "firm": "로컬",
       "field": "감사",
       "qualification": "수습CPA",
-      "emp_kind": "파트타임",
+      "emp_kind": "정규직",
       "status": "open",
       "is_new": false,
       "title": "[이정회계법인]수습 공인회계사 채용공고",
@@ -660,7 +660,7 @@
       "firm": "로컬",
       "field": "감사",
       "qualification": "수습CPA",
-      "emp_kind": "파트타임",
+      "emp_kind": "정규직",
       "status": "open",
       "is_new": true,
       "title": "[한미회계법인] 4본부 수습 파트 채용",
@@ -709,7 +709,7 @@
       "emp_type": "",
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5130",
       "dday": 32,
-      "first_seen": "2026-06-22T16:00:17"
+      "first_seen": "2026-06-22T16:50:08"
     },
     {
       "source": "kicpa_susup",
@@ -1040,7 +1040,7 @@
       "firm": "로컬",
       "field": "감사",
       "qualification": "수습CPA",
-      "emp_kind": "파트타임",
+      "emp_kind": "정규직",
       "status": "closed",
       "is_new": false,
       "title": "[삼덕회계법인] 수습공인회계사 채용 공고",

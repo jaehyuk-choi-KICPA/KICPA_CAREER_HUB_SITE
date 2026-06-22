@@ -18,6 +18,12 @@ class TestClassifyEmpKind:
         assert classify_emp_kind(make_posting(title="[한미회계법인] 4본부 수습 파트 채용"), cfg) != "파트타임"
         assert classify_emp_kind(make_posting(title="EY Parthenon VCS팀", emp_type="인턴"), cfg) == "인턴"
 
+    def test_body_parttime_mention_ignored(self, cfg):
+        # 본문(body)의 '파트타임 협의 가능'은 emp_kind에 영향 X(풀타임 수습공고) — 구조화 필드만 본다
+        p = make_posting(title="[이정회계법인]수습 공인회계사 채용공고",
+                         body_excerpt="Full-time(3개월 수습기간, 파트타임 협의 가능)")
+        assert classify_emp_kind(p, cfg) == "정규직"
+
 
 class TestClassifyFirm:
     def test_big4_by_source(self, cfg):

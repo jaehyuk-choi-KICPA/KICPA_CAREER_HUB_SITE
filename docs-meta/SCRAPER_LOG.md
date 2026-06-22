@@ -20,6 +20,14 @@
 
 ---
 
+## 2026-06-22 (8) — 캐시된 공고의 emp_type/location hydrate(파트타임 미분류 수정)
+
+- **증상/계기:** 고용형태가 **Part Time**인 KICPA 공고(한미회계법인 4본부 수습 파트, `ijIdNum=1782105520640`)가 **정규직**으로 분류. 원인: KICPA 상세 enrich는 deadline·body가 캐시되면 **스킵** → 그 회차 fresh 공고의 **emp_type/location이 빈 채로** 분류됨(emp_type/location은 캐시 적용 대상이 아님). state엔 `emp_type='Part Time'`이 영속돼 있었음.
+- **무엇을 / 어디에:** `export.build_jobs`에서 `kept` 공고를 분류·출력 전 **state 영속값으로 hydrate** — `emp_type/location/body_excerpt/deadline`가 비었으면 `state.entries[uid]`에서 채움(빈 필드만). deadline/body는 캐시로 이미 차지만 emp_type/location 누락을 메움.
+- **효과/검증:** 한미 공고 정규직→파트타임 복원(emp_type='Part Time'). 전체 emp_kind 분포 정상(파트타임 2건), **72 통과**. 캐시·grace로 상세를 다시 안 받아도 분류 정확.
+
+---
+
 ## 2026-06-22 (7) — 채용구분(emp_kind)은 본문 제외(파트타임 오분류 수정)
 
 - **증상/계기:** 이정회계법인 풀타임 수습공고가 **파트타임**으로 오분류. KICPA 본문 수집(=body_excerpt) 이후, 본문의 **"Full-time(… 파트타임 협의 가능)"** 문구가 `classify_emp_kind`에 걸림(본문 프로즈가 고용형태 오염). (6)에서 파트타임 변형을 넓힌 직후 본문까지 보던 게 드러남.

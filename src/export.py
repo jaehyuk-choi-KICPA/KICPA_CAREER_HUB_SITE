@@ -83,6 +83,20 @@ def build_jobs(cfg: dict, state: State) -> dict:
         print(f"  [복원] 목록 일시 누락 {len(carried)}건 유지(grace {grace_days}일)")
     kept = kept + carried
 
+    # 상세 보강 필드 hydrate: 캐시된 공고는 이번 fetch에서 상세 enrich를 스킵해 emp_type·location이
+    # 비어 올 수 있다(deadline·body는 캐시 적용되지만 emp_type/location은 미캐시). state에 영속된
+    # 값으로 채워 분류·표시를 정확히(예: 고용형태 Part Time → 파트타임). 빈 필드만 보강.
+    for p in kept:
+        st = state.entries.get(p.uid) or {}
+        if not p.emp_type:
+            p.emp_type = st.get("emp_type", "")
+        if not p.location:
+            p.location = st.get("location", "")
+        if not p.body_excerpt:
+            p.body_excerpt = st.get("body_excerpt", "")
+        if not p.deadline:
+            p.deadline = st.get("deadline", "")
+
     # NEW = '올라온 지 24시간 이내'. 게시일은 날짜뿐이라 24h 정밀도가 안 나오므로 발견시각(first_seen) 기준.
     new_ts_cut = (_dt.datetime.now() - _dt.timedelta(hours=24)).isoformat(timespec="seconds")
     new_posted_max = cfg["dashboard"].get("new_posted_max_age_days", 2)

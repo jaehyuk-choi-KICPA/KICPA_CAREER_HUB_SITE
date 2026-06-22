@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-06-22T10:31:31",
+  "generated_at": "2026-06-22T11:01:30",
   "soon_days": 7,
   "counts": {
-    "total": 66,
-    "open": 40,
+    "total": 67,
+    "open": 41,
     "closed": 26,
-    "new": 0,
+    "new": 1,
     "soon": 15,
     "by_firm": {
       "삼일": 10,
       "삼정": 4,
       "안진": 6,
       "한영": 22,
-      "로컬": 20,
+      "로컬": 21,
       "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 20,
+      "수습CPA": 21,
       "자격무관": 46
     },
     "by_emp_kind": {
       "인턴": 30,
-      "정규직": 29,
+      "정규직": 30,
       "계약직": 4,
       "파트타임": 3
     }
@@ -691,6 +691,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1780906295353",
       "dday": 23,
       "first_seen": "2026-06-17T20:17:10"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[안경회계법인] 경남본부(창원)에서 수습회계사님을 모십니다",
+      "company": "안경회계법인",
+      "deadline": "2026-07-20",
+      "posted_date": "2026-06-22",
+      "location": "경남 창원시 성산구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782092077022",
+      "dday": 28,
+      "first_seen": "2026-06-22T11:01:30"
     },
     {
       "source": "kicpa_susup",

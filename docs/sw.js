@@ -28,22 +28,20 @@ self.addEventListener("push", (event) => {
 
 self.addEventListener("notificationclick", (event) => {
   event.notification.close();
-  const raw = (event.notification.data && event.notification.data.url) || "https://hbmons.com/";
-  const external = /^https?:\/\//i.test(raw) && raw.indexOf("hbmons.com") === -1;
-  // 외부 공고는 회법몬 홈(?goto)을 거쳐 연다 → 홈이 '먼저 렌더'된 뒤 공고로 이동(index.html 인라인).
-  // 그래야 공고를 닫거나 뒤로 갈 때 빈 화면이 아니라 회법몬이 남는다(특히 iOS).
-  const target = external ? "https://hbmons.com/?goto=" + encodeURIComponent(raw) : raw;
+  // 단순·안정화: 알림 클릭 = 무조건 회법몬(우리 도메인)으로. 외부 공고로 보내지 않아
+  // 빈 화면·뒤로가기·닫기(X) 문제가 원천적으로 없다. 새 공고는 홈 '방금 올라온 공고'에 노출됨.
+  const HOME = "https://hbmons.com/";
   event.waitUntil(
     (async () => {
       const all = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
       for (const client of all) {
         if (client.url.includes("hbmons.com") && "focus" in client) {
           await client.focus();
-          if ("navigate" in client) { try { await client.navigate(target); } catch (_) { /* ignore */ } }
+          if ("navigate" in client) { try { await client.navigate(HOME); } catch (_) { /* ignore */ } }
           return;
         }
       }
-      if (self.clients.openWindow) await self.clients.openWindow(target);
+      if (self.clients.openWindow) await self.clients.openWindow(HOME);
     })()
   );
 });

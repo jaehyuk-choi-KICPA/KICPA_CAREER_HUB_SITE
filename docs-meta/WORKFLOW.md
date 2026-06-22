@@ -208,7 +208,7 @@ flowchart LR
 - **보안**: VAPID 개인키(`VAPID_PRIVATE_KEY`)·구독 read 토큰(`SUBS_READ_TOKEN`)은 **GitHub Secret에서만**. Worker `READ_TOKEN`은 `wrangler secret`. 코드/커밋엔 **공개키만**.
 - **구성요소**: `docs/sw.js`(수신) · `docs/app.js subscribePush()`(구독) · `worker/subscriptions.js`(KV 저장) · `src/notifier.py`(발송) · `config.notifications`(enabled·worker_url·vapid_public). 견고성: 발송 실패가 run을 막지 않음(`|| true`), 미발송분은 notified=False로 남아 다음 run 재시도.
 - **시험 발송(수동)**: `push-test.yml`(workflow_dispatch) → `scripts/push_test.py`가 구독자 전원에게 '시험 알림' 1건 발송. **state 미변경(멱등)**. VAPID 개인키가 GitHub Secret에만 있어 로컬 발송이 불가하므로, 푸시 동작 점검은 Actions에서 이 워크플로를 돌려 확인한다(입력 `body`·`url` 커스텀; `url` 비우면 `jobs.json` 첫 공고로 보내 **알림→공고→뒤로가기=홈** 동선까지 실기기 점검 가능).
-- **알림 클릭 동선(뒤로가기/닫기=회법몬)**: `sw.js notificationclick`이 외부 공고를 **회법몬 홈(`/?goto=<공고URL>`) 경유**로 연다. `index.html` 인라인이 **홈을 먼저 렌더(load 후 ~450ms 노출)한 뒤** `replaceState('/')`+`pushState('/')`+`location.replace(공고)`로 히스토리를 **[홈, 공고]**로 구성 → 공고에서 '뒤로 가기'(또는 모바일 닫기) 시 (빈 화면이 아닌) 회법몬이 뜬다. **'홈 먼저 렌더'가 핵심**: 즉시 튕기면(미렌더) iOS에서 닫을 때 빈 화면이 됐음. http(s)만 허용·재리다이렉트 방지. Playwright로 데스크톱 검증(홈→공고→뒤로=홈). **iOS 분기**: `location.replace`는 홈 문서를 파괴해 X로 닫을 때 빈 화면이 되므로 iOS만 `location.assign`으로 보내 렌더된 홈을 bfcache로 남긴다(X/뒤로 시 복원).
+- **알림 클릭 동선**: `sw.js notificationclick`은 **무조건 회법몬 홈(`hbmons.com`)을 연다/포커스**한다(외부 공고로 보내지 않음). 새 공고는 홈 '방금 올라온 공고'에 노출되므로 거기서 본다. *(과거 외부 공고로 직접 보내 '뒤로가기=홈'을 시도했으나 — `?goto` 홈경유·히스토리 조작·iOS bfcache 등 — 브라우저·기기별 동작 차이로 빈 화면·버튼 비활성·엉뚱페이지 오류가 잦아 폐기. '회법몬만 연다'가 전 플랫폼에서 안정적. payload의 공고 url은 알림 본문 표시용으로만 유지.)*
 
 ---
 

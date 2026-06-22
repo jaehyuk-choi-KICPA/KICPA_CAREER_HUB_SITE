@@ -598,6 +598,13 @@ function initSub(prefix, data, chipRowId, chipKey, fixed, cardFn, colors) {
 
 // ===================== 부트 =====================
 (async function () {
+  // 서비스워커 최신화: 방문할 때마다 sw.js 업데이트 체크 강제 → 새 sw.js(알림 동작 변경 등)가 빨리 반영.
+  // (기존엔 구독 시에만 등록돼 옛 sw.js가 끈질기게 남았음. skipWaiting+claim과 함께 즉시 교체.)
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.getRegistration()
+      .then(function (reg) { if (reg) reg.update(); })
+      .catch(function () {});
+  }
   showInAppNotice();   // 카톡 등 인앱 브라우저 진입 시 상단 안내 배너
   initTabs();
   const tt = $("theme-toggle");

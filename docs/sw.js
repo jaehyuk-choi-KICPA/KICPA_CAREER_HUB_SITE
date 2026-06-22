@@ -30,25 +30,20 @@ self.addEventListener("notificationclick", (event) => {
   event.notification.close();
   const raw = (event.notification.data && event.notification.data.url) || "https://hbmons.com/";
   const external = /^https?:\/\//i.test(raw) && raw.indexOf("hbmons.com") === -1;
+  // 외부 공고는 회법몬 홈(?goto)을 거쳐 연다 → 홈이 '먼저 렌더'된 뒤 공고로 이동(index.html 인라인).
+  // 그래야 공고를 닫거나 뒤로 갈 때 빈 화면이 아니라 회법몬이 남는다(특히 iOS).
+  const target = external ? "https://hbmons.com/?goto=" + encodeURIComponent(raw) : raw;
   event.waitUntil(
     (async () => {
-      // 외부 공고는 새 창(데스크톱=새 탭 / 모바일·iOS=오버레이)으로 연다 — 기존 회법몬 화면을 보존하고
-      // (모바일은 닫으면 회법몬으로 복귀), iOS에서 메인뷰를 외부로 navigate하면 빈 화면 되던 문제도 방지.
-      // (브라우저별로 신뢰성 없는 히스토리 조작 대신 '새 창'으로 단순·안정화.)
-      if (external) {
-        if (self.clients.openWindow) await self.clients.openWindow(raw);
-        return;
-      }
-      // 내부 URL(회법몬 홈 등): 기존 탭 있으면 포커스·이동, 없으면 새로.
       const all = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
       for (const client of all) {
         if (client.url.includes("hbmons.com") && "focus" in client) {
           await client.focus();
-          if ("navigate" in client) { try { await client.navigate(raw); } catch (_) { /* ignore */ } }
+          if ("navigate" in client) { try { await client.navigate(target); } catch (_) { /* ignore */ } }
           return;
         }
       }
-      if (self.clients.openWindow) await self.clients.openWindow(raw);
+      if (self.clients.openWindow) await self.clients.openWindow(target);
     })()
   );
 });

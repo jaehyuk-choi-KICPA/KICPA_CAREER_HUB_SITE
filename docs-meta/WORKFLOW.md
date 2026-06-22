@@ -209,6 +209,7 @@ flowchart LR
 - **구성요소**: `docs/sw.js`(수신) · `docs/app.js subscribePush()`(구독) · `worker/subscriptions.js`(KV 저장) · `src/notifier.py`(발송) · `config.notifications`(enabled·worker_url·vapid_public). 견고성: 발송 실패가 run을 막지 않음(`|| true`), 미발송분은 notified=False로 남아 다음 run 재시도.
 - **시험 발송(수동)**: `push-test.yml`(workflow_dispatch) → `scripts/push_test.py`가 구독자 전원에게 '시험 알림' 1건 발송. **state 미변경(멱등)**. VAPID 개인키가 GitHub Secret에만 있어 로컬 발송이 불가하므로, 푸시 동작 점검은 Actions에서 이 워크플로를 돌려 확인한다(입력 `body`·`url` 커스텀; `url` 비우면 `jobs.json` 첫 공고로 보내 **알림→공고→뒤로가기=홈** 동선까지 실기기 점검 가능).
 - **알림 클릭 동선(뒤로가기=홈)**: `sw.js notificationclick`이 공고를 **회법몬 홈(`/?goto=<공고URL>`)을 경유**해 연다. `index.html` 상단 인라인 스크립트가 `replaceState('/')`+`pushState('/')`+`location.replace(공고)`로 히스토리를 **[홈, 공고]**로 구성 → 공고에서 '뒤로 가기' 시 회법몬 홈이 뜬다(브라우저 push/replace heuristic 회피·재리다이렉트 방지, http(s)만 허용).
+  - **iOS(PWA) 예외**: iOS는 PWA 메인뷰를 외부 공고로 navigate하면 닫을 때 **빈 화면**이 됨 → iOS에선 `?goto`를 쓰지 않고 외부 공고를 **새 창(오버레이/사파리)로 열어 PWA 홈을 유지**(닫으면 회법몬 복귀). `sw.js`가 `navigator.userAgent`로 iOS 감지해 분기.
 
 ---
 

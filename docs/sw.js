@@ -29,12 +29,18 @@ self.addEventListener("push", (event) => {
 self.addEventListener("notificationclick", (event) => {
   event.notification.close();
   const raw = (event.notification.data && event.notification.data.url) || "https://hbmons.com/";
-  // 공고로 바로 가되 '뒤로 가기' 시 회법몬 홈이 뜨도록 홈(?goto)을 경유. 홈/내부 URL이면 그대로.
-  const target = (/^https?:\/\//i.test(raw) && raw.indexOf("hbmons.com") === -1)
-    ? "https://hbmons.com/?goto=" + encodeURIComponent(raw)
-    : raw;
+  const isIOS = /iP(hone|ad|od)/.test(self.navigator && self.navigator.userAgent || "");
+  const external = /^https?:\/\//i.test(raw) && raw.indexOf("hbmons.com") === -1;
   event.waitUntil(
     (async () => {
+      // iOS(PWA): 메인뷰를 외부 공고로 navigate하면 닫을 때 '빈 화면'이 됨 → 외부 공고는 새 창(오버레이/사파리)로
+      // 열어 PWA 홈은 그대로 둔다(닫으면 회법몬으로 복귀). ?goto 경유(히스토리 뒤로가기)는 iOS에 안 맞음.
+      if (isIOS && external) {
+        if (self.clients.openWindow) await self.clients.openWindow(raw);
+        return;
+      }
+      // 데스크톱/안드: 공고를 홈(?goto) 경유로 열어 공고에서 '뒤로 가기' 시 회법몬 홈이 뜨게 한다.
+      const target = external ? "https://hbmons.com/?goto=" + encodeURIComponent(raw) : raw;
       const all = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
       for (const client of all) {
         if (client.url.includes("hbmons.com") && "focus" in client) {

@@ -7,6 +7,10 @@ on:
         description: "알림 본문(비우면 기본 문구)"
         required: false
         default: ""
+      url:
+        description: "알림이 가리킬 URL(비우면 jobs.json 첫 공고 → '뒤로가기=홈' 동선 테스트)"
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -19,6 +23,7 @@ jobs:
       VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}   # 웹 푸시 서명 개인키(라이브 공개키와 쌍)
       SUBS_READ_TOKEN: ${{ secrets.SUBS_READ_TOKEN }}       # 구독 저장소(Worker) /list Bearer
       PUSH_BODY: ${{ inputs.body }}
+      PUSH_URL: ${{ inputs.url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-06-22T14:01:33",
+  "generated_at": "2026-06-22T14:31:33",
   "soon_days": 7,
   "counts": {
-    "total": 68,
-    "open": 42,
+    "total": 69,
+    "open": 43,
     "closed": 26,
-    "new": 2,
+    "new": 3,
     "soon": 16,
     "by_firm": {
       "삼일": 10,
       "삼정": 4,
       "안진": 6,
       "한영": 22,
-      "로컬": 22,
+      "로컬": 23,
       "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 22,
+      "수습CPA": 23,
       "자격무관": 46
     },
     "by_emp_kind": {
       "인턴": 30,
-      "정규직": 31,
+      "정규직": 32,
       "계약직": 4,
       "파트타임": 3
     }
@@ -287,8 +287,8 @@
       "company": "공인회계사송관수사무소",
       "deadline": "2026-06-26",
       "posted_date": "2026-06-22",
-      "location": "서울 송파구",
-      "emp_type": "Full Time",
+      "location": "",
+      "emp_type": "",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782104244810",
       "dday": 4,
       "first_seen": "2026-06-22T14:01:33"
@@ -644,7 +644,7 @@
       "emp_kind": "정규직",
       "status": "open",
       "is_new": false,
-      "title": "(성현회계법인 부산본부) TAX 수습공인회계사 모집의 건",
+      "title": "(성현회계법인 부산본부) TAX 공인회계사 및 세무사 모집의 건",
       "company": "성현회계법인 부산본부",
       "deadline": "2026-07-03",
       "posted_date": "2026-06-19",
@@ -710,6 +710,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1780906295353",
       "dday": 23,
       "first_seen": "2026-06-17T20:17:10"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[한미회계법인] 4본부 수습 파트 채용",
+      "company": "한미회계법인",
+      "deadline": "2026-07-17",
+      "posted_date": "2026-06-22",
+      "location": "서울 전체",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782105520640",
+      "dday": 25,
+      "first_seen": "2026-06-22T14:31:33"
     },
     {
       "source": "kicpa_susup",

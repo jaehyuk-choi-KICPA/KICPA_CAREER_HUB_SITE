@@ -263,11 +263,15 @@ def build_news(cfg: dict) -> dict:
                 if (has_city and any(a in n.title for a in gov_action)) or \
                    ("보조금" in n.title and ("역량" in n.title or "집행" in n.title)):
                     continue
-            if foreign_cats and n.category in foreign_cats:   # 외국(미국 제외) 세무·감사 이슈 차단
+            if foreign_cats and n.category in foreign_cats:   # 외국(미국 제외) 세무·감사·딜 이슈 차단
                 tl = n.title.lower()
                 sl = (n.source_label or "").lower()
-                is_foreign = any(c in tl for c in foreign_countries) or any(s in sl for s in foreign_sources)
-                if is_foreign and not any(m in tl for m in keep_markers):
+                # 외국 매체(번역 애그리게이터)는 keep 마커 무관 무조건 차단 — 외국 공시·주총 번역물은
+                # 제목에 '미국' 등이 있어도 한국 독자 무관(예: Investing.com 'EG그룹 미국 IPO').
+                if any(s in sl for s in foreign_sources):
+                    continue
+                # 제목 외국명은 keep 마커(한국·미국·국제 등)가 있으면 유지(한국기업 해외딜·미국 회계제도 등).
+                if any(c in tl for c in foreign_countries) and not any(m in tl for m in keep_markers):
                     continue
             seen.add(n.url)
             seen_title.add(tkey)

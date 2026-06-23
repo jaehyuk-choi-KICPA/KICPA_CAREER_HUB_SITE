@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-06-23T14:01:40",
+  "generated_at": "2026-06-23T14:31:42",
   "soon_days": 7,
   "counts": {
-    "total": 64,
-    "open": 42,
+    "total": 65,
+    "open": 43,
     "closed": 22,
     "new": 5,
     "soon": 28,
     "by_firm": {
       "삼일": 10,
       "삼정": 4,
-      "안진": 7,
+      "안진": 8,
       "한영": 23,
       "로컬": 17,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 19,
+      "수습CPA": 20,
       "자격무관": 45
     },
     "by_emp_kind": {
       "인턴": 31,
-      "정규직": 27,
+      "정규직": 28,
       "계약직": 3,
       "파트타임": 3
     }
@@ -662,7 +662,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[한미회계법인] 4본부 수습 파트 채용",
       "company": "한미회계법인",
       "deadline": "2026-07-17",
@@ -691,6 +691,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782092077022",
       "dday": 27,
       "first_seen": "2026-06-22T11:01:30"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "택스",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "세무자문부문 Business Tax G1 신입 및 경력직 회계사",
+      "company": "딜로이트 안진",
+      "deadline": "2026-07-22",
+      "posted_date": "2026-06-23",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5134",
+      "dday": 29,
+      "first_seen": "2026-06-23T14:31:42"
     },
     {
       "source": "anjin",

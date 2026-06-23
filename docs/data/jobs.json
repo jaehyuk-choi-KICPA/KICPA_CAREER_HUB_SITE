@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-23T17:01:43",
+  "generated_at": "2026-06-23T17:31:35",
   "soon_days": 7,
   "counts": {
-    "total": 65,
-    "open": 43,
-    "closed": 22,
-    "new": 4,
-    "soon": 28,
+    "total": 66,
+    "open": 45,
+    "closed": 21,
+    "new": 6,
+    "soon": 29,
     "by_firm": {
       "삼일": 10,
       "삼정": 4,
       "안진": 8,
-      "한영": 23,
+      "한영": 24,
       "로컬": 17,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 20,
-      "자격무관": 45
+      "자격무관": 46
     },
     "by_emp_kind": {
-      "인턴": 31,
+      "인턴": 32,
       "정규직": 28,
       "계약직": 3,
       "파트타임": 3
@@ -560,6 +560,25 @@
       "first_seen": "2026-06-23T09:31:37"
     },
     {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "컨설팅부문 운영·재무 혁신 프로젝트 인턴",
+      "company": "EY한영",
+      "deadline": "2026-06-30",
+      "posted_date": "2026-06-23",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/118699",
+      "dday": 7,
+      "first_seen": "2026-06-23T17:31:35"
+    },
+    {
       "source": "anjin",
       "source_label": "딜로이트안진",
       "firm": "안진",
@@ -634,6 +653,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1781852679504",
       "dday": 10,
       "first_seen": "2026-06-19T16:31:39"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "마켓부문 사업지원(Business Development)팀 전환형 인턴",
+      "company": "EY한영",
+      "deadline": "2026-07-05",
+      "posted_date": "2026-06-23",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/119665",
+      "dday": 12,
+      "first_seen": "2026-06-23T17:31:35"
     },
     {
       "source": "samjong",
@@ -1145,25 +1183,6 @@
       "location": "",
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/118064",
-      "dday": -5,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "컨설팅부문 운영·재무 혁신 프로젝트 인턴",
-      "company": "EY한영",
-      "deadline": "2026-06-18",
-      "posted_date": "2026-06-12",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/118699",
       "dday": -5,
       "first_seen": ""
     },

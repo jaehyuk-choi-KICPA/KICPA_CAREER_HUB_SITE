@@ -134,9 +134,10 @@ _DEFAULTS: dict = {
         "news_embed_relevance_floor": 0.25,      # max(4개 프로토타입 코사인) < 이 값 → 드롭. 실측 min 0.41이라 현재 드롭 0
         "news_embed_category_margin": 0.15,      # 재활성 시 기준(현 데이터 최대 마진 0.087 → 0 flip=안전)
         "news_max_per_day_per_cat": 8,  # 같은 (카테고리,발행일) 최대 N건 — 한 사건이 매체별로 도배하는 것 방지
-        # 외국(미국 제외) 세무·감사 이슈 차단 — 제목에 외국명이 있고 한국/미국/국제 마커가 하나도 없으면 제외.
-        # (세무·감사에만 적용; 딜·M&A는 해외 인수 등 한국 독자 관련성이 있어 제외 안 함)
-        "news_foreign_filter_categories": ["세무", "감사"],
+        # 외국(미국 제외) 세무·감사·딜 이슈 차단 — 제목에 외국명이 있고 한국/미국/국제 마커가 하나도 없으면 제외.
+        # (딜·M&A도 적용: 패러곤 뱅킹 그룹처럼 한국 무관 외국 매각 기사가 난잡하게 섞임. 글로벌·국제·미국 마커가
+        #  있으면 keep 마커로 유지되므로 SK·삼성 등 한국기업 해외딜은 보존됨.)
+        "news_foreign_filter_categories": ["세무", "감사", "딜·M&A"],
         "news_foreign_countries": [
             "베트남", "일본", "중국", "대만", "홍콩", "싱가포르", "인도네시아", "태국",
             "필리핀", "말레이시아", "인도", "독일", "프랑스", "영국", "호주", "캐나다",
@@ -148,6 +149,7 @@ _DEFAULTS: dict = {
             "vietnam", ".vn", "japan", "nikkei", "china", "xinhua", "thai", "indonesia",
             "jakarta", "manila", "bangkok", "straits", "taipei",
             "investing.com",   # 미국·외국 주총 proxy 기사 번역본 (감사인 비준·승인 노이즈)
+            "씬짜오", "씬짜오베트남",   # 베트남 한국어 매체 — 베트남 현지 회계·감사(PwC 베트남 등) 기사 차단
         ],
         # 위 외국명이 있어도 이 마커(한국·미국·국제공통)가 제목에 있으면 유지
         "news_keep_markers": [

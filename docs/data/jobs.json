@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-23T09:31:37",
+  "generated_at": "2026-06-23T10:01:33",
   "soon_days": 7,
   "counts": {
-    "total": 62,
-    "open": 40,
+    "total": 63,
+    "open": 41,
     "closed": 22,
-    "new": 5,
+    "new": 6,
     "soon": 27,
     "by_firm": {
       "삼일": 10,
       "삼정": 4,
       "안진": 7,
       "한영": 22,
-      "로컬": 16,
+      "로컬": 17,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 18,
+      "수습CPA": 19,
       "자격무관": 44
     },
     "by_emp_kind": {
-      "인턴": 29,
+      "인턴": 30,
       "정규직": 27,
       "계약직": 3,
       "파트타임": 3
@@ -710,6 +710,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1779434757812",
       "dday": 38,
       "first_seen": "2026-06-17T20:17:10"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "딜",
+      "qualification": "수습CPA",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "[BDO성현회계법인] 재무자문본부 M&A팀 인턴(전환형) 채용",
+      "company": "BDO 성현회계법인",
+      "deadline": "2026-08-31",
+      "posted_date": "2026-06-23",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782175145101",
+      "dday": 69,
+      "first_seen": "2026-06-23T10:01:33"
     },
     {
       "source": "anjin",

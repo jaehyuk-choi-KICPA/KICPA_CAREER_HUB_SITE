@@ -205,6 +205,7 @@ flowchart LR
     RUN -->|"state.json 신규(notified=False) × scope 매칭"| PUSH["pywebpush(VAPID 서명)<br/>→ 구독자 브라우저"]
 ```
 
+- **발송 순서(중요)**: run-all은 **수집 → 데이터 커밋·푸시 → Pages 라이브 확인 → 알람 발송 → 발송상태 커밋** 순. 알림 클릭은 `sw.js`상 **무조건 hbmons.com 홈으로** 가므로, 알람보다 데이터가 먼저 라이브여야 구독자가 새 공고를 본다. `Wait for Pages` 스텝이 방금 푸시한 `jobs.json`의 `generated_at`이 라이브에 반영될 때까지 폴링(최대 ~5분)한 뒤 알람을 쏜다. (과거: 알람 먼저 → 데이터 나중 커밋 → 알람 직후 들어온 사람은 빈 홈을 보는 창이 있었음.)
 - **scope**: `수습CPA 전용` 구독자는 `classify_qualification`이 수습CPA인 공고만, `전체`는 인턴·일반 포함 전부 수신.
 - **콜드스타트 억제**: 활성화 직전 `python -m src.notifier --seed`로 기존 공고를 baseline(notified=True) 처리 → 가입 직후 폭주 없음.
 - **보안**: VAPID 개인키(`VAPID_PRIVATE_KEY`)·구독 read 토큰(`SUBS_READ_TOKEN`)은 **GitHub Secret에서만**. Worker `READ_TOKEN`은 `wrangler secret`. 코드/커밋엔 **공개키만**.

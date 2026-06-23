@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-23T13:31:59",
+  "generated_at": "2026-06-23T14:01:40",
   "soon_days": 7,
   "counts": {
-    "total": 63,
-    "open": 41,
+    "total": 64,
+    "open": 42,
     "closed": 22,
     "new": 5,
-    "soon": 27,
+    "soon": 28,
     "by_firm": {
       "삼일": 10,
       "삼정": 4,
       "안진": 7,
-      "한영": 22,
+      "한영": 23,
       "로컬": 17,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 19,
-      "자격무관": 44
+      "자격무관": 45
     },
     "by_emp_kind": {
-      "인턴": 30,
+      "인턴": 31,
       "정규직": 27,
       "계약직": 3,
       "파트타임": 3
@@ -282,7 +282,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "운강공인회계사감사반(개인회계사사무소) 수습회계사 모집",
       "company": "공인회계사송관수사무소",
       "deadline": "2026-06-26",
@@ -311,6 +311,25 @@
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000894&receive_div_cd=N",
       "dday": 5,
       "first_seen": "2026-06-18T19:49:24"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "컨설팅부문 Cyber security 팀 단기 인턴",
+      "company": "EY한영",
+      "deadline": "2026-06-28",
+      "posted_date": "2026-06-23",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/119603",
+      "dday": 5,
+      "first_seen": "2026-06-23T14:01:40"
     },
     {
       "source": "samil",

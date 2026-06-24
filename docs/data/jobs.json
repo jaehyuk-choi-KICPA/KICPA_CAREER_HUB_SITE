@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-24T16:31:36",
+  "generated_at": "2026-06-24T16:46:39",
   "soon_days": 7,
   "counts": {
     "total": 64,
     "open": 46,
     "closed": 18,
-    "new": 6,
+    "new": 8,
     "soon": 29,
     "by_firm": {
       "삼일": 10,
@@ -548,7 +548,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": false,
+      "is_new": true,
       "title": "[우리회계법인] 수습공인회계사 채용 공고",
       "company": "우리회계법인",
       "deadline": "2026-06-30",
@@ -557,7 +557,7 @@
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1780625545782",
       "dday": 6,
-      "first_seen": "2026-06-17T20:17:10"
+      "first_seen": "2026-06-24T16:46:39"
     },
     {
       "source": "kicpa_cpa",
@@ -567,7 +567,7 @@
       "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": false,
+      "is_new": true,
       "title": "신입, 경력직원 채용",
       "company": "한경회계법인",
       "deadline": "2026-06-30",
@@ -576,7 +576,7 @@
       "emp_type": "정규직",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1781429126756",
       "dday": 6,
-      "first_seen": "2026-06-18T12:43:19"
+      "first_seen": "2026-06-24T16:46:39"
     },
     {
       "source": "kicpa_susup",

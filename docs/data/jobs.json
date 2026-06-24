@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-24T14:01:32",
+  "generated_at": "2026-06-24T14:31:33",
   "soon_days": 7,
   "counts": {
     "total": 64,
     "open": 46,
     "closed": 18,
-    "new": 8,
+    "new": 7,
     "soon": 28,
     "by_firm": {
       "삼일": 10,
@@ -282,7 +282,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "컨설팅부문 Cyber security 팀 단기 인턴",
       "company": "EY한영",
       "deadline": "2026-06-28",
@@ -560,25 +560,6 @@
       "first_seen": "2026-06-18T12:43:19"
     },
     {
-      "source": "anjin",
-      "source_label": "딜로이트안진",
-      "firm": "안진",
-      "field": "딜",
-      "qualification": "자격무관",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "경영자문부문 RS그룹 NPL 신입 및 경력직",
-      "company": "딜로이트 안진",
-      "deadline": "2026-07-02",
-      "posted_date": "2026-06-15",
-      "location": "",
-      "emp_type": "",
-      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5126",
-      "dday": 8,
-      "first_seen": "2026-06-18T12:43:19"
-    },
-    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "로컬",
@@ -710,6 +691,25 @@
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000886&receive_div_cd=O",
       "dday": 16,
       "first_seen": "2026-06-17T20:17:10"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "딜",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": false,
+      "title": "경영자문부문 RS그룹 NPL 신입 및 경력직",
+      "company": "딜로이트 안진",
+      "deadline": "2026-07-16",
+      "posted_date": "2026-06-15",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5126",
+      "dday": 22,
+      "first_seen": "2026-06-18T12:43:19"
     },
     {
       "source": "kicpa_susup",

@@ -106,20 +106,29 @@ def run_deterministic(cfg: dict, base_url: str, shot_path: str | None) -> Result
                 "news": _fetch_json(base_url.rstrip("/") + "/data/news.json"),
                 "insights": _fetch_json(base_url.rstrip("/") + "/data/insights.json"),
             }
-            tabs = [("jobs", "#jobs-list .card", "postings"),
-                    ("news", "#news-list .card", "items"),
-                    # 인사이트는 v1.09에서 법인별 4박스로 재설계 → 컨테이너 #insights-grid,
-                    # 카드 class가 아니라 <article.insight-firm> 안 <ul.firm-list><li>(글 목록).
-                    # 접힌 <details>도 DOM에 전체 글이 있어 데이터 items 수와 직접 대조된다.
-                    ("insights", "#insights-grid .firm-list li", "items")]
-            for key, sel, dkey in tabs:
-                if key != "jobs":
+            # 탭/뷰별 카드 수 vs 라이브 데이터 건수 대조.
+            # UI(v1.13): 기사·인사이트는 '기사/인사이트' 한 탭(data-tab=news) 안에서 책갈피(.subtab)로 전환.
+            #   - 기사: 기사 탭 → #news-list .card
+            #   - 인사이트: 기사 탭 → 인사이트 책갈피(.subtab[data-subview=insights]) → 법인별 4박스
+            #     (#insights-grid 안 <article.insight-firm> > <ul.firm-list><li>. 접힌 <details>도 DOM엔 전체 글이
+            #      있어 데이터 items 수와 직접 대조된다.)
+            tabs = [("jobs", [], "#jobs-list .card", "postings"),
+                    ("news", ['.tab-btn[data-tab="news"]'], "#news-list .card", "items"),
+                    ("insights", ['.tab-btn[data-tab="news"]', '.subtab[data-subview="insights"]'],
+                     "#insights-grid .firm-list li", "items")]
+            for key, clicks, sel, dkey in tabs:
+                nav_ok, last = True, ""
+                for c in clicks:
+                    last = c
                     try:
-                        page.click(f'.tab-btn[data-tab="{key}"]')
-                        page.wait_for_timeout(700)
+                        page.click(c)
+                        page.wait_for_timeout(600)
                     except Exception:  # noqa: BLE001
-                        res.checks.append(Check(f"{key} 탭 전환", False, "탭 클릭 실패"))
-                        continue
+                        nav_ok = False
+                        break
+                if not nav_ok:
+                    res.checks.append(Check(f"{key} 보기 전환", False, f"클릭 실패: {last}"))
+                    continue
                 shown = page.locator(sel).count()
                 d = data.get(key) or {}
                 have = len(d.get(dkey) or [])

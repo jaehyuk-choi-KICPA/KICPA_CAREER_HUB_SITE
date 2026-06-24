@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-24T09:31:34",
+  "generated_at": "2026-06-24T10:01:32",
   "soon_days": 7,
   "counts": {
-    "total": 62,
-    "open": 44,
+    "total": 63,
+    "open": 45,
     "closed": 18,
     "new": 7,
     "soon": 28,
     "by_firm": {
       "삼일": 10,
       "삼정": 4,
-      "안진": 8,
+      "안진": 9,
       "한영": 20,
       "로컬": 17,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 20,
-      "자격무관": 42
+      "자격무관": 43
     },
     "by_emp_kind": {
-      "인턴": 28,
+      "인턴": 29,
       "정규직": 28,
       "계약직": 3,
       "파트타임": 3
@@ -529,7 +529,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[한울회계법인] 3본부 회계사 모집",
       "company": "한울회계법인",
       "deadline": "2026-06-30",
@@ -634,6 +634,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1781852679504",
       "dday": 9,
       "first_seen": "2026-06-19T16:31:39"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "딜로이트컨설팅 General 인턴",
+      "company": "딜로이트 안진",
+      "deadline": "2026-07-03",
+      "posted_date": "2026-06-24",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5135",
+      "dday": 9,
+      "first_seen": "2026-06-24T10:01:32"
     },
     {
       "source": "hanyoung",

@@ -78,6 +78,11 @@ class State:
                 new_posted = getattr(p, "posted_date", "") or ""
                 if fs_date and new_posted and fs_date < new_posted <= today:
                     e["first_seen"] = now
+                    # 재게시 = 다시 '신규' → 푸시 재발송 대상으로 되돌림(notifier가 notified=False·open을 발송).
+                    # 한 번만 발동(리셋 후 fs_date=today라 다음 run 미발동)이라 도배 없음. carry_forward/깜빡임은 미발동.
+                    e["notified"] = False
+                    e.pop("notified_date", None)
+                    new.append(p)   # update() 반환(신규목록)에도 포함 — 실시간 경로도 재게시를 신규로 인지
                 # 가변 필드 갱신(마감일·근무지·고용형태가 뒤늦게 채워지는 경우 등) + 목격 시각 갱신
                 for k in ("title", "company", "deadline", "posted_date", "category",
                           "location", "emp_type", "source_label", "url", "body_excerpt"):

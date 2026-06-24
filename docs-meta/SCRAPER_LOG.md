@@ -20,11 +20,12 @@
 
 ---
 
-## 2026-06-24 (13) — 재게시 공고 first_seen 갱신(최신순 1순위·'방금 올라온' 패널 복귀)
+## 2026-06-24 (13) — 재게시 공고 first_seen+notified 갱신(최신순·신규패널·알림 복귀)
 
-- **증상/계기:** KICPA에서 **수정 후 재게시**된 공고(예: 우리회계법인 1780625545782, 보드 등록일 06-24)가 우리 사이트에선 ① 최근 게시순 1순위로 안 뜨고 ② '방금 올라온 공고' 패널에 안 뜸. 원인 = state 재방문 갱신이 `posted_date`는 갱신하면서 **`first_seen`은 원래(첫 게시 06-17) 값 유지**. 최신순 동일날짜 tiebreaker·`is_new`(24h)·`isFresh3`가 전부 first_seen 기반이라 묻힘.
-- **무엇을 / 어디에 (`state.py` `update`):** 재방문 분기에 불변식 추가 — **`first_seen`의 날짜 < `posted_date` ≤ today 이면 first_seen=now로 갱신**. 우리가 본 뒤 보드가 더 최신 날짜로 재등록한 경우만 발동. neq가 아닌 `<` 비교라 **이미 posted_date가 앞서간 stuck 항목도 다음 run에서 자가치유**. 정상(게시 뒤 늦게 발견=first_seen≥게시일)·단순 깜빡임(게시일 동일)은 미발동(grace/carry_forward 설계 유지). 미래날짜 가드(`≤today`)로 무한리셋 방지.
-- **효과/검증:** 재게시 시 first_seen 갱신→ is_new=true(패널 복귀)+최신순 tiebreaker 상위 동시 해결. 회귀 테스트 2종(`test_republish_resets_first_seen`·`test_flicker_keeps_first_seen`), 전체 76 통과. [[insight-jobs-grace-persistence]] [[insight-jobs-first-seen-sort]]
+- **증상/계기:** KICPA에서 **수정 후 재게시**된 공고(예: 우리회계법인 1780625545782, 보드 등록일 06-24)가 우리 사이트에선 ① 최근 게시순 1순위로 안 뜨고 ② '방금 올라온 공고' 패널에 안 뜨고 ③ **푸시 알림도 안 옴**. 원인 = state 재방문 갱신이 `posted_date`는 갱신하면서 **`first_seen`은 원래(첫 게시 06-17) 값 유지** + `notified`도 True 유지. 최신순 tiebreaker·`is_new`(24h)·`isFresh3`는 first_seen 기반이라 묻히고, notifier는 notified=True라 건너뜀(이 건은 notified_date=None=과거 억제분이라 실제 발송도 안 됐었음).
+- **무엇을 / 어디에 (`state.py` `update`):** 재방문 분기에 불변식 추가 — **`first_seen`의 날짜 < (이번 스크랩) `posted_date` ≤ today 이면**: `first_seen=now` + **`notified=False`(+notified_date 제거)** + update() 신규목록에 포함. 비교는 stored가 아닌 **방금 긁은 board posted_date** 기준이라 stored posted_date가 stale여도 정확, neq가 아닌 `<`라 **stuck 항목도 다음 run 자가치유**. 정상(늦게 발견=first_seen≥게시일)·깜빡임(게시일 동일)·carry_forward는 미발동. 리셋 후 fs_date=today라 **재게시당 1회만** 발동(알림 도배 없음).
+- **흐름:** run-all `export`(state.update→save) → `notifier`가 notified=False·open 발송. 즉 다음 정기 수집에서 자동으로 알림 재발송 + 패널/정렬 복귀.
+- **효과/검증:** 회귀 테스트 2종(`test_republish_resets_first_seen_and_renotifies`·`test_flicker_keeps_first_seen_and_notified`), 전체 76 통과. [[insight-jobs-grace-persistence]] [[insight-jobs-first-seen-sort]] [[insight-notifier-inactive]]
 
 ---
 

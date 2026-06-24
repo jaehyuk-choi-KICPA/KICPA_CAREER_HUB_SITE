@@ -8,6 +8,9 @@ const QUAL_ORDER = ["수습CPA", "자격무관"];                 // 자격요�
 const EMPKIND_ORDER = ["인턴", "정규직", "계약직", "파트타임"];   // 채용구분 필터
 const NEWS_CAT_ORDER = ["채용·시험", "감사", "세무", "딜·M&A"];  // 기사 카테고리 필터 순서(감사·세무(택스)·딜 일관)
 
+// 빅4 신입 공채 특집: 상태 표시(접수중/업로드 예정/마감/미정)
+const BIG4_STATUS = { open:["접수중","open"], upcoming:["업로드 예정","upcoming"], closed:["마감","closed"], unknown:["일정 미정","unknown"] };
+
 function el(tag, props = {}, kids = []) {
   const n = document.createElement(tag);
   for (const [k, v] of Object.entries(props)) {
@@ -596,6 +599,103 @@ function initSub(prefix, data, chipRowId, chipKey, fixed, cardFn, colors) {
   render();
 }
 
+// ===================== 글자수·맞춤법 도구 =====================
+// 순수 클라이언트 유틸 — 입력 텍스트는 저장·전송하지 않는다(무수집 원칙).
+function countBytes(s) {            // 한글 등 멀티바이트=2, ASCII=1 (사라민식 자소서 바이트)
+  let n = 0;
+  for (const ch of s) n += ch.charCodeAt(0) > 127 ? 2 : 1;
+  return n;
+}
+function renderTools() {
+  const text = $("tool-text").value;
+  const noSpace = text.replace(/\s/g, "");
+  $("st-chars").textContent = text.length.toLocaleString();
+  $("st-chars-ns").textContent = noSpace.length.toLocaleString();
+  $("st-bytes").textContent = countBytes(text).toLocaleString();
+}
+function initTools() {
+  const ta = $("tool-text");
+  if (!ta) return;
+  ta.addEventListener("input", renderTools);
+  renderTools();
+}
+
+// ===================== 빅4 신입 공채 특집 =====================
+function big4Dday(end) {            // 'YYYY-MM-DD' → 잔여일(없으면 null)
+  if (!end) return null;
+  const t = Date.parse(end + "T23:59:59");
+  if (!isFinite(t)) return null;
+  return Math.ceil((t - Date.now()) / 86400000);
+}
+function big4DdayText(f, end) {     // 마감/D-day 텍스트(본문톤 빨간 글씨용)
+  const dd = big4Dday(end);
+  if (f.status === "closed") return "마감";
+  if (dd === null) return "";
+  return dd < 0 ? "마감" : "D-" + dd;
+}
+// 지원기간 한 줄: [트랙명] MM-DD ~ MM-DD ........ D-day(빨간 글씨)
+function big4TrackLine(f, tr) {
+  const md = (s) => (s || "").slice(5, 10);   // YYYY-MM-DD → MM-DD
+  const range = tr.start ? `${md(tr.start)} ~ ${md(tr.end)}` : (tr.end ? `~ ${md(tr.end)} 마감` : "");
+  const ddText = big4DdayText(f, tr.end);
+  return el("div", { class:"big4-track" }, [
+    tr.name ? el("span", { class:"big4-tname", text:tr.name }) : null,
+    el("span", { class:"big4-trange", text:range }),
+    ddText ? el("span", { class:"big4-dday", text:ddText }) : null,
+  ]);
+}
+function big4Row(f) {
+  const [statLabel, statClass] = BIG4_STATUS[f.status] || ["", ""];
+  const tracks = f.tracks || [];
+  const body = tracks.length
+    ? tracks.map((tr) => big4TrackLine(f, tr))
+    : [el("div", { class:"big4-track big4-tba", text:"일정 미정 · 추후 공개" })];
+  const fc = FIRM_COLOR[f.firm] || "#6b7684";
+  const row = el("article", { class:"big4-row" + (f.status === "closed" ? " is-closed" : ""),
+    style:`--firm:${fc}` }, [
+    el("div", { class:"big4-top" }, [
+      el("span", { class:"big4-firm", text:f.label || FIRM_FULL[f.firm] || f.firm }),
+      el("span", { class:"big4-badge " + statClass, text:statLabel }),
+    ]),
+    el("h4", { class:"big4-jtitle" }, [el("a", { href:f.url, target:"_blank", rel:"noopener", text:f.title })]),
+    el("div", { class:"big4-tracks" }, body),
+  ]);
+  return makeCardClickable(row, f.url);
+}
+function renderBig4(data) {
+  const firms = (data && data.firms) || [];
+  const tabBtn = document.querySelector('.today-tab[data-view="big4"]');
+  if (!firms.length) {                       // 데이터 없으면 특집 탭 비활성
+    if (tabBtn) tabBtn.disabled = true;
+    $("big4-empty").hidden = false;
+    return;
+  }
+  if (data.title) $("big4-title-text").textContent = data.title;
+  $("big4-empty").hidden = true;
+  $("big4-list").replaceChildren(...firms.map(big4Row));
+}
+function initTodayTabs() {
+  const tabs = document.querySelectorAll(".today-tab");
+  tabs.forEach((btn) => btn.addEventListener("click", () => {
+    if (btn.disabled) return;
+    tabs.forEach((b) => { const on = b === btn; b.classList.toggle("on", on); b.setAttribute("aria-selected", on ? "true" : "false"); });
+    const v = btn.dataset.view;
+    $("view-today").hidden = v !== "today";
+    $("view-big4").hidden = v !== "big4";
+  }));
+}
+
+// 기사/인사이트 통합 탭 내부 책갈피 토글(기사 ↔ 인사이트)
+function initNewsTabs() {
+  const tabs = document.querySelectorAll(".subtab");
+  tabs.forEach((btn) => btn.addEventListener("click", () => {
+    tabs.forEach((b) => { const on = b === btn; b.classList.toggle("on", on); b.setAttribute("aria-selected", on ? "true" : "false"); });
+    const v = btn.dataset.subview;
+    $("subview-news").hidden = v !== "news";
+    $("subview-insights").hidden = v !== "insights";
+  }));
+}
+
 // ===================== 부트 =====================
 (async function () {
   // 서비스워커 최신화: 방문할 때마다 sw.js 업데이트 체크 강제 → 새 sw.js(알림 동작 변경 등)가 빨리 반영.
@@ -617,9 +717,9 @@ function initSub(prefix, data, chipRowId, chipKey, fixed, cardFn, colors) {
   $("news-list").replaceChildren(...skel(4));
   $("insights-grid").replaceChildren(...skel(4));
 
-  const [jobs, news, insights, status] = await Promise.all([
+  const [jobs, news, insights, status, big4] = await Promise.all([
     loadJSON("data/jobs.json"), loadJSON("data/news.json"), loadJSON("data/insights.json"),
-    loadJSON("data/status.json"),
+    loadJSON("data/status.json"), loadJSON("data/big4_recruit.json"),
   ]);
   // 헤더 시각 = 점검 시각(last_run): 변화 없어도 자동화가 돌면 전진. 없으면 jobs 생성시각 폴백.
   const stamp = (status && status.last_run) || (jobs && jobs.generated_at) || "";
@@ -648,4 +748,8 @@ function initSub(prefix, data, chipRowId, chipKey, fixed, cardFn, colors) {
   else { $("jobs-empty").hidden = false; $("jobs-empty").textContent = "채용 데이터를 불러오지 못했습니다."; }
   initSub("news", news, "f-newscat", "category", NEWS_CAT_ORDER);   // 색 없이 중립 밑줄 탭
   renderInsights(insights);
+  initTools();          // 글자수·맞춤법 도구
+  initTodayTabs();      // 책갈피 토글(방금 올라온 공고 ↔ 빅4 공채)
+  initNewsTabs();       // 책갈피 토글(기사 ↔ 인사이트)
+  renderBig4(big4);     // 빅4 신입 공채 특집(수동 큐레이션)
 })();

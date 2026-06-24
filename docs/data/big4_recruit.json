@@ -1,0 +1,47 @@
+{
+  "title": "2026 빅4 신입 회계사 공채",
+  "note": "각 법인 공식 채용 페이지 기준 · 수동 큐레이션(시즌마다 갱신)",
+  "updated": "2026-06-24",
+  "firms": [
+    {
+      "firm": "삼일",
+      "label": "삼일PwC",
+      "title": "2026 하반기 신입회계사 정기채용",
+      "status": "upcoming",
+      "tracks": [
+        { "name": "감사", "start": "2026-06-29", "end": "2026-08-13" },
+        { "name": "비감사", "start": "2026-06-29", "end": "2026-07-23" }
+      ],
+      "url": "https://www.pwc.com/kr/ko/careers.html"
+    },
+    {
+      "firm": "삼정",
+      "label": "삼정KPMG",
+      "title": "2026 신입 정기채용",
+      "status": "upcoming",
+      "tracks": [
+        { "name": "감사", "start": "2026-06-29", "end": "2026-07-19" },
+        { "name": "비감사", "start": "2026-06-29", "end": "2026-07-08" }
+      ],
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/init.hr"
+    },
+    {
+      "firm": "안진",
+      "label": "Deloitte안진",
+      "title": "2026 신입회계사 정기채용",
+      "status": "open",
+      "tracks": [
+        { "name": "", "start": "2026-06-23", "end": "2026-07-24" }
+      ],
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5130"
+    },
+    {
+      "firm": "한영",
+      "label": "EY한영",
+      "title": "2026 신입 정기채용",
+      "status": "upcoming",
+      "tracks": [],
+      "url": "https://eycareers-kr.recruiter.co.kr/career/home"
+    }
+  ]
+}

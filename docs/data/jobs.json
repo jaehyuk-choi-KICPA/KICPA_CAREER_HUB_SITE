@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-24T11:01:41",
+  "generated_at": "2026-06-24T11:31:51",
   "soon_days": 7,
   "counts": {
-    "total": 63,
-    "open": 45,
+    "total": 64,
+    "open": 46,
     "closed": 18,
-    "new": 6,
-    "soon": 28,
+    "new": 8,
+    "soon": 29,
     "by_firm": {
       "삼일": 10,
       "삼정": 4,
       "안진": 9,
-      "한영": 20,
+      "한영": 21,
       "로컬": 17,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 20,
-      "자격무관": 43
+      "자격무관": 44
     },
     "by_emp_kind": {
-      "인턴": 29,
+      "인턴": 30,
       "정규직": 28,
       "계약직": 3,
       "파트타임": 3
@@ -254,6 +254,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782104244810",
       "dday": 2,
       "first_seen": "2026-06-22T14:01:33"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "감사부문 내부회계 지원 단기 인턴",
+      "company": "EY한영",
+      "deadline": "2026-06-26",
+      "posted_date": "2026-06-23",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/119731",
+      "dday": 2,
+      "first_seen": "2026-06-24T11:31:51"
     },
     {
       "source": "samjong",
@@ -795,16 +814,16 @@
       "qualification": "수습CPA",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": false,
+      "is_new": true,
       "title": "[BDO성현회계법인] 재무자문본부 M&A팀 인턴(전환형) 채용",
       "company": "BDO 성현회계법인",
       "deadline": "2026-08-31",
-      "posted_date": "2026-06-23",
+      "posted_date": "2026-06-24",
       "location": "서울 강남구",
       "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782175145101",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782266892824",
       "dday": 68,
-      "first_seen": "2026-06-23T10:01:33"
+      "first_seen": "2026-06-24T11:31:51"
     },
     {
       "source": "anjin",

@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-24T13:31:32",
+  "generated_at": "2026-06-24T14:01:32",
   "soon_days": 7,
   "counts": {
     "total": 64,
     "open": 46,
     "closed": 18,
     "new": 8,
-    "soon": 29,
+    "soon": 28,
     "by_firm": {
       "삼일": 10,
       "삼정": 4,
@@ -44,25 +44,6 @@
       "emp_type": "인턴",
       "url": "https://www.pwc.com/kr/ko/career/experienced/r260604.html",
       "dday": 0,
-      "first_seen": "2026-06-17T20:17:10"
-    },
-    {
-      "source": "anjin",
-      "source_label": "딜로이트안진",
-      "firm": "안진",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "경영자문부문 IT 전략/기획 컨설턴트",
-      "company": "딜로이트 안진",
-      "deadline": "2026-06-25",
-      "posted_date": "2026-05-11",
-      "location": "",
-      "emp_type": "",
-      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5096",
-      "dday": 1,
       "first_seen": "2026-06-17T20:17:10"
     },
     {
@@ -691,6 +672,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/119665",
       "dday": 11,
       "first_seen": "2026-06-23T17:31:35"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": false,
+      "title": "경영자문부문 IT 전략/기획 컨설턴트",
+      "company": "딜로이트 안진",
+      "deadline": "2026-07-09",
+      "posted_date": "2026-05-11",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5096",
+      "dday": 15,
+      "first_seen": "2026-06-17T20:17:10"
     },
     {
       "source": "samjong",

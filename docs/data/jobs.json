@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-24T09:01:40",
+  "generated_at": "2026-06-24T09:31:34",
   "soon_days": 7,
   "counts": {
-    "total": 67,
+    "total": 62,
     "open": 44,
-    "closed": 23,
+    "closed": 18,
     "new": 7,
     "soon": 28,
     "by_firm": {
       "삼일": 10,
       "삼정": 4,
       "안진": 8,
-      "한영": 25,
+      "한영": 20,
       "로컬": 17,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 20,
-      "자격무관": 47
+      "자격무관": 42
     },
     "by_emp_kind": {
-      "인턴": 33,
+      "인턴": 28,
       "정규직": 28,
       "계약직": 3,
       "파트타임": 3
@@ -959,44 +959,6 @@
       "first_seen": ""
     },
     {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "컨설팅부문 Government & Public Sector 컨설팅 인턴",
-      "company": "EY한영",
-      "deadline": "2026-06-03",
-      "posted_date": "2026-05-27",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/114808",
-      "dday": -21,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "컨설팅부문 UX 서비스 기획 인턴",
-      "company": "EY한영",
-      "deadline": "2026-06-04",
-      "posted_date": "2026-05-28",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/114912",
-      "dday": -20,
-      "first_seen": ""
-    },
-    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "로컬",
@@ -1013,25 +975,6 @@
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1780296110231",
       "dday": -19,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "컨설팅부문 공정 데이터 분석 단기 인턴",
-      "company": "EY한영",
-      "deadline": "2026-06-11",
-      "posted_date": "2026-06-08",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/118140",
-      "dday": -13,
       "first_seen": ""
     },
     {
@@ -1073,25 +1016,6 @@
       "first_seen": ""
     },
     {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "컨설팅부문 디지털마케팅 기획/분석 인턴",
-      "company": "EY한영",
-      "deadline": "2026-06-14",
-      "posted_date": "2026-06-08",
-      "location": "",
-      "emp_type": "분야별 상이",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/118096",
-      "dday": -10,
-      "first_seen": ""
-    },
-    {
       "source": "kicpa_cpa",
       "source_label": "구인(CPA)",
       "firm": "로컬",
@@ -1108,25 +1032,6 @@
       "emp_type": "정규직",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1781510115232",
       "dday": -9,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "컨설팅부문 AI팀 인턴",
-      "company": "EY한영",
-      "deadline": "2026-06-16",
-      "posted_date": "2026-06-09",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/118318",
-      "dday": -8,
       "first_seen": ""
     },
     {

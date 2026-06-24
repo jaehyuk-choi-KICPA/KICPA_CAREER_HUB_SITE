@@ -20,6 +20,14 @@
 
 ---
 
+## 2026-06-24 (13) — 재게시 공고 first_seen 갱신(최신순 1순위·'방금 올라온' 패널 복귀)
+
+- **증상/계기:** KICPA에서 **수정 후 재게시**된 공고(예: 우리회계법인 1780625545782, 보드 등록일 06-24)가 우리 사이트에선 ① 최근 게시순 1순위로 안 뜨고 ② '방금 올라온 공고' 패널에 안 뜸. 원인 = state 재방문 갱신이 `posted_date`는 갱신하면서 **`first_seen`은 원래(첫 게시 06-17) 값 유지**. 최신순 동일날짜 tiebreaker·`is_new`(24h)·`isFresh3`가 전부 first_seen 기반이라 묻힘.
+- **무엇을 / 어디에 (`state.py` `update`):** 재방문 분기에 불변식 추가 — **`first_seen`의 날짜 < `posted_date` ≤ today 이면 first_seen=now로 갱신**. 우리가 본 뒤 보드가 더 최신 날짜로 재등록한 경우만 발동. neq가 아닌 `<` 비교라 **이미 posted_date가 앞서간 stuck 항목도 다음 run에서 자가치유**. 정상(게시 뒤 늦게 발견=first_seen≥게시일)·단순 깜빡임(게시일 동일)은 미발동(grace/carry_forward 설계 유지). 미래날짜 가드(`≤today`)로 무한리셋 방지.
+- **효과/검증:** 재게시 시 first_seen 갱신→ is_new=true(패널 복귀)+최신순 tiebreaker 상위 동시 해결. 회귀 테스트 2종(`test_republish_resets_first_seen`·`test_flicker_keeps_first_seen`), 전체 76 통과. [[insight-jobs-grace-persistence]] [[insight-jobs-first-seen-sort]]
+
+---
+
 ## 2026-06-24 (12) — 기사 전수 검토: 잔여 외국·비관련 노이즈 제거 + 쿼리 강화
 
 - **증상/계기:** 4분류 138건 전수 검토(시각 검증 포함). 잔여 노이즈 ① **감사**: `中, 감사인 처벌`(중국 규제), `데이터투자`발 美 SEC 8-K 감사인 교체 번역물 3건. ② **세무**: `세무조사` 미끼 보안기사(악성코드·APT) 2건, 재개발조합 감정평가법인 `입찰공고` 1건. ③ **딜**: `매각` 오매칭 농지·농기계 2건, `EG그룹 미국 IPO`(Investing.com) — 외국기업인데 제목 `미국`(keep마커)에 걸려 외국필터를 빠져나감.

@@ -68,6 +68,16 @@ class State:
                 }
                 new.append(p)
             else:
+                # 재게시 감지: first_seen(처음 본 날)이 게시일(posted_date)보다 '이전'이면, 우리가 본 뒤
+                # 보드가 더 최신 날짜로 재등록(수정 후 재게시)한 것 → first_seen을 now로 갱신.
+                # 효과: 최신순 동일날짜 tiebreaker 상위 + is_new(24h)·'방금 올라온' 패널 복귀.
+                # 이 불변식은 이미 posted_date가 앞서간 stuck 항목도 다음 run에서 자가치유한다(neq 비교가 아님).
+                # 정상(게시 뒤 늦게 발견)=first_seen>=게시일이라 미발동, 깜빡임=게시일 동일이라 미발동.
+                # posted_date<=today 가드로 미래 날짜(이상치) 무한 리셋 방지. now가 today라 리셋 후 안정.
+                fs_date = (e.get("first_seen") or "")[:10]
+                new_posted = getattr(p, "posted_date", "") or ""
+                if fs_date and new_posted and fs_date < new_posted <= today:
+                    e["first_seen"] = now
                 # 가변 필드 갱신(마감일·근무지·고용형태가 뒤늦게 채워지는 경우 등) + 목격 시각 갱신
                 for k in ("title", "company", "deadline", "posted_date", "category",
                           "location", "emp_type", "source_label", "url", "body_excerpt"):

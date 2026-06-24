@@ -35,6 +35,28 @@ def test_second_update_no_new_and_updates_fields(tmp_path):
     assert st.entries["samil:A1"]["deadline"] == NEXT_WEEK
 
 
+def test_republish_resets_first_seen(tmp_path):
+    # 재게시(posted_date가 더 최신) → first_seen now로 갱신(최신순 1순위·NEW 복귀)
+    st = _state(tmp_path)
+    st.update([make_posting(source="kicpa_susup", native_id="A1", title="A",
+                            posted_date="2026-06-17", deadline=TOMORROW)])
+    st.entries["kicpa_susup:A1"]["first_seen"] = "2026-06-17T20:17:10"   # 원래 처음 본 시각
+    st.update([make_posting(source="kicpa_susup", native_id="A1", title="A(수정)",
+                            posted_date=_dt.date.today().isoformat(), deadline=TOMORROW)])
+    assert st.entries["kicpa_susup:A1"]["first_seen"].startswith(_dt.date.today().isoformat())
+
+
+def test_flicker_keeps_first_seen(tmp_path):
+    # 단순 깜빡임(posted_date 동일) → first_seen 유지(좀비/거짓 NEW 방지)
+    st = _state(tmp_path)
+    st.update([make_posting(source="kicpa_susup", native_id="A1", title="A",
+                            posted_date="2026-06-17", deadline=TOMORROW)])
+    st.entries["kicpa_susup:A1"]["first_seen"] = "2026-06-17T20:17:10"
+    st.update([make_posting(source="kicpa_susup", native_id="A1", title="A",
+                            posted_date="2026-06-17", deadline=NEXT_WEEK)])
+    assert st.entries["kicpa_susup:A1"]["first_seen"] == "2026-06-17T20:17:10"
+
+
 def test_mark_notified(tmp_path):
     st = _state(tmp_path)
     st.update([make_posting(source="samil", native_id="A1", title="A", deadline=TOMORROW)])

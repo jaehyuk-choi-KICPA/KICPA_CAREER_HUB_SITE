@@ -1021,7 +1021,8 @@
     "uid": "kicpa_susup:1782266892824",
     "first_seen": "2026-06-24T11:31:51",
     "last_seen": "2026-06-24",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-06-24"
   },
   "hanyoung:119731": {
     "source": "hanyoung",
@@ -1039,6 +1040,7 @@
     "uid": "hanyoung:119731",
     "first_seen": "2026-06-24T11:31:51",
     "last_seen": "2026-06-24",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-06-24"
   }
 }

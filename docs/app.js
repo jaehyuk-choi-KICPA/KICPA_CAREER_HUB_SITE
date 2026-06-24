@@ -28,6 +28,42 @@ async function loadJSON(p) {
   try { const r = await fetch(u, {cache:"no-store"}); return r.ok ? await r.json() : null; } catch { return null; }
 }
 
+// 현재 실행 중인 앱 버전 = 자기 <script src="app.js?v=…"> 토큰. 배포 버전과 비교해 자동 최신화에 사용.
+const APP_VERSION = (() => {
+  const s = document.querySelector('script[src*="app.js"]');
+  const m = s && s.src.match(/[?&]v=([^&]+)/);
+  return m ? m[1] : "";
+})();
+
+// 강한 새로고침: (옛 SW 잔여) 캐시 비우고 ?r= 캐시버스트로 문서를 통째로 재요청 → 코드(index.html·CSS·JS)까지 최신.
+async function hardReload() {
+  const upd = $("updated"); if (upd) upd.textContent = "새로고침 중…";
+  try {
+    if (window.caches) { const ks = await caches.keys(); await Promise.all(ks.map((k) => caches.delete(k))); }
+    const reg = navigator.serviceWorker && (await navigator.serviceWorker.getRegistration());
+    if (reg) reg.update();
+  } catch (_) { /* 무시하고 어쨌든 리로드 */ }
+  const u = new URL(location.href);
+  u.searchParams.set("r", String(Date.now()));
+  location.replace(u.href);
+}
+
+// 버전 자동체크: 배포된 index.html의 app.js?v= 토큰이 실행 버전과 다르면 = 새 배포 → 자동 새로고침.
+// 앱이 켜질 때 + 다시 포커스될 때 호출(5분 쓰로틀). 이 코드를 가진 버전부터 동작(옛 코드엔 소급 불가).
+let _verChkAt = 0;
+async function checkForUpdate() {
+  if (!APP_VERSION) return;
+  const now = Date.now();
+  if (now - _verChkAt < 300000) return;   // 5분 쓰로틀(포커스 토글 남용 방지)
+  _verChkAt = now;
+  try {
+    const r = await fetch("index.html?vc=" + now, { cache: "no-store" });
+    if (!r.ok) return;
+    const m = (await r.text()).match(/app\.js\?v=([^"&]+)/);
+    if (m && m[1] && m[1] !== APP_VERSION) hardReload();   // 토큰 달라짐 → 새 버전 배포됨
+  } catch (_) { /* 네트워크 실패는 조용히 무시 */ }
+}
+
 // ---- 기사 신규 표시(브라우저별 기억) — 카드 점(항목별)과 탭 점(독립) ----
 function _seenGet(k){ try { return JSON.parse(localStorage.getItem(k) || "[]"); } catch { return []; } }
 function _seenSet(k, arr){ try { localStorage.setItem(k, JSON.stringify(arr)); } catch (e) {} }
@@ -190,24 +226,9 @@ function initTabs() {
       window.scrollTo({ top: 0 });
     });
   });
-  // 로고(회법몬) 클릭 → 강한 새로고침(앱 코드까지 최신화).
-  // 데이터만 다시 받던 기존 방식은 모바일 홈화면(PWA)에서 새 버전이 안 떴음(index.html·CSS·JS가 HTTP 캐시에 묶임).
-  // 캐시 비우고 캐시버스트 쿼리(?r=)로 문서를 통째로 재요청 → 최신 index.html이 최신 ?v= 토큰의 CSS/JS를 끌어옴.
+  // 로고(회법몬) 클릭 → 강한 새로고침(앱 코드까지 최신화). PWA 홈화면에서도 즉시 갱신.
   const logo = document.querySelector(".brand h1");
-  if (logo) logo.addEventListener("click", async () => {
-    const upd = $("updated"); if (upd) upd.textContent = "새로고침 중…";
-    try {
-      if (window.caches) {   // 안전망(현재 SW는 캐시 안 하지만, 옛 SW 잔여 캐시까지 정리)
-        const keys = await caches.keys();
-        await Promise.all(keys.map((k) => caches.delete(k)));
-      }
-      const reg = navigator.serviceWorker && (await navigator.serviceWorker.getRegistration());
-      if (reg) reg.update();
-    } catch (_) { /* 무시하고 어쨌든 리로드 */ }
-    const u = new URL(location.href);
-    u.searchParams.set("r", String(Date.now()));   // 문서 HTTP 캐시 우회
-    location.replace(u.href);
-  });
+  if (logo) logo.addEventListener("click", () => hardReload());
 }
 
 // ===================== 채용 =====================
@@ -756,4 +777,8 @@ function initNewsTabs() {
   initTodayTabs();      // 책갈피 토글(방금 올라온 공고 ↔ 빅4 공채)
   initNewsTabs();       // 책갈피 토글(기사 ↔ 인사이트)
   renderBig4(big4);     // 빅4 신입 공채 특집(수동 큐레이션)
+
+  // 버전 자동체크: 켜질 때 + 다시 포커스될 때 새 배포면 자동 새로고침(이 버전부터 동작)
+  checkForUpdate();
+  document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") checkForUpdate(); });
 })();

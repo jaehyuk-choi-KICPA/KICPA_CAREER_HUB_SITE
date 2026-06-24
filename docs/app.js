@@ -190,19 +190,23 @@ function initTabs() {
       window.scrollTo({ top: 0 });
     });
   });
-  // 로고(회법몬) 클릭 → 채용공고 탭 최상단 + 데이터 새로고침
+  // 로고(회법몬) 클릭 → 강한 새로고침(앱 코드까지 최신화).
+  // 데이터만 다시 받던 기존 방식은 모바일 홈화면(PWA)에서 새 버전이 안 떴음(index.html·CSS·JS가 HTTP 캐시에 묶임).
+  // 캐시 비우고 캐시버스트 쿼리(?r=)로 문서를 통째로 재요청 → 최신 index.html이 최신 ?v= 토큰의 CSS/JS를 끌어옴.
   const logo = document.querySelector(".brand h1");
   if (logo) logo.addEventListener("click", async () => {
-    document.querySelector('.tab-btn[data-tab="jobs"]')?.click();
-    const upd = $("updated");
-    const prev = upd.textContent;
-    upd.textContent = "새로고침 중…";
-    const [jobs, status] = await Promise.all([
-      loadJSON("data/jobs.json"), loadJSON("data/status.json"),
-    ]);
-    const stamp = (status && status.last_run) || (jobs && jobs.generated_at) || "";
-    upd.textContent = stamp ? "최근 서치: " + stamp.replace("T", " ") : prev;
-    if (jobs) initJobs(jobs);
+    const upd = $("updated"); if (upd) upd.textContent = "새로고침 중…";
+    try {
+      if (window.caches) {   // 안전망(현재 SW는 캐시 안 하지만, 옛 SW 잔여 캐시까지 정리)
+        const keys = await caches.keys();
+        await Promise.all(keys.map((k) => caches.delete(k)));
+      }
+      const reg = navigator.serviceWorker && (await navigator.serviceWorker.getRegistration());
+      if (reg) reg.update();
+    } catch (_) { /* 무시하고 어쨌든 리로드 */ }
+    const u = new URL(location.href);
+    u.searchParams.set("r", String(Date.now()));   // 문서 HTTP 캐시 우회
+    location.replace(u.href);
   });
 }
 

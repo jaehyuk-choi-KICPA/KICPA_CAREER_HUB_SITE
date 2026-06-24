@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-24T17:31:29",
+  "generated_at": "2026-06-24T18:01:33",
   "soon_days": 7,
   "counts": {
     "total": 64,
     "open": 46,
     "closed": 18,
-    "new": 8,
+    "new": 6,
     "soon": 29,
     "by_firm": {
       "삼일": 10,
@@ -529,7 +529,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "컨설팅부문 운영·재무 혁신 프로젝트 인턴",
       "company": "EY한영",
       "deadline": "2026-06-30",
@@ -662,7 +662,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "마켓부문 사업지원팀 전환형 인턴",
       "company": "EY한영",
       "deadline": "2026-07-05",

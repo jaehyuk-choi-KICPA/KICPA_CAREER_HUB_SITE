@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-24T10:01:32",
+  "generated_at": "2026-06-24T10:31:24",
   "soon_days": 7,
   "counts": {
     "total": 63,
     "open": 45,
     "closed": 18,
-    "new": 7,
+    "new": 6,
     "soon": 28,
     "by_firm": {
       "삼일": 10,
@@ -484,25 +484,6 @@
       "first_seen": "2026-06-17T20:17:10"
     },
     {
-      "source": "kicpa_cpa",
-      "source_label": "구인(CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "자격무관",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "신입, 경력직원 채용",
-      "company": "한경회계법인",
-      "deadline": "2026-06-30",
-      "posted_date": "2026-06-18",
-      "location": "서울 송파구",
-      "emp_type": "정규직",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1781429126756",
-      "dday": 6,
-      "first_seen": "2026-06-18T12:43:19"
-    },
-    {
       "source": "hanyoung",
       "source_label": "EY한영",
       "firm": "한영",
@@ -558,6 +539,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/118699",
       "dday": 6,
       "first_seen": "2026-06-23T17:31:35"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": false,
+      "title": "신입, 경력직원 채용",
+      "company": "한경회계법인",
+      "deadline": "2026-06-30",
+      "posted_date": "2026-06-24",
+      "location": "서울 송파구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1781429126756",
+      "dday": 6,
+      "first_seen": "2026-06-18T12:43:19"
     },
     {
       "source": "anjin",
@@ -795,7 +795,7 @@
       "qualification": "수습CPA",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[BDO성현회계법인] 재무자문본부 M&A팀 인턴(전환형) 채용",
       "company": "BDO 성현회계법인",
       "deadline": "2026-08-31",

@@ -231,6 +231,8 @@ def build_news(cfg: dict) -> dict:
     require = [k.lower() for k in d.get("news_require_any", [])]
     gov_action = d.get("news_local_gov_action", [])      # 지자체 행정 홍보 제외용
     gov_keep = d.get("news_local_gov_keep", [])
+    firm_pr_ent = d.get("news_firm_pr_entities", [])     # 법인 개업·개소 PR 제외용(법인어 + 개업/오픈류 AND)
+    firm_pr_act = d.get("news_firm_pr_actions", [])
     # 외국(미국 제외) 세무·감사 이슈 차단 — 외국명/외국매체 있고 한국/미국/국제 마커 없으면 제외
     foreign_cats = set(d.get("news_foreign_filter_categories", []))
     foreign_countries = [k.lower() for k in d.get("news_foreign_countries", [])]
@@ -263,6 +265,9 @@ def build_news(cfg: dict) -> dict:
                 if (has_city and any(a in n.title for a in gov_action)) or \
                    ("보조금" in n.title and ("역량" in n.title or "집행" in n.title)):
                     continue
+            if firm_pr_ent and any(e in n.title for e in firm_pr_ent) \
+                    and any(a in n.title for a in firm_pr_act):  # 법인 개업·개소 홍보(PR/동정) 제외
+                continue
             if foreign_cats and n.category in foreign_cats:   # 외국(미국 제외) 세무·감사·딜 이슈 차단
                 tl = n.title.lower()
                 sl = (n.source_label or "").lower()

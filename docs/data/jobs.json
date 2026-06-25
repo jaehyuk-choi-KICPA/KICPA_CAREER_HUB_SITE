@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-25T18:31:35",
+  "generated_at": "2026-06-25T19:01:36",
   "soon_days": 7,
   "counts": {
-    "total": 66,
-    "open": 47,
+    "total": 67,
+    "open": 48,
     "closed": 19,
-    "new": 7,
+    "new": 8,
     "soon": 26,
     "by_firm": {
       "삼일": 9,
@@ -13,15 +13,15 @@
       "안진": 12,
       "한영": 23,
       "로컬": 17,
-      "기타": 2
+      "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 20,
+      "수습CPA": 21,
       "자격무관": 46
     },
     "by_emp_kind": {
       "인턴": 32,
-      "정규직": 28,
+      "정규직": 29,
       "계약직": 3,
       "파트타임": 3
     }
@@ -691,6 +691,25 @@
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000886&receive_div_cd=O",
       "dday": 15,
       "first_seen": "2026-06-17T20:17:10"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "기타",
+      "field": "기타",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[화인자산운용 PE본부] 수습 및 경력 공인회계사 채용 공고(~7/13)",
+      "company": "(주)화인자산운용",
+      "deadline": "2026-07-13",
+      "posted_date": "2026-06-25",
+      "location": "서울 종로구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782381275543",
+      "dday": 18,
+      "first_seen": "2026-06-25T19:01:36"
     },
     {
       "source": "anjin",

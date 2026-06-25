@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-25T11:31:34",
+  "generated_at": "2026-06-25T12:01:31",
   "soon_days": 7,
   "counts": {
     "total": 61,
     "open": 42,
     "closed": 19,
-    "new": 6,
+    "new": 4,
     "soon": 24,
     "by_firm": {
       "삼일": 9,
@@ -244,7 +244,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "감사부문 내부회계 지원 단기 인턴",
       "company": "EY한영",
       "deadline": "2026-06-26",
@@ -757,7 +757,7 @@
       "qualification": "수습CPA",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[BDO성현회계법인] 재무자문본부 M&A팀 인턴(전환형) 채용",
       "company": "BDO 성현회계법인",
       "deadline": "2026-08-31",

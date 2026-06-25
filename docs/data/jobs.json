@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-06-25T15:01:32",
+  "generated_at": "2026-06-25T15:31:29",
   "soon_days": 7,
   "counts": {
-    "total": 62,
-    "open": 43,
+    "total": 63,
+    "open": 44,
     "closed": 19,
-    "new": 5,
-    "soon": 25,
+    "new": 6,
+    "soon": 26,
     "by_firm": {
       "삼일": 9,
       "삼정": 3,
       "안진": 10,
-      "한영": 22,
+      "한영": 23,
       "로컬": 16,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 19,
-      "자격무관": 43
+      "자격무관": 44
     },
     "by_emp_kind": {
-      "인턴": 31,
+      "인턴": 32,
       "정규직": 26,
       "계약직": 2,
       "파트타임": 3
@@ -501,6 +501,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/119868",
       "dday": 6,
       "first_seen": "2026-06-25T14:01:35"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "컨설팅부문 Government & Public Sector 컨설팅 인턴",
+      "company": "EY한영",
+      "deadline": "2026-07-01",
+      "posted_date": "2026-06-25",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/119897",
+      "dday": 6,
+      "first_seen": "2026-06-25T15:31:29"
     },
     {
       "source": "kicpa_susup",

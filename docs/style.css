@@ -54,8 +54,8 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .updated-bar .wrap { padding-top:5px; padding-bottom:5px; text-align:left; }
 .updated-bar #updated { background:transparent; color:var(--muted); padding:0; font-weight:600; font-size:11.5px; }
 /* 탭 전환 = 잡코리아 샘플 스타일(알약 + 선택 시 옅은 파란 배경 + 하단 액센트 라인) */
-.tab-btn { border:0; background:transparent; color:var(--muted); padding:6px 12px; border-radius:8px;
-  border-bottom:2px solid transparent; font-size:14px; font-weight:700; cursor:pointer;
+.tab-btn { border:0; background:transparent; color:var(--muted); padding:9px 17px; border-radius:9px;
+  border-bottom:2px solid transparent; font-size:16px; font-weight:700; cursor:pointer;
   transition:background .12s, color .12s; white-space:nowrap; }
 .tab-btn:hover { color:var(--ink); }
 .tab-btn.on { color:var(--accent); border-bottom-color:var(--accent); background:var(--accent-soft); }

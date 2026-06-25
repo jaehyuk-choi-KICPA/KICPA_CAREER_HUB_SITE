@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-06-25T17:26:59",
+  "generated_at": "2026-06-25T17:31:32",
   "soon_days": 7,
   "counts": {
-    "total": 64,
-    "open": 45,
+    "total": 65,
+    "open": 46,
     "closed": 19,
-    "new": 5,
+    "new": 6,
     "soon": 26,
     "by_firm": {
       "삼일": 9,
       "삼정": 3,
-      "안진": 11,
+      "안진": 12,
       "한영": 23,
       "로컬": 16,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 19,
-      "자격무관": 45
+      "자격무관": 46
     },
     "by_emp_kind": {
       "인턴": 32,
       "정규직": 27,
-      "계약직": 2,
+      "계약직": 3,
       "파트타임": 3
     }
   },
@@ -710,6 +710,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5126",
       "dday": 21,
       "first_seen": "2026-06-18T12:43:19"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "회계감사부문 AI Asset & Analytics 개발 직무 계약직 (정규직 전환형)",
+      "company": "딜로이트 안진",
+      "deadline": "2026-07-16",
+      "posted_date": "2026-06-25",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5138",
+      "dday": 21,
+      "first_seen": "2026-06-25T17:31:32"
     },
     {
       "source": "kicpa_susup",

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-25T09:31:30",
+  "generated_at": "2026-06-25T10:01:42",
   "soon_days": 7,
   "counts": {
-    "total": 59,
-    "open": 40,
+    "total": 60,
+    "open": 41,
     "closed": 19,
     "new": 5,
     "soon": 24,
@@ -12,16 +12,16 @@
       "삼정": 3,
       "안진": 9,
       "한영": 21,
-      "로컬": 15,
+      "로컬": 16,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 18,
+      "수습CPA": 19,
       "자격무관": 41
     },
     "by_emp_kind": {
       "인턴": 29,
-      "정규직": 25,
+      "정규직": 26,
       "계약직": 2,
       "파트타임": 3
     }
@@ -548,7 +548,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "딜로이트컨설팅 General 인턴",
       "company": "딜로이트 안진",
       "deadline": "2026-07-03",
@@ -710,6 +710,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5130",
       "dday": 29,
       "first_seen": "2026-06-22T16:00:17"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "3년이하 직원 채용",
+      "company": "회계법인 혜안",
+      "deadline": "2026-07-31",
+      "posted_date": "2026-06-25",
+      "location": "서울 강남구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1782348515690",
+      "dday": 36,
+      "first_seen": "2026-06-25T10:01:42"
     },
     {
       "source": "kicpa_susup",

@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-06-25T16:32:15",
+  "generated_at": "2026-06-25T17:01:34",
   "soon_days": 7,
   "counts": {
-    "total": 63,
-    "open": 44,
+    "total": 64,
+    "open": 45,
     "closed": 19,
-    "new": 6,
+    "new": 5,
     "soon": 26,
     "by_firm": {
       "삼일": 9,
       "삼정": 3,
-      "안진": 10,
+      "안진": 11,
       "한영": 23,
       "로컬": 16,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 19,
-      "자격무관": 44
+      "자격무관": 45
     },
     "by_emp_kind": {
       "인턴": 32,
-      "정규직": 26,
+      "정규직": 27,
       "계약직": 2,
       "파트타임": 3
     }
@@ -453,7 +453,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[우리회계법인] 수습공인회계사 채용 공고",
       "company": "우리회계법인",
       "deadline": "2026-06-30",
@@ -472,7 +472,7 @@
       "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "신입, 경력직원 채용",
       "company": "한경회계법인",
       "deadline": "2026-06-30",
@@ -653,6 +653,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5096",
       "dday": 14,
       "first_seen": "2026-06-17T20:17:10"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "딜",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "경영자문부문 Monitor Deloitte M&A Professional",
+      "company": "딜로이트 안진",
+      "deadline": "2026-07-09",
+      "posted_date": "2026-06-25",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5137",
+      "dday": 14,
+      "first_seen": "2026-06-25T17:01:34"
     },
     {
       "source": "samjong",

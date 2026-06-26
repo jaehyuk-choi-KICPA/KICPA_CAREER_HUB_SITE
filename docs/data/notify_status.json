@@ -1,8 +1,9 @@
 {
-  "ran_at": "2026-06-26T11:32:50",
-  "candidates": 0,
-  "sending": 0,
+  "ran_at": "2026-06-26T12:02:53",
+  "candidates": 1,
+  "sending": 1,
   "expired_suppressed": 0,
-  "delivered": 0,
-  "subscribers": null
+  "subscribers": 9,
+  "delivered": 1,
+  "gone_pruned": 0
 }

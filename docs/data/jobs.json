@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-06-26T17:01:37",
+  "generated_at": "2026-06-26T17:31:34",
   "soon_days": 7,
   "counts": {
-    "total": 59,
-    "open": 45,
+    "total": 60,
+    "open": 46,
     "closed": 14,
     "new": 4,
     "soon": 26,
     "by_firm": {
       "삼일": 9,
       "삼정": 3,
-      "안진": 9,
+      "안진": 10,
       "한영": 18,
       "로컬": 17,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 21,
-      "자격무관": 38
+      "자격무관": 39
     },
     "by_emp_kind": {
       "인턴": 26,
       "정규직": 27,
-      "계약직": 3,
+      "계약직": 4,
       "파트타임": 3
     }
   },
@@ -617,6 +617,25 @@
       "first_seen": "2026-06-17T20:17:10"
     },
     {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "회계감사부문 보험사 프로젝트 PMO 업무 지원 계약직 채용",
+      "company": "딜로이트 안진",
+      "deadline": "2026-07-10",
+      "posted_date": "2026-06-26",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5140",
+      "dday": 14,
+      "first_seen": "2026-06-26T17:31:34"
+    },
+    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "기타",
@@ -662,7 +681,7 @@
       "qualification": "자격무관",
       "emp_kind": "계약직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "회계감사부문 AI Asset & Analytics 개발 직무 계약직 (정규직 전환형)",
       "company": "딜로이트 안진",
       "deadline": "2026-07-16",

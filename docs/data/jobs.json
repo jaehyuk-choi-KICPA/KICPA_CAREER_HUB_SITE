@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-26T14:01:30",
+  "generated_at": "2026-06-26T14:31:29",
   "soon_days": 7,
   "counts": {
     "total": 64,
     "open": 45,
     "closed": 19,
-    "new": 7,
+    "new": 6,
     "soon": 26,
     "by_firm": {
       "삼일": 9,
@@ -415,7 +415,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "컨설팅부문 SAP SuccessFactors 인턴",
       "company": "EY한영",
       "deadline": "2026-07-01",

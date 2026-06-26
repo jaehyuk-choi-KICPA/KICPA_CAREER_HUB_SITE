@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-26T15:01:48",
+  "generated_at": "2026-06-26T15:31:31",
   "soon_days": 7,
   "counts": {
     "total": 64,
     "open": 45,
     "closed": 19,
-    "new": 6,
+    "new": 5,
     "soon": 26,
     "by_firm": {
       "삼일": 9,
@@ -434,7 +434,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "컨설팅부문 Government & Public Sector 컨설팅 인턴",
       "company": "EY한영",
       "deadline": "2026-07-01",

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-27T18:01:36",
+  "generated_at": "2026-06-27T18:31:28",
   "soon_days": 7,
   "counts": {
     "total": 60,
     "open": 39,
     "closed": 21,
-    "new": 2,
+    "new": 0,
     "soon": 17,
     "by_firm": {
       "삼일": 8,
@@ -377,7 +377,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "컨설팅부문 운영·재무 혁신 프로젝트 인턴",
       "company": "EY한영",
       "deadline": "2026-07-05",
@@ -624,7 +624,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "회계감사부문 Digital Assurance 그룹 공인회계사(수습회계사) 신입/경력직",
       "company": "딜로이트 안진",
       "deadline": "2026-07-24",

@@ -233,6 +233,7 @@ def build_news(cfg: dict) -> dict:
     gov_keep = d.get("news_local_gov_keep", [])
     firm_pr_ent = d.get("news_firm_pr_entities", [])     # 법인 개업·개소 PR 제외용(법인어 + 개업/오픈류 AND)
     firm_pr_act = d.get("news_firm_pr_actions", [])
+    deal_excl = d.get("news_deal_exclude", [])           # 딜·M&A 한정 부동산성 매각 노이즈 제외
     # 외국(미국 제외) 세무·감사 이슈 차단 — 외국명/외국매체 있고 한국/미국/국제 마커 없으면 제외
     foreign_cats = set(d.get("news_foreign_filter_categories", []))
     foreign_countries = [k.lower() for k in d.get("news_foreign_countries", [])]
@@ -267,6 +268,8 @@ def build_news(cfg: dict) -> dict:
                     continue
             if firm_pr_ent and any(e in n.title for e in firm_pr_ent) \
                     and any(a in n.title for a in firm_pr_act):  # 법인 개업·개소 홍보(PR/동정) 제외
+                continue
+            if n.category == "딜·M&A" and deal_excl and any(x in n.title for x in deal_excl):  # 부동산·압류재산성 매각 노이즈
                 continue
             if foreign_cats and n.category in foreign_cats:   # 외국(미국 제외) 세무·감사·딜 이슈 차단
                 tl = n.title.lower()

@@ -174,6 +174,8 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .today-tab:hover:not(.on):not(:disabled) { color:var(--ink); }
 .today-tab.on { color:var(--panel-title); background:var(--panel-grad-a); }   /* 패널 상단색과 동일 → 이어 보임 */
 .today-tab:disabled { opacity:.45; cursor:default; }
+/* 빅4 특집 탭 — 비활성일 때 액센트 '테두리만' 둘러 차분하게 강조(배경·글씨색 없음). 활성(.on)은 패널과 자연 병합 */
+.today-tab[data-view="big4"]:not(.on):not(:disabled) { border-color:var(--accent); }
 /* 패널 상단 모서리는 각지게 → 위의 탭과 한 덩어리로 읽힘 */
 .today-panel { border-top-left-radius:0; border-top-right-radius:0; }
 .today-view[hidden] { display:none; }

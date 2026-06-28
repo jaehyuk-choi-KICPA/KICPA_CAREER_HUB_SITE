@@ -6,6 +6,8 @@ const FIRM_FULL = { 삼일:"삼일PwC", 삼정:"삼정KPMG", 안진:"Deloitte안
 const FIRM_EN = { 삼일:"PwC", 삼정:"KPMG", 안진:"Deloitte", 한영:"EY", 로컬:"로컬", 기타:"기타" };  // 채용 카드용(모바일 공간 절약)
 const QUAL_ORDER = ["수습CPA", "자격무관"];                 // 자격요건 필터(구 직무 대체)
 const EMPKIND_ORDER = ["인턴", "정규직", "계약직", "파트타임"];   // 채용구분 필터
+// 카드 태그 표시 약칭(필터·데이터·분류는 풀네임 그대로) — 모바일 2열 카드 첫 줄 줄바꿈 방지
+const EMPKIND_SHORT = { 정규직:"정규", 계약직:"계약", 파트타임:"파트", 인턴:"인턴" };
 const NEWS_CAT_ORDER = ["채용·시험", "감사", "세무", "딜·M&A"];  // 기사 카테고리 필터 순서(감사·세무(택스)·딜 일관)
 
 // 빅4 신입 공채 특집: 상태 표시(접수중/업로드 예정/마감/미정)
@@ -275,8 +277,8 @@ function jobCard(it) {
   // 좌상단: 법인 약칭 + 채용구분 + 자격구분 (구 직무 태그 대체)
   const left = el("div", { class:"top-left" }, [
     el("span", { class:"firm-tag", style:`color:${FIRM_COLOR[it.firm]||"#6b7684"}`, text:FIRM_EN[it.firm]||it.firm }),
-    it.emp_kind ? el("span", { class:"tag", text:it.emp_kind }) : null,
-    it.qualification ? el("span", { class:"tag", text:it.qualification }) : null,
+    it.emp_kind ? el("span", { class:"tag", text:EMPKIND_SHORT[it.emp_kind]||it.emp_kind }) : null,
+    it.qualification === "수습CPA" ? el("span", { class:"tag", text:"CPA" }) : null,   // 자격무관은 태그 생략(요건 없음=기본값), 수습CPA만 표시
   ]);
   const top = el("div", { class:"card-top" }, [left]);
   const title = el("h3", {}, [el("a", { href:it.url, target:"_blank", rel:"noopener", text:displayJobTitle(it) })]);

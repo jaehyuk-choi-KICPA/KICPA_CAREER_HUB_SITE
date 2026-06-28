@@ -238,10 +238,10 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 @keyframes reddot { 0%{ box-shadow:0 0 0 0 rgba(229,72,77,.55); } 70%{ box-shadow:0 0 0 7px rgba(229,72,77,0); } 100%{ box-shadow:0 0 0 0 rgba(229,72,77,0); } }
 
 /* 카드 공통 */
-.cards { display:grid; gap:11px; grid-template-columns:repeat(2, minmax(0,1fr)); }  /* minmax(0) — 카드 콘텐츠가 열 폭 넘어 가로 스크롤 나는 것 방지 */
+.cards { display:grid; gap:6px; grid-template-columns:repeat(2, minmax(0,1fr)); }  /* minmax(0) — 카드 콘텐츠가 열 폭 넘어 가로 스크롤 나는 것 방지 */
 .cards-1 { grid-template-columns:1fr; }
-.card { background:var(--card); border:1px solid var(--line); border-radius:13px; padding:14px 16px;
-  display:flex; flex-direction:column; gap:7px; box-shadow:var(--shadow); transition:border-color .12s, box-shadow .12s, transform .12s; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 13px;
+  display:flex; flex-direction:column; gap:5px; box-shadow:var(--shadow); transition:border-color .12s, box-shadow .12s, transform .12s; }
 .card:hover { border-color:#c9d3e2; box-shadow:0 4px 16px rgba(16,40,80,.09); transform:translateY(-1px); }
 .card.clickable { cursor:pointer; }                                  /* 카드 전체 클릭 → 링크 */
 .card.clickable:active { transform:translateY(0) scale(.985); }      /* 살짝 눌림 피드백 */
@@ -251,14 +251,16 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .card-top .top-left { display:flex; align-items:center; gap:6px; flex-wrap:wrap; min-width:0; }
 .card-top .top-right { display:flex; align-items:center; gap:6px; margin-left:auto; flex:0 0 auto; }
 .badge { font-size:11px; font-weight:700; padding:2px 9px; border-radius:6px; color:#fff; white-space:nowrap; }
-.firm-tag { font-size:12.5px; font-weight:800; white-space:nowrap; }   /* 채용 카드 법인명 — 색글씨(인라인 색) */
+.firm-tag { font-size:13px; font-weight:800; white-space:nowrap; }   /* 채용 카드 법인명 — 색글씨(인라인 색) */
 .badge.new { background:var(--new); }
-.tag { font-size:11px; color:var(--muted); border:1px solid var(--line); border-radius:6px; padding:1px 7px; white-space:nowrap; }
+.tag { font-size:11.5px; color:var(--muted); border:1px solid var(--line); border-radius:6px; padding:1px 7px; white-space:nowrap; }
 .tag.cat { font-weight:700; border:0; color:#fff; }
-.card h3 { margin:0; font-size:15px; font-weight:600; line-height:1.4;
-  display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:3; overflow:hidden; }  /* 긴 제목 3줄 말줄임(2열 카드 높이 균일화) */
+.card h3 { margin:0; font-size:16px; font-weight:600; line-height:1.35;
+  display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:2; overflow:hidden; }  /* 긴 제목 2줄 말줄임(2열 카드 높이 편차·중앙 빈공간 축소) */
 .card .company { font-size:13px; color:var(--muted); }
-.card-meta { display:flex; align-items:center; gap:7px; flex-wrap:nowrap; overflow:hidden; font-size:12.5px; color:var(--muted); }
+.card-meta { display:flex; align-items:center; gap:7px; flex-wrap:nowrap; overflow:hidden; font-size:13px; color:var(--muted); }
+/* 채용 카드: 날짜·기관·D-day 줄을 카드 최하단 고정(행 높이 통일로 생기는 빈공간은 제목 아래로) */
+#jobs-list .card-meta { margin-top:auto; }
 .card-meta > * { flex:0 0 auto; }
 .card-meta .org { flex:0 1 auto; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }  /* 아래행 한 줄 유지 — 기관명만 말줄임 */
 .card-meta .sep { color:var(--line); }
@@ -406,13 +408,13 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
   /* 검색·필터·정렬 바를 금일 패널/금일 기사·인사이트 아래로 */
   .jobs-layout { grid-template-areas:"today" "controls" "rail" "results"; }
   .today-mini-row { display:none; }                /* 금일 기사·금일 인사이트 미니박스는 PC 전용 */
-  .cards { grid-template-columns:1fr; gap:9px; }   /* 기사는 한 줄 */
+  .cards { grid-template-columns:1fr; gap:6px; }   /* 기사는 한 줄 */
   .insights-grid { grid-template-columns:1fr; }     /* 인사이트 4박스도 모바일은 한 줄(법인별 1행) */
   #jobs-list { grid-template-columns:repeat(2, minmax(0,1fr)); }     /* 채용공고만 2열 유지(minmax(0)=콘텐츠 넘침 방지) */
-  .card { padding:12px 13px; gap:6px; }
-  .card h3 { font-size:13.5px; }
+  .card { padding:11px 13px; gap:5px; }
+  .card h3 { font-size:15px; }
   .card .company { font-size:12px; }
-  .card-meta { font-size:11.5px; gap:5px; }
+  .card-meta { font-size:12.5px; gap:5px; }
   .meta-deadline { display:none; }                  /* 마감날짜는 우측 D-day로 갈음 → 모바일 숨김 */
   .dday.today2 { display:inline-flex; flex-direction:column; align-items:center;
     line-height:1.05; padding-top:2px; padding-bottom:2px; }   /* '오늘'/'마감' 2줄 네모꼴(모바일만) */

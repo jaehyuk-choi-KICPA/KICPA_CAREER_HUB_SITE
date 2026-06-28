@@ -757,4 +757,10 @@ function initNewsTabs() {
   initTodayTabs();      // 책갈피 토글(방금 올라온 공고 ↔ 빅4 공채)
   initNewsTabs();       // 책갈피 토글(기사 ↔ 인사이트)
   renderBig4(big4);     // 빅4 신입 공채 특집(수동 큐레이션)
+
+  // 딥링크: ?view=big4 → 들어오자마자 '빅4 신입 공채' 특집 화면으로(시즌 홍보용 단축 URL)
+  if (new URLSearchParams(location.search).get("view") === "big4") {
+    const b = document.querySelector('.today-tab[data-view="big4"]');
+    if (b && !b.disabled) { b.click(); b.scrollIntoView({ block: "nearest" }); }
+  }
 })();

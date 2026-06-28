@@ -415,6 +415,9 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
   .card h3 { font-size:15px; }
   .card .company { font-size:12px; }
   .card-meta { font-size:12.5px; gap:5px; }
+  /* 좁은 폰(2열): 태그 줄 간격·여백 축소로 최장 조합(Deloitte·정규·CPA)도 1줄 유지 */
+  .card-top { gap:5px; } .card-top .top-left { gap:4px; }
+  .firm-tag { font-size:12.5px; } .tag { font-size:11px; padding:1px 5px; }
   .meta-deadline { display:none; }                  /* 마감날짜는 우측 D-day로 갈음 → 모바일 숨김 */
   .dday.today2 { display:inline-flex; flex-direction:column; align-items:center;
     line-height:1.05; padding-top:2px; padding-bottom:2px; }   /* '오늘'/'마감' 2줄 네모꼴(모바일만) */

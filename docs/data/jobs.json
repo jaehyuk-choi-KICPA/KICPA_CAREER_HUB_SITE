@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-29T18:31:30",
+  "generated_at": "2026-06-29T19:01:30",
   "soon_days": 7,
   "counts": {
     "total": 65,
-    "open": 42,
-    "closed": 23,
+    "open": 43,
+    "closed": 22,
     "new": 8,
-    "soon": 16,
+    "soon": 17,
     "by_firm": {
       "삼일": 11,
       "삼정": 4,
@@ -292,6 +292,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782703371725",
       "dday": 4,
       "first_seen": "2026-06-29T12:31:37"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": false,
+      "title": "감사부문 Technology Risk 인턴(전환형)",
+      "company": "EY한영",
+      "deadline": "2026-07-04",
+      "posted_date": "2026-06-23",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/119682",
+      "dday": 5,
+      "first_seen": "2026-06-29T19:01:30"
     },
     {
       "source": "hanyoung",
@@ -1240,25 +1259,6 @@
       "location": "",
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/119603",
-      "dday": -1,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "감사",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "감사부문 Technology Risk 인턴(전환형)",
-      "company": "EY한영",
-      "deadline": "2026-06-28",
-      "posted_date": "2026-06-23",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/119682",
       "dday": -1,
       "first_seen": ""
     }

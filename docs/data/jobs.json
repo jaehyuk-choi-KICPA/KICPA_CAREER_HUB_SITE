@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-06-29T08:31:26",
+  "generated_at": "2026-06-29T09:01:47",
   "soon_days": 7,
   "counts": {
-    "total": 58,
-    "open": 35,
+    "total": 60,
+    "open": 37,
     "closed": 23,
-    "new": 0,
+    "new": 2,
     "soon": 16,
     "by_firm": {
       "삼일": 8,
-      "삼정": 2,
+      "삼정": 4,
       "안진": 10,
       "한영": 18,
       "로컬": 17,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 22,
+      "수습CPA": 24,
       "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 24,
-      "정규직": 27,
+      "정규직": 29,
       "계약직": 4,
       "파트타임": 3
     }
@@ -351,6 +351,25 @@
       "first_seen": "2026-06-25T11:31:34"
     },
     {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "딜",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "2026 수습회계사 공채 - Tax, Deal Advisory, CS 전형",
+      "company": "삼정KPMG",
+      "deadline": "2026-07-08",
+      "posted_date": "2026-06-29",
+      "location": "",
+      "emp_type": "공채",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000900&receive_div_cd=O",
+      "dday": 9,
+      "first_seen": "2026-06-29T09:01:47"
+    },
+    {
       "source": "anjin",
       "source_label": "딜로이트안진",
       "firm": "안진",
@@ -482,6 +501,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782105520640",
       "dday": 18,
       "first_seen": "2026-06-22T14:31:33"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "2026 수습회계사 공채 - Audit 전형",
+      "company": "삼정KPMG",
+      "deadline": "2026-07-19",
+      "posted_date": "2026-06-29",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000901&receive_div_cd=N",
+      "dday": 20,
+      "first_seen": "2026-06-29T09:01:47"
     },
     {
       "source": "kicpa_susup",

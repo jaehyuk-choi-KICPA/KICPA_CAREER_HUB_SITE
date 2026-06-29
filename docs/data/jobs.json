@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-06-29T10:11:47",
+  "generated_at": "2026-06-29T10:31:30",
   "soon_days": 7,
   "counts": {
-    "total": 63,
-    "open": 40,
+    "total": 64,
+    "open": 41,
     "closed": 23,
-    "new": 5,
+    "new": 6,
     "soon": 16,
     "by_firm": {
       "삼일": 11,
-      "삼정": 4,
+      "삼정": 5,
       "안진": 10,
       "한영": 18,
       "로컬": 17,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 27,
+      "수습CPA": 28,
       "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 24,
       "정규직": 31,
       "계약직": 4,
-      "파트타임": 4
+      "파트타임": 5
     }
   },
   "postings": [
@@ -522,6 +522,25 @@
       "first_seen": "2026-06-29T09:01:47"
     },
     {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "기타",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "2026 수습회계사 공채 - 파트타임",
+      "company": "삼정KPMG",
+      "deadline": "2026-07-19",
+      "posted_date": "2026-06-29",
+      "location": "",
+      "emp_type": "파트타임",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000901&receive_div_cd=O",
+      "dday": 20,
+      "first_seen": "2026-06-29T10:31:30"
+    },
+    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "로컬",
@@ -682,7 +701,7 @@
       "emp_kind": "파트타임",
       "status": "open",
       "is_new": true,
-      "title": "공인회계사 모집 - PART TIME",
+      "title": "공인회계사 모집 - 파트타임",
       "company": "삼일PwC",
       "deadline": "2026-08-13",
       "posted_date": "2026-06-29",

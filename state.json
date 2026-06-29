@@ -1016,7 +1016,8 @@
     "first_seen": "2026-06-29T10:10:15",
     "last_seen": "2026-06-29",
     "notified": true,
-    "notified_date": "2026-06-29"
+    "notified_date": "2026-06-29",
+    "manual": true
   },
   "samil:samil-2026-kicpa-nonaudit": {
     "source": "samil",
@@ -1035,7 +1036,8 @@
     "first_seen": "2026-06-29T10:10:15",
     "last_seen": "2026-06-29",
     "notified": true,
-    "notified_date": "2026-06-29"
+    "notified_date": "2026-06-29",
+    "manual": true
   },
   "samil:samil-2026-kicpa-parttime": {
     "source": "samil",
@@ -1054,25 +1056,7 @@
     "first_seen": "2026-06-29T10:10:15",
     "last_seen": "2026-06-29",
     "notified": true,
-    "notified_date": "2026-06-29"
-  },
-  "samjong:samjong-2026-kicpa-parttime": {
-    "source": "samjong",
-    "source_label": "삼정KPMG",
-    "title": "2026 수습회계사 공채 - 파트타임",
-    "company": "삼정KPMG",
-    "deadline": "2026-07-19",
-    "posted_date": "2026-06-29",
-    "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000901&receive_div_cd=O",
-    "body_excerpt": "",
-    "category": "신입",
-    "location": "",
-    "emp_type": "파트타임",
-    "native_id": "samjong-2026-kicpa-parttime",
-    "uid": "samjong:samjong-2026-kicpa-parttime",
-    "first_seen": "2026-06-29T10:31:30",
-    "last_seen": "2026-06-29",
-    "notified": true,
-    "notified_date": "2026-06-29"
+    "notified_date": "2026-06-29",
+    "manual": true
   }
 }

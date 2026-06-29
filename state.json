@@ -977,7 +977,8 @@
     "uid": "samjong:KPMG00000000000000000000000901",
     "first_seen": "2026-06-29T09:01:47",
     "last_seen": "2026-06-29",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-06-29"
   },
   "samjong:KPMG00000000000000000000000900": {
     "source": "samjong",
@@ -995,6 +996,7 @@
     "uid": "samjong:KPMG00000000000000000000000900",
     "first_seen": "2026-06-29T09:01:47",
     "last_seen": "2026-06-29",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-06-29"
   }
 }

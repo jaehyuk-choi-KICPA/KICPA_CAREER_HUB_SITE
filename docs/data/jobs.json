@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-06-29T16:31:35",
+  "generated_at": "2026-06-29T17:01:32",
   "soon_days": 7,
   "counts": {
-    "total": 64,
-    "open": 41,
+    "total": 65,
+    "open": 42,
     "closed": 23,
-    "new": 7,
+    "new": 8,
     "soon": 16,
     "by_firm": {
       "삼일": 11,
       "삼정": 4,
       "안진": 10,
       "한영": 19,
-      "로컬": 17,
+      "로컬": 18,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 28,
+      "수습CPA": 29,
       "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 24,
-      "정규직": 32,
+      "정규직": 33,
       "계약직": 4,
       "파트타임": 4
     }
@@ -672,6 +672,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782442011240",
       "dday": 32,
       "first_seen": "2026-06-26T12:01:31"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[PKF서현회계법인] 감사BU 전문가 채용",
+      "company": "서현회계법인",
+      "deadline": "2026-07-31",
+      "posted_date": "2026-06-29",
+      "location": "서울 강남구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1782718935103",
+      "dday": 32,
+      "first_seen": "2026-06-29T17:01:32"
     },
     {
       "source": "samil",

@@ -643,11 +643,15 @@ function big4TrackLine(f, tr) {
   const md = (s) => (s || "").slice(5, 10);   // YYYY-MM-DD → MM-DD
   const range = tr.start ? `${md(tr.start)} ~ ${md(tr.end)}` : (tr.end ? `~ ${md(tr.end)} 마감` : "");
   const ddText = big4DdayText(f, tr.end);
-  return el("div", { class:"big4-track" }, [
+  const kids = [
     tr.name ? el("span", { class:"big4-tname", text:tr.name }) : null,
     el("span", { class:"big4-trange", text:range }),
     ddText ? el("span", { class:"big4-dday", text:ddText }) : null,
-  ]);
+  ];
+  // 트랙별 공고 url 있으면 그 줄을 개별 링크로(감사/비감사 '나눠서' 진입). 없으면 박스 전체 링크 사용.
+  return tr.url
+    ? el("a", { class:"big4-track big4-track-link", href:tr.url, target:"_blank", rel:"noopener" }, kids)
+    : el("div", { class:"big4-track" }, kids);
 }
 function big4Row(f) {
   const [statLabel, statClass] = BIG4_STATUS[f.status] || ["", ""];
@@ -656,7 +660,7 @@ function big4Row(f) {
     ? tracks.map((tr) => big4TrackLine(f, tr))
     : [el("div", { class:"big4-track big4-tba", text:"일정 미정 · 추후 공개" })];
   const fc = FIRM_COLOR[f.firm] || "#6b7684";
-  const row = el("article", { class:"big4-row" + (f.status === "closed" ? " is-closed" : ""),
+  const row = el("article", { class:"big4-row" + (f.status !== "open" ? " is-dim" : ""),   // 진행중 아니면 회색(불 꺼진 느낌)
     style:`--firm:${fc}` }, [
     el("div", { class:"big4-top" }, [
       el("span", { class:"big4-firm", text:f.label || FIRM_FULL[f.firm] || f.firm }),

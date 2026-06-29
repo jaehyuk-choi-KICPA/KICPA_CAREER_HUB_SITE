@@ -198,7 +198,10 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
   border-radius:11px; box-shadow:var(--shadow); cursor:pointer; transition:border-color .12s, transform .12s, box-shadow .12s; overflow:hidden; }
 .big4-row::before { content:""; position:absolute; left:0; top:0; bottom:0; width:4px; background:var(--firm); }
 .big4-row:hover { border-color:#c9d3e2; transform:translateY(-1px); box-shadow:0 4px 16px rgba(16,40,80,.09); }
-.big4-row.is-closed { opacity:.6; }
+/* 진행중(open) 아닌 회사: 불 꺼진 듯 회색(좌측 바·법인명 muted + 흐리게) */
+.big4-row.is-dim { opacity:.62; }
+.big4-row.is-dim::before { background:var(--muted); }
+.big4-row.is-dim .big4-firm { color:var(--muted); }
 .big4-top { display:flex; align-items:center; gap:7px; margin-bottom:4px; }
 .big4-firm { font-size:11.5px; font-weight:800; color:var(--firm); }
 .big4-badge { margin-left:auto; font-size:10px; font-weight:800; padding:2px 7px; border-radius:999px;
@@ -216,6 +219,10 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .big4-dday { margin-left:auto; flex:0 0 auto; font-size:11.5px; font-weight:600; color:#c92a2a; }
 [data-theme="dark"] .big4-dday { color:#ef6f6f; }
 .big4-tba { color:var(--muted); font-weight:600; }
+/* 트랙별 공고 링크(감사/비감사 개별 진입) — 클릭 affordance(밑줄 + hover 하이라이트) */
+.big4-track-link { text-decoration:none; cursor:pointer; border-radius:6px; margin:0 -5px; padding:2px 5px; transition:background .12s; }
+.big4-track-link:hover { background:var(--accent-soft); }
+.big4-track-link .big4-tname { text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:2px; }
 
 /* 금일 기사/인사이트 미니 박스 — 모바일 포함 전 폭 노출(모바일은 더 작게, PC가 더 크게) */
 .today-mini-row { display:grid; grid-template-columns:1fr 1fr; gap:7px; margin-top:9px; }   /* 금일 기사 박스 절반 폭 */

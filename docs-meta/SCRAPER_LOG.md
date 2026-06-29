@@ -20,6 +20,14 @@
 
 ---
 
+## 2026-06-29 (19) — 채용: ATS 미수집 공고 수동 추가(manual_jobs.json) — 삼일PwC
+
+- **증상/계기:** 삼일PwC 정기채용은 **개별 HTML 페이지**(ATS 아님)라 크롤러가 자동 수집 못 함([[insight-big4-regular-recruit]]). 시즌에 3건(감사/비감사/파트타임)을 **채용목록 + 푸시 알림**에 올려야 함.
+- **무엇을 / 어디에:** `docs/data/manual_jobs.json`(수동 큐레이션 공고) 신설 + `export._load_manual_postings` → **`build_jobs`에서 크롤 결과 뒤에 주입**. native_id 고정이라 uid 안정 → `filter_postings`·classify·`state.update`(first_seen/notified=False)·dedup·jobs.json·**notifier**가 전부 동일 경로로 처리. 즉 NEW 패널 노출 + **푸시 1회**(uid 안정이라 재발송 없음). 파일 없음/형식 이상은 빈 리스트(전체 실패 금지).
+- **효과/검증:** 로컬 수집에서 삼일 3건이 **firm 삼일·수습CPA·정규/파트·open·NEW**로 정확 분류. 시즌 종료 시 manual_jobs.json에서 항목 삭제하면 됨. (state/jobs는 run-all이 소유 — 로컬분 미커밋, 코드+데이터만 커밋.) [[insight-notifier-inactive]] [[insight-jobs-grace-persistence]]
+
+---
+
 ## 2026-06-28 (18) — 기사: 세무 지역지·교육·프로필 노이즈 제거 + 채용 쿼리 '미지정' 보강
 
 - **증상/계기:** 세무에 **지역 일간지**(울산신문·충북일보·시사일보·자치안성신문·부산일보·농민신문 등)발 *지역 상의/세무서 교육·설명회·인사 프로필* 노이즈 다수. 채용·시험은 라이브 8건으로 정체돼 보임(신한금융 미지정 채용류도 안 보임).

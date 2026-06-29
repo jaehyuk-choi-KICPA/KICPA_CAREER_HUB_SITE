@@ -15,6 +15,8 @@
    (로컬=KICPA 보드의 회계·세무 법인 / 기타=그 외 일반기업·공공 등. `config.dashboard.local_keywords`로 구분.)
    방금 올라온 공고 패널은 책갈피로 **빅4 신입 공채 특집**(삼일·삼정·안진·한영 정기채용 일정)과 전환 —
    **수동 큐레이션 `docs/data/big4_recruit.json`**(export 파이프라인과 분리, 시즌마다 수기 갱신). 법인색 좌측 바.
+   삼일PwC 정기채용은 **개별 HTML 페이지라 크롤러 미수집** → **`docs/data/manual_jobs.json`**에 수기 추가하면 `export._load_manual_postings`가
+   build_jobs에 주입해 **채용목록·NEW·푸시 알림까지 동일 처리**(native_id 고정=알림 1회). 시즌 종료 시 항목 삭제.
 2. **기사** — Google News RSS(`news_rss.py`), 4분류(채용·시험/감사/세무/딜·M&A). 제목+출처+링크만, 노이즈 제외, 기본 21일 보존(카테고리별 차등).
 3. **빅펌 인사이트** — 삼일·삼정·안진·한영 간행물(`insights.py`). 사이트가 JS(SPA)라 **Playwright 헤드리스**(`render.py`)로 렌더 후 링크 추출.
    (프론트 탭은 **기사/인사이트 한 탭으로 통합** — 탭 내부 📰기사 ↔ 📑인사이트 책갈피로 전환. 백엔드 데이터는 그대로 분리.)

@@ -19,6 +19,7 @@ from src.adapters.news_rss import build_news_adapters
 from src.classify import classify_emp_kind, classify_field, classify_firm, classify_qualification
 from src.config import load_config
 from src.filters import filter_postings
+from src.record import Posting
 from src.sources import build_adapters, fetch_all
 from src.state import State
 from src.util import dday, is_open, today_iso
@@ -85,6 +86,31 @@ def _write_guarded(name: str, payload: dict, items_key: str) -> bool:
     return True
 
 
+def _load_manual_postings(cfg: dict) -> list[Posting]:
+    """ATS 미수집 공고 수동 추가(삼일PwC 등 개별페이지형) — docs/data/manual_jobs.json을 Posting으로 변환.
+    매 run 재주입(해당 소스 크롤 0건이라 carry_forward로 못 살림). native_id 고정이라 uid 안정 → 알림 1회.
+    파일 없음/형식 이상은 빈 리스트(전체 실패 금지)."""
+    path = cfg["dashboard"].get("manual_jobs_path", "docs/data/manual_jobs.json")
+    try:
+        data = json.loads(Path(path).read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        return []
+    out = []
+    for d in data.get("postings", []):
+        try:
+            out.append(Posting(
+                source=d.get("source", "manual"), source_label=d.get("source_label", ""),
+                title=d.get("title", ""), company=d.get("company", ""),
+                deadline=d.get("deadline", ""), posted_date=d.get("posted_date", ""),
+                url=d.get("url", ""), category=d.get("category", ""),
+                location=d.get("location", ""), emp_type=d.get("emp_type", ""),
+                native_id=d.get("native_id", ""),
+            ))
+        except Exception:  # noqa: BLE001
+            continue
+    return out
+
+
 def build_jobs(cfg: dict, state: State) -> dict:
     """채용 데이터 수집·분류 → jobs payload dict."""
     adapters = build_adapters(cfg, state)
@@ -95,6 +121,11 @@ def build_jobs(cfg: dict, state: State) -> dict:
     for res in results:
         report.append((res.label, res.ok, res.count, res.error))
         postings.extend(res.postings)
+
+    manual = _load_manual_postings(cfg)   # ATS 미수집 수동 공고(삼일 등) 합치기 — 분류·NEW·알림 동일 처리
+    if manual:
+        postings.extend(manual)
+        print(f"  [수동] 큐레이션 공고 {len(manual)}건 추가")
 
     kept = filter_postings(postings, cfg)  # 경력 제외(수습/주니어 타깃)
 

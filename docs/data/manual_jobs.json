@@ -1,0 +1,26 @@
+{
+  "note": "ATS 미수집 공고를 채용목록에 수동 추가(삼일PwC 등 개별페이지형). build_jobs가 크롤 결과에 합쳐 분류·NEW·푸시알림까지 동일하게 처리. native_id는 고정(uid 안정 → 알림 1회). 시즌 종료 시 항목 삭제.",
+  "postings": [
+    {
+      "source": "samil", "source_label": "삼일PwC", "native_id": "samil-2026-kicpa-audit",
+      "title": "공인회계사 모집 - 감사", "company": "삼일PwC",
+      "deadline": "2026-08-13", "posted_date": "2026-06-29",
+      "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-full-time.html",
+      "emp_type": "정규직", "category": "신입"
+    },
+    {
+      "source": "samil", "source_label": "삼일PwC", "native_id": "samil-2026-kicpa-nonaudit",
+      "title": "공인회계사 모집 - 비감사", "company": "삼일PwC",
+      "deadline": "2026-07-23", "posted_date": "2026-06-29",
+      "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-full-time.html",
+      "emp_type": "정규직", "category": "신입"
+    },
+    {
+      "source": "samil", "source_label": "삼일PwC", "native_id": "samil-2026-kicpa-parttime",
+      "title": "공인회계사 모집 - PART TIME", "company": "삼일PwC",
+      "deadline": "2026-08-13", "posted_date": "2026-06-29",
+      "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-part-time.html",
+      "emp_type": "파트타임", "category": "신입"
+    }
+  ]
+}

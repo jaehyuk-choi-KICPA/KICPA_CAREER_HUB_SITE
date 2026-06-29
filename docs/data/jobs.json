@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-06-29T10:01:32",
+  "generated_at": "2026-06-29T10:10:15",
   "soon_days": 7,
   "counts": {
-    "total": 60,
-    "open": 37,
+    "total": 63,
+    "open": 40,
     "closed": 23,
-    "new": 2,
+    "new": 5,
     "soon": 16,
     "by_firm": {
-      "삼일": 8,
+      "삼일": 11,
       "삼정": 4,
       "안진": 10,
       "한영": 18,
@@ -16,14 +16,14 @@
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 24,
+      "수습CPA": 27,
       "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 24,
-      "정규직": 29,
+      "정규직": 31,
       "계약직": 4,
-      "파트타임": 3
+      "파트타임": 4
     }
   },
   "postings": [
@@ -560,6 +560,25 @@
       "first_seen": "2026-06-23T14:31:42"
     },
     {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "공인회계사 모집 - 비감사",
+      "company": "삼일PwC",
+      "deadline": "2026-07-23",
+      "posted_date": "2026-06-29",
+      "location": "",
+      "emp_type": "정규직",
+      "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-full-time.html",
+      "dday": 24,
+      "first_seen": "2026-06-29T10:10:15"
+    },
+    {
       "source": "anjin",
       "source_label": "딜로이트안진",
       "firm": "안진",
@@ -634,6 +653,44 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782442011240",
       "dday": 32,
       "first_seen": "2026-06-26T12:01:31"
+    },
+    {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "공인회계사 모집 - 감사",
+      "company": "삼일PwC",
+      "deadline": "2026-08-13",
+      "posted_date": "2026-06-29",
+      "location": "",
+      "emp_type": "정규직",
+      "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-full-time.html",
+      "dday": 45,
+      "first_seen": "2026-06-29T10:10:15"
+    },
+    {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "기타",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "공인회계사 모집 - PART TIME",
+      "company": "삼일PwC",
+      "deadline": "2026-08-13",
+      "posted_date": "2026-06-29",
+      "location": "",
+      "emp_type": "파트타임",
+      "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-part-time.html",
+      "dday": 45,
+      "first_seen": "2026-06-29T10:10:15"
     },
     {
       "source": "kicpa_susup",

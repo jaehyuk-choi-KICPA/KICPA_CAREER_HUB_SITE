@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-29T12:01:39",
+  "generated_at": "2026-06-29T12:31:37",
   "soon_days": 7,
   "counts": {
     "total": 63,
     "open": 40,
     "closed": 23,
-    "new": 5,
+    "new": 6,
     "soon": 16,
     "by_firm": {
       "삼일": 11,
@@ -142,25 +142,6 @@
       "first_seen": "2026-06-23T09:31:37"
     },
     {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "[우리회계법인] 수습공인회계사 채용 공고",
-      "company": "우리회계법인",
-      "deadline": "2026-06-30",
-      "posted_date": "2026-06-24",
-      "location": "서울 강남구",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1780625545782",
-      "dday": 1,
-      "first_seen": "2026-06-24T16:46:39"
-    },
-    {
       "source": "kicpa_cpa",
       "source_label": "구인(CPA)",
       "firm": "로컬",
@@ -292,6 +273,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5135",
       "dday": 4,
       "first_seen": "2026-06-24T10:01:32"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[다산회계법인 5본부] 수습 공인회계사 채용 공고",
+      "company": "다산회계법인",
+      "deadline": "2026-07-03",
+      "posted_date": "2026-06-29",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782703371725",
+      "dday": 4,
+      "first_seen": "2026-06-29T12:31:37"
     },
     {
       "source": "hanyoung",

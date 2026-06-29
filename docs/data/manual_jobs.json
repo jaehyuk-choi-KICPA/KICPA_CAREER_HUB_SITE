@@ -21,13 +21,14 @@
       "deadline": "2026-08-13", "posted_date": "2026-06-29",
       "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-part-time.html",
       "emp_type": "파트타임", "category": "신입"
-    },
-    {
-      "source": "samjong", "source_label": "삼정KPMG", "native_id": "samjong-2026-kicpa-parttime",
-      "title": "2026 수습회계사 공채 - 파트타임", "company": "삼정KPMG",
-      "deadline": "2026-07-19", "posted_date": "2026-06-29",
-      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000901&receive_div_cd=O",
-      "emp_type": "파트타임", "category": "신입"
     }
-  ]
+  ],
+  "title_appends": [
+    { "comment": "삼정 감사(901)는 파트타임 겸함 → 별도 카드로 분리하지 않고 기존 크롤 공고 제목에 표기",
+      "url_contains": "jobopen_id=KPMG00000000000000000000000901", "append": "(파트 포함)" }
+  ],
+  "prune_uids": [
+    "samjong:samjong-2026-kicpa-parttime"
+  ],
+  "_prune_note": "삼정 파트타임을 별도 카드로 분리했다 통합(제목 표기로 대체)하면서 남은 state 잔재 제거. carry_forward 좀비 방지용 일회성 — 다음 run-all로 정리되면 비워도 됨."
 }

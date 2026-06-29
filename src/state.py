@@ -105,6 +105,8 @@ class State:
         for uid, e in self.entries.items():
             if uid in present_uids:
                 continue
+            if e.get("manual"):   # 수동 큐레이션 공고는 깜빡임 복원 안 함(manual_jobs.json에서 빼면 즉시 드롭)
+                continue
             if not is_open(e.get("deadline", ""), today=today):
                 continue
             if (e.get("last_seen") or "") < cutoff:   # 너무 오래 안 보이면 복원 중단

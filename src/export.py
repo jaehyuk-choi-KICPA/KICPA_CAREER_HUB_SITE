@@ -111,6 +111,16 @@ def _load_manual_postings(cfg: dict) -> list[Posting]:
     return out
 
 
+def _load_job_title_appends(cfg: dict) -> list[dict]:
+    """크롤 공고 제목에 표시용 접미사 부여(별도 카드 분리 없이). 예: 삼정 감사(901)=파트 포함.
+    manual_jobs.json의 `title_appends`(url_contains·append). 표시 전용 — state/알림 제목엔 미반영."""
+    path = cfg["dashboard"].get("manual_jobs_path", "docs/data/manual_jobs.json")
+    try:
+        return json.loads(Path(path).read_text(encoding="utf-8")).get("title_appends", [])
+    except Exception:  # noqa: BLE001
+        return []
+
+
 def build_jobs(cfg: dict, state: State) -> dict:
     """채용 데이터 수집·분류 → jobs payload dict."""
     adapters = build_adapters(cfg, state)
@@ -133,6 +143,19 @@ def build_jobs(cfg: dict, state: State) -> dict:
     # 이번에 빠졌어도 마감 전·최근 목격분은 복원(상세는 살아있음). grace_days 넘으면 자동 탈락.
     present_uids = {p.uid for p in kept}
     state.update(kept)                      # 본 공고의 last_seen 갱신 + 신규 기록
+
+    # 수동 공고 정리: ① prune_uids(통합/제거된 잔재)를 state에서 삭제 ② 현 수동분에 manual 플래그
+    #   → carry_forward(깜빡임 복원)가 수동 공고를 되살리지 않게(파일에서 빼면 즉시 사라짐).
+    try:
+        _mj = json.loads(Path(cfg["dashboard"].get("manual_jobs_path", "docs/data/manual_jobs.json")).read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        _mj = {}
+    for _uid in _mj.get("prune_uids", []):
+        state.entries.pop(_uid, None)
+    for _p in manual:
+        _e = state.entries.get(_p.uid)
+        if _e is not None:
+            _e["manual"] = True
     grace_days = cfg["dashboard"].get("jobs_grace_days", 2)
     # grace 복원분도 현재 필터를 통과해야 함 — 경력공고 등 '필터로 빠진' 건이 state에 남아
     # grace로 되살아나는 것 방지(목록서 일시 누락=복원 대상 / 필터 제외=복원 금지).
@@ -195,6 +218,15 @@ def build_jobs(cfg: dict, state: State) -> dict:
                 "first_seen": first_seen,
             }
         )
+
+    # 표시용 제목 접미사(예: 삼정 감사=파트 포함) — 크롤 공고에 별도 카드 분리 없이 표기
+    for rule in _load_job_title_appends(cfg):
+        uc, suf = rule.get("url_contains", ""), rule.get("append", "")
+        if not (uc and suf):
+            continue
+        for it in items:
+            if uc in (it.get("url") or "") and not it["title"].endswith(suf):
+                it["title"] += suf
 
     # 정렬: 진행중 먼저 → 마감 임박순(dday 작은 순, None=상시는 뒤) → 마감은 최근 게시순
     def _key(it):

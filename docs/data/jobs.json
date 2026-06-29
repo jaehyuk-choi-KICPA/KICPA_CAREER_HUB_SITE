@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-06-29T14:31:42",
+  "generated_at": "2026-06-29T15:01:35",
   "soon_days": 7,
   "counts": {
-    "total": 63,
-    "open": 40,
+    "total": 64,
+    "open": 41,
     "closed": 23,
-    "new": 6,
+    "new": 7,
     "soon": 16,
     "by_firm": {
       "삼일": 11,
       "삼정": 4,
       "안진": 10,
-      "한영": 18,
+      "한영": 19,
       "로컬": 17,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 27,
+      "수습CPA": 28,
       "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 24,
-      "정규직": 31,
+      "정규직": 32,
       "계약직": 4,
       "파트타임": 4
     }
@@ -520,6 +520,25 @@
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000901&receive_div_cd=O",
       "dday": 20,
       "first_seen": "2026-06-29T09:01:47"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "2026 신입공인회계사 모집",
+      "company": "EY한영",
+      "deadline": "2026-07-19",
+      "posted_date": "2026-06-29",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/119887",
+      "dday": 20,
+      "first_seen": "2026-06-29T15:01:35"
     },
     {
       "source": "kicpa_susup",

@@ -20,6 +20,17 @@
 
 ---
 
+## 2026-06-29 (20) — 채용: 수동 공고 carry_forward 제외 + 제목 표기 통합(삼정 파트타임)
+
+- **증상/계기:** 삼정 감사·파트타임은 **같은 전형/같은 URL(jobopen 901)**인데 파트타임을 **별도 수동 카드로 분리**했더니 ① 중복 알림 느낌 ② 최신순(게시순) 정렬 혼란(수동 first_seen이 크롤 공고보다 늦어 위로 튐). 또 manual_jobs.json에서 빼도 **carry_forward(KICPA 깜빡임 복원)**가 좀비로 되살림.
+- **무엇을 / 어디에:**
+  - `manual_jobs.json` **`title_appends`**(url_contains·append) 신설 + `export._load_job_title_appends` → **items 빌드 직후·정렬 전** 적용. 삼정 901 크롤 공고 제목에 **"(파트 포함)"** 접미사로 표기 → 별도 카드 폐기, 통합.
+  - `export.build_jobs`: 주입한 수동 공고에 **`manual` 플래그** 부여 + `state.carry_forward`가 **manual 공고는 복원 안 함**(`state.py`) → manual_jobs.json에서 빼면 **즉시 드롭**(깜빡임 보호는 크롤 공고 전용).
+  - `manual_jobs.json` **`prune_uids`** + export가 state에서 해당 uid 삭제 → 분리했다 통합한 **삼정 파트타임 좀비 잔재 일회성 제거**.
+- **효과/검증:** 로컬 수집에서 삼정 카드 3→2(감사"…Audit 전형(파트 포함)" + 비감사), **파트타임 분리카드 0건**·최신순 정상. origin/main state에 있던 좀비 uid는 prune로 정리 예정. [[insight-jobs-grace-persistence]] [[insight-jobs-first-seen-sort]]
+
+---
+
 ## 2026-06-29 (19) — 채용: ATS 미수집 공고 수동 추가(manual_jobs.json) — 삼일PwC
 
 - **증상/계기:** 삼일PwC 정기채용은 **개별 HTML 페이지**(ATS 아님)라 크롤러가 자동 수집 못 함([[insight-big4-regular-recruit]]). 시즌에 3건(감사/비감사/파트타임)을 **채용목록 + 푸시 알림**에 올려야 함.

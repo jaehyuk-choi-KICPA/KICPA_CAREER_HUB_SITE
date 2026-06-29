@@ -115,6 +115,9 @@ flowchart LR
 **KICPA 상세 보강(`kicpa.py._enrich_deadline`)**: KICPA 목록엔 마감일·모집대상이 없어 상세페이지를 1회 방문해 **마감일·근무지·고용형태 + 모집대상/자격요건 본문(`div.txt_infor`→`body_excerpt`)**을 채운다. 덕분에 `filters.passes`·`classify_qualification`이 **제목 너머 모집대상까지** 보고 판정(경력/신입 오분류 방지). 마감일·본문 모두 `native_id` 캐시(`state` 영속)로 **1회만 수집·재사용**. *(bypass: `kicpa_susup` 보드는 경력 필터 면제 — 보드 자체가 수습CPA 타깃.)*
 
 **수동 공고 주입(`export._load_manual_postings`)**: ATS 미수집(삼일PwC 개별페이지형) 공고는 **`docs/data/manual_jobs.json`**에 수기 등록 → `build_jobs`가 크롤 결과 뒤에 합친다. native_id 고정이라 uid 안정 → filter·classify·state(first_seen/notified)·dedup·jobs.json·**notifier(푸시)** 모두 동일 경로(=NEW 패널 + 알림 1회). 시즌 종료 시 항목 삭제. (빅4 특집 박스는 `big4_recruit.json` 별도 관리 — 두 파일 병행.)
+  - **`manual` 플래그**: 주입한 수동 공고는 `state.carry_forward`(KICPA 깜빡임 복원) **대상 제외** → manual_jobs.json에서 빼면 **즉시 드롭**(깜빡임 보호는 크롤 공고 전용).
+  - **`title_appends`**(url_contains·append): 특정 **크롤 공고** 제목에 표시용 접미사(별도 카드 분리 없이). 예: 삼정 감사(901)=파트타임 겸함 → "(파트 포함)" 표기. items 빌드 후·정렬 전 적용.
+  - **`prune_uids`**: 분리했다 통합한 잔재 등 **state 좀비 uid 일회성 삭제**(carry_forward 복원 방지).
 
 **크로스소스 중복 제거(`export._dedup_cross_source`)**: 같은 공고가 **한공회 재게시 + 빅4 자체 ATS** 양쪽에 뜨면(예: `[딜로이트 안진회계법인] 2026 신입회계사 정기채용`=kicpa_susup vs `2026 신입회계사 정기채용`=anjin) **(법인, 정규화제목) 동일**으로 보고 1건만 남긴다. 정규화=앞 '[회사명]' 접두 제거+공백·구두점 제거. **빅4 자체 ATS(직접 지원 링크)를 우선 보존**, 한공회 재게시 제거. `build_jobs` hydrate 직후 적용.
 

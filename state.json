@@ -1015,7 +1015,8 @@
     "uid": "samil:samil-2026-kicpa-audit",
     "first_seen": "2026-06-29T10:10:15",
     "last_seen": "2026-06-29",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-06-29"
   },
   "samil:samil-2026-kicpa-nonaudit": {
     "source": "samil",
@@ -1033,7 +1034,8 @@
     "uid": "samil:samil-2026-kicpa-nonaudit",
     "first_seen": "2026-06-29T10:10:15",
     "last_seen": "2026-06-29",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-06-29"
   },
   "samil:samil-2026-kicpa-parttime": {
     "source": "samil",
@@ -1051,7 +1053,8 @@
     "uid": "samil:samil-2026-kicpa-parttime",
     "first_seen": "2026-06-29T10:10:15",
     "last_seen": "2026-06-29",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-06-29"
   },
   "samjong:samjong-2026-kicpa-parttime": {
     "source": "samjong",
@@ -1069,6 +1072,7 @@
     "uid": "samjong:samjong-2026-kicpa-parttime",
     "first_seen": "2026-06-29T10:31:30",
     "last_seen": "2026-06-29",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-06-29"
   }
 }

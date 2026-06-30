@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-01T00:01:50",
+  "generated_at": "2026-07-01T00:31:38",
   "soon_days": 7,
   "counts": {
     "total": 71,
-    "open": 44,
-    "closed": 27,
+    "open": 45,
+    "closed": 26,
     "new": 7,
     "soon": 14,
     "by_firm": {
@@ -21,9 +21,9 @@
     },
     "by_emp_kind": {
       "인턴": 27,
-      "정규직": 37,
+      "정규직": 36,
       "계약직": 3,
-      "파트타임": 4
+      "파트타임": 5
     }
   },
   "postings": [
@@ -330,6 +330,25 @@
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000886&receive_div_cd=O",
       "dday": 9,
       "first_seen": "2026-06-17T20:17:10"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": false,
+      "title": "신입, 경력직원 채용",
+      "company": "한경회계법인",
+      "deadline": "2026-07-10",
+      "posted_date": "2026-06-24",
+      "location": "서울 송파구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1781429126756",
+      "dday": 9,
+      "first_seen": "2026-07-01T00:31:38"
     },
     {
       "source": "anjin",
@@ -1294,8 +1313,8 @@
       "company": "NICE인프",
       "deadline": "2026-06-30",
       "posted_date": "2026-06-15",
-      "location": "",
-      "emp_type": "",
+      "location": "서울 마포구",
+      "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1781485982281",
       "dday": -1,
       "first_seen": ""
@@ -1313,8 +1332,8 @@
       "company": "성우회계법인",
       "deadline": "2026-06-30",
       "posted_date": "2026-06-17",
-      "location": "",
-      "emp_type": "",
+      "location": "서울 영등포구",
+      "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1781686511790",
       "dday": -1,
       "first_seen": ""
@@ -1344,35 +1363,16 @@
       "firm": "로컬",
       "field": "감사",
       "qualification": "수습CPA",
-      "emp_kind": "정규직",
+      "emp_kind": "파트타임",
       "status": "closed",
       "is_new": false,
       "title": "[한울회계법인] 3본부 회계사 모집",
       "company": "한울회계법인",
       "deadline": "2026-06-30",
       "posted_date": "2026-06-23",
-      "location": "",
-      "emp_type": "",
+      "location": "서울 강남구",
+      "emp_type": "Part Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782173629108",
-      "dday": -1,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_cpa",
-      "source_label": "구인(CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "자격무관",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "신입, 경력직원 채용",
-      "company": "한경회계법인",
-      "deadline": "2026-06-30",
-      "posted_date": "2026-06-24",
-      "location": "",
-      "emp_type": "",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1781429126756",
       "dday": -1,
       "first_seen": ""
     }

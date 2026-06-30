@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-06-30T17:01:37",
+  "generated_at": "2026-06-30T17:31:39",
   "soon_days": 7,
   "counts": {
-    "total": 68,
-    "open": 46,
+    "total": 69,
+    "open": 47,
     "closed": 22,
-    "new": 3,
+    "new": 4,
     "soon": 19,
     "by_firm": {
       "삼일": 11,
-      "삼정": 4,
+      "삼정": 5,
       "안진": 10,
       "한영": 21,
       "로컬": 19,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 30,
-      "자격무관": 38
+      "자격무관": 39
     },
     "by_emp_kind": {
-      "인턴": 26,
+      "인턴": 27,
       "정규직": 34,
       "계약직": 4,
       "파트타임": 4
@@ -767,6 +767,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782782076689",
       "dday": 31,
       "first_seen": "2026-06-30T10:31:30"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "[Audit] ESG 인턴 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-07-31",
+      "posted_date": "2026-06-30",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000899&receive_div_cd=N",
+      "dday": 31,
+      "first_seen": "2026-06-30T17:31:39"
     },
     {
       "source": "samil",

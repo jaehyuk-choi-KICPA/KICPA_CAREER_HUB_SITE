@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-06-30T20:31:31",
+  "generated_at": "2026-06-30T21:01:40",
   "soon_days": 7,
   "counts": {
-    "total": 69,
-    "open": 47,
+    "total": 70,
+    "open": 48,
     "closed": 22,
-    "new": 4,
+    "new": 5,
     "soon": 19,
     "by_firm": {
       "삼일": 11,
       "삼정": 5,
       "안진": 10,
       "한영": 21,
-      "로컬": 19,
+      "로컬": 20,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 30,
+      "수습CPA": 31,
       "자격무관": 39
     },
     "by_emp_kind": {
       "인턴": 27,
-      "정규직": 34,
+      "정규직": 35,
       "계약직": 4,
       "파트타임": 4
     }
@@ -748,6 +748,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1782718935103",
       "dday": 31,
       "first_seen": "2026-06-29T17:01:32"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "함께 일할 회계사님을 모십니다.",
+      "company": "회계법인 지평",
+      "deadline": "2026-07-31",
+      "posted_date": "2026-06-30",
+      "location": "부산 해운대구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782819762693",
+      "dday": 31,
+      "first_seen": "2026-06-30T21:01:40"
     },
     {
       "source": "kicpa_susup",

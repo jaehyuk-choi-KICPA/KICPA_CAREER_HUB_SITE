@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-06-30T09:01:38",
+  "generated_at": "2026-06-30T09:31:32",
   "soon_days": 7,
   "counts": {
     "total": 65,
     "open": 43,
     "closed": 22,
-    "new": 8,
+    "new": 6,
     "soon": 18,
     "by_firm": {
       "삼일": 11,
@@ -377,7 +377,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "2026 수습회계사 공채 - Tax, Deal Advisory, CS 전형",
       "company": "삼정KPMG",
       "deadline": "2026-07-08",
@@ -529,7 +529,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "2026 수습회계사 공채 - Audit 전형(파트 포함)",
       "company": "삼정KPMG",
       "deadline": "2026-07-19",

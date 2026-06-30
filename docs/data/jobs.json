@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-06-30T22:31:40",
+  "generated_at": "2026-06-30T23:01:43",
   "soon_days": 7,
   "counts": {
-    "total": 70,
-    "open": 48,
+    "total": 71,
+    "open": 49,
     "closed": 22,
-    "new": 5,
+    "new": 6,
     "soon": 19,
     "by_firm": {
       "삼일": 11,
       "삼정": 5,
       "안진": 10,
       "한영": 21,
-      "로컬": 20,
+      "로컬": 21,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 31,
+      "수습CPA": 32,
       "자격무관": 39
     },
     "by_emp_kind": {
       "인턴": 27,
-      "정규직": 35,
+      "정규직": 36,
       "계약직": 4,
       "파트타임": 4
     }
@@ -786,6 +786,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782782076689",
       "dday": 31,
       "first_seen": "2026-06-30T10:31:30"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "삼덕회계법인 기장반 경력직/정규직(2명)_수습 1개월",
+      "company": "삼덕회계법인",
+      "deadline": "2026-07-31",
+      "posted_date": "2026-06-30",
+      "location": "서울 종로구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1782827216874",
+      "dday": 31,
+      "first_seen": "2026-06-30T23:01:43"
     },
     {
       "source": "samjong",

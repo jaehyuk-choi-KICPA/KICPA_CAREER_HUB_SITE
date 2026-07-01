@@ -168,14 +168,17 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 
 /* 책갈피 토글: 패널 박스 '위로' 빼서 폴더 탭처럼(활성 탭이 패널과 이어짐) */
 .today-tabs { display:flex; gap:5px; margin:0 4px -1px; position:relative; z-index:1; }
-.today-tab { flex:1; padding:9px 6px; border:1px solid var(--panel-line); border-bottom:none; background:var(--bg);
+/* 비활성 = 회색으로 '뒤에 접힌 탭'처럼 눌러 보이게(선택 아님이 한눈에) */
+.today-tab { flex:1; padding:9px 6px; border:1px solid var(--panel-line); border-bottom:none; background:var(--chip-bg);
   color:var(--muted); border-radius:11px 11px 0 0; font-size:11.5px; font-weight:800; cursor:pointer;
-  font-family:inherit; line-height:1.25; transition:color .12s, background .12s; }
-.today-tab:hover:not(.on):not(:disabled) { color:var(--ink); }
-.today-tab.on { color:var(--panel-title); background:var(--panel-grad-a); }   /* 패널 상단색과 동일 → 이어 보임 */
+  font-family:inherit; line-height:1.25; transition:color .12s, background .12s, box-shadow .12s; }
+.today-tab:hover:not(.on):not(:disabled) { color:var(--ink); background:var(--seg-bg); }
+/* 활성 = 패널 배경색으로 이어지고 + 상단 컬러바로 '지금 열린 탭'을 명확히 표시 */
+.today-tab.on { color:var(--panel-title); background:var(--panel-grad-a); box-shadow:inset 0 3px 0 var(--panel-title); }
 .today-tab:disabled { opacity:.45; cursor:default; }
-/* 빅4 특집 탭 — 비활성일 때 액센트 '테두리만' 둘러 차분하게 강조(배경·글씨색 없음). 활성(.on)은 패널과 자연 병합 */
+/* 빅4 특집 탭 — 비활성은 accent 테두리로 '특집' 힌트(선택 아님), 활성이면 accent 상단바+글씨로 '열림'을 확실히 */
 .today-tab[data-view="big4"]:not(.on):not(:disabled) { border-color:var(--accent); }
+.today-tab[data-view="big4"].on { color:var(--accent); box-shadow:inset 0 3px 0 var(--accent); }
 /* 패널 상단 모서리는 각지게 → 위의 탭과 한 덩어리로 읽힘 */
 .today-panel { border-top-left-radius:0; border-top-right-radius:0; }
 .today-view[hidden] { display:none; }

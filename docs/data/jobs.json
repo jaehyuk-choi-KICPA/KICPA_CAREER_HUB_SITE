@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-01T13:31:40",
+  "generated_at": "2026-07-01T14:01:47",
   "soon_days": 7,
   "counts": {
-    "total": 73,
-    "open": 48,
+    "total": 74,
+    "open": 49,
     "closed": 25,
-    "new": 8,
-    "soon": 14,
+    "new": 9,
+    "soon": 15,
     "by_firm": {
       "삼일": 11,
       "삼정": 4,
-      "안진": 10,
+      "안진": 11,
       "한영": 21,
       "로컬": 24,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 34,
-      "자격무관": 39
+      "자격무관": 40
     },
     "by_emp_kind": {
-      "인턴": 27,
+      "인턴": 28,
       "정규직": 36,
       "계약직": 3,
       "파트타임": 7
@@ -159,6 +159,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782703371725",
       "dday": 2,
       "first_seen": "2026-06-29T12:31:37"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "회계감사부문 비감사 프로젝트 업무 지원 인턴",
+      "company": "딜로이트 안진",
+      "deadline": "2026-07-03",
+      "posted_date": "2026-07-01",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5142",
+      "dday": 2,
+      "first_seen": "2026-07-01T14:01:47"
     },
     {
       "source": "hanyoung",

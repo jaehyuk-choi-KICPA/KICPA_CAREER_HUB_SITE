@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-07-01T09:31:35",
+  "generated_at": "2026-07-01T10:01:39",
   "soon_days": 7,
   "counts": {
-    "total": 71,
-    "open": 46,
+    "total": 72,
+    "open": 47,
     "closed": 25,
-    "new": 8,
+    "new": 9,
     "soon": 14,
     "by_firm": {
       "삼일": 11,
       "삼정": 4,
       "안진": 10,
       "한영": 21,
-      "로컬": 22,
+      "로컬": 23,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 33,
-      "자격무관": 38
+      "자격무관": 39
     },
     "by_emp_kind": {
       "인턴": 27,
       "정규직": 36,
       "계약직": 3,
-      "파트타임": 5
+      "파트타임": 6
     }
   },
   "postings": [
@@ -368,6 +368,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5140",
       "dday": 9,
       "first_seen": "2026-06-26T17:31:34"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "회계법인 부가가치세 아르바이트 모집",
+      "company": "선진회계법인",
+      "deadline": "2026-07-10",
+      "posted_date": "2026-07-01",
+      "location": "서울 강남구",
+      "emp_type": "시간제",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1782866277473",
+      "dday": 9,
+      "first_seen": "2026-07-01T10:01:39"
     },
     {
       "source": "kicpa_susup",

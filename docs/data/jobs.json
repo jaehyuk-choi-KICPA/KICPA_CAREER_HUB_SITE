@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-01T09:01:48",
+  "generated_at": "2026-07-01T09:31:35",
   "soon_days": 7,
   "counts": {
     "total": 71,
-    "open": 45,
-    "closed": 26,
-    "new": 7,
+    "open": 46,
+    "closed": 25,
+    "new": 8,
     "soon": 14,
     "by_firm": {
       "삼일": 11,
@@ -750,6 +750,25 @@
       "first_seen": "2026-06-30T17:31:39"
     },
     {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[한울회계법인] 3본부 회계사 모집",
+      "company": "한울회계법인",
+      "deadline": "2026-07-31",
+      "posted_date": "2026-07-01",
+      "location": "서울 강남구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782173629108",
+      "dday": 30,
+      "first_seen": "2026-07-01T09:31:35"
+    },
+    {
       "source": "samil",
       "source_label": "삼일PwC",
       "firm": "삼일",
@@ -1354,25 +1373,6 @@
       "location": "",
       "emp_type": "신입/경력",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/117226",
-      "dday": -1,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "파트타임",
-      "status": "closed",
-      "is_new": false,
-      "title": "[한울회계법인] 3본부 회계사 모집",
-      "company": "한울회계법인",
-      "deadline": "2026-06-30",
-      "posted_date": "2026-06-23",
-      "location": "서울 강남구",
-      "emp_type": "Part Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782173629108",
       "dday": -1,
       "first_seen": ""
     }

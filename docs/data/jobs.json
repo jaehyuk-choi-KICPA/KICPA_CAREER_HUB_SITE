@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-01T12:01:36",
+  "generated_at": "2026-07-01T12:31:31",
   "soon_days": 7,
   "counts": {
     "total": 73,
     "open": 48,
     "closed": 25,
-    "new": 9,
+    "new": 8,
     "soon": 14,
     "by_firm": {
       "삼일": 11,
@@ -225,7 +225,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "컨설팅부문 Digital 컨설팅 단기 인턴",
       "company": "EY한영",
       "deadline": "2026-07-05",

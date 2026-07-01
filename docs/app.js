@@ -73,7 +73,8 @@ function applyTheme(t) {
   applyTheme(t);
 })();
 
-// ---- 채용알림(웹 푸시) 구독 — scope: "all"(전체·인턴 포함) | "susup"(수습CPA 전용) ----
+// ---- 채용알림(웹 푸시) 구독 — scope: "all"(전체·인턴 포함) | "susup"(수습CPA 전용) | "big4intern"(빅4 인턴만) ----
+const SCOPE_LABEL = { all: "전체", susup: "수습CPA 전용", big4intern: "빅4 인턴만" };
 const VAPID_PUBLIC = "BP7FISRizBQtx8OHcwaspl-KTupAl_R82zTL7o0PqzhqrGj6-bxqY3X-92rNYhVXySuntQaO6fxIOVtDFHYA1Yg";  // config.notifications.vapid_public과 동일값
 const WORKER_URL = "https://hbmons-push.trackingsite.workers.dev";   // 구독 저장 Worker
 function urlB64ToUint8(base64) {
@@ -158,7 +159,7 @@ async function subscribePush(scope, msgEl) {
       method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body),
     });
     if (r.ok) { localStorage.setItem("push_scope", scope);
-      say(scope === "susup" ? "✅ 수습CPA 전용 새 공고 알림을 신청했어요!" : "✅ 전체 새 공고 알림을 신청했어요!"); }
+      say(`✅ ‘${SCOPE_LABEL[scope] || "전체"}’ 새 공고 알림을 신청했어요!`); }
     else { say("신청 처리에 실패했어요. 잠시 후 다시 시도해 주세요."); }
   } catch (e) {
     say("알림 신청 중 문제가 발생했어요" + (e && e.message ? ": " + e.message : "."));
@@ -441,7 +442,7 @@ function bindControls(data) {
       const cur = localStorage.getItem("push_scope");
       aNote.querySelectorAll(".alert-opt").forEach((o) => o.classList.toggle("on", o.dataset.scope === cur));
       const m = $("alert-msg");
-      if (m) m.textContent = cur ? (cur === "susup" ? "현재 ‘수습CPA 전용’ 알림 켜짐" : "현재 ‘전체’ 알림 켜짐") : "";
+      if (m) m.textContent = cur ? `현재 ‘${SCOPE_LABEL[cur] || "전체"}’ 알림 켜짐` : "";
     };
     aBtn.addEventListener("click", () => {
       aNote.hidden = !aNote.hidden;
@@ -606,9 +607,10 @@ function initSub(prefix, data, chipRowId, chipKey, fixed, cardFn, colors) {
 
 // ===================== 글자수·맞춤법 도구 =====================
 // 순수 클라이언트 유틸 — 입력 텍스트는 저장·전송하지 않는다(무수집 원칙).
-function countBytes(s) {            // 한글 등 멀티바이트=2, ASCII=1 (사라민식 자소서 바이트)
+let byteWeight = 2;                 // 한글 등 멀티바이트 1자당 byte(2=사람인식 / 3=삼정·UTF-8). 회사별 자소서 기준 전환용.
+function countBytes(s, w) {         // 멀티바이트(charCodeAt>127)=w, ASCII=1
   let n = 0;
-  for (const ch of s) n += ch.charCodeAt(0) > 127 ? 2 : 1;
+  for (const ch of s) n += ch.charCodeAt(0) > 127 ? w : 1;
   return n;
 }
 function renderTools() {
@@ -616,12 +618,21 @@ function renderTools() {
   const noSpace = text.replace(/\s/g, "");
   $("st-chars").textContent = text.length.toLocaleString();
   $("st-chars-ns").textContent = noSpace.length.toLocaleString();
-  $("st-bytes").textContent = countBytes(text).toLocaleString();
+  $("st-bytes").textContent = countBytes(text, byteWeight).toLocaleString();
+  const lbl = $("st-bytes-label");
+  if (lbl) lbl.textContent = `한글 ${byteWeight} · 영문 1`;
 }
 function initTools() {
   const ta = $("tool-text");
   if (!ta) return;
   ta.addEventListener("input", renderTools);
+  document.querySelectorAll(".byte-opt").forEach((opt) => {   // 2byte↔3byte 전환
+    opt.addEventListener("click", () => {
+      document.querySelectorAll(".byte-opt").forEach((o) => o.classList.toggle("on", o === opt));
+      byteWeight = +opt.dataset.bytes || 2;
+      renderTools();
+    });
+  });
   renderTools();
 }
 

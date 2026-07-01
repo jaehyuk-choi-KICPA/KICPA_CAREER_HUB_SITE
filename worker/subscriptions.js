@@ -100,8 +100,8 @@ export default {
       try { sub = await request.json(); } catch (_) { return json({ error: "bad json" }, 400, cors); }
       if (!validSubscription(sub)) return json({ error: "invalid subscription" }, 400, cors);
       const key = "sub:" + (await sha256Hex(sub.endpoint));
-      // 알림 범위: "susup"(수습CPA 전용) | "all"(전체·인턴 포함, 기본)
-      const scope = sub.scope === "susup" ? "susup" : "all";
+      // 알림 범위: "susup"(수습CPA 전용) | "big4intern"(빅4 인턴만) | "all"(전체·인턴 포함, 기본)
+      const scope = ["susup", "big4intern"].includes(sub.scope) ? sub.scope : "all";
       const record = { endpoint: sub.endpoint, keys: sub.keys, scope, created: new Date().toISOString() };
       await env.SUBS.put(key, JSON.stringify(record));
       return json({ ok: true }, 201, cors);

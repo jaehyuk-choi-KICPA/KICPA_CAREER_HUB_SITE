@@ -21,7 +21,7 @@
 3. **빅펌 인사이트** — 삼일·삼정·안진·한영 간행물(`insights.py`). 사이트가 JS(SPA)라 **Playwright 헤드리스**(`render.py`)로 렌더 후 링크 추출.
    (프론트 탭은 **기사/인사이트 한 탭으로 통합** — 탭 내부 📰기사 ↔ 📑인사이트 책갈피로 전환. 백엔드 데이터는 그대로 분리.)
 - **글자수 탭(프론트 전용 유틸·무수집)** — 자소서 글자수(공백 포함/제외)·바이트 카운트 + 네이버 맞춤법 검사기 링크.
-  입력 텍스트는 클라이언트에서만 처리(저장·전송·수집 없음). 코어 수집 파이프라인과 무관.
+  바이트는 **한글 2byte(사람인)↔3byte(삼정) 토글**로 회사 기준에 맞춰 전환. 입력 텍스트는 클라이언트에서만 처리(저장·전송·수집 없음). 코어 수집 파이프라인과 무관.
 
 ## 설계 원칙 (변경 시 준수)
 - **어댑터 패턴**: 소스마다 다른 HTML/JSON/RSS를 `src/adapters/*`가 **공통 레코드**로 수렴. 채용=`record.Posting`,
@@ -75,7 +75,7 @@
 ⚠️ **GitHub 무료 public cron은 자주 드롭됨** — 정기 수집 주경로는 **외부 핑거(cron-job.org)**가 `run-all.yml`을 호출(수집 후 **채용알림 푸시 발송**도 수행).  
 수집 개별 yml(`scrape·scrape-news·scrape-insights`)은 수동 전용. 모니터링은 **통합 `monitor.yml`(5h)**이 주축(freshness 1h·sitecheck 3h는 안정화까지 병행 후 폐기 예정).
 
-- **채용알림(웹 푸시)**: 새 공고를 구독자 브라우저로 푸시(전체/수습CPA scope). 구독 저장=Cloudflare Worker(`worker/`), 발송=`src/notifier.py`(run-all 스텝). VAPID 개인키·READ 토큰은 GitHub Secret·wrangler secret에서만(코드엔 공개키만). 상세=WORKFLOW.md §5.5 / 사용설명서. 원래 카톡 "채용알림봇"(보류)의 웹 재구현.
+- **채용알림(웹 푸시)**: 새 공고를 구독자 브라우저로 푸시(전체/수습CPA/빅4인턴 scope — `big4intern`=빅4 법인×인턴 채용구분, notifier가 `classify_firm`·`classify_emp_kind`로 판정). 구독 저장=Cloudflare Worker(`worker/`), 발송=`src/notifier.py`(run-all 스텝). VAPID 개인키·READ 토큰은 GitHub Secret·wrangler secret에서만(코드엔 공개키만). 상세=WORKFLOW.md §5.5 / 사용설명서. 원래 카톡 "채용알림봇"(보류)의 웹 재구현.
 
 ### 자동화 신뢰성 = 통합 monitor.yml(5h) + 레거시 3층 (변경 시 함께 고려)
 1. **실행됐나** → `freshness.py` 2. **수집됐나** → `canary.py` (수동, 의도-인지 필수) 3. **제대로 보이나** → `sitecheck.py` → **`monitor.yml`(5h)이 canary+sitecheck 통합 점검**

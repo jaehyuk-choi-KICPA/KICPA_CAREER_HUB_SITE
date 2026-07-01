@@ -308,6 +308,18 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .alert-soon h3 { font-size:17px; }
 .about-card h3 { font-size:17px; font-weight:700; color:var(--ink); margin:32px 0 13px; text-align:center; }
 .about-card > :first-child { margin-top:0; }
+/* 최근 업데이트(접이식) — 이용안내 최상단, 최신순 */
+.updates-acc { text-align:left; background:var(--accent-soft); border:1px solid #cfe0f6; border-radius:11px;
+  padding:4px 14px; margin:0 0 16px; }
+.updates-acc > summary { list-style:none; cursor:pointer; padding:9px 0; font-size:14px; font-weight:800; color:var(--accent);
+  display:flex; align-items:center; gap:8px; }
+.updates-acc > summary::-webkit-details-marker { display:none; }
+.updates-acc > summary::after { content:"▾"; margin-left:auto; font-size:12px; color:var(--muted); transition:transform .15s; }
+.updates-acc[open] > summary::after { transform:rotate(180deg); }
+.upd-ver { font-size:11.5px; font-weight:800; color:#fff; background:var(--accent); border-radius:999px; padding:2px 8px; }
+.updates-acc .upd-list { list-style:none; margin:2px 0 10px; padding:0; }
+.updates-acc .upd-list li { margin:8px 0; padding:0; font-size:13px; color:var(--ink2); line-height:1.6; }
+.updates-acc .upd-list li::before { content:none; }
 /* 상단 안내 콜아웃(최근 서치 설명) — 가운데 정렬 */
 .about-note { background:var(--accent-soft); border:1px solid #cfe0f6; border-radius:10px;
   padding:12px 16px; margin:0 auto 8px; font-size:13.5px; color:var(--ink2); line-height:1.6; text-align:center; }
@@ -382,6 +394,15 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
   border:1px solid var(--line); border-radius:13px; background:var(--card); color:var(--ink);
   font-family:inherit; font-size:14.5px; line-height:1.6; box-shadow:var(--shadow); }
 .tool-text:focus { outline:none; border-color:var(--accent); }
+/* 바이트 기준 토글(2byte 사람인 / 3byte 삼정) */
+.byte-mode { display:flex; align-items:center; flex-wrap:wrap; gap:8px; margin:12px 0 0; }
+.byte-mode-t { font-size:12.5px; font-weight:700; color:var(--muted); }
+.byte-opt { padding:7px 13px; border:1px solid var(--line); background:var(--card); color:var(--muted);
+  border-radius:999px; font-size:12.5px; font-weight:700; cursor:pointer; font-family:inherit; white-space:nowrap; }
+.byte-opt em { font-style:normal; font-weight:500; opacity:.7; }
+.byte-opt:hover { border-color:var(--accent); color:var(--ink); }
+.byte-opt.on { background:var(--accent); border-color:var(--accent); color:#fff; }
+.byte-opt.on em { opacity:.85; }
 .tool-stats { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin:14px 0; }
 .tool-stats .stat { display:flex; flex-direction:column; align-items:center; gap:5px; padding:14px 6px;
   background:var(--card); border:1px solid var(--line); border-radius:12px; box-shadow:var(--shadow); }
@@ -407,8 +428,8 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
   .alert-off { margin-left:auto; align-self:auto; }
 }
 @media (min-width:1120px) {
-  /* 검색바(controls)는 rail+results 폭까지만 → 금일 박스는 우측 상단(2행 차지), 필터는 검색바 바로 아래 좌측 */
-  .jobs-layout { grid-template-columns:236px minmax(0,1fr) 282px; grid-template-areas:"controls controls today" "rail results today"; }
+  /* 검색바(controls)는 결과 컬럼 위로만 → 좌측 필터(rail)를 덮지 않게. 필터는 좌측에서 두 행 걸쳐 검색바와 같은 높이에서 시작 */
+  .jobs-layout { grid-template-columns:236px minmax(0,1fr) 282px; grid-template-areas:"rail controls today" "rail results today"; }
   .today-col { position:sticky; top:118px; }
 }
 @media (max-width:759px) {

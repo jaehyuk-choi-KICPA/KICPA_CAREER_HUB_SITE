@@ -29,7 +29,7 @@ import json
 import urllib.request
 from pathlib import Path
 
-from src.classify import classify_qualification
+from src.classify import classify_emp_kind, classify_firm, classify_qualification
 from src.config import load_config
 from src.record import Posting
 from src.state import State
@@ -47,6 +47,20 @@ def _is_susup(entry: dict, cfg: dict) -> bool:
         )
         return classify_qualification(p, cfg) == "수습CPA"
     except Exception:  # noqa: BLE001 — 판정 실패는 보수적으로 전체 구독자에게만(susup 제외)
+        return False
+
+
+def _is_big4_intern(entry: dict, cfg: dict) -> bool:
+    """state 엔트리가 빅4(삼일·삼정·안진·한영) 인턴 공고인지 — scope='big4intern' 구독자 필터용."""
+    try:
+        p = Posting(
+            source=entry.get("source", ""), source_label=entry.get("source_label", ""),
+            title=entry.get("title", ""), company=entry.get("company", ""),
+            body_excerpt=entry.get("body_excerpt", ""), emp_type=entry.get("emp_type", ""),
+            category=entry.get("category", ""), url=entry.get("url", ""),
+        )
+        return classify_firm(p, cfg) in ("삼일", "삼정", "안진", "한영") and classify_emp_kind(p, cfg) == "인턴"
+    except Exception:  # noqa: BLE001 — 판정 실패는 보수적으로 big4intern 구독자 제외
         return False
 
 
@@ -220,12 +234,16 @@ def run_notify(cfg: dict, *, dry_run: bool = False) -> dict:
     for t in capped:
         payload = _format_push(t, cfg)
         is_susup = _is_susup(t, cfg)            # scope 필터: 수습CPA 전용 구독자는 비-수습 공고 제외
+        is_big4intern = _is_big4_intern(t, cfg)  # scope 필터: 빅4 인턴 전용 구독자는 비-(빅4·인턴) 공고 제외
         sent_ok = 0
         transient = 0
         relevant = 0
         for sub in subs:
-            if sub.get("scope", "all") == "susup" and not is_susup:
+            scope = sub.get("scope", "all")
+            if scope == "susup" and not is_susup:
                 continue                         # 이 공고는 이 구독자 범위 밖 — 발송 안 함
+            if scope == "big4intern" and not is_big4intern:
+                continue                         # 빅4 인턴 구독자 범위 밖 — 발송 안 함
             relevant += 1
             res, ep = _send_one(sub, payload, cfg, vapid_priv)
             if res == "ok":

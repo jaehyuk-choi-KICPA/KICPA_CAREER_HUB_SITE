@@ -72,7 +72,7 @@
     <div class="wrap header-row">
       <div class="brand">
         <div class="brand-top">
-          <h1 title="채용공고 처음으로">회법몬<span class="ver">ver1.16</span></h1>
+          <h1 title="채용공고 처음으로">회법몬<span class="ver">ver1.17</span></h1>
           <button id="theme-toggle" class="theme-btn" aria-label="다크모드 전환" title="다크모드 전환">🌙</button>
         </div>
       </div>
@@ -107,6 +107,7 @@
             <div class="alert-opts">
               <button class="alert-opt" type="button" data-scope="all">전체 <em>(자격무관 포함)</em></button>
               <button class="alert-opt" type="button" data-scope="susup">수습CPA 전용</button>
+              <button class="alert-opt" type="button" data-scope="big4intern">빅4 인턴만</button>
             </div>
             <button class="alert-off" id="alert-off" type="button">🔕 알림 끄기</button>
             <span class="alert-msg" id="alert-msg"></span>
@@ -197,10 +198,16 @@
         </div>
         <textarea id="tool-text" class="tool-text" rows="12" placeholder="여기에 자기소개서 등 글을 붙여넣으면 글자수가 실시간으로 표시됩니다." spellcheck="true"></textarea>
 
+        <div class="byte-mode" id="byte-mode" role="group" aria-label="바이트 기준">
+          <span class="byte-mode-t">바이트 기준</span>
+          <button type="button" class="byte-opt on" data-bytes="2">한글 2byte <em>사람인 등</em></button>
+          <button type="button" class="byte-opt" data-bytes="3">한글 3byte <em>삼정 등</em></button>
+        </div>
+
         <div class="tool-stats" id="tool-stats">
           <div class="stat"><span class="stat-n"><b id="st-chars">0</b><i>자</i></span><span class="stat-l">공백 포함</span></div>
           <div class="stat"><span class="stat-n"><b id="st-chars-ns">0</b><i>자</i></span><span class="stat-l">공백 제외</span></div>
-          <div class="stat"><span class="stat-n"><b id="st-bytes">0</b><i>byte</i></span><span class="stat-l">한글 2 · 영문 1</span></div>
+          <div class="stat"><span class="stat-n"><b id="st-bytes">0</b><i>byte</i></span><span class="stat-l" id="st-bytes-label">한글 2 · 영문 1</span></div>
         </div>
 
         <div class="tool-ext">
@@ -213,57 +220,60 @@
     <section id="tab-about" class="tab">
       <div class="about-lead"><img src="icon.svg" alt="회법몬" class="lead-logo" /> <strong>회법몬</strong>은 <strong>수습공인회계사·회계법인 입사 준비자</strong>를 위해 <strong>한국공인회계사회(한공회)</strong>와 <strong>빅4 회계법인(삼일PwC·삼정KPMG·딜로이트안진·EY한영)</strong>·로컬 회계법인의 채용공고와 회계·세무·딜 업계 뉴스, 빅펌 발간물을 한곳에 자동으로 모아주는 페이지입니다.</div>
       <div class="about-card">
-        <p class="about-note">🕑 상단의 <strong>‘최근 서치’</strong>는 마지막으로 공고·기사를 <strong>수집·점검한 시각</strong>이에요. 별도 새로고침 없이 자동으로 계속 갱신됩니다.</p>
+        <details class="updates-acc" open>
+          <summary>📢 최근 업데이트 <span class="upd-ver">v1.17</span></summary>
+          <ul class="upd-list">
+            <li><b>v1.17</b> — 채용알림에 <b>‘빅4 인턴만’</b> 옵션 추가, 글자수 탭에 <b>바이트 기준(2/3byte) 선택</b>(삼정=3byte), 이 <b>업데이트 소식</b> 신설·이용안내 간소화, PC 검색창 정렬 정리.</li>
+            <li><b>v1.16</b> — 채용 카드 가독성·밀도 개선(제목 확대·간격 축소·D-day 정렬).</li>
+            <li><b>v1.13</b> — 글자수 세기 탭 신설, 기사·인사이트 한 탭 통합, 빅4 신입 공채 특집.</li>
+          </ul>
+        </details>
+
+        <p class="about-note">🕑 상단의 <strong>‘최근 서치’</strong>는 마지막으로 공고·기사를 <strong>수집·점검한 시각</strong>이에요. 새로고침 없이 자동으로 갱신됩니다.</p>
 
         <h3>1. 누구를 위한 곳인가요?</h3>
         <ul>
-          <li>수습처(<strong>회계법인·공기업·일반기업 등</strong>)를 찾는 <strong>수습·신입 공인회계사</strong></li>
-          <li>빅4·로컬 회계법인 입사를 준비하는 분</li>
-          <li>빅4의 <strong>다양한 인턴</strong>(단기·정규전환형 등)을 노리는 분</li>
+          <li>수습처(회계법인·공기업·일반기업 등)를 찾는 <strong>수습·신입 공인회계사</strong></li>
+          <li>빅4·로컬 회계법인 입사나 <strong>빅4 인턴</strong>(단기·정규전환형 등)을 준비하는 분</li>
           <li>회계·세무·딜 업계 동향을 빠르게 훑고 싶은 분</li>
         </ul>
 
         <h3>2. 무엇을 모아오나요?</h3>
-        <p>한국공인회계사회와 빅4(삼일·삼정·안진·한영) 채용 사이트에서 <strong>수습·신입 공인회계사</strong>와 <strong>빅4의 다양한 인턴</strong>(단기·정규전환형 등) 공고를 위주로 모읍니다. 경력직만 대상으로 하는 공고는 제외하고, 신입·경력을 함께 뽑는 공고는 포함합니다. 회계법인뿐 아니라 한공회 구인란의 <strong>공기업·일반기업 등 기타 기관(수습처 포함)</strong> 공고도 함께 담아요.</p>
-        <p>기사·발간물은 원문을 옮겨오지 않고 <strong>제목과 링크만</strong> 연결합니다 — 자세한 내용은 원문에서 확인해 주세요.</p>
+        <p>한공회와 빅4(삼일·삼정·안진·한영) 채용 사이트에서 <strong>수습·신입 공인회계사</strong>와 <strong>빅4 인턴</strong> 공고를 모읍니다. 경력직만 뽑는 공고는 빼고, 신입·경력 동시 공고는 포함해요. 한공회 구인란의 <strong>공기업·일반기업 등 기타 수습처</strong>도 함께 담습니다. (기사·발간물은 <strong>제목·링크만</strong> 연결)</p>
 
         <h3>3. 채용알림은 어떻게 받나요?</h3>
-        <p>채용 화면 검색줄의 <strong>‘🔔 채용알림’</strong>을 누르고 알림을 켜면, 새 공고가 올라올 때 아래처럼 <strong>브라우저 푸시</strong>로 알려드립니다. 받을 범위를 고를 수 있어요.</p>
+        <p>검색줄의 <strong>‘🔔 채용알림’</strong>을 눌러 켜면, 새 공고가 올라올 때 아래처럼 <strong>브라우저 푸시</strong>로 알려드려요. 받을 범위는 셋 중에 고릅니다.</p>
         <figure class="help-figure">
           <img src="help-notify.png?v=1.12a" alt="새 공고 푸시 알림 예시 — '회법몬 — 새 채용공고' 제목과 공고명이 표시된 브라우저 알림" class="help-shot help-shot--notify" loading="lazy" />
           <figcaption>새 공고가 올라오면 받는 알림 예시입니다.</figcaption>
         </figure>
         <ul>
-          <li><strong>전체</strong> — 자격무관 공고를 포함한 모든 새 공고</li>
-          <li><strong>수습CPA 전용</strong> — KICPA 합격자(수습)를 대상으로 하는 공고만</li>
+          <li><strong>전체</strong> — 자격무관 포함 모든 새 공고</li>
+          <li><strong>수습CPA 전용</strong> — KICPA 합격자(수습) 대상 공고만</li>
+          <li><strong>빅4 인턴만</strong> — 삼일·삼정·안진·한영의 <strong>인턴</strong> 공고만</li>
         </ul>
-        <p class="muted">⏱️ 새 공고는 약 <strong>30분 주기</strong>로 수집되므로, 공고가 실제로 올라온 뒤 알림이 도착하기까지 <strong>최대 30분</strong> 정도 시차가 있을 수 있어요.</p>
-        <p class="muted">알림 설정은 이 브라우저(기기)에 저장됩니다. 끄려면 검색줄의 <strong>‘🔕 알림 끄기’</strong>를 누르거나 브라우저의 사이트 알림 설정에서 해제하면 돼요.</p>
-        <p class="muted">📱 <strong>아이폰·아이패드(Safari)</strong>는 애플 정책상, 사파리 <strong>화면 맨 아래 가운데의 ‘공유’ 버튼</strong>(네모에 위 화살표 ⬆️ 모양 / 아이패드는 상단) → <strong>‘홈 화면에 추가’</strong>로 회법몬을 설치한 뒤, 추가된 아이콘으로 열어야 알림을 켤 수 있어요. (안드로이드·PC는 바로 가능)</p>
+        <p class="muted">⏱️ 새 공고는 약 <strong>30분 주기</strong>로 수집돼, 알림까지 최대 30분 시차가 있을 수 있어요. 설정은 이 기기에 저장되며, 검색줄의 <strong>‘🔕 알림 끄기’</strong>로 해제합니다.</p>
+        <p class="muted">📱 <strong>아이폰·아이패드(Safari)</strong>는 사파리 <strong>‘공유’ → ‘홈 화면에 추가’</strong>로 설치한 뒤 그 아이콘으로 열어야 알림을 켤 수 있어요. (안드로이드·PC는 바로 가능)</p>
 
         <h3>4. 공고 카드는 어떻게 읽나요?</h3>
         <figure class="help-figure">
           <img src="help-card.png?v=1.12a" alt="공고 카드 예시 — 좌상단 법인·채용구분·자격요건 태그, 아래 게시일·기관·D-day" class="help-shot help-shot--card" loading="lazy" />
         </figure>
         <ul>
-          <li><strong>좌상단</strong> — 법인 약칭(예: <strong>EY</strong>=한영) · <strong>채용구분</strong>(인턴/정규직/계약직/파트타임) · <strong>자격요건</strong>(수습CPA/자격무관)</li>
-          <li><strong>아래 줄</strong> — 게시 <strong>월-일</strong> · 기관명 · 마감 <strong>D-day</strong> (마감 당일 <strong style="color:#c92a2a">D-0</strong>은 빨간 박스로 강조)</li>
-          <li><strong>왼쪽 초록 테두리</strong> — 최근 <strong>3일</strong> 안에 처음 수집된 새 공고예요. (위 <span class="new-pill">NEW</span> ‘방금 올라온 공고’ 패널은 더 좁은 <strong>24시간</strong> 기준)</li>
-          <li>카드를 누르면 해당 <strong>원문 공고</strong>로 바로 이동합니다.</li>
+          <li><strong>좌상단</strong> — 법인 약칭(예: <strong>EY</strong>=한영) · 채용구분(인턴/정규직 등) · 자격요건(수습CPA/자격무관)</li>
+          <li><strong>아래 줄</strong> — 게시 월-일 · 기관명 · 마감 <strong>D-day</strong>(당일 <strong style="color:#c92a2a">D-0</strong>은 빨간 박스)</li>
+          <li><strong>왼쪽 초록 테두리</strong> — 최근 3일 내 새 공고. (<span class="new-pill">NEW</span> 패널은 더 좁은 24시간 기준)</li>
         </ul>
 
         <h3>5. 얼마나 자주 갱신되나요?</h3>
         <ul>
-          <li>채용공고 — 약 <strong>30분</strong>마다</li>
-          <li>업계 기사 — 약 <strong>3시간</strong>마다 (오래된 기사는 일정 기간 뒤 자동으로 빠집니다)</li>
-          <li>빅펌 발간물 — 약 <strong>반나절</strong>에 한 번</li>
+          <li>채용공고 약 <strong>30분</strong> · 업계 기사 약 <strong>3시간</strong>(오래된 기사는 자동 정리) · 빅펌 발간물 약 <strong>반나절</strong>마다</li>
         </ul>
 
-        <h3>6. ‘NEW(방금 올라온 공고)’·‘빅4 신입 공채’ 책갈피는 무엇인가요?</h3>
-        <p>채용 화면 오른쪽(모바일은 상단) 패널은 두 가지 책갈피로 전환됩니다.</p>
+        <h3>6. 오른쪽 패널의 두 책갈피</h3>
         <ul>
-          <li><strong>NEW</strong> — <strong>최근 24시간</strong> 안에 처음 수집된 공고만 <strong>최신순</strong>으로 보여줍니다.</li>
-          <li><strong>빅4 신입 공채</strong> — 삼일·삼정·안진·한영 <strong>빅4 신입 회계사 정기채용</strong> 일정을 모은 특집이에요. 각 법인 <strong>공식 채용 페이지 기준으로 수동 큐레이션</strong>하며, 시즌마다 갱신됩니다.</li>
+          <li><strong>NEW</strong> — 최근 24시간 내 새 공고를 최신순으로.</li>
+          <li><strong>빅4 신입 공채</strong> — 빅4 신입 회계사 <strong>정기채용 일정</strong> 특집(공식 페이지 기준 수동 큐레이션, 시즌마다 갱신).</li>
         </ul>
 
         <h3>7. 공식 채용 페이지 바로가기</h3>

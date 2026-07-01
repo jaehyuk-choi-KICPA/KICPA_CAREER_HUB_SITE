@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-07-01T10:31:33",
+  "generated_at": "2026-07-01T11:01:39",
   "soon_days": 7,
   "counts": {
-    "total": 72,
-    "open": 47,
+    "total": 73,
+    "open": 48,
     "closed": 25,
-    "new": 8,
+    "new": 9,
     "soon": 14,
     "by_firm": {
       "삼일": 11,
       "삼정": 4,
       "안진": 10,
       "한영": 21,
-      "로컬": 23,
+      "로컬": 24,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 33,
+      "수습CPA": 34,
       "자격무관": 39
     },
     "by_emp_kind": {
       "인턴": 27,
       "정규직": 36,
       "계약직": 3,
-      "파트타임": 6
+      "파트타임": 7
     }
   },
   "postings": [
@@ -368,6 +368,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5140",
       "dday": 9,
       "first_seen": "2026-06-26T17:31:34"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[경복회계법인] 수습회계사(KICPA) 채용 공고(파트타임)",
+      "company": "경복회계법인",
+      "deadline": "2026-07-10",
+      "posted_date": "2026-07-01",
+      "location": "서울 전체",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782870165703",
+      "dday": 9,
+      "first_seen": "2026-07-01T11:01:39"
     },
     {
       "source": "kicpa_cpa",

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-01T14:01:47",
+  "generated_at": "2026-07-01T14:31:32",
   "soon_days": 7,
   "counts": {
     "total": 74,
     "open": 49,
     "closed": 25,
-    "new": 9,
+    "new": 8,
     "soon": 15,
     "by_firm": {
       "삼일": 11,
@@ -263,7 +263,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "컨설팅부문 AID팀 인턴",
       "company": "EY한영",
       "deadline": "2026-07-06",

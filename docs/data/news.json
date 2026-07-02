@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-07-02T22:01:49",
+  "generated_at": "2026-07-02T22:31:40",
   "items": [
+    {
+      "source": "gnews_세무",
+      "source_label": "뉴스데일리",
+      "title": "정부 세법개정안 빠진 'RSU 세제지원' 입법 추진 「조세특례제한법」개정안 대표발의",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBrZmlYemxKNkFmc3F5U21lMEJPR2lwelBOWksxcklMamp0cUZIdnltTW5MVzZaUUpZZTlBd2VBcjFQN0JlcmZDQlBEMUlXQjF6RjByUDJQeTcyVHE2eTZjMnZ4V1lMMDB4UkM4?oc=5",
+      "published": "2026-07-02",
+      "published_at": "2026-07-02T13:18:43",
+      "summary": "",
+      "category": "세무"
+    },
     {
       "source": "gnews_딜·M&A",
       "source_label": "녹색경제신문",
@@ -265,11 +275,75 @@
     },
     {
       "source": "gnews_세무",
+      "source_label": "에너지경제신문",
+      "title": "OECD, 한국 부동산과세 일침 “거래세→보유세로 바꿔야”",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFByZFZnVUxkZDlYZGoyVjUyQmtkV0VMMlU1anc5ZFdfYmxfODJnY3MzU010b2hXQXFRVHZQLU5FOWpyY3QwOWQ2YWtMMk9KNll0NVlaRDFfbzcyalU?oc=5",
+      "published": "2026-07-02",
+      "published_at": "2026-07-02T06:49:37",
+      "summary": "",
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "OECD \"韓, 보유세·법인세 올려 '성장 촉진'해야\"…\"경제력 집중, 교육 방식 개선\"도 권고",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1VYTZfckwzZjE4RHAwVlBRRmgtX1V5ZUI1SzdXNURsTVVDNHFWdm9YRFVrZHkybEZkWk15eHJuR3BIMm1FejYxUHhjc3c1SXR3ZXE0WHowYVBQTlh5bWlLZDZOcU9oNTFxTFVV?oc=5",
+          "source_label": "프레시안",
+          "published": "2026-07-02"
+        },
+        {
+          "title": "OECD \"韓, 부가세 늘리고 거래세→보유세 전환해야…법인세 단일화\"",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBiZktaYnlFcTlJU29FZUpHRF9nRGxicG5sWVZtdzNoYXpqTmFuS2JQM2xwTDRRQkJIeENIV2NxTWtSYUVOVkxtRUUycXRvdFhkQl9XSVlyclJUQjNS?oc=5",
+          "source_label": "뉴스핌",
+          "published": "2026-07-02"
+        }
+      ]
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "필드뉴스",
+      "title": "[단독] [대웅제약 특별세무조사-①] 대웅제약, 2년 만에 또다시 국세청 칼끝…‘리베이트 의혹’ 초점 되나",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA0aUdJS2VCb243b1VyQ3V0ODRTTUdybHpULUN3RTNaeXF4YnFEcFNQbFRFRTJuRlg4S0g0ZndCck9IazBfb0pBbktRWk9IcGY2MHJkRER1UHN0ZzhTRHRHRFlGQ2dTNkJi0gFsQVVfeXFMTnQ2djcxRGliR2NXODRQVGlROWw0VVRwclFkZEw2THF5a2FhbWhhdlZ0ZkNITzZQU1BaM09tZUc2RW9YRl9BY0JzZm9aeEdycDg2YWF3ZFV2ekZxaUhYUEQtcUxBYlY5cW4zdm5h?oc=5",
+      "published": "2026-07-02",
+      "published_at": "2026-07-02T06:39:02",
+      "summary": "",
+      "category": "세무"
+    },
+    {
+      "source": "gnews_감사_2",
+      "source_label": "전기저널",
+      "title": "전기안전공사, 제14회 준·특임 감사인 청렴 워크숍 개최",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tRU9FNGhOMXhFT0tnX0lNMmxxaHpaSlBLQTFZUjhmWGVSTnVFbzdqbVlpYTdrQmo4dWtGQTI4cDQ4enRrY2tUSEFDT09hOG96d2JJNDVIdUNDVlhqcFpMbDV3?oc=5",
+      "published": "2026-07-02",
+      "published_at": "2026-07-02T06:23:55",
+      "summary": "",
+      "category": "감사"
+    },
+    {
+      "source": "gnews_감사",
+      "source_label": "강남포스트",
+      "title": "박수민 의원, 지방 민간위탁 회계감독 강화 나선다",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBXamc3QWdHeUJrdzMtbnlTcDhIaVA0Y2tfVXVvLWlOdk0wM0hNdzJ6SG1xYldydURSMHBfcmsyN3VnblJjR2hFSE5zRnQtdHJuUTctZkNXWlUyUlBNVHB0ZjJ6cEV5dw?oc=5",
+      "published": "2026-07-02",
+      "published_at": "2026-07-02T05:32:07",
+      "summary": "",
+      "category": "감사"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "한국세정신문",
+      "title": "세무법인 에이치케이엘, 박지원 전 동안양세무서장 영입",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5OVWNGWXlQZi1ET1lHRWx2TnpXSGdVUHNHUkNsZE1KeU1Nc2J6NVdfYUZTQjBrYzl1TXZNdkdfSHlQb20yRHplNXVwYTdKRWI4cGp4bUxQMEJuTWY1emVmNjRBSHFwMTg?oc=5",
+      "published": "2026-07-02",
+      "published_at": "2026-07-02T02:02:28",
+      "summary": "",
+      "category": "세무"
+    },
+    {
+      "source": "gnews_세무",
       "source_label": "유교신문",
       "title": "농협중앙회 특별세무조사 사전 유출 의혹…국세청 ‘조사 보안’ 논란 [유교경영리포트]",
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE0xblBTLXhlU2pFQVVtVHJyZ2dsc1dneFY2d0JOWWUxVHA0eTU2THdQaGl2NkVkUGw4THFXLUo2MjJJclUycUpsTFZpVzZoa3k0X1EtNHlIQXloRTQtX0E?oc=5",
       "published": "2026-07-02",
-      "published_at": "2026-07-02T07:14:05",
+      "published_at": "2026-07-02T01:12:41",
       "summary": "",
       "category": "세무",
       "dupes": [
@@ -398,88 +472,8 @@
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9hY29tTkJoRmlVWU15N05wWnVOYjhZZjhtel9UUGVnYlctTEFqaU1ybURrWjdPeEhYVkRqZEVzczNBdVNvWFRKZFpPX09EX3B6OTU4ZmN5Rm5aWkFqZHFIc3JFVUg?oc=5",
           "source_label": "MTN 머니투데이방송",
           "published": "2026-06-29"
-        },
-        {
-          "title": "국세청, 농협중앙회 특별세무조사 착수…정부감사·경찰수사 이어 세무검증 - ①",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1oRWh3SnpLTnVPRnZ0RGUyUzU0OGVXeVVOYWxXWGxSazRodVd1NVFndEQtQ0pmR3R4d01neG9jTU13S0plSHpJbW15X3BPa004SW84VzgzZ3BLVm1tX2dyak5YbXpkeGEx0gFsQVVfeXFMUDhSQVNxa2E0bm0wdDdkd0tWNXd6dmcyN1NBZHd6NE9yQ1NkQkFPUk04aV9MckdWcmVfaTZGQU5RcVdqN2xhT2JOMkpMdzlOemJTdmhkbE9VVHkyY240QlBCS2g3dkttbW1PS1N4?oc=5",
-          "source_label": "필드뉴스",
-          "published": "2026-06-29"
         }
       ]
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "에너지경제신문",
-      "title": "OECD, 한국 부동산과세 일침 “거래세→보유세로 바꿔야”",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFByZFZnVUxkZDlYZGoyVjUyQmtkV0VMMlU1anc5ZFdfYmxfODJnY3MzU010b2hXQXFRVHZQLU5FOWpyY3QwOWQ2YWtMMk9KNll0NVlaRDFfbzcyalU?oc=5",
-      "published": "2026-07-02",
-      "published_at": "2026-07-02T06:49:37",
-      "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "OECD \"韓, 보유세·법인세 올려 '성장 촉진'해야\"…\"경제력 집중, 교육 방식 개선\"도 권고",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1VYTZfckwzZjE4RHAwVlBRRmgtX1V5ZUI1SzdXNURsTVVDNHFWdm9YRFVrZHkybEZkWk15eHJuR3BIMm1FejYxUHhjc3c1SXR3ZXE0WHowYVBQTlh5bWlLZDZOcU9oNTFxTFVV?oc=5",
-          "source_label": "프레시안",
-          "published": "2026-07-02"
-        },
-        {
-          "title": "OECD \"韓, 부가세 늘리고 거래세→보유세 전환해야…법인세 단일화\"",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBiZktaYnlFcTlJU29FZUpHRF9nRGxicG5sWVZtdzNoYXpqTmFuS2JQM2xwTDRRQkJIeENIV2NxTWtSYUVOVkxtRUUycXRvdFhkQl9XSVlyclJUQjNS?oc=5",
-          "source_label": "뉴스핌",
-          "published": "2026-07-02"
-        }
-      ]
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "필드뉴스",
-      "title": "[단독] [대웅제약 특별세무조사-①] 대웅제약, 2년 만에 또다시 국세청 칼끝…‘리베이트 의혹’ 초점 되나",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA0aUdJS2VCb243b1VyQ3V0ODRTTUdybHpULUN3RTNaeXF4YnFEcFNQbFRFRTJuRlg4S0g0ZndCck9IazBfb0pBbktRWk9IcGY2MHJkRER1UHN0ZzhTRHRHRFlGQ2dTNkJi0gFsQVVfeXFMTnQ2djcxRGliR2NXODRQVGlROWw0VVRwclFkZEw2THF5a2FhbWhhdlZ0ZkNITzZQU1BaM09tZUc2RW9YRl9BY0JzZm9aeEdycDg2YWF3ZFV2ekZxaUhYUEQtcUxBYlY5cW4zdm5h?oc=5",
-      "published": "2026-07-02",
-      "published_at": "2026-07-02T06:39:02",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "전기저널",
-      "title": "전기안전공사, 제14회 준·특임 감사인 청렴 워크숍 개최",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tRU9FNGhOMXhFT0tnX0lNMmxxaHpaSlBLQTFZUjhmWGVSTnVFbzdqbVlpYTdrQmo4dWtGQTI4cDQ4enRrY2tUSEFDT09hOG96d2JJNDVIdUNDVlhqcFpMbDV3?oc=5",
-      "published": "2026-07-02",
-      "published_at": "2026-07-02T06:23:55",
-      "summary": "",
-      "category": "감사"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "오토투데이",
-      "title": "정부 세법개정안 빠진 RSU 세제지원 입법 추진 이준석·황정아·최형두 등 3인 공동 대표발의",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBZUTkzcG9DWHVZX2xsQTdjQmkxQlBZUGVma3ZqLVRHWm5nUmltOXJnb1V4WmVCOU9odVp3bVZZYVJXRmdDMGZoYWZFVm5OU0JvWVEzbXpyRW9UYm5PRXpmMXVpX0c1MF9abmdtVThFZw?oc=5",
-      "published": "2026-07-02",
-      "published_at": "2026-07-02T06:13:16",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_감사",
-      "source_label": "강남포스트",
-      "title": "박수민 의원, 지방 민간위탁 회계감독 강화 나선다",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBXamc3QWdHeUJrdzMtbnlTcDhIaVA0Y2tfVXVvLWlOdk0wM0hNdzJ6SG1xYldydURSMHBfcmsyN3VnblJjR2hFSE5zRnQtdHJuUTctZkNXWlUyUlBNVHB0ZjJ6cEV5dw?oc=5",
-      "published": "2026-07-02",
-      "published_at": "2026-07-02T05:32:07",
-      "summary": "",
-      "category": "감사"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "한국세정신문",
-      "title": "세무법인 에이치케이엘, 박지원 전 동안양세무서장 영입",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5OVWNGWXlQZi1ET1lHRWx2TnpXSGdVUHNHUkNsZE1KeU1Nc2J6NVdfYUZTQjBrYzl1TXZNdkdfSHlQb20yRHplNXVwYTdKRWI4cGp4bUxQMEJuTWY1emVmNjRBSHFwMTg?oc=5",
-      "published": "2026-07-02",
-      "published_at": "2026-07-02T02:02:28",
-      "summary": "",
-      "category": "세무"
     },
     {
       "source": "gnews_딜·M&A",
@@ -994,16 +988,6 @@
       "published_at": "2026-06-28T10:54:15",
       "summary": "",
       "category": "감사"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "뉴스데일리",
-      "title": "이강일 의원, 글로벌 빅테크의 꼼수 자금유출 막는 국제조세조정법 대표발의",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1sZGFsZ09Ec3c3aDZwN19VUk5iUFUwMmtrVUNHaE1jS3JrSlp5VElGTEFxdW9XQjNBZFNUbkVCUEU2d3JzQjlNbGFMRU9kN1F2MGVaMEt6NkNpYmo0SjhseVlSdV8tMEh0b1hN?oc=5",
-      "published": "2026-06-27",
-      "published_at": "2026-06-27T07:00:00",
-      "summary": "",
-      "category": "세무"
     },
     {
       "source": "gnews_감사_2",

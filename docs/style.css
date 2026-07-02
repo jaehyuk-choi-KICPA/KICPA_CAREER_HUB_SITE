@@ -302,10 +302,13 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 
 /* 기사/인사이트 */
 .sec-desc { color:var(--muted); font-size:13px; margin:0 0 14px; }
-/* 안내 탭 상단 강조 박스(타깃 한 줄) */
-.about-lead { max-width:720px; margin:0 auto 14px; background:var(--accent-soft); border:1px solid #cfe0f6; border-radius:12px;
-  padding:14px 18px; font-size:14.5px; font-weight:600; color:var(--ink); line-height:1.6; text-align:center; }
-.about-lead .lead-logo { width:22px; height:22px; border-radius:6px; vertical-align:-5px; margin-right:3px; }
+/* 안내 탭 상단 목차 박스 */
+.about-lead { max-width:720px; margin:0 auto 14px; background:var(--accent-soft); border:1px solid #cfe0f6; border-radius:12px; padding:14px 18px; }
+.toc-label { display:block; font-size:11px; font-weight:700; color:var(--muted); letter-spacing:.06em; text-transform:uppercase; margin-bottom:10px; text-align:center; }
+.about-toc { display:grid; grid-template-columns:1fr 1fr; gap:5px 20px; }
+.about-toc a { font-size:13.5px; font-weight:600; color:var(--accent); text-decoration:none; padding:3px 0; }
+.about-toc a:hover { text-decoration:underline; }
+@media(max-width:500px) { .about-toc { grid-template-columns:1fr; } }
 .about-card { background:var(--card); border:1px solid var(--line); border-radius:13px; padding:22px 24px; box-shadow:var(--shadow); max-width:720px; margin:0 auto; text-align:center; }
 .alert-soon { text-align:center; }
 .alert-soon h3 { font-size:17px; }

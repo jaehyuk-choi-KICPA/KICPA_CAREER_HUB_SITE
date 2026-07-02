@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-07-02T15:01:38",
+  "generated_at": "2026-07-02T15:31:37",
   "soon_days": 7,
   "counts": {
-    "total": 74,
-    "open": 48,
+    "total": 75,
+    "open": 49,
     "closed": 26,
-    "new": 3,
+    "new": 4,
     "soon": 16,
     "by_firm": {
       "삼일": 11,
       "삼정": 4,
       "안진": 11,
-      "한영": 23,
+      "한영": 24,
       "로컬": 22,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 32,
-      "자격무관": 42
+      "자격무관": 43
     },
     "by_emp_kind": {
       "인턴": 30,
-      "정규직": 34,
+      "정규직": 35,
       "계약직": 3,
       "파트타임": 7
     }
@@ -482,6 +482,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5138",
       "dday": 14,
       "first_seen": "2026-06-25T17:31:32"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "금융감사본부 Digital Audit, AI 및 리스크 계량 분석가 (신입/경력)",
+      "company": "EY한영",
+      "deadline": "2026-07-16",
+      "posted_date": "2026-07-02",
+      "location": "",
+      "emp_type": "분야별 상이",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/120736",
+      "dday": 14,
+      "first_seen": "2026-07-02T15:31:37"
     },
     {
       "source": "kicpa_susup",

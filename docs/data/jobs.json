@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-02T09:31:41",
+  "generated_at": "2026-07-02T10:01:38",
   "soon_days": 7,
   "counts": {
-    "total": 72,
-    "open": 46,
+    "total": 73,
+    "open": 47,
     "closed": 26,
-    "new": 4,
-    "soon": 14,
+    "new": 5,
+    "soon": 15,
     "by_firm": {
       "삼일": 11,
       "삼정": 4,
       "안진": 11,
-      "한영": 21,
+      "한영": 22,
       "로컬": 22,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 32,
-      "자격무관": 40
+      "자격무관": 41
     },
     "by_emp_kind": {
-      "인턴": 28,
+      "인턴": 29,
       "정규직": 34,
       "계약직": 3,
       "파트타임": 7
@@ -216,6 +216,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/120273",
       "dday": 3,
       "first_seen": "2026-06-30T12:01:37"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "감사부문 포렌식 인턴(전환형)",
+      "company": "EY한영",
+      "deadline": "2026-07-05",
+      "posted_date": "2026-07-02",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/120654",
+      "dday": 3,
+      "first_seen": "2026-07-02T10:01:38"
     },
     {
       "source": "hanyoung",

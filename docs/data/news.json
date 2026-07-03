@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T04:01:50",
+  "generated_at": "2026-07-04T04:31:38",
   "items": [
     {
       "source": "gnews_딜·M&A",
@@ -18,6 +18,16 @@
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9FVnRVWEJlQXFwZDY3SS12NXl6T1dCa3ZHXzBLZU9aMlN2ZDJBQllDNnU3RDR0ZUtxd0Ffem9rcXFNbzgybjBrbU9RY1dtTWdfRUpfR1YwUnpGa0xjZGc?oc=5",
       "published": "2026-07-03",
       "published_at": "2026-07-03T15:12:14",
+      "summary": "",
+      "category": "딜·M&A"
+    },
+    {
+      "source": "gnews_딜·M&A",
+      "source_label": "한국경제",
+      "title": "미래에셋증권, SK하이닉스서 1.26조 조달…M&A 실탄 확보",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5NNkxzNVA0YkszRGNjRGt4bnIyekw1Q2UxbEE4c0I2MGdWM2NYbjRCWHV0OGhmTHU3blFMU0FwUU91YnpWeXFFcGpWYmZhaW5JUDVDOF9UTDkyQdIBVEFVX3lxTE9UWmhfZURtWVAzSXR3R2RwTDVGTnlHci0xZnNOR3VHSy1mT0pnd3AxWF9fOXhfc1AxTUtWcUVNQl9zSUhkQU50MXZGUm12OHBsR1c2dg?oc=5",
+      "published": "2026-07-03",
+      "published_at": "2026-07-03T12:11:33",
       "summary": "",
       "category": "딜·M&A"
     },
@@ -98,14 +108,28 @@
       ]
     },
     {
-      "source": "gnews_딜·M&A",
-      "source_label": "알파경제",
-      "title": "예보, 캄코시티 매각 절차 속도…법률자문사 재선정",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1TeldwTkVJdlNieTVBYlBJVjBxTlRMVGlEZXFlelp6MTF4TmhlYW5ia083dVJiaUwwS0N0eWs2MmhJZFZQQXVnc1h1SW9HQ2Z3RGp5c0dOWGpvODg5cC03T0d4eVJvZmdkMmt5OUFB?oc=5",
+      "source": "gnews_세무",
+      "source_label": "스페셜경제",
+      "title": "국세청, 대웅제약 세무조사 착수…오너 일가 겨냥 관측",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBWUEQtQWpNdnRPS0lVUW9PT3ZESUhidFpKQjctbm95aXZENTd4c085VkRaTzBfRC1mWUplUjQ4Wks5V3BiYXlaYVF2SGpXTm9IN1JJbzE4ejRFbmZWX0R2UWpnUWtsdnVLMlVLNA?oc=5",
       "published": "2026-07-03",
-      "published_at": "2026-07-03T07:51:49",
+      "published_at": "2026-07-03T07:12:45",
       "summary": "",
-      "category": "딜·M&A"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "대웅제약, 또 조사4국 특별세무조사…2년 만에 세무 리스크 재점화",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5Tc1VnRTk4ZEp2XzlfbFFpWVZ0Rk5tT01RdEEzX1hIUC1GanZ6S2xoOU9KQ3lZejdRdEN2SGphOWRiOEdyN3A4WlFDYU44VkpBUWJYMExHR1YtcFRmcW9uSmNINkRFeVk?oc=5",
+          "source_label": "세종의소리",
+          "published": "2026-07-03"
+        },
+        {
+          "title": "[단독] [대웅제약 특별세무조사-①] 대웅제약, 2년 만에 또다시 국세청 칼끝…‘리베이트 의혹’ 초점 되나",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA0aUdJS2VCb243b1VyQ3V0ODRTTUdybHpULUN3RTNaeXF4YnFEcFNQbFRFRTJuRlg4S0g0ZndCck9IazBfb0pBbktRWk9IcGY2MHJkRER1UHN0ZzhTRHRHRFlGQ2dTNkJi0gFsQVVfeXFMTnQ2djcxRGliR2NXODRQVGlROWw0VVRwclFkZEw2THF5a2FhbWhhdlZ0ZkNITzZQU1BaM09tZUc2RW9YRl9BY0JzZm9aeEdycDg2YWF3ZFV2ekZxaUhYUEQtcUxBYlY5cW4zdm5h?oc=5",
+          "source_label": "필드뉴스",
+          "published": "2026-07-02"
+        }
+      ]
     },
     {
       "source": "gnews_세무",
@@ -144,24 +168,6 @@
       "published_at": "2026-07-03T02:00:00",
       "summary": "",
       "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "세종의소리",
-      "title": "대웅제약, 또 조사4국 특별세무조사…2년 만에 세무 리스크 재점화",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5Tc1VnRTk4ZEp2XzlfbFFpWVZ0Rk5tT01RdEEzX1hIUC1GanZ6S2xoOU9KQ3lZejdRdEN2SGphOWRiOEdyN3A4WlFDYU44VkpBUWJYMExHR1YtcFRmcW9uSmNINkRFeVk?oc=5",
-      "published": "2026-07-03",
-      "published_at": "2026-07-03T01:37:30",
-      "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "[단독] [대웅제약 특별세무조사-①] 대웅제약, 2년 만에 또다시 국세청 칼끝…‘리베이트 의혹’ 초점 되나",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA0aUdJS2VCb243b1VyQ3V0ODRTTUdybHpULUN3RTNaeXF4YnFEcFNQbFRFRTJuRlg4S0g0ZndCck9IazBfb0pBbktRWk9IcGY2MHJkRER1UHN0ZzhTRHRHRFlGQ2dTNkJi0gFsQVVfeXFMTnQ2djcxRGliR2NXODRQVGlROWw0VVRwclFkZEw2THF5a2FhbWhhdlZ0ZkNITzZQU1BaM09tZUc2RW9YRl9BY0JzZm9aeEdycDg2YWF3ZFV2ekZxaUhYUEQtcUxBYlY5cW4zdm5h?oc=5",
-          "source_label": "필드뉴스",
-          "published": "2026-07-02"
-        }
-      ]
     },
     {
       "source": "gnews_세무",
@@ -340,16 +346,6 @@
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBrZmlYemxKNkFmc3F5U21lMEJPR2lwelBOWksxcklMamp0cUZIdnltTW5MVzZaUUpZZTlBd2VBcjFQN0JlcmZDQlBEMUlXQjF6RjByUDJQeTcyVHE2eTZjMnZ4V1lMMDB4UkM4?oc=5",
       "published": "2026-07-02",
       "published_at": "2026-07-02T13:18:43",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "조세금융신문",
-      "title": "김승현 동작세무서장 퇴임…32년 국세행정 한길, '국제조세·과세혁신' 족적 남기다",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5XcnR4YXA2T0hpOTRHaW8zc2ZMMXpaX3FNd1dsMHpkeGJFbEl6UDVFS2FWTjQ5SjBGTFJ3ZDJpTFZJSExHekZwbVh4Z21NUFRkWlFXWXFvTU9Tc05JdzRuODRqbw?oc=5",
-      "published": "2026-07-02",
-      "published_at": "2026-07-02T11:05:26",
       "summary": "",
       "category": "세무"
     },

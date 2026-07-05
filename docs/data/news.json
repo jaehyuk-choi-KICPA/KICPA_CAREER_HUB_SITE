@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T03:31:49",
+  "generated_at": "2026-07-06T04:01:47",
   "items": [
     {
       "source": "gnews_딜·M&A",
@@ -47,12 +47,6 @@
           "title": "상반기 IPO 15곳 공모가 밑돌아...\"공모주 장기 투자는 손해\"",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1ENmdxejF1eFg1NTBaY0ZvQzJkWjZoVENXVEJ1cHVTYlFpX01SYWE3M2c3R3NIUVg3bThYWFhkelFhRjhIQ0h3U1NPX251NU9MVzJxbDFZLVlueU5v?oc=5",
           "source_label": "뉴스핌",
-          "published": "2026-07-04"
-        },
-        {
-          "title": "IPO 한파 7월도 계속…둘째 주 신규 상장 1곳뿐",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1MOE9Ba2dtODVsR3hFMDJ1cGplS1h3akxvdGZHelpPV2Vqd3VDWXVnVXdzNlh5ek5yQmpSbVRLcnJHeWhoSWdOOGRpMlplUTB4RExrenFVbnNHLWh0R1JUUlFINnZldEdU?oc=5",
-          "source_label": "매일경제TV",
           "published": "2026-07-04"
         },
         {
@@ -651,7 +645,15 @@
       "published": "2026-06-30",
       "published_at": "2026-06-30T21:00:00",
       "summary": "",
-      "category": "세무"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "[하반기 달라지는 것-경제]외환시장 24시간 ‘활짝’…정기 세무조사 시기선택 전환",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0zNmQwSEFGVjNMZkVUOW5kamdIWXZzYkdDb3YwM3AzcTBSTVQ0VVRqRTJQZEowcFE4elp2bzEybW11blBoUGx1ZWlXMWpDNy1hVk9Xc0N5TEU3VzhIdlhxSWgwY0xXUU1uYktCedIBcEFVX3lxTFBVcUFhOHV0QlVzaThmNXhqMk91YmU4NTR0NEZ1UWlUSExFa09IZ3NiUVZSQXdOVWJVcWRQamVvdnV5NDBERVpCMG9NTzZuVTFGYUFyRnp0MXNITXkySnNQZHBlWVNtZ2VwdERlV3ZGZFQ?oc=5",
+          "source_label": "남도일보",
+          "published": "2026-06-30"
+        }
+      ]
     },
     {
       "source": "gnews_딜·M&A",

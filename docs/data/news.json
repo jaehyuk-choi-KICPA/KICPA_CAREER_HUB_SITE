@@ -1,6 +1,96 @@
 {
-  "generated_at": "2026-07-06T08:01:51",
+  "generated_at": "2026-07-06T08:32:25",
   "items": [
+    {
+      "source": "gnews_딜·M&A",
+      "source_label": "한국경제",
+      "title": "AI 데이터센터 경쟁에 美 전력업계 M&A 2000억달러 돌파",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE54Q25uMmVId2wycE0yUUhSSVJmdDcxdktYMFdpRjk4eGQtT0s3X2d0aHJ5Z3BScENUcmVEN2NMVmdHTHh6a1pyOVAwaThuWmtoaHJUNlM1LV9YZ9IBVEFVX3lxTE1aUjFIQXZWT2Ixc2hTcXFaNUJXaUxVTWxfYmNjMDU4TU9sUENYb212VHlmMzNDUk9iZlp3aDlta3BfSFNjcnluUFJXQUdDUFhWRjdIUg?oc=5",
+      "published": "2026-07-05",
+      "published_at": "2026-07-05T23:26:00",
+      "summary": "",
+      "category": "딜·M&A"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "네이트",
+      "title": "대법 \"법정 상한 초과한 대부중개수수료, 법인세 내야\"",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9RYmhPZWlnTmFZZmN5cExCMDJGMW9kU08zcjZ4aS04aVFhZzVyYURzMmtwQ0hIMElSdHZrRW9HdS1YTXN3akdXVUNKR2RVNXN2M1lN?oc=5",
+      "published": "2026-07-05",
+      "published_at": "2026-07-05T23:21:00",
+      "summary": "",
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "대법 \"상한 초과한 대부중개수수료, 법인세 내야\"",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBHWjYxRTNVQ1pxcF81dGppNTlsaVpGRFdDZUZ3Q25TZFRGVVlqU3VSQm1uUVJ1WE9nb3hBS05IM1p3Q09fblpuWTJSQkRlZzlNSGNRbF9xRUV3cmxx?oc=5",
+          "source_label": "supple.kr",
+          "published": "2026-07-05"
+        },
+        {
+          "title": "[예규·판례] 대법 \"법정 상한 넘는 중개수수료, 법인세 손금 산입 안 돼\"",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBfWDE5Z2YzR08zb1c3Zjh3U3p0aC1ZUWlSLTE4ZEp3cVU0U1l6eTdINmtOYVJZQ05uNVBzSVVLcDNodzNaX3JRZXdiX2hNSExYWmxIYWZTV3pjSG1SR3cyR29oYw?oc=5",
+          "source_label": "조세금융신문",
+          "published": "2026-07-05"
+        },
+        {
+          "title": "[판결] 상한 넘긴 중개수수료, 법인세 손금 산입 안 돼",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0wNGFUOFg1QmdRUXN0VDVvczMwWVpYaHRvLU1PV0J4R3ZlWW1yM2dDenBMWnBNZVppOWxiN0NhWGlBWEgzNkN3RERiZWh0bVlRZ2ZMTVFoaUVIMGlaZXpjc3U5Yk8xdVQ5UWZ2cWRB0gFyQVVfeXFMTXk3SGQtQjRhd2o3bnlpMFBoVTNUZGtZeWN3VnVGZnM0OGpTb2N6dUltRUdoWTJ0T0VtaHNaLW1laFBVaEU2QjNDNWZIQnpqV3NnYXBIX0NseXRfR2tyNGpOTlgtZHRhUmd0aWdUbHBrM0t3?oc=5",
+          "source_label": "법률신문",
+          "published": "2026-07-05"
+        },
+        {
+          "title": "불법 과잉 수수료 비용 처리 안돼…KB 캐피탈, 36억대 법인세 소송 최종 패소",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSWJESUF0ZlJLZVQySWg3bTdfcWQ3S1hGOEp0SE9scG1OckVvOEZLdWRTdXFoc1Zyem5mU1FwSjd6SWtZQ2NuU0xEREUtXzhEeU8ySDdubGJYQTQ0WlFrM0tEZ3NDanA2V1h1SWdYRjlhbl9nTmNMd25MNlBCMC1TTw?oc=5",
+          "source_label": "이데일리",
+          "published": "2026-07-05"
+        },
+        {
+          "title": "대법 \"상한 넘긴 중개수수료…법인세 비용 인정 못해\"",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ZazNBY2hwYkYyZ09oeWphUTBXZDNEaWIxbVI3b2pQMUZ0SkpJMkswMnZVX3ZVTlhpXzAzaUw5MmtNcEhJajVFSThnTWlBT2QxTlIwcFpR0gFQQVVfeXFMUC1najl0VTFGTnpJVFNGOVlnaGxIYXJPeTNUbGx0S2RmVnVGSVEzLWJLMkpXb0xZS1J0UndlNlpldk5adWplbUpVdG5OZEg2NjQ?oc=5",
+          "source_label": "더팩트",
+          "published": "2026-07-05"
+        },
+        {
+          "title": "대법 \"상한 넘긴 대부중개수수료, 세법상 비용 인정 안 돼\"",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1rdkhZdFk4LThBczlmX3RuWWlDUEZUUmxBVV9qLXZZVXNRMms2alZxWEJjd2lZbXB4MUZXWG1yeWNiUFp1OHBMMU5JQ1RKVVBiajJVdERhT3JQUDUz?oc=5",
+          "source_label": "supple.kr",
+          "published": "2026-07-05"
+        },
+        {
+          "title": "대법 \"'상한 초과' 중고차 오토론 중개수수료, 법인세 내야\"…KB 패소",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9FSUhDMDlZeVU1aGlpbzNfaVJJSlZ3NTRjRENiaVRVSy1FdzBSN1VwWEUyMGhkSXdjcTlCU2VQcDByUTBqNDlVWHRsQURfVXdGSGlSVi1NUFBGSG90UnU3ZdIBeEFVX3lxTE1hblRvUG1mSkdqZV9vTWZ6di1aM3ViNHpwRkFaZnFmNy1BT1FQSUNWTDkya19ETDlNT1RsRnpYRFQyeDVuMlpRdFZVWUFpbjA5ckpHWm10UzFDZ1gwMFZ2a3VwMWlfTXBTY2k4dGFCZE5JN0t3NU1mWQ?oc=5",
+          "source_label": "뉴시스",
+          "published": "2026-07-05"
+        },
+        {
+          "title": "대법 \"KB캐피탈 한도초과 중개수수료는 '사회질서 위반'…법인세 비용 불인정\"",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5YR3JiV2FreHhleVdmMG5oYVVnd29XZUw2MXBFQ1VjRmxKNDZ4NjIxU1dWc0lvTTl5bUVZRmxCdXZoVGZSTnRnM095VVlFVTFubHdV?oc=5",
+          "source_label": "네이트",
+          "published": "2026-07-05"
+        }
+      ]
+    },
+    {
+      "source": "gnews_딜·M&A",
+      "source_label": "동양뉴스",
+      "title": "DL이앤씨, 2분기 실적 기대치 상회할 전망...밸류에이션 매력 높아",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1OaW44MmI5Rjhma1JsTHotM2g5emFLUHh5bTNsVENKc19VZVdhWkpnVjVwaWZ6QlRXNWR6UjZYR0p0ZnFkSEpRSTBiWlhXeHU4VGpYcGhhWm5JNGg2S3hxaw?oc=5",
+      "published": "2026-07-05",
+      "published_at": "2026-07-05T23:17:32",
+      "summary": "",
+      "category": "딜·M&A"
+    },
+    {
+      "source": "gnews_딜·M&A",
+      "source_label": "이투데이",
+      "title": "[오늘의 투자전략] '반도체' 주도주 불안감 선반영…밸류에이션 바닥 찍은 코스피, 안도감 유입 기대",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE44Ujd0TEtTUlZUdEUxWDd3eUxCRlA3SU45SXhCV2xqcnBuLWQ3RnAwcWlhVkZNQVd1WDZGSEo2ZzFISkhjT1BPby1ZM2d2bkZCVjdNaw?oc=5",
+      "published": "2026-07-05",
+      "published_at": "2026-07-05T23:05:00",
+      "summary": "",
+      "category": "딜·M&A"
+    },
     {
       "source": "gnews_세무",
       "source_label": "세정일보",
@@ -10,16 +100,6 @@
       "published_at": "2026-07-05T22:52:36",
       "summary": "",
       "category": "세무"
-    },
-    {
-      "source": "gnews_딜·M&A",
-      "source_label": "이데일리",
-      "title": "롯데지주, NAV 대비 할인율 최고수준으로 밸류에이션 매력↑-SK",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPMlo4RWI5UTBpd2dQMlFzRmdtTld4a3JkM3E4c1VkeUdJSE41dm1RTHdyWjZobGJRTjNJMGRJd0lyaUszZlRXd09WaXc0cVJaRldDVGpIQkFHaEVHaUNYbjNkOTNBLVhVT3lUTmtLTTZ1LTR4VWtwNGxWRDh1NDRiMQ?oc=5",
-      "published": "2026-07-05",
-      "published_at": "2026-07-05T22:44:31",
-      "summary": "",
-      "category": "딜·M&A"
     },
     {
       "source": "gnews_딜·M&A",
@@ -78,118 +158,6 @@
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9xS1o1TUZMcTJYdkZIMEdnWWFpYVQ2Mi1wRmgxa2ZHSEVWLWN5b0hCNGRFdFExakExVHl1YmdreGpZT1dKU0VDUzU1VldqSWJHSlg4VmpJMmpBLWlIZ216S3FDVEpFUUdnX2xn?oc=5",
       "published": "2026-07-05",
       "published_at": "2026-07-05T22:00:00",
-      "summary": "",
-      "category": "딜·M&A"
-    },
-    {
-      "source": "gnews_딜·M&A",
-      "source_label": "네이버 프리미엄콘텐츠",
-      "title": "기술특례 문턱 높아지자 IPO 도전 '이 곳'에 몰린다",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSWZTbXJJQXBfOXMwandsXzlnZ0F2S1NfZFFhLTR6Q2hKdnByZllaQU5fM1hQdl9NR0FBc3l4ZXRIcEt5XzJQaDgxSFVGT2p1NHN2WXl3Wi0tX3JMLS1TUUQyZXNZc3piTnloLWNuY2tPbWZLRzIyNE5pMmVKQkZ1cw?oc=5",
-      "published": "2026-07-05",
-      "published_at": "2026-07-05T21:50:00",
-      "summary": "",
-      "category": "딜·M&A",
-      "dupes": [
-        {
-          "title": "한산한 IPO 시장, 신규상장 한 곳뿐 [이번주 증시 캘린더]",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5vM3dORm44SVFJTTFKU19wRGp0ZlFqUUZ3UkJjSVRTTzdQYTIyMmxhVEszYmpDSTBPRGJOdU9DWVBaMU5kbjd2YXRGa24wNVpKeVHSAVNBVV95cUxQaVRsbXd0ODlqaXZSZ01Ob2JVUUlaZDNuWXlhM0tHNE9iVnJFVzBWNnNyTXM1YU1zcnlBS2dJNXQtQ1d4dnVDZHIyaWtKLW5kbFl1aw?oc=5",
-          "source_label": "서울경제신문",
-          "published": "2026-07-05"
-        },
-        {
-          "title": "상반기 잠잠했던 IPO 시장, 하반기 '대어'가 깨울까",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5MRUItdjE0eXBLbmR4REg2eXhVdWdkLTl4OW11cE1fNmVNTm9FS2N6blcxR0JGdGZOaHRZSXFrTlhtN3dxYWw4aXR6Q2JRUXFoaUxxR21FMkJtUdIBVEFVX3lxTE5kanJpV19ENjAxWWVGYW1ZZzk5SFp0N08zU2xLblBFZTY0aFB2VWZUWHFtNFhOZEhnbGlWOGl3Q3JWc0tJdERSTGpYaVhOS1BwTjVnbg?oc=5",
-          "source_label": "더팩트",
-          "published": "2026-07-05"
-        },
-        {
-          "title": "새내기주 온기 식었다…상반기 IPO 82% 공모가 하회",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE42RGJaVDVOTWl6bThiZktFVWV0Yms0dmdveW1LWmpxWnBUeWpYQXZKNkxjNmVHQ0twRkFrTlZZNW5fUmxOWDViRTBTcHI0UQ?oc=5",
-          "source_label": "전자신문",
-          "published": "2026-07-05"
-        },
-        {
-          "title": "상반기 IPO 15곳 공모가 밑돌아...\"공모주 장기 투자는 손해\"",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1ENmdxejF1eFg1NTBaY0ZvQzJkWjZoVENXVEJ1cHVTYlFpX01SYWE3M2c3R3NIUVg3bThYWFhkelFhRjhIQ0h3U1NPX251NU9MVzJxbDFZLVlueU5v?oc=5",
-          "source_label": "뉴스핌",
-          "published": "2026-07-04"
-        },
-        {
-          "title": "IPO 한파 7월도 계속…둘째 주 신규 상장 1곳뿐",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1MOE9Ba2dtODVsR3hFMDJ1cGplS1h3akxvdGZHelpPV2Vqd3VDWXVnVXdzNlh5ek5yQmpSbVRLcnJHeWhoSWdOOGRpMlplUTB4RExrenFVbnNHLWh0R1JUUlFINnZldEdU?oc=5",
-          "source_label": "매일경제TV",
-          "published": "2026-07-04"
-        },
-        {
-          "title": "[IPO챗] 7월도 IPO '찬바람' 여전…둘째주 1개 기업 상장",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5FX1VfbWY4d2I5QkxrOVhMUkMtTlh5aW0xWlJfREs2SjdWcDlQMktXbFAxQmxSSVhQR3RsblF6OEduaENGdWc?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-07-04"
-        },
-        {
-          "title": "흔들리는 IPO 전통 3强…미래 독주 속 한투 인력 공백 확대",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOTjBTZkNVN09DcXF1OXRpWVBwcWk3TzA2QzNXZVNVN1ZsdF9BNjZ1dmRhaUVjdi1ScDMySUsybXlHNnI5Q0IxSk84ZXNCdDRTM0V2ZlBZbU9mSkEycVBDY18zMTNiYkotUXBjQ0JTelltQ0l0a195SWRVeEpqc1VKd19hQQ?oc=5",
-          "source_label": "인베스트조선",
-          "published": "2026-07-01"
-        }
-      ]
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "supple.kr",
-      "title": "대법 \"상한 초과한 대부중개수수료, 법인세 내야\"",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBHWjYxRTNVQ1pxcF81dGppNTlsaVpGRFdDZUZ3Q25TZFRGVVlqU3VSQm1uUVJ1WE9nb3hBS05IM1p3Q09fblpuWTJSQkRlZzlNSGNRbF9xRUV3cmxx?oc=5",
-      "published": "2026-07-05",
-      "published_at": "2026-07-05T21:40:36",
-      "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "[판결] 상한 넘긴 중개수수료, 법인세 손금 산입 안 돼",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0wNGFUOFg1QmdRUXN0VDVvczMwWVpYaHRvLU1PV0J4R3ZlWW1yM2dDenBMWnBNZVppOWxiN0NhWGlBWEgzNkN3RERiZWh0bVlRZ2ZMTVFoaUVIMGlaZXpjc3U5Yk8xdVQ5UWZ2cWRB0gFyQVVfeXFMTXk3SGQtQjRhd2o3bnlpMFBoVTNUZGtZeWN3VnVGZnM0OGpTb2N6dUltRUdoWTJ0T0VtaHNaLW1laFBVaEU2QjNDNWZIQnpqV3NnYXBIX0NseXRfR2tyNGpOTlgtZHRhUmd0aWdUbHBrM0t3?oc=5",
-          "source_label": "법률신문",
-          "published": "2026-07-05"
-        },
-        {
-          "title": "불법 과잉 수수료 비용 처리 안돼…KB 캐피탈, 36억대 법인세 소송 최종 패소",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSWJESUF0ZlJLZVQySWg3bTdfcWQ3S1hGOEp0SE9scG1OckVvOEZLdWRTdXFoc1Zyem5mU1FwSjd6SWtZQ2NuU0xEREUtXzhEeU8ySDdubGJYQTQ0WlFrM0tEZ3NDanA2V1h1SWdYRjlhbl9nTmNMd25MNlBCMC1TTw?oc=5",
-          "source_label": "이데일리",
-          "published": "2026-07-05"
-        },
-        {
-          "title": "대법 \"상한 넘긴 중개수수료…법인세 비용 인정 못해\"",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5ZazNBY2hwYkYyZ09oeWphUTBXZDNEaWIxbVI3b2pQMUZ0SkpJMkswMnZVX3ZVTlhpXzAzaUw5MmtNcEhJajVFSThnTWlBT2QxTlIwcFpR0gFQQVVfeXFMUC1najl0VTFGTnpJVFNGOVlnaGxIYXJPeTNUbGx0S2RmVnVGSVEzLWJLMkpXb0xZS1J0UndlNlpldk5adWplbUpVdG5OZEg2NjQ?oc=5",
-          "source_label": "더팩트",
-          "published": "2026-07-05"
-        },
-        {
-          "title": "대법 \"상한 넘긴 대부중개수수료, 세법상 비용 인정 안 돼\"",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1rdkhZdFk4LThBczlmX3RuWWlDUEZUUmxBVV9qLXZZVXNRMms2alZxWEJjd2lZbXB4MUZXWG1yeWNiUFp1OHBMMU5JQ1RKVVBiajJVdERhT3JQUDUz?oc=5",
-          "source_label": "supple.kr",
-          "published": "2026-07-05"
-        },
-        {
-          "title": "대법 \"'상한 초과' 중고차 오토론 중개수수료, 법인세 내야\"…KB 패소",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9FSUhDMDlZeVU1aGlpbzNfaVJJSlZ3NTRjRENiaVRVSy1FdzBSN1VwWEUyMGhkSXdjcTlCU2VQcDByUTBqNDlVWHRsQURfVXdGSGlSVi1NUFBGSG90UnU3ZdIBeEFVX3lxTE1hblRvUG1mSkdqZV9vTWZ6di1aM3ViNHpwRkFaZnFmNy1BT1FQSUNWTDkya19ETDlNT1RsRnpYRFQyeDVuMlpRdFZVWUFpbjA5ckpHWm10UzFDZ1gwMFZ2a3VwMWlfTXBTY2k4dGFCZE5JN0t3NU1mWQ?oc=5",
-          "source_label": "뉴시스",
-          "published": "2026-07-05"
-        },
-        {
-          "title": "대법 \"KB캐피탈 한도초과 중개수수료는 '사회질서 위반'…법인세 비용 불인정\"",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5YR3JiV2FreHhleVdmMG5oYVVnd29XZUw2MXBFQ1VjRmxKNDZ4NjIxU1dWc0lvTTl5bUVZRmxCdXZoVGZSTnRnM095VVlFVTFubHdV?oc=5",
-          "source_label": "네이트",
-          "published": "2026-07-05"
-        }
-      ]
-    },
-    {
-      "source": "gnews_딜·M&A",
-      "source_label": "뉴스토마토",
-      "title": "[IB토마토]상반기 ECM, 빅딜이 순위 갈랐다…IPO는 NH·삼성 석권",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1CSDBDWlhVN0FKdTF2S1poZFdjUnFnX0xCSVFOT2I5TmVZX0ZSa0lIcUV0bnhkMkhZOEtBcFYtYm56UzFIM2E2RXZHXzVfU0hlU2hwR0dWS1MwVVFmOHBlOA?oc=5",
-      "published": "2026-07-05",
-      "published_at": "2026-07-05T21:00:00",
       "summary": "",
       "category": "딜·M&A"
     },
@@ -296,8 +264,20 @@
       "category": "세무",
       "dupes": [
         {
-          "title": "국세청 \"692만 사업자, 27일까지 부가가치세 확정신고 하세요\"",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9RTFVHcjMwZlRteTQ5SUVBYU13emUzbHYyQ285Xy1qczBBaE80alh0dEk0c1B6Q0pmT0lBdENBV1BoZm40Y2R1YUlaRmQ4VHhQXzkwdw?oc=5",
+          "title": "국세청 \"692만 사업자, 7월27일까지 부가가치세 확정신고하세요\"",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE0tTnUzbE1PdWxNTUdTaWkxYkVPMjduU3Q3UWt4RmxxellrdFpld1hkWjU3VmZ1N0I4ZnpmWXozSzB2alNJeVFSTUxMU3FiX1pQRl9Z?oc=5",
+          "source_label": "네이트",
+          "published": "2026-07-02"
+        },
+        {
+          "title": "국세청 \"사업자, 이달 27일까지 '부가가치세' 확정 신고하세요\"",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9UeGg0NmZySGNaWlZVaXNUQTZ1S2RuZW50alBRaFpVQUQ0LUF6NHd6VGxLYjctalhMOEpZdDlmVjQzZV9yRnNGMGUybGV0dnU2OU80?oc=5",
+          "source_label": "네이트",
+          "published": "2026-07-02"
+        },
+        {
+          "title": "이달 27일까지 부가가치세 확정신고…고환율 피해기업·청년 사업자 는 납부기한 2개월 연장",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBwczNTSVNTcWhCSXhCSXZ0MGp5VWhSb0dwUkZCN2JIVU4wb0ZucEdaVXVQUU5DTEtiX1B0WFBKSE82dVIxUHpyTUtIbWZzQVU?oc=5",
           "source_label": "v.daum.net",
           "published": "2026-07-02"
         },
@@ -314,27 +294,15 @@
           "published": "2026-07-02"
         },
         {
+          "title": "부가가치세 확정신고 '7월 27일'까지…692만 사업자 대상",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1zNko2ZkxRSFFjSmREOHo5ZVF1cVBneWFkczNkblZ3T1pCVUFUa1pfMm1PbmR1WnhpbVZxN0FiX2s0SEM0dm9mSzcyM0I4a2puNmx3?oc=5",
+          "source_label": "네이트",
+          "published": "2026-07-02"
+        },
+        {
           "title": "692만 사업자, 7월 27일까지 부가가치세 확정신고 해야",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE95TVJyY0NfWTdIQndVQXNnaHZReVhQUjJrRFNjNE81S2wzR29xNDN2MWFvRXBOU1ZENkJYaEd4V1Nybm4yNExHaU9fZGM1MU5qVVViZHZKUktYTDlnYkF5dmNiTExZZHJyRnc?oc=5",
           "source_label": "intn.co.kr",
-          "published": "2026-07-02"
-        },
-        {
-          "title": "이달 27일까지 부가가치세 확정신고…고환율 피해기업·청년 사업자 는 납부기한 2개월 연장",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE55bXRYbW5DSm9OSll2UTYwZjl5ZWlkMUdpbUwzV0NaWjRSQzRJOXZScnVTallVQWt5dzlNOWxCbUE2SnVDZXBnYUZSb0lxdE9HRUF1dg?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-07-02"
-        },
-        {
-          "title": "국세청 \"제1기 확정 부가가치세 이달 27일까지 신고·납부\"",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE05WGttdm42RmxVZzdIdnhMZkZLQUZkQXVTbTZwdVpaVWFsNXpRd3hYTE4yaC1VcFZid3E1ekVfcFotVnpHazU5T0FPYlBOdjA?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-07-02"
-        },
-        {
-          "title": "부가가치세 확정신고 '7월 27일'까지.. 692만 사업자 대상",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9RU2w3djJRQ01nSFhETmxSV21mVHFJbExWVVZLa3o2RC1SakN4REFVb2dsNjMxYkJfbHROcFdRRlNaLVV4aGNTOS1HU0VsUTdVNU1ucVlfVkM3T3NNa25R?oc=5",
-          "source_label": "조세일보",
           "published": "2026-07-02"
         }
       ]
@@ -358,24 +326,6 @@
       "published_at": "2026-07-03T09:06:05",
       "summary": "",
       "category": "딜·M&A"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "v.daum.net",
-      "title": "日 세수 첫 84조엔 돌파…기업 호실적에 법인세 '역대 최대'",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE85VGMxS2VLYWM3VElkUzZIZGlkdVdPcUh2LTJsZmxIRy1SX0N5cTN6NnZhdDVWaEZUZnBSVmVRdy1Na1k3NXE3d0FORzRsWms?oc=5",
-      "published": "2026-07-03",
-      "published_at": "2026-07-03T06:50:00",
-      "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "日 지난해 세수 807조원 사상최대…기업실적 확대에 법인세 증가",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9waXlsek9XUlVBVDJzTlFBNEowQ0FMT2xCeUtKeWNIcG5LZTB2RXZuY1VFVk9OQkIyb0JfVlU5NFJ6cWJaM29fczltZWFJNnM?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-07-02"
-        }
-      ]
     },
     {
       "source": "gnews_딜·M&A",
@@ -429,6 +379,16 @@
     },
     {
       "source": "gnews_세무",
+      "source_label": "뉴스1",
+      "title": "日 지난해 세수 807조원 사상최대…기업실적 확대에 법인세 증가",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBvbUo2YXJ5V2hrQ3NFcVlubjVORUVxYURxUG1UOHY0X3hsYVlCYl9tUk9mR1FGdk9peTVVOEVOeVNEcGtFc2czN3B2TlZKbVhjbURoVXZuX2RNYXRKM2c?oc=5",
+      "published": "2026-07-02",
+      "published_at": "2026-07-02T07:20:08",
+      "summary": "",
+      "category": "세무"
+    },
+    {
+      "source": "gnews_세무",
       "source_label": "에너지경제신문",
       "title": "OECD, 한국 부동산과세 일침 “거래세→보유세로 바꿔야”",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFByZFZnVUxkZDlYZGoyVjUyQmtkV0VMMlU1anc5ZFdfYmxfODJnY3MzU010b2hXQXFRVHZQLU5FOWpyY3QwOWQ2YWtMMk9KNll0NVlaRDFfbzcyalU?oc=5",
@@ -450,16 +410,6 @@
           "published": "2026-07-02"
         }
       ]
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "전기저널",
-      "title": "전기안전공사, 제14회 준·특임 감사인 청렴 워크숍 개최",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1tRU9FNGhOMXhFT0tnX0lNMmxxaHpaSlBLQTFZUjhmWGVSTnVFbzdqbVlpYTdrQmo4dWtGQTI4cDQ4enRrY2tUSEFDT09hOG96d2JJNDVIdUNDVlhqcFpMbDV3?oc=5",
-      "published": "2026-07-02",
-      "published_at": "2026-07-02T06:23:55",
-      "summary": "",
-      "category": "감사"
     },
     {
       "source": "gnews_감사",
@@ -499,51 +449,7 @@
       "published": "2026-07-02",
       "published_at": "2026-07-02T00:00:00",
       "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "농협개혁위 “과제 75% 완료”…세무조사 압박 속 자구책(?)",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBNYW1IU2pjWE5lRXM0eDlpZjlKVk9wRFlwMlY0N1pzME5BTE1fSW1SUE9JR0FENm9ya3o4UnMtWjcwRHhzV0RKYjk1T1R1S1pxZkpmWS1TLS1oVW9DRTVlUUpZQXdYZ1JBLXfSAW5BVV95cUxPaG1obGJKZ2lKUS1FckpmVVBnS29iV1RiVjVyVWYwUU1pVHFZOUEzdU56dmV2cHhRdVc1NDB6YnZrUTJMMHhjLWR3dmR0b01Sd3RBZXh5RWRac2sySmxmZEUyZFhKc0VGa19BVVdGQQ?oc=5",
-          "source_label": "파이낸셜투데이",
-          "published": "2026-07-01"
-        },
-        {
-          "title": "국세청, 농협중앙회 특별세무조사 착수…지도부와 중앙회 개혁 전방위 압박",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9TaldoWGxJek93ZXduWnREZkE4X2F2U25zQnFzVGxSeUR3Z1NRYU02d3M3MkhpcVlQT3NEMGlLZXRuV1E0SlNiU1pFcDNDcUU?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-06-29"
-        },
-        {
-          "title": "농협 수뇌부 겨눈다…국세청, 130명 투입 이례적 세무조사",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9qN21oaTlEanVtQTdhSlRiMlBGVVNSMkU4MDdiUllVOGtYOTZqaS1QVHAtUGY0Tm9FY212ZnIxd1dpOUg0dFEzcnR6dUVhZHc?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-06-29"
-        },
-        {
-          "title": "농협, 대규모 세무조사에 '벌집'…지배구조 개혁 압박 신호탄 분석",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5EZ0MwYVl0SldHNm52dEE4b3NKTkt4ZmNFX01Hbi1CMWo1Nm1YQW1aMlFRb1R6eGE3dUU2a0JzM0QzanpBSy1iQkRlNkFlUmd2Wnl2MGo2WG9YdWPSAWBBVV95cUxNbDNZZnJsSGhsTjl1bDFNSlpQUXBmLUFPYW1MRUtKUVc5MnNkc2tLYW1FTkJmbXUxNEtXZF9UazRPbGV2Nm85cE1Sd0VheWpRekdoSThvRFFtZEdVUnJEVlk?oc=5",
-          "source_label": "연합뉴스",
-          "published": "2026-06-29"
-        },
-        {
-          "title": "국세청, 농협중앙회 특별 세무조사…강호동 회장 위법 여부 겨눠",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBCeW5UYVUyaWFSRGM2UGtPbjdjZHpXQmQteW1NNVl5NWJjWl9pNElMdk9hUmRUWTVuN0ZyaTQ2VXpDVEpoQVU2UkViaXVieHVBNUgya0cyaHdyUEVwZU9nUGtpdWdrbV9nei1QTkpUNzJIZw?oc=5",
-          "source_label": "한겨레",
-          "published": "2026-06-29"
-        },
-        {
-          "title": "[단독] 국세청, 농협중앙회 특별 세무조사…강호동 회장 사법리스크 부각",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE00VjUyR1BDM3ZRX2d3TjZlNGYxbnZidEpRY3dZdXM3amxtc3JicHdkZ0p4RmNZanhwX1R2cDFBaHNtU0gxcS1WMExnTFpvcjlHbW5YY2dKOXNlR3d1UDBlQXNIU19kM2N0eDVJcGpR0gFyQVVfeXFMTjM2cUVEaWE1cmNrTHhkWktUYTg4T1lJMkFEZjJwVFRnb25KMEEzY1pveTJfWk1ITG9POEs4ak9heXFwR3V4b1FmcGhUdDZvcERGZ1RFT3NOa0M5Yy1pX0lOSnBvYXQ0Nnh1aGNoSkNwZENn?oc=5",
-          "source_label": "법률신문",
-          "published": "2026-06-29"
-        },
-        {
-          "title": "국세청, 농협중앙회 특별세무조사 착수…조사요원 130명 투입",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBvcVJyRUlMX282MkhTSkNHaE5GRndWMEEwSU9peENsR214OGw2MEpyajU4Nmxsam1xeG10Qm9EWHFRdzdBdExwcmdzTDItT1U?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-06-29"
-        }
-      ]
+      "category": "세무"
     },
     {
       "source": "gnews_딜·M&A",
@@ -586,16 +492,6 @@
       ]
     },
     {
-      "source": "gnews_세무",
-      "source_label": "세무사신문",
-      "title": "서울지방세무사회, ‘부가가치세 확정신고실무’ 직원희망교육 실시",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9RMnNFZUI2MnpfeTZtaF9OcVgyTFAxQURlTm1iZU9FZDlrOU5EMGNGOWF3TDUtaXo1azd2YmdQQ1BTenA5aXVnMkx0T0d4dmpGbUlmMU00Q0xBSmRISTVyS2VuNWhvbmtYR0JNU0tB?oc=5",
-      "published": "2026-07-01",
-      "published_at": "2026-07-01T09:31:20",
-      "summary": "",
-      "category": "세무"
-    },
-    {
       "source": "gnews_딜·M&A",
       "source_label": "헬로디디",
       "title": "1세대 우주기업 쎄트렉아이 IPO 조언···\"상장보다 중요한 건 신뢰\"",
@@ -616,6 +512,42 @@
       "category": "감사"
     },
     {
+      "source": "gnews_세무",
+      "source_label": "파이낸셜투데이",
+      "title": "농협개혁위 “과제 75% 완료”…세무조사 압박 속 자구책(?)",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBNYW1IU2pjWE5lRXM0eDlpZjlKVk9wRFlwMlY0N1pzME5BTE1fSW1SUE9JR0FENm9ya3o4UnMtWjcwRHhzV0RKYjk1T1R1S1pxZkpmWS1TLS1oVW9DRTVlUUpZQXdYZ1JBLXfSAW5BVV95cUxPaG1obGJKZ2lKUS1FckpmVVBnS29iV1RiVjVyVWYwUU1pVHFZOUEzdU56dmV2cHhRdVc1NDB6YnZrUTJMMHhjLWR3dmR0b01Sd3RBZXh5RWRac2sySmxmZEUyZFhKc0VGa19BVVdGQQ?oc=5",
+      "published": "2026-07-01",
+      "published_at": "2026-07-01T05:39:21",
+      "summary": "",
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "농협 수뇌부 겨눈다…국세청, 130명 투입 이례적 세무조사",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9qN21oaTlEanVtQTdhSlRiMlBGVVNSMkU4MDdiUllVOGtYOTZqaS1QVHAtUGY0Tm9FY212ZnIxd1dpOUg0dFEzcnR6dUVhZHc?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-06-29"
+        },
+        {
+          "title": "농협, 대규모 세무조사에 '벌집'…지배구조 개혁 압박 신호탄 분석",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0zY0V6S00wSDhNUGNsVGc4UUozS3RKSzNKMWh1Z2pSYmdNUDBGd2RYT0xKbFpfZFpEb1pCcC1UWUdYN3U4YktEdy1iUnNlczQ?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-06-29"
+        },
+        {
+          "title": "국세청, 농협중앙회 특별 세무조사…강호동 회장 위법 여부 겨눠",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBCeW5UYVUyaWFSRGM2UGtPbjdjZHpXQmQteW1NNVl5NWJjWl9pNElMdk9hUmRUWTVuN0ZyaTQ2VXpDVEpoQVU2UkViaXVieHVBNUgya0cyaHdyUEVwZU9nUGtpdWdrbV9nei1QTkpUNzJIZw?oc=5",
+          "source_label": "한겨레",
+          "published": "2026-06-29"
+        },
+        {
+          "title": "[단독] 국세청, 농협중앙회 특별 세무조사…강호동 회장 사법리스크 부각",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE00VjUyR1BDM3ZRX2d3TjZlNGYxbnZidEpRY3dZdXM3amxtc3JicHdkZ0p4RmNZanhwX1R2cDFBaHNtU0gxcS1WMExnTFpvcjlHbW5YY2dKOXNlR3d1UDBlQXNIU19kM2N0eDVJcGpR0gFyQVVfeXFMTjM2cUVEaWE1cmNrTHhkWktUYTg4T1lJMkFEZjJwVFRnb25KMEEzY1pveTJfWk1ITG9POEs4ak9heXFwR3V4b1FmcGhUdDZvcERGZ1RFT3NOa0M5Yy1pX0lOSnBvYXQ0Nnh1aGNoSkNwZENn?oc=5",
+          "source_label": "법률신문",
+          "published": "2026-06-29"
+        }
+      ]
+    },
+    {
       "source": "gnews_채용·시험",
       "source_label": "MSN",
       "title": "[자막뉴스] \"죽도록 공부했는데!\" AI 폭격 회계사..정부가 구제 \"회계법인에 채용 유도\"",
@@ -627,6 +559,16 @@
     },
     {
       "source": "gnews_세무",
+      "source_label": "뉴스프리존",
+      "title": "7월부터 달라진다···동탄·기흥·구리 규제지역 지정·세무조사 예고제",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBVbzlVQklOODJfVGJKamJmQXBjTEM5X2ZnWTV0NUtYV3BPSWlXTGVpRTFTeXVKejcwTE9GVk1hMl9zR1lQVUk1OF9pVTJCVTBWcWdueVlPQjd0ZWVjSTYzV0hXbG5BUG5KN3ZPN3BxVTNxZXPSAXdBVV95cUxOWVprVU5kSzE3bG9QN2twUTJQRHVkbl9LaEhTRl9KQlZCWXBya2J0eklKY2JSTWRJRWlnWnMySTllclB4ZzRObWZWTnc0VVBSQ3dTZERFempBX2ZpTUdoVWhJNlJCaHBRa0RuOUYyNE54cUNXZnpYbw?oc=5",
+      "published": "2026-07-01",
+      "published_at": "2026-07-01T01:43:26",
+      "summary": "",
+      "category": "세무"
+    },
+    {
+      "source": "gnews_세무",
       "source_label": "intn.co.kr",
       "title": "‘하반기 세정 이렇게 달라진다’…정기 세무조사 '시기 선택제' 전면 시행",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA4bU5IX3lLRGE1NllZZzQ3cjQ2ejVWQzRtMHpvSkdkUnlLcktYZ3F2UHRFX296RnRwYW5VakhWaEdiQ0JTX2NRZ3lXX1JyeWZHcnl4Zk9GLUpqQnN5MjU3ak54QlAxNHAyd2c?oc=5",
@@ -635,6 +577,12 @@
       "summary": "",
       "category": "세무",
       "dupes": [
+        {
+          "title": "[하반기 달라지는 것-경제]외환시장 24시간 ‘활짝’…정기 세무조사 시기선택 전환",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0zNmQwSEFGVjNMZkVUOW5kamdIWXZzYkdDb3YwM3AzcTBSTVQ0VVRqRTJQZEowcFE4elp2bzEybW11blBoUGx1ZWlXMWpDNy1hVk9Xc0N5TEU3VzhIdlhxSWgwY0xXUU1uYktCedIBcEFVX3lxTFBVcUFhOHV0QlVzaThmNXhqMk91YmU4NTR0NEZ1UWlUSExFa09IZ3NiUVZSQXdOVWJVcWRQamVvdnV5NDBERVpCMG9NTzZuVTFGYUFyRnp0MXNITXkySnNQZHBlWVNtZ2VwdERlV3ZGZFQ?oc=5",
+          "source_label": "남도일보",
+          "published": "2026-06-30"
+        },
         {
           "title": "[하반기 달라지는 것] 외환시장 24시간 열린다…정기 세무조사 시기선택제",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBIcFZCN20xLWQ4OTVqTC1PdTk0Q19HYThvUnAtYTV2ektSMDdTZXBGT3BSQ1o1bUs1RXF0d2lSR1lrdW9VekR1NG5YUjBPVzg?oc=5",
@@ -655,11 +603,11 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "v.daum.net",
+      "source_label": "뉴스1",
       "title": "체납관리단 확대 558만명 전수조사…정기 세무조사, 납세자가 시기 고른다",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBUYmsydTlOOWlfcVZBN0dSdklYZnlkeWdBY3NjSFZ6amk2ODNBb1ZsZ3hYb0hwR1pucVNMQVhfZHVkRUZNeWducGFGVGxZTlk?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE42UkN2emU0NllzRndBOFRSbzQ1eGt3dDhhcWQ2MmRJM2VUeWhCOGtpc3BDVjVFdnBuSDdvTXN0SVFjaklEcVVmckRVdWpJeGtvdmFzVA?oc=5",
       "published": "2026-06-30",
-      "published_at": "2026-06-30T01:02:35",
+      "published_at": "2026-06-30T01:00:00",
       "summary": "",
       "category": "세무"
     },
@@ -702,26 +650,6 @@
       "published_at": "2026-06-29T08:49:32",
       "summary": "",
       "category": "세무"
-    },
-    {
-      "source": "gnews_감사",
-      "source_label": "ebn.co.kr",
-      "title": "카카오 노조가 놓친 '새 회계기준 함정'…\"내년엔 성과급 0원 될 수도\"",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8yRnFCUUFIUzY3YTR1cDZqdmRVODJWd0pWT3E2SnNFQjBlTlpLZ0ZQQV90cTk3bldhRmdDUm1WVmN6WUZ5aDhrRjlWOXFYZzUwRzJhVktoejFha051VjRCUEVDb2x2UE1u?oc=5",
-      "published": "2026-06-29",
-      "published_at": "2026-06-29T06:09:18",
-      "summary": "",
-      "category": "감사"
-    },
-    {
-      "source": "gnews_딜·M&A",
-      "source_label": "인베스트조선",
-      "title": "하일랜드EP, 의료용 디스플레이 디앤티 매각 착수",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNdElKa09xaHR4NGdSVnFFX19tWmRSVWluR2ZVeXJQS3hPcFMxX0gyRWZIc3BqVHZvN3FXcFBSZ19VVFltV3VSTkxGTkdpd09FT0F4YURxUmlIakxYdExveks3M0pBcGFQTXZyTHFGcFBSMU94SUJfbGs5VmNJYl9aS2Zacw?oc=5",
-      "published": "2026-06-29",
-      "published_at": "2026-06-29T05:50:00",
-      "summary": "",
-      "category": "딜·M&A"
     },
     {
       "source": "gnews_감사",
@@ -786,9 +714,9 @@
           "published": "2026-06-28"
         },
         {
-          "title": "\"계약서만 믿었다간 회계오류\"…금감원이 공개한 기업들의 '10가지 실수'",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9ORkpmQ3c4bWRjaWZ2dWJRWWpiTEk2OGN5Z3hWSVZhLVFjcVE4UTYtSUhVQUdOUzBjbl81ZFNZbkU0UHR6emZlT05PUzlaSkNKbWpmT2I4TFN0UFJKOHdqWWlwS2Y4MWp4VmZVaU9YOA?oc=5",
-          "source_label": "뉴스웍스",
+          "title": "스트리머 광고 수익으로 매출 부풀리기…금감원, 회계심사·감리 주요 지적사례 공개",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFA5bExhdUZRaDNKU01YZ1dFZ3UtbmJ3YlF2cF9LQVJjVFRQNERuMG11Q0NpVTNmZlZsTzFLRFQ1VjJZeElDUFRPLXViUk5oeUNxcEHSAVNBVV95cUxQTjVVNExXWU5wdXBmdjhXLTJ3eXhIbFg5QkVsWEZpOXhFWkl2UTlIZVM5VGlfNjV3U0xSU2RPMWpzZ2xXeElyTkJ4UVBidUx4NGFHdw?oc=5",
+          "source_label": "서울경제신문",
           "published": "2026-06-28"
         },
         {
@@ -834,12 +762,6 @@
           "published": "2026-06-24"
         },
         {
-          "title": "감리주기 단축부터 계좌추적권 도입까지…금감원, 회계감독 개선 모색(종합)",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4zQ2htV3BwcEdfcXM5RG9BLUhTa25HQ3hBMVBxYWFKeEJlREwwUUtmcU9WQWNlOFlwTkhuaTBCaVdDYTBoNHlKR1czZ0xtQnVKc1hjSXByNkdLczBWRXA2QtIBeEFVX3lxTE82TGlpTm94bEpmV25ERE1CNmczUlA5U1JZQUtUZE1UY1luQU9adEt6LWk0ZlVZYXpoQnJHdENBbDhPNVB5bjNrWHdIOEN2LTBZQkljdXlyUjhfZVd2UUlLaWpNZ0oxNks2eER4cjZQa1YwQktXREJOWg?oc=5",
-          "source_label": "뉴시스",
-          "published": "2026-06-24"
-        },
-        {
           "title": "금감원, 2026년 재무제표 중점심사 회계이슈 사전예고",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE10NWRlMU1nWlVKenZwOGtuUVBmVUp3YjdTcU9yRlRQNHJuT05KWVdkMHlIUm5sOTZhZFJfTXdmdThqWUdFZHQ0UjdLaGhVLVhHZGlVaXhON2t3eG5DNXVtSTgxVm5QdXlDRlE?oc=5",
           "source_label": "intn.co.kr",
@@ -855,12 +777,6 @@
           "title": "금감원, 내년 해외매출·재고자산 등 '4대 회계이슈' 집중 점검",
           "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1Mbm4wYlpEQUtPZm9qdEdPVjhtY2d3eXg2QTFTSzN3M3FjdmJYSFNtY3JPYVVHZml0dV9sb0FfSEtVMHRkQ1g4Q2JDRQ?oc=5",
           "source_label": "v.daum.net",
-          "published": "2026-06-21"
-        },
-        {
-          "title": "금감원, 내년 해외매출·재고자산 등 4대 회계이슈 집중 점검",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5xeEZJMUJuZmxMZjRjM1FsZnBnMnpVeExGbXVmdUJPbUxfUjRzVDA1NkVjVUN0Z0I2VHFFemxEdnZweUdNQnZxN2NBUjRVS3JPdXR0dVJabU9CZ9IBWEFVX3lxTE5FMGpMREQyOE1WMTlnTHVCdldFbTFVMDk0WUxLZldCRDVzWnZtWWc0S2gydVh5dEhqSnRPYnJPZzAxRkxYQzh6OEM2cFkxNEp5eWVVNGE1WkE?oc=5",
-          "source_label": "아주경제",
           "published": "2026-06-21"
         },
         {
@@ -884,34 +800,14 @@
       ]
     },
     {
-      "source": "gnews_감사",
-      "source_label": "뉴스웍스",
-      "title": "금감원, 사업보고서 공시 부실 확인…자사주·외부감사 항목 대거 지적",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1mTU9BMHN2WG44VnhBZmtjNDhKa2w3bXVpanpCMDctbC1Hd2dKdDVWdmhzQTIyeC1KcTlCbFNRUUNBQzRoLUdfZWdLa1ItaURGd1ZCVTc3bkdNOEk5cmd2WkM0T2MxZWNtVngtTTczMNIBc0FVX3lxTFAweEluS0ZXOUVHRlJZTU5PWDhGOC1pQVFDa3lZeEdLelBiV0hpSDhIRW84b1c3VnF2VTctalBvUlpKdlFOYlQwUnRzYWYyQTFEMTJZQXAwejlPUG5TOHoxMWdyTloyNTBQMFFOdXQ3eFJlOVk?oc=5",
-      "published": "2026-06-29",
-      "published_at": "2026-06-29T03:00:00",
-      "summary": "",
-      "category": "감사"
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "KBS 뉴스",
-      "title": "삼영화학 등 무더기 분식회계 적발",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1Zc1F1RUhRS0g5dFpGTW1yM0stSkZ0MXFoV29GbWE0YkNxemRIOHZqR1VCZmx3NDZNdkFKWXl4bjBlNjIxZXFfTDNQOXFnYmhxRHNLVFgxaExSZDgxYzRrYXp3?oc=5",
+      "source": "gnews_세무",
+      "source_label": "한겨레",
+      "title": "다음달 부동산 대책…보유세 강화되고 1주택 양도소득세 공제 축소될까",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA1b2NmUUhCRU1OMTRCTUt5bW9MNjByYlI2Q2huVXlBbW1ybEtReGUtOUVocFJmczlCR0VSRXFldlMtb05pYWVqRkp2WXBpRks1Ny00Qm9VdDNhd256X0V4R0lMM3hNNHps?oc=5",
       "published": "2026-06-28",
-      "published_at": "2026-06-28T10:54:15",
+      "published_at": "2026-06-28T23:42:00",
       "summary": "",
-      "category": "감사"
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "한국아파트신문",
-      "title": "공동주택 사용료의 산정방법･부과 등 회계처리",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBQSUp2LXVHYzhGNVVxTG9rVDl2RHJ2dVZUSDBDTXNFTDJxSTRyX3QtdWxtTlhGdVhfR0d3Z1V1ZnNFMk5zR28xNWdVQTRvWDVHbFRGTDE3NlNOWTI5RTJLaGZPVmdwWHlS?oc=5",
-      "published": "2026-06-26",
-      "published_at": "2026-06-26T09:39:03",
-      "summary": "",
-      "category": "감사"
+      "category": "세무"
     },
     {
       "source": "gnews_감사",
@@ -950,22 +846,30 @@
           "published": "2026-06-25"
         },
         {
+          "title": "LG家 사위 윤관 '90억 법인세 취소'...법원, 국내 고정사업장 인정 안 해",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0zX003N29zcVZCLWV3Ry02VmpEWGZVcHk1UDFXWnVvWGIzSjhSaFJIbGpZOC1qVHp4ZnVkeV8waFgzUk53WHBuTG9PdkxHT2M?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-06-25"
+        },
+        {
           "title": "LG 맏사위 윤관 해외법인 90억 법인세 취소판결…\"국내사업장 아냐\"",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBwVWVrTGN1RHNMV21aMjhPY2VfV3FLbE9ZNTlvY0dJMTdXZnFCU2t4RmVNelRmZ2gzX0V0Z3Njc25EQUxvalR0UXhobjFZMUtqN2l4NmoxckgzYkHSAWBBVV95cUxOalZuZzJjQ201SktxcU93TVBTeDl5UktyVFczQU5CTG4wRmhPdjZkcTZseUM0YlR0bjJCNVFKRDRZNVR6ejJWd0pDcU1BdmFQN1FUc1JmemxPdWdzM0pDZlY?oc=5",
-          "source_label": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE15dWd5WE1CTjB5NHRqTjNXZDQ1ZU43TEVLWnB4MEtGWVRibGtrc0V3TnhwZ0thZVUzRkNzMFJPeGNrdEFjUmc?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-06-25"
+        },
+        {
+          "title": "법원 \"BRV로터스원 90억 법인세 취소\"…윤관 영향력은 인정",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBCTWZOb19IeWcyUXZjMFNKZ2FoZDE0QkVYcmhUT0hKelNtd0RERm9TbWotVG43aEwxeHZKZnJBZ1FWZ2xUN0R3LTN3b0EyWjQ?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-06-25"
+        },
+        {
+          "title": "LG家 사위 윤관 '90억 법인세 취소'…법원 \"국내사업장 인정 안 돼\"[종합]",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5yRHlMNVFxbmV0OGl1TEdxZGVzRlA3bDcxd05Tc1lpTk0yZEswZ3lTWDJkdUVpMzB1Uk95WnRvNzlEMDY3SktoTTd5bFg1RkU?oc=5",
+          "source_label": "v.daum.net",
           "published": "2026-06-25"
         }
       ]
-    },
-    {
-      "source": "gnews_감사",
-      "source_label": "v.daum.net",
-      "title": "의왕백운밸리 개발 PFV, 회계기준 위반 적발…금융당국 제재",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5EWVJscFVUM25qcFp0UWxlSURMSlA1NEpHS2ZneEY1azJLVVlHVHpzYWxBSGlIaXlSQUtFMXJqamFDeWpvUHU1b0NIaHZRb00?oc=5",
-      "published": "2026-06-25",
-      "published_at": "2026-06-25T07:03:10",
-      "summary": "",
-      "category": "감사"
     },
     {
       "source": "gnews_딜·M&A",
@@ -988,41 +892,29 @@
       "category": "세무"
     },
     {
-      "source": "gnews_세무",
+      "source": "gnews_감사",
       "source_label": "v.daum.net",
-      "title": "\"삼전닉스 법인세 인상...공공 지분 확보로 기본소득 국부펀드 만들어야\"",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE13OHBmeDJrN2hVSFdTU1k0X0hvcXpfN3lkeld2RjdvSmNObTlWV2VFTWw3ZlJhall0N1BkNlkwVVhhbHlLdVdDd2xJOWp1aE0?oc=5",
+      "title": "의왕백운밸리 개발 PFV, 회계기준 위반 적발…금융당국 제재",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5EWVJscFVUM25qcFp0UWxlSURMSlA1NEpHS2ZneEY1azJLVVlHVHpzYWxBSGlIaXlSQUtFMXJqamFDeWpvUHU1b0NIaHZRb00?oc=5",
       "published": "2026-06-25",
       "published_at": "2026-06-25T07:00:00",
       "summary": "",
-      "category": "세무"
+      "category": "감사"
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "뉴스로드",
-      "title": "증선위, 회계기준 위반 아센디오·명가유업 등 제재…감사인 지정·과징금",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1vQ3JSZVg3cGt6SnVqUmVoelNlbGlGdC1ZTUJxRGxSVFdhWUljVUR4MmpoXzNWTEw4V1lZTGVUNG04ZzVGLVZSb0FGbTRyTTNsZlpmOHVDQU93T0FkblBXX3gyLWhmZEE4c0pB0gFvQVVfeXFMUGE2SVBFN1hZbEc4ZTZkVXJtTklWZDUxXzlYWWNfbHpJZW1PeEtpWFZjMXhZNGNzQlEzRWNtTzg4cGc0M2NXZFg2NVIwcEJaVng0YVNsdUVCcmt5RGM1UjVYRGRTX25OcTBGNnlYZV9R?oc=5",
+      "source_label": "마켓인",
+      "title": "증선위, 회계처리기준 위반 아센디오·명가유업 등 감사인 지정",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1sa184Z1R1bzlJQUJjaGUtVDgyel90LWhROUc0QnhXdHoydTJjUGx2LWxkbHRBcjdHYnI4czFDdEFBLWZUTGNLWDd1T3gtTy1WQVVBSTlYM3JpNXd4Tkdzcl9ENFNWcjdBcE1NQ3VDM3FpMWs?oc=5",
       "published": "2026-06-24",
-      "published_at": "2026-06-24T22:35:00",
+      "published_at": "2026-06-24T10:31:31",
       "summary": "",
       "category": "감사",
       "dupes": [
         {
-          "title": "증선위, 회계처리기준 위반 아센디오·명가유업 등 감사인 지정",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1sa184Z1R1bzlJQUJjaGUtVDgyel90LWhROUc0QnhXdHoydTJjUGx2LWxkbHRBcjdHYnI4czFDdEFBLWZUTGNLWDd1T3gtTy1WQVVBSTlYM3JpNXd4Tkdzcl9ENFNWcjdBcE1NQ3VDM3FpMWs?oc=5",
-          "source_label": "마켓인",
-          "published": "2026-06-24"
-        },
-        {
-          "title": "'회계기준 위반' 아센디오 감사인 지정·과징금",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9GSlVJemxRQ0ZoYlF1TGVsQ1NEa3JVODl4b1JFRUh6Rmg5T3ktclVmWTBZVEwwS09rOGlKMTlMd0tLSVkwdVFrdkZkU2ZKWlk?oc=5",
+          "title": "증선위, 아센디오 등 3개사 '회계처리 위반' 적발⋯과징금·감사인 지정",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1FMTlabHhVWTA2ak8xNngyZjExT1JtcWU3RlNLdFJNVmRUQWRBNmF2dkRjVXphdmMxbjUwek8xa1pJTWwwNUE?oc=5",
           "source_label": "v.daum.net",
-          "published": "2026-06-24"
-        },
-        {
-          "title": "증선위, 회계처리 위반 아센디오·명가유업 등 제재",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1UMzY5QWxZXzhTVUtrS1NUNldnM3ExUi05eURRUG5zQ2NOaFRIQWhnODZiZXZLOVVkOFhPTE01MEU2M2J5MWdSZXlUMlo2b0dWZ05mT050Znk3a2M?oc=5",
-          "source_label": "KBS 뉴스",
           "published": "2026-06-24"
         },
         {
@@ -1032,15 +924,9 @@
           "published": "2026-06-24"
         },
         {
-          "title": "금융위, 아센디오·명가유업 등 3개사 회계처리 위반 조치",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFByemFqajZwdkw2czgtd3ZSZ2tZZWhIWENkaldDLWtycWF5ZWxrT0VFM0RPZ1V1bEEyczJSdERycmp3TTRBaXpzSTRzUHo4OFY5Z0lwWQ?oc=5",
+          "title": "'회계기준 위반' 아센디오 감사인 지정·과징금",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9GSlVJemxRQ0ZoYlF1TGVsQ1NEa3JVODl4b1JFRUh6Rmg5T3ktclVmWTBZVEwwS09rOGlKMTlMd0tLSVkwdVFrdkZkU2ZKWlk?oc=5",
           "source_label": "v.daum.net",
-          "published": "2026-06-24"
-        },
-        {
-          "title": "증선위, 아센디오 등 3개사 회계처리 위반 제재…감사인도 조치",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5NazJVblh0SHA0ZkE3UFBRRVVEVVl3bTB2MzduWFZxQ3hjM1gwWUlQRjIycENBVDVYLVhZbTFjYU9heUExTUt3ZzBnZXlZTUFzcGV4SFhVOU1KWlBh?oc=5",
-          "source_label": "뉴스핌",
           "published": "2026-06-24"
         },
         {
@@ -1056,15 +942,21 @@
           "published": "2026-06-24"
         },
         {
-          "title": "증선위, '회계위반' 아센디오 등 3개사에 과징금 - 머니투데이",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5sNkVRUGNqNVlwYkU1ZHhqSVJhTnFHbHM1NWVxTE5ScDlad2NVbndBVEtRN3BsZ05OZVJLcWZwU1JHRjJpQTdaVWF6UGFvYmZUNFpnaHNLUGw0dDU4MlBUM1NkekJ5c05i0gFuQVVfeXFMTTFaS0lxUVBua3NzQXhXNmJ0T2V3ejJRXzNMM1h5VkJTMXc1NjZ0TUZQek1POWstWDlOcFpPZlRxTXJEYXJvNE01MUJNSExIZWRpTXJzbnAyY2MtWUdoY2ZFSXRBN1NrS1gtYTJObEE?oc=5",
-          "source_label": "머니투데이",
+          "title": "증선위, 아센디오 등 3개사 회계처리 위반 제재…감사인도 조치",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5NazJVblh0SHA0ZkE3UFBRRVVEVVl3bTB2MzduWFZxQ3hjM1gwWUlQRjIycENBVDVYLVhZbTFjYU9heUExTUt3ZzBnZXlZTUFzcGV4SFhVOU1KWlBh?oc=5",
+          "source_label": "뉴스핌",
           "published": "2026-06-24"
         },
         {
-          "title": "증선위, 아센디오 등 3개사 '회계처리 위반' 적발⋯과징금·감사인 지정",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1FMTlabHhVWTA2ak8xNngyZjExT1JtcWU3RlNLdFJNVmRUQWRBNmF2dkRjVXphdmMxbjUwek8xa1pJTWwwNUE?oc=5",
-          "source_label": "v.daum.net",
+          "title": "증선위, 회계처리 위반 아센디오·명가유업 등 제재",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1UMzY5QWxZXzhTVUtrS1NUNldnM3ExUi05eURRUG5zQ2NOaFRIQWhnODZiZXZLOVVkOFhPTE01MEU2M2J5MWdSZXlUMlo2b0dWZ05mT050Znk3a2M?oc=5",
+          "source_label": "KBS 뉴스",
+          "published": "2026-06-24"
+        },
+        {
+          "title": "증선위, '회계위반' 아센디오 등 3개사에 과징금 - 머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5sNkVRUGNqNVlwYkU1ZHhqSVJhTnFHbHM1NWVxTE5ScDlad2NVbndBVEtRN3BsZ05OZVJLcWZwU1JHRjJpQTdaVWF6UGFvYmZUNFpnaHNLUGw0dDU4MlBUM1NkekJ5c05i0gFuQVVfeXFMTTFaS0lxUVBua3NzQXhXNmJ0T2V3ejJRXzNMM1h5VkJTMXc1NjZ0TUZQek1POWstWDlOcFpPZlRxTXJEYXJvNE01MUJNSExIZWRpTXJzbnAyY2MtWUdoY2ZFSXRBN1NrS1gtYTJObEE?oc=5",
+          "source_label": "머니투데이",
           "published": "2026-06-24"
         },
         {
@@ -1072,6 +964,48 @@
           "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBjM2Y2RnBxd1IycDlmOU1nY1MxNXF5MUo4VGczMjNxYTBtWm9JbHZzcHEwRGJfcHlHV083V0hzcTdYaVlMOUE?oc=5",
           "source_label": "v.daum.net",
           "published": "2026-06-24"
+        },
+        {
+          "title": "금융위, 아센디오·명가유업 등 3개사 회계처리 위반 조치",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9xZlBhWk1TbkRST0NNX3ZmdExxMGc2NWg1a3FyZnR5NEVzWU14QUhUTnhETklBOE1Ld1kxMS0wUjdRVGw4ajZQaWVyb0ZQRmM?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-06-24"
+        },
+        {
+          "title": "영풍 회계처리 위반 중징계…고의성 해석도 제기",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE51MTNFc1Qwc1pIMU9MZ25qdzg4dS1jZzEwdHBOdWw4eERsS0g5blplTmlFNzdKLUhDWmQ0UnpkNG1lU1ktVmlPZEczLW5zU21zS1JDb19n?oc=5",
+          "source_label": "지디넷코리아",
+          "published": "2026-06-21"
+        },
+        {
+          "title": "영풍, 회계기준 위반 '고의성' 논란…당국 '전 대표이사 해임' 권고",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1yazdjdlJyMHZNQ1JwQXV5SU83VHdhZkR4aGxmOE1XMzc5OTUyVHJoSGVETjJIeHpiQkhsSjRvQUVlWXpDdjYxMm1haVpCbVk?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-06-20"
+        },
+        {
+          "title": "증선위 “영풍 충당부채 과소계상”…고의성 논란 불붙나",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB5VEtBMnBPQ2U2VmpGX3RVbjhKdEUzTXVyQ0pGR1Q2dDFJd096SUhLMnMybVEyNmhPLUhBSUNraF9ZZU9rMVB2dXB3YTgxMzg?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-06-20"
+        },
+        {
+          "title": "증선위 중징계 받은 영풍⋯왜 '대표이사 해임 권고' 내려졌나",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE8wM3A5ZHRSQmpCdEhpR3NrbVdHZDJOWUtnNC1JRXB0RlFlaUdLVV9mRmZhY0dPS3VPRHdROHhrbTBuQkd1RVE?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-06-20"
+        },
+        {
+          "title": "영풍에 전 대표이사 해임 권고 내린 증선위…'고의 회계위반' 판단했나",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5pZ2FZZmxRek40UmNBckcxM0o1dkJmRE4wNTNvU2VUWE9ETDB4bEtmMm1HRU82b1RjUDY4djJJSmk1V3Y3M29kSF8yWlE2dFJocW5YNw?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-06-20"
+        },
+        {
+          "title": "영풍, 회계처리 위반 위반 제재 후폭풍⋯감사위 책임론도 거론",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5qdVNpSXptemZDY0ZLUXcySVRvMFEtV3owTkZ6eG1zUFdnY1BmQjVaZ25RT3ZFcHNPcU1sWW5JZWJpVnBxZVp3RkFDSQ?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-06-17"
         }
       ]
     },
@@ -1106,58 +1040,6 @@
       "category": "딜·M&A"
     },
     {
-      "source": "gnews_감사_2",
-      "source_label": "지디넷코리아",
-      "title": "영풍 회계처리 위반 중징계…고의성 해석도 제기",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE51MTNFc1Qwc1pIMU9MZ25qdzg4dS1jZzEwdHBOdWw4eERsS0g5blplTmlFNzdKLUhDWmQ0UnpkNG1lU1ktVmlPZEczLW5zU21zS1JDb19n?oc=5",
-      "published": "2026-06-21",
-      "published_at": "2026-06-21T07:00:00",
-      "summary": "",
-      "category": "감사",
-      "dupes": [
-        {
-          "title": "증선위 “영풍 충당부채 과소계상”…고의성 논란 불붙나",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB5VEtBMnBPQ2U2VmpGX3RVbjhKdEUzTXVyQ0pGR1Q2dDFJd096SUhLMnMybVEyNmhPLUhBSUNraF9ZZU9rMVB2dXB3YTgxMzg?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-06-20"
-        },
-        {
-          "title": "증선위 중징계 받은 영풍⋯왜 '대표이사 해임 권고' 내려졌나",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE8wM3A5ZHRSQmpCdEhpR3NrbVdHZDJOWUtnNC1JRXB0RlFlaUdLVV9mRmZhY0dPS3VPRHdROHhrbTBuQkd1RVE?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-06-20"
-        },
-        {
-          "title": "영풍에 전 대표이사 해임 권고 내린 증선위…'고의 회계위반' 판단했나",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5pZ2FZZmxRek40UmNBckcxM0o1dkJmRE4wNTNvU2VUWE9ETDB4bEtmMm1HRU82b1RjUDY4djJJSmk1V3Y3M29kSF8yWlE2dFJocW5YNw?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-06-20"
-        },
-        {
-          "title": "증선위, 영풍 회계위반에 전 대표 해임권고 의결",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5tQmZOaU1JVjVMM05nOE9INTBISlV4VUtJS0xtOEZoeUVtb3JyNVlydm1JMFpXRVNpVTdDTTRBQ0pLRnU3SXVaLXZnQlFRZ210QjVrR0pwclFWRXc?oc=5",
-          "source_label": "에너지경제신문",
-          "published": "2026-06-19"
-        },
-        {
-          "title": "영풍 회계처리 위반 제재에 감사위 감독 과정도 주목",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9NbmZSSUFSV29nZXlsenBPdjBsczlaYmRNT1kyNEYzTXdxMnhFXy1FWmNjQXBzWjdoanF6S2V1OTNzLTJSZ1dvN05uNGxYalk?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-06-17"
-        }
-      ]
-    },
-    {
-      "source": "gnews_딜·M&A",
-      "source_label": "한국경제",
-      "title": "M&A로 살길 찾아 나선 사스기업",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBXMlZIMXl4ZE9vcDV6ZnNCXzNpUzhHR2hYa3NxVGNlbS1JNjhRa0pRNEYtT1BiM0tORHVyWjRpQVZxYzV2bUxOZHhYUFVRWk9SY2ZrbE12NC00d9IBVEFVX3lxTE1lZ1ZoRkJmYmt4UlEwVzNmZGstQnZ6RGJNZFA1YXpNRmk4TlZSYjFxQi1DOTZRSWdac2tWUVloQ2dUb2hydU42eHpKMXNiV0k3WjlkVg?oc=5",
-      "published": "2026-06-19",
-      "published_at": "2026-06-19T07:00:00",
-      "summary": "",
-      "category": "딜·M&A"
-    },
-    {
       "source": "gnews_세무",
       "source_label": "세무사신문",
       "title": "세무사회, “건보 소득조사로 국민고통, 국세청 세무조사로 일원화해야“",
@@ -1187,9 +1069,9 @@
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "조세일보",
-      "title": "증선위 조치 두고 고려아연·영풍 MBK 해석 엇갈려",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1qNTUzeFdVYnREbmNZVmotQlhWVy0tT1Z1TFhfR0I5M2J5VGZOTnZlVi1TY21GMllyTUNnX0I3MWFyOGlpejlyN2JxaUtMcEMxc19ONDZpSHJiQnkxV1p3?oc=5",
+      "source_label": "연합뉴스",
+      "title": "'회계처리 허위 공시 혐의' 아난티 대표 형제 항소심도 무죄",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9pSnEzcFlRV0h0U0ZNc0pTSTJGNVFWTEpLaUtRWDd5MmVXeC1Zb2tkZFYwSGJXaEVYdmZmQ0VBcUEwYzI5YUVncWpaOWZ3ZXZFVmQyQXlHcHFDcUXSAWBBVV95cUxQcVZDOV92U1RMSnRzM3JvS2lMTVQtTjhXRk53Q2w1SFR6QlEzZUpHUUF2UGE2dnNTLVlYNEFIcVNqSEpsSjVZNWdSYWtlVXp0X1B5TThyOEZYOEdHM2lTUWU?oc=5",
       "published": "2026-06-18",
       "published_at": "2026-06-18T07:00:00",
       "summary": "",
@@ -1197,9 +1079,9 @@
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "연합뉴스",
-      "title": "'회계처리 허위 공시 혐의' 아난티 대표 형제 항소심도 무죄",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9pSnEzcFlRV0h0U0ZNc0pTSTJGNVFWTEpLaUtRWDd5MmVXeC1Zb2tkZFYwSGJXaEVYdmZmQ0VBcUEwYzI5YUVncWpaOWZ3ZXZFVmQyQXlHcHFDcUXSAWBBVV95cUxQcVZDOV92U1RMSnRzM3JvS2lMTVQtTjhXRk53Q2w1SFR6QlEzZUpHUUF2UGE2dnNTLVlYNEFIcVNqSEpsSjVZNWdSYWtlVXp0X1B5TThyOEZYOEdHM2lTUWU?oc=5",
+      "source_label": "v.daum.net",
+      "title": "고려아연 vs 영풍·MBK, 증선위 제재 놓고 격돌…여론전 계속",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9QdnhyTG9nNDdZaDJUT2NISGlDQ1hicW5xZXpQcXlZbDVwcU1LYkQtcDJRUWNBZ1FSOFotUGhITno0X1BiRmc?oc=5",
       "published": "2026-06-18",
       "published_at": "2026-06-18T07:00:00",
       "summary": "",
@@ -1216,34 +1098,6 @@
       "category": "감사"
     },
     {
-      "source": "gnews_감사_2",
-      "source_label": "세이프타임즈",
-      "title": "삼성생명 장부 12.7조 누구 돈인가 … 꼬리무는 회계처리 논란",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE16X0ZGTVJtUnNvdUxiNEg2d0pBcHJhNHNpQWxhRTF4TlpNN2dCczNzRTk0OTJwNWFENVNsNEhDNWltaFVsU29fS0dQOC1wMTRMRHFpUzdET3pkZVRvbUNlWjByekJBaWZWOTB5Rjdrd9IBc0FVX3lxTE5kYnNpbTZMSmxDMWRxVVZiZjFFZ0hBQnFXYk5mTXZPUDF3Y2xHX0FRQ2tIelMyekZxR0x0RzYxZlBfVTNpUnlVQ0dNMkdQeHJUUmFVVjc2UWZwMUVnckVCTDNUUGlWeDA4S0N1T2dvUklNV1k?oc=5",
-      "published": "2026-06-17",
-      "published_at": "2026-06-17T07:00:00",
-      "summary": "",
-      "category": "감사"
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "법률방송뉴스",
-      "title": "증선위, 고려아연 이그니오 인수 첫해 영업권 절반 손상 지적",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5wQTZTdnVmakd5bnVsREhCN2lXTEJ2U0NWa3JrQUptWHFYQjhtd29oQWw4V1B2TVMyc1pUdmg3cXNSbk1UR2d4QXVoWFgwdFltcGlYUXB6cnJNZkRQV3BCanpHRjg?oc=5",
-      "published": "2026-06-17",
-      "published_at": "2026-06-17T07:00:00",
-      "summary": "",
-      "category": "감사",
-      "dupes": [
-        {
-          "title": "증선위, 고려아연 이그니오 인수 첫해 '반토막'…영풍·MBK \"고가 인수 방증\"",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE14eG5JZWdNQUF6WkFkQThRM0lzZlJlMFBlSTlhdlloYTFHLWItSUxwejdHUlNLNFRJckthcjJoNHBPQm9oTE5NZHFZYUJJMXFwYWNBTDBuaFdXUGJVVzZKdjNpeVdKNTlqWV9weC02RTBVZw?oc=5",
-          "source_label": "오피니언뉴스",
-          "published": "2026-06-17"
-        }
-      ]
-    },
-    {
       "source": "gnews_감사",
       "source_label": "v.daum.net",
       "title": "상장사 감사의견 '적정' 97%…내년 새로운 K-IFRS 도입에 손익계산서 변경",
@@ -1251,20 +1105,18 @@
       "published": "2026-06-16",
       "published_at": "2026-06-16T07:00:00",
       "summary": "",
+      "category": "감사"
+    },
+    {
+      "source": "gnews_감사",
+      "source_label": "v.daum.net",
+      "title": "금감원, 상장사 65곳 감사의견 '비적정'…의견거절 61곳으로 늘어",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5IdDdQaHctZ3hPTUMyN2dOYzFtLUZIdHUzSWpiaVY3TFM1WUw0V0w1T0NFM01qUUhRUm9qSE1CU2N0eUhLVTdrN2ktQmphM1E?oc=5",
+      "published": "2026-06-16",
+      "published_at": "2026-06-16T07:00:00",
+      "summary": "",
       "category": "감사",
       "dupes": [
-        {
-          "title": "상장사 감사의견 ‘적정’ 97.6% 유지…“계속기업 불확실성 기재 꼭 확인해야”",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1TZ0phYTlRU19kbi1PRHFfbkRoYlBuWjBadUtxYXl6VERDNkpmTk5QMlk2SGo0b2dFT204NHdKV3F1ZWdmQmhhZzR1aDZQa2g0cE9CdHpSLVpWcHZQQ3VKTzRVbld5UmlUY3c?oc=5",
-          "source_label": "intn.co.kr",
-          "published": "2026-06-16"
-        },
-        {
-          "title": "금감원, 상장사 65곳 감사의견 '비적정'…의견거절 61곳으로 늘어",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5IdDdQaHctZ3hPTUMyN2dOYzFtLUZIdHUzSWpiaVY3TFM1WUw0V0w1T0NFM01qUUhRUm9qSE1CU2N0eUhLVTdrN2ktQmphM1E?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-06-16"
-        },
         {
           "title": "감사의견 ‘적정’도 안심 못한다…금감원 “계속기업 불확실성 봐야”",
           "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBuZ0tDSlBYci1oRm5DZTZ3YUlYdmliTkxxY3BLb2M5WGE5NndPLUFaTTBhV2xQY2dpNnpqLUVyWnZhV2tHYlh6TUUtZ05IbU1EMzF1aV9tWG91ZnBEbndLZzN3?oc=5",
@@ -1276,44 +1128,8 @@
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBRa19jcTVna0tONnhyVTYtLUdMWERTR3MyNTNxVXZaTXUweGNHODNseWJBV0hKbVFuMTlhVDZUX01teHdzNmZfRUtfbjFicnk4QU1lX3ptMWpadGFPSlR0QVRIRmNqLXdxbmc?oc=5",
           "source_label": "비즈워치",
           "published": "2026-06-16"
-        },
-        {
-          "title": "뚝뚝 떨어지는 상장사 감사보수…금감원 \"감사 품질 저하 무관용 대응\"",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9KUGdlY1ZKSTNMTEtTbjY1Zlo0LUN5XzlNSDhuaXJJb2F4YlZvYmFKNmhQYUpFOS1XVDNYVUN2LXo0cDFmbVhJVWhRNGFFTGQ1Mk1TLXZGSmd6TGhpNU5CdA?oc=5",
-          "source_label": "아시아경제",
-          "published": "2026-06-15"
         }
       ]
-    },
-    {
-      "source": "gnews_감사",
-      "source_label": "연합뉴스",
-      "title": "지난해 '비적정' 감사의견 65개사…내부회계는 소폭 개선",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE55WHVoSzlLTTRQdHRjR3JXeFhBZEJlRGljTVpBQl82UzZMS1hWdVpsaWYyTk9TaFdxT1FMbmFJcUZ5SHhyeEpFWFJkbGRzdzNJUUloNDYtbGNrQW_SAWBBVV95cUxORi1sOW0zVDRpSEJaTTdOSUhQUUlDNnA5SmhMQ2d1V1hLdHZiNHlnT1FvM3dENHNBY1lQaDB4VVh1VEI5Q0paVEhMaHUyTU5OamxmV3k2allfM2UyejhwY1M?oc=5",
-      "published": "2026-06-16",
-      "published_at": "2026-06-16T07:00:00",
-      "summary": "",
-      "category": "감사"
-    },
-    {
-      "source": "gnews_감사",
-      "source_label": "인포스탁데일리",
-      "title": "재무제표 '적정'에도 상폐 가능성... 금감원 \"투자자 주의 필요\"",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5IZ2dJOHQycGVFb2tqXzhaVk5DNW8zTllBc1NmazVFT0psNk5TeUxnNzEtWnJyWVZWN2k2WlVsa2NvZkVqR205bm5BMGQyVXY3Y2lkRXh1TS1yQjRSRUlyMy1MNVFvQ2JBVkpacmhfZEl0Q1RLZVE?oc=5",
-      "published": "2026-06-16",
-      "published_at": "2026-06-16T07:00:00",
-      "summary": "",
-      "category": "감사"
-    },
-    {
-      "source": "gnews_감사",
-      "source_label": "데일리안",
-      "title": "지난해 상장법인 재무제표·내부회계 적정 비율은?",
-      "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxObGxRWXVJY1VDMWNJaTJXaU5wX0FYX2tMdzhiSWxLM3FhVldmaDJORVliTE9nQmZMRnIzMU5mUzJKSXlSQmNWSEpxTTNKb3JDTlh6VzlJd014eDZOWDZmZ2VDZWhfOEdCNUxsQXF2UzV1VDA2d1ZBTkw1V1FNM3hwSDVOQ01yWU1lMkpkZngtSGpnbXR5UlRCTDNuVFhLZVRTZk1IZWt4Sm9rOEZpTlZITDdUalZRUW1qQVVfRHZjU2dZc2d4UUJpQktWWnZFV3BVYnhXMk5nWEFTZF9OZGF6QjdiM0JUenNEc0s2LUZIR1laaXdFR2dxX0czbUFwTGozeHFPODFKYk02dnFSUW9jZWhUZW14eUF0NVI0TlRSLTFEaG10MlBfM25uS3FaUk1z0gGwAkFVX3lxTE5sbFFZdUljVUMxY0lpMldpTnBfQVhfa0x3OGJJbEszcWFWV2ZoMk5FWWJMT2dCZkxGcjMxTmZTMkpJeVJCY1ZISnFNM0pvckNOWHpXOUl3TXh4Nk5YNmZnZUNlaF84R0I1TGxBcXZTNXVUMDZ3VkFOTDVXUU0zeHBINU5DTXJZTWUySmRmeC1IamdtdHlSVEJMM25UWEtlVFNmTUhla3hKb2s4RmlOVkhMN1RqVlFRbWpBVV9EdmNTZ1lzZ3hRQmlCS1ZadkVXcFVieFcyTmdYQVNkX05kYXpCN2IzQlR6c0RzSzYtRkhHWVppd0VHZ3FfRzNtQXBMajN4cU84MUpiTTZ2cVJRb2NlaFRlbXh5QXQ1UjROVFItMURobXQyUF8zbm5LcVpSTXM?oc=5",
-      "published": "2026-06-16",
-      "published_at": "2026-06-16T07:00:00",
-      "summary": "",
-      "category": "감사"
     },
     {
       "source": "gnews_감사_2",
@@ -1324,26 +1140,6 @@
       "published_at": "2026-06-16T07:00:00",
       "summary": "",
       "category": "감사"
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "녹색경제신문",
-      "title": "'손실 과소계상' 영풍, 증선위 중징계…회사 측 \"법적 절차 밟을 것\"",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBxc1gwMGNXb0hvdWdtU3l0d2VtQ05adlRpenJuOWVLdWlNZ3pNU05uelM1RzBxOXhNNWNDbTVac3l0LXlheWxqbHhJTUpPc050MHJkYTh2dFpTSXBzcXVBWTRYU1A2VjRL?oc=5",
-      "published": "2026-06-16",
-      "published_at": "2026-06-16T07:00:00",
-      "summary": "",
-      "category": "감사"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "법률신문",
-      "title": "김·장, ‘글로벌 조세대응’ 세미나... 필라2·이전가격 이슈 진단",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE45TjVUX0R2SVE5V0xDVFpSWk5sdjNhaWlvWjJwQnlVQ0lMekN1d3RVV2dtbzNHczNBUEVJQUMtNnlBcEpEXzl5VzRXT2xqZmpyTVJuNEhMNmU1VGhYQ0tDQjFhZWJURVgwTEhkU3d30gFyQVVfeXFMUE8xdE9DQ0hIV3Q0TFVFYjYwNUtHLUxWNFFVbTNpWGNWdEdnckFUZndEanBHR21lVHlxMEFKZ1dFS25vYVBJb3Y4MlZ1OG45UEpfNlk1emw0NDB2Zi1IbUdlSDVCTkJUQUZRUF96ZGpLTlZR?oc=5",
-      "published": "2026-06-15",
-      "published_at": "2026-06-15T07:00:00",
-      "summary": "",
-      "category": "세무"
     },
     {
       "source": "gnews_채용·시험",
@@ -1394,12 +1190,6 @@
           "published": "2026-06-02"
         },
         {
-          "title": "'미지정 회계사' 분산 채용하지만…선발 인원 축소는 빠졌다",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBZS0VBYVQzVzdwLUtBUmtsY3Z4V0lDbGp2S0puaEFYOXpiMElJTFdhdXFyVEp3YjlVbk9zQjFEV1BhclB5Q0JNaFk1OVBDU3NjeEZ3?oc=5",
-          "source_label": "네이트",
-          "published": "2026-06-02"
-        },
-        {
           "title": "실습할 곳 못찾은 '낭인 회계사'…회계법인에 의무 배정",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBMY0xsQmVtSHdhSTBQZzMzMEdVcTc3WHhvR3gzWjdPRTR1d0pmd0R1ZTRXUkJ2eWROTXZRSmtFUTFCaUFqd1RteW1PZlhtdTdsMTNsVGVtMzNqUdIBVEFVX3lxTE9QRktDWlVOOFpzZEk2bFdCRV84cU1mVW5Cb1JjcXdPbDB6RnB2MWUyZ2hhcnlsZlFZTkFac1J1eUo4WFpYajI5XzdTM3N1NVdHTmJIMA?oc=5",
           "source_label": "한국경제",
@@ -1409,12 +1199,6 @@
           "title": "금융위, 공인회계사 시험합격자 수습처 안정화 지원 나선다",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9ubkhKTkVtWlV5TWkwaUFpQXZRcG9xRVQ0VEYtVFBIX05ndnowQ3VyLWR2LVFWZ2tqN2tmbmNTZXdQVmlYZTY5N2NDMHI2Z05nWUhjR0tGemFoUlRRckxtTVFYdm5oLUFTaWc?oc=5",
           "source_label": "intn.co.kr",
-          "published": "2026-05-31"
-        },
-        {
-          "title": "직장 못구한 회계사 합격자, 한공회 신청시 수습처 배정",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1QODdLazIwSnNLcHJxZTBzN0Nad0hrX0Rjc2Z3YVBlTjZZdi1lX1Q4TVR3cXptRldadDN3SWVoMnZqeDRkeGc?oc=5",
-          "source_label": "v.daum.net",
           "published": "2026-05-31"
         },
         {
@@ -1436,6 +1220,12 @@
           "published": "2026-05-31"
         },
         {
+          "title": "직장 못구한 회계사 합격자, 한공회 신청시 수습처 배정",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1QODdLazIwSnNLcHJxZTBzN0Nad0hrX0Rjc2Z3YVBlTjZZdi1lX1Q4TVR3cXptRldadDN3SWVoMnZqeDRkeGc?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-05-31"
+        },
+        {
           "title": "금융위, 회계사 수습처 확대…미지정 합격자 한공회가 배정",
           "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9nYzE4SGVSQnREXzJRb3NKay0xVUlQNGZlNUpFY0xHRThxVjVseGtqZlRyVjJ0bko2anRXeWpOLWVQZ3FaOXc?oc=5",
           "source_label": "v.daum.net",
@@ -1448,27 +1238,27 @@
           "published": "2026-05-31"
         },
         {
-          "title": "회계사 합격하고 수습처 못 찾아…금융위 “실무기관 확대”",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA2NXlZU2NrMkEyaFJubXZ5TVFqZ3RzVVNldkl3MnNveXRGTjZrOGtMVU42RGhtTDlicE5ySXM1WVJaVGVzdVdZTXdWTEYtd0tjRnFSLWpKT3VGS0M2UmRESlB4TmZuQVE?oc=5",
-          "source_label": "한겨레",
-          "published": "2026-05-31"
-        },
-        {
           "title": "수습처 막힌 회계사들 숨통…국회·법원·국민연금도 문 연다",
           "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE83ZUQxTmhJaldqaEYzZ0pZRWFabTc5aFpzSnQ4eDEtOTRGUW96WFJaZmhVU3NmSWUwVEREemwwWHJiLVAtSmVWWC1lMmVqWnRGZmJXaVN4V2VQX1JRdnR4SVh3?oc=5",
           "source_label": "디지털데일리",
           "published": "2026-05-31"
         },
         {
-          "title": "장기 미지정 회계사들, '감사인 등록' 회계법인에 수습 배정",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOMzQ0QkxPMzdiSVJNN2xOc0dBUzV5eVQxVDZTUnNkN0xEYXRjdUJfNTZjeWxOVm9oaXJQb0tLUkRncTFvNHh2RlNqRXNmSHlxRUtfQ2dQbzhEYXpnM0p3U1lrTXc2b3pXS3ZYYkp4U1FFTkM1MFZEWFdIaF9LT3hPVw?oc=5",
-          "source_label": "이데일리",
+          "title": "2년째 수습처 못 구한 회계사, 한공회장이 직접 수습처 배정한다",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFA5c1g0YVRId29NanV4OTdKa3VsNTZaWmgyY2t4clZWaUxTdlRIYjRJNjFjbm5WYUZiZUFRdXJFQzYyUmdrblhYajFmcEo4ZUI2WEx1SDdvZ3RvYmVYYldB?oc=5",
+          "source_label": "뉴스1",
           "published": "2026-05-31"
         },
         {
-          "title": "2년째 수습처 못 구한 회계사, 한공회장이 직접 수습처 배정한다",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5wWE96bDJmSnJRc0dsYVpzTVRqVTdjM3FyNVdYcnZBMWhDekJwZW85VXBnX2F0dEM3UldWSk1BOEw4NkVoVjJGM2dlNWRIV2s?oc=5",
-          "source_label": "v.daum.net",
+          "title": "회계사 합격하고 수습처 못 찾아…금융위 “실무기관 확대”",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA2NXlZU2NrMkEyaFJubXZ5TVFqZ3RzVVNldkl3MnNveXRGTjZrOGtMVU42RGhtTDlicE5ySXM1WVJaVGVzdVdZTXdWTEYtd0tjRnFSLWpKT3VGS0M2UmRESlB4TmZuQVE?oc=5",
+          "source_label": "한겨레",
+          "published": "2026-05-31"
+        },
+        {
+          "title": "장기 미지정 회계사들, '감사인 등록' 회계법인에 수습 배정",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOMzQ0QkxPMzdiSVJNN2xOc0dBUzV5eVQxVDZTUnNkN0xEYXRjdUJfNTZjeWxOVm9oaXJQb0tLUkRncTFvNHh2RlNqRXNmSHlxRUtfQ2dQbzhEYXpnM0p3U1lrTXc2b3pXS3ZYYkp4U1FFTkM1MFZEWFdIaF9LT3hPVw?oc=5",
+          "source_label": "이데일리",
           "published": "2026-05-31"
         },
         {
@@ -1511,12 +1301,6 @@
           "title": "\"공인회계사 선발제도와 수습제도의 연계 강화해야\"",
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5Ud1lXbVZ2cFJ5MUpnM3RScmFUWk1XX2pzT2I5S3c5Z203cEJMMHMwMkZXeURlVlVXQVcybkdoVTZickhOSm1KUXFMaV9WN3Rycko0S3U0VVFfUWRSSlRKLURmM0k?oc=5",
           "source_label": "한국세정신문",
-          "published": "2026-05-11"
-        },
-        {
-          "title": "수습처 못 구하는 공인회계사업계, “합격자 수 축소” 등 제안 나와",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1JbVM3YmxlNUhVSVdrd1Nmb3hScUFIX29hTHVsdFQ1OTRhOFc0a29uNDIzSWU5dEhmRXJlanQyMHc4SHB0R01wRVM5cldCRnFEcHE4bnZfX2VvM2xhUmIza1pHTmVvX0k?oc=5",
-          "source_label": "법률저널",
           "published": "2026-05-11"
         }
       ]

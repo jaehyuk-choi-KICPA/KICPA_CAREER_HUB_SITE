@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-07-06T16:01:44",
+  "generated_at": "2026-07-06T16:04:02",
   "soon_days": 7,
   "counts": {
-    "total": 74,
-    "open": 40,
+    "total": 73,
+    "open": 39,
     "closed": 34,
-    "new": 1,
+    "new": 0,
     "soon": 13,
     "by_firm": {
       "삼일": 11,
       "삼정": 4,
       "안진": 10,
       "한영": 25,
-      "로컬": 21,
+      "로컬": 20,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 29,
-      "자격무관": 45
+      "자격무관": 44
     },
     "by_emp_kind": {
       "인턴": 30,
-      "정규직": 34,
+      "정규직": 33,
       "계약직": 3,
       "파트타임": 7
     }
@@ -634,25 +634,6 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782173629108",
       "dday": 25,
       "first_seen": "2026-07-02T09:31:41"
-    },
-    {
-      "source": "kicpa_cpa",
-      "source_label": "구인(CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "자격무관",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": true,
-      "title": "[PKF서현회계법인] IT감사 AICPA 채용",
-      "company": "서현회계법인",
-      "deadline": "2026-07-31",
-      "posted_date": "2026-07-06",
-      "location": "서울 강남구",
-      "emp_type": "정규직",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1782718935103",
-      "dday": 25,
-      "first_seen": "2026-07-06T14:31:43"
     },
     {
       "source": "samil",

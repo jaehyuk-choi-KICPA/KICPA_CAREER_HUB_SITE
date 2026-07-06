@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T17:32:21",
+  "generated_at": "2026-07-06T18:01:50",
   "soon_days": 7,
   "counts": {
     "total": 67,
@@ -85,25 +85,6 @@
       "first_seen": "2026-06-30T14:31:28"
     },
     {
-      "source": "anjin",
-      "source_label": "딜로이트안진",
-      "firm": "안진",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "open",
-      "is_new": false,
-      "title": "경영자문부문 부동산본부 정규직 전환형 인턴십",
-      "company": "딜로이트 안진",
-      "deadline": "2026-07-07",
-      "posted_date": "2026-06-25",
-      "location": "",
-      "emp_type": "",
-      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5136",
-      "dday": 1,
-      "first_seen": "2026-06-25T11:31:34"
-    },
-    {
       "source": "samjong",
       "source_label": "삼정KPMG",
       "firm": "삼정",
@@ -178,6 +159,25 @@
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000886&receive_div_cd=O",
       "dday": 4,
       "first_seen": "2026-06-17T20:17:10"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "택스",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": false,
+      "title": "세무자문부문 Business Tax G1 신입 및 경력직 회계사",
+      "company": "딜로이트 안진",
+      "deadline": "2026-07-10",
+      "posted_date": "2026-06-23",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5134",
+      "dday": 4,
+      "first_seen": "2026-06-23T14:31:42"
     },
     {
       "source": "kicpa_cpa",
@@ -392,20 +392,20 @@
       "source": "anjin",
       "source_label": "딜로이트안진",
       "firm": "안진",
-      "field": "택스",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
       "status": "open",
       "is_new": false,
-      "title": "세무자문부문 Business Tax G1 신입 및 경력직 회계사",
+      "title": "경영자문부문 부동산본부 정규직 전환형 인턴십",
       "company": "딜로이트 안진",
-      "deadline": "2026-07-22",
-      "posted_date": "2026-06-23",
+      "deadline": "2026-07-20",
+      "posted_date": "2026-06-25",
       "location": "",
       "emp_type": "",
-      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5134",
-      "dday": 16,
-      "first_seen": "2026-06-23T14:31:42"
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5136",
+      "dday": 14,
+      "first_seen": "2026-06-25T11:31:34"
     },
     {
       "source": "samil",

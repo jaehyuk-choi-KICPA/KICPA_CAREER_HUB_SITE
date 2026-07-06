@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T15:31:43",
+  "generated_at": "2026-07-06T15:33:48",
   "soon_days": 7,
   "counts": {
     "total": 74,
@@ -16,8 +16,8 @@
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 31,
-      "자격무관": 43
+      "수습CPA": 29,
+      "자격무관": 45
     },
     "by_emp_kind": {
       "인턴": 30,
@@ -640,7 +640,7 @@
       "source_label": "구인(CPA)",
       "firm": "로컬",
       "field": "감사",
-      "qualification": "수습CPA",
+      "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
       "is_new": true,
@@ -849,7 +849,7 @@
       "source_label": "구인(CPA)",
       "firm": "로컬",
       "field": "딜",
-      "qualification": "수습CPA",
+      "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "closed",
       "is_new": false,

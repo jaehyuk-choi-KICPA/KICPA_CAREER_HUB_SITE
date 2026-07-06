@@ -2,7 +2,18 @@
 
 from __future__ import annotations
 
+import re
+
 from src.record import Posting
+
+
+def _kw_in(text: str, kw: str) -> bool:
+    """키워드 포함 판정. ASCII 영숫자 키워드는 단어 경계 매칭 — 'cpa'가 aicpa/kicpa 등
+    다른 자격증 약어의 꼬리에 부분문자열로 걸리는 오탐 차단(한글 키워드는 기존 substring)."""
+    k = kw.lower()
+    if k.isascii() and k.replace(" ", "").isalnum():
+        return re.search(rf"(?<![a-z0-9]){re.escape(k)}(?![a-z0-9])", text) is not None
+    return k in text
 
 
 def classify_firm(p: Posting, cfg: dict) -> str:
@@ -61,11 +72,11 @@ def classify_qualification(p: Posting, cfg: dict) -> str:
     if p.source == "kicpa_susup":
         return "수습CPA"
     text = _detail_text(p)
-    for tok in d.get("qual_strip_tokens", []):   # "AICPA"→'cpa' 부분문자열 오탐 중립화(병기 공고는 남은 키워드로 유지)
+    for tok in d.get("qual_strip_tokens", []):   # 미국회계사 표현 등 한글 오탐 표현 중립화(병기 공고는 남은 키워드로 유지)
         text = text.replace(tok.lower(), " ")
-    if any(k.lower() in text for k in d.get("qual_exclude_keywords", [])):
+    if any(_kw_in(text, k) for k in d.get("qual_exclude_keywords", [])):
         return "자격무관"
-    if any(k.lower() in text for k in d.get("qual_susup_keywords", [])):
+    if any(_kw_in(text, k) for k in d.get("qual_susup_keywords", [])):
         return "수습CPA"
     return "자격무관"
 

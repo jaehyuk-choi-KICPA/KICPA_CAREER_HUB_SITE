@@ -25,6 +25,7 @@
 - **증상/계기:** 한공회 구인(CPA)의 **"[PKF서현회계법인] IT감사 AICPA 채용"**이 ① 수습CPA로 분류돼 수습 스코프 푸시까지 발송(**"AICPA"의 'cpa'가 `qual_susup_keywords`의 "cpa"에 부분문자열 매칭**), ② 알림을 받고 들어와도 사이트엔 안 보임 — 원인은 수집이 아니라 **GitHub Pages 배포 간헐 실패**(당일 14:32·14:37 배포 연속 failure, 최근 40회 중 9회). run-all의 "Wait for Pages" 스텝은 5분 타임아웃 후 **아무 조치 없이 발송을 진행**해 구멍이 됐음.
 - **무엇을 / 어디에:**
   - `config.dashboard`에 **`qual_strip_tokens`**(aicpa·미국공인회계사 등) 신설 + `classify_qualification`이 키워드 매칭 **전에 텍스트에서 strip** — "AICPA 채용"만 있으면 자격무관, "KICPA/AICPA 병기"는 남은 키워드로 수습CPA 유지(exclude가 아닌 strip인 이유).
+  - (후속) strip만으론 부족 — 본문 우대사항의 **"KICPA"에도 'cpa'가 걸림**("CISA, AICPA, KICPA … 우대"). `classify._kw_in()` 신설: **ASCII 영숫자 키워드는 단어 경계 매칭**(`(?<![a-z0-9])cpa(?![a-z0-9])`) — 자격증 약어 나열/우대만 있는 공고는 자격무관, 진짜 수습 공고는 한국어 수습/회계사 키워드로 계속 매칭. 라이브 74건 회귀: 의도 변화 3건뿐(서현 AICPA + 마감된 총무부·채권실사 — 셋 다 교정 방향).
   - `util.posted_recent()` 공통 헬퍼 신설 → export의 `is_new`(24h 패널)와 **notifier `_select_targets`가 같은 게시일 게이트**(`new_posted_max_age_days=2`) 공유. 옛 공고를 소스 복구로 뒤늦게 첫 수집해도 "푸시는 오는데 패널엔 없는" 불일치 차단(억제분은 notified 마킹만).
   - `run-all.yml` Wait 스텝: 1차 5분 폴링 타임아웃 시 **`POST /pages/builds`로 Pages 재빌드 요청**(`permissions: pages: write`) 후 3분 추가 폴링 — 배포 실패 자가복구.
 - **효과/검증:** 분류 5케이스 단정(AICPA→자격무관·KICPA/AICPA 병기→수습CPA 등) 전부 통과, notifier 선별 5케이스(오늘/5일전/게시일없음/기발송/마감) 통과, yml 문법 검증. 이미 발송된 서현 건은 notified=True라 재발송 없음 — 다음 export부터 라벨만 자격무관으로 교정. [[insight-notifier-inactive]] [[insight-new-badge-thresholds]]

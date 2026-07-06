@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-07-06T23:02:03",
+  "generated_at": "2026-07-06T23:31:58",
   "items": [
+    {
+      "source": "gnews_딜·M&A",
+      "source_label": "한국금융신문",
+      "title": "이번에는 매각 성공할까…예보 지원·가격 협상 '핵심 변수' [예별손보 새 주인 찾기③]",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFB4LV9QN0FSZDNKY2xpeWl5dW5PVFI4b2cyQmZleGxaeC1tWW5sVnV2OVNNamRfeUhXaUxTUFZsdGtsQ1puNmRfdXRXUzRVbE5VMmZHNXRna0w1UFU2RDlTSnp2Y0hoZmNqamc5X2dCMklrSW81MzlYRUpOSHc?oc=5",
+      "published": "2026-07-06",
+      "published_at": "2026-07-06T13:00:36",
+      "summary": "",
+      "category": "딜·M&A"
+    },
     {
       "source": "gnews_딜·M&A",
       "source_label": "한겨레",
@@ -96,16 +106,6 @@
       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBYUzZVSHdmb1YxQWFTS0tzWWdfV3RTb0tmV041UXo2Zkc5WDZFNnE3anU1SWRheFFxMVlqMXpaM3pHWHc1c3ozeGxPVTJNeWQtSGx3c0lwTElBSTJq?oc=5",
       "published": "2026-07-06",
       "published_at": "2026-07-06T08:03:15",
-      "summary": "",
-      "category": "딜·M&A"
-    },
-    {
-      "source": "gnews_딜·M&A",
-      "source_label": "한국금융신문",
-      "title": "\"사전 판단에 유효, 상장 준비는 더 길어질 듯\"…증권사 IPO 주관 '주주동의·독립성' 키워드 [중복상장 가이드라인]",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5uX0JYX2tNMWVlMGtKbThWRUVuRmJORnIzbUljbzdQRFU4RGV5NkxCVHlRS1c4b2p0NklIZW56MUh4UVRLSjViR1JXRE5HNlk5c1lrUkUxQ0lqSXpVd3ZwV0VmeWd2VXgtc2lYUGRhYVRrc3VORm5LYjBGeWo?oc=5",
-      "published": "2026-07-06",
-      "published_at": "2026-07-06T08:01:43",
       "summary": "",
       "category": "딜·M&A"
     },
@@ -339,7 +339,45 @@
       "published": "2026-07-03",
       "published_at": "2026-07-03T22:50:00",
       "summary": "",
-      "category": "세무"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "국세청 \"692만 사업자, 27일까지 부가가치세 확정신고 하세요\"",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9RTFVHcjMwZlRteTQ5SUVBYU13emUzbHYyQ285Xy1qczBBaE80alh0dEk0c1B6Q0pmT0lBdENBV1BoZm40Y2R1YUlaRmQ4VHhQXzkwdw?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-07-02"
+        },
+        {
+          "title": "국세청, 692만 사업자 7월 27일까지 부가가치세 확정신고 하세요",
+          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1xSjFIMmRIeFZkX2prX0hoZC1aRkJwWW1YMjdnU1BjU25kZDZvTnM4ZWZsSlg4NmxtNzd0SkVMVHlQT201?oc=5",
+          "source_label": "newszoom.kr",
+          "published": "2026-07-02"
+        },
+        {
+          "title": "692만 사업자, 7월 27일까지 부가가치세 확정신고 해야",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE95TVJyY0NfWTdIQndVQXNnaHZReVhQUjJrRFNjNE81S2wzR29xNDN2MWFvRXBOU1ZENkJYaEd4V1Nybm4yNExHaU9fZGM1MU5qVVViZHZKUktYTDlnYkF5dmNiTExZZHJyRnc?oc=5",
+          "source_label": "intn.co.kr",
+          "published": "2026-07-02"
+        },
+        {
+          "title": "이달 27일까지 부가가치세 확정신고…고환율 피해기업·청년 사업자 는 납부기한 2개월 연장",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE55bXRYbW5DSm9OSll2UTYwZjl5ZWlkMUdpbUwzV0NaWjRSQzRJOXZScnVTallVQWt5dzlNOWxCbUE2SnVDZXBnYUZSb0lxdE9HRUF1dg?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-07-02"
+        },
+        {
+          "title": "국세청 \"제1기 확정 부가가치세 이달 27일까지 신고·납부\"",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE05WGttdm42RmxVZzdIdnhMZkZLQUZkQXVTbTZwdVpaVWFsNXpRd3hYTE4yaC1VcFZid3E1ekVfcFotVnpHazU5T0FPYlBOdjA?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-07-02"
+        },
+        {
+          "title": "부가가치세 확정신고 '7월 27일'까지.. 692만 사업자 대상",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9RU2w3djJRQ01nSFhETmxSV21mVHFJbExWVVZLa3o2RC1SakN4REFVb2dsNjMxYkJfbHROcFdRRlNaLVV4aGNTOS1HU0VsUTdVNU1ucVlfVkM3T3NNa25R?oc=5",
+          "source_label": "조세일보",
+          "published": "2026-07-02"
+        }
+      ]
     },
     {
       "source": "gnews_세무",
@@ -373,15 +411,7 @@
       "published": "2026-07-03",
       "published_at": "2026-07-03T06:50:00",
       "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "日 지난해 세수 807조원 사상최대…기업실적 확대에 법인세 증가",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9waXlsek9XUlVBVDJzTlFBNEowQ0FMT2xCeUtKeWNIcG5LZTB2RXZuY1VFVk9OQkIyb0JfVlU5NFJ6cWJaM29fczltZWFJNnM?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-07-02"
-        }
-      ]
+      "category": "세무"
     },
     {
       "source": "gnews_세무",
@@ -402,42 +432,6 @@
       "published_at": "2026-07-02T21:00:00",
       "summary": "",
       "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "v.daum.net",
-      "title": "국세청 \"692만 사업자, 27일까지 부가가치세 확정신고 하세요\"",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9RTFVHcjMwZlRteTQ5SUVBYU13emUzbHYyQ285Xy1qczBBaE80alh0dEk0c1B6Q0pmT0lBdENBV1BoZm40Y2R1YUlaRmQ4VHhQXzkwdw?oc=5",
-      "published": "2026-07-02",
-      "published_at": "2026-07-02T06:42:00",
-      "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "국세청, 692만 사업자 7월 27일까지 부가가치세 확정신고 하세요",
-          "url": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1xSjFIMmRIeFZkX2prX0hoZC1aRkJwWW1YMjdnU1BjU25kZDZvTnM4ZWZsSlg4NmxtNzd0SkVMVHlQT201?oc=5",
-          "source_label": "newszoom.kr",
-          "published": "2026-07-02"
-        },
-        {
-          "title": "692만 사업자, 7월 27일까지 부가가치세 확정신고 해야",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE95TVJyY0NfWTdIQndVQXNnaHZReVhQUjJrRFNjNE81S2wzR29xNDN2MWFvRXBOU1ZENkJYaEd4V1Nybm4yNExHaU9fZGM1MU5qVVViZHZKUktYTDlnYkF5dmNiTExZZHJyRnc?oc=5",
-          "source_label": "intn.co.kr",
-          "published": "2026-07-02"
-        },
-        {
-          "title": "이달 27일까지 부가가치세 확정신고…고환율 피해기업·청년 사업자 는 납부기한 2개월 연장",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE55bXRYbW5DSm9OSll2UTYwZjl5ZWlkMUdpbUwzV0NaWjRSQzRJOXZScnVTallVQWt5dzlNOWxCbUE2SnVDZXBnYUZSb0lxdE9HRUF1dg?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-07-02"
-        },
-        {
-          "title": "국세청 \"제1기 확정 부가가치세 이달 27일까지 신고·납부\"",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE05WGttdm42RmxVZzdIdnhMZkZLQUZkQXVTbTZwdVpaVWFsNXpRd3hYTE4yaC1VcFZid3E1ekVfcFotVnpHazU5T0FPYlBOdjA?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-07-02"
-        }
-      ]
     },
     {
       "source": "gnews_세무",
@@ -519,9 +513,27 @@
       "dupes": [
         {
           "title": "[하반기 달라지는 것] 외환시장 24시간 열린다…정기 세무조사 시기선택제",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBMS0VhN3pRMEJmemR2ZjJRd2VoZXdHV01RWVlTQVlubE50R2d4ZTdqNF9iNkNkZW5fOGtZak8ySVRzZnYxbG5RbWluLWRIZ2ZMT29PRW1UcnowRDjSAWBBVV95cUxOU0thTG5MQVBGaG16V0pMbUtQNTVWd1lLNWNnWGZ4dEp3Q0N6T3ZfamxIYWtuX3gxdFlQaFBOVXBCaGcxWEF4VktxeERrMnMyVkZSXzlPXzNSSmpOTmt4ZUs?oc=5",
-          "source_label": "연합뉴스",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBIcFZCN20xLWQ4OTVqTC1PdTk0Q19HYThvUnAtYTV2ektSMDdTZXBGT3BSQ1o1bUs1RXF0d2lSR1lrdW9VekR1NG5YUjBPVzg?oc=5",
+          "source_label": "v.daum.net",
           "published": "2026-06-30"
+        }
+      ]
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "intn.co.kr",
+      "title": "서울국세청 조사4국, 농협중앙회 비정기세무조사 착수",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE13MmQ5cnF5c3BQQ3JzT2Q5MjBua2VGSy1WbHFTOFhscVo5S21aMW81d0xyZS1tczRJclNwME9lYWQ1NmZ4YnBkVmg4WkhmRjYxVFVNREpHUDdTa3FpNnBrdlB4eVZCYmdaeXc?oc=5",
+      "published": "2026-06-30",
+      "published_at": "2026-06-30T05:32:00",
+      "summary": "",
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "[단독] 국세청, 농협중앙회 특별 세무조사…강호동 회장 사법리스크 부각",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE00VjUyR1BDM3ZRX2d3TjZlNGYxbnZidEpRY3dZdXM3amxtc3JicHdkZ0p4RmNZanhwX1R2cDFBaHNtU0gxcS1WMExnTFpvcjlHbW5YY2dKOXNlR3d1UDBlQXNIU19kM2N0eDVJcGpR0gFyQVVfeXFMTjM2cUVEaWE1cmNrTHhkWktUYTg4T1lJMkFEZjJwVFRnb25KMEEzY1pveTJfWk1ITG9POEs4ak9heXFwR3V4b1FmcGhUdDZvcERGZ1RFT3NOa0M5Yy1pX0lOSnBvYXQ0Nnh1aGNoSkNwZENn?oc=5",
+          "source_label": "법률신문",
+          "published": "2026-06-29"
         }
       ]
     },
@@ -622,12 +634,6 @@
           "published": "2026-06-24"
         },
         {
-          "title": "금감원, 상장사 회계감리 주기 단축 논의",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBOV3RpbUdiR1pBaTFuWkdQS3hROGRQMWtVN3VfZndpWHpUcW9rTzVHR1A2SkRHakt1RFR6Tmo2cG9mbFlrZ29jWVFqeU9vQUQ3OV92X0dNUEoxNHZIZldHRURZY2Y?oc=5",
-          "source_label": "MTN 머니투데이방송",
-          "published": "2026-06-24"
-        },
-        {
           "title": "상장사 회계감리 20년→최대 5년…금감원 “예방적 감독체계로 전환 필요”",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9fV3MweGpCOTVOT0hwVmR3S0oyUk9FLVczWGhFaml6MGpOSHQ5X1ZQSENBTlJ6WHpxNFJDVHdod04wTGctR0lKdFJwOGgwTG01aG5ubnZ6aHVNX2JYZjYw?oc=5",
           "source_label": "조세일보",
@@ -643,12 +649,6 @@
           "title": "금감원, '회계 심사·감리제도 개선' 현장의견 청취…예방적 기능 점검",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1vY1FGSjV3X0ZFX3lmTUEtVUs3MFhLYVdDXy1LbGIwRkloWHdJcFZvX3AtRmlVQlRTZHVGcm1RZ2V2MWp1bWI4MnVURmpHSjg?oc=5",
           "source_label": "v.daum.net",
-          "published": "2026-06-24"
-        },
-        {
-          "title": "감리주기 단축부터 계좌추적권 도입까지…금감원, 회계감독 개선 모색(종합)",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE4zQ2htV3BwcEdfcXM5RG9BLUhTa25HQ3hBMVBxYWFKeEJlREwwUUtmcU9WQWNlOFlwTkhuaTBCaVdDYTBoNHlKR1czZ0xtQnVKc1hjSXByNkdLczBWRXA2QtIBeEFVX3lxTE82TGlpTm94bEpmV25ERE1CNmczUlA5U1JZQUtUZE1UY1luQU9adEt6LWk0ZlVZYXpoQnJHdENBbDhPNVB5bjNrWHdIOEN2LTBZQkljdXlyUjhfZVd2UUlLaWpNZ0oxNks2eER4cjZQa1YwQktXREJOWg?oc=5",
-          "source_label": "뉴시스",
           "published": "2026-06-24"
         },
         {
@@ -688,14 +688,14 @@
       "category": "감사"
     },
     {
-      "source": "gnews_세무",
-      "source_label": "법률신문",
-      "title": "[단독] 국세청, 농협중앙회 특별 세무조사…강호동 회장 사법리스크 부각",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE00VjUyR1BDM3ZRX2d3TjZlNGYxbnZidEpRY3dZdXM3amxtc3JicHdkZ0p4RmNZanhwX1R2cDFBaHNtU0gxcS1WMExnTFpvcjlHbW5YY2dKOXNlR3d1UDBlQXNIU19kM2N0eDVJcGpR0gFyQVVfeXFMTjM2cUVEaWE1cmNrTHhkWktUYTg4T1lJMkFEZjJwVFRnb25KMEEzY1pveTJfWk1ITG9POEs4ak9heXFwR3V4b1FmcGhUdDZvcERGZ1RFT3NOa0M5Yy1pX0lOSnBvYXQ0Nnh1aGNoSkNwZENn?oc=5",
-      "published": "2026-06-29",
-      "published_at": "2026-06-29T01:29:28",
+      "source": "gnews_감사_2",
+      "source_label": "KBS 뉴스",
+      "title": "삼영화학 등 무더기 분식회계 적발",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1Zc1F1RUhRS0g5dFpGTW1yM0stSkZ0MXFoV29GbWE0YkNxemRIOHZqR1VCZmx3NDZNdkFKWXl4bjBlNjIxZXFfTDNQOXFnYmhxRHNLVFgxaExSZDgxYzRrYXp3?oc=5",
+      "published": "2026-06-28",
+      "published_at": "2026-06-28T10:54:15",
       "summary": "",
-      "category": "세무"
+      "category": "감사"
     },
     {
       "source": "gnews_감사_2",
@@ -916,16 +916,6 @@
       ]
     },
     {
-      "source": "gnews_세무",
-      "source_label": "세무사신문",
-      "title": "세무사회, “건보 소득조사로 국민고통, 국세청 세무조사로 일원화해야“",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9Yb0hvZk1vcjlfVENmSnVTT0d2dDRjdVA2aXFzUXBpRnA5OEhSZE1HRDhETVV2YVNNTE1BZlJhRUFMeW9jUEtjbzVXNXJLT09PYXQ4NlVRX0Q0dk5RWm5YcGtyVU9oaVBxS2Z5Mndn?oc=5",
-      "published": "2026-06-18",
-      "published_at": "2026-06-18T07:00:00",
-      "summary": "",
-      "category": "세무"
-    },
-    {
       "source": "gnews_감사",
       "source_label": "매일경제 마켓",
       "title": "“AI시대 회계사 역할 전환...회계감사 기준 신속정비나설 것”",
@@ -1024,6 +1014,16 @@
       "source_label": "인포스탁데일리",
       "title": "재무제표 '적정'에도 상폐 가능성... 금감원 \"투자자 주의 필요\"",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5IZ2dJOHQycGVFb2tqXzhaVk5DNW8zTllBc1NmazVFT0psNk5TeUxnNzEtWnJyWVZWN2k2WlVsa2NvZkVqR205bm5BMGQyVXY3Y2lkRXh1TS1yQjRSRUlyMy1MNVFvQ2JBVkpacmhfZEl0Q1RLZVE?oc=5",
+      "published": "2026-06-16",
+      "published_at": "2026-06-16T07:00:00",
+      "summary": "",
+      "category": "감사"
+    },
+    {
+      "source": "gnews_감사",
+      "source_label": "데일리안",
+      "title": "지난해 상장법인 재무제표·내부회계 적정 비율은?",
+      "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxObGxRWXVJY1VDMWNJaTJXaU5wX0FYX2tMdzhiSWxLM3FhVldmaDJORVliTE9nQmZMRnIzMU5mUzJKSXlSQmNWSEpxTTNKb3JDTlh6VzlJd014eDZOWDZmZ2VDZWhfOEdCNUxsQXF2UzV1VDA2d1ZBTkw1V1FNM3hwSDVOQ01yWU1lMkpkZngtSGpnbXR5UlRCTDNuVFhLZVRTZk1IZWt4Sm9rOEZpTlZITDdUalZRUW1qQVVfRHZjU2dZc2d4UUJpQktWWnZFV3BVYnhXMk5nWEFTZF9OZGF6QjdiM0JUenNEc0s2LUZIR1laaXdFR2dxX0czbUFwTGozeHFPODFKYk02dnFSUW9jZWhUZW14eUF0NVI0TlRSLTFEaG10MlBfM25uS3FaUk1z0gGwAkFVX3lxTE5sbFFZdUljVUMxY0lpMldpTnBfQVhfa0x3OGJJbEszcWFWV2ZoMk5FWWJMT2dCZkxGcjMxTmZTMkpJeVJCY1ZISnFNM0pvckNOWHpXOUl3TXh4Nk5YNmZnZUNlaF84R0I1TGxBcXZTNXVUMDZ3VkFOTDVXUU0zeHBINU5DTXJZTWUySmRmeC1IamdtdHlSVEJMM25UWEtlVFNmTUhla3hKb2s4RmlOVkhMN1RqVlFRbWpBVV9EdmNTZ1lzZ3hRQmlCS1ZadkVXcFVieFcyTmdYQVNkX05kYXpCN2IzQlR6c0RzSzYtRkhHWVppd0VHZ3FfRzNtQXBMajN4cU84MUpiTTZ2cVJRb2NlaFRlbXh5QXQ1UjROVFItMURobXQyUF8zbm5LcVpSTXM?oc=5",
       "published": "2026-06-16",
       "published_at": "2026-06-16T07:00:00",
       "summary": "",

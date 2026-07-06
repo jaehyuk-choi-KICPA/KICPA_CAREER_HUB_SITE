@@ -33,7 +33,7 @@ from src.classify import classify_emp_kind, classify_firm, classify_qualificatio
 from src.config import load_config
 from src.record import Posting
 from src.state import State
-from src.util import dday, is_open, today_iso
+from src.util import dday, is_open, posted_recent, today_iso
 
 
 def _is_susup(entry: dict, cfg: dict) -> bool:
@@ -167,21 +167,27 @@ def _send_one(subscription: dict, payload: dict, cfg: dict, vapid_priv: str):
 
 
 def _select_targets(state: State, cfg: dict) -> tuple[list[dict], list[str]]:
-    """발송 대상(진행중 미발송)과 억제 대상(마감지난 미발송) 분리."""
+    """발송 대상(진행중 미발송)과 억제 대상(마감지난·게시일 오래된 미발송) 분리.
+
+    게시일 게이트는 export의 is_new(24h 패널)와 동일 기준(posted_recent) — 소스 복구 등으로
+    옛 공고를 뒤늦게 첫 수집했을 때 '푸시는 오는데 패널엔 없는' 불일치를 차단."""
     only_open = cfg["notifications"].get("only_new_open", True)
-    targets, expired = [], []
+    posted_max = cfg["dashboard"].get("new_posted_max_age_days", 2)
+    targets, suppressed = [], []
     for uid, e in state.entries.items():
         if e.get("notified"):
             continue
-        if is_open(e.get("deadline", "")):
+        if not posted_recent(e.get("posted_date", ""), posted_max):
+            suppressed.append(uid)   # 발송 없이 notified 마킹(재후보 방지)
+        elif is_open(e.get("deadline", "")):
             ent = dict(e)
             ent["uid"] = uid
             targets.append(ent)
         elif only_open:
-            expired.append(uid)
+            suppressed.append(uid)
     # 오래된 것부터(first_seen 오름차순) — max_per_run 캡 시 먼저 발견된 것 우선
     targets.sort(key=lambda x: x.get("first_seen", ""))
-    return targets, expired
+    return targets, suppressed
 
 
 def run_notify(cfg: dict, *, dry_run: bool = False) -> dict:
@@ -189,24 +195,24 @@ def run_notify(cfg: dict, *, dry_run: bool = False) -> dict:
 
     nf = cfg["notifications"]
     state = State(cfg["runtime"]["state_path"])
-    targets, expired = _select_targets(state, cfg)
+    targets, suppressed = _select_targets(state, cfg)
 
-    # 마감지난 미발송분은 게시 없이 억제(콜드스타트 만료공고 폭주 방지 — run.py do_realtime와 동일)
-    if expired:
-        state.mark_notified(expired)
+    # 마감지난·게시일 오래된 미발송분은 게시 없이 억제(콜드스타트 만료공고 폭주 방지 — run.py do_realtime와 동일)
+    if suppressed:
+        state.mark_notified(suppressed)
 
     cap = int(nf.get("max_per_run", 25))
     capped = targets[:cap]
 
     status = {"ran_at": _dt.datetime.now().isoformat(timespec="seconds"),
               "candidates": len(targets), "sending": len(capped),
-              "expired_suppressed": len(expired)}
+              "expired_suppressed": len(suppressed)}
 
     if dry_run:
         for t in capped:
             print(f"  - [{t.get('source_label')}] {t.get('title')} (마감 {t.get('deadline')})")
         status["dry_run"] = True
-        print(f"[notify] dry-run: 발송대상 {len(capped)}/{len(targets)}건, 억제 {len(expired)}건")
+        print(f"[notify] dry-run: 발송대상 {len(capped)}/{len(targets)}건, 억제 {len(suppressed)}건")
         return status
 
     if not capped:

@@ -210,7 +210,7 @@ flowchart LR
     RUN -->|"state.json 신규(notified=False) × scope 매칭"| PUSH["pywebpush(VAPID 서명)<br/>→ 구독자 브라우저"]
 ```
 
-- **발송 순서(중요)**: run-all은 **수집 → 데이터 커밋·푸시 → Pages 라이브 확인 → 알람 발송 → 발송상태 커밋** 순. 알림 클릭은 `sw.js`상 **무조건 hbmons.com 홈으로** 가므로, 알람보다 데이터가 먼저 라이브여야 구독자가 새 공고를 본다. `Wait for Pages` 스텝이 방금 푸시한 `jobs.json`의 `generated_at`이 라이브에 반영될 때까지 폴링(최대 ~5분)한 뒤 알람을 쏜다. (과거: 알람 먼저 → 데이터 나중 커밋 → 알람 직후 들어온 사람은 빈 홈을 보는 창이 있었음.)
+- **발송 순서(중요)**: run-all은 **수집 → 데이터 커밋·푸시 → Pages 라이브 확인 → 알람 발송 → 발송상태 커밋** 순. 알림 클릭은 `sw.js`상 **무조건 hbmons.com 홈으로** 가므로, 알람보다 데이터가 먼저 라이브여야 구독자가 새 공고를 본다. `Wait for Pages` 스텝이 방금 푸시한 `jobs.json`의 `generated_at`이 라이브에 반영될 때까지 폴링(1차 ~5분)하고, **타임아웃이면 Pages 재빌드를 API로 요청(`POST /pages/builds`, `permissions: pages: write`) 후 ~3분 추가 폴링**한 뒤 알람을 쏜다. (과거: 알람 먼저 → 데이터 나중 커밋 → 알람 직후 들어온 사람은 빈 홈을 보는 창이 있었음. 2026-07-06: `pages build and deployment`가 간헐 failure(최근 40회 중 9회)로 "알림은 왔는데 사이트엔 없는" 사건 실측 → 재빌드 셀프힐링 추가.)
 - **scope**: `수습CPA 전용`(`susup`) 구독자는 `classify_qualification`이 수습CPA인 공고만, `빅4 인턴만`(`big4intern`)은 `classify_firm`∈{삼일·삼정·안진·한영} **AND** `classify_emp_kind`=인턴인 공고만, `전체`(`all`)는 인턴·일반 포함 전부 수신. (notifier의 `_is_susup`·`_is_big4_intern` 판정, Posting에 firm/emp_kind 필드가 없어 classify 함수로 산출.) 새 scope 값은 Worker 화이트리스트에도 추가해야 저장됨(미등록 시 `all`로 폴백).
 - **콜드스타트 억제**: 활성화 직전 `python -m src.notifier --seed`로 기존 공고를 baseline(notified=True) 처리 → 가입 직후 폭주 없음.
 - **보안**: VAPID 개인키(`VAPID_PRIVATE_KEY`)·구독 read 토큰(`SUBS_READ_TOKEN`)은 **GitHub Secret에서만**. Worker `READ_TOKEN`은 `wrangler secret`. 코드/커밋엔 **공개키만**.

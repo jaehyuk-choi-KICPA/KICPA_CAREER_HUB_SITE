@@ -61,6 +61,8 @@ def classify_qualification(p: Posting, cfg: dict) -> str:
     if p.source == "kicpa_susup":
         return "수습CPA"
     text = _detail_text(p)
+    for tok in d.get("qual_strip_tokens", []):   # "AICPA"→'cpa' 부분문자열 오탐 중립화(병기 공고는 남은 키워드로 유지)
+        text = text.replace(tok.lower(), " ")
     if any(k.lower() in text for k in d.get("qual_exclude_keywords", [])):
         return "자격무관"
     if any(k.lower() in text for k in d.get("qual_susup_keywords", [])):

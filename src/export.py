@@ -22,7 +22,7 @@ from src.filters import filter_postings
 from src.record import Posting
 from src.sources import build_adapters, fetch_all
 from src.state import State
-from src.util import dday, is_open, today_iso
+from src.util import dday, is_open, posted_recent, today_iso
 
 _DATA_DIR = Path("docs/data")
 
@@ -191,11 +191,7 @@ def build_jobs(cfg: dict, state: State) -> dict:
         first_seen = (state.entries.get(p.uid) or {}).get("first_seen", "")
         # '방금 올라온'=발견 24h 이내 AND 게시일이 오래되지 않음(게시일 모르면 게이트 미적용).
         # 19일 게시 공고를 22일에 처음 수집해도 NEW로 안 뜨게(발견시각만 보던 오표시 차단).
-        try:
-            _posted_age = (_dt.date.today() - _dt.date.fromisoformat(p.posted_date)).days
-        except Exception:  # noqa: BLE001 — 게시일 없음/형식 이상 → 게이트 미적용(발견시각만으로 판정)
-            _posted_age = None
-        posted_ok = _posted_age is None or _posted_age <= new_posted_max
+        posted_ok = posted_recent(p.posted_date, new_posted_max)
         items.append(
             {
                 "source": p.source,

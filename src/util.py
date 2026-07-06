@@ -45,6 +45,20 @@ def is_open(deadline_iso: str, *, today: str | None = None) -> bool:
     return deadline_iso >= (today or today_iso())
 
 
+def posted_recent(posted_iso: str, max_age_days: int, *, today: str | None = None) -> bool:
+    """게시일이 max_age_days 이내인지. 게시일 없음/형식 이상이면 True(게이트 미적용 — 발견시각만으로 판정).
+
+    export의 is_new(24h 패널)와 notifier 발송 대상이 같은 기준을 공유해 '알림은 왔는데 NEW엔 없는'
+    불일치를 막는다(오래된 공고를 소스 복구 등으로 뒤늦게 첫 수집한 경우).
+    """
+    try:
+        age = (_dt.date.fromisoformat(today) if today else _dt.date.today()) \
+            - _dt.date.fromisoformat(posted_iso)
+    except (ValueError, TypeError):
+        return True
+    return age.days <= max_age_days
+
+
 def dday(deadline_iso: str, *, today: str | None = None) -> int | None:
     """마감까지 남은 일수. 오늘=0, 지났으면 음수. 날짜 없으면 None(상시)."""
     if not deadline_iso:

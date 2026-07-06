@@ -81,6 +81,9 @@ _DEFAULTS: dict = {
         "qual_susup_keywords": ["수습", "공인회계사", "cpa", "회계사", "신입회계사", "회계사 시험", "회계사 합격"],
         # 위 키워드가 있어도 이 단어가 있으면 자격무관으로(경력 전용 등). filter_postings가 경력만 공고는 이미 제외.
         "qual_exclude_keywords": ["경력무관", "자격무관"],
+        # 매칭 전에 판정 텍스트에서 지우는 중립화 토큰 — "AICPA"의 'cpa'가 수습CPA로 오인되는 부분문자열 오탐 차단.
+        # exclude가 아닌 strip인 이유: "KICPA/AICPA 병기" 공고는 남은 kicpa·수습 등 키워드로 수습CPA를 유지해야 해서.
+        "qual_strip_tokens": ["aicpa", "미국공인회계사", "미국회계사", "us cpa"],
         # === 채용구분축(인턴/계약직/파트타임/정규직) — 우선순위 매칭, 미매칭 기본=정규직 ===
         "empkind_keywords": {
             "인턴": ["인턴", "intern", "체험형"],

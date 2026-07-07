@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-07T14:01:44",
+  "generated_at": "2026-07-07T14:31:40",
   "soon_days": 7,
   "counts": {
     "total": 66,
-    "open": 37,
-    "closed": 29,
-    "new": 1,
+    "open": 38,
+    "closed": 28,
+    "new": 2,
     "soon": 12,
     "by_firm": {
       "삼일": 11,
@@ -598,6 +598,25 @@
       "first_seen": "2026-07-02T09:31:41"
     },
     {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "<총무부 직원 모집 ( 신입 및 2년 이내 경력)>",
+      "company": "대명회계법인",
+      "deadline": "2026-08-07",
+      "posted_date": "2026-07-07",
+      "location": "지역무관 지역무관",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1776647546333",
+      "dday": 31,
+      "first_seen": "2026-07-07T14:31:40"
+    },
+    {
       "source": "samil",
       "source_label": "삼일PwC",
       "firm": "삼일",
@@ -729,25 +748,6 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/117600",
       "dday": null,
       "first_seen": "2026-06-17T20:17:10"
-    },
-    {
-      "source": "kicpa_cpa",
-      "source_label": "구인(CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "<총무부 직원 모집 ( 신입 및 2년 이내 경력)>",
-      "company": "대명회계법인",
-      "deadline": "2026-05-19",
-      "posted_date": "2026-06-26",
-      "location": "지역무관 지역무관",
-      "emp_type": "정규직",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1776647546333",
-      "dday": -49,
-      "first_seen": ""
     },
     {
       "source": "hanyoung",

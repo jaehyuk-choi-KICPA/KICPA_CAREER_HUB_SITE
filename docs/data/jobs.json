@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-08T18:02:04",
+  "generated_at": "2026-07-08T18:32:01",
   "soon_days": 7,
   "counts": {
     "total": 71,
     "open": 50,
     "closed": 21,
-    "new": 9,
+    "new": 8,
     "soon": 15,
     "by_firm": {
       "삼일": 13,
@@ -263,7 +263,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "총무팀(General Affair) 인턴 채용",
       "company": "삼일PwC",
       "deadline": "2026-07-15",
@@ -663,7 +663,7 @@
       "emp_kind": "파트타임",
       "status": "open",
       "is_new": false,
-      "title": "[창의회계법인] 2팀 파트타임 채용",
+      "title": "(마감)[창의회계법인] 2팀 파트타임 채용",
       "company": "창의회계법인",
       "deadline": "2026-07-31",
       "posted_date": "2026-06-30",

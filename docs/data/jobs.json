@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-07-08T16:02:22",
+  "generated_at": "2026-07-08T16:32:01",
   "soon_days": 7,
   "counts": {
-    "total": 68,
-    "open": 47,
+    "total": 70,
+    "open": 49,
     "closed": 21,
-    "new": 5,
+    "new": 7,
     "soon": 15,
     "by_firm": {
       "삼일": 13,
       "삼정": 4,
-      "안진": 9,
+      "안진": 11,
       "한영": 17,
       "로컬": 22,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 30,
-      "자격무관": 38
+      "자격무관": 40
     },
     "by_emp_kind": {
-      "인턴": 23,
+      "인턴": 24,
       "정규직": 35,
-      "계약직": 3,
+      "계약직": 4,
       "파트타임": 7
     }
   },
@@ -563,6 +563,25 @@
       "source": "anjin",
       "source_label": "딜로이트안진",
       "firm": "안진",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "회계감사부문 ASSURANCE DELIVERY CENTER 그룹 계약직 (정규직 전환형)",
+      "company": "딜로이트 안진",
+      "deadline": "2026-07-24",
+      "posted_date": "2026-07-08",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5145",
+      "dday": 16,
+      "first_seen": "2026-07-08T16:32:01"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
       "field": "딜",
       "qualification": "자격무관",
       "emp_kind": "정규직",
@@ -748,6 +767,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782173629108",
       "dday": 23,
       "first_seen": "2026-07-02T09:31:41"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "택스",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "세무자문부문 GES Group – Immigration Services 인턴",
+      "company": "딜로이트 안진",
+      "deadline": "2026-08-06",
+      "posted_date": "2026-07-08",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5146",
+      "dday": 29,
+      "first_seen": "2026-07-08T16:32:01"
     },
     {
       "source": "kicpa_cpa",

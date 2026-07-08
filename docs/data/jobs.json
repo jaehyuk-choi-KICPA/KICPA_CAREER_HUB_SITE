@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-08T15:31:57",
+  "generated_at": "2026-07-08T16:02:22",
   "soon_days": 7,
   "counts": {
-    "total": 67,
-    "open": 45,
-    "closed": 22,
-    "new": 3,
+    "total": 68,
+    "open": 47,
+    "closed": 21,
+    "new": 5,
     "soon": 15,
     "by_firm": {
       "삼일": 13,
       "삼정": 4,
       "안진": 9,
-      "한영": 16,
+      "한영": 17,
       "로컬": 22,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 30,
-      "자격무관": 37
+      "자격무관": 38
     },
     "by_emp_kind": {
-      "인턴": 22,
+      "인턴": 23,
       "정규직": 35,
       "계약직": 3,
       "파트타임": 7
@@ -370,6 +370,25 @@
       "first_seen": "2026-07-02T15:31:37"
     },
     {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "딜",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "전략·재무자문부문 Deal3 (M&A) 정규전환형 인턴",
+      "company": "EY한영",
+      "deadline": "2026-07-16",
+      "posted_date": "2026-07-08",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/121404",
+      "dday": 8,
+      "first_seen": "2026-07-08T14:02:06"
+    },
+    {
       "source": "samil",
       "source_label": "삼일PwC",
       "firm": "삼일",
@@ -444,6 +463,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/119887",
       "dday": 11,
       "first_seen": "2026-06-29T15:01:35"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "재무실 단기 인턴",
+      "company": "EY한영",
+      "deadline": "2026-07-19",
+      "posted_date": "2026-07-08",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/121437",
+      "dday": 11,
+      "first_seen": "2026-07-08T16:02:22"
     },
     {
       "source": "anjin",
@@ -974,25 +1012,6 @@
       "location": "",
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/118861",
-      "dday": -17,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "딜",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "전략·재무자문부문 Deal3 (M&A) 정규전환형 인턴",
-      "company": "EY한영",
-      "deadline": "2026-06-21",
-      "posted_date": "2026-06-16",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/119042",
       "dday": -17,
       "first_seen": ""
     },

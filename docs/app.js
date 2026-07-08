@@ -638,10 +638,13 @@ function initTools() {
 
 // ===================== 빅4 신입 공채 특집 =====================
 function big4Dday(end) {            // 'YYYY-MM-DD' → 잔여일(없으면 null)
+  // 본문 채용카드와 동일하게 '날짜 차이'로 계산(자정 기준) — 마감 당일 D-0, 다음날부터 마감.
+  // (과거 end 23:59:59 − 현재시각 ceil 방식은 마감 당일에 D-1로 표시되는 오차가 있었음.)
   if (!end) return null;
-  const t = Date.parse(end + "T23:59:59");
+  const t = Date.parse(end + "T00:00:00");
   if (!isFinite(t)) return null;
-  return Math.ceil((t - Date.now()) / 86400000);
+  const today = new Date(); today.setHours(0, 0, 0, 0);
+  return Math.round((t - today.getTime()) / 86400000);
 }
 function big4DdayText(f, end) {     // 마감/D-day 텍스트(본문톤 빨간 글씨용)
   const dd = big4Dday(end);

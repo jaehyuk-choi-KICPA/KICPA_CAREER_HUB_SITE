@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-08T15:02:07",
+  "generated_at": "2026-07-08T15:31:57",
   "soon_days": 7,
   "counts": {
-    "total": 66,
-    "open": 44,
+    "total": 67,
+    "open": 45,
     "closed": 22,
-    "new": 4,
+    "new": 3,
     "soon": 15,
     "by_firm": {
-      "삼일": 12,
+      "삼일": 13,
       "삼정": 4,
       "안진": 9,
       "한영": 16,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 30,
-      "자격무관": 36
+      "자격무관": 37
     },
     "by_emp_kind": {
-      "인턴": 21,
+      "인턴": 22,
       "정규직": 35,
       "계약직": 3,
       "파트타임": 7
@@ -244,7 +244,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "금융컨설팅부문 Process & Controls팀 인턴",
       "company": "EY한영",
       "deadline": "2026-07-14",
@@ -368,6 +368,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/120736",
       "dday": 8,
       "first_seen": "2026-07-02T15:31:37"
+    },
+    {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "Public Service팀 컨설팅 인턴 채용",
+      "company": "삼일PwC",
+      "deadline": "2026-07-17",
+      "posted_date": "",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://www.pwc.com/kr/ko/career/experienced/r260707-2.html",
+      "dday": 9,
+      "first_seen": "2026-07-08T15:31:57"
     },
     {
       "source": "kicpa_susup",
@@ -700,7 +719,7 @@
       "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[현대회계법인] 기장경력 신입~경력2년차",
       "company": "현대회계법인",
       "deadline": "2026-08-07",

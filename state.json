@@ -1132,5 +1132,41 @@
     "last_seen": "2026-07-09",
     "notified": true,
     "notified_date": "2026-07-09"
+  },
+  "samjong:KPMG00000000000000000000000906": {
+    "source": "samjong",
+    "source_label": "삼정KPMG",
+    "title": "[인사팀] 공채 지원 단기 인턴 채용",
+    "company": "삼정KPMG",
+    "deadline": "2026-07-15",
+    "posted_date": "2026-07-09",
+    "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000906&receive_div_cd=N",
+    "body_excerpt": "",
+    "category": "신입",
+    "location": "",
+    "emp_type": "",
+    "native_id": "KPMG00000000000000000000000906",
+    "uid": "samjong:KPMG00000000000000000000000906",
+    "first_seen": "2026-07-09T14:32:00",
+    "last_seen": "2026-07-09",
+    "notified": false
+  },
+  "anjin:5147": {
+    "source": "anjin",
+    "source_label": "딜로이트안진",
+    "title": "인재부 Talent-Acquisition(채용팀) 계약직",
+    "company": "딜로이트 안진",
+    "deadline": "2026-07-14",
+    "posted_date": "2026-07-09",
+    "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5147",
+    "body_excerpt": "",
+    "category": "",
+    "location": "",
+    "emp_type": "",
+    "native_id": "5147",
+    "uid": "anjin:5147",
+    "first_seen": "2026-07-09T14:32:00",
+    "last_seen": "2026-07-09",
+    "notified": false
   }
 }

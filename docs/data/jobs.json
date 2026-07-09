@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-07-09T14:12:01",
+  "generated_at": "2026-07-09T14:32:00",
   "soon_days": 7,
   "counts": {
-    "total": 69,
-    "open": 48,
+    "total": 71,
+    "open": 50,
     "closed": 21,
-    "new": 8,
-    "soon": 17,
+    "new": 10,
+    "soon": 19,
     "by_firm": {
       "삼일": 13,
-      "삼정": 3,
-      "안진": 10,
+      "삼정": 4,
+      "안진": 11,
       "한영": 18,
       "로컬": 22,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 27,
-      "자격무관": 42
+      "자격무관": 44
     },
     "by_emp_kind": {
-      "인턴": 25,
+      "인턴": 26,
       "정규직": 34,
-      "계약직": 4,
+      "계약직": 5,
       "파트타임": 6
     }
   },
@@ -218,6 +218,25 @@
       "first_seen": "2026-07-07T15:31:44"
     },
     {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "인재부 Talent-Acquisition(채용팀) 계약직",
+      "company": "딜로이트 안진",
+      "deadline": "2026-07-14",
+      "posted_date": "2026-07-09",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5147",
+      "dday": 5,
+      "first_seen": "2026-07-09T14:32:00"
+    },
+    {
       "source": "samil",
       "source_label": "삼일PwC",
       "firm": "삼일",
@@ -273,6 +292,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/121392",
       "dday": 6,
       "first_seen": "2026-07-08T12:02:03"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "[인사팀] 공채 지원 단기 인턴 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-07-15",
+      "posted_date": "2026-07-09",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000906&receive_div_cd=N",
+      "dday": 6,
+      "first_seen": "2026-07-09T14:32:00"
     },
     {
       "source": "anjin",

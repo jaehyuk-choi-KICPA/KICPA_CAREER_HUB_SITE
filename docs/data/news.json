@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T01:01:43",
+  "generated_at": "2026-07-10T01:31:39",
   "items": [
     {
       "source": "gnews_딜·M&A",
@@ -9,7 +9,15 @@
       "published": "2026-07-09",
       "published_at": "2026-07-09T14:59:00",
       "summary": "",
-      "category": "딜·M&A"
+      "category": "딜·M&A",
+      "dupes": [
+        {
+          "title": "SK하이닉스, 공모가 149달러 제시...외국기업 최대 IPO 쓴다",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBhOXJ0bkpXUlZjWURfYWNtQm8xSzM0czhOZlVPVnp0NzFCTmpEaUZyd0JvYm5zcGVuVjNLRXRSVURJQ3RwQ0p6emhXSmlNd3V6bzVoSFpkS2N2dw?oc=5",
+          "source_label": "파이낸셜뉴스",
+          "published": "2026-07-09"
+        }
+      ]
     },
     {
       "source": "gnews_딜·M&A",
@@ -186,7 +194,7 @@
     {
       "source": "gnews_세무",
       "source_label": "이데일리",
-      "title": "론스타 '1682억 법인세 환급' 파기환송심 종결…오는 9월 선고",
+      "title": "론스타 1682억원 법인세 환급 파기환송심 종결…오는 9월 선고",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZG9Ud2cteUpCc1JldlZEZ08tM1V0UkRYUDBtWkN0SmNaejNaLXFjemZnTEltMlJLamdtZldlRDR2VTJZd3dVUFB0X1BxTDZ2ZU1SVXFtd3ladVN3cDZsZU1HTFQyVUtLOGtVaVhfNVV6bjVwQ0pWZWNxOHdpVjl4aQ?oc=5",
       "published": "2026-07-09",
       "published_at": "2026-07-09T10:06:41",
@@ -935,31 +943,13 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "조세일보",
-      "title": "국회 계류 ‘주가누르기 방지법’…이소영 “세법개정안 반영이 관건\"",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFB0VDlYdWpVb19OS0lyVDFMLThJSmE5RzNidGt5Zm5FRU1SVE05SWZXOTFmRWRrbUl0SGlGcFVnWmt2ZGNOSERpTDM3bU1Qd0xmTUw5NEU3UUlYMXlKS2NV?oc=5",
+      "source_label": "머니투데이",
+      "title": "이소영 \"주가누르기 방지법, 이달 말 세법개정안에 담아야\" - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBIQjAtZG81TXVFbDVOeFJCTEU1SXlMV0hRM2kwaGxjczZ2QkVJdlNyNVpHUFp1V2xSdW9iNnE1eWJELWpaRG51UGRDOEZQTnJ4SHZmZ3NyWlVTbk51WlZtODdKZm9OMWJFSTdLOdIBckFVX3lxTE90ZjFJSF9rbml3MUFKSmlRLVhleU0yRzk0aG1vbHM0NU9QYnpOYlFYdWtJNWx6dkhfZTBDRG8wQ21EZzZIRVQzOF9uUFYwc29MdC02V1YtbFFoMDgyTkVzVF90dUVXeFVKdDFmSGQyTkpSdw?oc=5",
       "published": "2026-07-05",
-      "published_at": "2026-07-05T03:05:51",
+      "published_at": "2026-07-05T01:24:55",
       "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "이소영 \"주가누르기 방지법, 이달 말 세법개정안에 담아야\" - 머니투데이",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBIQjAtZG81TXVFbDVOeFJCTEU1SXlMV0hRM2kwaGxjczZ2QkVJdlNyNVpHUFp1V2xSdW9iNnE1eWJELWpaRG51UGRDOEZQTnJ4SHZmZ3NyWlVTbk51WlZtODdKZm9OMWJFSTdLOdIBckFVX3lxTE90ZjFJSF9rbml3MUFKSmlRLVhleU0yRzk0aG1vbHM0NU9QYnpOYlFYdWtJNWx6dkhfZTBDRG8wQ21EZzZIRVQzOF9uUFYwc29MdC02V1YtbFFoMDgyTkVzVF90dUVXeFVKdDFmSGQyTkpSdw?oc=5",
-          "source_label": "머니투데이",
-          "published": "2026-07-05"
-        }
-      ]
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "조세금융신문",
-      "title": "회계기준원 ‘비외감 종속기업 연결면제’…신속 질의회신 요약 10건 공개",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5hQk9XSWNsdnFLTlVOSzUxQ2oxWWVFS2R4SGdGSXRfVVV1eWtmVDNIU0lMSEl4LUdMa0xFcFh6U0R1Nmg1VVlvNFgxTG5xa1A2ZUloWGN2X2pUbnJfSVJ2dA?oc=5",
-      "published": "2026-07-01",
-      "published_at": "2026-07-01T06:43:47",
-      "summary": "",
-      "category": "감사"
+      "category": "세무"
     },
     {
       "source": "gnews_딜·M&A",
@@ -1307,7 +1297,7 @@
         },
         {
           "title": "금융위, 회계사 수습처 확대…미지정 합격자 한공회가 배정",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB1YXQ1NVBPc19ha01Oc21QeHNhYWR1elZiNGxqWXdSQ1ZYYnVmeUw4cDhxd2NRWUJxbkxuYkRmd29ZcWtyLUpTZUJ2bw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9nYzE4SGVSQnREXzJRb3NKay0xVUlQNGZlNUpFY0xHRThxVjVseGtqZlRyVjJ0bko2anRXeWpOLWVQZ3FaOXc?oc=5",
           "source_label": "v.daum.net",
           "published": "2026-05-31"
         },
@@ -1324,15 +1314,15 @@
           "published": "2026-05-31"
         },
         {
-          "title": "2년째 수습처 못 구한 회계사, 한공회장이 직접 수습처 배정한다",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5wWE96bDJmSnJRc0dsYVpzTVRqVTdjM3FyNVdYcnZBMWhDekJwZW85VXBnX2F0dEM3UldWSk1BOEw4NkVoVjJGM2dlNWRIV2s?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-05-31"
-        },
-        {
           "title": "장기 미지정 회계사들, '감사인 등록' 회계법인에 수습 배정",
           "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOMzQ0QkxPMzdiSVJNN2xOc0dBUzV5eVQxVDZTUnNkN0xEYXRjdUJfNTZjeWxOVm9oaXJQb0tLUkRncTFvNHh2RlNqRXNmSHlxRUtfQ2dQbzhEYXpnM0p3U1lrTXc2b3pXS3ZYYkp4U1FFTkM1MFZEWFdIaF9LT3hPVw?oc=5",
           "source_label": "이데일리",
+          "published": "2026-05-31"
+        },
+        {
+          "title": "2년째 수습처 못 구한 회계사, 한공회장이 직접 수습처 배정한다",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5wWE96bDJmSnJRc0dsYVpzTVRqVTdjM3FyNVdYcnZBMWhDekJwZW85VXBnX2F0dEM3UldWSk1BOEw4NkVoVjJGM2dlNWRIV2s?oc=5",
+          "source_label": "v.daum.net",
           "published": "2026-05-31"
         },
         {

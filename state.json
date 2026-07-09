@@ -1149,7 +1149,8 @@
     "uid": "samjong:KPMG00000000000000000000000906",
     "first_seen": "2026-07-09T14:32:00",
     "last_seen": "2026-07-09",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-07-09"
   },
   "anjin:5147": {
     "source": "anjin",
@@ -1167,6 +1168,7 @@
     "uid": "anjin:5147",
     "first_seen": "2026-07-09T14:32:00",
     "last_seen": "2026-07-09",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-07-09"
   }
 }

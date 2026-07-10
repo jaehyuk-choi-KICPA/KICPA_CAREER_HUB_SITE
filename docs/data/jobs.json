@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-10T09:01:50",
+  "generated_at": "2026-07-10T09:32:29",
   "soon_days": 7,
   "counts": {
-    "total": 70,
-    "open": 48,
+    "total": 71,
+    "open": 49,
     "closed": 22,
-    "new": 5,
-    "soon": 18,
+    "new": 7,
+    "soon": 19,
     "by_firm": {
-      "삼일": 13,
+      "삼일": 14,
       "삼정": 4,
       "안진": 11,
       "한영": 19,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 26,
-      "자격무관": 44
+      "자격무관": 45
     },
     "by_emp_kind": {
-      "인턴": 27,
+      "인턴": 28,
       "정규직": 33,
       "계약직": 5,
       "파트타임": 5
@@ -178,6 +178,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5147",
       "dday": 4,
       "first_seen": "2026-07-09T14:32:00"
+    },
+    {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "딜",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "Deals Business 업무 인턴 채용",
+      "company": "삼일PwC",
+      "deadline": "2026-07-15",
+      "posted_date": "",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://www.pwc.com/kr/ko/career/experienced/r260709.html",
+      "dday": 5,
+      "first_seen": "2026-07-10T09:32:29"
     },
     {
       "source": "samil",
@@ -757,16 +776,16 @@
       "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": false,
+      "is_new": true,
       "title": "[현대회계법인] 기장경력 신입~경력2년차",
       "company": "현대회계법인",
       "deadline": "2026-08-07",
-      "posted_date": "2026-07-08",
+      "posted_date": "2026-07-10",
       "location": "서울 전체",
       "emp_type": "정규직",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1783404892888",
       "dday": 28,
-      "first_seen": "2026-07-08T17:02:02"
+      "first_seen": "2026-07-10T09:32:29"
     },
     {
       "source": "kicpa_cpa",

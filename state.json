@@ -865,7 +865,8 @@
     "uid": "kicpa_cpa:1783404892888",
     "first_seen": "2026-07-10T09:32:29",
     "last_seen": "2026-07-10",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-07-10"
   },
   "hanyoung:121274": {
     "source": "hanyoung",
@@ -1149,6 +1150,7 @@
     "uid": "samil:r260709",
     "first_seen": "2026-07-10T09:32:29",
     "last_seen": "2026-07-10",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-07-10"
   }
 }

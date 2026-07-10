@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-10T13:31:47",
+  "generated_at": "2026-07-10T14:01:48",
   "soon_days": 7,
   "counts": {
-    "total": 76,
-    "open": 52,
+    "total": 77,
+    "open": 53,
     "closed": 24,
-    "new": 7,
-    "soon": 21,
+    "new": 8,
+    "soon": 22,
     "by_firm": {
       "삼일": 14,
       "삼정": 4,
       "안진": 12,
-      "한영": 23,
+      "한영": 24,
       "로컬": 20,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 26,
-      "자격무관": 50
+      "자격무관": 51
     },
     "by_emp_kind": {
-      "인턴": 32,
+      "인턴": 33,
       "정규직": 34,
       "계약직": 5,
       "파트타임": 5
@@ -311,6 +311,25 @@
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000906&receive_div_cd=N",
       "dday": 5,
       "first_seen": "2026-07-09T14:32:00"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "컨설팅부문 DX 혁신 프로젝트 인턴",
+      "company": "EY한영",
+      "deadline": "2026-07-15",
+      "posted_date": "2026-07-10",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/121541",
+      "dday": 5,
+      "first_seen": "2026-07-10T14:01:48"
     },
     {
       "source": "anjin",

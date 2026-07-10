@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-10T14:31:42",
+  "generated_at": "2026-07-10T15:01:45",
   "soon_days": 7,
   "counts": {
-    "total": 77,
-    "open": 53,
+    "total": 78,
+    "open": 54,
     "closed": 24,
-    "new": 9,
-    "soon": 22,
+    "new": 7,
+    "soon": 23,
     "by_firm": {
       "삼일": 14,
       "삼정": 4,
-      "안진": 12,
+      "안진": 13,
       "한영": 24,
       "로컬": 20,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 26,
-      "자격무관": 51
+      "자격무관": 52
     },
     "by_emp_kind": {
-      "인턴": 33,
+      "인턴": 34,
       "정규직": 34,
       "계약직": 5,
       "파트타임": 5
@@ -142,6 +142,25 @@
       "first_seen": "2026-06-25T19:01:36"
     },
     {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": false,
+      "title": "회계감사부문 비감사 프로젝트 업무 지원 인턴",
+      "company": "딜로이트 안진",
+      "deadline": "2026-07-13",
+      "posted_date": "2026-07-01",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5142",
+      "dday": 3,
+      "first_seen": "2026-07-10T15:01:45"
+    },
+    {
       "source": "hanyoung",
       "source_label": "EY한영",
       "firm": "한영",
@@ -206,7 +225,7 @@
       "qualification": "자격무관",
       "emp_kind": "계약직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "인재부 Talent-Acquisition(채용팀) 계약직",
       "company": "딜로이트 안진",
       "deadline": "2026-07-14",
@@ -301,7 +320,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[인사팀] 공채 지원 단기 인턴 채용",
       "company": "삼정KPMG",
       "deadline": "2026-07-15",

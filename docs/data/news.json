@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T04:01:52",
+  "generated_at": "2026-07-11T04:31:49",
   "items": [
     {
       "source": "gnews_딜·M&A",
@@ -78,12 +78,6 @@
           "published": "2026-07-10"
         },
         {
-          "title": "중앙일보 워크아웃 개시 확정… 채권단 75% 동의, 경영권 매각 수순",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAtTXBKcjJUUFdNV0gwOEQydnVFVW9RcDBuNmthYWtUQnd6M2tQNy1oZ1B2cVFYazVIUWxtS0NwUzFxMGtaT0M0V2p6blN1dmE3WkhUMDB2RVhhUQ?oc=5",
-          "source_label": "경북매일",
-          "published": "2026-07-10"
-        },
-        {
           "title": "중앙일보 워크아웃 개시 오늘 결정···경영권 매각 추진될까",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA4NnBSbFdpV2VvaDFfeFM1eXoxQWFmNmQ4Y2trZ0NvZThkcHhRaHFaVnRsazh0S2pjRE5uQlJzUkc1MGhkczVQS20tc2FUVjY5a2pWSk1COXBxd9IBX0FVX3lxTFAyaHMxVnkzU043LXk1WjdPWVh5eGhNVm9hckdXTTd4bkhZdnBNV0w0RVRRQktTQ0lnTU9DOTVJVVJPNUlScHdZd0hUMlQ3WWg5c3VhVFBMWnNfejZtOFZn?oc=5",
           "source_label": "경향신문",
@@ -145,12 +139,6 @@
           "title": "SK하이닉스 ADR 공모가 149달러 확정···외국기업 IPO 사상 최대",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBxQnFYWUY3cUhxdVRJTHp3TDNxb3QxX2wxZEQxRG9UaTVzTWQtU1BwUW5hTkR5cXEwdm5Qa0tIcHdHRWFBaDVFVGlKbUN2TmlhZjcyVi1LQ0Z3d9IBX0FVX3lxTE5PRDZGQVJMbEp1ZTJ4R2NWUHExdkhlaXpiUG16VExkTXBwYVpXdWxjSUlqcFRha0ozd2JKOTk2bjVIVVlRbER0YUdyakpSc194R0F5STRhYW5CRFJ3NE5F?oc=5",
           "source_label": "경향신문",
-          "published": "2026-07-09"
-        },
-        {
-          "title": "SK하이닉스 ADR 공모가 149달러 확정…외국기업 美 IPO 최대 규모",
-          "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNRWx2VUM5VHB0a05zbkRSUi1vX0g4MGZ0bkZiNzQzZWxlS1dGdUtVZHd0bnpBaDBBZ1JBUllrMTJKQ0dDYS1BdTRuU1pnY3ZJazY5c3VRT29uSDN4MXVYWlBIZDE4TVRFOW90a0JHRXp5ZDJVM3k1R2RKaUtjVXdzYnFjaDlPaU5nOXpJ?oc=5",
-          "source_label": "조선일보",
           "published": "2026-07-09"
         },
         {
@@ -443,12 +431,6 @@
           "title": "군포시, 부가가치세 경정청구로 9억4000만원 환급 받아…2회 추경 세입 반영",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBxNXBrQlVITmVuelFpTmtnbTlxeU5wWkw5NkdFNWYzb3U3MmQ2cXJlUDZrckQ2VkFPb194WEtlaTRWeWs2Slp0WnhUYnN6eW1VdHEzd1ZVa09DQVpvZjgzbWR4ZVNxVGxWb1c0?oc=5",
           "source_label": "프레시안",
-          "published": "2026-07-09"
-        },
-        {
-          "title": "군포시, 부가가치세 경정 청구로 9억 4천만원 환급 받아",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE52SmtzdW95ZGFrV1drc1NLRnkybjVvS01EYVRYNG1ST0ZvcGRheS1qcHRDMEd4eDJJV0hUUFFNYW9meEFPdHg3YjZrc3lyUWdIVGRlaHhKVTdCdEN5bmFFUmhjazNFTFJrOTloWmhHTzTSAXRBVV95cUxNelE3VnJBd0J6Z1BhZ2NTNWxmbkdZa0JEZWN2T05xNDFDVkJTTlBiWVFLeVV0bi1meFlHb29vLTh2STI1aGQyRUxwaWQxaTM0X1I0ZHQ0bWZmN1RJNTJuUUJsXzVnLS1HQmkwWklrWDBtcmZjTg?oc=5",
-          "source_label": "이뉴스투데이",
           "published": "2026-07-09"
         }
       ]
@@ -779,7 +761,15 @@
       "published": "2026-07-07",
       "published_at": "2026-07-07T15:02:14",
       "summary": "",
-      "category": "세무"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "국세청, KT 특별 세무조사 착수",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5UQmNhaEdjemNkUXpBTXN0MXgxZ1NJQzJzOVAwOEx3bzQ3NHFkUFl2bTc1ek96VjdJeG41RHFGT29mTWQ2ZnU5YzU1S3JiWXRFR25yZw?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-07-07"
+        }
+      ]
     },
     {
       "source": "gnews_감사",
@@ -902,34 +892,8 @@
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE85UWctWG1NZWJHNk5yVkt2ZnJwS1U5ZWFqYlREN3hjR0FXelVmeTFMeGhfWlJUVTlrbFVDOFNQc3FQYlVmb0M4MDZDbThDUDVJX2p5ZUNZVC1nRjJhY0RiUEFfSmE?oc=5",
           "source_label": "한국세정신문",
           "published": "2026-07-07"
-        },
-        {
-          "title": "국세청, 초고가 아파트 등 부동산 탈세 조사서 731억원 탈루 적발",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9waWdpLUVyN1FJd0dyejFzTUcxNG82eFZ2Vk1kN0pHeWQwX21veFVUODhvQ1NYVVh4c1h0QlNHakFWajg3dXdqblI1LWlIczJiT3N5T1ZDdjJMR09xeUh1SFZlVWo4dTM10gFsQVVfeXFMTVJoOE9VOG4wbXptdkg3UW12eDZ3NzhKdU81OVFWNW1GTmUzVG1BRDFXMC1qV0h2MmlQQlMzT044d1NwX1hod0xvMlNJYlVPVXJNSTlJQlpkMjF3eHRqbENnQ0Q0N0xmRWkzakpP?oc=5",
-          "source_label": "필드뉴스",
-          "published": "2026-07-07"
         }
       ]
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "조세금융신문",
-      "title": "40대 무직자녀, 부모 돈으로 월세 700만원 내며 흥청망청…증여세 13억 추징",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5nOVVmMDYzQnVIeWFxLW1XWENtMEtIdDlKR2x2OWF1aTE1MXlfa1hlV2kzcWk5TzE3WDBXS2dJNndHUVNlTlhlZ2FYUkRpQzRMd3g0Vi1PSGx3d3lJN3JqV1Fabw?oc=5",
-      "published": "2026-07-07",
-      "published_at": "2026-07-07T03:00:07",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "조세금융신문",
-      "title": "1세대 1주택 비과세 노린 2주택자, 뒷돈 주고 차명 보유하다 검찰고발",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9HakY5aTJUQ2lWcnhMWW9ka2dDYWtlT0dLeS1KTERJT1otS29hbjhid01Oa0h2eHRIZ2FwcFRiYTI1dTNrSzJ6R0ZzLW01OVo1QldNVUxrN05ZaDFDbnoyR1dZWQ?oc=5",
-      "published": "2026-07-07",
-      "published_at": "2026-07-07T03:00:05",
-      "summary": "",
-      "category": "세무"
     },
     {
       "source": "gnews_세무",
@@ -938,6 +902,26 @@
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1MTjRyYkh0blN6Ry1vQmZ0X3VGc010SnhDeUw2VWN1SE5kT2NyNW1NZkJzbG1Sc0QteTVHNXpmQ3dFenlTck50LVMzdjdBNXpZSVJqYnNTbDMwRDdsa1pJSlNWOG13VFJiZVJXag?oc=5",
       "published": "2026-07-07",
       "published_at": "2026-07-07T03:00:00",
+      "summary": "",
+      "category": "세무"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "intn.co.kr",
+      "title": "삼성전자 2분기 영업익 89.4조…법인세 증가 기대감도 한층 커져",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9KdlZwbXJybzFpdXotbV9QVTkwVmtIVkZsT192QkZPWml2MXZtQms4N2dreWVvWmJCc0NFQkVObXJXYVFsVzJmWjRUUFh1VXQwU0U5Xzc0N1Q2ZjA1SmlmR1h3NUMzaVdGeUE?oc=5",
+      "published": "2026-07-07",
+      "published_at": "2026-07-07T02:49:00",
+      "summary": "",
+      "category": "세무"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "전자신문",
+      "title": "이지샵, 부가가치세 신고 기간 맞이 아이패드·상품권 증정 등 혜택 프로모션 시행",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1BNjFDaEZHZkM5dkdjZ2pFYU9pdGlRTXBjX2k2dTlXRzM0ME9MVG1mTm1VRUxEN0RDenBoV0IwR3R1MUUyS3AycDNIb2tzdw?oc=5",
+      "published": "2026-07-07",
+      "published_at": "2026-07-07T01:00:00",
       "summary": "",
       "category": "세무"
     },
@@ -1000,6 +984,24 @@
       "category": "딜·M&A"
     },
     {
+      "source": "gnews_딜·M&A",
+      "source_label": "이코노미스트",
+      "title": "'삼전닉스 레버리지' 상장폐지 되나…\"코스피, 카지노 같아\" 정치권도 거론",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFA5QlJnWVcxSUpSVHMxNUU0QlY5WE8yb1lpUGtZeHhPRjhXR01zS0NQTWtuWDdIeDVsc0FXVlgwdkZCZUd3dVNxNG96cEV4QnVpSXNxR0JEbHRkOVFYMnE0Q2JR?oc=5",
+      "published": "2026-07-06",
+      "published_at": "2026-07-06T01:19:00",
+      "summary": "",
+      "category": "딜·M&A",
+      "dupes": [
+        {
+          "title": "안철수 “코스피, 카지노 전락…삼전닉스 레버리지 상장폐지 검토하라”",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1NLWF5bHpGY3o1TEJOQzFJRXQ4TXY3NUY4U21zZUlTWlVVeWZGaWhFc3VWUDdPUV9tTDNNME04ODJaYUZlRTB6UGZrNS1RbmxLMlJkQmF6ZFJOWFQxSEJFUWtTbF9QZmpheXZyUmFWR0otUFVndVZB0gFmQVVfeXFMTnlfR2NKOUpUWmZ2WWZILXFSWXFMVDktNDBfOXBuTVppUjdlQnYyZFJpVGtUaXlVZnhmR1g2LTJQXzF6STRVTy1tTXZJbUdZbVVyZWVEMENvYkJVSkFaOXlYR2FsQWtR?oc=5",
+          "source_label": "동아일보",
+          "published": "2026-07-05"
+        }
+      ]
+    },
+    {
       "source": "gnews_세무",
       "source_label": "연합인포맥스",
       "title": "[부동산 세제 진단] 뜨거운 감자 '양도소득세'…내릴 수도 올릴 수도",
@@ -1010,14 +1012,14 @@
       "category": "세무"
     },
     {
-      "source": "gnews_딜·M&A",
-      "source_label": "동아일보",
-      "title": "안철수 “코스피, 카지노 전락…삼전닉스 레버리지 상장폐지 검토하라”",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1NLWF5bHpGY3o1TEJOQzFJRXQ4TXY3NUY4U21zZUlTWlVVeWZGaWhFc3VWUDdPUV9tTDNNME04ODJaYUZlRTB6UGZrNS1RbmxLMlJkQmF6ZFJOWFQxSEJFUWtTbF9QZmpheXZyUmFWR0otUFVndVZB0gFmQVVfeXFMTnlfR2NKOUpUWmZ2WWZILXFSWXFMVDktNDBfOXBuTVppUjdlQnYyZFJpVGtUaXlVZnhmR1g2LTJQXzF6STRVTy1tTXZJbUdZbVVyZWVEMENvYkJVSkFaOXlYR2FsQWtR?oc=5",
-      "published": "2026-07-05",
-      "published_at": "2026-07-05T23:57:00",
+      "source": "gnews_세무",
+      "source_label": "문화일보",
+      "title": "반려동물 치료비엔 세금 없다? 부가가치세 부과[김규회의 뒤집어보는 상식]",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBudGdKMmNJcFcwUEZMOHpmWFlhYjFkbDAyYVA5UTY1cUFPWVRWSlZ5UjE5OGxpcDVBNDFWenNabVVHWm1ybk5GdjhuQ3lqTGhU?oc=5",
+      "published": "2026-07-06",
+      "published_at": "2026-07-06T00:15:59",
       "summary": "",
-      "category": "딜·M&A"
+      "category": "세무"
     },
     {
       "source": "gnews_세무",
@@ -1026,6 +1028,16 @@
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE0wNGFUOFg1QmdRUXN0VDVvczMwWVpYaHRvLU1PV0J4R3ZlWW1yM2dDenBMWnBNZVppOWxiN0NhWGlBWEgzNkN3RERiZWh0bVlRZ2ZMTVFoaUVIMGlaZXpjc3U5Yk8xdVQ5UWZ2cWRB0gFyQVVfeXFMTXk3SGQtQjRhd2o3bnlpMFBoVTNUZGtZeWN3VnVGZnM0OGpTb2N6dUltRUdoWTJ0T0VtaHNaLW1laFBVaEU2QjNDNWZIQnpqV3NnYXBIX0NseXRfR2tyNGpOTlgtZHRhUmd0aWdUbHBrM0t3?oc=5",
       "published": "2026-07-05",
       "published_at": "2026-07-05T21:05:00",
+      "summary": "",
+      "category": "세무"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "v.daum.net",
+      "title": "대법 \"KB캐피탈 한도초과 중개수수료는 '사회질서 위반'…법인세 비용 불인정\"",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5Md2VIYWdfbVFGdnBDcElZMUdJQVN4MXhWcXZwcG84QUFsS2xTMjA5YXRHYk5jVm4xRmN0dnkxTFE0MGFjZVE?oc=5",
+      "published": "2026-07-05",
+      "published_at": "2026-07-05T21:02:18",
       "summary": "",
       "category": "세무"
     },
@@ -1052,16 +1064,6 @@
           "published": "2026-07-05"
         }
       ]
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "한경매거진&북",
-      "title": "세무조사가 달라졌다…'율촌 조세진단팀' 최정예 원팀으로 선제 대응",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5KUlMxUGhoMWRGUmhWTlBHN0pUMG5MRWVBWTdHVDVrYWlLR09Dby1nTTdBT1BsQlZFR1Y1dlI4VXFjOWdfcWo1Z2VhcmNPWFkyQmpRVHhFSS1nSm92WGRFVkZlSjZPTjlU?oc=5",
-      "published": "2026-07-02",
-      "published_at": "2026-07-02T21:00:00",
-      "summary": "",
-      "category": "세무"
     },
     {
       "source": "gnews_딜·M&A",
@@ -1111,13 +1113,45 @@
       "published": "2026-07-01",
       "published_at": "2026-07-01T01:00:53",
       "summary": "",
-      "category": "세무"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "‘하반기 세정 이렇게 달라진다’…정기 세무조사 '시기 선택제' 전면 시행",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA4bU5IX3lLRGE1NllZZzQ3cjQ2ejVWQzRtMHpvSkdkUnlLcktYZ3F2UHRFX296RnRwYW5VakhWaEdiQ0JTX2NRZ3lXX1JyeWZHcnl4Zk9GLUpqQnN5MjU3ak54QlAxNHAyd2c?oc=5",
+          "source_label": "intn.co.kr",
+          "published": "2026-06-30"
+        }
+      ]
     },
     {
       "source": "gnews_세무",
       "source_label": "법률신문",
       "title": "[단독] 국세청, 농협중앙회 특별 세무조사…강호동 회장 사법리스크 부각",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE00VjUyR1BDM3ZRX2d3TjZlNGYxbnZidEpRY3dZdXM3amxtc3JicHdkZ0p4RmNZanhwX1R2cDFBaHNtU0gxcS1WMExnTFpvcjlHbW5YY2dKOXNlR3d1UDBlQXNIU19kM2N0eDVJcGpR0gFyQVVfeXFMTjM2cUVEaWE1cmNrTHhkWktUYTg4T1lJMkFEZjJwVFRnb25KMEEzY1pveTJfWk1ITG9POEs4ak9heXFwR3V4b1FmcGhUdDZvcERGZ1RFT3NOa0M5Yy1pX0lOSnBvYXQ0Nnh1aGNoSkNwZENn?oc=5",
+      "published": "2026-06-29",
+      "published_at": "2026-06-29T07:00:00",
+      "summary": "",
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "국세청, 농협중앙회 특별세무조사…본사에 조사요원 투입",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE53bFd5QnFmN3Y1dGtOSHNBTmpYY3lINFlXZEJYMldZZ3FVaDJBTWo2YjRkM3lOTDlBM1pRM3l6Q0g2QnBXdVk3a1h3TV9hdVRiXzYtaGZyMENSSzNlNnhMb0FUNXkwS0E?oc=5",
+          "source_label": "연합뉴스TV",
+          "published": "2026-06-29"
+        },
+        {
+          "title": "국세청, 농협중앙회 특별세무조사…조사요원 130여명 투입",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9TbUhjSExuejgyRnc3OUIzVi0temZRRjJyTUQ3a3o3a3V5bGhTOG00bEM4cjNYRUZacFZxLXZzdmFCTFUwYUF1b2RmSnkwb3ZlTktLSDkwbXh2MlHSAWBBVV95cUxNV1pzLVRNUnF2cVBRVWFtcGY0SUxOS3dVLUIyZEE2eEU2XzNqbERWelFCRjZraENJOUZZTW9PVnJjcnlWRXJ6aEs4SENFU0N5c2tSR0dCMVA0eWIybFJST2Y?oc=5",
+          "source_label": "연합뉴스",
+          "published": "2026-06-29"
+        }
+      ]
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "연합뉴스",
+      "title": "농협, 대규모 세무조사에 '벌집'…지배구조 개혁 압박 신호탄 분석",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5EZ0MwYVl0SldHNm52dEE4b3NKTkt4ZmNFX01Hbi1CMWo1Nm1YQW1aMlFRb1R6eGE3dUU2a0JzM0QzanpBSy1iQkRlNkFlUmd2Wnl2MGo2WG9YdWPSAWBBVV95cUxNbDNZZnJsSGhsTjl1bDFNSlpQUXBmLUFPYW1MRUtKUVc5MnNkc2tLYW1FTkJmbXUxNEtXZF9UazRPbGV2Nm85cE1Sd0VheWpRekdoSThvRFFtZEdVUnJEVlk?oc=5",
       "published": "2026-06-29",
       "published_at": "2026-06-29T07:00:00",
       "summary": "",
@@ -1269,7 +1303,7 @@
         },
         {
           "title": "금감원, 내년 해외매출·재고자산 등 '4대 회계이슈' 집중 점검",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9XS1Yxd0laR1VWNGJWSGg1R0tvVjhXZHg1Z1I5SjZHTS15cVYxeng0QXNxZUQ2MjRsa051YU1VV2p3MkRMdGtYTEhrdEwteFk?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBDY2VLVVEzOGQxSVI1TmctRDdKbkFnTWtTRk50aVI1bzY0aDVRRUVMX0ptZTU2RHdxWGg2bzMyZlBTZWFRVHc?oc=5",
           "source_label": "v.daum.net",
           "published": "2026-06-21"
         },
@@ -1345,7 +1379,7 @@
       "source": "gnews_감사",
       "source_label": "v.daum.net",
       "title": "회계 감독체계 손질…“분식회계 적발 기업, 신속한 상장폐지 필요”",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1pY2QwcFFPUHBVYmhSNFBWa0JHSGgweW5UY01zYzlLOVhjMmZLVTluMS10YWFVd2llUmF5T0xoVTZ2NHZvTWFEWWRITQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1EOU9RX1k0dDhaQ1djWTgyZU8zYWFqZE9feDFJbndtQUhpbHRMcnEtNlRPeUp4NDlLMFdvdVd2VXVxWnkxRml4SjJSVERMVk0?oc=5",
       "published": "2026-06-24",
       "published_at": "2026-06-24T07:00:00",
       "summary": "",

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-10T16:02:00",
+  "generated_at": "2026-07-10T16:31:50",
   "soon_days": 7,
   "counts": {
-    "total": 78,
-    "open": 54,
+    "total": 79,
+    "open": 55,
     "closed": 24,
     "new": 7,
     "soon": 23,
@@ -11,17 +11,17 @@
       "삼일": 14,
       "삼정": 4,
       "안진": 13,
-      "한영": 24,
+      "한영": 25,
       "로컬": 20,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 26,
-      "자격무관": 52
+      "자격무관": 53
     },
     "by_emp_kind": {
       "인턴": 34,
-      "정규직": 34,
+      "정규직": 35,
       "계약직": 5,
       "파트타임": 5
     }
@@ -548,7 +548,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "BMC(Brand, Marketing and Communications) PR 인턴",
       "company": "EY한영",
       "deadline": "2026-07-19",
@@ -615,6 +615,25 @@
       "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-full-time.html",
       "dday": 13,
       "first_seen": "2026-06-29T10:10:15"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "EY-Parthenon Strategy팀 신입/경력직 채용",
+      "company": "EY한영",
+      "deadline": "2026-07-23",
+      "posted_date": "2026-07-10",
+      "location": "",
+      "emp_type": "신입/경력",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/121761",
+      "dday": 13,
+      "first_seen": "2026-07-10T16:31:50"
     },
     {
       "source": "anjin",

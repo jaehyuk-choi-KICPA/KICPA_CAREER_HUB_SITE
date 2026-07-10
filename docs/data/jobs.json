@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-10T14:01:48",
+  "generated_at": "2026-07-10T14:31:42",
   "soon_days": 7,
   "counts": {
     "total": 77,
     "open": 53,
     "closed": 24,
-    "new": 8,
+    "new": 9,
     "soon": 22,
     "by_firm": {
       "삼일": 14,
@@ -807,6 +807,25 @@
       "first_seen": "2026-06-30T17:31:39"
     },
     {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[대주회계법인 5사업부] 수습회계사 채용 공고",
+      "company": "대주회계법인",
+      "deadline": "2026-07-31",
+      "posted_date": "2026-07-10",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782442011240",
+      "dday": 21,
+      "first_seen": "2026-07-10T14:31:42"
+    },
+    {
       "source": "anjin",
       "source_label": "딜로이트안진",
       "firm": "안진",
@@ -938,25 +957,6 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782266892824",
       "dday": 52,
       "first_seen": "2026-06-24T11:31:51"
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "[대주회계법인 4사업부] 수습회계사 채용 공고",
-      "company": "대주회계법인",
-      "deadline": "2026-08-31",
-      "posted_date": "2026-07-09",
-      "location": "서울 전체",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1783567745765",
-      "dday": 52,
-      "first_seen": "2026-07-09T12:31:57"
     },
     {
       "source": "kicpa_susup",

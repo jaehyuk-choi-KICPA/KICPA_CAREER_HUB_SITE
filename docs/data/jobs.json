@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-11T09:31:57",
+  "generated_at": "2026-07-11T10:01:46",
   "soon_days": 7,
   "counts": {
     "total": 77,
     "open": 51,
     "closed": 26,
-    "new": 7,
+    "new": 5,
     "soon": 19,
     "by_firm": {
       "삼일": 14,
@@ -168,7 +168,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "Deals Business 업무 인턴 채용",
       "company": "삼일PwC",
       "deadline": "2026-07-15",
@@ -833,7 +833,7 @@
       "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[현대회계법인] 기장경력 신입~경력2년차",
       "company": "현대회계법인",
       "deadline": "2026-08-07",

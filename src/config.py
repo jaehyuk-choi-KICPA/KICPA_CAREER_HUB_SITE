@@ -265,7 +265,7 @@ _DEFAULTS: dict = {
         "screenshot_path": "sitecheck_shot.png",
         "result_path": "sitecheck_result.json",   # 루프 분기용(status·class·failed)
         "use_llm": True,              # 키 없으면 자동 비활성=결정론 검사만
-        "llm_model": "claude-opus-4-8",
+        "llm_model": "claude-haiku-4-5",   # 최저가 비전 모델($1/$5 MTok) — 스냅샷 정상여부 판독엔 충분(토큰비 절감)
         # 타당성(plausibility): '오늘 신규'가 총건수의 이 비율↑이고 총 ≥ min이면 비현실적(예: 48/48=전량 신규)
         "implausible_today_ratio": 0.8,
         "min_total_for_ratio": 8,
@@ -278,7 +278,7 @@ _DEFAULTS: dict = {
         "state_path": "canary_state.json",
         "report_path": "canary_report.md",
         "use_llm": True,         # 키 없으면 자동 비활성(구조 체크만)
-        "llm_model": "claude-opus-4-8",
+        "llm_model": "claude-haiku-4-5",   # 최저가 비전 모델($1/$5 MTok) — 목록 페이지 공고수 세기엔 충분(토큰비 절감)
         "missing_ratio": 1.5,    # LLM이 본 공고수가 스크래퍼의 이 배↑면 누락 의심
         "check_filter_leakage": True,   # 채용 목록에 경력 전용 공고 누출 결정론 점검(jobs.json)
         # 소스 키 → 시각 점검할 '목록 페이지' URL (about 탭의 원문 출처와 동일)

@@ -20,7 +20,14 @@
 
 ---
 
-## 2026-07-06 (21) — 채용: AICPA 오분류 수정 + 알림·NEW 기준 일치 + Pages 배포 셀프힐링
+## 2026-07-11 (22) — 모니터링: LLM 토큰 소비 절감 (주기 1일 1회 + haiku 전환)
+
+- **증상/계기:** 모니터링 LLM 비전 호출이 과다 — monitor.yml(5h, 하루 ~5회 × 비전 7장: canary 소스별 6 + sitecheck 1) + 레거시 sitecheck.yml(3h, 하루 8회 × 비전 1장)이 전부 **Opus 4.8**($5/$25 MTok)로 호출돼 토큰 비용 부담.
+- **무엇을 / 어디에:**
+  - `monitor.yml` cron `0 */5 * * *` → **`0 22 * * *`(1일 1회, KST 07:00)**.
+  - `config.py` sitecheck·canary `llm_model`: `claude-opus-4-8` → **`claude-haiku-4-5`**($1/$5 MTok, 비전 지원) — 스냅샷 정상여부·공고수 세기 수준의 판독엔 충분.
+  - `sitecheck.yml` cron 폐기(수동 전용) — CLAUDE.md에 예고돼 있던 정리. freshness(1h)는 LLM 없음(무료)이라 실행 감시용 유지.
+- **효과/검증:** 비전 호출 하루 ~43장→**7장**(-84%), 단가 1/5 → LLM 비용 약 **97% 절감** 추정. yml 문법 검증 + config 로드 확인. 첫 정기 실행(내일 07:00) 결과에서 haiku 판독 품질 1회 supervised 확인 권장(오탐 시 sonnet으로 한 단계만 상향).
 
 - **증상/계기:** 한공회 구인(CPA)의 **"[PKF서현회계법인] IT감사 AICPA 채용"**이 ① 수습CPA로 분류돼 수습 스코프 푸시까지 발송(**"AICPA"의 'cpa'가 `qual_susup_keywords`의 "cpa"에 부분문자열 매칭**), ② 알림을 받고 들어와도 사이트엔 안 보임 — 원인은 수집이 아니라 **GitHub Pages 배포 간헐 실패**(당일 14:32·14:37 배포 연속 failure, 최근 40회 중 9회). run-all의 "Wait for Pages" 스텝은 5분 타임아웃 후 **아무 조치 없이 발송을 진행**해 구멍이 됐음.
 - **무엇을 / 어디에:**

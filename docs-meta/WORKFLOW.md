@@ -11,7 +11,7 @@
 flowchart TD
     subgraph TRIGGER["⏰ 트리거"]
         EXT["cron-job.org<br/>30분 간격<br/>repository_dispatch"]
-        GH_CRON["GitHub Cron<br/>monitor 5h(통합) · freshness 1h · sitecheck 3h"]
+        GH_CRON["GitHub Cron<br/>monitor 1일1회(통합) · freshness 1h(무료)"]
         MANUAL["수동 실행<br/>canary / scrape 개별"]
     end
 
@@ -47,16 +47,16 @@ flowchart TD
 
     subgraph MONITOR["🔍 모니터링"]
         FRESH["freshness.yml (1h)<br/>freshness.py<br/>status.json 나이 체크"]
-        SITE["sitecheck.yml (3h)<br/>sitecheck.py<br/>라이브 URL 헤드리스 종단점검"]
+        SITE["sitecheck.yml (수동)<br/>sitecheck.py<br/>라이브 URL 헤드리스 종단점검"]
         CANARY["canary.yml (수동)<br/>canary.py<br/>소스 구조·건수 + LLM 시각"]
-        MON["monitor.yml (5h · 통합)<br/>canary+sitecheck<br/>신선도만 자동 재수집"]
+        MON["monitor.yml (1일 1회 · 통합)<br/>canary+sitecheck<br/>신선도만 자동 재수집"]
         DRAFT_PR["Draft PR<br/>(freshness · canary)"]
         GH_ISSUE["GitHub Issue<br/>(monitor · sitecheck)"]
     end
 
     EXT -->|"repository_dispatch{run-all}"| RUN_ALL
-    GH_CRON --> MON & FRESH & SITE
-    MANUAL --> SCRAPE & SCRAPE_N & SCRAPE_I & CANARY
+    GH_CRON --> MON & FRESH
+    MANUAL --> SCRAPE & SCRAPE_N & SCRAPE_I & CANARY & SITE
 
     RUN_ALL --> EXPORT
     SCRAPE & SCRAPE_N & SCRAPE_I --> EXPORT
@@ -80,7 +80,7 @@ flowchart TD
     MON -->|"렌더·코드 이상"| GH_ISSUE
 ```
 
-> **추가 흐름**: `run-all`은 수집 후 **푸시 발송**(`src/notifier.py` → 구독자)도 수행한다(§5.5 채용알림). 모니터링은 **통합 `monitor.yml`(5h)**이 canary+sitecheck를 묶어 점검하며 신선도 미갱신만 자동 재수집한다(§5).
+> **추가 흐름**: `run-all`은 수집 후 **푸시 발송**(`src/notifier.py` → 구독자)도 수행한다(§5.5 채용알림). 모니터링은 **통합 `monitor.yml`(1일 1회)**이 canary+sitecheck를 묶어 점검하며 신선도 미갱신만 자동 재수집한다(§5).
 
 ---
 
@@ -182,18 +182,18 @@ flowchart LR
 
 ---
 
-## 5. 모니터링 (통합 monitor.yml 5h + 레거시 3층 병행)
+## 5. 모니터링 (통합 monitor.yml 1일 1회 + freshness 1h)
 
-**통합**: `monitor.yml`(5h cron `0 */5 * * *`)이 canary(소스 급감 구조점검) + sitecheck(라이브 종단·신선도 셀프힐링)를
+**통합**: `monitor.yml`(1일 1회 cron `0 22 * * *` = KST 07:00)이 canary(소스 급감 구조점검) + sitecheck(라이브 종단·신선도 셀프힐링)를
 **한 잡**으로 묶어 점검한다. **신선도 미갱신(recoverable)일 때만 자동 재수집**, 그 외(렌더·타당성·코드)는 `monitor`/`needs-human`
-라벨 GitHub 이슈로 에스컬레이션. 안정 확인 전까지 아래 레거시 3층도 병행하며, 이후 freshness·sitecheck의 cron을 폐기(수동 전용)해 중복 제거 예정.
+라벨 GitHub 이슈로 에스컬레이션. LLM 비전은 최저가 `claude-haiku-4-5` 사용, sitecheck.yml cron은 폐기(수동 전용) — 토큰 소비 절감(2026-07). freshness(1h)는 LLM 없이 무료라 실행 감시용으로 유지.
 
 | 층 | 파일 | 주기 | 감지 대상 | 출력 |
 |---|---|---|---|---|
-| **통합** | **`monitor.yml`** (canary+sitecheck) | **5h** | 소스 급감 + 라이브 종단·신선도 | 이슈 / 신선도시 자동 재수집 |
+| **통합** | **`monitor.yml`** (canary+sitecheck) | **1일 1회** | 소스 급감 + 라이브 종단·신선도 | 이슈 / 신선도시 자동 재수집 |
 | 실행됐나 | `freshness.py` | 1h | `status.json` 나이 > 임계 (외부핑거 죽음) | Draft PR |
 | 수집됐나 | `canary.py` | 수동 | 소스별 건수 급감·0건·양식 변경 | Draft PR + LLM 진단 |
-| 제대로 보이나 | `sitecheck.py` | 3h | 라이브 URL 렌더·카드수·콘솔 에러·타당성 | GitHub Issue |
+| 제대로 보이나 | `sitecheck.py` | 수동 | 라이브 URL 렌더·카드수·콘솔 에러·타당성 | GitHub Issue |
 
 **셀프힐링**: monitor/sitecheck가 `recoverable`(신선도 미갱신) 판정 시 scrape 재실행 → 재점검 (최대 attempts 상한).  
 **Human-in-the-loop**: LLM은 진단·제안만, 코드 수정·머지는 사람이 Claude Code로.
@@ -268,9 +268,9 @@ flowchart LR
 ├── .github/workflows/
 │   ├── run-all.yml              ← 주 수집 (외부핑거 → repository_dispatch) + 푸시 발송(notifier)
 │   ├── push-test.yml            ← 수동 시험 푸시 (scripts/push_test.py · state 미변경)
-│   ├── monitor.yml              ← 통합 점검 (5h cron · canary+sitecheck 셀프힐링)
+│   ├── monitor.yml              ← 통합 점검 (1일 1회 cron · canary+sitecheck 셀프힐링)
 │   ├── freshness.yml            ← 신선도 감시 (1h cron · monitor 안정화 후 폐기 예정)
-│   ├── sitecheck.yml            ← 종단 점검 (3h cron · monitor 안정화 후 폐기 예정)
+│   ├── sitecheck.yml            ← 종단 점검 (수동 전용 — cron 폐기, monitor가 통합 수행)
 │   ├── canary.yml               ← 양식 감시 (수동)
 │   ├── scrape.yml               ← 채용 단독 (수동) <-외부 핑거로 가동
 │   ├── scrape-news.yml          ← 기사 단독 (수동) <-외부 핑거로 가동

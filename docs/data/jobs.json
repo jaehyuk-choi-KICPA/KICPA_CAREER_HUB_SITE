@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-07-13T22:31:49",
+  "generated_at": "2026-07-13T23:02:05",
   "soon_days": 7,
   "counts": {
-    "total": 72,
-    "open": 52,
+    "total": 73,
+    "open": 53,
     "closed": 20,
-    "new": 4,
+    "new": 5,
     "soon": 27,
     "by_firm": {
       "삼일": 9,
       "삼정": 3,
       "안진": 13,
       "한영": 24,
-      "로컬": 20,
+      "로컬": 21,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 25,
+      "수습CPA": 26,
       "자격무관": 47
     },
     "by_emp_kind": {
       "인턴": 28,
-      "정규직": 33,
+      "정규직": 34,
       "계약직": 5,
       "파트타임": 6
     }
@@ -938,6 +938,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782266892824",
       "dday": 49,
       "first_seen": "2026-06-24T11:31:51"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "회계법인 산_수습회계사 모집",
+      "company": "회계법인 산",
+      "deadline": "2026-08-31",
+      "posted_date": "2026-07-13",
+      "location": "지역무관 지역무관",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1783951218856",
+      "dday": 49,
+      "first_seen": "2026-07-13T23:02:05"
     },
     {
       "source": "kicpa_susup",

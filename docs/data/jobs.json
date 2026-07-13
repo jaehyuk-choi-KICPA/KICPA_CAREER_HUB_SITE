@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-07-13T10:01:57",
+  "generated_at": "2026-07-13T10:31:53",
   "soon_days": 7,
   "counts": {
-    "total": 72,
-    "open": 50,
+    "total": 73,
+    "open": 51,
     "closed": 22,
-    "new": 0,
-    "soon": 25,
+    "new": 1,
+    "soon": 26,
     "by_firm": {
       "삼일": 9,
       "삼정": 3,
-      "안진": 12,
+      "안진": 13,
       "한영": 25,
       "로컬": 20,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 25,
-      "자격무관": 47
+      "자격무관": 48
     },
     "by_emp_kind": {
       "인턴": 29,
       "정규직": 33,
       "계약직": 5,
-      "파트타임": 5
+      "파트타임": 6
     }
   },
   "postings": [
@@ -330,6 +330,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/121404",
       "dday": 3,
       "first_seen": "2026-07-08T14:02:06"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "택스",
+      "qualification": "자격무관",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "세무자문부문 서류 검토 아르바이트",
+      "company": "딜로이트 안진",
+      "deadline": "2026-07-16",
+      "posted_date": "2026-07-12",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5151",
+      "dday": 3,
+      "first_seen": "2026-07-13T10:31:53"
     },
     {
       "source": "samil",
@@ -693,25 +712,6 @@
       "first_seen": "2026-06-30T21:01:40"
     },
     {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "신승회계법인 병원사업본부 회계사 채용 (경력/신입)",
-      "company": "신승회계법인",
-      "deadline": "2026-07-31",
-      "posted_date": "2026-06-30",
-      "location": "서울 전체",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782782076689",
-      "dday": 18,
-      "first_seen": "2026-06-30T10:31:30"
-    },
-    {
       "source": "kicpa_cpa",
       "source_label": "구인(CPA)",
       "firm": "로컬",
@@ -748,6 +748,25 @@
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000899&receive_div_cd=N",
       "dday": 18,
       "first_seen": "2026-06-30T17:31:39"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": false,
+      "title": "신승회계법인 병원사업본부 회계사 채용 (경력/신입)",
+      "company": "신승회계법인",
+      "deadline": "2026-07-31",
+      "posted_date": "2026-06-30",
+      "location": "서울 전체",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782782076689",
+      "dday": 18,
+      "first_seen": "2026-06-30T10:31:30"
     },
     {
       "source": "kicpa_susup",

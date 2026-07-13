@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-13T09:31:48",
+  "generated_at": "2026-07-13T10:01:57",
   "soon_days": 7,
   "counts": {
-    "total": 77,
+    "total": 72,
     "open": 50,
-    "closed": 27,
+    "closed": 22,
     "new": 0,
     "soon": 25,
     "by_firm": {
-      "삼일": 14,
+      "삼일": 9,
       "삼정": 3,
       "안진": 12,
       "한영": 25,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 25,
-      "자격무관": 52
+      "자격무관": 47
     },
     "by_emp_kind": {
-      "인턴": 34,
+      "인턴": 29,
       "정규직": 33,
       "계약직": 5,
       "파트타임": 5
@@ -1016,44 +1016,6 @@
       "first_seen": ""
     },
     {
-      "source": "samil",
-      "source_label": "삼일PwC",
-      "firm": "삼일",
-      "field": "택스",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "Tax 사무보조 인턴 채용",
-      "company": "삼일PwC",
-      "deadline": "2026-06-19",
-      "posted_date": "",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://www.pwc.com/kr/ko/career/experienced/r260612.html",
-      "dday": -24,
-      "first_seen": ""
-    },
-    {
-      "source": "samil",
-      "source_label": "삼일PwC",
-      "firm": "삼일",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "AX Node팀 프로젝트 인턴 채용",
-      "company": "삼일PwC",
-      "deadline": "2026-06-19",
-      "posted_date": "",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://www.pwc.com/kr/ko/career/experienced/r260605.html",
-      "dday": -24,
-      "first_seen": ""
-    },
-    {
       "source": "hanyoung",
       "source_label": "EY한영",
       "firm": "한영",
@@ -1073,25 +1035,6 @@
       "first_seen": ""
     },
     {
-      "source": "samil",
-      "source_label": "삼일PwC",
-      "firm": "삼일",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "교육팀(L&E) 업무지원 인턴 채용",
-      "company": "삼일PwC",
-      "deadline": "2026-06-23",
-      "posted_date": "",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://www.pwc.com/kr/ko/career/experienced/r260611.html",
-      "dday": -20,
-      "first_seen": ""
-    },
-    {
       "source": "hanyoung",
       "source_label": "EY한영",
       "firm": "한영",
@@ -1108,44 +1051,6 @@
       "emp_type": "신입/경력",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/118434",
       "dday": -20,
-      "first_seen": ""
-    },
-    {
-      "source": "samil",
-      "source_label": "삼일PwC",
-      "firm": "삼일",
-      "field": "감사",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "XBRL 공시 자문 인턴 채용",
-      "company": "삼일PwC",
-      "deadline": "2026-06-24",
-      "posted_date": "",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://www.pwc.com/kr/ko/career/experienced/r260604.html",
-      "dday": -19,
-      "first_seen": ""
-    },
-    {
-      "source": "samil",
-      "source_label": "삼일PwC",
-      "firm": "삼일",
-      "field": "감사",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "Risk Assurance본부 IT감사 및 컨설팅 인턴 채용",
-      "company": "삼일PwC",
-      "deadline": "2026-06-26",
-      "posted_date": "",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://www.pwc.com/kr/ko/career/experienced/r260608-4.html",
-      "dday": -17,
       "first_seen": ""
     },
     {

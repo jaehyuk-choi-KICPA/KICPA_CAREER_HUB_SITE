@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-14T10:31:44",
+  "generated_at": "2026-07-14T11:01:48",
   "soon_days": 7,
   "counts": {
-    "total": 71,
+    "total": 70,
     "open": 50,
-    "closed": 21,
-    "new": 6,
+    "closed": 20,
+    "new": 5,
     "soon": 24,
     "by_firm": {
       "삼일": 9,
       "삼정": 3,
       "안진": 11,
-      "한영": 24,
+      "한영": 23,
       "로컬": 22,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 26,
-      "자격무관": 45
+      "자격무관": 44
     },
     "by_emp_kind": {
-      "인턴": 27,
+      "인턴": 26,
       "정규직": 34,
       "계약직": 5,
       "파트타임": 5
@@ -282,7 +282,7 @@
       "qualification": "자격무관",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "세무자문부문 서류 검토 아르바이트",
       "company": "딜로이트 안진",
       "deadline": "2026-07-16",
@@ -1336,25 +1336,6 @@
       "emp_type": "Part Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782870165703",
       "dday": -4,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "감사",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "감사부문 사무보조 단기 인턴",
-      "company": "EY한영",
-      "deadline": "2026-07-12",
-      "posted_date": "2026-07-07",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/121266",
-      "dday": -2,
       "first_seen": ""
     },
     {

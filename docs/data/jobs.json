@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-14T15:31:48",
+  "generated_at": "2026-07-14T16:01:54",
   "soon_days": 7,
   "counts": {
-    "total": 71,
+    "total": 69,
     "open": 51,
-    "closed": 20,
-    "new": 5,
+    "closed": 18,
+    "new": 4,
     "soon": 25,
     "by_firm": {
-      "삼일": 10,
+      "삼일": 8,
       "삼정": 3,
       "안진": 11,
       "한영": 23,
@@ -17,11 +17,11 @@
     },
     "by_qualification": {
       "수습CPA": 26,
-      "자격무관": 45
+      "자격무관": 43
     },
     "by_emp_kind": {
-      "인턴": 26,
-      "정규직": 34,
+      "인턴": 25,
+      "정규직": 33,
       "계약직": 6,
       "파트타임": 5
     }
@@ -814,7 +814,7 @@
       "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[현대회계법인] 기장경력 신입~경력2년차",
       "company": "현대회계법인",
       "deadline": "2026-08-07",
@@ -1070,44 +1070,6 @@
       "emp_type": "신입/경력",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/118434",
       "dday": -21,
-      "first_seen": ""
-    },
-    {
-      "source": "samil",
-      "source_label": "삼일PwC",
-      "firm": "삼일",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "French & European Business Group 인턴 채용",
-      "company": "삼일PwC",
-      "deadline": "2026-06-26",
-      "posted_date": "",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://www.pwc.com/kr/ko/career/experienced/r260608-2.html",
-      "dday": -18,
-      "first_seen": ""
-    },
-    {
-      "source": "samil",
-      "source_label": "삼일PwC",
-      "firm": "삼일",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "French & European Business Group팀 신입/경력직 채용",
-      "company": "삼일PwC",
-      "deadline": "2026-06-26",
-      "posted_date": "",
-      "location": "",
-      "emp_type": "신입, 경력직",
-      "url": "https://www.pwc.com/kr/ko/career/experienced/r260608-1.html",
-      "dday": -18,
       "first_seen": ""
     },
     {

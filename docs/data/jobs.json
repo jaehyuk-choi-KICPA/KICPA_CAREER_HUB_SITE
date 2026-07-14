@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-07-14T10:01:59",
+  "generated_at": "2026-07-14T10:31:44",
   "soon_days": 7,
   "counts": {
-    "total": 70,
-    "open": 49,
+    "total": 71,
+    "open": 50,
     "closed": 21,
-    "new": 5,
+    "new": 6,
     "soon": 24,
     "by_firm": {
       "삼일": 9,
       "삼정": 3,
       "안진": 11,
       "한영": 24,
-      "로컬": 21,
+      "로컬": 22,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 25,
+      "수습CPA": 26,
       "자격무관": 45
     },
     "by_emp_kind": {
       "인턴": 27,
-      "정규직": 33,
+      "정규직": 34,
       "계약직": 5,
       "파트타임": 5
     }
@@ -900,6 +900,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1783951218856",
       "dday": 48,
       "first_seen": "2026-07-13T23:02:05"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[회계법인 이상]수습회계사 채용(역삼지점)",
+      "company": "회계법인 이상",
+      "deadline": "2026-08-31",
+      "posted_date": "2026-07-14",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1783991768082",
+      "dday": 48,
+      "first_seen": "2026-07-14T10:31:44"
     },
     {
       "source": "kicpa_susup",

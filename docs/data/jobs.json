@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-15T17:01:52",
+  "generated_at": "2026-07-15T17:32:26",
   "soon_days": 7,
   "counts": {
     "total": 75,
     "open": 55,
     "closed": 20,
-    "new": 6,
+    "new": 5,
     "soon": 24,
     "by_firm": {
       "삼일": 9,
@@ -472,7 +472,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "AI Center 인턴",
       "company": "EY한영",
       "deadline": "2026-07-20",

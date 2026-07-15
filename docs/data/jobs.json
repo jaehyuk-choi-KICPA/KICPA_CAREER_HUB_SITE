@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-15T10:01:49",
+  "generated_at": "2026-07-15T10:31:49",
   "soon_days": 7,
   "counts": {
     "total": 73,
     "open": 53,
     "closed": 20,
-    "new": 6,
+    "new": 5,
     "soon": 24,
     "by_firm": {
       "삼일": 9,
@@ -966,7 +966,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[회계법인 이상]수습회계사 채용(역삼지점)",
       "company": "회계법인 이상",
       "deadline": "2026-08-31",

@@ -1208,7 +1208,8 @@
     "uid": "kicpa_susup:1784075210430",
     "first_seen": "2026-07-15T09:32:20",
     "last_seen": "2026-07-15",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-07-15"
   },
   "samil:r260713": {
     "source": "samil",
@@ -1226,6 +1227,7 @@
     "uid": "samil:r260713",
     "first_seen": "2026-07-15T09:32:20",
     "last_seen": "2026-07-15",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-07-15"
   }
 }

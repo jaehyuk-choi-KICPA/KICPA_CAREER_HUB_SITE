@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-07-15T16:31:58",
+  "generated_at": "2026-07-15T17:01:52",
   "soon_days": 7,
   "counts": {
-    "total": 74,
-    "open": 54,
+    "total": 75,
+    "open": 55,
     "closed": 20,
-    "new": 5,
+    "new": 6,
     "soon": 24,
     "by_firm": {
       "삼일": 9,
       "삼정": 3,
       "안진": 11,
-      "한영": 25,
+      "한영": 26,
       "로컬": 24,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 28,
+      "수습CPA": 29,
       "자격무관": 46
     },
     "by_emp_kind": {
       "인턴": 27,
-      "정규직": 36,
+      "정규직": 37,
       "계약직": 6,
       "파트타임": 5
     }
@@ -634,6 +634,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5137",
       "dday": 15,
       "first_seen": "2026-06-25T17:01:34"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "한영",
+      "field": "딜",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "{EY한영] 전략·재무자문부문 Deal2 (가치평가팀) 신입/경력직",
+      "company": "한영회계법인",
+      "deadline": "2026-07-30",
+      "posted_date": "2026-07-15",
+      "location": "서울 영등포구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1784101171573",
+      "dday": 15,
+      "first_seen": "2026-07-15T17:01:52"
     },
     {
       "source": "hanyoung",

@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-07-15T09:02:12",
+  "generated_at": "2026-07-15T09:32:20",
   "soon_days": 7,
   "counts": {
-    "total": 71,
-    "open": 51,
+    "total": 73,
+    "open": 53,
     "closed": 20,
-    "new": 4,
+    "new": 6,
     "soon": 24,
     "by_firm": {
-      "삼일": 8,
+      "삼일": 9,
       "삼정": 3,
       "안진": 11,
       "한영": 24,
-      "로컬": 23,
+      "로컬": 24,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 27,
-      "자격무관": 44
+      "수습CPA": 28,
+      "자격무관": 45
     },
     "by_emp_kind": {
-      "인턴": 26,
-      "정규직": 34,
+      "인턴": 27,
+      "정규직": 35,
       "계약직": 6,
       "파트타임": 5
     }
@@ -522,6 +522,25 @@
       "first_seen": "2026-07-10T16:31:50"
     },
     {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "조직문화 & 변화관리 지원 인턴 채용",
+      "company": "삼일PwC",
+      "deadline": "2026-07-24",
+      "posted_date": "",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://www.pwc.com/kr/ko/career/experienced/r260713.html",
+      "dday": 9,
+      "first_seen": "2026-07-15T09:32:20"
+    },
+    {
       "source": "anjin",
       "source_label": "딜로이트안진",
       "firm": "안진",
@@ -767,6 +786,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1784019998262",
       "dday": 16,
       "first_seen": "2026-07-14T18:31:51"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[신현회계법인] 수습회계사를 채용합니다(성수 주사무소)",
+      "company": "신현회계법인",
+      "deadline": "2026-07-31",
+      "posted_date": "2026-07-15",
+      "location": "서울 전체",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1784075210430",
+      "dday": 16,
+      "first_seen": "2026-07-15T09:32:20"
     },
     {
       "source": "anjin",

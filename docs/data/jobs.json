@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-16T17:01:59",
+  "generated_at": "2026-07-16T17:32:06",
   "soon_days": 7,
   "counts": {
-    "total": 73,
-    "open": 51,
+    "total": 74,
+    "open": 52,
     "closed": 22,
-    "new": 4,
-    "soon": 21,
+    "new": 5,
+    "soon": 22,
     "by_firm": {
-      "삼일": 10,
+      "삼일": 11,
       "삼정": 2,
       "안진": 11,
       "한영": 26,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 27,
-      "자격무관": 46
+      "자격무관": 47
     },
     "by_emp_kind": {
-      "인턴": 26,
+      "인턴": 27,
       "정규직": 36,
       "계약직": 6,
       "파트타임": 5
@@ -387,6 +387,25 @@
       "url": "https://www.pwc.com/kr/ko/career/experienced/r260715.html",
       "dday": 6,
       "first_seen": "2026-07-16T11:31:58"
+    },
+    {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "총무팀(General Affair) 인턴 채용",
+      "company": "삼일PwC",
+      "deadline": "2026-07-23",
+      "posted_date": "",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://www.pwc.com/kr/ko/career/experienced/r260716-3.html",
+      "dday": 7,
+      "first_seen": "2026-07-16T17:32:06"
     },
     {
       "source": "samil",

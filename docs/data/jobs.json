@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-16T11:01:52",
+  "generated_at": "2026-07-16T11:31:58",
   "soon_days": 7,
   "counts": {
-    "total": 71,
-    "open": 49,
+    "total": 72,
+    "open": 50,
     "closed": 22,
-    "new": 4,
-    "soon": 20,
+    "new": 5,
+    "soon": 21,
     "by_firm": {
-      "삼일": 8,
+      "삼일": 9,
       "삼정": 2,
       "안진": 11,
       "한영": 26,
@@ -17,11 +17,11 @@
     },
     "by_qualification": {
       "수습CPA": 27,
-      "자격무관": 44
+      "자격무관": 45
     },
     "by_emp_kind": {
       "인턴": 25,
-      "정규직": 35,
+      "정규직": 36,
       "계약직": 6,
       "파트타임": 5
     }
@@ -368,6 +368,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/119362",
       "dday": 4,
       "first_seen": "2026-07-14T17:31:55"
+    },
+    {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "총무팀(General Affair) 안내데스크(Reception) 채용",
+      "company": "삼일PwC",
+      "deadline": "2026-07-22",
+      "posted_date": "",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://www.pwc.com/kr/ko/career/experienced/r260715.html",
+      "dday": 6,
+      "first_seen": "2026-07-16T11:31:58"
     },
     {
       "source": "samil",

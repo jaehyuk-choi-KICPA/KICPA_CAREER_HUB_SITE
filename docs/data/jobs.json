@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-16T09:31:48",
+  "generated_at": "2026-07-16T10:01:54",
   "soon_days": 7,
   "counts": {
     "total": 71,
     "open": 49,
     "closed": 22,
-    "new": 6,
+    "new": 4,
     "soon": 20,
     "by_firm": {
       "삼일": 8,
@@ -415,7 +415,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "조직문화 & 변화관리 지원 인턴 채용",
       "company": "삼일PwC",
       "deadline": "2026-07-24",
@@ -700,7 +700,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[신현회계법인] 수습회계사를 채용합니다(성수 주사무소)",
       "company": "신현회계법인",
       "deadline": "2026-07-31",

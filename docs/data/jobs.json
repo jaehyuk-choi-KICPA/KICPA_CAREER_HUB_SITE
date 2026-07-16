@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-16T15:02:04",
+  "generated_at": "2026-07-16T15:31:49",
   "soon_days": 7,
   "counts": {
-    "total": 72,
-    "open": 50,
+    "total": 73,
+    "open": 51,
     "closed": 22,
-    "new": 5,
+    "new": 6,
     "soon": 21,
     "by_firm": {
-      "삼일": 9,
+      "삼일": 10,
       "삼정": 2,
       "안진": 11,
       "한영": 26,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 27,
-      "자격무관": 45
+      "자격무관": 46
     },
     "by_emp_kind": {
-      "인턴": 25,
+      "인턴": 26,
       "정규직": 36,
       "계약직": 6,
       "파트타임": 5
@@ -501,6 +501,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5145",
       "dday": 8,
       "first_seen": "2026-07-08T16:32:01"
+    },
+    {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "조직문화 데이터 & 소통 플랫폼 지원 인턴 채용",
+      "company": "삼일PwC",
+      "deadline": "2026-07-27",
+      "posted_date": "",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://www.pwc.com/kr/ko/career/experienced/r260716-2.html",
+      "dday": 11,
+      "first_seen": "2026-07-16T15:31:49"
     },
     {
       "source": "anjin",

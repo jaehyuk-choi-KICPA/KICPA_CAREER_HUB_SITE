@@ -50,7 +50,7 @@
     "native_id": "5119",
     "uid": "anjin:5119",
     "first_seen": "2026-06-17T20:17:10",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true
   },
   "hanyoung:117600": {
@@ -68,7 +68,7 @@
     "native_id": "117600",
     "uid": "hanyoung:117600",
     "first_seen": "2026-06-17T20:17:10",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true
   },
   "samil:r250407": {
@@ -86,7 +86,7 @@
     "native_id": "r250407",
     "uid": "samil:r250407",
     "first_seen": "2026-06-17T20:17:10",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true
   },
   "kicpa_cpa:1782050529930": {
@@ -161,7 +161,7 @@
     "native_id": "5130",
     "uid": "anjin:5130",
     "first_seen": "2026-06-22T16:00:17",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-06-22"
   },
@@ -180,7 +180,7 @@
     "native_id": "1782116291213",
     "uid": "kicpa_susup:1782116291213",
     "first_seen": "2026-06-22T17:31:55",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-06-22"
   },
@@ -218,7 +218,7 @@
     "native_id": "1782266892824",
     "uid": "kicpa_susup:1782266892824",
     "first_seen": "2026-06-24T11:31:51",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-06-24"
   },
@@ -237,7 +237,7 @@
     "native_id": "1782348515690",
     "uid": "kicpa_cpa:1782348515690",
     "first_seen": "2026-06-25T10:01:42",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-06-25"
   },
@@ -256,7 +256,7 @@
     "native_id": "5136",
     "uid": "anjin:5136",
     "first_seen": "2026-06-25T11:31:34",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-06-25"
   },
@@ -275,7 +275,7 @@
     "native_id": "5137",
     "uid": "anjin:5137",
     "first_seen": "2026-06-25T17:01:34",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-06-25"
   },
@@ -294,7 +294,7 @@
     "native_id": "1782376643069",
     "uid": "kicpa_susup:1782376643069",
     "first_seen": "2026-07-13T13:31:59",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-13"
   },
@@ -313,7 +313,7 @@
     "native_id": "1782442011240",
     "uid": "kicpa_susup:1782442011240",
     "first_seen": "2026-07-10T14:31:42",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-10"
   },
@@ -332,28 +332,9 @@
     "native_id": "5140",
     "uid": "anjin:5140",
     "first_seen": "2026-06-26T17:31:34",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-06-26"
-  },
-  "samjong:KPMG00000000000000000000000901": {
-    "source": "samjong",
-    "source_label": "삼정KPMG",
-    "title": "2026 수습회계사 공채 - Audit 전형",
-    "company": "삼정KPMG",
-    "deadline": "2026-07-19",
-    "posted_date": "2026-06-29",
-    "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000901&receive_div_cd=O",
-    "body_excerpt": "",
-    "category": "공채",
-    "location": "",
-    "emp_type": "",
-    "native_id": "KPMG00000000000000000000000901",
-    "uid": "samjong:KPMG00000000000000000000000901",
-    "first_seen": "2026-06-29T09:01:47",
-    "last_seen": "2026-07-19",
-    "notified": true,
-    "notified_date": "2026-06-29"
   },
   "samil:samil-2026-kicpa-audit": {
     "source": "samil",
@@ -370,7 +351,7 @@
     "native_id": "samil-2026-kicpa-audit",
     "uid": "samil:samil-2026-kicpa-audit",
     "first_seen": "2026-06-29T10:10:15",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-06-29",
     "manual": true
@@ -390,7 +371,7 @@
     "native_id": "samil-2026-kicpa-nonaudit",
     "uid": "samil:samil-2026-kicpa-nonaudit",
     "first_seen": "2026-06-29T10:10:15",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-06-29",
     "manual": true
@@ -410,29 +391,10 @@
     "native_id": "samil-2026-kicpa-parttime",
     "uid": "samil:samil-2026-kicpa-parttime",
     "first_seen": "2026-06-29T10:10:15",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-06-29",
     "manual": true
-  },
-  "hanyoung:119887": {
-    "source": "hanyoung",
-    "source_label": "EY한영",
-    "title": "2026 신입공인회계사 모집",
-    "company": "EY한영",
-    "deadline": "2026-07-19",
-    "posted_date": "2026-06-29",
-    "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/119887",
-    "body_excerpt": "",
-    "category": "신입",
-    "location": "",
-    "emp_type": "",
-    "native_id": "119887",
-    "uid": "hanyoung:119887",
-    "first_seen": "2026-06-29T15:01:35",
-    "last_seen": "2026-07-19",
-    "notified": true,
-    "notified_date": "2026-06-29"
   },
   "kicpa_cpa:1782718935103": {
     "source": "kicpa_cpa",
@@ -487,7 +449,7 @@
     "native_id": "KPMG00000000000000000000000899",
     "uid": "samjong:KPMG00000000000000000000000899",
     "first_seen": "2026-06-30T17:31:39",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-06-30"
   },
@@ -506,7 +468,7 @@
     "native_id": "1782819762693",
     "uid": "kicpa_susup:1782819762693",
     "first_seen": "2026-06-30T21:01:40",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-06-30"
   },
@@ -525,7 +487,7 @@
     "native_id": "1782827216874",
     "uid": "kicpa_cpa:1782827216874",
     "first_seen": "2026-06-30T23:01:43",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-06-30"
   },
@@ -544,7 +506,7 @@
     "native_id": "1782829696178",
     "uid": "kicpa_susup:1782829696178",
     "first_seen": "2026-06-30T23:31:40",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-06-30"
   },
@@ -582,7 +544,7 @@
     "native_id": "1776647546333",
     "uid": "kicpa_cpa:1776647546333",
     "first_seen": "2026-07-07T14:31:40",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-07"
   },
@@ -601,28 +563,9 @@
     "native_id": "1783404892888",
     "uid": "kicpa_cpa:1783404892888",
     "first_seen": "2026-07-13T16:01:53",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-13"
-  },
-  "hanyoung:121437": {
-    "source": "hanyoung",
-    "source_label": "EY한영",
-    "title": "재무실 단기 인턴",
-    "company": "EY한영",
-    "deadline": "2026-07-19",
-    "posted_date": "2026-07-08",
-    "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/121437",
-    "body_excerpt": "",
-    "category": "인턴",
-    "location": "",
-    "emp_type": "",
-    "native_id": "121437",
-    "uid": "hanyoung:121437",
-    "first_seen": "2026-07-08T16:02:22",
-    "last_seen": "2026-07-19",
-    "notified": true,
-    "notified_date": "2026-07-08"
   },
   "anjin:5146": {
     "source": "anjin",
@@ -639,7 +582,7 @@
     "native_id": "5146",
     "uid": "anjin:5146",
     "first_seen": "2026-07-08T16:32:01",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-08"
   },
@@ -658,7 +601,7 @@
     "native_id": "5145",
     "uid": "anjin:5145",
     "first_seen": "2026-07-08T16:32:01",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-08"
   },
@@ -677,28 +620,9 @@
     "native_id": "1783498971042",
     "uid": "kicpa_cpa:1783498971042",
     "first_seen": "2026-07-08T17:31:57",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-08"
-  },
-  "hanyoung:121509": {
-    "source": "hanyoung",
-    "source_label": "EY한영",
-    "title": "컨설팅부문 Technology Transformation팀 인턴",
-    "company": "EY한영",
-    "deadline": "2026-07-19",
-    "posted_date": "2026-07-09",
-    "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/121509",
-    "body_excerpt": "",
-    "category": "인턴",
-    "location": "",
-    "emp_type": "",
-    "native_id": "121509",
-    "uid": "hanyoung:121509",
-    "first_seen": "2026-07-09T10:32:02",
-    "last_seen": "2026-07-19",
-    "notified": true,
-    "notified_date": "2026-07-09"
   },
   "kicpa_susup:1783567745765": {
     "source": "kicpa_susup",
@@ -715,7 +639,7 @@
     "native_id": "1783567745765",
     "uid": "kicpa_susup:1783567745765",
     "first_seen": "2026-07-09T12:31:57",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-09"
   },
@@ -734,47 +658,9 @@
     "native_id": "5147",
     "uid": "anjin:5147",
     "first_seen": "2026-07-09T14:32:00",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-09"
-  },
-  "hanyoung:121571": {
-    "source": "hanyoung",
-    "source_label": "EY한영",
-    "title": "BMC(Brand, Marketing and Communications) PR 인턴",
-    "company": "EY한영",
-    "deadline": "2026-07-19",
-    "posted_date": "2026-07-09",
-    "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/121571",
-    "body_excerpt": "",
-    "category": "인턴",
-    "location": "",
-    "emp_type": "",
-    "native_id": "121571",
-    "uid": "hanyoung:121571",
-    "first_seen": "2026-07-09T16:31:48",
-    "last_seen": "2026-07-19",
-    "notified": true,
-    "notified_date": "2026-07-09"
-  },
-  "hanyoung:121681": {
-    "source": "hanyoung",
-    "source_label": "EY한영",
-    "title": "전략·재무자문부문 M&A Solution Group 정규전환형 인턴",
-    "company": "EY한영",
-    "deadline": "2026-07-19",
-    "posted_date": "2026-07-10",
-    "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/121681",
-    "body_excerpt": "",
-    "category": "인턴",
-    "location": "",
-    "emp_type": "",
-    "native_id": "121681",
-    "uid": "hanyoung:121681",
-    "first_seen": "2026-07-10T11:31:48",
-    "last_seen": "2026-07-19",
-    "notified": true,
-    "notified_date": "2026-07-10"
   },
   "hanyoung:121761": {
     "source": "hanyoung",
@@ -791,7 +677,7 @@
     "native_id": "121761",
     "uid": "hanyoung:121761",
     "first_seen": "2026-07-10T16:31:50",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-10"
   },
@@ -810,7 +696,7 @@
     "native_id": "121948",
     "uid": "hanyoung:121948",
     "first_seen": "2026-07-13T18:02:00",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-13"
   },
@@ -829,7 +715,7 @@
     "native_id": "1783951218856",
     "uid": "kicpa_susup:1783951218856",
     "first_seen": "2026-07-13T23:02:05",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-13"
   },
@@ -848,7 +734,7 @@
     "native_id": "1783991768082",
     "uid": "kicpa_susup:1783991768082",
     "first_seen": "2026-07-15T20:01:57",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-15"
   },
@@ -867,7 +753,7 @@
     "native_id": "119362",
     "uid": "hanyoung:119362",
     "first_seen": "2026-07-14T17:31:55",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-14"
   },
@@ -886,7 +772,7 @@
     "native_id": "1784019998262",
     "uid": "kicpa_susup:1784019998262",
     "first_seen": "2026-07-14T18:31:51",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-14"
   },
@@ -905,7 +791,7 @@
     "native_id": "1784075210430",
     "uid": "kicpa_susup:1784075210430",
     "first_seen": "2026-07-15T09:32:20",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-15"
   },
@@ -924,7 +810,7 @@
     "native_id": "r260713",
     "uid": "samil:r260713",
     "first_seen": "2026-07-15T09:32:20",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-15"
   },
@@ -943,7 +829,7 @@
     "native_id": "122214",
     "uid": "hanyoung:122214",
     "first_seen": "2026-07-15T16:31:58",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-15"
   },
@@ -962,7 +848,7 @@
     "native_id": "1784101171573",
     "uid": "kicpa_susup:1784101171573",
     "first_seen": "2026-07-15T17:01:52",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-15"
   },
@@ -981,7 +867,7 @@
     "native_id": "1784108416966",
     "uid": "kicpa_cpa:1784108416966",
     "first_seen": "2026-07-15T19:02:02",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-15"
   },
@@ -1000,7 +886,7 @@
     "native_id": "r260715",
     "uid": "samil:r260715",
     "first_seen": "2026-07-16T11:31:58",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-16"
   },
@@ -1019,7 +905,7 @@
     "native_id": "r260716-2",
     "uid": "samil:r260716-2",
     "first_seen": "2026-07-16T15:31:49",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-16"
   },
@@ -1038,7 +924,7 @@
     "native_id": "r260716-3",
     "uid": "samil:r260716-3",
     "first_seen": "2026-07-16T17:32:06",
-    "last_seen": "2026-07-19",
+    "last_seen": "2026-07-20",
     "notified": true,
     "notified_date": "2026-07-16"
   }

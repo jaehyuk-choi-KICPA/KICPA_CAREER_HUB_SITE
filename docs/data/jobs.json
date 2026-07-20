@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-20T17:31:31",
+  "generated_at": "2026-07-20T18:01:33",
   "soon_days": 7,
   "counts": {
-    "total": 60,
+    "total": 59,
     "open": 38,
-    "closed": 22,
+    "closed": 21,
     "new": 1,
     "soon": 13,
     "by_firm": {
-      "삼일": 11,
+      "삼일": 10,
       "삼정": 1,
       "안진": 8,
       "한영": 20,
@@ -17,12 +17,12 @@
     },
     "by_qualification": {
       "수습CPA": 22,
-      "자격무관": 38
+      "자격무관": 37
     },
     "by_emp_kind": {
       "인턴": 21,
       "정규직": 31,
-      "계약직": 5,
+      "계약직": 4,
       "파트타임": 3
     }
   },
@@ -1013,25 +1013,6 @@
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1783402381173",
       "dday": -5,
-      "first_seen": ""
-    },
-    {
-      "source": "samil",
-      "source_label": "삼일PwC",
-      "firm": "삼일",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "계약직",
-      "status": "closed",
-      "is_new": false,
-      "title": "French & European Business Group팀 신입/경력직 채용(계약직)",
-      "company": "삼일PwC",
-      "deadline": "2026-07-16",
-      "posted_date": "",
-      "location": "",
-      "emp_type": "신입, 경력직",
-      "url": "https://www.pwc.com/kr/ko/career/experienced/r260714.html",
-      "dday": -4,
       "first_seen": ""
     },
     {

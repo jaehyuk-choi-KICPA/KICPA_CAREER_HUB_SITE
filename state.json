@@ -906,7 +906,8 @@
     "uid": "hanyoung:122652",
     "first_seen": "2026-07-21T17:01:37",
     "last_seen": "2026-07-21",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-07-21"
   },
   "hanyoung:122657": {
     "source": "hanyoung",
@@ -924,6 +925,7 @@
     "uid": "hanyoung:122657",
     "first_seen": "2026-07-21T17:01:37",
     "last_seen": "2026-07-21",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-07-21"
   }
 }

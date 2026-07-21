@@ -661,7 +661,8 @@ function big4TrackClosed(f, tr) {
 // 지원기간 한 줄: [트랙명] MM-DD ~ MM-DD ........ D-day(빨간 글씨). 마감 트랙은 취소선+회색.
 function big4TrackLine(f, tr) {
   const md = (s) => (s || "").slice(5, 10);   // YYYY-MM-DD → MM-DD
-  const range = tr.start ? `${md(tr.start)} ~ ${md(tr.end)}` : (tr.end ? `~ ${md(tr.end)} 마감` : "");
+  const endTxt = tr.end_label || md(tr.end);  // 마감 시각 병기 등 표시용 오버라이드(D-day 계산은 end 그대로)
+  const range = tr.start ? `${md(tr.start)} ~ ${endTxt}` : (tr.end ? `~ ${endTxt} 마감` : "");
   const ddText = big4DdayText(f, tr.end);
   const closed = big4TrackClosed(f, tr);
   const kids = [

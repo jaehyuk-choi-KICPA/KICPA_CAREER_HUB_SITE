@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T00:31:41",
+  "generated_at": "2026-07-23T01:01:45",
   "items": [
     {
       "source": "gnews_감사_2",
@@ -809,14 +809,18 @@
       "published": "2026-07-15",
       "published_at": "2026-07-15T06:16:09",
       "summary": "",
+      "category": "감사"
+    },
+    {
+      "source": "gnews_감사_2",
+      "source_label": "v.daum.net",
+      "title": "금감원, 저가 감사보수·감사시간 감소 들여다본다",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBDa25FN2lGclpaQW1xVmJJVG1tMHhRUzdXODlscUg4ZFo4WDVMMm5tQmQ5QmllazdnamhJUDRoU1AzSUVGQVE?oc=5",
+      "published": "2026-07-15",
+      "published_at": "2026-07-15T05:57:10",
+      "summary": "",
       "category": "감사",
       "dupes": [
-        {
-          "title": "금감원, 저가 감사보수·감사시간 감소 들여다본다",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBDa25FN2lGclpaQW1xVmJJVG1tMHhRUzdXODlscUg4ZFo4WDVMMm5tQmQ5QmllazdnamhJUDRoU1AzSUVGQVE?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-07-15"
-        },
         {
           "title": "금감원, 회계법인에 \"낮은 감사보수·감사시간 감소 살핀다\"",
           "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1hbFdTeUNtOXRIdlFkbWNaRVBCVWo4b091TkFFNXYwNEM0ZGFnUUFFTkRNVzJKcjl0SExvSExZbUs4czRnZGc?oc=5",
@@ -857,12 +861,6 @@
           "title": "금감원, 상장사 감사인에 \"감사품질 관리 강화\" 주문",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9VNWlFQnRJZnl4cS04V2JDbjVpX3B3bGFzUFZXMk5pU2YxZ19CTDBMdUpJRTZLVXFoUjUxRmVVTFBsaXBubkRoUkFHTWU3WkE?oc=5",
           "source_label": "v.daum.net",
-          "published": "2026-07-15"
-        },
-        {
-          "title": "금감원 \"고의 분식회계 과징금 확대…심사·감리 방해시 엄정 문책\"",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNSXNXMWRSblZuQUVwY1pyLWZvUHBDRDBfWkxBRi1yNk8zMkgzeFBDUWR0blFhTkM4R0hBY2NFbnRUQ1kwSGdyVjMyT2tNa3lJQzg1SktXNFNVa3VIVFo1ejhlMV90RVNrVkx6S1hDTjIzakxyQWFqanFWams5Y0RVNQ?oc=5",
-          "source_label": "edaily.co.kr",
           "published": "2026-07-15"
         },
         {
@@ -990,24 +988,6 @@
       "category": "감사"
     },
     {
-      "source": "gnews_감사",
-      "source_label": "뉴스핌",
-      "title": "국가비전2050포럼·공인회계사회, '지방 민간위탁 회계감독 강화' 입법 토론회",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9hX2s1MXRjT2J0NV9TZDlieHRISDkxMC1rVnlBeEFNTnZHMDVYT2s5alJLU2xmT0VMdU1RdkxzUmx6TURVTnBTQ2JINGZEVnRkSWhjTmhwVlhReGNZ?oc=5",
-      "published": "2026-07-07",
-      "published_at": "2026-07-07T07:47:00",
-      "summary": "",
-      "category": "감사",
-      "dupes": [
-        {
-          "title": "공인회계사회 등, \"지방 민간위탁 회계감독 강화\" 입법 토론회 가져",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5MeGdpc0VZLXVLNS04RDhzVkQzT0xpckhMVDJiVW5YcDcxX0JkMk0yazQwRFk1RmdzZWM3WFhVWDNxdzBxLTRzVUM1MUJUQm1hNU1wRDNja1RKS09oZUpSbGNDNmVmTVE?oc=5",
-          "source_label": "법률저널",
-          "published": "2026-07-07"
-        }
-      ]
-    },
-    {
       "source": "gnews_세무",
       "source_label": "법률신문",
       "title": "국세청, KT 특별 세무조사",
@@ -1016,6 +996,16 @@
       "published_at": "2026-07-07T07:00:00",
       "summary": "",
       "category": "세무"
+    },
+    {
+      "source": "gnews_감사",
+      "source_label": "뉴스핌",
+      "title": "국가비전2050포럼·공인회계사회, '지방 민간위탁 회계감독 강화' 입법 토론회",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9hX2s1MXRjT2J0NV9TZDlieHRISDkxMC1rVnlBeEFNTnZHMDVYT2s5alJLU2xmT0VMdU1RdkxzUmx6TURVTnBTQ2JINGZEVnRkSWhjTmhwVlhReGNZ?oc=5",
+      "published": "2026-07-07",
+      "published_at": "2026-07-07T07:00:00",
+      "summary": "",
+      "category": "감사"
     },
     {
       "source": "gnews_세무",

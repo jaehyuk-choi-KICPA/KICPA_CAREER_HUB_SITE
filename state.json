@@ -946,5 +946,41 @@
     "last_seen": "2026-07-23",
     "notified": true,
     "notified_date": "2026-07-22"
+  },
+  "samjong:KPMG00000000000000000000000915": {
+    "source": "samjong",
+    "source_label": "삼정KPMG",
+    "title": "[TAX 6 (관세)] 신입 및 경력 관세사 채용",
+    "company": "삼정KPMG",
+    "deadline": "2026-08-02",
+    "posted_date": "2026-07-23",
+    "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000915&receive_div_cd=N",
+    "body_excerpt": "",
+    "category": "신입",
+    "location": "",
+    "emp_type": "",
+    "native_id": "KPMG00000000000000000000000915",
+    "uid": "samjong:KPMG00000000000000000000000915",
+    "first_seen": "2026-07-23T11:31:26",
+    "last_seen": "2026-07-23",
+    "notified": false
+  },
+  "hanyoung:122851": {
+    "source": "hanyoung",
+    "source_label": "EY한영",
+    "title": "세무부문 국내조세 경력",
+    "company": "EY한영",
+    "deadline": "2026-08-02",
+    "posted_date": "2026-07-23",
+    "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/122851",
+    "body_excerpt": "",
+    "category": "신입",
+    "location": "",
+    "emp_type": "",
+    "native_id": "122851",
+    "uid": "hanyoung:122851",
+    "first_seen": "2026-07-23T11:31:26",
+    "last_seen": "2026-07-23",
+    "notified": false
   }
 }

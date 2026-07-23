@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-07-23T16:01:38",
+  "generated_at": "2026-07-23T16:42:09",
   "soon_days": 7,
   "counts": {
-    "total": 61,
-    "open": 42,
+    "total": 62,
+    "open": 43,
     "closed": 19,
     "new": 4,
     "soon": 18,
     "by_firm": {
       "삼일": 11,
       "삼정": 2,
-      "안진": 7,
+      "안진": 8,
       "한영": 20,
       "로컬": 19,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 23,
-      "자격무관": 38
+      "자격무관": 39
     },
     "by_emp_kind": {
       "인턴": 21,
-      "정규직": 33,
+      "정규직": 34,
       "계약직": 4,
       "파트타임": 3
     }
@@ -681,7 +681,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[PortOne/IT기업]재무솔루션 프로덕트 컨설턴트 (Product Consultant)",
       "company": "PortOne",
       "deadline": "2026-08-17",
@@ -691,6 +691,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1784703983051",
       "dday": 25,
       "first_seen": "2026-07-22T16:31:36"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "경영자문부문 I&G 그룹 인프라팀 정규직(Consultant)",
+      "company": "딜로이트 안진",
+      "deadline": "2026-08-21",
+      "posted_date": "2026-07-23",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5153",
+      "dday": 29,
+      "first_seen": "2026-07-23T16:42:09"
     },
     {
       "source": "kicpa_susup",

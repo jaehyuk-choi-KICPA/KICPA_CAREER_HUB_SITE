@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-07-27T09:31:28",
+  "generated_at": "2026-07-27T10:01:49",
   "soon_days": 7,
   "counts": {
-    "total": 53,
-    "open": 34,
-    "closed": 19,
-    "new": 0,
-    "soon": 21,
+    "total": 55,
+    "open": 37,
+    "closed": 18,
+    "new": 1,
+    "soon": 23,
     "by_firm": {
-      "삼일": 11,
+      "삼일": 12,
       "삼정": 2,
-      "안진": 6,
+      "안진": 7,
       "한영": 19,
       "로컬": 14,
       "기타": 1
     },
     "by_qualification": {
       "수습CPA": 18,
-      "자격무관": 35
+      "자격무관": 37
     },
     "by_emp_kind": {
-      "인턴": 18,
+      "인턴": 19,
       "정규직": 31,
-      "계약직": 1,
+      "계약직": 2,
       "파트타임": 3
     }
   },
@@ -235,6 +235,44 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/122214",
       "dday": 3,
       "first_seen": "2026-07-15T16:31:58"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "딜",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": false,
+      "title": "전략·재무자문부문 M&A Solution Group 정규전환형 인턴",
+      "company": "EY한영",
+      "deadline": "2026-07-30",
+      "posted_date": "2026-07-24",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/123053",
+      "dday": 3,
+      "first_seen": "2026-07-24T16:01:37"
+    },
+    {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "Public Service팀 컨설팅 인턴 채용(서울, 인천, 수원, 광주, 천안, 부산, 의성)",
+      "company": "삼일PwC",
+      "deadline": "2026-07-31",
+      "posted_date": "",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://www.pwc.com/kr/ko/career/experienced/r260723.html",
+      "dday": 4,
+      "first_seen": "2026-07-27T10:01:49"
     },
     {
       "source": "kicpa_cpa",
@@ -520,6 +558,25 @@
       "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-part-time.html",
       "dday": 17,
       "first_seen": "2026-06-29T10:10:15"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": false,
+      "title": "회계감사부문 보험사 프로젝트 PMO 업무 지원 계약직 채용",
+      "company": "딜로이트 안진",
+      "deadline": "2026-08-14",
+      "posted_date": "2026-06-26",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5140",
+      "dday": 18,
+      "first_seen": "2026-07-27T10:01:49"
     },
     {
       "source": "kicpa_susup",
@@ -917,25 +974,6 @@
       "location": "",
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/121571",
-      "dday": -8,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "딜",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "전략·재무자문부문 M&A Solution Group 정규전환형 인턴",
-      "company": "EY한영",
-      "deadline": "2026-07-19",
-      "posted_date": "2026-07-10",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/121681",
       "dday": -8,
       "first_seen": ""
     },

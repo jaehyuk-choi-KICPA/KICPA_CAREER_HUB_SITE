@@ -902,7 +902,7 @@
     "uid": "anjin:5140",
     "first_seen": "2026-07-27T10:01:49",
     "last_seen": "2026-07-27",
-    "notified": false
+    "notified": true
   },
   "samil:r260723": {
     "source": "samil",
@@ -920,6 +920,7 @@
     "uid": "samil:r260723",
     "first_seen": "2026-07-27T10:01:49",
     "last_seen": "2026-07-27",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-07-27"
   }
 }

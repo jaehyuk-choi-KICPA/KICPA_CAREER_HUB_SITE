@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-07-27T14:01:40",
+  "generated_at": "2026-07-27T14:31:28",
   "items": [
+    {
+      "source": "gnews_딜·M&A",
+      "source_label": "바이오스펙테이터",
+      "title": "스크라이브, 1.28억弗 IPO 흥행..\"CasX 후성유전 편집\"",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5yakN6M3F0eGEwNE1ncFdVMmdGT2Q4TlNZWVhqQ2FjRFE1SFkydThxcEY3MGZUaFZRakFTOG4wVS10S0lxbnZCeWFIbWl6TTJxQTlfV3Q4Yw?oc=5",
+      "published": "2026-07-27",
+      "published_at": "2026-07-27T05:08:00",
+      "summary": "",
+      "category": "딜·M&A"
+    },
     {
       "source": "gnews_딜·M&A",
       "source_label": "전자신문",
@@ -16,12 +26,6 @@
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5aMnBnRDZ3YTRGUlNjaVZwcmRPMXlGdzMxNDlrejk3QzlsOHgtMUFPU19jbTlCdHR5dUI0YTF6VGFPZl9ZZ2JTakdoWkdJYk9jNWIyLXVsTHVTekVFUklnWQ?oc=5",
           "source_label": "메트로신문",
           "published": "2026-07-27"
-        },
-        {
-          "title": "대구백화점, 경영권 매각 9부 능선 넘으며 창사 이래 최대 전환점 전망",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1GelVFUzRBakFCYlhNRW1VMTBFdG85a3NCd1JSZWw1SlpHNl9ZQWZuYkN1YmxaQk1yVDNkUVgzM3pqQUhSZlhkRHlITXI0azg?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-07-26"
         }
       ]
     },
@@ -146,6 +150,30 @@
       ]
     },
     {
+      "source": "gnews_세무",
+      "source_label": "위클리서울",
+      "title": "RIA 양도소득세 공제 혜택 8월부터 축소",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5QWHpuQjV1a2Y0dFpfdVdXX1lxcXYzWVgycUhma2R4SXdDV3NEaEhHZ0REMklQdFhuMG5HWXpfd01RUVhqQlJ2SzdXV3BCd191RU1TdHNYT2pRQmdfeDZnd1hYWVFsSWI4MmpWVg?oc=5",
+      "published": "2026-07-27",
+      "published_at": "2026-07-27T04:44:08",
+      "summary": "",
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "“5월에 팔았는데 왜 양도소득세?”…RIA 세제혜택, 매도일 아닌 결제일 확인해야",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5CWTlYUXptY3RHNmk0cXJqam9UaWFVQlkxOTEzQ1pMVDk1YzFZcFlOd1ozakFVMnFlNF9tX0RtNTUzdERlZHZIbFR0a3dTazJWMEk2M3VkWFjSAVRBVV95cUxNcXN6VzBfdFVjcHA0c1JqamtfazNQMDNWMVN1ZTBBQWR1TzZsRzI4dWdyc0M3S24wZjZXdnpSbEN4V3hUMl9wVk5nc1poNGtRVFVZdDI?oc=5",
+          "source_label": "세계일보",
+          "published": "2026-07-26"
+        },
+        {
+          "title": "\"RIA 양도소득세 감면 받으려면 결제완료일 확인 필수\"",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBJNWRfNDI3b05JQWFCTlR2b2RVMlZ6cXYwU04zQlhQV1JRclFpeUZ2ek9ldlJJQTd1R1lXbm5SWFdtbld4ek5ZekJzQkpLNVJpdk1GQVVXWUFKT1ZKY2hhNW5kZmxxMmZz?oc=5",
+          "source_label": "ebn.co.kr",
+          "published": "2026-07-26"
+        }
+      ]
+    },
+    {
       "source": "gnews_딜·M&A",
       "source_label": "스포츠경향",
       "title": "젤리피쉬·IST 품은 K팝 ‘큰손’ IPO 간다",
@@ -163,7 +191,15 @@
       "published": "2026-07-27",
       "published_at": "2026-07-27T04:06:41",
       "summary": "",
-      "category": "딜·M&A"
+      "category": "딜·M&A",
+      "dupes": [
+        {
+          "title": "고성군 “SK오션플랜트 매각 즉각 철회하라”",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5Rem9fOVhTUVFZSHJfdGd0V3JNSnBRc3FfeHFrZTh5OVg0UnJrS1ZFNWpVdndRTkt6blFHZG9ZNUx4aFQySTU2UVRub2t4MHJ4S1dHaXc4b3FnMHVTSy15YmtxVmptRi13?oc=5",
+          "source_label": "뉴스경남",
+          "published": "2026-07-27"
+        }
+      ]
     },
     {
       "source": "gnews_딜·M&A",
@@ -192,16 +228,6 @@
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5XbkpTcEVrS2tZQ0FQV2lDQ0tuMEVWT2dJMElMWjltSVRTTVZYcGtROTVMSEc4QzI2Z21rVDRIeVgtUFFack5MdUltZ1poYU56MG1QS0JuUkhfS0tPMV92WG9pSHlNT2RaMkFtSktqb9IBc0FVX3lxTFA0bkc2YS1HTWxVbUUxRHp0YjhMNTFxUlFDMFhvcU44WVN2Z25zVHRRcmJDZ3phb0drMHBIWVcxTmpnM0NLempYdWJzNGxzT0sxeV9FYW1xLXU5dF9CWVVfT2dZVVRlRnV2WGFhQ0tKbnBPams?oc=5",
       "published": "2026-07-27",
       "published_at": "2026-07-27T02:39:38",
-      "summary": "",
-      "category": "딜·M&A"
-    },
-    {
-      "source": "gnews_딜·M&A",
-      "source_label": "톱데일리",
-      "title": "이재준 창업주의 유산 DL모터스, 수익성 침체 속 매각행",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0yektETm8zOGNtajlmODduN1BOTU40Mmc2a0YtSF9vc1ZDX09RWnN0MlZoQzdLUVRwYkYzNjRSZW50cEFfTXZDQW01VjRsY3Vk?oc=5",
-      "published": "2026-07-27",
-      "published_at": "2026-07-27T02:22:00",
       "summary": "",
       "category": "딜·M&A"
     },
@@ -258,6 +284,16 @@
           "published": "2026-07-15"
         }
       ]
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "땅집고",
+      "title": "해운대서도 '집주인 대출' 매물 등장…\"편법증여 세무조사 우려도\"",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8yNWg4Zkwta2hncHRUSFo3b3Jlb1UyNTdiTnR4ODhhb0dWQWZRa0hSekpvNnllODlRVU5wVXlEeWZaWm5DR3U3SHE0cGIzZjN1eEdkcFRSenBtUkhFcE5TTVJJR3IwYnllWGhlVjJ0dDRsUzE2eDVSWmZsbUVkZ3PSAXNBVV95cUxPVkE0V0JEcGtjTU9FZldvdTZmb291YXJBc3RuV3NXS0p3YTRHa2Q0MENjMzQ0cFBLc3M3NGs2V1R0X2ZKNzJMNHV2SjJ1VXh1elJwM3VvdXpqRlRJaXhzMThwR2IzUWN1ekNoT2kyWW1DanJV?oc=5",
+      "published": "2026-07-27",
+      "published_at": "2026-07-27T00:20:57",
+      "summary": "",
+      "category": "세무"
     },
     {
       "source": "gnews_딜·M&A",
@@ -375,24 +411,6 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "세계일보",
-      "title": "“5월에 팔았는데 왜 양도소득세?”…RIA 세제혜택, 매도일 아닌 결제일 확인해야",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5CWTlYUXptY3RHNmk0cXJqam9UaWFVQlkxOTEzQ1pMVDk1YzFZcFlOd1ozakFVMnFlNF9tX0RtNTUzdERlZHZIbFR0a3dTazJWMEk2M3VkWFjSAVRBVV95cUxNcXN6VzBfdFVjcHA0c1JqamtfazNQMDNWMVN1ZTBBQWR1TzZsRzI4dWdyc0M3S24wZjZXdnpSbEN4V3hUMl9wVk5nc1poNGtRVFVZdDI?oc=5",
-      "published": "2026-07-26",
-      "published_at": "2026-07-26T05:49:30",
-      "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "\"RIA 양도소득세 감면 받으려면 결제완료일 확인 필수\"",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBJNWRfNDI3b05JQWFCTlR2b2RVMlZ6cXYwU04zQlhQV1JRclFpeUZ2ek9ldlJJQTd1R1lXbm5SWFdtbld4ek5ZekJzQkpLNVJpdk1GQVVXWUFKT1ZKY2hhNW5kZmxxMmZz?oc=5",
-          "source_label": "ebn.co.kr",
-          "published": "2026-07-26"
-        }
-      ]
-    },
-    {
-      "source": "gnews_세무",
       "source_label": "인베스트조선",
       "title": "부동산에 쏠린 세법개정 논의...가업상속공제·금투세는 '불안한 침묵'",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZ0ZDTzF4R09UcEg3em5jSFkzMXVmZFQ3WVRndVlMMElzV0hHeERKV0p2M3N3dHVuZmpvbmhBSGQ5eUlJOGYzSWVfeUJPWFl1Yk1UREE1b0Y2Nm1iOE56R2xQZElNbW5GZU1pT0Y0UkhRTFduOTI3UWNMUHc5RGdkR1QxUQ?oc=5",
@@ -428,16 +446,6 @@
       "published_at": "2026-07-24T03:59:34",
       "summary": "",
       "category": "세무"
-    },
-    {
-      "source": "gnews_딜·M&A",
-      "source_label": "연합뉴스TV",
-      "title": "SK㈜, SK시그넷 상장폐지·매각하기로…소액주주 공개매수",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9QOWlFMmFZM29WVGxnMEVlVGdJdHItNTBGTjFlV2VnZnRGaDJRTFdFOGJ0ZXFpcnc3Tl9tZDMwRVgtZ09mZVZZSkhOZ2RrWldranFuMFpFUWVQazlhTTBSVmJsd3BReUE?oc=5",
-      "published": "2026-07-24",
-      "published_at": "2026-07-24T01:32:00",
-      "summary": "",
-      "category": "딜·M&A"
     },
     {
       "source": "gnews_감사_2",
@@ -495,15 +503,7 @@
       "published": "2026-07-23",
       "published_at": "2026-07-23T21:01:09",
       "summary": "",
-      "category": "감사",
-      "dupes": [
-        {
-          "title": "중견 회계법인, 대형 상장사 감사 가능해진다",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1Jd2ZfU0o2REx6RDVrOGJwLVlkeDg2Mjhad24tMy1qNGh5UGc3Ulo3Mmc3ai1VY1FKOXRFRjlmZFdSMTdhTVY0RXk3X1dRZVN2d2NN?oc=5",
-          "source_label": "네이트",
-          "published": "2026-07-23"
-        }
-      ]
+      "category": "감사"
     },
     {
       "source": "gnews_세무",
@@ -608,12 +608,6 @@
           "published": "2026-07-08"
         },
         {
-          "title": "증선위, 만호제강 회계처리 위반 제재…감사인지정 3년 의결",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE44TU9KNGRySU8za1l6MjhqV2QwTkduT2FsZ09BLTlnbGlFVmhmNFpiS0VmR3NyUGxDUjMxYm1JTWhIbWRCbnd0cEN1NA?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-07-08"
-        },
-        {
           "title": "증선위, '매출 과대계상' 만호제강에 감사인지정",
           "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBGQnJPWGIzdFV4OWpvTE5EMjRUTk1JUy1vemNERmtoZXdCT0pIYXlCWDhuZXNPTWt3SEQ1SFhHZnBWTVRMSE1fRDNWVGFDQk9WQ2c?oc=5",
           "source_label": "매일경제 마켓",
@@ -623,6 +617,12 @@
           "title": "증선위, ‘매출 과대계상’ 만호제강에 감사인 3년 지정 - 조선비즈",
           "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxONXFISmtqakRqTGFYZ2dFb0hVRVhDN0U3V3FQUGczQ08tdWZzY1dmRlFBT2F6ZUczMFRiVDVMdEVEMTNSNzZRYlZ2YTNkRktBNDAzd2o4Y3NfQ29KUG5kMS1aNURjQnhRMDMySWQxb3ZLZU5FcGtWZ3RXdmdqcC1QbVlZSnVmWEXSAZsBQVVfeXFMUDRyMFRqUEJPNWU5djFmNVJKVF9lMzVxRWotb3c4bElwRzBXLWlobDFvT1Z6SGdZZHc3ZEtDbHdTSXVpWGFSbXRVSWxWTEREVG9wOVA0QmJzQVFBcjRpd2NwQy10V1V4RG84UmgtU2U1TDBLLWJTSUxjZ19zVWhvT21qZmpNdU9pZ050bjlldEh5U2lTZ2dzQlR4MkU?oc=5",
           "source_label": "Chosunbiz",
+          "published": "2026-07-08"
+        },
+        {
+          "title": "증선위, 만호제강 회계처리 위반 제재…감사인지정 3년 의결",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9ZamZtWlRfMFlpUnJEc0NWWW95cVFXcVNUcnlTWTY3b3ZldExfUGdERnFxQXZfRkt0QUhya0xJZWtwTkp1QXc?oc=5",
+          "source_label": "v.daum.net",
           "published": "2026-07-08"
         },
         {
@@ -681,7 +681,7 @@
         },
         {
           "title": "전문가들 “보유세, 주택 가액 기준으로…양도소득세 따른 거래 위축 고려”",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBheFZFSm9faFUzc3M2VnFrZm5hcWJ6UlV2dy1FSWpsU3hkaG5iUFk5ODM2c1J6a042STcta2JjZkU4ODFHY0E?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE0ta2tON29PT3h2WUlHQURDVENlMFVNT3d0QVp4Z3lRZlpqMVI4NUREWmMyUk9Fam1SbDlzQ2lNZlFwQUo0RWVudWtLUGEtN1U?oc=5",
           "source_label": "v.daum.net",
           "published": "2026-07-23"
         },
@@ -840,32 +840,36 @@
       "category": "세무"
     },
     {
-      "source": "gnews_감사",
-      "source_label": "전자신문",
-      "title": "금융위, 영풍 회계 기준 위반에 역대 최대 과징금 204억 부과",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5vREM2cVZSaUxLbUJIdC1qbWVaLUE1Zk5rT0pwRzJyWFVaYUFLY2wxMnd4SGwyUGN4OXBiSzY1Si1oLU1qMGhobnR6dV9xZw?oc=5",
+      "source": "gnews_감사_2",
+      "source_label": "한국아파트신문",
+      "title": "7월 부가세 신고･납부 회계처리",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8yOTd2Q19pQXlSTTBZaGZoUWZ0ZHBrdHZ5bjNHMDNVTUhIOWZMZkRyWWF3LVppYVJGVWx4YWJOakdUdEFTM1BGVlNDdUhqTVJ4aWR5amZjbm4wbXM0UDlybHYxT0tvUDZF?oc=5",
+      "published": "2026-07-17",
+      "published_at": "2026-07-17T07:00:00",
+      "summary": "",
+      "category": "감사"
+    },
+    {
+      "source": "gnews_감사_2",
+      "source_label": "동아일보",
+      "title": "‘회계상 추정’ 주장한 영풍, 회계처리 위반 과징금 204억 원 “이례적 규모”",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5FUEM0ZkFpblM1dG00S2lVYlU2MUd2WE1MMWdkVzN5X2VYQ2JBMm5wbWlyNHk4ZXQ2R2dQR3Zrd2hKd0dDbVVhaWVjZ25zdkx1VW51VVljT2ZqeWY0U2ljd3VWVE40cVNxNDlFTzRKQm1VSDNLUkHSAWZBVV95cUxPQmJ5MmtEMlRRZ1lPX0poSkNRNVkyUTl1ZmFRZzk2dDFNTzhvVUZjdlpjRGZReG05dlhrVDBCVWtfQVBEUnllekhkVjFmb1VXak5Td1RuV3RIRnFEZ21VbFdPLTczaWc?oc=5",
       "published": "2026-07-17",
       "published_at": "2026-07-17T07:00:00",
       "summary": "",
       "category": "감사",
       "dupes": [
         {
-          "title": "영풍, 회계기준 위반에 과징금 204억원…역대 최대",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4yZGxDZk9kaFhCQUpjQzJsbTVKWEM1ejVQZ1RMTjVjUy1tS1JlMG0yeGplMWxNbDlDazFzZkJxSGtDNHdQYUJEcFlyaGdEU1RTdURqZENvWjYyVzNaR3NBUWJpQUI?oc=5",
-          "source_label": "서울경제TV",
-          "published": "2026-07-17"
-        },
-        {
-          "title": "‘회계상 추정’ 주장한 영풍, 회계처리 위반 과징금 204억 원 “이례적 규모”",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5FUEM0ZkFpblM1dG00S2lVYlU2MUd2WE1MMWdkVzN5X2VYQ2JBMm5wbWlyNHk4ZXQ2R2dQR3Zrd2hKd0dDbVVhaWVjZ25zdkx1VW51VVljT2ZqeWY0U2ljd3VWVE40cVNxNDlFTzRKQm1VSDNLUkHSAWZBVV95cUxPQmJ5MmtEMlRRZ1lPX0poSkNRNVkyUTl1ZmFRZzk2dDFNTzhvVUZjdlpjRGZReG05dlhrVDBCVWtfQVBEUnllekhkVjFmb1VXak5Td1RuV3RIRnFEZ21VbFdPLTczaWc?oc=5",
-          "source_label": "동아일보",
-          "published": "2026-07-17"
-        },
-        {
           "title": "'회계처리 위반' 영풍·고려아연에 과징금 204억·84억",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1qRFNtSmJqRFZmdFdVSFNRWkdtRDNBQXBvZ19vaV9RY3FyYkVlNWpkRm5Hcm9wY1o5MUY2QjBPQWZOdW1TVlpzcGpmTDhwNU5KSFRKd3gzQTdoUFA2d3JieQ?oc=5",
           "source_label": "아시아경제",
           "published": "2026-07-15"
+        },
+        {
+          "title": "금융위, 영풍 회계 기준 위반에 역대 최대 과징금 204억 부과",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5vREM2cVZSaUxLbUJIdC1qbWVaLUE1Zk5rT0pwRzJyWFVaYUFLY2wxMnd4SGwyUGN4OXBiSzY1Si1oLU1qMGhobnR6dV9xZw?oc=5",
+          "source_label": "전자신문",
+          "published": "2026-07-17"
         },
         {
           "title": "영풍, 회계기준 고의 위반으로 과징금 204억원...역대 최대 수준",
@@ -922,22 +926,18 @@
           "published": "2026-07-15"
         },
         {
+          "title": "금융위, '회계처리 위반' 영풍에 과징금 204억…고려아연은 84억",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1sVlBmQzJPbXZuSTFOai1kaDhGb1hLVkpCdktFWnZaU1YweGRJWllmVk9zbUdZQTdpUTVRaFpHM1RlQXllWkhpdVpJUFlqLVV1SEJESnZkVUcyZEnSAWBBVV95cUxQZTlEXzktdDljVUR2UENmbHJnUzFKNE04U3BxTzNETFZBTlA3alY4VGJtREYwdmVvSldHM1JlM1kyNWlsVXJFbUxCaHhaQlBlU3VHTVY2UUh0Uk1aS1U4MzM?oc=5",
+          "source_label": "연합뉴스",
+          "published": "2026-07-15"
+        },
+        {
           "title": "금융위 '회계처리 위반' 영풍·고려아연에 과징금",
           "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFAxRWZfMnlUOTgwWGtUQzlWV1d3LUQwVFJXU3NHM1VpXzVUeEhnZHpVZ0hqcDB0b0lyRk5zV2x4T0l3TUtpUzlhSzZCeVk4VVlGZ0JVX0JMS1dubnVLdDNkYTVzbHBlZ1JnLUxiNjAwNNIBc0FVX3lxTE1qYno0Y1pXVlUtX2VhczdfS2txeHVRYWtxNzdXazZSa3I5aWR4NzlraWhCR2V3VzdsdXFmdFhLUXE1Vi1WdnlVZEQwLU1ScDFmdVdYZlJCeWtRTjJudjlzRVpjcHhkTzNnS0JMMzl5ODFCQ3M?oc=5",
           "source_label": "세이프타임즈",
           "published": "2026-07-15"
         }
       ]
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "한국아파트신문",
-      "title": "7월 부가세 신고･납부 회계처리",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8yOTd2Q19pQXlSTTBZaGZoUWZ0ZHBrdHZ5bjNHMDNVTUhIOWZMZkRyWWF3LVppYVJGVWx4YWJOakdUdEFTM1BGVlNDdUhqTVJ4aWR5amZjbm4wbXM0UDlybHYxT0tvUDZF?oc=5",
-      "published": "2026-07-17",
-      "published_at": "2026-07-17T07:00:00",
-      "summary": "",
-      "category": "감사"
     },
     {
       "source": "gnews_감사_2",
@@ -955,7 +955,7 @@
       "title": "\"내부거래 말라\" 주주서한·세무조사까지…영원무역, 쿼드요구안 수용할까",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9nYTY5UmVJMjU4MTF0MTc5dlRvU1FQa2dfYlhFaE5ocWVWTzRqeWpLNUNSVzNZUzJpUXFnUjVmSXFBYmtFenYwcjdITWZadW4teXNiOVBlNGFoRW9yMzZyVTQwUmxFUTFhak9JMmpldjM?oc=5",
       "published": "2026-07-16",
-      "published_at": "2026-07-16T07:00:00",
+      "published_at": "2026-07-16T02:03:21",
       "summary": "",
       "category": "세무"
     },
@@ -1016,6 +1016,12 @@
         {
           "title": "금감원, 상장사 감사인에 \"감사품질 관리 강화\" 주문",
           "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1QWXFRLWROMXMza2VLV3hmcWRWOHpoUlhKZU8wRXhpa0cyV1NVay1HeXMtSlRiYUZQcmJGQnZraTBzSjhYWEE?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-07-15"
+        },
+        {
+          "title": "금감원, 상장사 감사인 설명회 개최…감사품질 관리 고삐",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFAtRTZIWEExNi1ySjZKV2ktbzVjWTJXMFh3cHJka0NNSnk5Mlc2LTlHVVhEaXFGcm9PTU94QzJONUlUYlpTQmc?oc=5",
           "source_label": "v.daum.net",
           "published": "2026-07-15"
         },
@@ -1095,9 +1101,9 @@
       "dupes": [
         {
           "title": "국세청, KT 특별세무조사 돌입…2021∼2025년 회계 자료 대상",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1qUWZLb3Q4WVpZZGlVdklYNDY2V09IaUcxNlB5TFoxeWJ6QmxhZlFSNmtOU3hjeUZROFVWbHp3LWE5UXgwak1UMjVaQkdFUnM5ZTNwN1YxUFpKSE5DdnB5a2Y2SFoySkxQbFQ2aWhR?oc=5",
-          "source_label": "세무사신문",
-          "published": "2026-07-08"
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5abmFkVE50c2xXQlEtQmJnWENmVW5XMEYzdy1WN3g0eUdBY2pHWk9QNVNUcUdPendYY1lJa183MjA2YlN2ZmxHc3RRMjk2QWYwc3NVajNfMlc3TWfSAWBBVV95cUxPU2ltRVRqVktzTzhudFNmZlNSWHZMQmhpNWRxcjBBS1FISEJHOEVsYVA3My0yZ2c0b2ZwWnFQMk9tMndOSks4dHJ2Q1F5THdPODVlSHIxOHFVbTBTMmo0ZnE?oc=5",
+          "source_label": "연합뉴스",
+          "published": "2026-07-07"
         }
       ]
     },
@@ -1136,16 +1142,6 @@
           "published": "2026-07-06"
         }
       ]
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "intn.co.kr",
-      "title": "삼성전자 2분기 영업익 89.4조…법인세 증가 기대감도 한층 커져",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9KdlZwbXJybzFpdXotbV9QVTkwVmtIVkZsT192QkZPWml2MXZtQms4N2dreWVvWmJCc0NFQkVObXJXYVFsVzJmWjRUUFh1VXQwU0U5Xzc0N1Q2ZjA1SmlmR1h3NUMzaVdGeUE?oc=5",
-      "published": "2026-07-07",
-      "published_at": "2026-07-07T02:49:00",
-      "summary": "",
-      "category": "세무"
     },
     {
       "source": "gnews_세무",

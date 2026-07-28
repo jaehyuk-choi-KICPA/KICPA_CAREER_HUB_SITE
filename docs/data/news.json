@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T13:31:29",
+  "generated_at": "2026-07-28T14:01:34",
   "items": [
     {
       "source": "gnews_딜·M&A",
@@ -160,6 +160,16 @@
       "published_at": "2026-07-28T01:59:50",
       "summary": "",
       "category": "딜·M&A"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "Deloitte",
+      "title": "2026 글로벌 조세정책 서베이",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPT0tGaFMtLVB6cnJyRUlISHlVU3FGVk5xZl9FY3hfeklJbTZFYy1SQk9Qem5YWlNudjE0S2tGNnU5Y1A2dlJzcmYtZ3d4VDhFQUloOV9HWElVS1BsLXVBbm04Zi1vM3BuT205SUFMZkJUU01lSmdvS2NkZjl0MkpaMmtDVGJaRDlPT3c?oc=5",
+      "published": "2026-07-28",
+      "published_at": "2026-07-28T01:25:25",
+      "summary": "",
+      "category": "세무"
     },
     {
       "source": "gnews_세무",
@@ -529,7 +539,15 @@
       "published": "2026-07-24",
       "published_at": "2026-07-24T05:24:00",
       "summary": "",
-      "category": "세무"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "억울한 세무조사, 포기하지 마세요…'3단계 구제 절차' 총정리",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1MTjRyYkh0blN6Ry1vQmZ0X3VGc010SnhDeUw2VWN1SE5kT2NyNW1NZkJzbG1Sc0QteTVHNXpmQ3dFenlTck50LVMzdjdBNXpZSVJqYnNTbDMwRDdsa1pJSlNWOG13VFJiZVJXag?oc=5",
+          "source_label": "약사공론",
+          "published": "2026-07-07"
+        }
+      ]
     },
     {
       "source": "gnews_감사_2",
@@ -672,12 +690,6 @@
           "published": "2026-07-08"
         },
         {
-          "title": "증선위, '회계처리 위반' 만호제강 감사인지정 3년",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5RRUlrdDZFaTBVcXptODZuSEtwcUxmZ1VvaVRfZUIzRWM4V1U2dGYwd0JDV2FmMF9Zc2R2UDJJQlV5ektpVlBRaHUxcEZFd1d0bWNzbkZ4T2NmSjQwOFp3ZdIBeEFVX3lxTE5HcU1EYVZhZ0tiaTJIZlY2VWx1cVBDaTRneGtKcnlHd1M0SDNEWW13TmFvTVJ0U1FvSi05bTRVOHl5OTcxS0J6WEVlSUlXNnQ0VDZSdnh0NnJ4TnhyN2VLTk9tcWpMVmZsbHZ0azM0cWtWczd1QmJsbg?oc=5",
-          "source_label": "뉴시스",
-          "published": "2026-07-08"
-        },
-        {
           "title": "증선위, '매출 과대계상' 만호제강 과징금·신한회계 감사 제한",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9GSmhDaGNPUkFUdk5ES3lVNS1yeUFQa1B3dGF6dDBYNnpJMTUxcWU2R01uNXM5eXB6akFmZU9aWHlSRnhwNzNsRWprRDJBems?oc=5",
           "source_label": "v.daum.net",
@@ -810,18 +822,6 @@
           "published": "2026-07-15"
         },
         {
-          "title": "금융위, 영풍·고려아연 등 회계기준 위반 제재",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE92YVV2dkotVUZFMlo2YkFQY0JsSXQ3U2xweWQyNFI2ajdDeHhOcUFpaXFWYm9TTGJzbU4tS3FvVnVNamIxcXJCamFKWkgzUDY1R0E0NGJEdUxVQTNmOV9yU3JPSkRVaWwwVkpLTUxR?oc=5",
-          "source_label": "아시아투데이",
-          "published": "2026-07-15"
-        },
-        {
-          "title": "'회계처리 위반' 영풍·고려아연, 각각 204억·84억 과징금",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9YdWdWNXpVTldmSU1ub3FfSTh6cWpQcTdjV3otN09tT3NKcEpNVDZsYmxEVGF1ZkZaUFl5b19wSEVOLWtBbFE?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-07-15"
-        },
-        {
           "title": "금융위, ‘회계처리 위반’ 영풍에 과징금 204억…고려아연 84억",
           "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA2Z3A0YndsT05rR0hZRVFwaV9faU53RlBJaWYxalM3bFB5Q3kwM2xJT0paLWhHNm1DY2JreldBWXBBSWNYenhFZHpXR2RJZDNHVm9nazFYc0FYR3ZodGlaOUhVWUVmcmc?oc=5",
           "source_label": "한겨레",
@@ -934,6 +934,12 @@
           "published": "2026-07-15"
         },
         {
+          "title": "금감원, 상장사 감사인 설명회 개최…감사품질 관리 고삐",
+          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFAtRTZIWEExNi1ySjZKV2ktbzVjWTJXMFh3cHJka0NNSnk5Mlc2LTlHVVhEaXFGcm9PTU94QzJONUlUYlpTQmc?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-07-15"
+        },
+        {
           "title": "금감원 상장사 감사인 설명회…감사품질 제고·새 제도 대비 당부",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9zRU9uV3VTbnNuT2o3eFNWVEJPQ1FKRkpLbWNkVUItcXlPZjFOaUJCOUMzd2lXVTlDc1NYV0F5dkpUaE5Tc2ktRVJVS1lrNjFkejlYZDl3TjlqajcySjYw?oc=5",
           "source_label": "뉴스1",
@@ -1023,16 +1029,6 @@
     },
     {
       "source": "gnews_딜·M&A",
-      "source_label": "한국경제",
-      "title": "조 단위 M&A 줄줄이 불발…시장도 정부도 도움 안돼",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1aaFNBUVBGZjJPTkZxQlBacG52R0hib1hxY0x0MFdMeVB2OFZBSnprSGlUWm1QaV9zWDJqbzA4aHRibVppUmJEclBsMl9wU3ExQjBEMHNNdWEzQQ?oc=5",
-      "published": "2026-07-09",
-      "published_at": "2026-07-09T07:00:00",
-      "summary": "",
-      "category": "딜·M&A"
-    },
-    {
-      "source": "gnews_딜·M&A",
       "source_label": "주간조선",
       "title": "나스닥 꿈 멀어지나…야놀자, IPO 이끌던 핵심 임원 줄줄이 퇴사",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9POWJleDFKSzgwcUF2NHhnek8tVlhsdTkxT2R0NEQxc2E4SzZkTjRnUFduaTF1UUxTUVJZSWN1QTN6MlhYOXJBNDIxYVplcElQYTdfeWpsUkhIbGgzMzl4ampRcEtFSFF1RFHSAW5BVV95cUxORFBzaXdBTU9HWTRYUFFKeENLNWdHaTJYN0VrdEowMm44VGtwQzl3TWt2SnlGUGRoVFFfNW94TXdJUUpKUk5vZ2cyaU1TT3hoZ3FEY1JRS1BseTJ0TXI4QWlIY1Z6LUNSNGtyd0Z5Zw?oc=5",
@@ -1049,15 +1045,7 @@
       "published": "2026-07-07",
       "published_at": "2026-07-07T07:00:00",
       "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "국세청, KT 특별 세무조사 착수",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5UQmNhaEdjemNkUXpBTXN0MXgxZ1NJQzJzOVAwOEx3bzQ3NHFkUFl2bTc1ek96VjdJeG41RHFGT29mTWQ2ZnU5YzU1S3JiWXRFR25yZw?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-07-07"
-        }
-      ]
+      "category": "세무"
     },
     {
       "source": "gnews_세무",
@@ -1088,16 +1076,6 @@
       "published_at": "2026-07-07T02:49:00",
       "summary": "",
       "category": "세무"
-    },
-    {
-      "source": "gnews_딜·M&A",
-      "source_label": "인베스트조선",
-      "title": "공유오피스 신화 무너졌는데…IPO 재도전 나서는 패스트파이브",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxON2wtTExhWGUwS0ZHV0IyVks2UDVMSGJwVHZJbVUwTFlkOC1RemtSNTc2am55UFUzMV9SWGtkXzZSb1RwNC1acEpZU2k0MTh2SFA4Y2tmR1JObXV1LWtNRFVuZlBaeEFFOWZlUmVQOVJXMlFNa2hhdkx2MS1sdDg1X3VXSQ?oc=5",
-      "published": "2026-07-02",
-      "published_at": "2026-07-02T07:00:00",
-      "summary": "",
-      "category": "딜·M&A"
     },
     {
       "source": "gnews_채용·시험",

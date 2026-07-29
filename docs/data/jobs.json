@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-29T15:31:31",
+  "generated_at": "2026-07-29T16:01:53",
   "soon_days": 7,
   "counts": {
-    "total": 56,
-    "open": 35,
+    "total": 57,
+    "open": 36,
     "closed": 21,
-    "new": 2,
-    "soon": 18,
+    "new": 3,
+    "soon": 19,
     "by_firm": {
       "삼일": 12,
       "삼정": 2,
-      "안진": 7,
+      "안진": 8,
       "한영": 18,
       "로컬": 16,
       "기타": 1
     },
     "by_qualification": {
       "수습CPA": 20,
-      "자격무관": 36
+      "자격무관": 37
     },
     "by_emp_kind": {
-      "인턴": 18,
+      "인턴": 19,
       "정규직": 33,
       "계약직": 2,
       "파트타임": 3
@@ -311,6 +311,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1782442011240",
       "dday": 2,
       "first_seen": "2026-07-20T15:01:36"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "2026년 한마음나눔 새터민 대학생 인턴십",
+      "company": "딜로이트 안진",
+      "deadline": "2026-07-31",
+      "posted_date": "2026-07-29",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5159",
+      "dday": 2,
+      "first_seen": "2026-07-29T16:01:53"
     },
     {
       "source": "samjong",

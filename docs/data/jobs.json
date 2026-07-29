@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-29T14:31:37",
+  "generated_at": "2026-07-29T15:01:35",
   "soon_days": 7,
   "counts": {
     "total": 56,
     "open": 35,
     "closed": 21,
-    "new": 3,
+    "new": 2,
     "soon": 18,
     "by_firm": {
       "삼일": 12,
@@ -358,7 +358,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "감사부문 ADC 업무 자동화 구축 지원 인턴",
       "company": "EY한영",
       "deadline": "2026-08-03",

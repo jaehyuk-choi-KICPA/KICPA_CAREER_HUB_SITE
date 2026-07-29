@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-29T11:31:33",
+  "generated_at": "2026-07-29T12:01:33",
   "soon_days": 7,
   "counts": {
     "total": 56,
     "open": 35,
     "closed": 21,
-    "new": 2,
+    "new": 3,
     "soon": 18,
     "by_firm": {
       "삼일": 12,
@@ -389,25 +389,6 @@
       "first_seen": "2026-07-08T16:32:01"
     },
     {
-      "source": "kicpa_cpa",
-      "source_label": "구인(CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "<총무부 직원 모집 ( 신입 및 2년 이내 경력)>",
-      "company": "대명회계법인",
-      "deadline": "2026-08-07",
-      "posted_date": "2026-07-24",
-      "location": "지역무관 지역무관",
-      "emp_type": "정규직",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1776647546333",
-      "dday": 9,
-      "first_seen": "2026-07-24T11:01:36"
-    },
-    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "로컬",
@@ -425,6 +406,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1785128504119",
       "dday": 9,
       "first_seen": "2026-07-27T14:31:25"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "<총무부 직원 모집 ( 신입 및 2년 이내 경력)>",
+      "company": "대명회계법인",
+      "deadline": "2026-08-07",
+      "posted_date": "2026-07-29",
+      "location": "지역무관 지역무관",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1776647546333",
+      "dday": 9,
+      "first_seen": "2026-07-29T12:01:33"
     },
     {
       "source": "kicpa_cpa",

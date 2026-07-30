@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-07-30T11:01:47",
+  "generated_at": "2026-07-30T11:31:40",
   "soon_days": 7,
   "counts": {
-    "total": 57,
-    "open": 37,
+    "total": 59,
+    "open": 39,
     "closed": 20,
-    "new": 3,
-    "soon": 21,
+    "new": 5,
+    "soon": 22,
     "by_firm": {
       "삼일": 12,
-      "삼정": 2,
+      "삼정": 3,
       "안진": 8,
-      "한영": 18,
+      "한영": 19,
       "로컬": 16,
       "기타": 1
     },
     "by_qualification": {
       "수습CPA": 20,
-      "자격무관": 37
+      "자격무관": 39
     },
     "by_emp_kind": {
-      "인턴": 19,
+      "인턴": 21,
       "정규직": 33,
       "계약직": 2,
       "파트타임": 3
@@ -64,25 +64,6 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5095",
       "dday": 0,
       "first_seen": "2026-07-25T00:01:35"
-    },
-    {
-      "source": "anjin",
-      "source_label": "딜로이트안진",
-      "firm": "안진",
-      "field": "딜",
-      "qualification": "자격무관",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "경영자문부문 Valuation 정규직(Consultant)",
-      "company": "딜로이트 안진",
-      "deadline": "2026-07-30",
-      "posted_date": "2026-05-27",
-      "location": "",
-      "emp_type": "",
-      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5119",
-      "dday": 0,
-      "first_seen": "2026-06-17T20:17:10"
     },
     {
       "source": "kicpa_susup",
@@ -389,6 +370,25 @@
       "first_seen": "2026-07-29T17:01:36"
     },
     {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "금융컨설팅부문 금융 IT컨설팅 인턴",
+      "company": "EY한영",
+      "deadline": "2026-08-04",
+      "posted_date": "2026-07-30",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/123625",
+      "dday": 5,
+      "first_seen": "2026-07-30T11:31:40"
+    },
+    {
       "source": "anjin",
       "source_label": "딜로이트안진",
       "firm": "안진",
@@ -425,6 +425,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5146",
       "dday": 7,
       "first_seen": "2026-07-08T16:32:01"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "[인턴] SG본부 ESG＆Strategy팀 인턴 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-08-06",
+      "posted_date": "2026-07-30",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000924&receive_div_cd=N",
+      "dday": 7,
+      "first_seen": "2026-07-30T11:31:40"
     },
     {
       "source": "kicpa_susup",
@@ -501,6 +520,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1785285124252",
       "dday": 10,
       "first_seen": "2026-07-29T10:02:28"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "딜",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": false,
+      "title": "경영자문부문 Valuation 정규직(Consultant)",
+      "company": "딜로이트 안진",
+      "deadline": "2026-08-13",
+      "posted_date": "2026-05-27",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5119",
+      "dday": 14,
+      "first_seen": "2026-06-17T20:17:10"
     },
     {
       "source": "samil",

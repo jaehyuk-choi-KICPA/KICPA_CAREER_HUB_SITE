@@ -1034,7 +1034,8 @@
     "uid": "samil:r260730-2",
     "first_seen": "2026-07-30T16:31:37",
     "last_seen": "2026-07-30",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-07-30"
   },
   "samil:r260730-1": {
     "source": "samil",
@@ -1052,6 +1053,7 @@
     "uid": "samil:r260730-1",
     "first_seen": "2026-07-30T16:31:37",
     "last_seen": "2026-07-30",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-07-30"
   }
 }

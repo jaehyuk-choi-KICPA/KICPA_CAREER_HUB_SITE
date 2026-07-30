@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-07-30T16:01:37",
+  "generated_at": "2026-07-30T16:31:37",
   "soon_days": 7,
   "counts": {
-    "total": 54,
-    "open": 41,
+    "total": 56,
+    "open": 43,
     "closed": 13,
-    "new": 6,
+    "new": 7,
     "soon": 22,
     "by_firm": {
-      "삼일": 5,
+      "삼일": 7,
       "삼정": 4,
       "안진": 9,
       "한영": 19,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 20,
-      "자격무관": 34
+      "자격무관": 36
     },
     "by_emp_kind": {
-      "인턴": 15,
+      "인턴": 17,
       "정규직": 34,
       "계약직": 2,
       "파트타임": 3
@@ -282,7 +282,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "2026년 한마음나눔 새터민 대학생 인턴십",
       "company": "딜로이트 안진",
       "deadline": "2026-07-31",
@@ -748,6 +748,44 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5140",
       "dday": 57,
       "first_seen": "2026-07-27T10:01:49"
+    },
+    {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "시스템 엔지니어 인턴 채용",
+      "company": "삼일PwC",
+      "deadline": "",
+      "posted_date": "",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://www.pwc.com/kr/ko/career/experienced/r260730-2.html",
+      "dday": null,
+      "first_seen": "2026-07-30T16:31:37"
+    },
+    {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "AI & 데이터 엔지니어 인턴 채용",
+      "company": "삼일PwC",
+      "deadline": "",
+      "posted_date": "",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://www.pwc.com/kr/ko/career/experienced/r260730-1.html",
+      "dday": null,
+      "first_seen": "2026-07-30T16:31:37"
     },
     {
       "source": "samil",

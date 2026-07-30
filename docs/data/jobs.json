@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-07-30T15:33:11",
+  "generated_at": "2026-07-30T16:01:37",
   "soon_days": 7,
   "counts": {
-    "total": 53,
-    "open": 40,
+    "total": 54,
+    "open": 41,
     "closed": 13,
-    "new": 5,
+    "new": 6,
     "soon": 22,
     "by_firm": {
       "삼일": 5,
       "삼정": 4,
-      "안진": 8,
+      "안진": 9,
       "한영": 19,
       "로컬": 16,
       "기타": 1
     },
     "by_qualification": {
       "수습CPA": 20,
-      "자격무관": 33
+      "자격무관": 34
     },
     "by_emp_kind": {
       "인턴": 15,
-      "정규직": 33,
+      "정규직": 34,
       "계약직": 2,
       "파트타임": 3
     }
@@ -577,6 +577,25 @@
       "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-part-time.html",
       "dday": 14,
       "first_seen": "2026-06-29T10:10:15"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "회계감사부문 보험 IFRS17·K-ICS·계리/재무통합 컨설팅 인력 채용",
+      "company": "딜로이트 안진",
+      "deadline": "2026-08-14",
+      "posted_date": "2026-07-30",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5160",
+      "dday": 15,
+      "first_seen": "2026-07-30T16:01:37"
     },
     {
       "source": "samjong",

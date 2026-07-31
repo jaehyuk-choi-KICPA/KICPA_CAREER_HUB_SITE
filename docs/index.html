@@ -72,7 +72,7 @@
     <div class="wrap header-row">
       <div class="brand">
         <div class="brand-top">
-          <h1 title="채용공고 처음으로">회법몬<span class="ver">ver1.19</span></h1>
+          <h1 title="채용공고 처음으로">회법몬<span class="ver">ver1.20</span></h1>
           <button id="theme-toggle" class="theme-btn" aria-label="다크모드 전환" title="다크모드 전환">🌙</button>
         </div>
       </div>
@@ -145,11 +145,11 @@
                 <span class="today-title big4-title"><span class="big4-pill">특집</span> <span id="big4-title-text">2026 신규공채</span></span>
               </div>
               <details class="recruit-sec" id="sec-big4">
-                <summary class="recruit-toggle"><span id="sec-big4-title">빅4 신입 공채</span><span class="recruit-badge" id="sec-big4-badge" hidden>접수중</span></summary>
+                <summary class="recruit-toggle"><span id="sec-big4-title">빅4 신입 회계사 공채</span><span class="recruit-badge" id="sec-big4-badge" hidden>접수중</span></summary>
                 <div id="big4-list" class="big4-list"></div>
               </details>
               <details class="recruit-sec" id="sec-local" open>
-                <summary class="recruit-toggle"><span>로컬 신규공채</span></summary>
+                <summary class="recruit-toggle"><span>로컬 신입 회계사 공채</span></summary>
                 <div class="local-subtabs" role="tablist">
                   <button type="button" class="local-subtab on" data-group="full" role="tab" aria-selected="true">풀타임<span class="n" id="local-n-full"></span></button>
                   <button type="button" class="local-subtab is-part" data-group="part" role="tab" aria-selected="false">파트타임<span class="n" id="local-n-part"></span></button>
@@ -245,14 +245,20 @@
       </div>
       <div class="about-card">
         <details class="updates-acc" open>
-          <summary>📢 최근 업데이트 <span class="upd-ver">v1.19</span></summary>
+          <summary>📢 최근 업데이트 <span class="upd-ver">v1.20</span></summary>
           <ul class="upd-list">
-            <li><b>v1.19</b> — 책갈피가 <b>‘2026 신규공채’</b>로 확장 — 빅4 공채(접이식)에 더해 <b>로컬 신규공채</b>를 풀타임/파트타임으로 자동 표시(마감 임박순).</li>
-            <li><b>v1.18</b> — 이 탭 상단 <b>목차를 버튼(칩)형</b>으로 개선 — 누를 수 있는 곳이 한눈에 보이게.</li>
-            <li><b>v1.17</b> — 채용알림에 <b>‘빅4 인턴만’</b> 옵션 추가, 글자수 탭에 <b>바이트 기준(2/3byte) 선택</b>(삼정=3byte), 이 <b>업데이트 소식</b> 신설·이용안내 간소화, PC 검색창 정렬 정리.</li>
-            <li><b>v1.16</b> — 채용 카드 가독성·밀도 개선(제목 확대·간격 축소·D-day 정렬).</li>
-            <li><b>v1.13</b> — 글자수 세기 탭 신설, 기사·인사이트 한 탭 통합, 빅4 신입 공채 특집.</li>
+            <li><b>v1.20</b> — 신규공채 탭 다듬기: 섹션 이름을 <b>빅4/로컬 신입 회계사 공채</b>로 통일, 풀·파트 탭을 <b>반반 폭</b>으로, PC에서 오른쪽 패널이 <b>자체 스크롤</b>되도록 개선(본문을 다 내려야 보이던 문제 해소).</li>
           </ul>
+          <details class="upd-more">
+            <summary class="upd-more-toggle">이전 업데이트</summary>
+            <ul class="upd-list">
+              <li><b>v1.19</b> — 책갈피가 <b>‘2026 신규공채’</b>로 확장 — 빅4 공채(접이식)에 더해 <b>로컬 신규공채</b>를 풀타임/파트타임으로 자동 표시(마감 임박순).</li>
+              <li><b>v1.18</b> — 이 탭 상단 <b>목차를 버튼(칩)형</b>으로 개선 — 누를 수 있는 곳이 한눈에 보이게.</li>
+              <li><b>v1.17</b> — 채용알림에 <b>‘빅4 인턴만’</b> 옵션 추가, 글자수 탭에 <b>바이트 기준(2/3byte) 선택</b>(삼정=3byte), 이 <b>업데이트 소식</b> 신설·이용안내 간소화, PC 검색창 정렬 정리.</li>
+              <li><b>v1.16</b> — 채용 카드 가독성·밀도 개선(제목 확대·간격 축소·D-day 정렬).</li>
+              <li><b>v1.13</b> — 글자수 세기 탭 신설, 기사·인사이트 한 탭 통합, 빅4 신입 공채 특집.</li>
+            </ul>
+          </details>
         </details>
 
         <p class="about-note">🕑 상단의 <strong>‘최근 서치’</strong>는 마지막으로 공고·기사를 <strong>수집·점검한 시각</strong>이에요. 새로고침 없이 자동으로 갱신됩니다.</p>
@@ -299,7 +305,8 @@
         <h3 id="faq-panel">6. 오른쪽 패널의 두 책갈피</h3>
         <ul>
           <li><strong>NEW</strong> — 최근 24시간 내 새 공고를 최신순으로.</li>
-          <li><strong>빅4 신입 공채</strong> — 빅4 신입 회계사 <strong>정기채용 일정</strong> 특집(공식 페이지 기준 수동 큐레이션, 시즌마다 갱신).</li>
+          <li><strong>2026 신규공채</strong> — <strong>빅4 신입 회계사 공채</strong>(정기채용 일정, 수동 큐레이션·시즌마다 갱신)와
+            <strong>로컬 신입 회계사 공채</strong>(풀타임/파트타임, 자동 수집)를 한 화면에.</li>
         </ul>
 
         <h3 id="faq-links">7. 공식 채용 페이지 바로가기</h3>

@@ -704,7 +704,7 @@ function renderBig4(data) {
     $("sec-big4").hidden = true;
     return false;
   }
-  if (data.title) $("sec-big4-title").textContent = data.title;
+  // 섹션 제목은 정적 라벨("빅4 신입 회계사 공채") 고정 — JSON title(연도 포함)로 덮지 않음
   $("sec-big4-badge").hidden = !firms.some((f) => f.status === "open");   // 접수중 법인 있으면 초록 딱지
   $("big4-list").replaceChildren(...firms.map(big4Row));
   return true;

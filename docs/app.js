@@ -718,7 +718,7 @@ function localListBox(items) {
   const out = [el("div", { class:"today-list" }, items.slice(0, LOCAL_CAP).map((it) => todayItem(it, true)))];
   if (items.length > LOCAL_CAP) {
     out.push(el("details", { class:"local-more" }, [
-      el("summary", { class:"local-more-toggle", text:`더보기 ${items.length - LOCAL_CAP}개` }),
+      el("summary", { class:"local-more-toggle", text:"더보기" }),
       el("div", { class:"today-list" }, items.slice(LOCAL_CAP).map((it) => todayItem(it, true))),
     ]));
   }

@@ -261,7 +261,7 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
   font-size:11.5px; font-weight:700; color:var(--muted); padding:7px 0 5px; border-top:1px dashed var(--line); }
 .local-more-toggle::-webkit-details-marker { display:none; }
 .local-more-toggle::after { content:" ▾"; font-size:9px; }
-.local-more[open] > .local-more-toggle::after { content:" ▴"; }
+.local-more[open] > .local-more-toggle { display:none; }   /* 누르면 행 자체가 사라지는 원웨이 펼침 */
 .local-more-toggle:hover { color:var(--accent); }
 .local-more > .today-list { margin-top:4px; }
 

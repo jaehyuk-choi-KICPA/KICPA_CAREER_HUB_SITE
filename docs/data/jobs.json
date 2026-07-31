@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-31T14:31:26",
+  "generated_at": "2026-07-31T15:01:40",
   "soon_days": 7,
   "counts": {
     "total": 53,
     "open": 38,
     "closed": 15,
-    "new": 4,
+    "new": 3,
     "soon": 19,
     "by_firm": {
       "삼일": 7,
@@ -510,7 +510,7 @@
       "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[인사팀] 채용 관리 및 DATA 분석 담당자",
       "company": "삼정KPMG",
       "deadline": "2026-08-14",

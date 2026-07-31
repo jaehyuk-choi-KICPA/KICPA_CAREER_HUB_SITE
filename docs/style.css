@@ -488,9 +488,15 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 @media (min-width:1120px) {
   /* 검색바(controls)는 결과 컬럼 위로만 → 좌측 필터(rail)를 덮지 않게. 필터는 좌측에서 두 행 걸쳐 검색바와 같은 높이에서 시작 */
   .jobs-layout { grid-template-columns:236px minmax(0,1fr) 282px; grid-template-areas:"rail controls today" "rail results today"; }
-  /* 패널이 뷰포트보다 길어도 자체 스크롤로 하단 도달(본문을 끝까지 내리지 않아도 됨) */
+  /* 패널이 뷰포트보다 길어도 자체 스크롤로 하단 도달(본문을 끝까지 내리지 않아도 됨)
+     스크롤바는 평소 투명, 패널에 마우스 올렸을 때만 은은하게(디자인 소음 최소화) */
   .today-col { position:sticky; top:118px; max-height:calc(100vh - 130px); overflow-y:auto;
-    overscroll-behavior:contain; scrollbar-width:thin; }
+    overscroll-behavior:contain; scrollbar-width:thin; scrollbar-color:transparent transparent; }
+  .today-col:hover { scrollbar-color:var(--line) transparent; }
+  .today-col::-webkit-scrollbar { width:6px; }                     /* 구형 웹킷 폴백 */
+  .today-col::-webkit-scrollbar-track { background:transparent; }
+  .today-col::-webkit-scrollbar-thumb { background:transparent; border-radius:99px; }
+  .today-col:hover::-webkit-scrollbar-thumb { background:var(--line); }
 }
 @media (max-width:759px) {
   /* 검색·필터·정렬 바를 금일 패널/금일 기사·인사이트 아래로 */

@@ -717,10 +717,14 @@ function localListBox(items) {
   if (!items.length) return [el("div", { class:"local-gempty", text:"지금 모집 중인 공고가 없어요." })];
   const out = [el("div", { class:"today-list" }, items.slice(0, LOCAL_CAP).map((it) => todayItem(it, true)))];
   if (items.length > LOCAL_CAP) {
-    out.push(el("details", { class:"local-more" }, [
+    const more = el("details", { class:"local-more" }, [
       el("summary", { class:"local-more-toggle", text:"더보기" }),
       el("div", { class:"today-list" }, items.slice(LOCAL_CAP).map((it) => todayItem(it, true))),
-    ]));
+    ]);
+    const closer = el("div", { class:"local-more-close", text:"접기" });   // 펼친 목록 맨 아래에서 다시 접기
+    closer.addEventListener("click", () => { more.open = false; });
+    more.appendChild(closer);
+    out.push(more);
   }
   return out;
 }

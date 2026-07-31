@@ -261,9 +261,13 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
   font-size:11.5px; font-weight:700; color:var(--muted); padding:7px 0 5px; border-top:1px dashed var(--line); }
 .local-more-toggle::-webkit-details-marker { display:none; }
 .local-more-toggle::after { content:" ▾"; font-size:9px; }
-.local-more[open] > .local-more-toggle { display:none; }   /* 누르면 행 자체가 사라지는 원웨이 펼침 */
+.local-more[open] > .local-more-toggle { display:none; }   /* 누르면 '더보기' 행은 사라지고, 하단 '접기'로 되돌림 */
 .local-more-toggle:hover { color:var(--accent); }
 .local-more > .today-list { margin-top:4px; }
+.local-more-close { cursor:pointer; user-select:none; text-align:center; font-size:11.5px; font-weight:700;
+  color:var(--muted); padding:7px 0 5px; margin-top:4px; border-top:1px dashed var(--line); }
+.local-more-close::after { content:" ▴"; font-size:9px; }
+.local-more-close:hover { color:var(--accent); }
 
 /* 금일 기사/인사이트 미니 박스 — 모바일 포함 전 폭 노출(모바일은 더 작게, PC가 더 크게) */
 .today-mini-row { display:grid; grid-template-columns:1fr 1fr; gap:7px; margin-top:9px; }   /* 금일 기사 박스 절반 폭 */

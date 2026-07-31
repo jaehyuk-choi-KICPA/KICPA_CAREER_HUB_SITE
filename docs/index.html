@@ -72,7 +72,7 @@
     <div class="wrap header-row">
       <div class="brand">
         <div class="brand-top">
-          <h1 title="채용공고 처음으로">회법몬<span class="ver">ver1.18</span></h1>
+          <h1 title="채용공고 처음으로">회법몬<span class="ver">ver1.19</span></h1>
           <button id="theme-toggle" class="theme-btn" aria-label="다크모드 전환" title="다크모드 전환">🌙</button>
         </div>
       </div>
@@ -126,7 +126,8 @@
           <!-- 책갈피 토글: 패널 박스 위로 빼서 폴더 탭처럼(박스가 탭 위까지 감싸던 어색함 해소) -->
           <div class="today-tabs" role="tablist">
             <button class="today-tab on" type="button" data-view="today" role="tab" aria-selected="true">NEW</button>
-            <button class="today-tab" type="button" data-view="big4" role="tab" aria-selected="false">빅4 신입 공채</button>
+            <!-- 내부 view id는 big4 유지(딥링크 ?view=big4·CSS 하위호환) — 노출 라벨만 변경 -->
+            <button class="today-tab" type="button" data-view="big4" role="tab" aria-selected="false">2026 신규공채</button>
           </div>
           <aside class="today-panel" id="today-panel">
             <!-- 뷰1: 방금 올라온 공고 -->
@@ -138,13 +139,20 @@
               <div id="today-list" class="today-list"></div>
               <div id="today-empty" class="today-empty" hidden>최근 24시간 내 새 공고가 없어요.</div>
             </div>
-            <!-- 뷰2: 빅4 신입 공채 특집(수동 큐레이션) -->
+            <!-- 뷰2: 2026 신규공채 = 빅4 공채(수동 큐레이션, 접이식·기본 닫힘) + 로컬 신규공채(jobs.json 자동, 기본 열림) -->
             <div class="today-view" id="view-big4" hidden>
               <div class="today-head">
-                <span class="today-title big4-title"><span class="big4-pill">특집</span> <span id="big4-title-text">빅4 신입 회계사 공채</span></span>
+                <span class="today-title big4-title"><span class="big4-pill">특집</span> <span id="big4-title-text">2026 신규공채</span></span>
               </div>
-              <div id="big4-list" class="big4-list"></div>
-              <div id="big4-empty" class="today-empty" hidden>특집 정보를 준비 중이에요.</div>
+              <details class="recruit-sec" id="sec-big4">
+                <summary class="recruit-toggle"><span id="sec-big4-title">빅4 신입 공채</span></summary>
+                <div id="big4-list" class="big4-list"></div>
+              </details>
+              <details class="recruit-sec" id="sec-local" open>
+                <summary class="recruit-toggle"><span>로컬 신규공채</span><span class="recruit-count" id="local-count" hidden>0</span></summary>
+                <div id="local-groups"></div>
+              </details>
+              <div id="big4-empty" class="today-empty" hidden>신규공채 정보를 준비 중이에요.</div>
             </div>
           </aside>
           <!-- PC 전용: 금일 기사 수 (클릭 시 기사 탭 이동) -->
@@ -232,8 +240,9 @@
       </div>
       <div class="about-card">
         <details class="updates-acc" open>
-          <summary>📢 최근 업데이트 <span class="upd-ver">v1.18</span></summary>
+          <summary>📢 최근 업데이트 <span class="upd-ver">v1.19</span></summary>
           <ul class="upd-list">
+            <li><b>v1.19</b> — 책갈피가 <b>‘2026 신규공채’</b>로 확장 — 빅4 공채(접이식)에 더해 <b>로컬 신규공채</b>를 풀타임/파트타임으로 자동 표시(마감 임박순).</li>
             <li><b>v1.18</b> — 이 탭 상단 <b>목차를 버튼(칩)형</b>으로 개선 — 누를 수 있는 곳이 한눈에 보이게.</li>
             <li><b>v1.17</b> — 채용알림에 <b>‘빅4 인턴만’</b> 옵션 추가, 글자수 탭에 <b>바이트 기준(2/3byte) 선택</b>(삼정=3byte), 이 <b>업데이트 소식</b> 신설·이용안내 간소화, PC 검색창 정렬 정리.</li>
             <li><b>v1.16</b> — 채용 카드 가독성·밀도 개선(제목 확대·간격 축소·D-day 정렬).</li>

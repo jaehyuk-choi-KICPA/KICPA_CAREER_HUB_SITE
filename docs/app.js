@@ -359,11 +359,12 @@ function renderActiveFilters() {
   box.replaceChildren(...chips);
 }
 
-function todayItem(it) {
+function todayItem(it, showCompany) {
   const dd = ddayInfo(it);
   const row1 = el("div", { class:"row1" }, [
     el("span", { class:"dot", style:`background:${FIRM_COLOR[it.firm]||"#6b7684"}` }),
-    el("span", { class:"firm", text:FIRM_FULL[it.firm]||it.firm }),   // 풀네임, 글자색은 기본(점만 색)
+    // 풀네임, 글자색은 기본(점만 색). showCompany=회사명 우선(로컬 목록: 전부 '로컬'이라 법인명이 무의미)
+    el("span", { class:"firm", text: showCompany ? (it.company || FIRM_FULL[it.firm] || it.firm) : (FIRM_FULL[it.firm] || it.firm) }),
     el("span", { class:"dday " + dd.c, text:dd.t }),
   ]);
   const a = el("a", { href:it.url, target:"_blank", rel:"noopener", text:it.title });
@@ -699,24 +700,60 @@ function big4Row(f) {
 }
 function renderBig4(data) {
   const firms = (data && data.firms) || [];
-  const tabBtn = document.querySelector('.today-tab[data-view="big4"]');
-  if (!firms.length) {                       // 데이터 없으면 특집 탭 비활성
-    if (tabBtn) tabBtn.disabled = true;
-    $("big4-empty").hidden = false;
-    return;
+  if (!firms.length) {                       // 데이터 없으면 빅4 섹션만 숨김(탭 활성 여부는 부트에서 로컬과 합산 판단)
+    $("sec-big4").hidden = true;
+    return false;
   }
-  if (data.title) $("big4-title-text").textContent = data.title;
-  $("big4-empty").hidden = true;
+  if (data.title) $("sec-big4-title").textContent = data.title;
   $("big4-list").replaceChildren(...firms.map(big4Row));
+  return true;
 }
+
+// ── 로컬 신규공채(2026 신규공채 탭 하단): jobs.json 자동 필터 — 로컬 × 수습CPA × 미마감
+const LOCAL_CAP = 5;   // 그룹당 기본 노출 수(초과분은 '펼치기'로)
+function localGroup(label, items) {
+  const box = el("div", { class:"local-group" }, [
+    el("div", { class:"local-ghead" }, [
+      el("span", { class:"local-gname", text:label }),
+      el("span", { class:"local-gcount", text:items.length + "건" }),
+    ]),
+  ]);
+  if (!items.length) {
+    box.appendChild(el("div", { class:"local-gempty", text:"지금 모집 중인 공고가 없어요." }));
+    return box;
+  }
+  box.appendChild(el("div", { class:"today-list" }, items.slice(0, LOCAL_CAP).map((it) => todayItem(it, true))));
+  if (items.length > LOCAL_CAP) {
+    box.appendChild(el("details", { class:"local-more" }, [
+      el("summary", { class:"firm-toggle", text:`펼치기 (+${items.length - LOCAL_CAP})` }),
+      el("div", { class:"today-list" }, items.slice(LOCAL_CAP).map((it) => todayItem(it, true))),
+    ]));
+  }
+  return box;
+}
+function renderLocalRecruit() {
+  // 풀·파트 두 그룹만(인턴·계약직 로컬 공고는 메인 목록에서 접근 — 이 패널은 신규 수습공채 큐레이션)
+  const pool = JOBS.filter((it) => it.firm === "로컬" && it.qualification === "수습CPA" && it.status !== "closed");
+  // 마감 임박순(상시=맨 뒤), 동순위는 게시일 최신순
+  const dk = (it) => (it.dday === null || it.dday === undefined) ? 9999 : it.dday;
+  pool.sort((a, b) => dk(a) - dk(b) || (b.posted_date || b.first_seen || "").localeCompare(a.posted_date || a.first_seen || ""));
+  const full = pool.filter((it) => it.emp_kind === "정규직");
+  const part = pool.filter((it) => it.emp_kind === "파트타임");
+  $("local-groups").replaceChildren(localGroup("풀타임(정규직)", full), localGroup("파트타임", part));
+  const n = full.length + part.length;
+  $("local-count").textContent = n + "건";
+  $("local-count").hidden = n === 0;
+  if (!n) $("sec-local").hidden = true;   // 둘 다 0건이면 섹션 자체 숨김(한쪽만 비면 그룹 빈 문구)
+  return n > 0;
+}
+
 function initTodayTabs() {
   const tabs = document.querySelectorAll(".today-tab");
+  const views = document.querySelectorAll(".today-view");   // id 규약: view-<data-view>
   tabs.forEach((btn) => btn.addEventListener("click", () => {
     if (btn.disabled) return;
     tabs.forEach((b) => { const on = b === btn; b.classList.toggle("on", on); b.setAttribute("aria-selected", on ? "true" : "false"); });
-    const v = btn.dataset.view;
-    $("view-today").hidden = v !== "today";
-    $("view-big4").hidden = v !== "big4";
+    views.forEach((v) => { v.hidden = v.id !== "view-" + btn.dataset.view; });
   }));
 }
 
@@ -784,11 +821,15 @@ function initNewsTabs() {
   initSub("news", news, "f-newscat", "category", NEWS_CAT_ORDER);   // 색 없이 중립 밑줄 탭
   renderInsights(insights);
   initTools();          // 글자수·맞춤법 도구
-  initTodayTabs();      // 책갈피 토글(방금 올라온 공고 ↔ 빅4 공채)
+  initTodayTabs();      // 책갈피 토글(방금 올라온 공고 ↔ 2026 신규공채)
   initNewsTabs();       // 책갈피 토글(기사 ↔ 인사이트)
-  renderBig4(big4);     // 빅4 신입 공채 특집(수동 큐레이션)
+  const hasBig4 = renderBig4(big4);                          // 빅4 공채(수동 큐레이션, 접이식 섹션)
+  const hasLocal = jobs ? renderLocalRecruit() : false;      // 로컬 신규공채(jobs.json 자동, initJobs 이후라 JOBS 준비됨)
+  const recruitTab = document.querySelector('.today-tab[data-view="big4"]');
+  if (recruitTab) recruitTab.disabled = !(hasBig4 || hasLocal);   // 둘 다 비면 탭 비활성
+  if (!hasBig4 && !hasLocal) $("big4-empty").hidden = false;      // 뷰 전체 폴백 문구
 
-  // 딥링크: ?view=big4 → 들어오자마자 '빅4 신입 공채' 특집 화면으로(시즌 홍보용 단축 URL)
+  // 딥링크: ?view=big4 → 들어오자마자 '2026 신규공채' 화면으로(시즌 홍보용 단축 URL, id 하위호환 유지)
   if (new URLSearchParams(location.search).get("view") === "big4") {
     const b = document.querySelector('.today-tab[data-view="big4"]');
     if (b && !b.disabled) { b.click(); b.scrollIntoView({ block: "nearest" }); }

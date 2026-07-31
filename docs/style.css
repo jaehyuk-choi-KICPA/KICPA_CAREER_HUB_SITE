@@ -240,27 +240,30 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .recruit-toggle::-webkit-details-marker { display:none; }
 .recruit-toggle::after { content:"▾"; margin-left:auto; font-size:10px; color:var(--muted); transition:transform .15s ease; }
 .recruit-sec[open] > .recruit-toggle::after { transform:rotate(180deg); }
-.recruit-count { font-size:10.5px; font-weight:800; color:var(--accent); }
+.recruit-badge { font-size:10px; font-weight:800; padding:2px 7px; border-radius:999px;
+  background:var(--new-soft); color:var(--new); }   /* 빅4 summary '접수중' 딱지(.big4-badge.open 톤) */
 .recruit-sec > .big4-list, .recruit-sec > #local-groups { margin-top:9px; }
-/* 로컬 그룹(풀타임/파트타임) — 그룹명은 컬러 알약으로 또렷하게(풀=파랑, 파트=초록), 우측은 헤어라인 */
-.local-group + .local-group { margin-top:14px; }
-.local-ghead { display:flex; align-items:center; gap:8px; margin-bottom:7px; }
-.local-ghead::after { content:""; flex:1 1 auto; height:1px; background:var(--line); }
-.local-gname { font-size:11px; font-weight:800; letter-spacing:.02em; color:#fff;
-  padding:3px 10px; border-radius:999px; background:var(--accent); }
-.local-gcount { font-size:11.5px; font-weight:800; color:var(--accent); }
-.local-group.is-part .local-gname { background:var(--new); }
-.local-group.is-part .local-gcount { color:var(--new); }
-/* 다크: 솔리드 대신 소프트 배경+컬러 글자(배지 관용구와 동일 톤) */
-[data-theme="dark"] .local-gname { color:var(--accent); background:var(--accent-soft); }
-[data-theme="dark"] .local-group.is-part .local-gname { color:var(--new); background:var(--new-soft); }
-.local-gempty { font-size:12px; color:var(--muted); padding:2px 0; }
+/* 로컬 하위탭(풀타임 ↔ 파트타임) — 언더라인 탭: 하위 구조가 드러나게, 색으로 구분(풀=파랑, 파트=초록) */
+.local-subtabs { display:flex; gap:16px; border-bottom:1px solid var(--line); margin:9px 0 0; }
+.local-subtab { appearance:none; background:none; border:none; cursor:pointer; font:inherit;
+  font-size:12px; font-weight:800; color:var(--muted); padding:5px 2px 7px; margin-bottom:-1px;
+  border-bottom:2px solid transparent; }
+.local-subtab:hover:not(.on) { color:var(--ink); }
+.local-subtab.on { color:var(--accent); border-bottom-color:var(--accent); }
+.local-subtab.is-part.on { color:var(--new); border-bottom-color:var(--new); }
+.local-subtab .n { font-weight:700; font-size:10.5px; margin-left:3px; opacity:.75; }
+.local-gempty { font-size:12px; color:var(--muted); padding:6px 0 2px; }
 .local-note { margin:10px 0 0; font-size:11px; line-height:1.5; color:var(--muted); }
 .local-note b { color:inherit; }
-/* 펼치기(+N): .firm-toggle 재사용 — 열림 화살표만 로컬 스코프로 보강 */
-.local-more { margin-top:6px; display:flex; flex-direction:column; }
-.local-more[open] .firm-toggle::after { content:" ▴"; }
-.local-more > .today-list { margin-top:8px; }
+/* 더보기: 칩 대신 목록 하단 전체 폭의 은은한 행(점선 헤어라인 + 중앙 정렬) */
+.local-more { margin-top:2px; display:block; }
+.local-more-toggle { list-style:none; cursor:pointer; user-select:none; text-align:center;
+  font-size:11.5px; font-weight:700; color:var(--muted); padding:7px 0 5px; border-top:1px dashed var(--line); }
+.local-more-toggle::-webkit-details-marker { display:none; }
+.local-more-toggle::after { content:" ▾"; font-size:9px; }
+.local-more[open] > .local-more-toggle::after { content:" ▴"; }
+.local-more-toggle:hover { color:var(--accent); }
+.local-more > .today-list { margin-top:4px; }
 
 /* 금일 기사/인사이트 미니 박스 — 모바일 포함 전 폭 노출(모바일은 더 작게, PC가 더 크게) */
 .today-mini-row { display:grid; grid-template-columns:1fr 1fr; gap:7px; margin-top:9px; }   /* 금일 기사 박스 절반 폭 */

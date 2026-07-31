@@ -145,11 +145,15 @@
                 <span class="today-title big4-title"><span class="big4-pill">특집</span> <span id="big4-title-text">2026 신규공채</span></span>
               </div>
               <details class="recruit-sec" id="sec-big4">
-                <summary class="recruit-toggle"><span id="sec-big4-title">빅4 신입 공채</span></summary>
+                <summary class="recruit-toggle"><span id="sec-big4-title">빅4 신입 공채</span><span class="recruit-badge" id="sec-big4-badge" hidden>접수중</span></summary>
                 <div id="big4-list" class="big4-list"></div>
               </details>
               <details class="recruit-sec" id="sec-local" open>
-                <summary class="recruit-toggle"><span>로컬 신규공채</span><span class="recruit-count" id="local-count" hidden>0</span></summary>
+                <summary class="recruit-toggle"><span>로컬 신규공채</span></summary>
+                <div class="local-subtabs" role="tablist">
+                  <button type="button" class="local-subtab on" data-group="full" role="tab" aria-selected="true">풀타임<span class="n" id="local-n-full"></span></button>
+                  <button type="button" class="local-subtab is-part" data-group="part" role="tab" aria-selected="false">파트타임<span class="n" id="local-n-part"></span></button>
+                </div>
                 <div id="local-groups"></div>
                 <p class="local-note">⚠ 로컬 공고는 법인 사정에 따라 <b>예고 없이 조기 마감·삭제</b>될 수 있어요. 지원 전 원문 링크에서 진행 여부를 확인하세요.</p>
               </details>

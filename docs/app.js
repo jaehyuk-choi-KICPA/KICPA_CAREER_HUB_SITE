@@ -711,8 +711,8 @@ function renderBig4(data) {
 
 // ── 로컬 신규공채(2026 신규공채 탭 하단): jobs.json 자동 필터 — 로컬 × 수습CPA × 미마감
 const LOCAL_CAP = 5;   // 그룹당 기본 노출 수(초과분은 '펼치기'로)
-function localGroup(label, items) {
-  const box = el("div", { class:"local-group" }, [
+function localGroup(label, items, cls) {
+  const box = el("div", { class:"local-group" + (cls ? " " + cls : "") }, [
     el("div", { class:"local-ghead" }, [
       el("span", { class:"local-gname", text:label }),
       el("span", { class:"local-gcount", text:items.length + "건" }),
@@ -733,13 +733,15 @@ function localGroup(label, items) {
 }
 function renderLocalRecruit() {
   // 풀·파트 두 그룹만(인턴·계약직 로컬 공고는 메인 목록에서 접근 — 이 패널은 신규 수습공채 큐레이션)
-  const pool = JOBS.filter((it) => it.firm === "로컬" && it.qualification === "수습CPA" && it.status !== "closed");
+  // 제목 '(마감)' 가드: 게시자가 제목만 고치고 마감일을 안 바꾸면 status가 open으로 남는 케이스
+  const pool = JOBS.filter((it) => it.firm === "로컬" && it.qualification === "수습CPA"
+    && it.status !== "closed" && !/\(마감\)/.test(it.title || ""));
   // 마감 임박순(상시=맨 뒤), 동순위는 게시일 최신순
   const dk = (it) => (it.dday === null || it.dday === undefined) ? 9999 : it.dday;
   pool.sort((a, b) => dk(a) - dk(b) || (b.posted_date || b.first_seen || "").localeCompare(a.posted_date || a.first_seen || ""));
   const full = pool.filter((it) => it.emp_kind === "정규직");
   const part = pool.filter((it) => it.emp_kind === "파트타임");
-  $("local-groups").replaceChildren(localGroup("풀타임(정규직)", full), localGroup("파트타임", part));
+  $("local-groups").replaceChildren(localGroup("풀타임(정규직)", full, "is-full"), localGroup("파트타임", part, "is-part"));
   const n = full.length + part.length;
   $("local-count").textContent = n + "건";
   $("local-count").hidden = n === 0;

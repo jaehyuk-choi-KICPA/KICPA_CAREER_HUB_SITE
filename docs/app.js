@@ -741,8 +741,11 @@ function initLocalSubtabs() {
 function renderLocalRecruit() {
   // 풀·파트 두 그룹만(인턴·계약직 로컬 공고는 메인 목록에서 접근 — 이 패널은 신규 수습공채 큐레이션)
   // 제목 '(마감)' 가드: 게시자가 제목만 고치고 마감일을 안 바꾸면 status가 open으로 남는 케이스
+  // '회계사' 게이트: 수습 보드엔 총무·기장반 등 비회계사 공고도 올라옴(보드 특성상 수습CPA로 강제 분류)
+  //  → 제목에 회계사/CPA가 있어야 통과. CPA는 AICPA·USCPA 부분문자열 오탐 방지(영문자 뒤 CPA 제외).
+  const isCpaTitle = (t) => /회계사/.test(t) || /(^|[^A-Za-z])CPA/i.test(t);
   const pool = JOBS.filter((it) => it.firm === "로컬" && it.qualification === "수습CPA"
-    && it.status !== "closed" && !/\(마감\)/.test(it.title || ""));
+    && it.status !== "closed" && !/\(마감\)/.test(it.title || "") && isCpaTitle(it.title || ""));
   // 마감 임박순(상시=맨 뒤), 동순위는 게시일 최신순
   const dk = (it) => (it.dday === null || it.dday === undefined) ? 9999 : it.dday;
   pool.sort((a, b) => dk(a) - dk(b) || (b.posted_date || b.first_seen || "").localeCompare(a.posted_date || a.first_seen || ""));

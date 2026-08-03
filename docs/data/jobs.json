@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-03T09:01:37",
+  "generated_at": "2026-08-03T09:31:35",
   "soon_days": 7,
   "counts": {
     "total": 45,
-    "open": 27,
-    "closed": 18,
-    "new": 0,
+    "open": 28,
+    "closed": 17,
+    "new": 1,
     "soon": 9,
     "by_firm": {
       "삼일": 7,
@@ -273,6 +273,25 @@
       "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-part-time.html",
       "dday": 10,
       "first_seen": "2026-06-29T10:10:15"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "딜",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "전략·재무자문부문 Deal2 (가치평가팀) 신입/경력직",
+      "company": "EY한영",
+      "deadline": "2026-08-13",
+      "posted_date": "2026-08-03",
+      "location": "",
+      "emp_type": "신입/경력",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/122214",
+      "dday": 10,
+      "first_seen": "2026-08-03T09:31:35"
     },
     {
       "source": "anjin",
@@ -765,25 +784,6 @@
       "location": "서울 영등포구",
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1784101171573",
-      "dday": -4,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "딜",
-      "qualification": "자격무관",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "전략·재무자문부문 Deal2 (가치평가팀) 신입/경력직",
-      "company": "EY한영",
-      "deadline": "2026-07-30",
-      "posted_date": "2026-07-15",
-      "location": "",
-      "emp_type": "신입/경력",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/122214",
       "dday": -4,
       "first_seen": ""
     },

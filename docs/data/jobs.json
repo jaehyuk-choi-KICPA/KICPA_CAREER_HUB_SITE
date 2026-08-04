@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-04T10:01:52",
+  "generated_at": "2026-08-04T10:31:35",
   "soon_days": 7,
   "counts": {
-    "total": 47,
-    "open": 30,
+    "total": 48,
+    "open": 31,
     "closed": 17,
-    "new": 5,
+    "new": 4,
     "soon": 8,
     "by_firm": {
       "삼일": 8,
-      "삼정": 1,
+      "삼정": 2,
       "안진": 7,
       "한영": 19,
       "로컬": 11,
@@ -17,12 +17,12 @@
     },
     "by_qualification": {
       "수습CPA": 16,
-      "자격무관": 31
+      "자격무관": 32
     },
     "by_emp_kind": {
       "인턴": 15,
       "정규직": 29,
-      "계약직": 2,
+      "계약직": 3,
       "파트타임": 1
     }
   },
@@ -168,7 +168,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "Talent 채용팀 인턴",
       "company": "EY한영",
       "deadline": "2026-08-09",
@@ -263,7 +263,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "{EY한영] 전략·재무자문부문 Deal2 (가치평가팀) 신입/경력직",
       "company": "한영회계법인",
       "deadline": "2026-08-13",
@@ -463,6 +463,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1784108416966",
       "dday": 27,
       "first_seen": "2026-08-04T00:01:42"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "[QRM-RM] 독립성팀 계약직 직원 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-09-07",
+      "posted_date": "2026-08-04",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000927&receive_div_cd=N",
+      "dday": 34,
+      "first_seen": "2026-08-04T10:31:35"
     },
     {
       "source": "anjin",

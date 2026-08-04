@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-04T17:01:43",
+  "generated_at": "2026-08-04T17:31:35",
   "soon_days": 7,
   "counts": {
-    "total": 47,
-    "open": 35,
+    "total": 48,
+    "open": 36,
     "closed": 12,
-    "new": 6,
+    "new": 7,
     "soon": 8,
     "by_firm": {
       "삼일": 8,
       "삼정": 2,
       "안진": 7,
       "한영": 17,
-      "로컬": 12,
+      "로컬": 13,
       "기타": 1
     },
     "by_qualification": {
-      "수습CPA": 17,
+      "수습CPA": 18,
       "자격무관": 30
     },
     "by_emp_kind": {
       "인턴": 14,
-      "정규직": 29,
+      "정규직": 30,
       "계약직": 3,
       "파트타임": 1
     }
@@ -539,6 +539,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1784108416966",
       "dday": 27,
       "first_seen": "2026-08-04T00:01:42"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "신화회계법인 수습회계사 모집",
+      "company": "신화회계법인",
+      "deadline": "2026-08-31",
+      "posted_date": "2026-08-04",
+      "location": "서울 전체",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1785831016718",
+      "dday": 27,
+      "first_seen": "2026-08-04T17:31:35"
     },
     {
       "source": "samjong",

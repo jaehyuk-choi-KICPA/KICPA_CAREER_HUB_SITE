@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-05T16:31:50",
+  "generated_at": "2026-08-05T17:01:40",
   "soon_days": 7,
   "counts": {
-    "total": 48,
-    "open": 35,
+    "total": 49,
+    "open": 36,
     "closed": 13,
-    "new": 2,
+    "new": 3,
     "soon": 8,
     "by_firm": {
-      "삼일": 8,
+      "삼일": 9,
       "삼정": 2,
       "안진": 7,
       "한영": 17,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 18,
-      "자격무관": 30
+      "자격무관": 31
     },
     "by_emp_kind": {
-      "인턴": 14,
+      "인턴": 15,
       "정규직": 30,
       "계약직": 3,
       "파트타임": 1
@@ -387,6 +387,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5137",
       "dday": 15,
       "first_seen": "2026-06-25T17:01:34"
+    },
+    {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "홍보파트(M&C) 인턴 채용",
+      "company": "삼일PwC",
+      "deadline": "2026-08-21",
+      "posted_date": "",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://www.pwc.com/kr/ko/career/experienced/r260805.html",
+      "dday": 16,
+      "first_seen": "2026-08-05T17:01:40"
     },
     {
       "source": "anjin",

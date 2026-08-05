@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-05T10:01:41",
+  "generated_at": "2026-08-05T10:31:38",
   "soon_days": 7,
   "counts": {
     "total": 48,
     "open": 34,
     "closed": 14,
-    "new": 6,
+    "new": 5,
     "soon": 7,
     "by_firm": {
       "삼일": 8,
@@ -529,7 +529,7 @@
       "qualification": "자격무관",
       "emp_kind": "계약직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[QRM-RM] 독립성팀 계약직 직원 채용",
       "company": "삼정KPMG",
       "deadline": "2026-09-07",

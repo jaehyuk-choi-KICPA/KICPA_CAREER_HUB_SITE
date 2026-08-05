@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-05T15:01:46",
+  "generated_at": "2026-08-05T15:31:45",
   "soon_days": 7,
   "counts": {
     "total": 48,
     "open": 35,
     "closed": 13,
-    "new": 4,
+    "new": 3,
     "soon": 8,
     "by_firm": {
       "삼일": 8,
@@ -149,7 +149,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "재무실 단기 인턴",
       "company": "EY한영",
       "deadline": "2026-08-12",

@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-08-06T09:31:34",
+  "generated_at": "2026-08-06T10:01:40",
   "soon_days": 7,
   "counts": {
-    "total": 51,
-    "open": 38,
+    "total": 52,
+    "open": 39,
     "closed": 13,
-    "new": 4,
-    "soon": 16,
+    "new": 5,
+    "soon": 17,
     "by_firm": {
       "삼일": 9,
       "삼정": 3,
       "안진": 7,
-      "한영": 17,
+      "한영": 18,
       "로컬": 13,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 18,
-      "자격무관": 33
+      "자격무관": 34
     },
     "by_emp_kind": {
-      "인턴": 16,
+      "인턴": 17,
       "정규직": 31,
       "계약직": 3,
       "파트타임": 1
@@ -178,6 +178,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/124247",
       "dday": 6,
       "first_seen": "2026-08-05T15:01:46"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "금융컨설팅부문 Global Finance Transformation팀 인턴",
+      "company": "EY한영",
+      "deadline": "2026-08-12",
+      "posted_date": "2026-08-06",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/124329",
+      "dday": 6,
+      "first_seen": "2026-08-06T10:01:40"
     },
     {
       "source": "anjin",

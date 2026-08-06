@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-06T09:01:41",
+  "generated_at": "2026-08-06T09:31:34",
   "soon_days": 7,
   "counts": {
-    "total": 50,
-    "open": 37,
+    "total": 51,
+    "open": 38,
     "closed": 13,
-    "new": 3,
+    "new": 4,
     "soon": 16,
     "by_firm": {
       "삼일": 9,
-      "삼정": 2,
+      "삼정": 3,
       "안진": 7,
       "한영": 17,
       "로컬": 13,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 18,
-      "자격무관": 32
+      "자격무관": 33
     },
     "by_emp_kind": {
-      "인턴": 15,
+      "인턴": 16,
       "정규직": 31,
       "계약직": 3,
       "파트타임": 1
@@ -444,6 +444,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1785827968134",
       "dday": 15,
       "first_seen": "2026-08-04T16:31:39"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "택스",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "[Tax] Tax 5본부 외국인, 주재원 세무신고 인턴 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-08-23",
+      "posted_date": "2026-08-06",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000928&receive_div_cd=N",
+      "dday": 17,
+      "first_seen": "2026-08-06T09:31:34"
     },
     {
       "source": "kicpa_susup",

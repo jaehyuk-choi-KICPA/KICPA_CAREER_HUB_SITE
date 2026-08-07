@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-07T14:01:43",
+  "generated_at": "2026-08-07T14:31:30",
   "soon_days": 7,
   "counts": {
-    "total": 50,
-    "open": 38,
+    "total": 51,
+    "open": 39,
     "closed": 12,
-    "new": 1,
+    "new": 2,
     "soon": 16,
     "by_firm": {
       "삼일": 9,
       "삼정": 2,
       "안진": 6,
       "한영": 17,
-      "로컬": 14,
+      "로컬": 15,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 19,
+      "수습CPA": 20,
       "자격무관": 31
     },
     "by_emp_kind": {
       "인턴": 14,
-      "정규직": 32,
+      "정규직": 33,
       "계약직": 3,
       "파트타임": 1
     }
@@ -615,6 +615,25 @@
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000927&receive_div_cd=N",
       "dday": 31,
       "first_seen": "2026-08-04T10:31:35"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "택스",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "회계법인 세무업무 담당 직원모집",
+      "company": "동남회계법인",
+      "deadline": "2026-09-07",
+      "posted_date": "2026-08-07",
+      "location": "서울 강남구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1786080283368",
+      "dday": 31,
+      "first_seen": "2026-08-07T14:31:30"
     },
     {
       "source": "anjin",

@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-07T18:31:57",
+  "generated_at": "2026-08-07T19:02:20",
   "soon_days": 7,
   "counts": {
-    "total": 54,
-    "open": 42,
+    "total": 55,
+    "open": 43,
     "closed": 12,
-    "new": 5,
+    "new": 6,
     "soon": 19,
     "by_firm": {
       "삼일": 9,
       "삼정": 2,
       "안진": 9,
       "한영": 17,
-      "로컬": 15,
+      "로컬": 16,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 20,
+      "수습CPA": 21,
       "자격무관": 34
     },
     "by_emp_kind": {
       "인턴": 15,
-      "정규직": 34,
+      "정규직": 35,
       "계약직": 4,
       "파트타임": 1
     }
@@ -653,6 +653,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1785926548000",
       "dday": 24,
       "first_seen": "2026-08-05T20:01:35"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "수습회계사 모집",
+      "company": "세영회계법인",
+      "deadline": "2026-08-31",
+      "posted_date": "2026-08-07",
+      "location": "대구 전체",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1786096758441",
+      "dday": 24,
+      "first_seen": "2026-08-07T19:02:20"
     },
     {
       "source": "samjong",

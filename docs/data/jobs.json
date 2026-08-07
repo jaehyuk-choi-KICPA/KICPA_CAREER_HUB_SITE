@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-07T09:31:35",
+  "generated_at": "2026-08-07T10:01:36",
   "soon_days": 7,
   "counts": {
-    "total": 50,
-    "open": 37,
+    "total": 51,
+    "open": 38,
     "closed": 13,
-    "new": 1,
+    "new": 2,
     "soon": 16,
     "by_firm": {
       "삼일": 9,
       "삼정": 2,
       "안진": 6,
       "한영": 18,
-      "로컬": 13,
+      "로컬": 14,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 18,
+      "수습CPA": 19,
       "자격무관": 32
     },
     "by_emp_kind": {
       "인턴": 15,
-      "정규직": 31,
+      "정규직": 32,
       "계약직": 3,
       "파트타임": 1
     }
@@ -425,6 +425,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1785827968134",
       "dday": 14,
       "first_seen": "2026-08-04T16:31:39"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[하나회계법인 인천 송도] 경력 직원 구인 (근무유형)",
+      "company": "하나회계법인",
+      "deadline": "2026-08-21",
+      "posted_date": "2026-08-07",
+      "location": "인천 연수구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1786063164574",
+      "dday": 14,
+      "first_seen": "2026-08-07T10:01:36"
     },
     {
       "source": "samjong",

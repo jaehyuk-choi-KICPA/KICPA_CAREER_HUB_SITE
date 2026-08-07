@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-08-07T14:31:30",
+  "generated_at": "2026-08-07T15:01:45",
   "soon_days": 7,
   "counts": {
-    "total": 51,
-    "open": 39,
+    "total": 53,
+    "open": 41,
     "closed": 12,
-    "new": 2,
-    "soon": 16,
+    "new": 4,
+    "soon": 18,
     "by_firm": {
       "삼일": 9,
       "삼정": 2,
-      "안진": 6,
+      "안진": 8,
       "한영": 17,
       "로컬": 15,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 20,
-      "자격무관": 31
+      "자격무관": 33
     },
     "by_emp_kind": {
-      "인턴": 14,
+      "인턴": 15,
       "정규직": 33,
-      "계약직": 3,
+      "계약직": 4,
       "파트타임": 1
     }
   },
@@ -102,6 +102,44 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/123878",
       "dday": 2,
       "first_seen": "2026-08-03T10:01:55"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "품질관리실 독립성 부서 계약직 채용",
+      "company": "딜로이트 안진",
+      "deadline": "2026-08-10",
+      "posted_date": "2026-08-07",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5164",
+      "dday": 3,
+      "first_seen": "2026-08-07T15:01:45"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "택스",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "세무자문부문 Intela 업무 지원 인턴",
+      "company": "딜로이트 안진",
+      "deadline": "2026-08-10",
+      "posted_date": "2026-08-07",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5162",
+      "dday": 3,
+      "first_seen": "2026-08-07T15:01:45"
     },
     {
       "source": "hanyoung",

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-08T14:01:40",
+  "generated_at": "2026-08-08T14:31:57",
   "soon_days": 7,
   "counts": {
     "total": 54,
     "open": 42,
     "closed": 12,
-    "new": 7,
+    "new": 6,
     "soon": 20,
     "by_firm": {
       "삼일": 9,
@@ -700,7 +700,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "회계법인 세무업무 담당 직원모집",
       "company": "동남회계법인",
       "deadline": "2026-09-07",

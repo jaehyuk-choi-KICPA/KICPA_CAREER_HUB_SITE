@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-08T19:01:49",
+  "generated_at": "2026-08-08T19:31:32",
   "soon_days": 7,
   "counts": {
     "total": 54,
     "open": 42,
     "closed": 12,
-    "new": 3,
+    "new": 2,
     "soon": 20,
     "by_firm": {
       "삼일": 9,
@@ -662,7 +662,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "수습회계사 모집",
       "company": "세영회계법인",
       "deadline": "2026-08-31",

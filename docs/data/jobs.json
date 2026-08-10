@@ -1,70 +1,32 @@
 {
-  "generated_at": "2026-08-10T23:31:39",
+  "generated_at": "2026-08-11T00:01:49",
   "soon_days": 7,
   "counts": {
-    "total": 56,
-    "open": 44,
+    "total": 54,
+    "open": 42,
     "closed": 12,
     "new": 7,
-    "soon": 20,
+    "soon": 18,
     "by_firm": {
       "삼일": 9,
       "삼정": 2,
-      "안진": 10,
+      "안진": 8,
       "한영": 20,
       "로컬": 13,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 19,
-      "자격무관": 37
+      "자격무관": 35
     },
     "by_emp_kind": {
-      "인턴": 19,
+      "인턴": 18,
       "정규직": 31,
-      "계약직": 4,
+      "계약직": 3,
       "파트타임": 2
     }
   },
   "postings": [
-    {
-      "source": "anjin",
-      "source_label": "딜로이트안진",
-      "firm": "안진",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "계약직",
-      "status": "open",
-      "is_new": false,
-      "title": "품질관리실 독립성 부서 계약직 채용",
-      "company": "딜로이트 안진",
-      "deadline": "2026-08-10",
-      "posted_date": "2026-08-07",
-      "location": "",
-      "emp_type": "",
-      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5164",
-      "dday": 0,
-      "first_seen": "2026-08-07T15:01:45"
-    },
-    {
-      "source": "anjin",
-      "source_label": "딜로이트안진",
-      "firm": "안진",
-      "field": "택스",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "open",
-      "is_new": false,
-      "title": "세무자문부문 Intela 업무 지원 인턴",
-      "company": "딜로이트 안진",
-      "deadline": "2026-08-10",
-      "posted_date": "2026-08-07",
-      "location": "",
-      "emp_type": "",
-      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5162",
-      "dday": 0,
-      "first_seen": "2026-08-07T15:01:45"
-    },
     {
       "source": "anjin",
       "source_label": "딜로이트안진",
@@ -81,7 +43,7 @@
       "location": "",
       "emp_type": "",
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5167",
-      "dday": 1,
+      "dday": 0,
       "first_seen": "2026-08-07T20:31:32"
     },
     {
@@ -100,7 +62,7 @@
       "location": "",
       "emp_type": "",
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5166",
-      "dday": 1,
+      "dday": 0,
       "first_seen": "2026-08-07T18:01:42"
     },
     {
@@ -119,7 +81,7 @@
       "location": "",
       "emp_type": "",
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5160",
-      "dday": 2,
+      "dday": 1,
       "first_seen": "2026-07-30T16:01:37"
     },
     {
@@ -138,7 +100,7 @@
       "location": "",
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/124124",
-      "dday": 2,
+      "dday": 1,
       "first_seen": "2026-08-04T15:31:43"
     },
     {
@@ -157,7 +119,7 @@
       "location": "",
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/124247",
-      "dday": 2,
+      "dday": 1,
       "first_seen": "2026-08-05T15:01:46"
     },
     {
@@ -176,7 +138,7 @@
       "location": "",
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/124329",
-      "dday": 2,
+      "dday": 1,
       "first_seen": "2026-08-06T10:01:40"
     },
     {
@@ -195,7 +157,7 @@
       "location": "",
       "emp_type": "",
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5119",
-      "dday": 3,
+      "dday": 2,
       "first_seen": "2026-06-17T20:17:10"
     },
     {
@@ -214,7 +176,7 @@
       "location": "",
       "emp_type": "정규직",
       "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-full-time.html",
-      "dday": 3,
+      "dday": 2,
       "first_seen": "2026-06-29T10:10:15"
     },
     {
@@ -233,7 +195,7 @@
       "location": "",
       "emp_type": "파트타임",
       "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-part-time.html",
-      "dday": 3,
+      "dday": 2,
       "first_seen": "2026-06-29T10:10:15"
     },
     {
@@ -252,7 +214,7 @@
       "location": "서울 영등포구",
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1784101171573",
-      "dday": 3,
+      "dday": 2,
       "first_seen": "2026-08-03T10:01:55"
     },
     {
@@ -271,7 +233,7 @@
       "location": "",
       "emp_type": "신입/경력",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/122214",
-      "dday": 3,
+      "dday": 2,
       "first_seen": "2026-08-03T09:31:35"
     },
     {
@@ -290,7 +252,7 @@
       "location": "",
       "emp_type": "신입",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/124047",
-      "dday": 3,
+      "dday": 2,
       "first_seen": "2026-08-04T11:01:29"
     },
     {
@@ -309,7 +271,7 @@
       "location": "",
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/124102",
-      "dday": 3,
+      "dday": 2,
       "first_seen": "2026-08-04T14:32:26"
     },
     {
@@ -328,7 +290,7 @@
       "location": "서울 전체",
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1786099307444",
-      "dday": 4,
+      "dday": 3,
       "first_seen": "2026-08-07T20:01:37"
     },
     {
@@ -347,7 +309,7 @@
       "location": "서울 성동구",
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1784703983051",
-      "dday": 7,
+      "dday": 6,
       "first_seen": "2026-07-22T16:31:36"
     },
     {
@@ -366,7 +328,7 @@
       "location": "",
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/124584",
-      "dday": 7,
+      "dday": 6,
       "first_seen": "2026-08-10T13:31:37"
     },
     {
@@ -385,7 +347,7 @@
       "location": "",
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/124623",
-      "dday": 7,
+      "dday": 6,
       "first_seen": "2026-08-10T16:31:37"
     },
     {
@@ -404,7 +366,7 @@
       "location": "",
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/124636",
-      "dday": 7,
+      "dday": 6,
       "first_seen": "2026-08-10T17:31:33"
     },
     {
@@ -423,7 +385,7 @@
       "location": "",
       "emp_type": "",
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5171",
-      "dday": 9,
+      "dday": 8,
       "first_seen": "2026-08-10T15:01:37"
     },
     {
@@ -442,7 +404,7 @@
       "location": "",
       "emp_type": "",
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5137",
-      "dday": 10,
+      "dday": 9,
       "first_seen": "2026-06-25T17:01:34"
     },
     {
@@ -461,7 +423,7 @@
       "location": "",
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/124588",
-      "dday": 10,
+      "dday": 9,
       "first_seen": "2026-08-10T14:01:37"
     },
     {
@@ -480,7 +442,7 @@
       "location": "",
       "emp_type": "인턴",
       "url": "https://www.pwc.com/kr/ko/career/experienced/r260805.html",
-      "dday": 11,
+      "dday": 10,
       "first_seen": "2026-08-05T17:01:40"
     },
     {
@@ -499,7 +461,7 @@
       "location": "",
       "emp_type": "",
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5153",
-      "dday": 11,
+      "dday": 10,
       "first_seen": "2026-07-23T16:42:09"
     },
     {
@@ -518,7 +480,7 @@
       "location": "인천 연수구",
       "emp_type": "정규직",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1786063164574",
-      "dday": 11,
+      "dday": 10,
       "first_seen": "2026-08-07T10:01:36"
     },
     {
@@ -537,7 +499,7 @@
       "location": "",
       "emp_type": "신입",
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000928&receive_div_cd=N",
-      "dday": 13,
+      "dday": 12,
       "first_seen": "2026-08-06T09:31:34"
     },
     {
@@ -556,7 +518,7 @@
       "location": "서울 전체",
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1785723090590",
-      "dday": 14,
+      "dday": 13,
       "first_seen": "2026-08-03T11:31:30"
     },
     {
@@ -575,7 +537,7 @@
       "location": "지역무관 지역무관",
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1783951218856",
-      "dday": 21,
+      "dday": 20,
       "first_seen": "2026-07-13T23:02:05"
     },
     {
@@ -594,7 +556,7 @@
       "location": "서울 강남구",
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1783991768082",
-      "dday": 21,
+      "dday": 20,
       "first_seen": "2026-07-15T20:01:57"
     },
     {
@@ -613,7 +575,7 @@
       "location": "지역무관 지역무관",
       "emp_type": "정규직",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1784108416966",
-      "dday": 21,
+      "dday": 20,
       "first_seen": "2026-08-04T00:01:42"
     },
     {
@@ -632,7 +594,7 @@
       "location": "서울 전체",
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1785831016718",
-      "dday": 21,
+      "dday": 20,
       "first_seen": "2026-08-04T17:31:35"
     },
     {
@@ -651,7 +613,7 @@
       "location": "서울 전체",
       "emp_type": "정규직",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1785926548000",
-      "dday": 21,
+      "dday": 20,
       "first_seen": "2026-08-05T20:01:35"
     },
     {
@@ -670,7 +632,7 @@
       "location": "대구 전체",
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1786096758441",
-      "dday": 21,
+      "dday": 20,
       "first_seen": "2026-08-07T19:02:20"
     },
     {
@@ -689,7 +651,7 @@
       "location": "",
       "emp_type": "신입",
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000927&receive_div_cd=N",
-      "dday": 28,
+      "dday": 27,
       "first_seen": "2026-08-04T10:31:35"
     },
     {
@@ -708,7 +670,7 @@
       "location": "서울 강남구",
       "emp_type": "정규직",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1786080283368",
-      "dday": 28,
+      "dday": 27,
       "first_seen": "2026-08-07T14:31:30"
     },
     {
@@ -727,7 +689,7 @@
       "location": "부산 남구",
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1786323784665",
-      "dday": 29,
+      "dday": 28,
       "first_seen": "2026-08-10T10:31:50"
     },
     {
@@ -746,7 +708,7 @@
       "location": "",
       "emp_type": "",
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5140",
-      "dday": 46,
+      "dday": 45,
       "first_seen": "2026-07-27T10:01:49"
     },
     {
@@ -879,7 +841,7 @@
       "location": "",
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/114543",
-      "dday": -68,
+      "dday": -69,
       "first_seen": ""
     },
     {
@@ -898,7 +860,7 @@
       "location": "",
       "emp_type": "신입/경력",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/118434",
-      "dday": -48,
+      "dday": -49,
       "first_seen": ""
     },
     {
@@ -917,7 +879,7 @@
       "location": "",
       "emp_type": "신입/경력",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/117226",
-      "dday": -41,
+      "dday": -42,
       "first_seen": ""
     },
     {
@@ -936,7 +898,7 @@
       "location": "",
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/121274",
-      "dday": -27,
+      "dday": -28,
       "first_seen": ""
     },
     {
@@ -955,7 +917,7 @@
       "location": "",
       "emp_type": "신입",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/119887",
-      "dday": -22,
+      "dday": -23,
       "first_seen": ""
     },
     {
@@ -974,7 +936,7 @@
       "location": "",
       "emp_type": "정규직",
       "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-full-time.html",
-      "dday": -18,
+      "dday": -19,
       "first_seen": ""
     },
     {
@@ -993,7 +955,7 @@
       "location": "서울 광진구",
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1784019998262",
-      "dday": -10,
+      "dday": -11,
       "first_seen": ""
     },
     {
@@ -1012,7 +974,7 @@
       "location": "서울 전체",
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1784075210430",
-      "dday": -10,
+      "dday": -11,
       "first_seen": ""
     },
     {
@@ -1031,7 +993,7 @@
       "location": "",
       "emp_type": "신입",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/122851",
-      "dday": -8,
+      "dday": -9,
       "first_seen": ""
     },
     {
@@ -1050,7 +1012,7 @@
       "location": "지역무관 지역무관",
       "emp_type": "정규직",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1776647546333",
-      "dday": -3,
+      "dday": -4,
       "first_seen": ""
     },
     {
@@ -1069,7 +1031,7 @@
       "location": "서울 강남구",
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1785285124252",
-      "dday": -1,
+      "dday": -2,
       "first_seen": ""
     },
     {
@@ -1088,7 +1050,7 @@
       "location": "",
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/123878",
-      "dday": -1,
+      "dday": -2,
       "first_seen": ""
     }
   ]

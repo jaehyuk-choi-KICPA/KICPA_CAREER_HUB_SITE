@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-10T10:01:48",
+  "generated_at": "2026-08-10T10:31:50",
   "soon_days": 7,
   "counts": {
-    "total": 51,
-    "open": 37,
+    "total": 52,
+    "open": 38,
     "closed": 14,
-    "new": 0,
+    "new": 1,
     "soon": 17,
     "by_firm": {
       "삼일": 9,
       "삼정": 2,
       "안진": 9,
       "한영": 17,
-      "로컬": 12,
+      "로컬": 13,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 18,
+      "수습CPA": 19,
       "자격무관": 33
     },
     "by_emp_kind": {
       "인턴": 16,
-      "정규직": 30,
+      "정규직": 31,
       "계약직": 4,
       "파트타임": 1
     }
@@ -615,6 +615,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1786080283368",
       "dday": 28,
       "first_seen": "2026-08-07T14:31:30"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[선일회계법인 부산본점] 2026년 신입공인회계사 모집 일정 안내",
+      "company": "선일회계법인",
+      "deadline": "2026-09-08",
+      "posted_date": "2026-08-10",
+      "location": "부산 남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1786323784665",
+      "dday": 29,
+      "first_seen": "2026-08-10T10:31:50"
     },
     {
       "source": "anjin",

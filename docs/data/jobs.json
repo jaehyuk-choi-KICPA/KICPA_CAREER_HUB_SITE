@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-08-10T16:01:43",
+  "generated_at": "2026-08-10T16:31:37",
   "soon_days": 7,
   "counts": {
-    "total": 54,
-    "open": 41,
-    "closed": 13,
-    "new": 4,
-    "soon": 18,
+    "total": 55,
+    "open": 43,
+    "closed": 12,
+    "new": 6,
+    "soon": 19,
     "by_firm": {
       "삼일": 9,
       "삼정": 2,
       "안진": 10,
-      "한영": 18,
+      "한영": 19,
       "로컬": 13,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 19,
-      "자격무관": 35
+      "자격무관": 36
     },
     "by_emp_kind": {
-      "인턴": 17,
+      "인턴": 18,
       "정규직": 31,
       "계약직": 4,
       "파트타임": 2
@@ -368,6 +368,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/124584",
       "dday": 7,
       "first_seen": "2026-08-10T13:31:37"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "금융컨설팅부문 Business Consulting 인턴",
+      "company": "EY한영",
+      "deadline": "2026-08-17",
+      "posted_date": "2026-08-10",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/124623",
+      "dday": 7,
+      "first_seen": "2026-08-10T16:31:37"
     },
     {
       "source": "anjin",
@@ -755,6 +774,25 @@
       "firm": "삼일",
       "field": "기타",
       "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "Public Service팀 컨설팅 인턴 채용(서울, 인천, 수원, 광주, 천안, 부산, 의성)",
+      "company": "삼일PwC",
+      "deadline": "",
+      "posted_date": "",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://www.pwc.com/kr/ko/career/experienced/r260723.html",
+      "dday": null,
+      "first_seen": "2026-08-10T16:31:37"
+    },
+    {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "기타",
+      "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
       "is_new": false,
@@ -918,25 +956,6 @@
       "emp_type": "정규직",
       "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-full-time.html",
       "dday": -18,
-      "first_seen": ""
-    },
-    {
-      "source": "samil",
-      "source_label": "삼일PwC",
-      "firm": "삼일",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "Public Service팀 컨설팅 인턴 채용(서울, 인천, 수원, 광주, 천안, 부산, 의성)",
-      "company": "삼일PwC",
-      "deadline": "2026-07-31",
-      "posted_date": "",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://www.pwc.com/kr/ko/career/experienced/r260723.html",
-      "dday": -10,
       "first_seen": ""
     },
     {

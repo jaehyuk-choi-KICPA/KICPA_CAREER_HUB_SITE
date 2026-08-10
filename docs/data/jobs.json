@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-08-10T17:01:57",
+  "generated_at": "2026-08-10T17:31:33",
   "soon_days": 7,
   "counts": {
-    "total": 55,
-    "open": 43,
+    "total": 56,
+    "open": 44,
     "closed": 12,
-    "new": 6,
-    "soon": 19,
+    "new": 7,
+    "soon": 20,
     "by_firm": {
       "삼일": 9,
       "삼정": 2,
       "안진": 10,
-      "한영": 19,
+      "한영": 20,
       "로컬": 13,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 19,
-      "자격무관": 36
+      "자격무관": 37
     },
     "by_emp_kind": {
-      "인턴": 18,
+      "인턴": 19,
       "정규직": 31,
       "계약직": 4,
       "파트타임": 2
@@ -387,6 +387,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/124623",
       "dday": 7,
       "first_seen": "2026-08-10T16:31:37"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "금융컨설팅부문 계리팀(Actuarial) 인턴 컨설턴트",
+      "company": "EY한영",
+      "deadline": "2026-08-17",
+      "posted_date": "2026-08-10",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/124636",
+      "dday": 7,
+      "first_seen": "2026-08-10T17:31:33"
     },
     {
       "source": "anjin",

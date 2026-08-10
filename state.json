@@ -1017,7 +1017,8 @@
     "uid": "hanyoung:124623",
     "first_seen": "2026-08-10T16:31:37",
     "last_seen": "2026-08-10",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-08-10"
   },
   "samil:r260723": {
     "source": "samil",
@@ -1035,6 +1036,7 @@
     "uid": "samil:r260723",
     "first_seen": "2026-08-10T16:31:37",
     "last_seen": "2026-08-10",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-08-10"
   }
 }

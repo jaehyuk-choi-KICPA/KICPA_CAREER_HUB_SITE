@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-11T13:31:30",
+  "generated_at": "2026-08-11T14:01:52",
   "soon_days": 7,
   "counts": {
-    "total": 55,
-    "open": 43,
+    "total": 56,
+    "open": 44,
     "closed": 12,
-    "new": 8,
+    "new": 7,
     "soon": 18,
     "by_firm": {
-      "삼일": 9,
+      "삼일": 10,
       "삼정": 2,
       "안진": 8,
       "한영": 20,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 20,
-      "자격무관": 35
+      "자격무관": 36
     },
     "by_emp_kind": {
-      "인턴": 18,
+      "인턴": 19,
       "정규직": 31,
       "계약직": 4,
       "파트타임": 2
@@ -320,7 +320,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "감사부문 회계감사시스템 지원 인턴",
       "company": "EY한영",
       "deadline": "2026-08-17",
@@ -415,7 +415,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "전략·재무자문부문 Deal2 (가치평가팀) 단기 인턴 (AI 인재 모집)",
       "company": "EY한영",
       "deadline": "2026-08-20",
@@ -520,6 +520,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1785723090590",
       "dday": 13,
       "first_seen": "2026-08-03T11:31:30"
+    },
+    {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "Public Service팀 내 의료헬스케어 분야 RA 인턴 채용",
+      "company": "삼일PwC",
+      "deadline": "2026-08-27",
+      "posted_date": "",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://www.pwc.com/kr/ko/career/experienced/r260810.html",
+      "dday": 16,
+      "first_seen": "2026-08-11T14:01:52"
     },
     {
       "source": "kicpa_susup",

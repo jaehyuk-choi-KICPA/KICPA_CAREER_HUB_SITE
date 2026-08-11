@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-11T17:31:34",
+  "generated_at": "2026-08-11T18:01:44",
   "soon_days": 7,
   "counts": {
-    "total": 56,
-    "open": 44,
+    "total": 57,
+    "open": 45,
     "closed": 12,
-    "new": 3,
-    "soon": 18,
+    "new": 4,
+    "soon": 19,
     "by_firm": {
       "삼일": 10,
       "삼정": 2,
-      "안진": 8,
+      "안진": 9,
       "한영": 20,
       "로컬": 14,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 20,
-      "자격무관": 36
+      "자격무관": 37
     },
     "by_emp_kind": {
       "인턴": 19,
-      "정규직": 31,
+      "정규직": 32,
       "계약직": 4,
       "파트타임": 2
     }
@@ -368,6 +368,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/124636",
       "dday": 6,
       "first_seen": "2026-08-10T17:31:33"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "경영자문부문 ESG 연결 및 기후 공시 컨설턴트(Consultant)",
+      "company": "딜로이트 안진",
+      "deadline": "2026-08-18",
+      "posted_date": "2026-08-11",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5172",
+      "dday": 7,
+      "first_seen": "2026-08-11T18:01:44"
     },
     {
       "source": "anjin",

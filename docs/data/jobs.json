@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-08-11T11:31:29",
+  "generated_at": "2026-08-11T12:01:36",
   "soon_days": 7,
   "counts": {
-    "total": 54,
-    "open": 42,
+    "total": 55,
+    "open": 43,
     "closed": 12,
-    "new": 6,
+    "new": 8,
     "soon": 18,
     "by_firm": {
       "삼일": 9,
       "삼정": 2,
       "안진": 8,
       "한영": 20,
-      "로컬": 13,
+      "로컬": 14,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 19,
+      "수습CPA": 20,
       "자격무관": 35
     },
     "by_emp_kind": {
       "인턴": 18,
       "정규직": 31,
-      "계약직": 3,
+      "계약직": 4,
       "파트타임": 2
     }
   },
@@ -560,25 +560,6 @@
       "first_seen": "2026-07-15T20:01:57"
     },
     {
-      "source": "kicpa_cpa",
-      "source_label": "구인(CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "자격무관",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "대현회계법인-외국계 기장 여직원 구인",
-      "company": "대현회계법인",
-      "deadline": "2026-08-31",
-      "posted_date": "2026-08-03",
-      "location": "지역무관 지역무관",
-      "emp_type": "정규직",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1784108416966",
-      "dday": 20,
-      "first_seen": "2026-08-04T00:01:42"
-    },
-    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "로컬",
@@ -634,6 +615,44 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1786096758441",
       "dday": 20,
       "first_seen": "2026-08-07T19:02:20"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "(대현회계법인)--수습회계사파트타임 모집(계약직)",
+      "company": "대현회게법인",
+      "deadline": "2026-08-31",
+      "posted_date": "2026-08-11",
+      "location": "서울 강남구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1786416716338",
+      "dday": 20,
+      "first_seen": "2026-08-11T12:01:36"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "대현회계법인-외국계 기장 여직원 구인",
+      "company": "대현회계법인",
+      "deadline": "2026-08-31",
+      "posted_date": "2026-08-11",
+      "location": "지역무관 지역무관",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1784108416966",
+      "dday": 20,
+      "first_seen": "2026-08-11T12:01:36"
     },
     {
       "source": "samjong",

@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-12T10:31:44",
+  "generated_at": "2026-08-12T11:01:43",
   "soon_days": 7,
   "counts": {
-    "total": 56,
-    "open": 44,
+    "total": 57,
+    "open": 45,
     "closed": 12,
-    "new": 5,
+    "new": 6,
     "soon": 18,
     "by_firm": {
       "삼일": 10,
       "삼정": 2,
       "안진": 8,
       "한영": 20,
-      "로컬": 14,
+      "로컬": 15,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 20,
+      "수습CPA": 21,
       "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 18,
-      "정규직": 31,
+      "정규직": 32,
       "계약직": 5,
       "파트타임": 2
     }
@@ -672,6 +672,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1784108416966",
       "dday": 19,
       "first_seen": "2026-08-11T12:01:36"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[정일회계법인] 수습 공인회계사 채용",
+      "company": "정일회계법인",
+      "deadline": "2026-08-31",
+      "posted_date": "2026-08-12",
+      "location": "서울 전체",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1786500011742",
+      "dday": 19,
+      "first_seen": "2026-08-12T11:01:43"
     },
     {
       "source": "samjong",

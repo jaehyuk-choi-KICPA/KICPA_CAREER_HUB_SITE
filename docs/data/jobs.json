@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-13T12:32:17",
+  "generated_at": "2026-08-13T13:01:52",
   "soon_days": 7,
   "counts": {
-    "total": 58,
-    "open": 43,
+    "total": 59,
+    "open": 44,
     "closed": 15,
-    "new": 5,
+    "new": 6,
     "soon": 15,
     "by_firm": {
       "삼일": 12,
       "삼정": 2,
       "안진": 6,
       "한영": 20,
-      "로컬": 16,
+      "로컬": 17,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 22,
+      "수습CPA": 23,
       "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 18,
-      "정규직": 32,
+      "정규직": 33,
       "계약직": 6,
       "파트타임": 2
     }
@@ -444,6 +444,25 @@
       "url": "https://www.pwc.com/kr/ko/career/experienced/r260810.html",
       "dday": 14,
       "first_seen": "2026-08-11T14:01:52"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[우리회계법인] 수습회계사 채용",
+      "company": "우리회계법인",
+      "deadline": "2026-08-28",
+      "posted_date": "2026-08-13",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1786592545618",
+      "dday": 15,
+      "first_seen": "2026-08-13T13:01:52"
     },
     {
       "source": "kicpa_susup",

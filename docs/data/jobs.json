@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-08-13T17:31:37",
+  "generated_at": "2026-08-13T18:02:29",
   "soon_days": 7,
   "counts": {
     "total": 62,
-    "open": 47,
-    "closed": 15,
+    "open": 48,
+    "closed": 14,
     "new": 10,
     "soon": 18,
     "by_firm": {
       "삼일": 13,
       "삼정": 2,
       "안진": 6,
-      "한영": 22,
+      "한영": 21,
       "로컬": 17,
-      "기타": 2
+      "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 23,
-      "자격무관": 39
+      "수습CPA": 24,
+      "자격무관": 38
     },
     "by_emp_kind": {
       "인턴": 21,
@@ -522,6 +522,25 @@
       "first_seen": "2026-08-13T13:01:52"
     },
     {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "기타",
+      "field": "기타",
+      "qualification": "수습CPA",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "[한국자산평가] [대체평가3사업본부] 경력 및 신입(인턴)직원 채용 공고",
+      "company": "한국자산평가",
+      "deadline": "2026-08-30",
+      "posted_date": "2026-08-13",
+      "location": "서울 종로구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1786610183042",
+      "dday": 17,
+      "first_seen": "2026-08-13T18:02:29"
+    },
+    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "로컬",
@@ -738,7 +757,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[선일회계법인 부산본점] 2026년 신입공인회계사 모집 일정 안내",
       "company": "선일회계법인",
       "deadline": "2026-09-08",
@@ -1183,25 +1202,6 @@
       "location": "",
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/124247",
-      "dday": -1,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "금융컨설팅부문 Global Finance Transformation팀 인턴",
-      "company": "EY한영",
-      "deadline": "2026-08-12",
-      "posted_date": "2026-08-06",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/124329",
       "dday": -1,
       "first_seen": ""
     }

@@ -1,50 +1,56 @@
 {
-  "generated_at": "2026-08-13T12:02:03",
+  "generated_at": "2026-08-13T12:32:22",
   "items": [
     {
-      "source": "gnews_딜·M&A",
-      "source_label": "블루밍비트",
-      "title": "앤트로픽, AI 스타트업 디카트 60억달러 인수 추진…IPO 앞두고 인프라 강화",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFByU0xVd3VXU1dfWUlMeXphM2NrUDZHSXQ5aC1BVV9UdmRidWs3YmQyREFyRERUWFVtRWIxcFJMemVOSGVaQnktRWo3RldMSlhn?oc=5",
-      "published": "2026-08-13",
-      "published_at": "2026-08-13T02:46:20",
-      "summary": "",
-      "category": "딜·M&A",
-      "dupes": [
-        {
-          "title": "앤트로픽, IPO 앞두고 투자자 신뢰 구축 총력전...시장 우려 정면 돌파",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBDLTVqVUl4MXJYQmRFSEhwYlNzaUFDWkp5TmVuYWdZNHBNa1N4NUhNMmU1TENhbHFuQ3dRaTRLRHJOMmtRZ2FldkkxYXBCWElOTjBQSVRmX0RyZFBMSlBNNDdDSEhHNm5iSHc?oc=5",
-          "source_label": "AI타임스",
-          "published": "2026-08-12"
-        }
-      ]
-    },
-    {
       "source": "gnews_세무",
-      "source_label": "천지일보",
-      "title": "국세청 KB국민은행 특별세무조사 착수",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBQdnRtendIN21wRTZHTXgzbXo0cHYxN3NpcV9jdGJrRzI4Q29DclAzcXVYZDBIU0J6NGc1T1RFS01lSl8xd1dZdC1RX2ozUzdGYWxRR2t5dXhrMkFjZ2Nod2dPVldPUXBGbnc?oc=5",
+      "source_label": "ajunews.com",
+      "title": "국세청, KB국민은행 특별세무조사…서울청 조사4국 30여명 투입",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9tTmRLekNnRUNJWGNrM21QbGZ5cDlCN2JSZ1VURTBLazJiRTdxenpRcHNMak5YcXViS2NhYWQ0bWpDc016OGpXR3g2WWlwakR2bWFDT1RQd2tXZ9IBWEFVX3lxTFBGbEotZ003cG5ZMkdRU2pVRXhCZVd3MTdHajNVWmN2VF83c3VlV3JOLUpiU2FKRk8wQmNLU09GQTRZdFowYTJVakV3V0J1TGdNVHhyU3V4Szk?oc=5",
       "published": "2026-08-13",
-      "published_at": "2026-08-13T02:44:48",
+      "published_at": "2026-08-13T03:10:41",
       "summary": "",
       "category": "세무",
       "dupes": [
         {
+          "title": "국세청, KB국민은행 특별세무조사…조사4국 투입",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5POFpCclBibUpwYURTcTRoSHluSTBiZjYwcHdXQUJIY1FuNVBhR01vMTNtOEx6NTA2SXRHMGFxZDdrVnJDRWFTSWY4YXEzaHhWOUtabWhoR0NKUzlSdGhDTkxlTzdxZFIyM09N?oc=5",
+          "source_label": "뉴스저널리즘",
+          "published": "2026-08-13"
+        },
+        {
+          "title": "국세청, KB국민은행 특별세무조사…서울청 조사4국 전격 투입",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5vZlVTeXJFOEUxcjA5MDk4YURZZGhOQ3RILUF0cUpkX050VlllS3BaemU3Yi04UGxoUjhOQjFlSFFnYVlob2t1UGhOeE00d0ZmeTVTWnZGVHE5SnNOZjVZVGZjNGRNeDZIMDJxQ2dIWEc?oc=5",
+          "source_label": "비즈중앙",
+          "published": "2026-08-13"
+        },
+        {
+          "title": "‘수백억대 세금 누락 정황’ KB국민은행 특별 세무조사",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9NMk5hZXRPby1kZWJERndDY3p3T2piSGJTT2x0dHlMZ184dHFPRGgxakMzTG0tTUxIcGg3VzB3ZXdkY05FdXFTUTgzYmtweDlX?oc=5",
+          "source_label": "문화일보",
+          "published": "2026-08-13"
+        },
+        {
+          "title": "국세청, KB국민은행 특별세무조사 착수…금융권 전방위 확산 - 머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5GLWtVZXZMb2FnSXlOY1BwSm9IbFR4bERYYlVEZDFnOG5pT2FSc3l3ZHl4MzNBZUZxT1o4UnczSHZET0VpRVppNGd0RDNIbE5DS29acGt6NmtibVBwaXBsaFlmcmRHUlZrZUlN0gFwQVVfeXFMUExFTVJ2MjgxLXo5VFpLcF9sQW5KZ2dzMzBjYUpVclptbHlhRzF0aUVkbDJBYTlUOWRJY0hKQ2VMMnB3emptNE1od1BpT01TSWUybXJ4dGtBTkxoY2RjSUZHMlpZd3JmVVlLUWFyMklXbA?oc=5",
+          "source_label": "머니투데이",
+          "published": "2026-08-13"
+        },
+        {
+          "title": "국세청, KB국민은행 대상 특별 세무조사 착수… 금융권 전방위로 확산",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5ybHp4Q0x4NjdSSXJtX2gtdkZzZk9aN0VqMjRWNDZvTlhseWVtRXNjNmY4MXM4dUZPZFI1bnZyVFlMV0p5dm1TanNSLWN1a2VnM1JMU2lfNC3SAVRBVV95cUxQZkM0N20zR3JLM0RXRFdLNlRNR09TNFpUWXd4enFjeVc3Qi1WLUQ1MThwVFlLTTBTdGVBVUZ6TENYOUlxYWs4aXY4WGM1VjhjVERhUWY?oc=5",
+          "source_label": "세계일보",
+          "published": "2026-08-13"
+        },
+        {
+          "title": "국세청 KB국민은행 특별세무조사 착수",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBQdnRtendIN21wRTZHTXgzbXo0cHYxN3NpcV9jdGJrRzI4Q29DclAzcXVYZDBIU0J6NGc1T1RFS01lSl8xd1dZdC1RX2ozUzdGYWxRR2t5dXhrMkFjZ2Nod2dPVldPUXBGbnc?oc=5",
+          "source_label": "천지일보",
+          "published": "2026-08-13"
+        },
+        {
           "title": "[속보] 국세청, KB국민은행 '특별세무조사' 착수",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5zVHVnSTBqV1M4cjZSd1ZkcEhLOElrM1d1UEkxR29aYWxUNVJ2cmpOQTh6OC16cWpJb2pRTzZTWjM2aTRJYUhvLU40WV9lU0xjc3l0X29rWTV5cW9y?oc=5",
           "source_label": "뉴스핌",
-          "published": "2026-08-13"
-        },
-        {
-          "title": "[속보] 국세청, KB국민은행 탈세 혐의 포착 특별세무조사 착수",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBJWGt4eHVleENlN0NQRzRBTXg3Z1FwWFNNZVFpSFBnenVfY1FhcDFIWjk5eFFaZ014NWFFT3RudUtOSlVONUFWZUdxd191amJNMkY5aWI2WmtfaUxUNGNCVC14alBhTjZsTGfSAW5BVV95cUxQOG1nR3BpbFJFbFU4RUFMdGI1R1RqNGFGcmxVVGpDNW9KVzFzUDZIYmY3NDdxb0lGbU10Mm45cmo2QzdBSC10TUdLTWtiWWMteXRRNmQxYUNQcDVDUjVPWHA3cTBXX0t5a0pPb2c2Zw?oc=5",
-          "source_label": "퍼블릭타임스",
-          "published": "2026-08-13"
-        },
-        {
-          "title": "국세청, KB국민은행 특별세무조사 착수…연말까지 진행",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9kZWV1OUQycWZMRXM5bEFaMHduSFl0S0ZwUk52cVFwR0U5TTQtTTAwRF9YSmZKdlAwN1Ywa29KZ0xiQWFsaUFGMHJaN0xUQnFhdlk2b9IBWkFVX3lxTE9zUGtkQlFCM3hYazVaZ3NJWnNZdl9wR3JGRmkxcVF1V0g1bWh4RGF5MmVYbVBSbVdGcmZGZFlIVFRGaDk2cXJpYnUyd2hNVXF2anZLTVpvYzh5dw?oc=5",
-          "source_label": "뉴스1",
           "published": "2026-08-13"
         },
         {
@@ -66,75 +72,21 @@
           "published": "2026-08-13"
         },
         {
-          "title": "국세청, KB국민은행 특별세무조사",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOb0FPY3VwczhBcmY1Z1pTX1hWZUhFZWpVQ1llb2laRWdGQjdEenEwVVo1UmVrdWxTRUJxaVUtbDV2X2RzQ1BaOU1oQTZnRS1NVVJOR1RLZXRIN1JfU3RjdzRsc2lBb1JPZEZzalMyb2xqbUJMTzFqTDRNenRiWk04WV95Z0ZKd2xMdmgwNVN3?oc=5",
-          "source_label": "조선일보",
-          "published": "2026-08-13"
-        },
-        {
           "title": "[속보] 국세청, KB국민은행 특별세무조사 착수",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9UcFBDeGRPR3hSdDBiaUVpZFN3M2tzR0FsZEFRZWV3aVBBN00zOFIwbEtoaGg3MlNBSTRQQ095V3NjRHROYXZZbEJvUXc1UWdQTnlOY21CQ3d6U3oyWWdybg?oc=5",
           "source_label": "KBC광주방송",
           "published": "2026-08-13"
         },
         {
-          "title": "국세청, KB국민은행 특별세무조사 착수…올해 연말까지",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBoa0NkRkNQQlY1SmdjU3NQalN1aTNTWVduSFJpNlFxdlF5TmYzWUtmcHl1aFB1Tkt2eFh3S1d2Z1VHdk9VTU1yT2lWV096Y0VVX2c2VEdRdUJxaWPSAWBBVV95cUxQUDV2THpUN1N0U2h5UU5IaUlsNGhvTEpUYW5nTnZRWDZuWFNCc3d2TmlQN3R1STNpWVFpS3JXTWxCZWtybllFY3FQWVJQYXNicWNfSzZ0MkhwMGo4NENhUXg?oc=5",
-          "source_label": "연합뉴스",
-          "published": "2026-08-13"
-        },
-        {
-          "title": "석 달 만에 금융권 향한 국세청 조사4국…이번엔 KB국민은행",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBISXc0NGdOcjJaMUVlbGVGNkJBVWFQbDNaVjRIbFNPT0pHZTdad1V6NnhUZEp6WHROYmNYdVJLYlNPNUNkWUI0TGhLb19sa01QZW90bHVNb1R1dFFjTF8wVzFvcw?oc=5",
-          "source_label": "tfmedia.co.kr",
-          "published": "2026-08-13"
-        },
-        {
-          "title": "KB국민은행 탈세의혹 특별세무조사…조사4국 ‘저승사자’ 투입",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE90RXM3c1RncjhDSzJJeGJmY25yanZudmpidE9WT3NhRWJoQVA5c0dxV2dqZlZwSkIzVTJEU19XcnNOQ0RoOU8xV2NvMXZLS1VXcW9NMHc1NnY5NDVuYXfSAWNBVV95cUxNR0FqU3dITHh0YlFMYU51empzZF8yUldDUks2UEpScWl1akhMY0xoQmtPMFFTYmhjelhLTldRaU1HZWVZZnhmcGtUdzBhaXZoUjN6dXlBZzF5UGxCRURxOWhieWc?oc=5",
-          "source_label": "채널A",
-          "published": "2026-08-13"
-        },
-        {
-          "title": "국세청, KB국민은행 특별세무조사…조사4국 투입",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5POFpCclBibUpwYURTcTRoSHluSTBiZjYwcHdXQUJIY1FuNVBhR01vMTNtOEx6NTA2SXRHMGFxZDdrVnJDRWFTSWY4YXEzaHhWOUtabWhoR0NKUzlSdGhDTkxlTzdxZFIyM09N?oc=5",
-          "source_label": "ngetnews.com",
-          "published": "2026-08-13"
-        },
-        {
-          "title": "국세청, KB국민은행 특별 세무조사…금융권 전반 확산되나",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1VOG9IOFRxd3pLUU1Ib1JkZzR3N0tXbzEzZGxNdWRBdE52QWVZQ2MwREVyc0NBeF9MNlhwdnVGRk5kd2lyODFkcERsa3JwMHd1WnNsZlRBenppZ01sRjZveGd3?oc=5",
-          "source_label": "디지털데일리",
+          "title": "국세청, KB국민은행 특별 세무조사 착수…조사4국 전격 투입",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5aVGkwSWE4TFM2NWRienJRNzE3dFhiYkF3V2RZRDJwcGluTzVlakxKUElmS3d4N01RWU9BOHFRdzdHTnJ1N0FZMWJySHJrTHlPeEVYMUtYS01CZjUyam5WRFVMWWJZVnZ4bUxxVlBPU3jSAXRBVV95cUxOb1FNNnJzZ3FDcTF1cmFubEswN0duQjhNbTk4Q08tR19mNElOblpCVjhGQW83bDZ4Y0dpbWYtcUxRcUlfejRmUWVSb0p3WS1GVHh2SXVOU3JPcHlMRkRSMUJUZC1CNUktMTQtSzVPS2JlMlpneQ?oc=5",
+          "source_label": "산경투데이",
           "published": "2026-08-13"
         },
         {
           "title": "국세청 조사4국, KB국민은행 특별 세무조사",
           "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE94d0ZtYkxsMEZ4cnRHdmRqbUNZOFF1SEZ3bmVfdlZUdW9DZWUxTWlCZ2NfclZzdV84QmJKeGs1dUFaQWE0VjVWSG1ZOTE5YmNzT1Z6RFUydmdhZDEzbDRySjliYTBpY2VpeWxpd3ZITDVaWjdKQmg0?oc=5",
           "source_label": "한국경제TV",
-          "published": "2026-08-13"
-        },
-        {
-          "title": "국세청, KB국민은행 특별 세무조사 착수",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5UNGZ2V293Y0h2SW0ydm9GRVl4TzJLRDlaUWd1YUg5QkphVVJ3b2EyUmZzcy1HTGRFbkNqQVdWcTBVQUJoRkhLcTFsQ0MzUFhNNEtzUWdiTkN1WW8zVjY3VnFHbEFiQ1piakdZTlY4ZjVYUQ?oc=5",
-          "source_label": "hani.co.kr",
-          "published": "2026-08-13"
-        },
-        {
-          "title": "국세청, KB국민은행 특별 세무조사…금융권 전반 확산",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5LcC01VXFiREZwN290WS1URHk0dV9UNzk2cTFlcVNkNHU1XzNiMGdqbXR1YU5qdDYzQXpvdXhfMUZSamt5amZQOWVZNW9qTG5IOG5zX3l0YkhWU0xpUFpWVHV6YW8?oc=5",
-          "source_label": "서울경제TV",
-          "published": "2026-08-13"
-        },
-        {
-          "title": "국세청, KB국민은행 특별 세무조사",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5Vb29LekNDdXZESDlJZGlUcVVRX2x5OVFlOUdUd1J4aWp5RG0teEx1V0tXbGZtUHV4LWZZSW8zb0stTmdlTnpDVVZ3VHZGUnNKS2dEdnpJMGs3eGowOGFhMnVHQVBEZDJ5OUZKQlU5bk7SAXRBVV95cUxQYl9CVGhKcFFGdHVudUFaQjN0cTVoTDRkaUVyT2tPSEFDQWdNbklvRzJqRnp4aUNuR2ptZmlHWm1JTlNKYlpwSDcyNlF2UjdXeXMzeG1BajNEY0hPTXF6TjczMWlnZklLYWZ2MlM1V0RqSVZpcA?oc=5",
-          "source_label": "IT조선",
-          "published": "2026-08-13"
-        },
-        {
-          "title": "국세청, KB국민은행 특별 세무조사 - 조선비즈",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSUhzeDRhRmRpT1RKeHFESzZQTU0yeURuaUZXTHZoQmNnTEd5ZHMzem9uLWZDU3NPNG5RbjNDNm0xcUttcEFyTTFTT0NPTUZZcjFLUkk1d1pRVXgtMTM1N25hZjNMR0IyTWMxeVlaWndPNXVhSHhadUlGY2JIT3NSZzN5bmtfQdIBmgFBVV95cUxQLU9lUWVZa2V6RkV1Y0FpMVNic1ZoOExSZ1FPZHBObEpZcVBuOTFncjlTSmR0Z2JQdVI5TGJPTnNYc0hDeW1vd3F5ajJIa1NsTW9tYnY2MlNMM19uQ1U3QWloVUJqMnZRTThBSlEzU1IwdlpRNWI0aHVwMW9FaDVBd0toVF9oTmluVVFycUJzWTdFVGR1X2VlV3FB?oc=5",
-          "source_label": "Chosunbiz",
           "published": "2026-08-13"
         },
         {
@@ -150,9 +102,63 @@
           "published": "2026-08-13"
         },
         {
+          "title": "국세청, KB국민은행 특별 세무조사 착수",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5UNGZ2V293Y0h2SW0ydm9GRVl4TzJLRDlaUWd1YUg5QkphVVJ3b2EyUmZzcy1HTGRFbkNqQVdWcTBVQUJoRkhLcTFsQ0MzUFhNNEtzUWdiTkN1WW8zVjY3VnFHbEFiQ1piakdZTlY4ZjVYUQ?oc=5",
+          "source_label": "한겨레",
+          "published": "2026-08-13"
+        },
+        {
           "title": "국세청, KB국민은행 특별 세무조사 착수‥연말까지 진행",
           "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1TVUtiSzh0LWFOWi12ZlJzZGxfX2FTYi1mMXNzSFg4V1BoU240VDNoQ18tYWxEdHNVcDBLd1hkNTIxNmd0LUZ5OG9YSGs1S1l1U25oWDRJS1dvMG9TcGoxLXdnSnVPOXQ5a3dIOHZBaWJJMXJL0gF0QVVfeXFMTXd0OGdGMDN0LWlENFJmY1F6ZUtBOU52QlVhWjFSck9fVUE4YnluNGxtRkZUV0p4Q1hLamdqZ2RMYjI1UTNza3lhd3BUc3VEOTNsZVpWOVhkckJXSjR4Nml4dkF0MFVBVm1GMVB0WkpRYmFkazQ?oc=5",
           "source_label": "MBC 뉴스",
+          "published": "2026-08-13"
+        },
+        {
+          "title": "국세청, KB국민은행 특별 세무조사",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5Vb29LekNDdXZESDlJZGlUcVVRX2x5OVFlOUdUd1J4aWp5RG0teEx1V0tXbGZtUHV4LWZZSW8zb0stTmdlTnpDVVZ3VHZGUnNKS2dEdnpJMGs3eGowOGFhMnVHQVBEZDJ5OUZKQlU5bk7SAXRBVV95cUxQYl9CVGhKcFFGdHVudUFaQjN0cTVoTDRkaUVyT2tPSEFDQWdNbklvRzJqRnp4aUNuR2ptZmlHWm1JTlNKYlpwSDcyNlF2UjdXeXMzeG1BajNEY0hPTXF6TjczMWlnZklLYWZ2MlM1V0RqSVZpcA?oc=5",
+          "source_label": "IT조선",
+          "published": "2026-08-13"
+        },
+        {
+          "title": "국세청, KB국민은행 특별 세무조사 - 조선비즈",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOSUhzeDRhRmRpT1RKeHFESzZQTU0yeURuaUZXTHZoQmNnTEd5ZHMzem9uLWZDU3NPNG5RbjNDNm0xcUttcEFyTTFTT0NPTUZZcjFLUkk1d1pRVXgtMTM1N25hZjNMR0IyTWMxeVlaWndPNXVhSHhadUlGY2JIT3NSZzN5bmtfQdIBmgFBVV95cUxQLU9lUWVZa2V6RkV1Y0FpMVNic1ZoOExSZ1FPZHBObEpZcVBuOTFncjlTSmR0Z2JQdVI5TGJPTnNYc0hDeW1vd3F5ajJIa1NsTW9tYnY2MlNMM19uQ1U3QWloVUJqMnZRTThBSlEzU1IwdlpRNWI0aHVwMW9FaDVBd0toVF9oTmluVVFycUJzWTdFVGR1X2VlV3FB?oc=5",
+          "source_label": "Chosunbiz",
+          "published": "2026-08-13"
+        },
+        {
+          "title": "KB국민은행 탈세의혹 특별세무조사…조사4국 ‘저승사자’ 투입",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE90RXM3c1RncjhDSzJJeGJmY25yanZudmpidE9WT3NhRWJoQVA5c0dxV2dqZlZwSkIzVTJEU19XcnNOQ0RoOU8xV2NvMXZLS1VXcW9NMHc1NnY5NDVuYXfSAWNBVV95cUxNR0FqU3dITHh0YlFMYU51empzZF8yUldDUks2UEpScWl1akhMY0xoQmtPMFFTYmhjelhLTldRaU1HZWVZZnhmcGtUdzBhaXZoUjN6dXlBZzF5UGxCRURxOWhieWc?oc=5",
+          "source_label": "ichannela.com",
+          "published": "2026-08-13"
+        },
+        {
+          "title": "국세청, KB국민은행 특별 세무조사…금융권 전반 확산되나",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1VOG9IOFRxd3pLUU1Ib1JkZzR3N0tXbzEzZGxNdWRBdE52QWVZQ2MwREVyc0NBeF9MNlhwdnVGRk5kd2lyODFkcERsa3JwMHd1WnNsZlRBenppZ01sRjZveGd3?oc=5",
+          "source_label": "ddaily.co.kr",
+          "published": "2026-08-13"
+        },
+        {
+          "title": "국세청, KB국민은행 특별 세무조사…금융권 전반 확산",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5LcC01VXFiREZwN290WS1URHk0dV9UNzk2cTFlcVNkNHU1XzNiMGdqbXR1YU5qdDYzQXpvdXhfMUZSamt5amZQOWVZNW9qTG5IOG5zX3l0YkhWU0xpUFpWVHV6YW8?oc=5",
+          "source_label": "서울경제TV",
+          "published": "2026-08-13"
+        },
+        {
+          "title": "국세청, KB국민은행 특별세무조사 착수…탈세 혐의 포착",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5QME9MdlBMdmpDTFFOUjAtT09hYWxaZ1Z2akxkY1hhd2xsT0pEUEtIQWtIRHI3elFHVTNWM25RTmtyM2dGMjBRSkp4bzMzejhPNXdwTw?oc=5",
+          "source_label": "JTBC",
+          "published": "2026-08-13"
+        },
+        {
+          "title": "[속보] 국세청, KB국민은행 탈세 혐의 포착 특별세무조사 착수",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBJWGt4eHVleENlN0NQRzRBTXg3Z1FwWFNNZVFpSFBnenVfY1FhcDFIWjk5eFFaZ014NWFFT3RudUtOSlVONUFWZUdxd191amJNMkY5aWI2WmtfaUxUNGNCVC14alBhTjZsTGfSAW5BVV95cUxQOG1nR3BpbFJFbFU4RUFMdGI1R1RqNGFGcmxVVGpDNW9KVzFzUDZIYmY3NDdxb0lGbU10Mm45cmo2QzdBSC10TUdLTWtiWWMteXRRNmQxYUNQcDVDUjVPWHA3cTBXX0t5a0pPb2c2Zw?oc=5",
+          "source_label": "퍼블릭타임스",
+          "published": "2026-08-13"
+        },
+        {
+          "title": "국세청, KB국민은행 특별 세무조사…탈세 혐의 포착",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1FQTdrUGJXVDBIbDRwVXd5N3pvTF9pZ1pOR25sRlJsLW5wVGlBSVJuMFFFSWJDRWU4MnBsdUNTd2F3SUdiNWVOaDM3Mkt6V1JFOXhnTmpWMGhjZzlBZDZjQm8xeXE5YWNYUzlJbkxaNUQ?oc=5",
+          "source_label": "코리아리포트",
           "published": "2026-08-13"
         },
         {
@@ -168,27 +174,61 @@
           "published": "2026-08-13"
         },
         {
-          "title": "국세청, KB국민은행 특별세무조사…서울청 조사4국 전격 투입",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5vZlVTeXJFOEUxcjA5MDk4YURZZGhOQ3RILUF0cUpkX050VlllS3BaemU3Yi04UGxoUjhOQjFlSFFnYVlob2t1UGhOeE00d0ZmeTVTWnZGVHE5SnNOZjVZVGZjNGRNeDZIMDJxQ2dIWEc?oc=5",
-          "source_label": "비즈중앙",
+          "title": "국세청, KB국민은행 특별 세무조사…정기조사 3년 만",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBmY0JPWFBSdGY4dy1BRWNEOGhYcVE1OTBjUUlPcEhxRmwyRTl4ZTgtcmdsVE1FRnBmZ1UzT0g5bDRQVGZUSnc2MDNrV1RPTE5Ud213eU5IUGdrMW1jRkNQTWpZQVppZVFNdFU5dDl3?oc=5",
+          "source_label": "아시아투데이",
           "published": "2026-08-13"
         },
         {
-          "title": "국세청, KB국민은행 특별 세무조사…탈세 혐의 포착",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1FQTdrUGJXVDBIbDRwVXd5N3pvTF9pZ1pOR25sRlJsLW5wVGlBSVJuMFFFSWJDRWU4MnBsdUNTd2F3SUdiNWVOaDM3Mkt6V1JFOXhnTmpWMGhjZzlBZDZjQm8xeXE5YWNYUzlJbkxaNUQ?oc=5",
-          "source_label": "코리아리포트",
+          "title": "국세청, KB국민은행 특별세무조사 착수…연말까지 진행",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9kZWV1OUQycWZMRXM5bEFaMHduSFl0S0ZwUk52cVFwR0U5TTQtTTAwRF9YSmZKdlAwN1Ywa29KZ0xiQWFsaUFGMHJaN0xUQnFhdlk2b9IBWkFVX3lxTE9zUGtkQlFCM3hYazVaZ3NJWnNZdl9wR3JGRmkxcVF1V0g1bWh4RGF5MmVYbVBSbVdGcmZGZFlIVFRGaDk2cXJpYnUyd2hNVXF2anZLTVpvYzh5dw?oc=5",
+          "source_label": "뉴스1",
           "published": "2026-08-13"
         },
         {
-          "title": "KB국민은행, 탈세 의혹으로 국세청 특별 세무조사",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAza2cySUgyMUFrQXFIS011cFBDN1VWMDhCdEtkWlNFVktYUjRXbTg0bUxVdmtVamFLbXN2OGdMRGxZMWtyY01GbHdzLUZBSDI4TzU5WGlVd284Sk5nc2lSODdR?oc=5",
-          "source_label": "뉴시스",
+          "title": "국세청, KB국민은행 특별세무조사 착수…올해 연말까지",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBoa0NkRkNQQlY1SmdjU3NQalN1aTNTWVduSFJpNlFxdlF5TmYzWUtmcHl1aFB1Tkt2eFh3S1d2Z1VHdk9VTU1yT2lWV096Y0VVX2c2VEdRdUJxaWPSAWBBVV95cUxQUDV2THpUN1N0U2h5UU5IaUlsNGhvTEpUYW5nTnZRWDZuWFNCc3d2TmlQN3R1STNpWVFpS3JXTWxCZWtybllFY3FQWVJQYXNicWNfSzZ0MkhwMGo4NENhUXg?oc=5",
+          "source_label": "연합뉴스",
+          "published": "2026-08-13"
+        },
+        {
+          "title": "국세청, KB국민은행 특별세무조사",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOb0FPY3VwczhBcmY1Z1pTX1hWZUhFZWpVQ1llb2laRWdGQjdEenEwVVo1UmVrdWxTRUJxaVUtbDV2X2RzQ1BaOU1oQTZnRS1NVVJOR1RLZXRIN1JfU3RjdzRsc2lBb1JPZEZzalMyb2xqbUJMTzFqTDRNenRiWk04WV95Z0ZKd2xMdmgwNVN3?oc=5",
+          "source_label": "조선일보",
           "published": "2026-08-13"
         },
         {
           "title": "'연말까지 국세청 세무조사 유예' 추가되는 기업은?",
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9nY0h0SE5Eby1HcHY3U0FUTGJXYVVwUDZMbzhjVWYxNmt6ZVhKQmxVX2x6Y0RlY3h1Sm1rVmYtc2Ffc0g3Z1FfU2pkemN3dHA2akthcWJsUFNNZzJ3ZldMVkJyLUQ?oc=5",
           "source_label": "한국세정신문",
+          "published": "2026-08-12"
+        }
+      ]
+    },
+    {
+      "source": "gnews_딜·M&A",
+      "source_label": "블로터",
+      "title": "[PEF 머니맵] 에이스에쿼티의 DTK, 적자 벗어나 IPO로 '순항'",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1IVlhWd2I2UjJvSUtUV3lmaGlJMUY0X29iUUQwVWszNE5IeGdIbGFaRU1Sd1ZZUGZYTXNCMFZPVUZBMU9pRHR3QlI3SjZMUy1RRmUzVE5zLXcxdFBkYVh2WXduaHVYMWRR0gFsQVVfeXFMT3hpeU5sZjAtQjBXbTd0YVpiamV3N3A1SGFKYWRycUhnRzRLTW05b1hOSTUxT0NhdEFXakRlNEJPd2NQLTNJY1N4anFjZ2VQOENxUTBleG5TYjc3WEQyOVRRRjlxVXpJV2JfUHlX?oc=5",
+      "published": "2026-08-13",
+      "published_at": "2026-08-13T03:00:47",
+      "summary": "",
+      "category": "딜·M&A"
+    },
+    {
+      "source": "gnews_딜·M&A",
+      "source_label": "블루밍비트",
+      "title": "앤트로픽, AI 스타트업 디카트 60억달러 인수 추진…IPO 앞두고 인프라 강화",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFByU0xVd3VXU1dfWUlMeXphM2NrUDZHSXQ5aC1BVV9UdmRidWs3YmQyREFyRERUWFVtRWIxcFJMemVOSGVaQnktRWo3RldMSlhn?oc=5",
+      "published": "2026-08-13",
+      "published_at": "2026-08-13T02:46:20",
+      "summary": "",
+      "category": "딜·M&A",
+      "dupes": [
+        {
+          "title": "앤트로픽, IPO 앞두고 투자자 신뢰 구축 총력전...시장 우려 정면 돌파",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBDLTVqVUl4MXJYQmRFSEhwYlNzaUFDWkp5TmVuYWdZNHBNa1N4NUhNMmU1TENhbHFuQ3dRaTRLRHJOMmtRZ2FldkkxYXBCWElOTjBQSVRmX0RyZFBMSlBNNDdDSEhHNm5iSHc?oc=5",
+          "source_label": "AI타임스",
           "published": "2026-08-12"
         }
       ]
@@ -206,7 +246,7 @@
         {
           "title": "교원라이프, 세무법인 센트릭과 MOU…장례 후 상속·증여 세무상담 지원",
           "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPVDFaWHBqQXc1YzNiOEIwZk5pSHNRMFZ1MUZVZWh1M3QtTmxMcERGcGs4elZwT09zVXgwS25mamFXY3BJSncwQldkMUZPeks1Z21RVUM3TnhxX1gtSzFiWEY2WnpxWGlwSzdEbzJyOG1ubmZWM09EYTdKOExRY1dLVGFNMDh6VmNCMUlB?oc=5",
-          "source_label": "글로벌이코노믹",
+          "source_label": "g-enews.com",
           "published": "2026-08-13"
         }
       ]
@@ -253,6 +293,12 @@
           "title": "LA 레이커스, 트럼프 사위 일가에 매각 합의…역대 최고가 18조원",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5VcV9Qcks4RzVQMndVcDlqNlZ6Ynczd2t0dWlXX3pCNjNOQnZON2FRNDBHdjl3THZCN2RhN2ZpWk1pTW5xUENBa2oxQmZ6TzNOZlBXQXhwU3FDb1ox?oc=5",
           "source_label": "티제이비",
+          "published": "2026-08-12"
+        },
+        {
+          "title": "미 프로농구 LA레이커스, 트럼프 사위 일가에 '사상 최고가' 매각",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA0VG5WM3o1ZDRkOURjN2JaNUJzQlIyeTFXaTFyMk5rc1JUUXVoN2hETzRxWWh6Zk9SOUd2eUJPRzhWUGNQenlrQkVZMXhrSkh4UzcxRThRSDh4ZXh6MXJrR2ZQUUxwVk00QnU4ZEdnc9IBc0FVX3lxTFBYS1JGdGVRNHhLR3hTMzZVLTZFeHpUTnJVOGZ6c09pYXpEbE1WMlVuZTlqLWlReTdBMF9ybkVKMjBVTldDVEFKeUxGZTJHYU9FcjdxclFzVzR6MFFPMVF6UlNNQ0lPZlg0RVJReEdOUWVFc1k?oc=5",
+          "source_label": "여성신문",
           "published": "2026-08-12"
         },
         {
@@ -305,7 +351,7 @@
     },
     {
       "source": "gnews_딜·M&A",
-      "source_label": "pharmnews.com",
+      "source_label": "팜뉴스",
       "title": "바로팜, 코스닥 상장예비심사 승인... IPO 절차 본격화",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBVUU4tOF9IUTNsT3BGVHVRTHMwQ3RDZnpRd1Zaa2hkWjlWMjNXRkt6UklrellpNW9qR3JWUXlWTVAzZTc1UDI1WjJ3LVZpcFZkbndqWGlCWFJZc21XelhhVmVVbmtJbHFqV3hBMA?oc=5",
       "published": "2026-08-13",
@@ -335,45 +381,7 @@
       "published": "2026-08-13",
       "published_at": "2026-08-13T00:56:00",
       "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "초고액 체납자 '재산추적·세무조사' 전담팀 신설...\"반사회적 탈세·체납 근절\"",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBPSXdOZnBkaVZGVjhJMk5SUXNNZ2dDUm9wRUxKRzV4eWx2TXVCVFJ0WkdXUnIxQjlRU2U4OWpyT0loeWRBWUI2TVBqWHoxUVgtVV8taVFqVElGLWJGZ0E?oc=5",
-          "source_label": "YTN",
-          "published": "2026-08-12"
-        },
-        {
-          "title": "임광현의 새로운 도전… 세무조사·체납추적 한 팀으로 묶는다",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE10dExlZkJWM2pqS0tLWEZLYUtLdWFiSTR0VmVubk1qSmJRSG4xd3Y5YllLZHFzRjJTUk9JV1lZSmQ2MlBjNFg1RWh5Mk1KQk0?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-08-12"
-        },
-        {
-          "title": "[세무관서장 회의] 임광현 국세청장 “‘체납추적-세무조사 연계 전담팀’ 신설…악의적 체납자 엄단할 것”",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0tM0cybC10RVRKN3FsODRtMFhBaS10TURSYkNZZnczYlVNa0NJVDBwazlRVEJLNUVTVnRaeTlzY2M4aXgwcmFKZmF3TnB4UU1DVy1TUDMtNUtHTkQ2QjlEblVKaw?oc=5",
-          "source_label": "tfmedia.co.kr",
-          "published": "2026-08-12"
-        },
-        {
-          "title": "국세청, '체납추적·세무조사 연계 전담팀' 신설…고액체납자 정조준",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA2R3ltZ1B4TXpCdnpnSjVGX21VaWNPWE5heUdpU3RfVEd1V2hqVFBvRURyTTZSbjlEaEdhc205anJyU1JCM3RtQ1BjcXN5ODlTVHBZMW5yQ3ZwdWstd0hKWWYwSWJ2aUxtWHJSOTRNUS0?oc=5",
-          "source_label": "연합인포맥스",
-          "published": "2026-08-12"
-        },
-        {
-          "title": "고액체납자 '재산추적+세무조사' 동시 정조준…서울·중부국세청 전담팀 사상 첫 신설",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB6eUdBNi13SjEyTDJkWjdUYUNuZ0c3Z1dlR184QzlzazI2eFpZRmpoTldsd1ZCaG1ja05IUUc5elNJS2duQ2o5MkpUS2RMQUxjR1VfcjU4V3NNbzN5MHM0NnJTdkg?oc=5",
-          "source_label": "한국세정신문",
-          "published": "2026-08-12"
-        },
-        {
-          "title": "국세청, ‘고액체납·특별세무조사’ 연계....‘국세·국세외수입 통합징수’ 본격 가동",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE92S1VYUTlpLVowSmo0M21paVdHcDlLUDd5LXYwblVUSWJHZzJiNVFBRkpyQmE5RFdaZ1FRNHZkSl81a2p0QmNoZnZseHA2SWxBOEdCRWhqUE5vTEZUbUtPWkZmVDVqLWdSdUE?oc=5",
-          "source_label": "intn.co.kr",
-          "published": "2026-08-12"
-        }
-      ]
+      "category": "세무"
     },
     {
       "source": "gnews_딜·M&A",
@@ -427,7 +435,7 @@
     },
     {
       "source": "gnews_딜·M&A",
-      "source_label": "dealsite.co.kr",
+      "source_label": "딜사이트",
       "title": "[소노인터내셔널 IPO] 3조 원하는 소노인터…돈 먹는 하마 트리니티",
       "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5ENHpBLTNXcHZybFZrVlV1Ni1RUzVUMFB2eUNfUEI3Wmphb2NUU0ZHOGtrZ0VCYzRzYTJldDZTOEZpWl93UV9CN0t2X3dGc2M?oc=5",
       "published": "2026-08-12",
@@ -477,7 +485,7 @@
     },
     {
       "source": "gnews_딜·M&A",
-      "source_label": "dealsite.co.kr",
+      "source_label": "딜사이트",
       "title": "사들이기는 했는데 못 키웠다…크래프톤 M&A의 '아픈 손가락'",
       "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9aWFJMREJOanZmUUc2Yl85ekhUb2NEaWVzTmtMVEdTcjFUbk9SRWtwektUVUFjc0dVelFKX1pWOHVwZTRiQ3ZSRV9hU3JnOVE?oc=5",
       "published": "2026-08-12",
@@ -497,21 +505,41 @@
     },
     {
       "source": "gnews_세무",
+      "source_label": "YTN",
+      "title": "초고액 체납자 '재산추적·세무조사' 전담팀 신설...\"반사회적 탈세·체납 근절\"",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBPSXdOZnBkaVZGVjhJMk5SUXNNZ2dDUm9wRUxKRzV4eWx2TXVCVFJ0WkdXUnIxQjlRU2U4OWpyT0loeWRBWUI2TVBqWHoxUVgtVV8taVFqVElGLWJGZ0E?oc=5",
+      "published": "2026-08-12",
+      "published_at": "2026-08-12T11:49:00",
+      "summary": "",
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "임광현의 새로운 도전… 세무조사·체납추적 한 팀으로 묶는다",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE10dExlZkJWM2pqS0tLWEZLYUtLdWFiSTR0VmVubk1qSmJRSG4xd3Y5YllLZHFzRjJTUk9JV1lZSmQ2MlBjNFg1RWh5Mk1KQk0?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-08-12"
+        },
+        {
+          "title": "[세무관서장 회의] 임광현 국세청장 “‘체납추적-세무조사 연계 전담팀’ 신설…악의적 체납자 엄단할 것”",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0tM0cybC10RVRKN3FsODRtMFhBaS10TURSYkNZZnczYlVNa0NJVDBwazlRVEJLNUVTVnRaeTlzY2M4aXgwcmFKZmF3TnB4UU1DVy1TUDMtNUtHTkQ2QjlEblVKaw?oc=5",
+          "source_label": "조세금융신문",
+          "published": "2026-08-12"
+        },
+        {
+          "title": "국세청, '체납추적·세무조사 연계 전담팀' 신설…고액체납자 정조준",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA2R3ltZ1B4TXpCdnpnSjVGX21VaWNPWE5heUdpU3RfVEd1V2hqVFBvRURyTTZSbjlEaEdhc205anJyU1JCM3RtQ1BjcXN5ODlTVHBZMW5yQ3ZwdWstd0hKWWYwSWJ2aUxtWHJSOTRNUS0?oc=5",
+          "source_label": "연합인포맥스",
+          "published": "2026-08-12"
+        }
+      ]
+    },
+    {
+      "source": "gnews_세무",
       "source_label": "조세일보",
       "title": "소상공인 세무조사 유예 6개월 더…지방기업은 최대 3년 혜택 [2026 하반기 국세행정]",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1qNGJQUFJxTHF4eHVvNkJhODY3a1FMNTZlbmZNaktDMHpWVGhhTHJoTVg2aDMwdExVZGxCMDVCWTJBMGtLdTI2bjdKNllTeWN2S0NEX2ZmdDFqdHhvNzFGSzVzanNaUXpOeHVVbk1GZw?oc=5",
       "published": "2026-08-12",
       "published_at": "2026-08-12T02:34:50",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "intn.co.kr",
-      "title": "세무법인HKL '稅相 읽기'(47) 마일리지 부가가치세 과세...대법원 판결이 남긴 조세법률주의의 묵직한 경고",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBBTVZ3UEg3LVJGOTJPaG1ZZzlTWG5rbVRYWW5CZi1rWjhpUFJpb2w4cDRUa3I1LTljZkhjZ0tIR3dFQ3VpOHJoOXlBY2pzN2NJeVNrRG1nd0liZkk0eTUzNDVIWllTbnZsTVE?oc=5",
-      "published": "2026-08-11",
-      "published_at": "2026-08-11T23:50:00",
       "summary": "",
       "category": "세무"
     },
@@ -567,7 +595,7 @@
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "오피니언뉴스",
+      "source_label": "opinionnews.co.kr",
       "title": "법원, 영풍 이의 제기 인용…\"증선위 제재 효력 정지 결정\"",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9WanlZUGtvdVFIaVk1ZFdPSW1PeHc5M25fUHFfUDhlUXpKcWZSdTB2dkJ2OE1pMkNSX3lsbWhETlVldTdzek54MWxHN1RjU1UyYkZNZXRuamJEMU5xTmJLLXNfRlM4bDNNb1p6LTN3UnJNQQ?oc=5",
       "published": "2026-08-10",
@@ -601,7 +629,7 @@
     },
     {
       "source": "gnews_딜·M&A",
-      "source_label": "PwC",
+      "source_label": "pwc.com",
       "title": "삼일PwC, 온라인 M&A 플랫폼 ‘딜 액세스’ 출시",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB4LVlzTzJ1UGxaQ1haekhlOC1xbVB3MWk1TTl5WVlUWjlOUXNLc3VCajVoTXY0VU4tWFBrM2ZtZzlFbWw2ZXdzancyekRkYVFTT2ZTd1FDb0s5ZndGZURHYTNuZzBMdVVp?oc=5",
       "published": "2026-08-10",
@@ -617,21 +645,7 @@
       "published": "2026-08-10",
       "published_at": "2026-08-10T06:01:20",
       "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "2026년 정부 세제개편(안) - 국제조세 관련 주요 개정사항",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1DNVB5OXdQVEtaWmdSTkJ3QVNkN1hLdjJqYnY5S1ZHeHdVbS1BOTZrTVdQajVneFhManFzclh2VVhJUTVYQUpUblVzbTNneElpZkZPNkt5WnAxbUFMZm5pQWhYWVJkcFNLb09OUHpFcmZpQdIBckFVX3lxTE1DNVB5OXdQVEtaWmdSTkJ3QVNkN1hLdjJqYnY5S1ZHeHdVbS1BOTZrTVdQajVneFhManFzclh2VVhJUTVYQUpUblVzbTNneElpZkZPNkt5WnAxbUFMZm5pQWhYWVJkcFNLb09OUHpFcmZpQQ?oc=5",
-          "source_label": "법률신문",
-          "published": "2026-08-10"
-        },
-        {
-          "title": "2026년 귀속 법인세 중간예납 신고분부터 적용되는 주요 개정세법",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5jaWVoWEh2NEpPSmpZM0p1WE9kVlFGWWpaOThJNXNxVE0yYWRDLU1fNGhTUFBSMDFIOFZObzl6TnRUaTh4eGQ5M0g4NFNCVzhIN3VqMEtld292V0JneDNFbXM3U1p2bV9J?oc=5",
-          "source_label": "CPA뉴스",
-          "published": "2026-08-10"
-        }
-      ]
+      "category": "세무"
     },
     {
       "source": "gnews_감사_2",
@@ -652,6 +666,16 @@
       ]
     },
     {
+      "source": "gnews_세무",
+      "source_label": "CPA뉴스",
+      "title": "2026년 귀속 법인세 중간예납 신고분부터 적용되는 주요 개정세법",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5jaWVoWEh2NEpPSmpZM0p1WE9kVlFGWWpaOThJNXNxVE0yYWRDLU1fNGhTUFBSMDFIOFZObzl6TnRUaTh4eGQ5M0g4NFNCVzhIN3VqMEtld292V0JneDNFbXM3U1p2bV9J?oc=5",
+      "published": "2026-08-10",
+      "published_at": "2026-08-10T00:00:00",
+      "summary": "",
+      "category": "세무"
+    },
+    {
       "source": "gnews_감사_2",
       "source_label": "조세일보",
       "title": "분식회계 사례-횡령 등의 은폐를 위해 일시 차입한 CD의 사내 보관",
@@ -666,22 +690,36 @@
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8xQmNQc2xQUG1Zdi1NMUpaRExzcWpabnZDNFIwS3V0ZnNUQldVWTdBMzFPejVWVzhkZXhmNFBLMUxUR0FDaEtRSFBUTnZUZmlkcTZfTEFlSmRXUlZDQ2Jz?oc=5",
           "source_label": "조세일보",
           "published": "2026-08-03"
+        },
+        {
+          "title": "분식회계 사례-유령거래처를 이용한 사업연도 말 가공매출",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9UMDBTWUcxNHJxNlZRM2dJUXZ3a1JLLTAzMmtfRUl2VV9JVHdDd3lmTmF3cUtFT3dNcmZVSzBHcVZ6ZWZodFV2OUN1dGV0WXFUdXNUZXdtejJqVHhTRWJz?oc=5",
+          "source_label": "조세일보",
+          "published": "2026-07-28"
         }
       ]
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "서울Pn",
-      "title": "감사인 전문성 및 인공지능(AI) 감사역량 확보로 내부통제 강화한다",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5FZjNab1dpY2EyYkVjSGV0Y0xCVG02RVBNQzBoYmNJR3pFU2otV3FxN1B5cF9yMy1UMUg3aEktby0yekpuRnlUQ29Ka3BweThaSDRFZ01hbGxiUE51UTlzX09B?oc=5",
+      "source_label": "행정신문",
+      "title": "고용노동부 한국산업안전보건공단, 감사인 전문성 및 인공지능(AI) 감사역량 확보로 내부통제 강화한다",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8wQ29FaWJWenFrVzdVcU0yZW9BTE8tVDdHRzFCdEQ1VnRHd3FuVDBkU3h0TWZpNWk3ZnZad0VNVGx5RWc3bFlJMWF5TVVSc2h2ck5YS0JBZE1ITG1ZSkRnUkVSdGVDWFJPd3NIbw?oc=5",
       "published": "2026-08-07",
-      "published_at": "2026-08-07T05:02:07",
+      "published_at": "2026-08-07T12:43:27",
       "summary": "",
-      "category": "감사"
+      "category": "감사",
+      "dupes": [
+        {
+          "title": "감사인 전문성 및 인공지능(AI) 감사역량 확보로 내부통제 강화한다",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5FZjNab1dpY2EyYkVjSGV0Y0xCVG02RVBNQzBoYmNJR3pFU2otV3FxN1B5cF9yMy1UMUg3aEktby0yekpuRnlUQ29Ka3BweThaSDRFZ01hbGxiUE51UTlzX09B?oc=5",
+          "source_label": "서울Pn",
+          "published": "2026-08-07"
+        }
+      ]
     },
     {
       "source": "gnews_감사",
-      "source_label": "디지털데일리",
+      "source_label": "ddaily.co.kr",
       "title": "빗썸, 2028년 IPO 추진…내부통제·회계 기준 정비 본격화",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9QcEV6M0FYM2hxWE5tdDR6Wm1CZ2lqUkVJQXBsM0M5YWVDb0QzOWRMNU1HUnpkYTJtbUQwVGw4QWF1dEY0VzlGOGl4TzZ3LVlKLWQ0aWJvcGF2enNsQnVzVEpB?oc=5",
       "published": "2026-08-04",
@@ -722,7 +760,7 @@
         {
           "title": "'회계기준 위반' 만호제강 6.1억·의왕백운PFV 3.8억 과징금",
           "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1OSnh0aENrd1JOcG5wUk5aX3dtMmM2N1dENVc4akk1VlY3UGlJTkVQNGZMeDBmVHFrYnE2djF5cEZtWlM1UjVfVkJjYkpEWDBJUXNqNUN5Q3F5dFA5amQxaVB6VQ?oc=5",
-          "source_label": "tfmedia.co.kr",
+          "source_label": "조세금융신문",
           "published": "2026-07-31"
         },
         {
@@ -751,7 +789,7 @@
     },
     {
       "source": "gnews_딜·M&A",
-      "source_label": "dealsite.co.kr",
+      "source_label": "딜사이트",
       "title": "[중앙일보 M&A] 2500억 안팎이 최저인수가…350명 30% 구조조정 전략",
       "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBxQ2ZkdDZiOFFhZ2xmcm5sRWptSWNZSDYtczNfRldTdUk5dV9OSkMwQm1wZklxMFdZNDlDZ1Z3V0xTaUoxTzY1Z29FTzlXSG8?oc=5",
       "published": "2026-07-31",
@@ -851,7 +889,7 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "doctorsnews.co.kr",
+      "source_label": "의협신문",
       "title": "비의료인 개설 '사무장병원', 부가가치세 면제 대상 아냐",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9PUnBqSnFvVExuWmdkMUhOQ2N0emhRUEZYeVdwOGZIQlN4Z0lyVTI2NnNTU2IyY2FvX2M3WlhDRW02OGE1a01lemVWclpwRFR2TWZjc0ZERHI0Q0JUSTRtWGE0MkswX1ZaUkxTVVA5bFhoUQ?oc=5",
       "published": "2026-07-26",
@@ -953,7 +991,7 @@
     },
     {
       "source": "gnews_채용·시험",
-      "source_label": "hankyung.com",
+      "source_label": "한국경제",
       "title": "실습할 곳 못찾은 '낭인 회계사'…회계법인에 의무 배정",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBMY0xsQmVtSHdhSTBQZzMzMEdVcTc3WHhvR3gzWjdPRTR1d0pmd0R1ZTRXUkJ2eWROTXZRSmtFUTFCaUFqd1RteW1PZlhtdTdsMTNsVGVtMzNqUQ?oc=5",
       "published": "2026-05-31",
@@ -982,7 +1020,7 @@
         {
           "title": "수습처 막힌 회계사들 숨통…국회·법원·국민연금도 문 연다",
           "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE83ZUQxTmhJaldqaEYzZ0pZRWFabTc5aFpzSnQ4eDEtOTRGUW96WFJaZmhVU3NmSWUwVEREemwwWHJiLVAtSmVWWC1lMmVqWnRGZmJXaVN4V2VQX1JRdnR4SVh3?oc=5",
-          "source_label": "디지털데일리",
+          "source_label": "ddaily.co.kr",
           "published": "2026-05-31"
         },
         {
@@ -995,12 +1033,6 @@
           "title": "실무 수습 못 받은 회계사 늘자…국회·국민연금도 수습기관으로 인정",
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9UUnBPdEIzVmI3cDU2VTdyd2JpS003RkNvbzhHdHNQRkZYcEtVR0gwOHpFTExNTlNDcHhoemNFWklIc1hxS0VUazdRS0J1MjRpY2V3?oc=5",
           "source_label": "네이트",
-          "published": "2026-05-31"
-        },
-        {
-          "title": "장기 미지정 회계사들, '감사인 등록' 회계법인에 수습 배정",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBCZWgwMEFmdTZ0RFA0azk4QkVSWHhEUE81M0lTdFludzlhOGJUSEM2OXdneEJTRmhwRFJTVFhfMDNjMllSdF9nYkZLR1lGSVNCaG1jTVVtYWI2em0yUURLclNfVHVPcXNWUU1OUGpSZ0x6aXc?oc=5",
-          "source_label": "마켓인",
           "published": "2026-05-31"
         },
         {
@@ -1042,7 +1074,13 @@
         {
           "title": "회계사 합격하고 수습처 못 찾아…금융위 “실무기관 확대”",
           "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA2NXlZU2NrMkEyaFJubXZ5TVFqZ3RzVVNldkl3MnNveXRGTjZrOGtMVU42RGhtTDlicE5ySXM1WVJaVGVzdVdZTXdWTEYtd0tjRnFSLWpKT3VGS0M2UmRESlB4TmZuQVE?oc=5",
-          "source_label": "hani.co.kr",
+          "source_label": "한겨레",
+          "published": "2026-05-31"
+        },
+        {
+          "title": "장기 미지정 회계사들, '감사인 등록' 회계법인에 수습 배정",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOMzQ0QkxPMzdiSVJNN2xOc0dBUzV5eVQxVDZTUnNkN0xEYXRjdUJfNTZjeWxOVm9oaXJQb0tLUkRncTFvNHh2RlNqRXNmSHlxRUtfQ2dQbzhEYXpnM0p3U1lrTXc2b3pXS3ZYYkp4U1FFTkM1MFZEWFdIaF9LT3hPVw?oc=5",
+          "source_label": "edaily.co.kr",
           "published": "2026-05-31"
         }
       ]

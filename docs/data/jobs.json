@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-08-13T13:01:52",
+  "generated_at": "2026-08-13T13:31:33",
   "soon_days": 7,
   "counts": {
-    "total": 59,
-    "open": 44,
+    "total": 61,
+    "open": 46,
     "closed": 15,
-    "new": 6,
-    "soon": 15,
+    "new": 8,
+    "soon": 17,
     "by_firm": {
-      "삼일": 12,
+      "삼일": 13,
       "삼정": 2,
       "안진": 6,
-      "한영": 20,
+      "한영": 21,
       "로컬": 17,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 23,
-      "자격무관": 36
+      "자격무관": 38
     },
     "by_emp_kind": {
-      "인턴": 18,
+      "인턴": 20,
       "정규직": 33,
       "계약직": 6,
       "파트타임": 2
@@ -273,6 +273,44 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5171",
       "dday": 6,
       "first_seen": "2026-08-10T15:01:37"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "컨설팅부문 자동차 산업 CRM 컨설팅 인턴 (일본어 가능자)",
+      "company": "EY한영",
+      "deadline": "2026-08-19",
+      "posted_date": "2026-08-13",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/124983",
+      "dday": 6,
+      "first_seen": "2026-08-13T13:31:33"
+    },
+    {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "FS&RS - TS 전환형 인턴 채용",
+      "company": "삼일PwC",
+      "deadline": "2026-08-20",
+      "posted_date": "",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://www.pwc.com/kr/ko/career/experienced/r260813.html",
+      "dday": 7,
+      "first_seen": "2026-08-13T13:31:33"
     },
     {
       "source": "anjin",

@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-08-14T18:01:40",
+  "generated_at": "2026-08-14T18:31:36",
   "soon_days": 7,
   "counts": {
-    "total": 65,
-    "open": 45,
+    "total": 67,
+    "open": 47,
     "closed": 20,
     "new": 4,
     "soon": 17,
     "by_firm": {
       "삼일": 13,
       "삼정": 2,
-      "안진": 6,
+      "안진": 8,
       "한영": 23,
       "로컬": 17,
       "기타": 4
     },
     "by_qualification": {
       "수습CPA": 25,
-      "자격무관": 40
+      "자격무관": 42
     },
     "by_emp_kind": {
       "인턴": 23,
-      "정규직": 34,
-      "계약직": 6,
+      "정규직": 35,
+      "계약직": 7,
       "파트타임": 2
     }
   },
@@ -389,6 +389,25 @@
       "first_seen": "2026-08-03T11:31:30"
     },
     {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": false,
+      "title": "회계감사부문 품질관리실 GAAS팀 admin",
+      "company": "딜로이트 안진",
+      "deadline": "2026-08-24",
+      "posted_date": "2026-08-07",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5166",
+      "dday": 10,
+      "first_seen": "2026-08-14T18:31:36"
+    },
+    {
       "source": "samil",
       "source_label": "삼일PwC",
       "firm": "삼일",
@@ -453,7 +472,7 @@
       "qualification": "수습CPA",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[한국자산평가] [대체평가3사업본부] 경력 및 신입(인턴)직원 채용 공고",
       "company": "한국자산평가",
       "deadline": "2026-08-30",
@@ -653,6 +672,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1786582840099",
       "dday": 21,
       "first_seen": "2026-08-13T10:01:48"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "딜로이트 안진회계법인 계약직 Cleaner 채용",
+      "company": "딜로이트 안진",
+      "deadline": "2026-09-04",
+      "posted_date": "2026-08-14",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5174",
+      "dday": 21,
+      "first_seen": "2026-08-14T18:31:36"
     },
     {
       "source": "samjong",

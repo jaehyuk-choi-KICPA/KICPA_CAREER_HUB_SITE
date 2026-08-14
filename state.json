@@ -1017,7 +1017,8 @@
     "uid": "hanyoung:125087",
     "first_seen": "2026-08-14T09:31:30",
     "last_seen": "2026-08-14",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-08-14"
   },
   "hanyoung:125090": {
     "source": "hanyoung",
@@ -1035,6 +1036,7 @@
     "uid": "hanyoung:125090",
     "first_seen": "2026-08-14T09:31:30",
     "last_seen": "2026-08-14",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-08-14"
   }
 }

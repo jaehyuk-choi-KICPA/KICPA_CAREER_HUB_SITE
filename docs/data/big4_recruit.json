@@ -1,17 +1,35 @@
 {
-  "title": "2026 빅4 신입 회계사 공채",
+  "title": "2026 빅4 신입 회계사 공채 (접수 마감)",
   "note": "각 법인 공식 채용 페이지 기준 · 수동 큐레이션(시즌마다 갱신)",
-  "updated": "2026-07-21",
+  "updated": "2026-08-15",
   "firms": [
     {
       "firm": "삼일",
       "label": "삼일PwC",
       "title": "2026 공인회계사 모집",
-      "status": "open",
+      "status": "closed",
       "tracks": [
-        { "name": "감사", "start": "2026-06-29", "end": "2026-08-13", "end_label": "08-13 am 10:00", "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-full-time.html" },
-        { "name": "파트타임", "start": "2026-06-29", "end": "2026-08-13", "end_label": "08-13 am 10:00", "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-part-time.html" },
-        { "name": "비감사", "start": "2026-06-29", "end": "2026-07-23", "end_label": "07-23 am 10:00", "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-full-time.html" }
+        {
+          "name": "감사",
+          "start": "2026-06-29",
+          "end": "2026-08-13",
+          "end_label": "08-13 am 10:00",
+          "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-full-time.html"
+        },
+        {
+          "name": "파트타임",
+          "start": "2026-06-29",
+          "end": "2026-08-13",
+          "end_label": "08-13 am 10:00",
+          "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-part-time.html"
+        },
+        {
+          "name": "비감사",
+          "start": "2026-06-29",
+          "end": "2026-07-23",
+          "end_label": "07-23 am 10:00",
+          "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-full-time.html"
+        }
       ],
       "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-full-time.html"
     },
@@ -19,10 +37,20 @@
       "firm": "삼정",
       "label": "삼정KPMG",
       "title": "2026 수습회계사 공채",
-      "status": "open",
+      "status": "closed",
       "tracks": [
-        { "name": "감사, 파트타임", "start": "2026-06-29", "end": "2026-07-19", "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000901&receive_div_cd=O" },
-        { "name": "비감사", "start": "2026-06-29", "end": "2026-07-08", "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000900&receive_div_cd=O" }
+        {
+          "name": "감사, 파트타임",
+          "start": "2026-06-29",
+          "end": "2026-07-19",
+          "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000901&receive_div_cd=O"
+        },
+        {
+          "name": "비감사",
+          "start": "2026-06-29",
+          "end": "2026-07-08",
+          "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000900&receive_div_cd=O"
+        }
       ],
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/init.hr"
     },
@@ -30,9 +58,13 @@
       "firm": "안진",
       "label": "Deloitte안진",
       "title": "2026 신입회계사 정기채용",
-      "status": "open",
+      "status": "closed",
       "tracks": [
-        { "name": "", "start": "2026-06-23", "end": "2026-07-24" }
+        {
+          "name": "",
+          "start": "2026-06-23",
+          "end": "2026-07-24"
+        }
       ],
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5130"
     },
@@ -40,9 +72,13 @@
       "firm": "한영",
       "label": "EY한영",
       "title": "2026 신입공인회계사 모집",
-      "status": "open",
+      "status": "closed",
       "tracks": [
-        { "name": "", "start": "2026-06-29", "end": "2026-07-19" }
+        {
+          "name": "",
+          "start": "2026-06-29",
+          "end": "2026-07-19"
+        }
       ],
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/119887"
     }

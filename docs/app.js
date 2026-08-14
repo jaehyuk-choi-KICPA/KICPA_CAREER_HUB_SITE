@@ -705,7 +705,12 @@ function renderBig4(data) {
     return false;
   }
   // 섹션 제목은 정적 라벨("빅4 신입 회계사 공채") 고정 — JSON title(연도 포함)로 덮지 않음
-  $("sec-big4-badge").hidden = !firms.some((f) => f.status === "open");   // 접수중 법인 있으면 초록 딱지
+  // 딱지 이원화: 접수중 법인 있으면 초록 '접수중', 전 법인 마감이면 회색 '접수 마감'(시즌 재개 시 자동 복귀)
+  const anyOpen = firms.some((f) => f.status === "open");
+  const badge = $("sec-big4-badge");
+  badge.hidden = false;
+  badge.textContent = anyOpen ? "접수중" : "접수 마감";
+  badge.classList.toggle("closed", !anyOpen);
   $("big4-list").replaceChildren(...firms.map(big4Row));
   return true;
 }

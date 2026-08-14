@@ -242,6 +242,7 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .recruit-sec[open] > .recruit-toggle::after { transform:rotate(180deg); }
 .recruit-badge { font-size:10px; font-weight:800; padding:2px 7px; border-radius:999px;
   background:var(--new-soft); color:var(--new); }   /* 빅4 summary '접수중' 딱지(.big4-badge.open 톤) */
+.recruit-badge.closed { background:var(--chip-bg); color:var(--muted); }   /* 전 법인 마감 시 '접수 마감' 회색 딱지 */
 .recruit-sec > .big4-list, .recruit-sec > #local-groups { margin-top:9px; }
 /* 로컬 하위탭(풀타임 ↔ 파트타임) — 언더라인 탭: 하위 구조가 드러나게, 색으로 구분(풀=파랑, 파트=초록) */
 .local-subtabs { display:flex; border-bottom:1px solid var(--line); margin:9px 0 0; }

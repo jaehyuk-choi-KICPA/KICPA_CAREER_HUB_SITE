@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-14T13:01:35",
+  "generated_at": "2026-08-14T13:31:40",
   "soon_days": 7,
   "counts": {
-    "total": 64,
-    "open": 44,
+    "total": 65,
+    "open": 45,
     "closed": 20,
-    "new": 8,
+    "new": 6,
     "soon": 17,
     "by_firm": {
       "삼일": 13,
@@ -13,15 +13,15 @@
       "안진": 6,
       "한영": 23,
       "로컬": 17,
-      "기타": 3
+      "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 24,
+      "수습CPA": 25,
       "자격무관": 40
     },
     "by_emp_kind": {
       "인턴": 23,
-      "정규직": 33,
+      "정규직": 34,
       "계약직": 6,
       "파트타임": 2
     }
@@ -168,7 +168,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "컨설팅부문 자동차 산업 CRM 컨설팅 인턴 (일본어 가능자)",
       "company": "EY한영",
       "deadline": "2026-08-19",
@@ -187,7 +187,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "FS&RS - TS 전환형 인턴 채용",
       "company": "삼일PwC",
       "deadline": "2026-08-20",
@@ -434,7 +434,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[우리회계법인] 수습회계사 채용",
       "company": "우리회계법인",
       "deadline": "2026-08-28",
@@ -463,6 +463,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1786610183042",
       "dday": 16,
       "first_seen": "2026-08-13T18:02:29"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "기타",
+      "field": "기타",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "NICE피앤아이 공인회계사 채용 (수습회계사 지원 가능)",
+      "company": "NICE피앤아이",
+      "deadline": "2026-08-30",
+      "posted_date": "2026-08-14",
+      "location": "서울 영등포구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1786680638486",
+      "dday": 16,
+      "first_seen": "2026-08-14T13:31:40"
     },
     {
       "source": "kicpa_susup",

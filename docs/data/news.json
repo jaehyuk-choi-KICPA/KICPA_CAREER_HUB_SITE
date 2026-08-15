@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-15T23:31:35",
+  "generated_at": "2026-08-16T00:01:42",
   "items": [
     {
       "source": "gnews_세무",
-      "source_label": "imsn.kr",
+      "source_label": "매일산업뉴스",
       "title": "[만평]KB국민은행 탈세혐의 포착 ... 국세청 특별세무조사 착수",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBuMVhRamN5YnJQZlFabTdtcU91VkZROE1URll5cDRKb0pwM2pGNWFYOUFWQjV6M056UGpIZm0tNEdjTGgtdTNFQ25YQ2hsQWItcWdPekNUdEtTTV9ZQ255ZWlLQQ?oc=5",
       "published": "2026-08-15",
@@ -170,7 +170,7 @@
         {
           "title": "‘수백억대 세금 누락 정황’ KB국민은행 특별 세무조사",
           "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9NMk5hZXRPby1kZWJERndDY3p3T2piSGJTT2x0dHlMZ184dHFPRGgxakMzTG0tTUxIcGg3VzB3ZXdkY05FdXFTUTgzYmtweDlX?oc=5",
-          "source_label": "문화일보",
+          "source_label": "munhwa.com",
           "published": "2026-08-13"
         },
         {
@@ -234,12 +234,6 @@
           "published": "2026-08-12"
         },
         {
-          "title": "국세청, 고액체납 '추적·세무조사' 연계…전담팀 신설",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBiZU51QVZHYkhseVpiZEI2X2d4T0RZM2VvU3lhRTlPeWMtLXNQRkZNLU5ReVVkdFUzNFRnMllYYUlBelFQZG5JX2RlNnhIZw?oc=5",
-          "source_label": "전자신문",
-          "published": "2026-08-12"
-        },
-        {
           "title": "[세무관서장 회의] 임광현 국세청장 “‘체납추적-세무조사 연계 전담팀’ 신설…악의적 체납자 엄단할 것”",
           "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0tM0cybC10RVRKN3FsODRtMFhBaS10TURSYkNZZnczYlVNa0NJVDBwazlRVEJLNUVTVnRaeTlzY2M4aXgwcmFKZmF3TnB4UU1DVy1TUDMtNUtHTkQ2QjlEblVKaw?oc=5",
           "source_label": "조세금융신문",
@@ -261,7 +255,7 @@
     },
     {
       "source": "gnews_딜·M&A",
-      "source_label": "coindesk.com",
+      "source_label": "CoinDesk",
       "title": "클래리티 겨우 생존, 스트래티지 매각 그리고 마스터카드의 18억 달러 거래에 숨겨진 이야기: 한 주간 크립토 주요 5가지 소식",
       "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNeUQxR19VV0hSeVlkZzRzWlB4TE9tR0ZReEExQm52cW02U0pPWWVBT3F1SUNmRm5GVnpQLU5jcXFkdnNjT1c4SFpQeGRNQjNLVHc1cHM1cFd2NWxPa2hBczRvNjhmU0ZyaTZ2QzNmRDNpajlZazFKZ2s2TV9ubjQzSzl1S09LOG5qdWY5UmtIOXN6SjRKSlFIc0JRMXJLb0tNTHlHUlQzLU9rZFpaaERWSTRiOURteVJrYmpIdWl4TE13aGxuTkV2UlQ0WmtHYlFjckNUY2hIOW1uZ2MzcjR5ZUoyQUo5STVYS3ZZMW5jTk9nU0VOSldBcUN3a2cyd1U?oc=5",
       "published": "2026-08-15",
@@ -277,7 +271,15 @@
       "published": "2026-08-15",
       "published_at": "2026-08-15T12:37:00",
       "summary": "",
-      "category": "딜·M&A"
+      "category": "딜·M&A",
+      "dupes": [
+        {
+          "title": "'397조 자산' 아마존 창업자 베이조스, 리버풀에 초대형 베팅...FSG, 지분 3분의 1 매각",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE93UDhBSzFSdW4wT0RpN1NJYVByekdsSnBfWVk4TEtBazlodl9od21pSmpHbHUyX2VZOFc2aFJ4VTVwWTB4al9BSElTVUtISVE?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-08-15"
+        }
+      ]
     },
     {
       "source": "gnews_딜·M&A",
@@ -513,7 +515,7 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "고성신문",
+      "source_label": "gosnews.kr",
       "title": "부가가치세 환급으로 7억9천만 원 확보",
       "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBiLUhLb0FralY4czFjaHRqVUlzWjdqb2o3OURtbW9vRlBfbWxMR1RDQloyc05WMFM4LWdrRTdXWmRVbk84N29XWUVCZHBBZWhiVGZlejNmaTRPbmZVeUk1clV5OGlZVXpCdXNnbHVhVzFKSS1DWlpoSUs3ZXU?oc=5",
       "published": "2026-08-14",
@@ -625,6 +627,16 @@
     },
     {
       "source": "gnews_딜·M&A",
+      "source_label": "조선일보",
+      "title": "앤스로픽, ‘2조달러 몸값’으로 10월 IPO…스페이스X 넘어 역대 최대 노린다",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZGFiUnNwWDRfUVVmZ2RKMFllenh4MVJqOGtvZzNJUVI0VHl6QlRMWVJkTVE5QlpsWTB2WlU2Q1JVaFh4OE80SENlbkI3aUtVOFlTUVAtbXFzRUJqel9FeWJGTGJUa0ZLaUZPdFYtU0Fxc3RzNVpneWNsUEtOaURpZg?oc=5",
+      "published": "2026-08-13",
+      "published_at": "2026-08-13T23:31:06",
+      "summary": "",
+      "category": "딜·M&A"
+    },
+    {
+      "source": "gnews_딜·M&A",
       "source_label": "연합인포맥스",
       "title": "워크데이, 사모펀드의 인수 기대로 17% 급등…10년래 최대폭 상승",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9sQk5TWjVRX3VBSmVmaUFNeEhJLTliWVdjWmxndGFUQW9KUjUwdkNreV8zRm1zNVRzOW1iVVh6ZHBWckNfdDZkLUtDZi1ueGFzYjAtZWNfTnZldmx2YVEwM0dqSW50SlhyLWFoaEJWMUfSAXRBVV95cUxNTDJiNEowZWFiT0ZkbG1TOV9hdVpiTkNzS3NwZ2huY0pIejU2WnMxeENVeUxXQmJzVlg0enIyeUVpcmh6Ym1ZUUxkakM3M3laYmQ3OE1oNUxBM1B6VnFwOGlJWmxWZTRMSHFIRHktTnppVkhDNg?oc=5",
@@ -635,7 +647,7 @@
     },
     {
       "source": "gnews_딜·M&A",
-      "source_label": "investchosun.com",
+      "source_label": "인베스트조선",
       "title": "롯데카드, 세 번째 매각 '기로'…몸값 낮춰도 굳게 닫힌 지주사 '지갑'",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbU5tbjJ6a2dBOGk5VFBvOWNOejNJaXB2VXBlYmtxb1lSUHktOFYycHhoZWV2TGVkOEpld3oyY18wS2FHQlpTdkdoR0RYeF9TNGEzZWd3SHB3WW8wdU1RejJDZUplNER5NXRfWHphb0JhWl9JaEl4NU5TZ19GbEZRUTlxTQ?oc=5",
       "published": "2026-08-13",
@@ -699,7 +711,7 @@
     },
     {
       "source": "gnews_딜·M&A",
-      "source_label": "kpanews.co.kr",
+      "source_label": "약사공론",
       "title": "바로팜, IPO 본격화 코스닥 상장예비심사 승인",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBsWUV6ck91OVRvaHY4a29QZ2RaQ1dRWGNkSnViTFRwNjBOR1JManMyckFmdkxGWFBMT0ppbHBxM2c5N2VKc1NUc0pCWUFmNmp2bkhyVTU2OTVQakdfWFl2VGZzclhKUDhZQ0xJRw?oc=5",
       "published": "2026-08-13",
@@ -709,7 +721,7 @@
     },
     {
       "source": "gnews_딜·M&A",
-      "source_label": "investchosun.com",
+      "source_label": "인베스트조선",
       "title": "AI 집중하겠다는 LG그룹, 대형 M&A 없는 성장전략은 유효할까",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQQlBmNG9VYlBDeExsdWFNYXBwcW00Sjdsc0NaNl83bnBJWS14Z1dxbTRkMGpqNE1oMjg0Y28zV1BIYzE3enBmOEZOUVlvY09tM1FieHR6am1ranVTSXR2SE1mUURmZ01qQmQtNFNzU3Yzd3B6bUZmb090T3dUWDVsU05OTQ?oc=5",
       "published": "2026-08-12",
@@ -719,7 +731,7 @@
     },
     {
       "source": "gnews_딜·M&A",
-      "source_label": "investchosun.com",
+      "source_label": "인베스트조선",
       "title": "메가딜이 이끈 글로벌 M&A 반등…국내는 고금리·규제가 발목",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPSGlHbzJHX3JlMUZ1azBaQjF2TEFaaUpGbXYyNE1kdzZhTzNtazlNZjRUcFdlYmdQUzYzMWxiVTdjOTNNdndvc0tWd2tsVnhBaTlOdURIcFBLQ3AxVXctdDNZRTFVMG1tTDZsdVhhLUM5bzJoMTVIRkhhYnR2eU04ZUI4bw?oc=5",
       "published": "2026-08-12",
@@ -754,16 +766,6 @@
           "published": "2026-08-12"
         }
       ]
-    },
-    {
-      "source": "gnews_딜·M&A",
-      "source_label": "Chosunbiz",
-      "title": "상폐 위기 소형주들, 지금도 M&A 안되는데… 관리종목 되면 구주 매각 사실상 막혀 - 조선비즈",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNV01vd21acFVjRmNvdk5MR1RXX2pmNGViRlVUNW1IWGZiNVJkMElDeUhJMzBMZ3BTMThISzZ4QkYyMGhvcTc4RTljNkJUdEJkS3A1ZXI3U3lBTmJsN2t3SFc1MkdfTkN4MFJBekZ5dnZ4eUVKRTdXRUE5czl0SzRsRTk5QjM2VTDSAZsBQVVfeXFMT2tZUUdxSUs3Q01GcFAwR2dpSXVVZDR5RXYwSF9vZldpcENSY1FqQVc1WGo1UW05b2hSeko4NnNCMWhUYngtRFBoWDZkTWNsb21BVWxweWp6UnBYSnVrYXpFU1dBXzBkX3liWksybF8wVENYSktHUHFqMnlmaWl0QVlzVGRrZXJzQXdHcktaWWhrSVZObkpmOEdCSUU?oc=5",
-      "published": "2026-08-12",
-      "published_at": "2026-08-12T02:42:00",
-      "summary": "",
-      "category": "딜·M&A"
     },
     {
       "source": "gnews_세무",
@@ -807,7 +809,7 @@
     },
     {
       "source": "gnews_딜·M&A",
-      "source_label": "investchosun.com",
+      "source_label": "인베스트조선",
       "title": "엠앤씨솔루션 매각 무산…한국투자파트너스와 협상 종료",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTlczdWJqdGNQdnF6a0JpQjcxRUt6WnpyU1kzSFZUNkFmTHFKZF9PMXUyMl9iVnQ5c19qNkhiTEpXUUJ6WmNzWmlxazdLNTQxLXZsaVVCbWxzSGttVHppR2VqSmlJSDNPQm5rN1ZRQWdvOU54elg0aFg5NXJuZllkeW5hRQ?oc=5",
       "published": "2026-08-11",
@@ -877,7 +879,7 @@
     },
     {
       "source": "gnews_딜·M&A",
-      "source_label": "investchosun.com",
+      "source_label": "인베스트조선",
       "title": "SK, 美 AI컴퍼니 출범·솔리다임 프리IPO 앞두고 중복상장 규제 고민",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRkNzY3NFMmU2dkEtaGotaG5WLUFzdk85TU1iR0VwdmtGcGpxV09iRm9ncVZXZzVYSmlPNDAwM21oaVNDYzRzWEgyeWlRMEtScjl3QzlZSmVWemNMTHNoeHZiR2ZTa2R0ZUFWNlRVUjk3c2JfSHdXOGE0YnNlMWtFeVJaRQ?oc=5",
       "published": "2026-08-10",
@@ -1033,7 +1035,7 @@
     },
     {
       "source": "gnews_딜·M&A",
-      "source_label": "investchosun.com",
+      "source_label": "인베스트조선",
       "title": "신한證 최훈·양근창 IPO 부서장 회사 떠난다…메리츠行",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQOGFHSnpPanJOVTEzYU04TGtNd3RMLWdhMHJCMWZwM2E2aU82WTQ0eVV4bjZIZFlXRlhUVUF3TGhTQ1RSZFA4b3Y5dzNJOWJGTkdidWdEejU3anZUYXplc1pBd1VoMWRWU09seE0tb05EV004YjZKVE1SWDkxQW9wWV9EWQ?oc=5",
       "published": "2026-07-27",
@@ -1078,26 +1080,6 @@
           "published": "2026-06-02"
         }
       ]
-    },
-    {
-      "source": "gnews_채용·시험",
-      "source_label": "investchosun.com",
-      "title": "AI 탓 불거진 '미지정 회계사 강제 배정' 정책...글로벌 트렌드 역행 '논란'",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPSEdheW9zd001N09rY2VWaHBHV2d1XzNSWFdZcTFMb0llcEw2bGl2YnJxcjNpYjMtY1NlMGZCZ3RrMGpYaXYxamFfejMxVUpsNjdmWUpwSmlKdk9Fc1NmMFVKMkp4SzJINGlibzZvUXBhTkhhTXJKVElPT3J5emlwS29Ddw?oc=5",
-      "published": "2026-06-01",
-      "published_at": "2026-06-01T07:00:00",
-      "summary": "",
-      "category": "채용·시험"
-    },
-    {
-      "source": "gnews_채용·시험",
-      "source_label": "조선일보",
-      "title": "“CPA 합격 후에도 백수”...‘미지정 회계사’ 동아줄, 국회·법원·국민연금도 문 연다",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQck1CZC1CWWxudXEwYkU1M0ZjVEZTTTFaOThFZFAtaU9TQ3hyQUNBTlhZaHNUemRNUks0Y2JaVUREU1Jlbi1qN0t1S01McUdLaEZqMVlPamo1cGZCMzFtV25nWFdXUzJHQjFNRzJpY2R4VG45SkJLRWY2a1M4SnFGUC1wblMwTlFpbzl6VXhB?oc=5",
-      "published": "2026-06-01",
-      "published_at": "2026-06-01T07:00:00",
-      "summary": "",
-      "category": "채용·시험"
     }
   ]
 }

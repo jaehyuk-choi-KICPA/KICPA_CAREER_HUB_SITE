@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-17T20:01:38",
+  "generated_at": "2026-08-17T20:31:30",
   "soon_days": 7,
   "counts": {
-    "total": 64,
+    "total": 62,
     "open": 46,
-    "closed": 18,
+    "closed": 16,
     "new": 0,
     "soon": 19,
     "by_firm": {
       "삼일": 13,
       "삼정": 2,
       "안진": 8,
-      "한영": 24,
+      "한영": 22,
       "로컬": 13,
       "기타": 4
     },
     "by_qualification": {
       "수습CPA": 21,
-      "자격무관": 43
+      "자격무관": 41
     },
     "by_emp_kind": {
-      "인턴": 24,
-      "정규직": 31,
+      "인턴": 23,
+      "정규직": 30,
       "계약직": 7,
       "파트타임": 2
     }
@@ -1081,25 +1081,6 @@
       "emp_kind": "인턴",
       "status": "closed",
       "is_new": false,
-      "title": "Talent 채용팀 인턴",
-      "company": "EY한영",
-      "deadline": "2026-08-09",
-      "posted_date": "2026-08-03",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/123878",
-      "dday": -8,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
       "title": "재무실 단기 인턴",
       "company": "EY한영",
       "deadline": "2026-08-12",
@@ -1183,25 +1164,6 @@
       "location": "서울 영등포구",
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1784101171573",
-      "dday": -4,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "딜",
-      "qualification": "자격무관",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "전략·재무자문부문 Deal2 (가치평가팀) 신입/경력직",
-      "company": "EY한영",
-      "deadline": "2026-08-13",
-      "posted_date": "2026-08-03",
-      "location": "",
-      "emp_type": "신입/경력",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/122214",
       "dday": -4,
       "first_seen": ""
     },

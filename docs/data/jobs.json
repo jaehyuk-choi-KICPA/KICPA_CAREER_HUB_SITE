@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-20T17:31:39",
+  "generated_at": "2026-08-20T18:01:56",
   "soon_days": 7,
   "counts": {
     "total": 66,
     "open": 48,
     "closed": 18,
-    "new": 9,
+    "new": 7,
     "soon": 16,
     "by_firm": {
       "삼일": 13,
@@ -263,7 +263,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "금융컨설팅부문 리스크 컨설팅 인턴",
       "company": "EY한영",
       "deadline": "2026-08-26",
@@ -776,7 +776,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[선진회계법인 대구지점] 수습 공인회계사 모집공고",
       "company": "선진회계법인 대구지점",
       "deadline": "2026-12-31",

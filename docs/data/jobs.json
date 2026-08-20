@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-20T11:01:32",
+  "generated_at": "2026-08-20T11:31:28",
   "soon_days": 7,
   "counts": {
-    "total": 60,
-    "open": 42,
+    "total": 62,
+    "open": 44,
     "closed": 18,
-    "new": 5,
-    "soon": 14,
+    "new": 7,
+    "soon": 15,
     "by_firm": {
       "삼일": 13,
       "삼정": 2,
       "안진": 5,
-      "한영": 21,
-      "로컬": 15,
+      "한영": 22,
+      "로컬": 16,
       "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 23,
-      "자격무관": 37
+      "수습CPA": 24,
+      "자격무관": 38
     },
     "by_emp_kind": {
-      "인턴": 22,
-      "정규직": 30,
+      "인턴": 23,
+      "정규직": 31,
       "계약직": 6,
       "파트타임": 2
     }
@@ -235,6 +235,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/125534",
       "dday": 4,
       "first_seen": "2026-08-19T18:34:17"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "컨설팅부문 AID팀 인턴",
+      "company": "EY한영",
+      "deadline": "2026-08-25",
+      "posted_date": "2026-08-19",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/125536",
+      "dday": 5,
+      "first_seen": "2026-08-20T11:31:28"
     },
     {
       "source": "hanyoung",
@@ -653,6 +672,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1787019076628",
       "dday": 41,
       "first_seen": "2026-08-18T11:32:59"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[한경회계법인]경력자 채용(하반기단축근무시행)",
+      "company": "한경회계법인",
+      "deadline": "2026-09-30",
+      "posted_date": "2026-08-20",
+      "location": "서울 강남구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1787192697987",
+      "dday": 41,
+      "first_seen": "2026-08-20T11:31:28"
     },
     {
       "source": "kicpa_susup",

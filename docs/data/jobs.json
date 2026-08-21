@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-21T11:01:40",
+  "generated_at": "2026-08-21T11:31:44",
   "soon_days": 7,
   "counts": {
     "total": 66,
     "open": 44,
     "closed": 22,
-    "new": 7,
+    "new": 5,
     "soon": 14,
     "by_firm": {
       "삼일": 13,
@@ -168,7 +168,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "컨설팅부문 AID팀 인턴",
       "company": "EY한영",
       "deadline": "2026-08-25",
@@ -662,7 +662,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[한경회계법인]경력자 채용(하반기단축근무시행)",
       "company": "한경회계법인",
       "deadline": "2026-09-30",

@@ -376,6 +376,17 @@ _DEFAULTS: dict = {
         # 출처 제외 — ⚠️ news_exclude_sources 재사용 금지: 지역지는 산업(지역 공장·조선·석화)에
         # 유효 기사가 많다. 증권정보 애그리게이터·블로그성만 차단.
         "industry_exclude_sources": ["Naver Blog", "Hypebeast", "인포스탁데일리"],
+        # 의미 군집(임베딩) — 어휘로 못 묶는 '같은 사건·다른 표현'을 보조 병합.
+        # embeds.refine만 쓴다(제목 벡터 코사인). **enrich는 쓰지 않는다** — enrich의 프로토타입은
+        # news_queries를 임베딩하므로 산업에 적용하면 카테고리 체계가 어긋난다.
+        # ⚠️ 캐시 파일은 반드시 뉴스와 분리 — _save_cache가 '현재 목록 url'만 남기고 자르기 때문에
+        #    한 파일을 공유하면 매 실행 서로의 벡터를 축출해 재임베딩이 무한 반복된다.
+        "industry_embed_enabled": True,
+        "industry_embed_threshold": 0.83,
+        "industry_embed_candidate_min_tokens": 2,   # 산업은 업종어가 흔해 공통토큰 1이면 의심쌍이 폭증 → 2
+        # 이 캐시는 **커밋하지 않는다**(.gitignore). 벡터 파일은 수 MB라 3시간마다 커밋하면 리포가 부푼다.
+        # 캐시가 없으면 매 실행 재임베딩하지만 제목 200여 건이라 비용이 사실상 0(voyage-3.5-lite).
+        "industry_embed_cache_path": "industry_vectors.json",
         # 근접중복 파라미터(뉴스와 값은 같지만 독립 튜닝 여지를 위해 별도 키)
         "industry_neardup_jaccard": 0.6,
         "industry_neardup_overlap": 0.67,

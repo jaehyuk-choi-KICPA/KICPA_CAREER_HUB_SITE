@@ -12,7 +12,7 @@ import json
 import re
 from pathlib import Path
 
-from src import embeds
+from src import archive, embeds
 from src.adapters.base import safe_fetch
 from src.adapters.insights import build_insight_adapters
 from src.adapters.news_rss import build_industry_adapters, build_news_adapters
@@ -596,6 +596,9 @@ def build_industry(cfg: dict, results: list | None = None) -> dict:
     merged: list[dict] = []
     for cat in [*order, *(c for c in by_cat if c not in order)]:
         merged.extend(_dedup_near(by_cat.get(cat, []), jac, ov, mt))
+    # 의미 군집 보조 — 어휘(_dedup_near)로 못 묶은 '같은 사건·다른 표현'을 임베딩 코사인으로 병합.
+    # refine은 같은 카테고리 쌍만 보므로 산업을 가로지르지 않는다. VOYAGE 키 없으면 no-op(어휘 군집만).
+    merged = embeds.refine(_sort_recent(merged), _title_sig, cfg, prefix="industry")
     items = _cap_per_day(_sort_recent(merged), d.get("industry_max_per_day_per_cat", 0))
 
     # 산업별 기업 후보(프론트 칩 사전) — 실제 노출은 기사 ≥1건인 기업만 프론트가 고른다
@@ -653,9 +656,13 @@ def main() -> None:
         state.save()  # 마감일 캐시 갱신
         _write_guarded("jobs.json", jobs, "postings")
         ran["jobs"] = jobs.get("generated_at", "")
+    since = cfg["dashboard"].get("archive_since", "")
     if part in ("all", "news"):
         news = build_news(cfg)
         _write_guarded("news.json", news, "items")
+        # 아카이브에는 **필터·일자상한을 모두 통과한 최종 items**만 넣는다. git 스냅샷 백필로
+        # 복원되는 과거가 정확히 '그때 화면에 떴던 것'이라, 라이브 append도 같은 기준이어야 이질적이지 않다.
+        archive.merge_items("news", news.get("items") or [], since=since)
         ran["news"] = news.get("generated_at", "")
     if part in ("all", "industry") and cfg["dashboard"].get("industry_enabled", True):
         # run-all은 30분 주기지만 산업 어댑터는 22개라 매 회차 돌리면 과수집·throttle·리포 churn.
@@ -663,11 +670,15 @@ def main() -> None:
         if part == "industry" or _industry_due(cfg):
             ind = build_industry(cfg)
             _write_guarded("industry.json", ind, "items")
+            archive.merge_items("industry", ind.get("items") or [], since=since)
             ran["industry"] = ind.get("generated_at", "")
     if part in ("all", "insights"):
         ins = build_insights(cfg)
         _write_guarded("insights.json", ins, "items")
+        archive.merge_items("insights", ins.get("items") or [], since=since)
         ran["insights"] = ins.get("generated_at", "")
+    if part != "jobs":          # 채용은 아카이브하지 않음(마감 공고는 학습가치 낮고 state.json이 이력 보유)
+        archive.rebuild_index(since=since)
     _update_status(ran)         # 변화 없어도 '점검 시각(last_run)' 항상 기록
     _update_sitemap_lastmod()   # 검색엔진 재크롤 신호: 사이트맵 lastmod를 오늘로
     print(f"  → docs/data/ ({part})")

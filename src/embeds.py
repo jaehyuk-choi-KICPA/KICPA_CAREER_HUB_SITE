@@ -134,23 +134,29 @@ def enrich(items: list[dict], sig_fn, cfg: dict, client=None) -> list[dict]:
     return out
 
 
-def refine(items: list[dict], sig_fn, cfg: dict, client=None) -> list[dict]:
+def refine(items: list[dict], sig_fn, cfg: dict, client=None, prefix: str = "news") -> list[dict]:
     """어휘 1차 군집된 대표 리스트를 받아, 의심 쌍을 임베딩 코사인으로 추가 병합한다.
 
     items는 최신순(앞이 최신) 전제 — 병합 시 가장 앞(최신) 대표를 유지하고 나머지를 dupes로 흡수.
     `client`는 테스트 주입용(없으면 환경 키로 생성). `sig_fn(title)->set` 은 export._title_sig.
+
+    `prefix`는 설정 네임스페이스(`news_embed_*` / `industry_embed_*`)를 고른다. 산업 스트림이
+    같은 병합 로직을 쓰되 **임계·캐시 파일을 따로** 갖게 하려는 것이다.
+    ⚠️ 캐시는 반드시 스트림별로 분리해야 한다 — `_save_cache`가 '현재 목록 url'만 남기고 잘라내므로
+       한 파일을 공유하면 뉴스와 산업이 매 실행 서로의 벡터를 축출해 재임베딩이 무한 반복된다.
+    (프로토타입을 쓰는 `enrich`와 달리 이 함수는 제목 벡터만 보므로 카테고리 체계가 달라도 안전하다.)
     """
     d = cfg["dashboard"]
-    if not d.get("news_embed_enabled", True) or len(items) < 2:
+    if not d.get(f"{prefix}_embed_enabled", True) or len(items) < 2:
         return items
     client = client or _client()
     if client is None:
         return items  # 키 없음 → 어휘 군집만(폴백)
 
-    th = d.get("news_embed_threshold", 0.82)
-    min_tok = d.get("news_embed_candidate_min_tokens", 1)
-    model = d.get("news_embed_model", "voyage-3.5-lite")
-    cache_path = d.get("news_embed_cache_path", "news_vectors.json")
+    th = d.get(f"{prefix}_embed_threshold", 0.82)
+    min_tok = d.get(f"{prefix}_embed_candidate_min_tokens", 1)
+    model = d.get(f"{prefix}_embed_model", d.get("news_embed_model", "voyage-3.5-lite"))
+    cache_path = d.get(f"{prefix}_embed_cache_path", "news_vectors.json")
 
     n = len(items)
     sigs = [sig_fn(it.get("title", "")) for it in items]

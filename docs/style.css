@@ -431,6 +431,21 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .dart-btn { margin-left:auto; text-decoration:none; border:1px solid var(--accent); color:var(--accent);
   border-radius:8px; padding:6px 11px; font-size:12px; font-weight:700; white-space:nowrap; }
 .dart-btn:hover { background:var(--accent); color:#fff; }
+/* 감사인 배지 — 이 회사를 누가 감사하는지가 이 화면에서 가장 쓸모 있는 한 줄이다 */
+.comp-aud { font-size:11.5px; font-weight:700; padding:3px 9px; border-radius:999px;
+  background:var(--accent-soft); color:var(--accent); }
+/* 3개년 주요계정 미니표 — 좁은 화면에선 표만 가로 스크롤(본문은 넘치지 않게) */
+.comp-fin { flex-basis:100%; overflow-x:auto; margin-top:2px; }
+.comp-fin table { border-collapse:collapse; font-size:12px; min-width:100%; }
+.comp-fin th, .comp-fin td { padding:5px 10px; text-align:right; white-space:nowrap;
+  border-top:1px solid var(--line); }
+.comp-fin thead th { border-top:0; color:var(--muted); font-weight:700; }
+.comp-fin th:first-child, .comp-fin td:first-child { text-align:left; color:var(--muted); font-weight:700; }
+.comp-fin .neg { color:#c0392b; }
+.comp-filings { flex-basis:100%; display:flex; flex-wrap:wrap; gap:5px; margin-top:2px; }
+.comp-filing { text-decoration:none; border:1px solid var(--line); background:var(--chip-bg);
+  color:var(--ink2); border-radius:6px; padding:3px 8px; font-size:11px; font-weight:700; }
+.comp-filing:hover { border-color:var(--accent); color:var(--accent); }
 
 /* 카드 안 기업 태그 — 누르면 그 기업으로 좁혀본다(카드 위에서도 동선이 완결) */
 .co-row { display:flex; flex-wrap:wrap; gap:5px; margin-top:8px; }

@@ -204,6 +204,39 @@ flowchart LR
 
 ---
 
+## 3.55 기업 정보 (DART Open API · `src/adapters/dart.py`)
+
+산업 화면의 기업 칩을 누르면 뜨는 요약(감사인 · 3개년 주요계정 · 최근 공시)의 출처.
+**스크래핑이 아니라 공식 Open API**를 쓴다 — 안정적·합법적이고, 수치와 링크만 저장하므로 저작권도 안전하다.
+
+```mermaid
+flowchart LR
+    CC["corpCode.xml (zip)<br/>회사명 → corp_code<br/>상장사(stock_code) 우선"]
+    LA["list.json · pblntf_ty=A<br/>사업·반기·분기보고서"]
+    LF["list.json · pblntf_ty=F<br/>외부감사관련"]
+    AU["report_nm에 '감사보고서'인 건의<br/>**flr_nm = 그 회사의 감사인**"]
+    FN["fnlttSinglAcnt.json<br/>reprt_code=11011 → 3개년<br/>연결(CFS) 우선, 없으면 개별(OFS)"]
+    OUT3["docs/data/companies.json"]
+
+    CC --> LA --> AU
+    CC --> LF --> AU
+    CC --> FN
+    AU --> OUT3
+    FN --> OUT3
+```
+
+- **핵심**: 감사보고서는 감사인이 제출하므로 `flr_nm`(공시 제출인명)이 곧 회계법인이다.
+  "이 회사를 삼일이 감사하는가"를 규칙만으로 알 수 있는 유일한 경로.
+- **유형을 나눠 조회하는 이유**: 한 번에 받으면 100건 상한에 밀려 감사보고서가 빠질 수 있다.
+- **주기**: 재무·감사인은 분기 단위로만 바뀌므로 `companies_min_interval_minutes`(10080 = 주 1회) 게이트.
+  기업 60곳 기준 약 180콜 — 한도(일 20,000)에 여유가 크다.
+- **키 정책**: `DART_API_KEY`(GitHub Secret)에서만. **없으면 전체 no-op** → `companies.json`을 만들지 않고
+  프론트는 DART 검색 링크만 노출한다(사이트 정상). VOYAGE_API_KEY와 같은 게이트 패턴.
+- ⚠️ 저장소에는 **빈 `companies.json` 플레이스홀더**를 둔다. 없으면 프론트 fetch가 404를 내고
+  sitecheck의 '콘솔 에러 없음' 점검이 실패해 오탐 이슈가 열린다.
+
+---
+
 ## 3.6 누적 아카이브 (`src/archive.py`)
 
 `news.json`·`industry.json`은 매 수집마다 전량 덮어쓰기라 보존창이 지난 기사는 사라진다.
@@ -294,13 +327,14 @@ flowchart LR
 ├── config.yaml                  ← 운영 설정 (runtime · filters · formats)
 ├── src/
 │   ├── config.py                ← dashboard 전체 규칙 (쿼리·필터·분류)
-│   ├── export.py                ← 수집 진입점 (--part jobs|news|insights|industry)
+│   ├── export.py                ← 수집 진입점 (--part jobs|news|insights|industry|companies)
 │   ├── sources.py               ← ThreadPool 병렬 fetch 조율
 │   ├── state.py                 ← 채용공고 상태 영속 (first_seen · grace)
 │   ├── classify.py              ← 법인/자격요건(수습CPA·자격무관)/채용구분(인턴·정규·계약·파트) 분류
 │   ├── filters.py               ← 경력 제외 필터
 │   ├── notifier.py              ← 웹 푸시 채용알림 발송(pywebpush·VAPID·scope)
 │   ├── archive.py               ← 누적 아카이브(월별 샤드 멱등 append + index)
+│   ├── adapters/dart.py         ← DART Open API(감사인·3개년 주요계정·최근 공시)
 │   ├── news.py                  ← NewsItem 데이터클래스
 │   ├── record.py                ← Posting 데이터클래스
 │   ├── embeds.py                ← Voyage 임베딩 (키 있을 때만)

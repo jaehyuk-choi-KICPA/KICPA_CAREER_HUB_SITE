@@ -14,6 +14,7 @@ from pathlib import Path
 
 from src import archive, embeds
 from src.adapters.base import safe_fetch
+from src.adapters.dart import build_companies
 from src.adapters.insights import build_insight_adapters
 from src.adapters.news_rss import build_industry_adapters, build_news_adapters
 from src.classify import classify_emp_kind, classify_field, classify_firm, classify_qualification
@@ -643,7 +644,8 @@ def main() -> None:
     import argparse
 
     ap = argparse.ArgumentParser(description="대시보드 데이터 생성")
-    ap.add_argument("--part", choices=["all", "jobs", "news", "insights", "industry"], default="all",
+    ap.add_argument("--part", choices=["all", "jobs", "news", "insights", "industry", "companies"],
+                    default="all",
                     help="갱신할 스트림(워크플로별 분리 실행용)")
     part = ap.parse_args().part
 
@@ -672,6 +674,13 @@ def main() -> None:
             _write_guarded("industry.json", ind, "items")
             archive.merge_items("industry", ind.get("items") or [], since=since)
             ran["industry"] = ind.get("generated_at", "")
+    if part in ("all", "companies") and cfg["dashboard"].get("dart_enabled", True):
+        # 재무·감사인은 분기 단위로만 바뀌므로 주 1회면 충분(한도가 아니라 무의미한 재조회를 줄이는 것).
+        if part == "companies" or _due("companies", cfg["dashboard"].get("companies_min_interval_minutes", 10080)):
+            comp = build_companies(cfg)
+            if comp:                      # 키 없으면 None → 파일을 만들지 않는다(프론트는 검색 링크만)
+                _write_guarded("companies.json", comp, "companies")
+                ran["companies"] = comp.get("generated_at", "")
     if part in ("all", "insights"):
         ins = build_insights(cfg)
         _write_guarded("insights.json", ins, "items")
@@ -684,20 +693,26 @@ def main() -> None:
     print(f"  → docs/data/ ({part})")
 
 
-def _industry_due(cfg: dict) -> bool:
-    """산업 수집 주기 게이트 — status.json의 industry 시각이 min_interval을 넘겼는지."""
-    mins = cfg["dashboard"].get("industry_min_interval_minutes", 0)
+def _due(stream: str, mins: int) -> bool:
+    """스트림별 수집 주기 게이트 — status.json의 그 스트림 시각이 min_interval을 넘겼는지.
+
+    run-all은 30분마다 도는데 산업(어댑터 26개)·기업정보(DART 180콜)를 매번 돌릴 이유가 없다.
+    파일/키가 없으면 True(첫 실행).
+    """
     if not mins:
         return True
     try:
         cur = json.loads((_DATA_DIR / "status.json").read_text(encoding="utf-8"))
-        prev = cur.get("industry")
+        prev = cur.get(stream)
         if not prev:
             return True
-        age = (_dt.datetime.now() - _dt.datetime.fromisoformat(prev)).total_seconds() / 60
-        return age >= mins
+        return (_dt.datetime.now() - _dt.datetime.fromisoformat(prev)).total_seconds() / 60 >= mins
     except Exception:  # noqa: BLE001
         return True
+
+
+def _industry_due(cfg: dict) -> bool:
+    return _due("industry", cfg["dashboard"].get("industry_min_interval_minutes", 0))
 
 
 def _update_status(ran: dict[str, str]) -> None:

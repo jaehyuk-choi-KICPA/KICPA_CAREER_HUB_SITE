@@ -458,6 +458,12 @@ _DEFAULTS: dict = {
         "industry_company_max_tags": 3,   # 기사 1건당 기업 태그 상한
         # DART 전자공시 검색 링크 템플릿 — industry.json에 실어 프론트가 그대로 사용(API 키 불필요)
         "industry_dart_search_url": "https://dart.fss.or.kr/dsab007/main.do?textCrpNm={q}",
+        # DART 전자공시 Open API — 기업별 감사인·3개년 주요계정·최근 공시(docs/data/companies.json).
+        # ⚠️ DART_API_KEY는 GitHub Secret에서만. **키 없으면 기능 전체 비활성**(파일 미생성,
+        #    프론트는 DART 검색 링크만 노출 → 사이트는 정상). VOYAGE_API_KEY와 같은 게이트 패턴.
+        "dart_enabled": True,
+        "dart_filing_years": 2,                 # 최근 공시 조회 기간(년)
+        "companies_min_interval_minutes": 10080,  # 재무·감사인은 분기 단위로만 바뀜 → 주 1회
         # 아카이브 하한 — 이 날짜 이전 발행 기사는 아카이브에 넣지 않는다.
         # (git 스냅샷에 첫 수집이 끌어온 4월 기사가 3건 섞여 있어 월 칩이 지저분해짐)
         "archive_since": "2026-05-01",

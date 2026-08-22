@@ -18,7 +18,8 @@ jobs:
     timeout-minutes: 25      # 정상 ~10분. 행 걸려도 25분에 자동 종료 → data-commit 그룹 장기 점유 방지(수집 정지 사고 재발 차단)
     env:
       TZ: Asia/Seoul
-      VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}   # 뉴스 의미 군집(없으면 어휘 군집만)
+      VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}   # 뉴스·산업 의미 군집(없으면 어휘 군집만)
+      DART_API_KEY: ${{ secrets.DART_API_KEY }}      # 기업 감사인·3개년 재무(없으면 companies.json 미생성)
       VAPID_PRIVATE_KEY: ${{ secrets.VAPID_PRIVATE_KEY }}   # 웹 푸시 서명 개인키(없으면 notifier가 발송 스킵)
       SUBS_READ_TOKEN: ${{ secrets.SUBS_READ_TOKEN }}       # 구독 저장소(Worker) /list Bearer
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
@@ -43,6 +44,9 @@ jobs:
           git add docs/data/jobs.json docs/data/news.json docs/data/insights.json \
                   docs/data/industry.json docs/data/archive \
                   docs/data/status.json news_vectors.json state.json docs/sitemap.xml
+          # companies.json은 DART_API_KEY가 있을 때만 생성된다 → 없으면 git add가 실패해
+          # 스텝 전체가 죽으므로 별도 줄에서 실패를 흡수한다.
+          git add docs/data/companies.json 2>/dev/null || true
           if git diff --staged --quiet; then echo "변경 없음"; else
             git commit -m "auto: run-all 통합 수집"
             # 재생성 산출물(jobs/news/insights/status·캐시)은 '최신 수집이 이김'이 정확한 의미.

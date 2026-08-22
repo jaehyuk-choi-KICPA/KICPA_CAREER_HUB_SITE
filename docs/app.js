@@ -687,7 +687,52 @@ function initRangeBar(barId, stream, onRecent, onMonth) {
 }
 
 // ── 산업 뷰 ──────────────────────────────────────────────────────────────
-const IND = { data:null, arch:null, cat:null, co:null, pager:null };
+const IND = { data:null, arch:null, cat:null, co:null, pager:null, comp:null };
+
+// 금액(원) → '억' 단위 축약. DART 원본은 원 단위라 그대로 두면 자릿수가 읽히지 않는다.
+function fmtEok(n) {
+  if (n === null || n === undefined) return "–";
+  const eok = Math.round(n / 1e8);
+  return eok.toLocaleString() + "억";
+}
+
+// 감사인 배지 — 이 화면에서 가장 쓸모 있는 한 줄(누가 이 회사를 감사하는가). 자료 없으면 null.
+function companyAuditor(name) {
+  const c = IND.comp && IND.comp.companies && IND.comp.companies[name];
+  return (c && c.auditor) ? el("span", { class:"comp-aud", text:"감사인 " + c.auditor }) : null;
+}
+
+// 기업 요약 — 3개년 주요계정 + 최근 공시. companies.json(DART)이 없으면 아무것도 안 그린다.
+// (DART_API_KEY가 없으면 그 파일이 아예 생성되지 않는다 → 검색 링크만 남는 graceful degrade)
+function companyBrief(name) {
+  const c = IND.comp && IND.comp.companies && IND.comp.companies[name];
+  if (!c) return [];
+  const out = [];
+  const fin = c.financials || {};
+  const keys = Object.keys(fin);
+  if (keys.length && c.fy) {
+    const head = el("tr", {}, [el("th", { text:"(연결·억원)" }),
+      el("th", { text:String(c.fy) }), el("th", { text:String(c.fy - 1) }), el("th", { text:String(c.fy - 2) })]);
+    const rows = keys.map((k) => el("tr", {}, [
+      el("td", { text:k }),
+      ...["thstrm", "frmtrm", "bfefrmtrm"].map((t) => {
+        const v = fin[k][t];
+        return el("td", { class:(v !== null && v !== undefined && v < 0) ? "neg" : "", text:fmtEok(v) });
+      }),
+    ]));
+    out.push(el("div", { class:"comp-fin" }, [
+      el("table", {}, [el("thead", {}, [head]), el("tbody", {}, rows)]),
+    ]));
+  }
+  const fl = (c.filings || []).filter((f) => /사업보고서|반기보고서|분기보고서|감사보고서/.test(f.name)).slice(0, 4);
+  if (fl.length) {
+    out.push(el("div", { class:"comp-filings" }, fl.map((f) =>
+      el("a", { class:"comp-filing", href:f.url, target:"_blank", rel:"noopener",
+                text:f.name.replace(/\s+/g, " ").slice(0, 28) + " · "
+                     + (f.date || "").replace(/^(\d{4})(\d{2}).*$/, "$1-$2") }))));
+  }
+  return out;
+}
 
 function industryCard(it) {
   const card = newsCard(it);   // 카드 골격은 기사와 동일(카테고리 색이 없어 중립 회색 태그로 나온다)
@@ -745,16 +790,19 @@ function renderIndustry() {
     head.replaceChildren(
       el("span", { class:"comp-name", text:IND.co }),
       el("span", { class:"comp-n", text:"기사 " + cc[IND.co] + "건" }),
+      companyAuditor(IND.co),
       el("a", { class:"dart-btn", href:tpl.replace("{q}", encodeURIComponent(IND.co)),
                 target:"_blank", rel:"noopener", text:"📄 DART 전자공시 →" }),
+      ...companyBrief(IND.co),
     );
   } else { head.hidden = true; head.replaceChildren(); }
 
   IND.pager.set(IND.co ? inCat.filter((i) => (i.companies || []).includes(IND.co)) : inCat);
 }
 
-function initIndustry(data) {
+function initIndustry(data, companies) {
   IND.data = data;
+  IND.comp = companies;
   IND.pager = makePager("industry-list", "industry-empty", "industry-more", industryCard);
   if (!data || !(data.items || []).length) {
     // 아직 수집 전(첫 배포 등)에도 화면이 깨지지 않게 — 책갈피는 살리고 안내만
@@ -986,9 +1034,10 @@ function initNewsTabs() {
   $("industry-list").replaceChildren(...skel(4));
 
   // 아카이브(archive/*)는 여기서 받지 않는다 — '전체 기간'을 누른 사람만 그 달치를 받아간다.
-  const [jobs, news, insights, status, big4, industry] = await Promise.all([
+  const [jobs, news, insights, status, big4, industry, companies] = await Promise.all([
     loadJSON("data/jobs.json"), loadJSON("data/news.json"), loadJSON("data/insights.json"),
     loadJSON("data/status.json"), loadJSON("data/big4_recruit.json"), loadJSON("data/industry.json"),
+    loadJSON("data/companies.json"),   // DART 키 없으면 파일이 없다 → null(기업 요약만 숨김)
   ]);
   // 헤더 시각 = 점검 시각(last_run): 변화 없어도 자동화가 돌면 전진. 없으면 jobs 생성시각 폴백.
   const stamp = (status && status.last_run) || (jobs && jobs.generated_at) || "";
@@ -1017,7 +1066,7 @@ function initNewsTabs() {
   else { $("jobs-empty").hidden = false; $("jobs-empty").textContent = "채용 데이터를 불러오지 못했습니다."; }
   initSub("news", news, "f-newscat", "category", NEWS_CAT_ORDER);   // 색 없이 중립 밑줄 탭
   initNewsRange(news);      // 업계 기사 기간 필터(최근 ↔ 전체 기간)
-  initIndustry(industry);   // 산업 뷰(산업 칩 → 기업 칩 → DART)
+  initIndustry(industry, companies);   // 산업 뷰(산업 칩 → 기업 칩 → 감사인·재무 → DART)
   renderInsights(insights);
   initTools();          // 글자수·맞춤법 도구
   initTodayTabs();      // 책갈피 토글(방금 올라온 공고 ↔ 2026 신규공채)

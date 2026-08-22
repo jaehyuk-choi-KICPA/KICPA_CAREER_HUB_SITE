@@ -51,6 +51,9 @@ jobs:
               git add docs/data/jobs.json docs/data/news.json docs/data/insights.json \
                       docs/data/industry.json docs/data/archive \
                       docs/data/status.json state.json docs/sitemap.xml
+              # companies.json은 DART_API_KEY가 있을 때만 생성된다 → 없으면 git add가 실패해
+              # 스텝 전체가 죽으므로 별도 줄에서 실패를 흡수한다.
+              git add docs/data/companies.json 2>/dev/null || true
               if ! git diff --staged --quiet; then
                 git commit -m "auto: 모니터 셀프힐링 재수집"
                 git pull --rebase --autostash origin "${{ github.ref_name }}"

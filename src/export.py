@@ -534,6 +534,63 @@ def _cap_per_day(items: list[dict], cap: int) -> list[dict]:
     return out
 
 
+def _dedup_event(items: list[dict], cfg: dict) -> list[dict]:
+    """같은 사건 도배를 한 번 더 묶는다(산업 전용, 보수적).
+
+    어휘 근접중복(`_dedup_near`)은 제목 표현이 크게 다르면 못 묶는다. 실측에서 금호석유화학
+    2분기 실적이 카드 6장, 스카이랩스 상장이 4장으로 깔려 해당 산업의 체감 정보량이 절반이 됐다.
+
+    조건: 같은 산업 + 발행일 ±N일 + 공통토큰 min_common개 이상 + 그중 **고유명사성 토큰**
+    (일반 업계어 제외, min_proper_len자 이상)이 하나 이상.
+    → '금호석유화학'·'스카이랩스'처럼 구체적인 이름이 겹칠 때만 묶이고,
+      '반도체'·'실적'만 겹치는 다른 사건은 붙지 않는다(공통토큰 하한을 2로 낮추면 실제로 붙었다).
+    입력은 최신순 가정 — 대표는 가장 최신 1건, 나머지는 `dupes`로 흡수(버리지 않는다).
+    """
+    d = cfg["dashboard"]
+    days = d.get("industry_event_days", 5)
+    min_common = d.get("industry_event_min_common", 3)
+    min_len = d.get("industry_event_min_proper_len", 4)
+    generic = set(d.get("industry_event_generic", []))
+    if not days or not min_common:
+        return items
+
+    def day(it):
+        try:
+            return _dt.date.fromisoformat((it.get("published") or "")[:10])
+        except ValueError:
+            return None
+
+    kept: list[dict] = []
+    sigs: list[frozenset] = []
+    for it in items:
+        sig = _title_sig(it.get("title", ""))
+        dt_i = day(it)
+        hit = -1
+        if sig and dt_i:
+            for k, rep in enumerate(kept):
+                if rep.get("category") != it.get("category"):
+                    continue
+                dt_r = day(rep)
+                if not dt_r or abs((dt_r - dt_i).days) > days:
+                    continue
+                common = sigs[k] & sig
+                if len(common) < min_common:
+                    continue
+                if any(t not in generic and len(t) >= min_len for t in common):
+                    hit = k
+                    break
+        if hit >= 0:
+            kept[hit].setdefault("dupes", []).append({
+                "title": it.get("title"), "url": it.get("url"),
+                "source_label": it.get("source_label"), "published": it.get("published"),
+            })
+            kept[hit]["dupes"].extend(it.get("dupes", []))
+        else:
+            kept.append(it)
+            sigs.append(sig)
+    return kept
+
+
 def _sort_recent(items: list[dict]) -> list[dict]:
     items.sort(key=lambda i: i.get("published_at") or i.get("published") or "", reverse=True)
     return items
@@ -600,6 +657,7 @@ def build_industry(cfg: dict, results: list | None = None) -> dict:
         merged.extend(_dedup_near(by_cat.get(cat, []), jac, ov, mt))
     # 의미 군집 보조 — 어휘(_dedup_near)로 못 묶은 '같은 사건·다른 표현'을 임베딩 코사인으로 병합.
     # refine은 같은 카테고리 쌍만 보므로 산업을 가로지르지 않는다. VOYAGE 키 없으면 no-op(어휘 군집만).
+    merged = _dedup_event(_sort_recent(merged), cfg)   # 같은 사건 도배 정리(어휘로 못 묶는 것)
     merged = embeds.refine(_sort_recent(merged), _title_sig, cfg, prefix="industry")
     items = _cap_per_day(_sort_recent(merged), d.get("industry_max_per_day_per_cat", 0))
 

@@ -395,6 +395,23 @@ _DEFAULTS: dict = {
         # 이 캐시는 **커밋하지 않는다**(.gitignore). 벡터 파일은 수 MB라 3시간마다 커밋하면 리포가 부푼다.
         # 캐시가 없으면 매 실행 재임베딩하지만 제목 200여 건이라 비용이 사실상 0(voyage-3.5-lite).
         "industry_embed_cache_path": "industry_vectors.json",
+        # 2차 군집(같은 사건 도배 방지) — 어휘 근접중복(_dedup_near)이 못 묶는 '같은 사건·다른 표현'을
+        # 보수적으로 한 번 더 묶는다. 실측: 금호석유화학 2분기 실적이 카드 6장, 스카이랩스 상장이 4장으로
+        # 깔려 해당 산업의 체감 정보량이 절반이 됐다.
+        # 조건 = 같은 산업 + 발행일 ±N일 + 공통토큰 min_common개 이상 + 그중 **고유명사성 토큰**
+        #        (일반 업계어 제외, min_proper_len자 이상)이 하나 이상.
+        # ⚠️ 공통토큰 하한을 2로 낮추면 '반도체·실적'처럼 흔한 업계어만 겹친 다른 사건이 붙는다(실측).
+        #    과병합보다 안전 우선 — 묶이지 않고 남는 건 OK, 다른 주제가 합쳐지는 건 NG.
+        "industry_event_days": 5,
+        "industry_event_min_common": 3,
+        "industry_event_min_proper_len": 4,
+        "industry_event_generic": [
+            "실적", "영업익", "영업이익", "매출", "순이익", "전망", "개선", "증가", "감소", "확대",
+            "기록", "돌파", "분기", "1분기", "2분기", "3분기", "4분기", "상반기", "하반기",
+            "올해", "작년", "전년", "대비", "기업", "기업으로", "업계", "시장", "국내", "공시",
+            "발표", "사상", "최대", "최고", "역대", "수주", "계약", "투자", "성장", "주주환원",
+            "코스닥", "코스피", "기대", "증권",
+        ],
         # 근접중복 파라미터(뉴스와 값은 같지만 독립 튜닝 여지를 위해 별도 키)
         "industry_neardup_jaccard": 0.6,
         "industry_neardup_overlap": 0.67,
@@ -420,6 +437,8 @@ _DEFAULTS: dict = {
             "삼성중공업":   {"industries": ["조선·방산·기계"], "aliases": []},
             "한화에어로스페이스": {"industries": ["조선·방산·기계"], "aliases": ["한화에어로"]},
             "HMM":          {"industries": ["조선·방산·기계"], "aliases": [], "strict": True},
+            "HD한국조선해양": {"industries": ["조선·방산·기계"], "aliases": []},
+            "대한조선":     {"industries": ["조선·방산·기계"], "aliases": []},
             "삼성물산":     {"industries": ["건설·부동산"], "aliases": []},
             "현대건설":     {"industries": ["건설·부동산"], "aliases": []},
             "GS건설":       {"industries": ["건설·부동산"], "aliases": []},
@@ -430,10 +449,13 @@ _DEFAULTS: dict = {
             "에쓰오일":     {"industries": ["에너지·화학"], "aliases": ["S-Oil", "에스오일"], "dart": "S-Oil"},
             "LG화학":       {"industries": ["에너지·화학"], "aliases": []},
             "롯데케미칼":   {"industries": ["에너지·화학"], "aliases": []},
+            "금호석유화학": {"industries": ["에너지·화학"], "aliases": ["금호석유"]},
             "한국전력":     {"industries": ["에너지·화학"], "aliases": ["한전"], "dart": "한국전력공사"},
             "포스코홀딩스": {"industries": ["철강·소재"], "aliases": ["포스코"], "dart": "POSCO홀딩스"},
             "현대제철":     {"industries": ["철강·소재"], "aliases": []},
             "고려아연":     {"industries": ["철강·소재"], "aliases": []},
+            "포스코퓨처엠": {"industries": ["철강·소재", "자동차·모빌리티"], "aliases": []},
+            "동국제강":     {"industries": ["철강·소재"], "aliases": []},
             "삼성바이오로직스": {"industries": ["제약·바이오"], "aliases": ["삼성바이오"]},
             "셀트리온":     {"industries": ["제약·바이오"], "aliases": []},
             "유한양행":     {"industries": ["제약·바이오"], "aliases": []},
@@ -444,6 +466,9 @@ _DEFAULTS: dict = {
             "쿠팡":         {"industries": ["유통·소비재", "IT·플랫폼·게임"], "aliases": []},
             "CJ제일제당":   {"industries": ["유통·소비재"], "aliases": []},
             "아모레퍼시픽": {"industries": ["유통·소비재"], "aliases": ["아모레"]},
+            "삼양식품":     {"industries": ["유통·소비재"], "aliases": []},
+            "오리온":       {"industries": ["유통·소비재"], "aliases": [], "strict": True},
+            "농심":         {"industries": ["유통·소비재"], "aliases": [], "strict": True},
             "KB금융":       {"industries": ["금융·보험"], "aliases": ["KB금융지주", "국민은행"]},
             "신한지주":     {"industries": ["금융·보험"], "aliases": ["신한금융", "신한은행"]},
             "하나금융지주": {"industries": ["금융·보험"], "aliases": ["하나금융", "하나은행"]},
@@ -455,6 +480,7 @@ _DEFAULTS: dict = {
             "크래프톤":     {"industries": ["IT·플랫폼·게임"], "aliases": []},
             "엔씨소프트":   {"industries": ["IT·플랫폼·게임"], "aliases": ["엔씨"]},
             "넷마블":       {"industries": ["IT·플랫폼·게임"], "aliases": []},
+            "카카오게임즈": {"industries": ["IT·플랫폼·게임"], "aliases": []},
             "SK텔레콤":     {"industries": ["통신·미디어·엔터"], "aliases": ["SKT"]},
             "KT":           {"industries": ["통신·미디어·엔터"], "aliases": [], "strict": True, "dart": "케이티"},
             "LG유플러스":   {"industries": ["통신·미디어·엔터"], "aliases": ["LGU+"]},
@@ -462,7 +488,7 @@ _DEFAULTS: dict = {
             "CJ ENM":       {"industries": ["통신·미디어·엔터"], "aliases": ["CJENM"]},
         },
         # 태깅 금지 별칭 — 일반명사와 충돌해 오탐이 잦은 것(사전 실수 안전망)
-        "industry_company_stopwords": ["대상", "삼표", "동원", "대성", "미래", "한샘"],
+        "industry_company_stopwords": ["대상", "삼표", "동원", "대성", "미래", "한샘"],   # 농심은 실기업이라 사전으로 승격
         "industry_company_max_tags": 3,   # 기사 1건당 기업 태그 상한
         # DART 전자공시 검색 링크 템플릿 — industry.json에 실어 프론트가 그대로 사용(API 키 불필요)
         "industry_dart_search_url": "https://dart.fss.or.kr/dsab007/main.do?textCrpNm={q}",

@@ -264,11 +264,12 @@ function displayJobTitle(it) {
 }
 
 // 카드 전체를 클릭하면 링크로 이동(+살짝 눌림 애니메이션). 단 내부 인터랙티브 요소(링크·펼치기·버튼)는 자체 동작 유지.
-function makeCardClickable(article, url) {
+function makeCardClickable(article, url, onOpen) {
   if (!url) return article;
   article.classList.add("clickable");
   article.addEventListener("click", (e) => {
     if (e.target.closest("a, details, summary, button")) return;
+    if (onOpen) onOpen();          // 본문 클릭도 '읽음'으로 — 안 하면 읽은 기사에 점이 계속 남는다
     window.open(url, "_blank", "noopener");
   });
   return article;
@@ -497,7 +498,7 @@ function newsCard(it) {
   if (it.published) kids.push(el("div", { class:"card-meta" }, [el("span", { text:it.published })]));
   // 같은 주제 중복 기사 묶음 — 네이티브 <details>로 우측 하단에 깔끔히 펼침(클릭 시 제목+링크 좌르르)
   let details = null;
-  if (it.dupes && it.dupes.length) {
+  if (it.dupes && it.dupes.length >= 2) {   // 1건짜리 '묶음'은 노이즈 — 접을 이유가 없다
     const lis = it.dupes.map((d) => el("li", {}, [
       el("a", { href:d.url, target:"_blank", rel:"noopener", text:d.title || "(제목 없음)" }),
       d.source_label ? el("span", { class:"dupe-src", text:d.source_label }) : null,
@@ -513,7 +514,8 @@ function newsCard(it) {
     titleA.addEventListener("click", () => dismissNews(it.url, dot));
     if (details) details.addEventListener("toggle", () => { if (details.open) dismissNews(it.url, dot); });
   }
-  return makeCardClickable(el("article", { class:"card" }, kids), it.url);
+  return makeCardClickable(el("article", { class:"card" }, kids), it.url,
+                           isNew ? () => dismissNews(it.url, dot) : null);
 }
 
 // 인사이트: 법인별 4박스(삼일·삼정·안진·한영). 박스마다 하루 단위 고정 추천 1편 + 펼치기(최신순) 전체 목록.
@@ -544,12 +546,14 @@ function firmBox(label, list) {
     return box;
   }
   const pick = list[_dailyIndex(_dailyKey() + "|" + label, list.length)];   // 하루 단위 고정(자정 지나면 갱신·법인별 상이)
-  box.appendChild(el("div", { class:"firm-pick" },
-    [el("a", { href:pick.url, target:"_blank", rel:"noopener", text:pick.title })]));
+  box.appendChild(el("div", { class:"firm-pick" }, [
+    el("a", { href:pick.url, target:"_blank", rel:"noopener", text:pick.title }),
+    pick.summary ? el("div", { class:"firm-sum", text:pick.summary }) : null,
+  ]));
   const lis = list.map((it) => el("li", {},
     [el("a", { href:it.url, target:"_blank", rel:"noopener", text:it.title })]));
   box.appendChild(el("details", { class:"firm-more" }, [
-    el("summary", { class:"firm-toggle", text:`펼치기 (최신순) · ${list.length}편` }),
+    el("summary", { class:"firm-toggle", text:`펼치기 · ${list.length}편` }),
     el("ul", { class:"firm-list" }, lis),
   ]));
   return box;
@@ -641,6 +645,8 @@ function makePager(listId, emptyId, moreId, cardFn) {
   const st = { items: [], shown: ARCH_PAGE };
   const draw = () => {
     const slice = st.items.slice(0, st.shown);
+    // 2건 이하면 2열 그리드의 반쪽만 차서 '실패한 화면'처럼 보인다 → 1열 전폭으로
+    $(listId).classList.toggle("cards-1", st.items.length <= 2);
     $(listId).replaceChildren(...slice.map(cardFn));
     $(emptyId).hidden = st.items.length > 0;
     const more = $(moreId);
@@ -763,8 +769,10 @@ function renderIndustry() {
   // 기업 칩은 **접어서** 낸다(기본 닫힘). 산업 칩(둥근 알약) 바로 아래 같은 모양이 한 줄 더 깔리면
   // 두 축이 구분되지 않으므로, 기업은 카드 안 기업 태그와 같은 **사각 태그**로 통일했다.
   // 접혀 있어 소음이 없으니 산업을 고르기 전(전체 보기)에도 띄운다 — 기업부터 찾는 사람도 있다.
+  // 칩이 1개뿐이면 '좁혀보기'가 무의미하다(빈 서랍). 라벨도 실제 의미에 맞춘다 —
+  // 이 칩들은 '이 산업의 기업'이 아니라 '이 기사들에 등장한 기업'이다.
   const panel = $("co-panel"), row = $("f-indco");
-  if (names.length) {
+  if (names.length >= 2 || IND.co) {
     panel.hidden = false;
     panel.querySelector(".co-n").textContent = " " + names.length;
     if (IND.co) panel.open = true;               // 기업이 선택된 상태면 접혀 있으면 안 된다
@@ -782,15 +790,26 @@ function renderIndustry() {
     head.replaceChildren(...[
       el("span", { class:"comp-name", text:IND.co }),
       el("span", { class:"comp-n", text:"기사 " + cc[IND.co] + "건" }),
-      companyAuditor(IND.co),
+      companyAuditor(IND.co)
+        || el("span", { class:"comp-aud comp-aud--none", text:"감사 정보 미수집" }),
       companyOpinion(IND.co),
       el("a", { class:"dart-btn", href:tpl.replace("{q}", encodeURIComponent(IND.co)),
-                target:"_blank", rel:"noopener", text:"📄 DART 전자공시 →" }),
+                target:"_blank", rel:"noopener",
+                text:companyAuditor(IND.co) ? "📄 DART 전자공시 →" : "📄 DART에서 감사보고서 찾기 →" }),
       ...companyBrief(IND.co),
     ].filter(Boolean));
   } else { head.hidden = true; head.replaceChildren(); }
 
   IND.pager.set(IND.co ? inCat.filter((i) => (i.companies || []).includes(IND.co)) : inCat);
+  // 0건일 때 '없습니다'로 끝내면 막다른 길이다 — 아카이브로 넘어갈 길을 준다
+  const empty = $("industry-empty");
+  if (!empty.hidden && !IND.arch) {
+    const go = el("button", { type:"button", class:"empty-cta", text:"전체 기간에서 찾아보기 →" });
+    go.addEventListener("click", () => document.querySelectorAll("#range-industry .range-btn")[1]?.click());
+    empty.replaceChildren(document.createTextNode("최근 기사가 없습니다. "), go);
+  } else if (!empty.hidden) {
+    empty.textContent = "이 기간에 해당하는 기사가 없습니다.";
+  }
 }
 
 function initIndustry(data, companies) {
@@ -998,9 +1017,12 @@ function initTodayTabs() {
 function initNewsTabs() {
   const tabs = document.querySelectorAll("#tab-news .subtab");
   const views = document.querySelectorAll("#tab-news .subview");
+  const ranges = document.querySelectorAll("#tab-news .range-bar");
   tabs.forEach((btn) => btn.addEventListener("click", () => {
     tabs.forEach((b) => { const on = b === btn; b.classList.toggle("on", on); b.setAttribute("aria-selected", on ? "true" : "false"); });
     views.forEach((v) => { v.hidden = v.id !== "subview-" + btn.dataset.subview; });
+    // 기간 필터는 책갈피 행에 함께 있으므로 보는 스트림 것만 남긴다(리포트는 아카이브 화면이 없어 둘 다 숨김)
+    ranges.forEach((r) => { r.hidden = r.dataset.for !== btn.dataset.subview; });
   }));
 }
 

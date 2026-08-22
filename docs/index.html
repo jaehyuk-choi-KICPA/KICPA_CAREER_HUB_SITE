@@ -182,14 +182,18 @@
     <!-- ===== 기사 / 인사이트 (통합) ===== -->
     <section id="tab-news" class="tab">
       <!-- 책갈피 토글: 업계 ↔ 산업 ↔ 리포트 -->
-      <div class="subtabs" role="tablist">
-        <button class="subtab on" type="button" data-subview="news" role="tab" aria-selected="true">📰 업계</button>
-        <button class="subtab" type="button" data-subview="industry" role="tab" aria-selected="false">🏭 산업</button>
-        <button class="subtab" type="button" data-subview="insights" role="tab" aria-selected="false">📑 리포트</button>
+      <div class="subtabs">
+        <div class="subtab-group" role="tablist">
+          <button class="subtab on" type="button" data-subview="news" role="tab" aria-selected="true">📰 업계</button>
+          <button class="subtab" type="button" data-subview="industry" role="tab" aria-selected="false">🏭 산업</button>
+          <button class="subtab" type="button" data-subview="insights" role="tab" aria-selected="false">📑 리포트</button>
+        </div>
+        <!-- 기간 필터는 책갈피와 같은 행 오른쪽 끝에(상단 필터 층 하나 절약). 보는 책갈피에 맞춰 JS가 전환 -->
+        <div class="range-bar" id="range-news" data-for="news"></div>
+        <div class="range-bar" id="range-industry" data-for="industry" hidden></div>
       </div>
       <!-- 뷰: 업계 기사(회계·세무·딜·채용) -->
       <div class="subview" id="subview-news">
-        <div class="range-bar" id="range-news"></div>
         <div class="chiprow" id="f-newscat"></div>
         <div id="news-list" class="cards"></div>
         <div id="news-empty" class="empty" hidden>표시할 이슈가 아직 없습니다.</div>
@@ -197,10 +201,9 @@
       </div>
       <!-- 뷰: 산업(회계·재무 렌즈) — 산업 → 기업 → DART 동선 -->
       <div class="subview" id="subview-industry" hidden>
-        <div class="range-bar" id="range-industry"></div>
         <div class="chipwrap" id="f-indcat"></div>
         <details class="co-panel" id="co-panel" hidden>
-          <summary class="co-toggle">기업으로 좁혀보기<span class="co-n"></span></summary>
+          <summary class="co-toggle">이 기사들에 등장한 기업<span class="co-n"></span></summary>
           <div class="chipwrap" id="f-indco"></div>
         </details>
         <div class="comp-head" id="comp-head" hidden></div>

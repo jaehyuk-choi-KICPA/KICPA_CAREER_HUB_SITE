@@ -15,7 +15,7 @@ from pathlib import Path
 from src import embeds
 from src.adapters.base import safe_fetch
 from src.adapters.insights import build_insight_adapters
-from src.adapters.news_rss import build_news_adapters
+from src.adapters.news_rss import build_industry_adapters, build_news_adapters
 from src.classify import classify_emp_kind, classify_field, classify_firm, classify_qualification
 from src.config import load_config
 from src.filters import filter_postings
@@ -274,10 +274,14 @@ def _recent_cutoff(days: int) -> str:
     return (_dt.date.today() - _dt.timedelta(days=days)).isoformat()
 
 
-def build_news(cfg: dict) -> dict:
-    """회계·세무·딜 이슈 수집(Google News RSS) → news payload. 중복제거(URL)+최근 N일."""
+def build_news(cfg: dict, results: list | None = None) -> dict:
+    """회계·세무·딜 이슈 수집(Google News RSS) → news payload. 중복제거(URL)+최근 N일.
+
+    results를 주면 수집을 건너뛰고 그 결과에 필터 체인만 적용한다(아카이브 소급 백필이
+    라이브와 **동일한 필터**를 쓰게 하는 훅). None이면 기존과 완전히 동일하게 동작한다.
+    """
     d = cfg["dashboard"]
-    results = fetch_all(build_news_adapters(cfg))
+    results = fetch_all(build_news_adapters(cfg)) if results is None else results
     # 중복제거를 config의 카테고리 순서(좁은→넓은)대로 처리해 좁은 카테고리가 선점하게 함
     order = list(d["news_queries"].keys())
     results.sort(key=lambda r: order.index(r.label) if r.label in order else len(order))
@@ -411,6 +415,206 @@ def _dedup_near(items: list[dict], th: float, ov_th: float = 0.67, min_tok: int 
     return kept
 
 
+# ===================== 산업별 기사(회계·재무 렌즈) — 별도 스트림 =====================
+# 기존 뉴스 4분류 파이프라인과 데이터·설정·필터가 모두 분리돼 있다. build_news는 손대지 않는다.
+# (섞으면 embeds 프로토타입 오염 / _dedup_near 선점 잠식 / 정치어 오차단 — config.py 산업 블록 주석 참조)
+
+# 법인 접미어 — 짧은 별칭 뒤에 이게 붙으면 **다른 회사**다(예: '현대차'+'증권' = 현대차증권).
+_CORP_SUFFIX = ("그룹", "건설", "제약", "케미칼", "생명", "화재", "에너지", "전자", "증권",
+                "은행", "홀딩스", "지주", "모빌리티", "바이오", "중공업", "해운", "항공",
+                "카드", "캐피탈", "물산", "산업", "정밀", "테크")
+
+_HANGUL_RE = re.compile(r"[가-힣]")
+
+
+def _build_company_index(cfg: dict) -> list[tuple[str, str, bool]]:
+    """기업 사전 → [(별칭, 표준명, strict)] 를 **별칭 길이 내림차순**으로.
+
+    최장일치 우선이 오탐 방지의 1선이다: '삼성바이오로직스'를 먼저 소비해야 '삼성전자'류
+    짧은 별칭이 엉뚱한 자리를 집어가지 않는다.
+    """
+    d = cfg["dashboard"]
+    stop = set(d.get("industry_company_stopwords", []))
+    out: list[tuple[str, str, bool]] = []
+    for canon, meta in (d.get("industry_companies") or {}).items():
+        strict = bool((meta or {}).get("strict"))
+        for alias in [canon, *((meta or {}).get("aliases") or [])]:
+            if alias and alias not in stop:
+                out.append((alias, canon, strict))
+    out.sort(key=lambda t: -len(t[0]))
+    return out
+
+
+def _boundary_ok(hay: str, start: int, end: int, alias: str, strict: bool) -> bool:
+    """매치 앞뒤 경계 검사 — 한국어는 단어경계가 없어 부분일치 오탐이 나기 쉽다.
+
+    · 라틴 별칭(KT·HMM·SKT): 앞뒤가 영숫자면 탈락 → 'KTX'·'NKT' 차단.
+    · 짧은(≤3자) 또는 strict 한글 별칭: 앞뒤가 한글이면 탈락 → '기아대책본부'·'현대차증권' 차단.
+      (법인 접미어는 전부 한글이라 이 규칙에 함께 걸린다 — _CORP_SUFFIX는 가독성용 명시.)
+    · 긴 한글 별칭은 그대로 통과(오탐 위험이 낮고 과차단이 더 손해).
+    """
+    prev = hay[start - 1] if start > 0 else ""
+    nxt = hay[end] if end < len(hay) else ""
+    if alias.isascii():
+        if (prev and prev.isalnum() and prev.isascii()) or (nxt and nxt.isalnum() and nxt.isascii()):
+            return False
+        return True
+    # 길이와 무관하게: 매치 바로 뒤가 법인 접미어면 **다른 법인**이다.
+    # (셀트리온|제약, 현대차|그룹 — 별개 상장사이거나 지주/그룹 단위 기사)
+    if any(hay.startswith(sfx, end) for sfx in _CORP_SUFFIX):
+        return False
+    if strict or len(alias) <= 3:
+        if prev and _HANGUL_RE.match(prev):
+            return False
+        if nxt and _HANGUL_RE.match(nxt):
+            return False
+    return True
+
+
+def tag_companies(title: str, index: list[tuple[str, str, bool]], max_tags: int = 3) -> list[str]:
+    """제목 → 표준 기업명 리스트(등장 순). 최장일치 + 스팬 마스킹 + 경계 검사.
+
+    마스킹(매치 구간을 \x00으로 덮음)으로 한 글자도 두 회사에 중복 소비되지 않게 한다.
+    태깅은 기사 category와 무관하게 **사전 전체**를 대상으로 한다 — '현대차, 반도체 자회사 증설'이
+    반도체 탭에서 기업 태그를 잃지 않아야 하기 때문.
+    """
+    if not title:
+        return []
+    hay = title.lower()
+    hits: list[tuple[int, str]] = []
+    taken: set[str] = set()
+    for alias, canon, strict in index:
+        if canon in taken:
+            continue
+        needle = alias.lower()
+        pos = 0
+        while True:
+            idx = hay.find(needle, pos)
+            if idx < 0:
+                break
+            end = idx + len(needle)
+            if _boundary_ok(hay, idx, end, alias, strict):
+                hits.append((idx, canon))
+                taken.add(canon)
+                hay = hay[:idx] + ("\x00" * len(needle)) + hay[end:]
+                break
+            pos = end
+    hits.sort(key=lambda t: t[0])
+    return [c for _, c in hits][:max_tags]
+
+
+def _foreign_blocked(title: str, source_label: str, f_sources: list[str],
+                     f_countries: list[str], keep_markers: list[str]) -> bool:
+    """외국 단독 기사 차단 — build_news(333-342행)와 같은 규칙을 산업용으로 뽑아 쓴 것.
+
+    외국 매체(번역 애그리게이터)는 keep 마커 무관 무조건 차단, 제목 외국명은 keep 마커가 있으면 유지.
+    (build_news 본문은 이번 변경에서 손대지 않는다 — 회귀 검증 통과 후 별도 커밋에서 치환.)
+    """
+    tl = (title or "").lower()
+    sl = (source_label or "").lower()
+    if any(x in sl for x in f_sources):
+        return True
+    return any(c in tl for c in f_countries) and not any(m in tl for m in keep_markers)
+
+
+def _cap_per_day(items: list[dict], cap: int) -> list[dict]:
+    """(카테고리, 발행일)별 상한 — 한 사건이 하루치를 도배하지 않게. 입력은 최신순 가정."""
+    if not cap:
+        return items
+    bucket: dict = {}
+    out: list[dict] = []
+    for it in items:
+        key = (it.get("category"), (it.get("published") or "")[:10])
+        if bucket.get(key, 0) >= cap:
+            continue
+        bucket[key] = bucket.get(key, 0) + 1
+        out.append(it)
+    return out
+
+
+def _sort_recent(items: list[dict]) -> list[dict]:
+    items.sort(key=lambda i: i.get("published_at") or i.get("published") or "", reverse=True)
+    return items
+
+
+def build_industry(cfg: dict, results: list | None = None) -> dict:
+    """산업별 기사(회계·재무 렌즈) → industry payload.
+
+    뉴스와의 차이: ① 자체 require/exclude ② embeds 미적용(프로토타입 오염 차단·비용)
+    ③ 근접중복을 **산업별로 독립 호출**(_dedup_near는 카테고리를 무시하므로 통째로 돌리면
+    '현대차·기아 실적' 같은 기사가 산업을 가로질러 선점한다).
+    """
+    d = cfg["dashboard"]
+    if results is None:
+        results = fetch_all(build_industry_adapters(cfg),
+                            max_workers=d.get("industry_fetch_workers", 4))
+    order = list(d.get("industry_queries", {}).keys())
+    results.sort(key=lambda r: order.index(r.label) if r.label in order else len(order))
+
+    cutoff = _recent_cutoff(d.get("industry_recent_days", 14))
+    exclude = d.get("industry_exclude", [])
+    excl_src = d.get("industry_exclude_sources", [])
+    require = [k.lower() for k in d.get("industry_require_any", [])]
+    use_foreign = d.get("industry_foreign_filter", True)
+    f_src = [k.lower() for k in d.get("news_foreign_sources", [])]
+    f_cty = [k.lower() for k in d.get("news_foreign_countries", [])]
+    keeps = [k.lower() for k in d.get("news_keep_markers", [])]
+    index = _build_company_index(cfg)
+    max_tags = d.get("industry_company_max_tags", 3)
+
+    seen, seen_title, items = set(), set(), []
+    for res in results:
+        for n in res.postings:
+            tkey = " ".join(n.title.split()).lower()
+            if n.url in seen or tkey in seen_title:          # URL + 정규화 제목 중복제거
+                continue
+            if any(x in (n.source_label or "") for x in excl_src):
+                continue
+            if n.published and n.published < cutoff:
+                continue
+            if any(x in n.title for x in exclude):           # 시황·특징주·행사 노이즈
+                continue
+            if require and not any(k in n.title.lower() for k in require):
+                continue                                     # '숫자로 드러나는 사건'만 통과
+            if use_foreign and _foreign_blocked(n.title, n.source_label, f_src, f_cty, keeps):
+                continue
+            seen.add(n.url)
+            seen_title.add(tkey)
+            it = n.to_dict()
+            it.pop("summary", None)                          # 항상 빈 문자열이라 싣지 않음
+            it["companies"] = tag_companies(n.title, index, max_tags)
+            items.append(it)
+
+    _sort_recent(items)
+    before = len(items)
+    by_cat: dict = {}
+    for it in items:
+        by_cat.setdefault(it.get("category"), []).append(it)
+    jac = d.get("industry_neardup_jaccard", 0.6)
+    ov = d.get("industry_neardup_overlap", 0.67)
+    mt = d.get("industry_neardup_min_tokens", 4)
+    merged: list[dict] = []
+    for cat in [*order, *(c for c in by_cat if c not in order)]:
+        merged.extend(_dedup_near(by_cat.get(cat, []), jac, ov, mt))
+    items = _cap_per_day(_sort_recent(merged), d.get("industry_max_per_day_per_cat", 0))
+
+    # 산업별 기업 후보(프론트 칩 사전) — 실제 노출은 기사 ≥1건인 기업만 프론트가 고른다
+    companies: dict = {}
+    for canon, meta in (d.get("industry_companies") or {}).items():
+        for ind in (meta or {}).get("industries") or []:
+            companies.setdefault(ind, []).append(canon)
+
+    ok = sum(1 for r in results if r.ok)
+    print(f"  산업: {len(items)}건 (원본 {before} → 근접중복·일자상한 적용, 소스 {ok}/{len(results)})")
+    return {
+        "generated_at": _dt.datetime.now().isoformat(timespec="seconds"),
+        "categories": order,            # 프론트 칩 순서(하드코딩 회피)
+        "companies": companies,
+        "dart_url": d.get("industry_dart_search_url", ""),
+        "items": items,
+    }
+
+
 def build_insights(cfg: dict) -> dict:
     """Big4 간행물 링크 수집 → insights payload. 헤드리스 순차(법인 순서 삼일→삼정→안진→한영 유지).
 
@@ -436,7 +640,7 @@ def main() -> None:
     import argparse
 
     ap = argparse.ArgumentParser(description="대시보드 데이터 생성")
-    ap.add_argument("--part", choices=["all", "jobs", "news", "insights"], default="all",
+    ap.add_argument("--part", choices=["all", "jobs", "news", "insights", "industry"], default="all",
                     help="갱신할 스트림(워크플로별 분리 실행용)")
     part = ap.parse_args().part
 
@@ -453,6 +657,13 @@ def main() -> None:
         news = build_news(cfg)
         _write_guarded("news.json", news, "items")
         ran["news"] = news.get("generated_at", "")
+    if part in ("all", "industry") and cfg["dashboard"].get("industry_enabled", True):
+        # run-all은 30분 주기지만 산업 어댑터는 22개라 매 회차 돌리면 과수집·throttle·리포 churn.
+        # 수동 실행(--part industry)은 게이트를 우회해 즉시 수집.
+        if part == "industry" or _industry_due(cfg):
+            ind = build_industry(cfg)
+            _write_guarded("industry.json", ind, "items")
+            ran["industry"] = ind.get("generated_at", "")
     if part in ("all", "insights"):
         ins = build_insights(cfg)
         _write_guarded("insights.json", ins, "items")
@@ -460,6 +671,22 @@ def main() -> None:
     _update_status(ran)         # 변화 없어도 '점검 시각(last_run)' 항상 기록
     _update_sitemap_lastmod()   # 검색엔진 재크롤 신호: 사이트맵 lastmod를 오늘로
     print(f"  → docs/data/ ({part})")
+
+
+def _industry_due(cfg: dict) -> bool:
+    """산업 수집 주기 게이트 — status.json의 industry 시각이 min_interval을 넘겼는지."""
+    mins = cfg["dashboard"].get("industry_min_interval_minutes", 0)
+    if not mins:
+        return True
+    try:
+        cur = json.loads((_DATA_DIR / "status.json").read_text(encoding="utf-8"))
+        prev = cur.get("industry")
+        if not prev:
+            return True
+        age = (_dt.datetime.now() - _dt.datetime.fromisoformat(prev)).total_seconds() / 60
+        return age >= mins
+    except Exception:  # noqa: BLE001
+        return True
 
 
 def _update_status(ran: dict[str, str]) -> None:

@@ -49,6 +49,7 @@ jobs:
               echo "→ 신선도 미갱신: 재스크랩 후 배포 대기"
               python -m src.export || true
               git add docs/data/jobs.json docs/data/news.json docs/data/insights.json \
+                      docs/data/industry.json \
                       docs/data/status.json state.json docs/sitemap.xml
               if ! git diff --staged --quiet; then
                 git commit -m "auto: 모니터 셀프힐링 재수집"

@@ -93,16 +93,49 @@ class GoogleNewsAdapter(Adapter):
         return out
 
 
-def build_news_adapters(cfg: dict) -> list[GoogleNewsAdapter]:
-    d = cfg["dashboard"]
-    limit = d.get("news_per_category", 20)
-    adapters = []
-    for cat, q in d["news_queries"].items():
+def _with_window(query: str, window: tuple[str, str] | None) -> str:
+    """쿼리에 기간 연산자를 덧붙인다. window=(bgn, end), 둘 다 'yyyy-mm-dd'.
+
+    구글뉴스 RSS의 q는 `after:` / `before:` 날짜 연산자를 지원한다(실측 확인:
+    "회계법인 after:2026-04-01 before:2026-04-30" → 4월 기사 80건 반환).
+    아카이브 소급 백필이 라이브와 **동일한 어댑터·필터 경로**를 타게 하려고 둔 훅이다.
+    window=None이면 원문 그대로 → 기존 동작 완전 불변.
+    """
+    if not window:
+        return query
+    bgn, end = window
+    return f"{query} after:{bgn} before:{end}"
+
+
+def _build_from_queries(queries: dict, limit: int, prefix: str,
+                        window: tuple[str, str] | None) -> list[GoogleNewsAdapter]:
+    """{카테고리: 쿼리 or [쿼리...]} → 어댑터 목록. 값이 리스트면 풀(pool)로 나눈다.
+
+    dict 삽입 순서가 그대로 어댑터 순서 = build_news/build_industry의 dedup 선점 순서다.
+    """
+    adapters: list[GoogleNewsAdapter] = []
+    for cat, q in queries.items():
         qs = q if isinstance(q, list) else [q]
         for idx, sub_q in enumerate(qs):
-            a = GoogleNewsAdapter(cat, sub_q, limit)
-            if idx > 0:
-                # 같은 카테고리 2번째+ 풀은 source 접미사로 구분(dedup은 URL 기준이라 영향 없음)
-                a.source = f"gnews_{cat}_{idx + 1}"
+            a = GoogleNewsAdapter(cat, _with_window(sub_q, window), limit)
+            a.source = f"{prefix}{cat}" if idx == 0 else f"{prefix}{cat}_{idx + 1}"
+            # 같은 카테고리 2번째+ 풀은 source 접미사로 구분(dedup은 URL 기준이라 영향 없음)
             adapters.append(a)
     return adapters
+
+
+def build_news_adapters(cfg: dict, window: tuple[str, str] | None = None) -> list[GoogleNewsAdapter]:
+    d = cfg["dashboard"]
+    return _build_from_queries(d["news_queries"], d.get("news_per_category", 20), "gnews_", window)
+
+
+def build_industry_adapters(cfg: dict, window: tuple[str, str] | None = None) -> list[GoogleNewsAdapter]:
+    """산업별 기사(회계·재무 렌즈) 어댑터 — 뉴스 4분류와 **완전히 별개인 스트림**.
+
+    source 접두사를 `gnews_ind_`로 두어 뉴스 어댑터와 섞이지 않게 한다. 어댑터 자체는
+    GoogleNewsAdapter를 그대로 재사용하므로 새 수집 코드가 없다(어댑터 패턴 원칙).
+    산업 쿼리를 news_queries에 넣지 않는 이유는 config.py의 산업 블록 주석 참조.
+    """
+    d = cfg["dashboard"]
+    return _build_from_queries(d.get("industry_queries", {}),
+                               d.get("industry_per_category", 60), "gnews_ind_", window)

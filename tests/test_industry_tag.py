@@ -73,7 +73,7 @@ class TestStreamSeparation:
 
     def test_industry_not_in_news_queries(self, cfg):
         d = cfg["dashboard"]
-        assert set(d["news_queries"]) == {"채용·시험", "딜·M&A", "세무", "감사"}
+        assert set(d["news_queries"]) == {"채용·시험", "세무", "감사"}   # 딜·M&A는 2026-08-22 폐지
         assert not set(d["news_queries"]) & set(d["industry_queries"])
 
     def test_industry_has_own_gates(self, cfg):

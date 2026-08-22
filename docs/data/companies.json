@@ -1,5 +1,783 @@
 {
-  "note": "DART_API_KEY(GitHub Secret)가 설정되면 run-all이 이 파일을 실제 데이터로 덮어씁니다. 빈 파일을 두는 이유는 프론트 fetch가 404를 내면 sitecheck의 '콘솔 에러 없음' 점검이 실패해 오탐 이슈가 열리기 때문입니다.",
-  "generated_at": "",
-  "companies": {}
+  "generated_at": "2026-08-22T21:20:26",
+  "companies": {
+    "삼성전자": {
+      "corp_code": "00126380",
+      "stock_code": "005930",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼정회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "건설중인자산의 감가상각개시시점 평가",
+        "재화의 판매장려활동에 대한 매출차감의 정확성과 완전성"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002820",
+      "fee": "8,100",
+      "hours": "81,000"
+    },
+    "SK하이닉스": {
+      "corp_code": "00164779",
+      "stock_code": "000660",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼정회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "(별도재무제표) 기계장치의 감가상각개시시점에 대한 적정성 검토"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000635",
+      "fee": "3,100",
+      "hours": "29,600"
+    },
+    "LG디스플레이": {
+      "corp_code": "00105873",
+      "stock_code": "034220",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼일회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "영업권이 배분된 현금창출단위의 손상 검사"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311003822",
+      "fee": "1,898(602)",
+      "hours": "22,200"
+    },
+    "LG이노텍": {
+      "corp_code": "00105961",
+      "stock_code": "011070",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼일회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "수작업 재화매출 수익인식 거래선에 대한 기간귀속"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001270",
+      "fee": "1,100",
+      "hours": "11,000"
+    },
+    "삼성전기": {
+      "corp_code": "00126371",
+      "stock_code": "009150",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "안진회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "재화의 판매 관련 수익(수출매출)의 기간 귀속"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310003071",
+      "fee": "1,450",
+      "hours": "14,500"
+    },
+    "한미반도체": {
+      "corp_code": "00161383",
+      "stock_code": "042700",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼정회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "장비제조판매 수익 기간귀속"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001230",
+      "fee": "195",
+      "hours": "2,100"
+    },
+    "기아": {
+      "corp_code": "00106641",
+      "stock_code": "000270",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "한영회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "판매보증충당부채 인식의 완전성 및 측정의 정확성"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001224",
+      "fee": "1,850",
+      "hours": "20,000"
+    },
+    "현대모비스": {
+      "corp_code": "00164788",
+      "stock_code": "012330",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼정회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "A/S용 부품 국내 대리점 매출 기간귀속의 적정성"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260309001878",
+      "fee": "2,080",
+      "hours": "22,600"
+    },
+    "LG에너지솔루션": {
+      "corp_code": "01515323",
+      "stock_code": "373220",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "안진회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "판매보증충당부채"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312000217",
+      "fee": "1,900",
+      "hours": "20,000시간"
+    },
+    "삼성SDI": {
+      "corp_code": "00126362",
+      "stock_code": "006400",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼일회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "에너지솔루션 재화매출의 발생사실",
+        "재고자산 평가충당금 추정"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260310002954",
+      "fee": "1,905/년",
+      "hours": "16,900/년"
+    },
+    "HD현대중공업": {
+      "corp_code": "01390344",
+      "stock_code": "329180",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼정회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "- 총 계약원가에 대한 추정의 불확실성",
+        "- 산정된 공사진행률의 적정성",
+        "- 공사변경에 따른 회계처리의 적절성",
+        "- 계약자산금액의 회수가능성에 대한 평가"
+      ],
+      "emphasis": "합병에 대한 감사인의 강조사항",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000859",
+      "fee": "1,513",
+      "hours": "14,410"
+    },
+    "한화오션": {
+      "corp_code": "00111704",
+      "stock_code": "042660",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼일회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "투입법에 따른 수익인식",
+        "플랜트 및 풍력사업부 현금창출단위 영업권 손상"
+      ],
+      "emphasis": "러시아에 대한 국제 제재 조치에 따른 신용 위험의 증가 및 대금 수령시기의 불확실성",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000644",
+      "fee": "1,700",
+      "hours": "16,200"
+    },
+    "삼성중공업": {
+      "corp_code": "00126478",
+      "stock_code": "010140",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼일회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "투입법에 따른 조선해양부문 수익인식"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001037",
+      "fee": "1,520",
+      "hours": "14,500"
+    },
+    "한화에어로스페이스": {
+      "corp_code": "00126566",
+      "stock_code": "012450",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "한영회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "- 원가기준 투입에 따른 수익인식"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001112",
+      "fee": "1,475백만원",
+      "hours": "13,400시간"
+    },
+    "HMM": {
+      "corp_code": "00164645",
+      "stock_code": "011200",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼일회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "컨테이너부문 및 벌크선박 현금창출단위 손상검사"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001444",
+      "fee": "1,590",
+      "hours": "15,000"
+    },
+    "현대건설": {
+      "corp_code": "00164478",
+      "stock_code": "000720",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼일회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "(1) 투입법에 따른 수익인식",
+        "(2) 손상징후가 존재하는 공사채권의 회수가능성"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001395",
+      "fee": "2,250",
+      "hours": "20,000"
+    },
+    "GS건설": {
+      "corp_code": "00120030",
+      "stock_code": "006360",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "한영회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "- 총계약원가 추정의 불확실성",
+        "- 공사진행률 산정",
+        "- 미청구공사금액 회수가능성"
+      ],
+      "emphasis": "인천검단현장 사고 영향 및 그에 따른 불확실성",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260701000624",
+      "fee": "1,850",
+      "hours": "18,500"
+    },
+    "대우건설": {
+      "corp_code": "00124540",
+      "stock_code": "047040",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼정회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "- 총계약원가 추정의 불확실성",
+        "- 공사진행률 산정",
+        "-개발사업 관련 건설계약의 매출채권",
+        "및 기타수취채권의 회수가능성 평가"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001029",
+      "fee": "1,880백만원",
+      "hours": "15,670 시간"
+    },
+    "DL이앤씨": {
+      "corp_code": "01524093",
+      "stock_code": "375500",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "한영회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "총예정원가추정"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814003447",
+      "fee": "1,051",
+      "hours": "11,686"
+    },
+    "SK이노베이션": {
+      "corp_code": "00631518",
+      "stock_code": "096770",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼정회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "종속기업투자주식 손상평가"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316000827",
+      "fee": "2,265",
+      "hours": "20,305"
+    },
+    "GS칼텍스": {
+      "corp_code": "00165459",
+      "stock_code": "",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼정회계법인",
+      "opinion": "적정의견",
+      "kam": [],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331004120",
+      "fee": "970",
+      "hours": "10,000"
+    },
+    "에쓰오일": {
+      "corp_code": "00138279",
+      "stock_code": "010950",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼일회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "- 특수관계자 거래의 발생사실과 표시",
+        "- 재고자산평가 회계처리"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000559",
+      "fee": "945 백만원",
+      "hours": "8,700 시간"
+    },
+    "LG화학": {
+      "corp_code": "00356361",
+      "stock_code": "051910",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼일회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "(1) 영업권이 배부된 현금창출단위에 대한 손상평가"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313001195",
+      "fee": "2,540 (연간 총 보수)",
+      "hours": "23,090시간 (영문보고서검토 추정시간 포함)"
+    },
+    "롯데케미칼": {
+      "corp_code": "00165413",
+      "stock_code": "011170",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "한영회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "(1) 현금창출단위 손상검사",
+        "- 올레핀사업부(대산공장 및 여수공장) 및 아로마틱사업부",
+        "(2) 종속기업투자 손상검사",
+        "- 롯데에너지머티리얼즈㈜"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001296",
+      "fee": "1,690",
+      "hours": "17,600"
+    },
+    "한국전력": {
+      "corp_code": "00159193",
+      "stock_code": "015760",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼정회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "유형자산 손상"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260317000686",
+      "fee": "2,763",
+      "hours": "35,377"
+    },
+    "포스코홀딩스": {
+      "corp_code": "00155319",
+      "stock_code": "005490",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "한영회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "- 종속기업투자주식 손상평가"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260311004517",
+      "fee": "3,312",
+      "hours": "28,552"
+    },
+    "현대제철": {
+      "corp_code": "00145880",
+      "stock_code": "004020",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "안진회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "영업권 손상검사"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001506",
+      "fee": "1,480 백만원/년",
+      "hours": "16,500 시간"
+    },
+    "고려아연": {
+      "corp_code": "00102858",
+      "stock_code": "010130",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼일회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "종속기업투자주식 손상평가,",
+        "공정가치 수준3으로 분류되는 금융상품의 공정가치 평가"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260813001726",
+      "fee": "1,950",
+      "hours": "16,350"
+    },
+    "삼성바이오로직스": {
+      "corp_code": "00877059",
+      "stock_code": "207940",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼정회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "- CMO 배치매출 수익인식 기간귀속의 적정성"
+      ],
+      "emphasis": "- 증권선물위원회의 조치에 대한 행정소송",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515001658",
+      "fee": "1,683",
+      "hours": "11,609"
+    },
+    "셀트리온": {
+      "corp_code": "00413046",
+      "stock_code": "068270",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼일회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "바이오의약품 현금창출단위에 배분된 영업권 손상검사",
+        "내부창출 개발비의 인식과 손상"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001415",
+      "fee": "2,300",
+      "hours": "21,700"
+    },
+    "유한양행": {
+      "corp_code": "00145109",
+      "stock_code": "000100",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼일회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "렉라자 개발비 손상 검토"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001236",
+      "fee": "700",
+      "hours": "6,360"
+    },
+    "한미약품": {
+      "corp_code": "00828497",
+      "stock_code": "128940",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "안진회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "이연법인세자산의 실현가능성 평가"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320001130",
+      "fee": "625백만원",
+      "hours": "4,940시간"
+    },
+    "SK바이오팜": {
+      "corp_code": "00878696",
+      "stock_code": "326030",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "한영회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "제품매출의 발생 사실"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000773",
+      "fee": "480",
+      "hours": "4,600"
+    },
+    "이마트": {
+      "corp_code": "00872984",
+      "stock_code": "139480",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼정회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "ㆍ종속기업투자(아폴로코리아 주식회사)에 대한 손상평가"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001024",
+      "fee": "2,185",
+      "hours": "18,520"
+    },
+    "롯데쇼핑": {
+      "corp_code": "00120526",
+      "stock_code": "023530",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "안진회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "(1) 롯데하이마트 종속기업투자 손상"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001405",
+      "fee": "2,500",
+      "hours": "21,100"
+    },
+    "CJ제일제당": {
+      "corp_code": "00635134",
+      "stock_code": "097950",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼일회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "종속기업투자주식의 회수가능가액 검토"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260316001116",
+      "fee": "1,320",
+      "hours": "12,000"
+    },
+    "아모레퍼시픽": {
+      "corp_code": "00583424",
+      "stock_code": "090430",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼일회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "수출, 뉴커머스 경로 매출의 발생사실"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000785",
+      "fee": "800",
+      "hours": "8,400"
+    },
+    "KB금융": {
+      "corp_code": "00688996",
+      "stock_code": "105560",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼일회계법인",
+      "opinion": "적정의견",
+      "kam": [],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260619000667",
+      "fee": "1,333",
+      "hours": "11,600"
+    },
+    "신한지주": {
+      "corp_code": "00382199",
+      "stock_code": "055550",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼정회계법인",
+      "opinion": "적정의견",
+      "kam": [],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000826",
+      "fee": "1,025(연간, 부가세별도)",
+      "hours": "9,100"
+    },
+    "하나금융지주": {
+      "corp_code": "00547583",
+      "stock_code": "086790",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "한영회계법인",
+      "opinion": "적정의견",
+      "kam": [],
+      "emphasis": "전기 감사인 및 감사의견",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260814004019",
+      "fee": "815",
+      "hours": "9,300"
+    },
+    "삼성생명": {
+      "corp_code": "00126256",
+      "stock_code": "032830",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼일회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "위험률 가정의 적정성"
+      ],
+      "emphasis": "회계정책 변경",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260331004244",
+      "fee": "3,980",
+      "hours": "33,167 분반기검토 7,479 감사 25,688"
+    },
+    "삼성화재": {
+      "corp_code": "00139214",
+      "stock_code": "000810",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "안진회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "- 출재보험계약을 제외한 원수보험계약 중 보험료배분접근법으로",
+        "평가하지 않는 잔여보장부채의 손해율 가정 산출의 적정성"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260312001399",
+      "fee": "240 240 240 1,540 2,260",
+      "hours": "1,760 1,760 1,760 11,268 16,548"
+    },
+    "네이버": {
+      "corp_code": "00266961",
+      "stock_code": "035420",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼정회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "커머스 판매수수료 수익의 발생사실, 종속기업투자주식 손상평가"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313001021",
+      "fee": "2,300",
+      "hours": "23,000"
+    },
+    "카카오": {
+      "corp_code": "00258801",
+      "stock_code": "035720",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼정회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "종속기업투자주식의 손상평가 - ㈜카카오엔터테인먼트",
+        "현금창출단위 영업권 손상평가 - 인터넷포털서비스및기타서비스"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001423",
+      "fee": "2,743",
+      "hours": "22,688"
+    },
+    "크래프톤": {
+      "corp_code": "00760971",
+      "stock_code": "259960",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼정회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "종속기업투자(Unknown Worlds Entertainment, Inc.) 손상평가"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260515002689",
+      "fee": "950",
+      "hours": "9,500"
+    },
+    "넷마블": {
+      "corp_code": "00904672",
+      "stock_code": "251270",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼정회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "종속기업투자에 대한 손상"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001170",
+      "fee": "1,290",
+      "hours": "10,800"
+    },
+    "SK텔레콤": {
+      "corp_code": "00159023",
+      "stock_code": "017670",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼정회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "무선통신매출의 실재성 및 정확성"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318000532",
+      "fee": "2,597",
+      "hours": "24,500"
+    },
+    "KT": {
+      "corp_code": "00190321",
+      "stock_code": "030200",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "안진회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "무선통신서비스 수익 및 무선단말기 수익의 발생사실 및 정확성"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260323001553",
+      "fee": "4,550 (연간)",
+      "hours": "38,322 (연간)"
+    },
+    "LG유플러스": {
+      "corp_code": "00231363",
+      "stock_code": "032640",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "안진회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "통신서비스 수익의 발생사실과 정확성, ㈜LG헬로비전 종속기업투자 손상평가"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260313000442",
+      "fee": "1,468.5 (연간)",
+      "hours": "16,500 (연간)"
+    },
+    "하이브": {
+      "corp_code": "01204056",
+      "stock_code": "352820",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼일회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "종속기업투자에 대한 손상평가"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260320000802",
+      "fee": "838",
+      "hours": "8,700"
+    },
+    "CJ ENM": {
+      "corp_code": "00265324",
+      "stock_code": "035760",
+      "fy": 2025,
+      "stlm_dt": "2025-12-31",
+      "auditor": "삼일회계법인",
+      "opinion": "적정의견",
+      "kam": [
+        "미디어플랫폼사업부문 현금창출단위 영업권 손상검사",
+        "종속기업투자주식 CJ ENM USA INC.의 회수가능액 검토"
+      ],
+      "emphasis": "",
+      "report_url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20260318001469",
+      "fee": "1,200백만원",
+      "hours": "12,600"
+    }
+  }
 }

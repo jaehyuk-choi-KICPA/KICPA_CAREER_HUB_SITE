@@ -84,7 +84,7 @@
       <nav class="tabs main-nav">
         <button class="tab-btn on" data-tab="jobs">채용공고</button>
         <button class="tab-btn" data-tab="tools">글자수</button>
-        <button class="tab-btn" data-tab="news">기사·산업<span class="tab-new" hidden></span></button>
+        <button class="tab-btn" data-tab="news">기사·리포트<span class="tab-new" hidden></span></button>
       </nav>
     </div>
   </header>
@@ -199,7 +199,10 @@
       <div class="subview" id="subview-industry" hidden>
         <div class="range-bar" id="range-industry"></div>
         <div class="chipwrap" id="f-indcat"></div>
-        <div class="chipwrap" id="f-indco" hidden></div>
+        <details class="co-panel" id="co-panel" hidden>
+          <summary class="co-toggle">기업으로 좁혀보기<span class="co-n"></span></summary>
+          <div class="chipwrap" id="f-indco"></div>
+        </details>
         <div class="comp-head" id="comp-head" hidden></div>
         <div id="industry-list" class="cards"></div>
         <div id="industry-empty" class="empty" hidden>표시할 기사가 아직 없습니다.</div>

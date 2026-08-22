@@ -433,18 +433,33 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 /* 감사인 배지 — 이 회사를 누가 감사하는지가 이 화면에서 가장 쓸모 있는 한 줄이다 */
 .comp-aud { font-size:11.5px; font-weight:700; padding:3px 9px; border-radius:999px;
   background:var(--accent-soft); color:var(--accent); }
-/* 3개년 주요계정 미니표 — 좁은 화면에선 표만 가로 스크롤(본문은 넘치지 않게) */
-.comp-fin { flex-basis:100%; overflow-x:auto; margin-top:2px; }
-.comp-fin table { border-collapse:collapse; font-size:12px; min-width:100%; }
-.comp-fin th, .comp-fin td { padding:5px 10px; text-align:right; white-space:nowrap;
-  border-top:1px solid var(--line); }
-.comp-fin thead th { border-top:0; color:var(--muted); font-weight:700; }
-.comp-fin th:first-child, .comp-fin td:first-child { text-align:left; color:var(--muted); font-weight:700; }
-.comp-fin .neg { color:#c0392b; }
-.comp-filings { flex-basis:100%; display:flex; flex-wrap:wrap; gap:5px; margin-top:2px; }
-.comp-filing { text-decoration:none; border:1px solid var(--line); background:var(--chip-bg);
-  color:var(--ink2); border-radius:6px; padding:3px 8px; font-size:11px; font-weight:700; }
-.comp-filing:hover { border-color:var(--accent); color:var(--accent); }
+.aud-op { font-size:11.5px; font-weight:700; color:var(--muted); }
+/* 핵심감사사항 — 그 회사 감사인이 무엇을 위험으로 봤는지. 이 화면의 본론이다 */
+.kam { flex-basis:100%; margin-top:2px; }
+.kam-h { font-size:11px; font-weight:800; color:var(--muted); margin-bottom:4px; }
+.kam-list { margin:0; padding-left:17px; }
+.kam-list li { font-size:12.5px; line-height:1.6; color:var(--ink); }
+.aud-emph { flex-basis:100%; font-size:12px; line-height:1.5; color:var(--ink2); }
+.aud-meta { flex-basis:100%; display:flex; flex-wrap:wrap; gap:10px; font-size:11.5px; color:var(--muted); }
+.aud-link { color:var(--accent); text-decoration:none; font-weight:700; }
+.aud-link:hover { text-decoration:underline; }
+
+/* 기업 필터 = 접이식 패널. 산업 칩(둥근 알약) 아래 같은 모양이 한 줄 더 깔리면 두 축이 구분되지 않아,
+   기업은 **카드 안 기업 태그와 같은 사각 태그**로 통일하고 기본은 접어 둔다. */
+.co-panel { margin:-2px 0 12px; }
+.co-toggle { list-style:none; cursor:pointer; user-select:none; display:inline-flex; align-items:center;
+  gap:4px; font-size:11.5px; font-weight:700; color:var(--muted); padding:4px 0; }
+.co-toggle::-webkit-details-marker { display:none; }
+.co-toggle::after { content:"▾"; font-size:9px; }
+.co-panel[open] > .co-toggle::after { content:"▴"; }
+.co-toggle:hover { color:var(--accent); }
+.co-n { font-weight:600; opacity:.65; }
+.co-panel[open] > .chipwrap { margin-top:6px; }
+.chip-co { flex:0 0 auto; border:1px solid var(--line); background:var(--chip-bg); color:var(--ink2);
+  border-radius:6px; padding:4px 9px; font-size:11.5px; font-weight:700; cursor:pointer;
+  font-family:inherit; transition:background .12s, color .12s, border-color .12s; }
+.chip-co:hover:not(.on) { border-color:var(--accent); color:var(--accent); }
+.chip-co.on { background:var(--accent); border-color:var(--accent); color:#fff; }
 
 /* 카드 안 기업 태그 — 누르면 그 기업으로 좁혀본다(카드 위에서도 동선이 완결) */
 .co-row { display:flex; flex-wrap:wrap; gap:5px; margin-top:8px; }
@@ -459,7 +474,8 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .arch-more:hover { color:var(--accent); }
 
 /* display를 지정한 요소는 [hidden]이 먹지 않는다 — 토글하는 것들에 명시 */
-.chiprow[hidden], .chipwrap[hidden], .comp-head[hidden], .range-bar[hidden] { display:none; }
+.chiprow[hidden], .chipwrap[hidden], .comp-head[hidden], .range-bar[hidden],
+.co-panel[hidden] { display:none; }
 
 /* ===== 인사이트 4박스(법인별) — v1.09 ===== */
 .insights-head { margin-bottom:14px; }

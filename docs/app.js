@@ -8,7 +8,8 @@ const QUAL_ORDER = ["수습CPA", "자격무관"];                 // 자격요�
 const EMPKIND_ORDER = ["인턴", "정규직", "계약직", "파트타임"];   // 채용구분 필터
 // 카드 태그 표시 약칭(필터·데이터·분류는 풀네임 그대로) — 모바일 2열 카드 첫 줄 줄바꿈 방지
 const EMPKIND_SHORT = { 정규직:"정규", 계약직:"계약", 파트타임:"파트", 인턴:"인턴" };
-const NEWS_CAT_ORDER = ["채용·시험", "감사", "세무", "딜·M&A"];  // 기사 카테고리 필터 순서(감사·세무(택스)·딜 일관)
+const NEWS_CAT_ORDER = ["채용·시험", "감사", "세무"];  // 기사 카테고리 필터 순서
+// 딜·M&A는 2026-08-22 폐지 — 부동산·해외 소형딜 노이즈가 심하고 다른 카테고리를 시각적으로 묻어버렸다.
 
 // 빅4 신입 공채 특집: 상태 표시(접수중/업로드 예정/마감/미정)
 const BIG4_STATUS = { open:["접수중","open"], upcoming:["업로드 예정","upcoming"], closed:["마감","closed"], unknown:["일정 미정","unknown"] };
@@ -194,7 +195,7 @@ function skel(n) {
   ]));
 }
 
-const NEWS_CAT_COLOR = { "채용·시험":"#1b4f9c", "감사":"#7a4fb0", "세무":"#8a5a1b", "딜·M&A":"#0f9d77", "인사이트":"#c2410c" };
+const NEWS_CAT_COLOR = { "채용·시험":"#1b4f9c", "감사":"#7a4fb0", "세무":"#8a5a1b", "인사이트":"#c2410c" };
 
 // ---- 탭 전환 ----
 function initTabs() {
@@ -612,7 +613,6 @@ function initSub(prefix, data, chipRowId, chipKey, fixed, cardFn, colors) {
 
 const ARCH = { index: null, shards: new Map() };   // 아카이브는 '전체 기간'을 누를 때만 받아온다
 const ARCH_PAGE = 40;                              // 한 번에 그리는 카드 수(월 샤드는 최대 2,700건)
-const CO_CHIP_CAP = 8;                             // 기업 칩 노출 상한(기사 많은 순). 나머지는 카드의 기업 태그로 도달
 
 async function archIndex() {
   if (!ARCH.index) ARCH.index = (await loadJSON("data/archive/index.json")) || { streams:{} };
@@ -627,8 +627,8 @@ async function archShard(stream, month) {
   return ARCH.shards.get(key);
 }
 
-function mkChip2(label, count, on, onClick) {
-  const b = el("button", { type:"button", class:"chip2" + (on ? " on" : "") }, [
+function mkChip2(label, count, on, onClick, cls) {
+  const b = el("button", { type:"button", class:(cls || "chip2") + (on ? " on" : "") }, [
     document.createTextNode(label),
     count == null ? null : el("span", { class:"cnt", text:String(count) }),
   ]);
@@ -688,11 +688,11 @@ function initRangeBar(barId, stream, onRecent, onMonth) {
 // ── 산업 뷰 ──────────────────────────────────────────────────────────────
 const IND = { data:null, arch:null, cat:null, co:null, pager:null, comp:null };
 
-// 금액(원) → '억' 단위 축약. DART 원본은 원 단위라 그대로 두면 자릿수가 읽히지 않는다.
-function fmtEok(n) {
-  if (n === null || n === undefined) return "–";
-  const eok = Math.round(n / 1e8);
-  return eok.toLocaleString() + "억";
+// 감사보수는 DART가 백만원 단위로 준다("2,250" = 22.5억). 괄호 주석이 붙은 표기도 있어 앞 숫자만 읽는다.
+function fmtFee(s) {
+  const m = String(s || "").replace(/,/g, "").match(/\d+/);
+  if (!m) return "";
+  return (Number(m[0]) / 100).toFixed(1).replace(/\.0$/, "") + "억";
 }
 
 // 감사인 배지 — 이 화면에서 가장 쓸모 있는 한 줄(누가 이 회사를 감사하는가). 자료 없으면 null.
@@ -700,36 +700,30 @@ function companyAuditor(name) {
   const c = IND.comp && IND.comp.companies && IND.comp.companies[name];
   return (c && c.auditor) ? el("span", { class:"comp-aud", text:"감사인 " + c.auditor }) : null;
 }
+function companyOpinion(name) {
+  const c = IND.comp && IND.comp.companies && IND.comp.companies[name];
+  return (c && c.opinion) ? el("span", { class:"aud-op", text:c.opinion }) : null;
+}
 
-// 기업 요약 — 3개년 주요계정 + 최근 공시. companies.json(DART)이 없으면 아무것도 안 그린다.
-// (DART_API_KEY가 없으면 그 파일이 아예 생성되지 않는다 → 검색 링크만 남는 graceful degrade)
+// 기업 요약 — **감사 정보**. 재무 수치는 일부러 담지 않는다(화면이 무거워지고, DART 링크로 보는 편이 낫다).
+// 감사 지원자에게 실제로 값진 건 핵심감사사항이다 — 그 회사 감사인이 무엇을 위험으로 봤는지가 그대로 적혀 있다.
 function companyBrief(name) {
   const c = IND.comp && IND.comp.companies && IND.comp.companies[name];
   if (!c) return [];
   const out = [];
-  const fin = c.financials || {};
-  const keys = Object.keys(fin);
-  if (keys.length && c.fy) {
-    const head = el("tr", {}, [el("th", { text:"(연결·억원)" }),
-      el("th", { text:String(c.fy) }), el("th", { text:String(c.fy - 1) }), el("th", { text:String(c.fy - 2) })]);
-    const rows = keys.map((k) => el("tr", {}, [
-      el("td", { text:k }),
-      ...["thstrm", "frmtrm", "bfefrmtrm"].map((t) => {
-        const v = fin[k][t];
-        return el("td", { class:(v !== null && v !== undefined && v < 0) ? "neg" : "", text:fmtEok(v) });
-      }),
-    ]));
-    out.push(el("div", { class:"comp-fin" }, [
-      el("table", {}, [el("thead", {}, [head]), el("tbody", {}, rows)]),
+  if (c.kam && c.kam.length) {
+    out.push(el("div", { class:"kam" }, [
+      el("div", { class:"kam-h", text:"핵심감사사항 · " + (c.fy || "") }),
+      el("ul", { class:"kam-list" }, c.kam.map((k) => el("li", { text:k }))),
     ]));
   }
-  const fl = (c.filings || []).filter((f) => /사업보고서|반기보고서|분기보고서|감사보고서/.test(f.name)).slice(0, 4);
-  if (fl.length) {
-    out.push(el("div", { class:"comp-filings" }, fl.map((f) =>
-      el("a", { class:"comp-filing", href:f.url, target:"_blank", rel:"noopener",
-                text:f.name.replace(/\s+/g, " ").slice(0, 28) + " · "
-                     + (f.date || "").replace(/^(\d{4})(\d{2}).*$/, "$1-$2") }))));
-  }
+  if (c.emphasis) out.push(el("div", { class:"aud-emph", text:"강조사항 · " + c.emphasis }));
+  const bits = [];
+  if (c.fee) bits.push(el("span", { text:"감사보수 " + fmtFee(c.fee) }));
+  if (c.hours) bits.push(el("span", { text:"감사시간 " + c.hours + "시간" }));
+  if (c.report_url) bits.push(el("a", { class:"aud-link", href:c.report_url, target:"_blank",
+                                        rel:"noopener", text:"사업보고서 원문" }));
+  if (bits.length) out.push(el("div", { class:"aud-meta" }, bits));
   return out;
 }
 
@@ -769,20 +763,18 @@ function renderIndustry() {
   // 기업 칩 — 사전 전체가 아니라 **실제 기사가 있는 기업만**(renderLocalRecruit의 빈 그룹 숨김과 같은 원칙)
   const cc = {};
   inCat.forEach((i) => (i.companies || []).forEach((c) => { cc[c] = (cc[c] || 0) + 1; }));
-  let names = Object.keys(cc).sort((a, b) => cc[b] - cc[a] || a.localeCompare(b, "ko"))
-    .slice(0, CO_CHIP_CAP);
-  // 카드 태그로 고른 기업이 상위 8 밖이면 칩이 사라져 해제할 방법이 없어진다 → 선택분은 항상 포함
-  if (IND.co && cc[IND.co] && !names.includes(IND.co)) names = [IND.co, ...names.slice(0, CO_CHIP_CAP - 1)];
+  const names = Object.keys(cc).sort((a, b) => cc[b] - cc[a] || a.localeCompare(b, "ko"));
   if (IND.co && !cc[IND.co]) IND.co = null;
-  // 기업 칩은 **산업을 고른 뒤**에만 편다. 전체 보기에서 30여 개를 한꺼번에 쏟으면 시각 소음이 크고,
-  // '관심산업군을 먼저 정하고 그 안에서 기업을 좁힌다'는 이 화면의 동선과도 어긋난다.
-  // (카드의 기업 태그로 바로 좁힌 경우엔 해제할 수 있도록 함께 보여준다.)
-  const row = $("f-indco");
+  // 기업 칩은 산업을 고른 뒤에만, 그리고 **접어서** 낸다. 산업 칩(둥근 알약) 바로 아래 같은 모양이
+  // 한 줄 더 깔리면 두 축이 구분되지 않는다 → 기업은 카드 안 기업 태그와 같은 **사각 태그**로 통일.
+  const panel = $("co-panel"), row = $("f-indco");
   if (names.length && (IND.cat || IND.co)) {
-    row.hidden = false;
+    panel.hidden = false;
+    panel.querySelector(".co-n").textContent = " " + names.length;
+    if (IND.co) panel.open = true;               // 기업이 선택된 상태면 접혀 있으면 안 된다
     row.replaceChildren(...names.map((n) => mkChip2(n, null, IND.co === n,
-      () => { IND.co = (IND.co === n ? null : n); renderIndustry(); })));
-  } else { row.hidden = true; row.replaceChildren(); }
+      () => { IND.co = (IND.co === n ? null : n); renderIndustry(); }, "chip-co")));
+  } else { panel.hidden = true; row.replaceChildren(); }
 
   // 기업 헤더 — 산업 → 기업 → **DART 재무제표**로 넘어가는 칸
   const head = $("comp-head");
@@ -793,6 +785,7 @@ function renderIndustry() {
       el("span", { class:"comp-name", text:IND.co }),
       el("span", { class:"comp-n", text:"기사 " + cc[IND.co] + "건" }),
       companyAuditor(IND.co),
+      companyOpinion(IND.co),
       el("a", { class:"dart-btn", href:tpl.replace("{q}", encodeURIComponent(IND.co)),
                 target:"_blank", rel:"noopener", text:"📄 DART 전자공시 →" }),
       ...companyBrief(IND.co),

@@ -127,16 +127,15 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    subgraph RSS["Google News RSS (5풀)"]
+    subgraph RSS["Google News RSS (4풀)"]
         N1["채용·시험 쿼리<br/>75건"]
         N2["감사 풀A (기준·제도)<br/>75건"]
         N3["감사 풀B (보수·처분)<br/>75건"]
-        N4["딜·M&A 쿼리<br/>75건"]
         N5["세무 쿼리<br/>75건"]
     end
 
     subgraph FILTER2["필터"]
-        RD["recency 필터<br/>카테고리별 보존기간<br/>채용75·딜30·세무21·감사21일"]
+        RD["recency 필터<br/>카테고리별 보존기간<br/>채용75·세무21·감사21일"]
         FF["외국 기사 필터<br/>세무·감사만 적용<br/>news_foreign_sources/countries"]
         RA["require_any 게이트<br/>도메인어 없으면 제외"]
         GT["노이즈 게이트<br/>보도자료·지자체 행정·코인·Naver Blog"]
@@ -157,7 +156,7 @@ flowchart LR
 ```
 
 **풀 분리 이유**: Google RSS는 관련도순 100건 상한 → 단일 감사 쿼리는 오늘 기사가 100위 밖으로 밀림 → 2풀로 각 100건 확보.
-**딜 편중 보정**: 딜 보존 60→30일 축소 + 프론트 `spreadCategories`(전체 탭, 같은 카테고리 3연속 방지)로 dedup 압축 비대칭(감사/세무는 1건으로 묶이고 딜은 개별 건이라 다수)에 따른 딜 도배 완화.
+**딜·M&A 폐지(2026-08-22)**: 부동산·해외 소형딜 노이즈가 심했고, 아카이브 기사의 66%를 차지해 감사·세무를 시각적으로 묻었다. 카테고리·전용 제외목록·아카이브 기사를 모두 제거했다.
 
 ---
 
@@ -177,7 +176,7 @@ flowchart LR
         IR["industry_recent_days 30"]
         IE["industry_exclude<br/>시황·특징주·목표주가·행사"]
         IQ["industry_require_any<br/>실적·수주·증설·증자·M&A·손상…"]
-        IF["외국 필터(어휘만 뉴스와 공유)"]
+        IF["국내 한정 필터<br/>외국마커+기업태그없음+국내마커없음→제외"]
         TC["tag_companies()<br/>기업 사전 57곳 · 경계 검사"]
     end
     ND["_dedup_near()<br/>**산업별 독립 호출**"]
@@ -206,34 +205,34 @@ flowchart LR
 
 ## 3.55 기업 정보 (DART Open API · `src/adapters/dart.py`)
 
-산업 화면의 기업 칩을 누르면 뜨는 요약(감사인 · 3개년 주요계정 · 최근 공시)의 출처.
+산업 화면의 기업 칩을 누르면 뜨는 **감사 요약**의 출처.
 **스크래핑이 아니라 공식 Open API**를 쓴다 — 안정적·합법적이고, 수치와 링크만 저장하므로 저작권도 안전하다.
 
 ```mermaid
 flowchart LR
-    CC["corpCode.xml (zip)<br/>회사명 → corp_code<br/>상장사(stock_code) 우선"]
-    LA["list.json · pblntf_ty=A<br/>사업·반기·분기보고서"]
-    LF["list.json · pblntf_ty=F<br/>외부감사관련"]
-    AU["report_nm에 '감사보고서'인 건의<br/>**flr_nm = 그 회사의 감사인**"]
-    FN["fnlttSinglAcnt.json<br/>reprt_code=11011 → 3개년<br/>연결(CFS) 우선, 없으면 개별(OFS)"]
+    CC["corpCode.xml (zip)<br/>회사명 → corp_code<br/>상장사(stock_code) 우선<br/>정식명 불일치는 config dart 필드로 보정"]
+    OP["accnutAdtorNmNdAdtOpinion.json<br/>감사인 · 감사의견<br/>**핵심감사사항(KAM)** · 강조사항"]
+    AD["adtServcCnclsSttus.json<br/>감사보수(백만원) · 감사시간"]
     OUT3["docs/data/companies.json"]
 
-    CC --> LA --> AU
-    CC --> LF --> AU
-    CC --> FN
-    AU --> OUT3
-    FN --> OUT3
+    CC --> OP --> OUT3
+    CC --> AD --> OUT3
 ```
 
-- **핵심**: 감사보고서는 감사인이 제출하므로 `flr_nm`(공시 제출인명)이 곧 회계법인이다.
-  "이 회사를 삼일이 감사하는가"를 규칙만으로 알 수 있는 유일한 경로.
-- **유형을 나눠 조회하는 이유**: 한 번에 받으면 100건 상한에 밀려 감사보고서가 빠질 수 있다.
-- **주기**: 재무·감사인은 분기 단위로만 바뀌므로 `companies_min_interval_minutes`(10080 = 주 1회) 게이트.
-  기업 60곳 기준 약 180콜 — 한도(일 20,000)에 여유가 크다.
-- **키 정책**: `DART_API_KEY`(GitHub Secret)에서만. **없으면 전체 no-op** → `companies.json`을 만들지 않고
+- **왜 KAM인가**: 그 회사 감사인이 무엇을 위험으로 봤는지가 그대로 적혀 있다. 산업 이해와 감사 관점을
+  잇는 가장 짧은 다리라, 재무 수치보다 감사 지원자에게 값지다. **재무 3개년 표는 일부러 담지 않는다**
+  (화면이 무거워지는 데 비해 DART 링크로 보는 편이 낫다).
+- **사업연도 행 고르기**: 응답이 여러 해를 주므로 `bsns_year`에 '당기'가 든 행을 쓴다. 최신 사업보고서가
+  아직 없으면 한 해 뒤로 재시도.
+- **KAM 파싱**: 회사가 쓴 자유 텍스트라 형식이 제각각이다(번호만 있는 줄, `가.`/`1.`/`①` 말머리 혼용).
+  `split_kam`이 번호줄을 다음 줄과 합치고 말머리를 떼어 항목 리스트로 만든다.
+- **주기**: 감사인·보수는 연 단위로만 바뀌므로 `companies_min_interval_minutes`(10080 = 주 1회) 게이트.
+  기업 60곳 × 2콜 ≈ 120콜 — 한도(일 20,000)에 여유가 크다.
+- **키 정책**: `DART_API_KEY`(GitHub Secret)에서만. **없으면 전체 no-op** → `companies.json`을 덮어쓰지 않고
   프론트는 DART 검색 링크만 노출한다(사이트 정상). VOYAGE_API_KEY와 같은 게이트 패턴.
-- ⚠️ 저장소에는 **빈 `companies.json` 플레이스홀더**를 둔다. 없으면 프론트 fetch가 404를 내고
-  sitecheck의 '콘솔 에러 없음' 점검이 실패해 오탐 이슈가 열린다.
+- ⚠️ 저장소에 파일이 없으면 프론트 fetch가 404를 내고 sitecheck의 '콘솔 에러 없음'이 실패해 오탐 이슈가
+  열린다. 워크플로의 `git add`도 **별도 줄에서 `|| true`**로 감싼다(키가 없어 파일이 없으면 스텝이 죽는다).
+- **실측(2026-08-22)**: 사전 57곳 중 51곳 수집, 핵심감사사항 47곳. 감사인 삼일 18 · 삼정 17 · 안진 8 · 한영 8.
 
 ---
 

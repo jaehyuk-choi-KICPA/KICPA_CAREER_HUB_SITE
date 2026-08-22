@@ -297,7 +297,6 @@ def build_news(cfg: dict, results: list | None = None) -> dict:
     gov_keep = d.get("news_local_gov_keep", [])
     firm_pr_ent = d.get("news_firm_pr_entities", [])     # 법인 개업·개소 PR 제외용(법인어 + 개업/오픈류 AND)
     firm_pr_act = d.get("news_firm_pr_actions", [])
-    deal_excl = d.get("news_deal_exclude", [])           # 딜·M&A 한정 부동산성 매각 노이즈 제외
     # 외국(미국 제외) 세무·감사 이슈 차단 — 외국명/외국매체 있고 한국/미국/국제 마커 없으면 제외
     foreign_cats = set(d.get("news_foreign_filter_categories", []))
     foreign_countries = [k.lower() for k in d.get("news_foreign_countries", [])]
@@ -332,8 +331,6 @@ def build_news(cfg: dict, results: list | None = None) -> dict:
                     continue
             if firm_pr_ent and any(e in n.title for e in firm_pr_ent) \
                     and any(a in n.title for a in firm_pr_act):  # 법인 개업·개소 홍보(PR/동정) 제외
-                continue
-            if n.category == "딜·M&A" and deal_excl and any(x in n.title for x in deal_excl):  # 부동산·압류재산성 매각 노이즈
                 continue
             if foreign_cats and n.category in foreign_cats:   # 외국(미국 제외) 세무·감사·딜 이슈 차단
                 tl = n.title.lower()
@@ -504,18 +501,22 @@ def tag_companies(title: str, index: list[tuple[str, str, bool]], max_tags: int 
     return [c for _, c in hits][:max_tags]
 
 
-def _foreign_blocked(title: str, source_label: str, f_sources: list[str],
-                     f_countries: list[str], keep_markers: list[str]) -> bool:
-    """외국 단독 기사 차단 — build_news(333-342행)와 같은 규칙을 산업용으로 뽑아 쓴 것.
+def _non_domestic(title: str, companies: list[str], f_markers: list[str],
+                  dom_markers: list[str]) -> bool:
+    """산업 스트림 전용 — **국내 기업 기사가 아니면** True.
 
-    외국 매체(번역 애그리게이터)는 keep 마커 무관 무조건 차단, 제목 외국명은 keep 마커가 있으면 유지.
-    (build_news 본문은 이번 변경에서 손대지 않는다 — 회귀 검증 통과 후 별도 커밋에서 치환.)
+    뉴스 쪽 외국 필터는 '미국·글로벌'을 keep 마커로 살려두지만 산업엔 그 예외를 두지 않는다.
+    엔비디아·YMTC·트럼프미디어 실적은 우리 목적(국내 기업의 사업과 숫자를 익힌다)과 무관하기 때문.
+
+    판정: 외국 마커가 있고, 사전 기업 태그도 없고 국내 마커도 없으면 제외.
+    → "삼성전자, 美 공장 증설"은 기업 태그 덕에 남고, "美 제조업 설비투자 5200조"는 빠진다.
     """
     tl = (title or "").lower()
-    sl = (source_label or "").lower()
-    if any(x in sl for x in f_sources):
-        return True
-    return any(c in tl for c in f_countries) and not any(m in tl for m in keep_markers)
+    if not any(m.lower() in tl for m in f_markers):
+        return False
+    if companies:                       # 우리 사전의 국내 기업이 주어면 국내 기사다
+        return False
+    return not any(m in tl for m in dom_markers)
 
 
 def _cap_per_day(items: list[dict], cap: int) -> list[dict]:
@@ -557,9 +558,8 @@ def build_industry(cfg: dict, results: list | None = None) -> dict:
     excl_src = d.get("industry_exclude_sources", [])
     require = [k.lower() for k in d.get("industry_require_any", [])]
     use_foreign = d.get("industry_foreign_filter", True)
-    f_src = [k.lower() for k in d.get("news_foreign_sources", [])]
-    f_cty = [k.lower() for k in d.get("news_foreign_countries", [])]
-    keeps = [k.lower() for k in d.get("news_keep_markers", [])]
+    f_markers = d.get("industry_foreign_markers", [])
+    dom_markers = d.get("industry_domestic_markers", [])
     index = _build_company_index(cfg)
     max_tags = d.get("industry_company_max_tags", 3)
 
@@ -577,13 +577,14 @@ def build_industry(cfg: dict, results: list | None = None) -> dict:
                 continue
             if require and not any(k in n.title.lower() for k in require):
                 continue                                     # '숫자로 드러나는 사건'만 통과
-            if use_foreign and _foreign_blocked(n.title, n.source_label, f_src, f_cty, keeps):
+            cos = tag_companies(n.title, index, max_tags)   # 국내 판정에 기업 태그가 필요해 먼저 태깅
+            if use_foreign and _non_domestic(n.title, cos, f_markers, dom_markers):
                 continue
             seen.add(n.url)
             seen_title.add(tkey)
             it = n.to_dict()
             it.pop("summary", None)                          # 항상 빈 문자열이라 싣지 않음
-            it["companies"] = tag_companies(n.title, index, max_tags)
+            it["companies"] = cos
             items.append(it)
 
     _sort_recent(items)

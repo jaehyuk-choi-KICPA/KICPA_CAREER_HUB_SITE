@@ -84,7 +84,7 @@
       <nav class="tabs main-nav">
         <button class="tab-btn on" data-tab="jobs">채용공고</button>
         <button class="tab-btn" data-tab="tools">글자수</button>
-        <button class="tab-btn" data-tab="news">기사/인사이트<span class="tab-new" hidden></span></button>
+        <button class="tab-btn" data-tab="news">기사·산업<span class="tab-new" hidden></span></button>
       </nav>
     </div>
   </header>
@@ -181,16 +181,29 @@
 
     <!-- ===== 기사 / 인사이트 (통합) ===== -->
     <section id="tab-news" class="tab">
-      <!-- 책갈피 토글: 기사 ↔ 인사이트 -->
+      <!-- 책갈피 토글: 업계 ↔ 산업 ↔ 리포트 -->
       <div class="subtabs" role="tablist">
-        <button class="subtab on" type="button" data-subview="news" role="tab" aria-selected="true">📰 기사</button>
-        <button class="subtab" type="button" data-subview="insights" role="tab" aria-selected="false">📑 인사이트</button>
+        <button class="subtab on" type="button" data-subview="news" role="tab" aria-selected="true">📰 업계</button>
+        <button class="subtab" type="button" data-subview="industry" role="tab" aria-selected="false">🏭 산업</button>
+        <button class="subtab" type="button" data-subview="insights" role="tab" aria-selected="false">📑 리포트</button>
       </div>
-      <!-- 뷰: 기사 -->
+      <!-- 뷰: 업계 기사(회계·세무·딜·채용) -->
       <div class="subview" id="subview-news">
+        <div class="range-bar" id="range-news"></div>
         <div class="chiprow" id="f-newscat"></div>
         <div id="news-list" class="cards"></div>
         <div id="news-empty" class="empty" hidden>표시할 이슈가 아직 없습니다.</div>
+        <div id="news-more"></div>
+      </div>
+      <!-- 뷰: 산업(회계·재무 렌즈) — 산업 → 기업 → DART 동선 -->
+      <div class="subview" id="subview-industry" hidden>
+        <div class="range-bar" id="range-industry"></div>
+        <div class="chipwrap" id="f-indcat"></div>
+        <div class="chipwrap" id="f-indco" hidden></div>
+        <div class="comp-head" id="comp-head" hidden></div>
+        <div id="industry-list" class="cards"></div>
+        <div id="industry-empty" class="empty" hidden>표시할 기사가 아직 없습니다.</div>
+        <div id="industry-more"></div>
       </div>
       <!-- 뷰: 인사이트 -->
       <div class="subview" id="subview-insights" hidden>

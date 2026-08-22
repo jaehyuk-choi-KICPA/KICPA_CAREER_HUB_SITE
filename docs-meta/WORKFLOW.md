@@ -161,6 +161,72 @@ flowchart LR
 
 ---
 
+## 3.5 산업 파이프라인 상세 (회계·재무 렌즈)
+
+뉴스 4분류와 **완전히 분리된 별도 스트림**이다. 같은 `GoogleNewsAdapter`를 재사용하되
+설정(`industry_*`)·필터·산출 파일이 모두 독립적이라, 산업을 건드려도 기사 4분류는 영향을 받지 않는다.
+
+```mermaid
+flowchart LR
+    subgraph IRSS["Google News RSS (산업 11개 · 26풀)"]
+        I1["풀 A: 업종 앵커 OR<br/>반도체 OR 파운드리 OR HBM…"]
+        I2["풀 B: 업종어+실적 2어절<br/>반도체 실적"]
+        I3["저수확 4산업은 풀 C 추가<br/>자동차·유통·금융·통신"]
+    end
+    subgraph IFIL["필터 (뉴스와 별개 규칙)"]
+        IR["industry_recent_days 30"]
+        IE["industry_exclude<br/>시황·특징주·목표주가·행사"]
+        IQ["industry_require_any<br/>실적·수주·증설·증자·M&A·손상…"]
+        IF["외국 필터(어휘만 뉴스와 공유)"]
+        TC["tag_companies()<br/>기업 사전 57곳 · 경계 검사"]
+    end
+    ND["_dedup_near()<br/>**산업별 독립 호출**"]
+    ICAP["industry_max_per_day_per_cat 4"]
+    IOUT["docs/data/industry.json"]
+
+    IRSS --> IR --> IE --> IQ --> IF --> TC --> ND --> ICAP --> IOUT
+```
+
+**왜 뉴스에 섞지 않았나** (섞으면 넷이 동시에 깨진다)
+1. `news_require_any`(회계 도메인어)가 산업 기사를 100% 드롭한다.
+2. `embeds._prototypes`가 `news_queries` 값 전체를 프로토타입 임베딩 → 기존 감사·세무 판정이 오염된다.
+3. `_dedup_near`는 카테고리를 무시하므로 dict 순서상 선점 잠식이 일어난다.
+4. `news_exclude`의 정치어가 에너지·건설 산업정책 기사를 대량 오차단한다.
+
+**산업별 독립 dedup**: `_dedup_near`를 산업 그룹마다 따로 호출한다. 통째로 돌리면
+"현대차·기아 실적" 같은 기사가 자동차와 유통을 가로질러 한쪽을 잠식한다.
+
+**수집 주기**: 어댑터가 26개라 run-all(30분)마다 돌리면 과수집이다.
+`industry_min_interval_minutes`(180) 게이트로 3시간에 1회만 수집하고, 수동 `--part industry`는 게이트를 우회한다.
+
+**튜닝 실측**: 최대 손실원은 관련성 게이트가 아니라 **보존 컷오프**였다(자동차 120건 중 60건 탈락).
+14→30일로 넓혀 125→283건, 저수확 4산업에 풀 C를 더해 360건.
+
+---
+
+## 3.6 누적 아카이브 (`src/archive.py`)
+
+`news.json`·`industry.json`은 매 수집마다 전량 덮어쓰기라 보존창이 지난 기사는 사라진다.
+아카이브는 그 손실을 받아내는 계층으로, **매 수집 직후 최종 items를 월별 샤드에 멱등 append**한다.
+
+```
+docs/data/archive/
+├── index.json              ← 프론트 기간 필터가 먼저 읽는 유일한 파일(~2KB)
+├── news/2026-05.json …     ← 스트림별·월별 샤드(아이템 1건 = 1줄)
+├── industry/…
+└── insights/…
+```
+
+- **월별+스트림별 샤딩**: 매 수집에 바뀌는 파일이 당월 1개뿐 → git 델타가 "말미 몇 줄 추가"로 수렴.
+- **dupes 평면화**: 군집을 중첩 저장하면 대표의 dupes 배열이 스냅샷마다 합쳐지며 무한 누적된다
+  (실측 11MB). 대표·멤버를 각각 독립 레코드로 펴서 3MB로 줄였다.
+- **최초값 고정**: 같은 URL이 다시 들어와도 title·category·first_archived는 최초값을 지킨다
+  (분류 규칙이 바뀌어도 "그때 화면에 떴던 모습"이 보존된다).
+- **하한** `archive_since`(2026-05-01) 이전 발행분은 버린다.
+- **소급 구축**: `scripts/backfill_archive.py` — git 스냅샷 복원(2026-06-16~) + RSS `after:`/`before:` 소급(그 이전).
+
+---
+
 ## 4. 인사이트 파이프라인 상세
 
 ```mermaid
@@ -228,12 +294,13 @@ flowchart LR
 ├── config.yaml                  ← 운영 설정 (runtime · filters · formats)
 ├── src/
 │   ├── config.py                ← dashboard 전체 규칙 (쿼리·필터·분류)
-│   ├── export.py                ← 수집 진입점 (--part jobs|news|insights)
+│   ├── export.py                ← 수집 진입점 (--part jobs|news|insights|industry)
 │   ├── sources.py               ← ThreadPool 병렬 fetch 조율
 │   ├── state.py                 ← 채용공고 상태 영속 (first_seen · grace)
 │   ├── classify.py              ← 법인/자격요건(수습CPA·자격무관)/채용구분(인턴·정규·계약·파트) 분류
 │   ├── filters.py               ← 경력 제외 필터
 │   ├── notifier.py              ← 웹 푸시 채용알림 발송(pywebpush·VAPID·scope)
+│   ├── archive.py               ← 누적 아카이브(월별 샤드 멱등 append + index)
 │   ├── news.py                  ← NewsItem 데이터클래스
 │   ├── record.py                ← Posting 데이터클래스
 │   ├── embeds.py                ← Voyage 임베딩 (키 있을 때만)

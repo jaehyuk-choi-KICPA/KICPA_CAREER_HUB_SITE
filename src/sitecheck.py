@@ -105,6 +105,7 @@ def run_deterministic(cfg: dict, base_url: str, shot_path: str | None) -> Result
                 "jobs": _fetch_json(base_url.rstrip("/") + "/data/jobs.json"),
                 "news": _fetch_json(base_url.rstrip("/") + "/data/news.json"),
                 "insights": _fetch_json(base_url.rstrip("/") + "/data/insights.json"),
+                "industry": _fetch_json(base_url.rstrip("/") + "/data/industry.json"),
             }
             # 탭/뷰별 카드 수 vs 라이브 데이터 건수 대조.
             # UI(v1.13): 기사·인사이트는 '기사/인사이트' 한 탭(data-tab=news) 안에서 책갈피(.subtab)로 전환.
@@ -112,8 +113,13 @@ def run_deterministic(cfg: dict, base_url: str, shot_path: str | None) -> Result
             #   - 인사이트: 기사 탭 → 인사이트 책갈피(.subtab[data-subview=insights]) → 법인별 4박스
             #     (#insights-grid 안 <article.insight-firm> > <ul.firm-list><li>. 접힌 <details>도 DOM엔 전체 글이
             #      있어 데이터 items 수와 직접 대조된다.)
+            #   - 산업: 기사 탭 → 산업 책갈피(.subtab[data-subview=industry]) → #industry-list .card
+            #     (산업은 40건씩 '더보기'로 끊어 그리므로 화면 카드 수 < 데이터 건수가 정상.
+            #      판정은 '데이터가 있는데 0개 렌더'만 실패로 보므로 문제없다.)
             tabs = [("jobs", [], "#jobs-list .card", "postings"),
                     ("news", ['.tab-btn[data-tab="news"]'], "#news-list .card", "items"),
+                    ("industry", ['.tab-btn[data-tab="news"]', '.subtab[data-subview="industry"]'],
+                     "#industry-list .card", "items"),
                     ("insights", ['.tab-btn[data-tab="news"]', '.subtab[data-subview="insights"]'],
                      "#insights-grid .firm-list li", "items")]
             for key, clicks, sel, dkey in tabs:

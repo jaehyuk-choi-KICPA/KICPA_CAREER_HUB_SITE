@@ -606,6 +606,182 @@ function initSub(prefix, data, chipRowId, chipKey, fixed, cardFn, colors) {
   render();
 }
 
+// ===================== 산업 스트림 · 누적 아카이브 =====================
+// 산업 뷰는 initSub(기사 4칩 전용)을 확장하지 않고 따로 둔다. 칩 개수·페이지네이션·기업 축이라는
+// 전제가 달라서, 공유 함수를 건드리면 잘 돌던 기사 화면이 회귀한다.
+
+const ARCH = { index: null, shards: new Map() };   // 아카이브는 '전체 기간'을 누를 때만 받아온다
+const ARCH_PAGE = 40;                              // 한 번에 그리는 카드 수(월 샤드는 최대 2,700건)
+
+async function archIndex() {
+  if (!ARCH.index) ARCH.index = (await loadJSON("data/archive/index.json")) || { streams:{} };
+  return ARCH.index;
+}
+async function archShard(stream, month) {
+  const key = stream + ":" + month;
+  if (!ARCH.shards.has(key)) {
+    const d = await loadJSON("data/archive/" + stream + "/" + month + ".json");
+    ARCH.shards.set(key, (d && d.items) || []);
+  }
+  return ARCH.shards.get(key);
+}
+
+function mkChip2(label, count, on, onClick) {
+  const b = el("button", { type:"button", class:"chip2" + (on ? " on" : "") }, [
+    document.createTextNode(label),
+    count == null ? null : el("span", { class:"cnt", text:String(count) }),
+  ]);
+  b.addEventListener("click", onClick);
+  return b;
+}
+
+// 목록 + '더보기' 페이저. 아카이브 월 샤드는 수천 건이라 한 번에 그리면 모바일이 멈춘다.
+function makePager(listId, emptyId, moreId, cardFn) {
+  const st = { items: [], shown: ARCH_PAGE };
+  const draw = () => {
+    const slice = st.items.slice(0, st.shown);
+    $(listId).replaceChildren(...slice.map(cardFn));
+    $(emptyId).hidden = st.items.length > 0;
+    const more = $(moreId);
+    more.replaceChildren();
+    if (st.items.length > slice.length) {
+      const b = el("button", { type:"button", class:"arch-more",
+        text:"더보기 (남은 " + (st.items.length - slice.length).toLocaleString() + "건)" });
+      b.addEventListener("click", () => { st.shown += ARCH_PAGE; draw(); });
+      more.appendChild(b);
+    }
+  };
+  return { set(items) { st.items = items; st.shown = ARCH_PAGE; draw(); } };
+}
+
+// 기간 필터: [최근][전체 기간] + (전체일 때) 월 칩. 기본은 '최근' = 이미 받아둔 JSON이라 네트워크 0.
+function initRangeBar(barId, stream, onRecent, onMonth) {
+  const bar = $(barId);
+  if (!bar) return;
+  let mode = "recent", month = null;
+  const draw = async () => {
+    const kids = [];
+    const bR = el("button", { type:"button", class:"range-btn" + (mode === "recent" ? " on" : ""), text:"최근" });
+    const bA = el("button", { type:"button", class:"range-btn" + (mode === "all" ? " on" : ""), text:"전체 기간" });
+    bR.addEventListener("click", () => { if (mode === "recent") return; mode = "recent"; month = null; draw(); onRecent(); });
+    bA.addEventListener("click", async () => {
+      const idx = await archIndex();
+      const info = (idx.streams || {})[stream] || {};
+      const months = info.months || [];
+      if (!months.length) return;                 // 아카이브가 아직 없으면 '최근' 유지
+      mode = "all"; month = months[0].m;          // 가장 최근 월 자동 선택
+      draw(); onMonth(month);
+    });
+    kids.push(bR, bA);
+    if (mode === "all") {
+      const idx = await archIndex();
+      const info = (idx.streams || {})[stream] || {};
+      (info.months || []).forEach((m) => kids.push(
+        mkChip2(m.m, m.n, m.m === month, () => { month = m.m; draw(); onMonth(m.m); })));
+      if (info.total) kids.push(el("span", { class:"range-note",
+        text:(idx.since ? idx.since + "부터 " : "") + "모아온 " + info.total.toLocaleString() + "건" }));
+    }
+    bar.replaceChildren(...kids);
+  };
+  draw();
+}
+
+// ── 산업 뷰 ──────────────────────────────────────────────────────────────
+const IND = { data:null, arch:null, cat:null, co:null, pager:null };
+
+function industryCard(it) {
+  const card = newsCard(it);   // 카드 골격은 기사와 동일(카테고리 색이 없어 중립 회색 태그로 나온다)
+  const cos = it.companies || [];
+  if (cos.length) {
+    card.appendChild(el("div", { class:"co-row" }, cos.map((c) =>
+      mkCoChip(c, () => { IND.co = c; renderIndustry(); window.scrollTo({ top:0 }); }))));
+  }
+  return card;
+}
+function mkCoChip(name, onClick) {
+  const b = el("button", { type:"button", class:"co-chip", text:name });
+  b.addEventListener("click", (e) => { e.stopPropagation(); onClick(); });
+  return b;
+}
+
+function renderIndustry() {
+  const base = IND.arch || ((IND.data && IND.data.items) || []);
+
+  // 산업 칩 — 기사가 있는 산업만(빈 그룹 숨김). 순서는 industry.json의 categories를 따른다(프론트 하드코딩 회피).
+  const counts = {};
+  base.forEach((i) => { counts[i.category] = (counts[i.category] || 0) + 1; });
+  const cats = (IND.data && IND.data.categories) || Object.keys(counts);
+  if (IND.cat && !counts[IND.cat]) IND.cat = null;      // 이 월엔 없는 산업이면 선택 해제
+  const catChips = [mkChip2("전체", base.length, !IND.cat,
+    () => { IND.cat = null; IND.co = null; renderIndustry(); })];
+  cats.forEach((c) => {
+    if (counts[c]) catChips.push(mkChip2(c, counts[c], IND.cat === c,
+      () => { IND.cat = (IND.cat === c ? null : c); IND.co = null; renderIndustry(); }));
+  });
+  $("f-indcat").replaceChildren(...catChips);
+
+  const inCat = IND.cat ? base.filter((i) => i.category === IND.cat) : base;
+
+  // 기업 칩 — 사전 전체가 아니라 **실제 기사가 있는 기업만**(renderLocalRecruit의 빈 그룹 숨김과 같은 원칙)
+  const cc = {};
+  inCat.forEach((i) => (i.companies || []).forEach((c) => { cc[c] = (cc[c] || 0) + 1; }));
+  const names = Object.keys(cc).sort((a, b) => cc[b] - cc[a] || a.localeCompare(b, "ko"));
+  if (IND.co && !cc[IND.co]) IND.co = null;
+  // 기업 칩은 **산업을 고른 뒤**에만 편다. 전체 보기에서 30여 개를 한꺼번에 쏟으면 시각 소음이 크고,
+  // '관심산업군을 먼저 정하고 그 안에서 기업을 좁힌다'는 이 화면의 동선과도 어긋난다.
+  // (카드의 기업 태그로 바로 좁힌 경우엔 해제할 수 있도록 함께 보여준다.)
+  const row = $("f-indco");
+  if (names.length && (IND.cat || IND.co)) {
+    row.hidden = false;
+    row.replaceChildren(...names.map((n) => mkChip2(n, cc[n], IND.co === n,
+      () => { IND.co = (IND.co === n ? null : n); renderIndustry(); })));
+  } else { row.hidden = true; row.replaceChildren(); }
+
+  // 기업 헤더 — 산업 → 기업 → **DART 재무제표**로 넘어가는 칸
+  const head = $("comp-head");
+  if (IND.co) {
+    const tpl = (IND.data && IND.data.dart_url) || "https://dart.fss.or.kr/dsab007/main.do?textCrpNm={q}";
+    head.hidden = false;
+    head.replaceChildren(
+      el("span", { class:"comp-name", text:IND.co }),
+      el("span", { class:"comp-n", text:"기사 " + cc[IND.co] + "건" }),
+      el("a", { class:"dart-btn", href:tpl.replace("{q}", encodeURIComponent(IND.co)),
+                target:"_blank", rel:"noopener", text:"📄 DART 전자공시 →" }),
+    );
+  } else { head.hidden = true; head.replaceChildren(); }
+
+  IND.pager.set(IND.co ? inCat.filter((i) => (i.companies || []).includes(IND.co)) : inCat);
+}
+
+function initIndustry(data) {
+  IND.data = data;
+  IND.pager = makePager("industry-list", "industry-empty", "industry-more", industryCard);
+  if (!data || !(data.items || []).length) {
+    // 아직 수집 전(첫 배포 등)에도 화면이 깨지지 않게 — 책갈피는 살리고 안내만
+    $("industry-list").replaceChildren();
+    $("industry-empty").hidden = false;
+    $("industry-empty").textContent = "산업 기사를 곧 모아 보여드릴게요.";
+    return;
+  }
+  initRangeBar("range-industry", "industry",
+    () => { IND.arch = null; renderIndustry(); },
+    async (m) => { IND.arch = await archShard("industry", m); renderIndustry(); });
+  renderIndustry();
+}
+
+// ── 업계(기사) 뷰의 기간 필터 ────────────────────────────────────────────
+// '최근'은 기존 initSub이 그대로 담당하고(회귀 0), '전체 기간'일 때만 아카이브 페이저가 화면을 넘겨받는다.
+function initNewsRange(news) {
+  const pager = makePager("news-list", "news-empty", "news-more", newsCard);
+  initRangeBar("range-news", "news",
+    () => {
+      $("f-newscat").hidden = false;
+      $("news-more").replaceChildren();
+      initSub("news", news, "f-newscat", "category", NEWS_CAT_ORDER);
+    },
+    async (m) => { $("f-newscat").hidden = true; pager.set(await archShard("news", m)); });
+}
+
 // ===================== 글자수·맞춤법 도구 =====================
 // 순수 클라이언트 유틸 — 입력 텍스트는 저장·전송하지 않는다(무수집 원칙).
 let byteWeight = 2;                 // 한글 등 멀티바이트 1자당 byte(2=사람인식 / 3=삼정·UTF-8). 회사별 자소서 기준 전환용.
@@ -774,14 +950,16 @@ function initTodayTabs() {
   }));
 }
 
-// 기사/인사이트 통합 탭 내부 책갈피 토글(기사 ↔ 인사이트)
+// 기사 탭 내부 책갈피 토글(업계 ↔ 산업 ↔ 리포트).
+// 예전엔 두 서브뷰 id를 하드코딩해 세 번째를 추가하면 조용히 동작하지 않았다 →
+// initTodayTabs와 같은 **id 규약(subview-<data-subview>) 순회**로 바꿔 확장에 열어 둔다.
+// 셀렉터에 #tab-news 스코프를 붙인 이유: 다른 탭에 .subtab이 생겨도 서로 간섭하지 않게.
 function initNewsTabs() {
-  const tabs = document.querySelectorAll(".subtab");
+  const tabs = document.querySelectorAll("#tab-news .subtab");
+  const views = document.querySelectorAll("#tab-news .subview");
   tabs.forEach((btn) => btn.addEventListener("click", () => {
     tabs.forEach((b) => { const on = b === btn; b.classList.toggle("on", on); b.setAttribute("aria-selected", on ? "true" : "false"); });
-    const v = btn.dataset.subview;
-    $("subview-news").hidden = v !== "news";
-    $("subview-insights").hidden = v !== "insights";
+    views.forEach((v) => { v.hidden = v.id !== "subview-" + btn.dataset.subview; });
   }));
 }
 
@@ -805,10 +983,12 @@ function initNewsTabs() {
   $("jobs-list").replaceChildren(...skel(6));
   $("news-list").replaceChildren(...skel(4));
   $("insights-grid").replaceChildren(...skel(4));
+  $("industry-list").replaceChildren(...skel(4));
 
-  const [jobs, news, insights, status, big4] = await Promise.all([
+  // 아카이브(archive/*)는 여기서 받지 않는다 — '전체 기간'을 누른 사람만 그 달치를 받아간다.
+  const [jobs, news, insights, status, big4, industry] = await Promise.all([
     loadJSON("data/jobs.json"), loadJSON("data/news.json"), loadJSON("data/insights.json"),
-    loadJSON("data/status.json"), loadJSON("data/big4_recruit.json"),
+    loadJSON("data/status.json"), loadJSON("data/big4_recruit.json"), loadJSON("data/industry.json"),
   ]);
   // 헤더 시각 = 점검 시각(last_run): 변화 없어도 자동화가 돌면 전진. 없으면 jobs 생성시각 폴백.
   const stamp = (status && status.last_run) || (jobs && jobs.generated_at) || "";
@@ -836,6 +1016,8 @@ function initNewsTabs() {
   if (jobs) initJobs(jobs);
   else { $("jobs-empty").hidden = false; $("jobs-empty").textContent = "채용 데이터를 불러오지 못했습니다."; }
   initSub("news", news, "f-newscat", "category", NEWS_CAT_ORDER);   // 색 없이 중립 밑줄 탭
+  initNewsRange(news);      // 업계 기사 기간 필터(최근 ↔ 전체 기간)
+  initIndustry(industry);   // 산업 뷰(산업 칩 → 기업 칩 → DART)
   renderInsights(insights);
   initTools();          // 글자수·맞춤법 도구
   initTodayTabs();      // 책갈피 토글(방금 올라온 공고 ↔ 2026 신규공채)
@@ -850,9 +1032,22 @@ function initNewsTabs() {
   // NEW(24시간 내 새 공고)가 비어 있으면 신규공채를 기본 화면으로 — 빈 패널 대신 쓸모 있는 화면 먼저
   if (recruitTab && !recruitTab.disabled && !document.querySelector("#today-list .today-item")) recruitTab.click();
 
+  const qs = new URLSearchParams(location.search);
   // 딥링크: ?view=big4 → 들어오자마자 '2026 신규공채' 화면으로(시즌 홍보용 단축 URL, id 하위호환 유지)
-  if (new URLSearchParams(location.search).get("view") === "big4") {
+  if (qs.get("view") === "big4") {
     const b = document.querySelector('.today-tab[data-view="big4"]');
     if (b && !b.disabled) { b.click(); b.scrollIntoView({ block: "nearest" }); }
+  }
+  // 딥링크: ?sub=industry[&ind=반도체·전자][&co=삼성전자] → 기사 탭의 산업 책갈피로 바로
+  const sub = qs.get("sub");
+  if (sub === "industry" || sub === "insights" || sub === "news") {
+    document.querySelector('.tab-btn[data-tab="news"]')?.click();
+    document.querySelector('#tab-news .subtab[data-subview="' + sub + '"]')?.click();
+    if (sub === "industry" && industry) {
+      const ind = qs.get("ind"), co = qs.get("co");
+      if (ind) IND.cat = ind;
+      if (co) IND.co = co;
+      if (ind || co) renderIndustry();
+    }
   }
 })();

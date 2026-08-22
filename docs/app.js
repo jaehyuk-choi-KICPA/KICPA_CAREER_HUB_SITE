@@ -655,32 +655,35 @@ function makePager(listId, emptyId, moreId, cardFn) {
   return { set(items) { st.items = items; st.shown = ARCH_PAGE; draw(); } };
 }
 
-// 기간 필터: [최근][전체 기간] + (전체일 때) 월 칩. 기본은 '최근' = 이미 받아둔 JSON이라 네트워크 0.
-function initRangeBar(barId, stream, onRecent, onMonth) {
+// 아카이브 전 구간을 한 번에. 월 칩을 두면 상단 필터가 한 층 더 쌓이는데,
+// 사용자가 '몇 월'을 고르고 싶은 경우는 드물고 '지난 것까지 다 보기'면 충분하다.
+async function archAll(stream) {
+  const idx = await archIndex();
+  const months = ((idx.streams || {})[stream] || {}).months || [];
+  const all = [];
+  for (const m of months) all.push(...await archShard(stream, m.m));
+  all.sort((a, b) => (b.published_at || b.published || "").localeCompare(a.published_at || a.published || ""));
+  return all;
+}
+
+// 기간 필터: [최근][전체 기간] 둘뿐. 기본 '최근'은 이미 받아둔 JSON이라 네트워크 0.
+function initRangeBar(barId, stream, onRecent, onAll) {
   const bar = $(barId);
   if (!bar) return;
-  let mode = "recent", month = null;
-  const draw = async () => {
-    const kids = [];
+  let mode = "recent";
+  const draw = () => {
     const bR = el("button", { type:"button", class:"range-btn" + (mode === "recent" ? " on" : ""), text:"최근" });
     const bA = el("button", { type:"button", class:"range-btn" + (mode === "all" ? " on" : ""), text:"전체 기간" });
-    bR.addEventListener("click", () => { if (mode === "recent") return; mode = "recent"; month = null; draw(); onRecent(); });
+    bR.addEventListener("click", () => { if (mode === "recent") return; mode = "recent"; draw(); onRecent(); });
     bA.addEventListener("click", async () => {
-      const idx = await archIndex();
-      const info = (idx.streams || {})[stream] || {};
-      const months = info.months || [];
-      if (!months.length) return;                 // 아카이브가 아직 없으면 '최근' 유지
-      mode = "all"; month = months[0].m;          // 가장 최근 월 자동 선택
-      draw(); onMonth(month);
+      if (mode === "all") return;
+      bA.textContent = "불러오는 중…";           // 전 구간은 수 MB라 체감이 있다
+      const items = await archAll(stream);
+      bA.textContent = "전체 기간";
+      if (!items.length) return;                 // 아카이브가 아직 없으면 '최근' 유지
+      mode = "all"; draw(); onAll(items);
     });
-    kids.push(bR, bA);
-    if (mode === "all") {
-      const idx = await archIndex();
-      const info = (idx.streams || {})[stream] || {};
-      (info.months || []).forEach((m) => kids.push(
-        mkChip2(m.m, m.n, m.m === month, () => { month = m.m; draw(); onMonth(m.m); })));
-    }
-    bar.replaceChildren(...kids);
+    bar.replaceChildren(bR, bA);
   };
   draw();
 }
@@ -688,17 +691,10 @@ function initRangeBar(barId, stream, onRecent, onMonth) {
 // ── 산업 뷰 ──────────────────────────────────────────────────────────────
 const IND = { data:null, arch:null, cat:null, co:null, pager:null, comp:null };
 
-// 감사보수는 DART가 백만원 단위로 준다("2,250" = 22.5억). 괄호 주석이 붙은 표기도 있어 앞 숫자만 읽는다.
-function fmtFee(s) {
-  const m = String(s || "").replace(/,/g, "").match(/\d+/);
-  if (!m) return "";
-  return (Number(m[0]) / 100).toFixed(1).replace(/\.0$/, "") + "억";
-}
-
 // 감사인 배지 — 이 화면에서 가장 쓸모 있는 한 줄(누가 이 회사를 감사하는가). 자료 없으면 null.
 function companyAuditor(name) {
   const c = IND.comp && IND.comp.companies && IND.comp.companies[name];
-  return (c && c.auditor) ? el("span", { class:"comp-aud", text:"감사인 " + c.auditor }) : null;
+  return (c && c.auditor) ? el("span", { class:"comp-aud", text:c.auditor }) : null;
 }
 function companyOpinion(name) {
   const c = IND.comp && IND.comp.companies && IND.comp.companies[name];
@@ -719,7 +715,6 @@ function companyBrief(name) {
   }
   if (c.emphasis) out.push(el("div", { class:"aud-emph", text:"강조사항 · " + c.emphasis }));
   const bits = [];
-  if (c.fee) bits.push(el("span", { text:"감사보수 " + fmtFee(c.fee) }));
   if (c.hours) bits.push(el("span", { text:"감사시간 " + c.hours + "시간" }));
   if (c.report_url) bits.push(el("a", { class:"aud-link", href:c.report_url, target:"_blank",
                                         rel:"noopener", text:"사업보고서 원문" }));
@@ -765,10 +760,11 @@ function renderIndustry() {
   inCat.forEach((i) => (i.companies || []).forEach((c) => { cc[c] = (cc[c] || 0) + 1; }));
   const names = Object.keys(cc).sort((a, b) => cc[b] - cc[a] || a.localeCompare(b, "ko"));
   if (IND.co && !cc[IND.co]) IND.co = null;
-  // 기업 칩은 산업을 고른 뒤에만, 그리고 **접어서** 낸다. 산업 칩(둥근 알약) 바로 아래 같은 모양이
-  // 한 줄 더 깔리면 두 축이 구분되지 않는다 → 기업은 카드 안 기업 태그와 같은 **사각 태그**로 통일.
+  // 기업 칩은 **접어서** 낸다(기본 닫힘). 산업 칩(둥근 알약) 바로 아래 같은 모양이 한 줄 더 깔리면
+  // 두 축이 구분되지 않으므로, 기업은 카드 안 기업 태그와 같은 **사각 태그**로 통일했다.
+  // 접혀 있어 소음이 없으니 산업을 고르기 전(전체 보기)에도 띄운다 — 기업부터 찾는 사람도 있다.
   const panel = $("co-panel"), row = $("f-indco");
-  if (names.length && (IND.cat || IND.co)) {
+  if (names.length) {
     panel.hidden = false;
     panel.querySelector(".co-n").textContent = " " + names.length;
     if (IND.co) panel.open = true;               // 기업이 선택된 상태면 접혀 있으면 안 된다
@@ -781,7 +777,9 @@ function renderIndustry() {
   if (IND.co) {
     const tpl = (IND.data && IND.data.dart_url) || "https://dart.fss.or.kr/dsab007/main.do?textCrpNm={q}";
     head.hidden = false;
-    head.replaceChildren(
+    // ⚠️ replaceChildren는 el()과 달리 null을 걸러내지 않고 문자열 "null"로 바꿔 넣는다.
+    // 감사 정보가 없는 기업에서 "nullnull"이 찍히던 원인 → 반드시 filter(Boolean).
+    head.replaceChildren(...[
       el("span", { class:"comp-name", text:IND.co }),
       el("span", { class:"comp-n", text:"기사 " + cc[IND.co] + "건" }),
       companyAuditor(IND.co),
@@ -789,7 +787,7 @@ function renderIndustry() {
       el("a", { class:"dart-btn", href:tpl.replace("{q}", encodeURIComponent(IND.co)),
                 target:"_blank", rel:"noopener", text:"📄 DART 전자공시 →" }),
       ...companyBrief(IND.co),
-    );
+    ].filter(Boolean));
   } else { head.hidden = true; head.replaceChildren(); }
 
   IND.pager.set(IND.co ? inCat.filter((i) => (i.companies || []).includes(IND.co)) : inCat);
@@ -808,7 +806,7 @@ function initIndustry(data, companies) {
   }
   initRangeBar("range-industry", "industry",
     () => { IND.arch = null; renderIndustry(); },
-    async (m) => { IND.arch = await archShard("industry", m); renderIndustry(); });
+    (items) => { IND.arch = items; renderIndustry(); });
   renderIndustry();
 }
 
@@ -822,7 +820,7 @@ function initNewsRange(news) {
       $("news-more").replaceChildren();
       initSub("news", news, "f-newscat", "category", NEWS_CAT_ORDER);
     },
-    async (m) => { $("f-newscat").hidden = true; pager.set(await archShard("news", m)); });
+    (items) => { $("f-newscat").hidden = true; pager.set(items); });
 }
 
 // ===================== 글자수·맞춤법 도구 =====================

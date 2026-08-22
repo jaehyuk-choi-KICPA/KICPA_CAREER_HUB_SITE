@@ -1,4 +1,4 @@
-"""DART 전자공시 Open API 어댑터 — 기업별 **감사 정보**(감사인·감사의견·핵심감사사항·감사보수).
+"""DART 전자공시 Open API 어댑터 — 기업별 **감사 정보**(감사인·감사의견·핵심감사사항·감사시간).
 
 왜 스크래핑이 아니라 Open API인가: 공식 API가 안정적·합법적이고 저작권도 안전하다
 (**수치와 링크만** 저장하고 원문은 전재하지 않는다). 결정론적 공공 API라 코어 LLM-free 원칙과 충돌하지 않는다.
@@ -12,8 +12,8 @@
   - `api/accnutAdtorNmNdAdtOpinion.json` → `adtor`(감사인), `adt_opinion`(감사의견),
     `core_adt_matter`(**핵심감사사항**), `emphs_matter`(강조사항). 사업연도별 여러 행이 오므로
     `bsns_year`에 '당기'가 든 행을 고른다.
-  - `api/adtServcCnclsSttus.json` → `adt_cntrct_dtls_mendng`(감사보수, 백만원),
-    `adt_cntrct_dtls_time`(감사시간). 표준감사시간 논의의 실물 데이터다.
+  - `api/adtServcCnclsSttus.json` → `adt_cntrct_dtls_time`(감사시간).
+    같은 응답에 감사보수(`adt_cntrct_dtls_mendng`)도 있지만 화면에 쓰지 않기로 해 담지 않는다.
   - `corpCode.xml`은 비상장 포함 10만 건대라 동명이인이 흔하다 → **stock_code 있는 상장사를 우선**.
     정식 명칭이 통칭과 다른 곳이 많아(네이버→NAVER, KT→케이티, 한국전력→한국전력공사)
     config의 `dart` 필드로 보정한다.
@@ -152,7 +152,7 @@ def _audit(corp_code: str, year: int) -> dict:
                        bsns_year=str(y), reprt_code="11011")
             arows = (ad.get("list") or []) if ad.get("status") == "000" else []
             a = _current(arows)
-            out["fee"] = _clean(a.get("adt_cntrct_dtls_mendng"))      # 백만원
+            # 감사보수(adt_cntrct_dtls_mendng)는 화면에 쓰지 않기로 해 담지 않는다(필요해지면 같은 응답에 있다).
             out["hours"] = _clean(a.get("adt_cntrct_dtls_time"))
         except Exception:  # noqa: BLE001 — 보수는 부가 정보라 실패해도 감사인은 살린다
             pass

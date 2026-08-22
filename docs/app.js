@@ -612,6 +612,7 @@ function initSub(prefix, data, chipRowId, chipKey, fixed, cardFn, colors) {
 
 const ARCH = { index: null, shards: new Map() };   // 아카이브는 '전체 기간'을 누를 때만 받아온다
 const ARCH_PAGE = 40;                              // 한 번에 그리는 카드 수(월 샤드는 최대 2,700건)
+const CO_CHIP_CAP = 8;                             // 기업 칩 노출 상한(기사 많은 순). 나머지는 카드의 기업 태그로 도달
 
 async function archIndex() {
   if (!ARCH.index) ARCH.index = (await loadJSON("data/archive/index.json")) || { streams:{} };
@@ -678,8 +679,6 @@ function initRangeBar(barId, stream, onRecent, onMonth) {
       const info = (idx.streams || {})[stream] || {};
       (info.months || []).forEach((m) => kids.push(
         mkChip2(m.m, m.n, m.m === month, () => { month = m.m; draw(); onMonth(m.m); })));
-      if (info.total) kids.push(el("span", { class:"range-note",
-        text:(idx.since ? idx.since + "부터 " : "") + "모아온 " + info.total.toLocaleString() + "건" }));
     }
     bar.replaceChildren(...kids);
   };
@@ -770,7 +769,10 @@ function renderIndustry() {
   // 기업 칩 — 사전 전체가 아니라 **실제 기사가 있는 기업만**(renderLocalRecruit의 빈 그룹 숨김과 같은 원칙)
   const cc = {};
   inCat.forEach((i) => (i.companies || []).forEach((c) => { cc[c] = (cc[c] || 0) + 1; }));
-  const names = Object.keys(cc).sort((a, b) => cc[b] - cc[a] || a.localeCompare(b, "ko"));
+  let names = Object.keys(cc).sort((a, b) => cc[b] - cc[a] || a.localeCompare(b, "ko"))
+    .slice(0, CO_CHIP_CAP);
+  // 카드 태그로 고른 기업이 상위 8 밖이면 칩이 사라져 해제할 방법이 없어진다 → 선택분은 항상 포함
+  if (IND.co && cc[IND.co] && !names.includes(IND.co)) names = [IND.co, ...names.slice(0, CO_CHIP_CAP - 1)];
   if (IND.co && !cc[IND.co]) IND.co = null;
   // 기업 칩은 **산업을 고른 뒤**에만 편다. 전체 보기에서 30여 개를 한꺼번에 쏟으면 시각 소음이 크고,
   // '관심산업군을 먼저 정하고 그 안에서 기업을 좁힌다'는 이 화면의 동선과도 어긋난다.
@@ -778,7 +780,7 @@ function renderIndustry() {
   const row = $("f-indco");
   if (names.length && (IND.cat || IND.co)) {
     row.hidden = false;
-    row.replaceChildren(...names.map((n) => mkChip2(n, cc[n], IND.co === n,
+    row.replaceChildren(...names.map((n) => mkChip2(n, null, IND.co === n,
       () => { IND.co = (IND.co === n ? null : n); renderIndustry(); })));
   } else { row.hidden = true; row.replaceChildren(); }
 

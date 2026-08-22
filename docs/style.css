@@ -421,7 +421,6 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
   padding:6px 11px; font-size:12px; font-weight:700; cursor:pointer; font-family:inherit; }
 .range-btn:hover:not(.on) { border-color:var(--accent); color:var(--ink); }
 .range-btn.on { background:var(--accent); border-color:var(--accent); color:#fff; }
-.range-note { flex-basis:100%; font-size:11.5px; color:var(--muted); }
 
 /* 기업 모아보기 헤더 + DART 전자공시 바로가기(산업 → 기업 → 재무제표 동선의 마지막 칸) */
 .comp-head { display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin:0 0 14px;

@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-23T17:01:36",
+  "generated_at": "2026-08-23T17:31:36",
   "soon_days": 7,
   "counts": {
     "total": 62,
     "open": 41,
     "closed": 21,
-    "new": 0,
-    "soon": 14,
+    "new": 1,
+    "soon": 13,
     "by_firm": {
       "삼일": 13,
       "삼정": 2,
@@ -216,25 +216,6 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/125615",
       "dday": 4,
       "first_seen": "2026-08-20T15:01:39"
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "[우리회계법인] 수습회계사 채용",
-      "company": "우리회계법인",
-      "deadline": "2026-08-28",
-      "posted_date": "2026-08-13",
-      "location": "서울 강남구",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1786592545618",
-      "dday": 5,
-      "first_seen": "2026-08-13T13:01:52"
     },
     {
       "source": "kicpa_susup",
@@ -615,6 +596,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1787192697987",
       "dday": 38,
       "first_seen": "2026-08-20T11:31:28"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[동성회계법인] 수습 회계사 채용",
+      "company": "동성회계법인",
+      "deadline": "2026-09-30",
+      "posted_date": "2026-08-23",
+      "location": "지역무관 지역무관",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1787472623099",
+      "dday": 38,
+      "first_seen": "2026-08-23T17:31:36"
     },
     {
       "source": "kicpa_cpa",

@@ -261,8 +261,11 @@ _DEFAULTS: dict = {
         # 통신 79건이 여기서 탈락). 구글뉴스 RSS는 관련도순이라 넓은 앵커 쿼리일수록 과거 기사가 섞여 온다.
         "industry_recent_days": 30,
         "industry_max_per_day_per_cat": 4,  # (산업, 발행일)별 상한 — 한 사건이 도배하는 것 방지
-        "industry_min_interval_minutes": 180,  # run-all은 30분 주기지만 산업은 3시간에 1회만 수집
-                                               # (어댑터 22개 -> 구글뉴스 throttle·리포 churn 방어)
+        # run-all은 30분 주기지만 산업은 어댑터 26개라 매 회차 돌리면 과수집이다.
+        # ⚠️ 180으로 두면 확인 시점이 30분 단위라 **실제 주기가 210분**이 된다(실측 10회 연속 210분).
+        #    직전 수집 +179분 슬롯에서 1분 모자라 건너뛰고 다음 슬롯(+209분)에 걸리기 때문.
+        #    150이면 +179분 슬롯에서 통과해 실제 주기가 약 3시간이 된다(이용안내 표기와 일치).
+        "industry_min_interval_minutes": 150,
         "industry_fetch_workers": 4,        # 산업 전용 병렬도(뉴스 8보다 낮춤 — throttle 회피)
         # 산업 탭은 **국내 기업 기사만** 본다. 뉴스 쪽 필터(news_foreign_*)는 '미국·글로벌'을 keep 마커로
         # 살려두지만 산업엔 그 예외를 두지 않는다 — 엔비디아·YMTC·트럼프미디어 실적은 우리 목적과 무관하다.
@@ -672,7 +675,7 @@ _DEFAULTS: dict = {
             "jobs.json": {"label": "채용공고", "expected_minutes": 30},
             "news.json": {"label": "기사", "expected_minutes": 120},
             "insights.json": {"label": "빅펌 인사이트", "expected_minutes": 720},
-            # 산업은 industry_min_interval_minutes(180) 게이트로 3시간에 1회만 수집 → 기대간격도 그에 맞춤
+            # 산업은 industry_min_interval_minutes(150) 게이트 → 실제 약 3시간 주기. 기대간격은 여유 있게.
             "industry.json": {"label": "산업 기사", "expected_minutes": 240},
             # "notify_status.json": {"label": "푸시 발송", "expected_minutes": 30},  # notifier 미운영 중
         },

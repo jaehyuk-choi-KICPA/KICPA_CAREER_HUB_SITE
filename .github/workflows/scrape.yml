@@ -1,7 +1,10 @@
-name: scrape-jobs   # 채용공고 — 30분마다
+name: scrape-jobs   # 채용공고 — 수동 + 스크래퍼 코드 변경 시
 
 on:
-  workflow_dispatch: {}    # 수동 전용 — 정기 수집은 외부 핑거→run-all이 담당(cron 중복 제거)
+  workflow_dispatch: {}    # 수동 실행 — 정기 수집은 외부 핑거→run-all이 담당(cron 중복 제거)
+  # ⚠️ 수동 전용이 아니다. 아래 push 트리거로 **코드 푸시마다 채용 수집이 한 번 더 돈다**
+  #    (스크래퍼를 고치면 바로 반영해 보려는 의도). 그래서 이 워크플로도 status.json을 쓰며,
+  #    export 전 origin 동기화 스텝이 없으면 run-all이 방금 쓴 news·industry 시각을 되돌린다(실측 사고).
   push:
     branches: [main, master]
     paths: ["src/**", "config.yaml", ".github/workflows/scrape.yml"]

@@ -1,7 +1,7 @@
 # 회계법인 취업 허브 (KICPA_CAREER_HUB_SITE) — 프로젝트 컨텍스트
 
 빅4·로컬 회계법인의 **수습공인회계사(기합 포함)·회계법인 입사 준비자**를 위한 **정적 웹 대시보드**.
-채용공고 + 회계·세무·딜 업계 뉴스 + Big4 인사이트를 자동 수집 → GitHub Actions가 `docs/data/*.json`을
+채용공고 + 감사·세무 업계 기사 + 산업 기사 + Big4 리포트 + 기업 감사정보(DART)를 자동 수집 → GitHub Actions가 `docs/data/*.json`을
 커밋 → GitHub Pages(`docs/`)가 서빙. 타깃: 포트폴리오(삼일 PwC Digital).
 
 > 계획 원본: `C:\Users\micha\.claude\plans\snazzy-wondering-hickey.md`.

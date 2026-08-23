@@ -26,7 +26,7 @@ flowchart TD
         EXPORT["export.py --part jobs|news|insights"]
         SOURCES["sources.fetch_all()<br/>ThreadPool, 도메인 간 병렬"]
         ADAPTERS_J["채용 어댑터 ×6<br/>kicpa(2) · samil · samjong · anjin · hanyoung"]
-        ADAPTERS_N["뉴스 어댑터<br/>GoogleNewsAdapter × 5풀<br/>채용·시험 / 감사A·감사B / 딜 / 세무"]
+        ADAPTERS_N["뉴스 어댑터<br/>GoogleNewsAdapter × 4풀<br/>채용·시험 / 감사A·감사B / 세무"]
         ADAPTERS_I["인사이트 어댑터 ×4<br/>Playwright 헤드리스 순차<br/>삼일 · 삼정 · 안진 · 한영"]
         STATE["state.py<br/>first_seen · last_seen · grace"]
         CLASSIFY["classify.py<br/>법인 / 직무 분류"]
@@ -171,8 +171,8 @@ flowchart LR
 
 ## 3.5 산업 파이프라인 상세 (회계·재무 렌즈)
 
-뉴스 4분류와 **완전히 분리된 별도 스트림**이다. 같은 `GoogleNewsAdapter`를 재사용하되
-설정(`industry_*`)·필터·산출 파일이 모두 독립적이라, 산업을 건드려도 기사 4분류는 영향을 받지 않는다.
+업계 기사 3분류와 **완전히 분리된 별도 스트림**이다. 같은 `GoogleNewsAdapter`를 재사용하되
+설정(`industry_*`)·필터·산출 파일이 모두 독립적이라, 산업을 건드려도 업계 3분류는 영향을 받지 않는다.
 
 ```mermaid
 flowchart LR

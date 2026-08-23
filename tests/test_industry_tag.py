@@ -28,9 +28,12 @@ class TestTagCompanies:
     def test_corp_suffix_is_a_different_company(self, index):
         # '현대차'+'증권' = 사전에 없는 현대차증권 → 현대차로 새면 안 됨
         assert tag_companies("현대차증권 유상증자 결정", index) == []
-        # 셀트리온제약·현대차그룹은 셀트리온·현대차와 별개 주체다
-        assert tag_companies("셀트리온제약, 2분기 매출 증가", index) == []
+        # 현대차그룹은 현대차와 별개 주체다(그룹 단위 기사)
         assert tag_companies("현대차그룹 지배구조 개편안 발표", index) == []
+        # 셀트리온제약은 사전에 있으므로 **자기 이름으로** 잡혀야 한다(최장일치가 셀트리온을 이긴다)
+        assert tag_companies("셀트리온제약, 2분기 매출 증가", index) == ["셀트리온제약"]
+        # 사전에 없는 자회사·계열사는 모회사로 새면 안 된다
+        assert tag_companies("현대차증권 유상증자 결정", index) == []
 
     def test_longest_match_wins(self, index):
         # '삼성바이오로직스'가 '삼성전자'류 짧은 별칭보다 먼저 소비돼야 한다

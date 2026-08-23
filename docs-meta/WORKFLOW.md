@@ -82,6 +82,15 @@ flowchart TD
 
 > **추가 흐름**: `run-all`은 수집 후 **푸시 발송**(`src/notifier.py` → 구독자)도 수행한다(§5.5 채용알림). 모니터링은 **통합 `monitor.yml`(1일 1회)**이 canary+sitecheck를 묶어 점검하며 신선도 미갱신만 자동 재수집한다(§5).
 
+> ⚠️ **status.json 동기화(수집 워크플로 공통 규약)**: 수집 yml 4종(`run-all`·`scrape`·`scrape-news`·`scrape-insights`)은
+> **export 실행 직전에 `git pull --rebase --autostash origin <ref> || true`** 를 반드시 거친다.
+> `status.json`은 스트림 4개(jobs·news·insights·industry·companies)가 **한 파일을 나눠 쓰는** 구조인데,
+> 각 워크플로는 자기 몫만 갱신하고 나머지는 체크아웃 당시 값을 그대로 다시 쓴다. 커밋 단계의
+> `git pull --rebase -X theirs`가 그 옛 값을 이기게 만들므로, 동기화를 빼면 **남의 스트림 시각이 되돌아간다**
+> (2026-08-24 실측: `scrape.yml`이 `src/**` push로 트리거돼 run-all이 1분 전에 쓴 news·industry 시각을 덮었다).
+> 되돌아간 시각은 **산업 3시간 게이트 오작동**(중복 수집)과 **freshness stale 오탐**을 부른다.
+> 새 수집 워크플로를 추가할 때도 이 스텝을 함께 넣을 것.
+
 ---
 
 ## 2. 채용공고 파이프라인 상세

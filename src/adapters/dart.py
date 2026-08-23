@@ -56,6 +56,22 @@ def _clean(v: str) -> str:
     return "" if v in _EMPTY else v
 
 
+# 감사인명은 회사가 사업보고서에 직접 쓴 자유 텍스트라 같은 법인이 여러 표기로 갈린다.
+# 실측(188곳): "삼일회계법인 (PwC)" · "한영 회계법인" · "안진" 이 각각 별개 값으로 잡혔다.
+_FIRM_SHORT = {"삼일": "삼일회계법인", "삼정": "삼정회계법인",
+               "안진": "안진회계법인", "한영": "한영회계법인"}
+
+
+def _norm_auditor(v: str) -> str:
+    """'삼일회계법인 (PwC)'·'한영 회계법인'·'안진' → 'X회계법인' 한 가지 표기로."""
+    v = _clean(v)
+    if not v:
+        return ""
+    v = re.sub(r"\s*[(（][^)）]*[)）]\s*$", "", v).strip()   # 괄호 병기 제거
+    v = re.sub(r"\s+(?=회계법인)", "", v)          # '한영 회계법인' → '한영회계법인'
+    return _FIRM_SHORT.get(v, v)                    # ('회계법인 리안'처럼 접두형은 그대로 둔다)
+
+
 def _current(rows: list[dict]) -> dict:
     """사업연도 행들 중 '당기' 행. 표기가 제각각이라 못 찾으면 첫 행으로 폴백."""
     for r in rows:
@@ -140,7 +156,7 @@ def _audit(corp_code: str, year: int) -> dict:
         out = {
             "fy": y,
             "stlm_dt": _clean(cur.get("stlm_dt")),
-            "auditor": _clean(cur.get("adtor")),
+            "auditor": _norm_auditor(cur.get("adtor")),
             "opinion": _clean(cur.get("adt_opinion")),
             "kam": split_kam(cur.get("core_adt_matter")),
             "emphasis": _clean(cur.get("emphs_matter")),

@@ -23,6 +23,9 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.11", cache: pip }
       - run: pip install -r requirements.txt
+      # 다른 워크플로가 먼저 올린 status.json을 받아온 뒤 내 몫만 갱신한다.
+      # (이 단계가 없으면 옛 체크아웃의 status.json으로 남의 스트림 시각까지 되돌린다 — 실측 사고)
+      - run: git pull --rebase --autostash origin "${{ github.ref_name }}" || true
       - run: python -m src.export --part jobs
       - name: Commit jobs.json
         run: |

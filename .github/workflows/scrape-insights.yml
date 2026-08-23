@@ -22,6 +22,9 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Install Chromium
         run: python -m playwright install --with-deps chromium
+      # 다른 워크플로가 먼저 올린 status.json을 받아온 뒤 내 몫만 갱신한다.
+      # (이 단계가 없으면 옛 체크아웃의 status.json으로 남의 스트림 시각까지 되돌린다 — 실측 사고)
+      - run: git pull --rebase --autostash origin "${{ github.ref_name }}" || true
       - run: python -m src.export --part insights
       - name: Commit insights.json
         run: |

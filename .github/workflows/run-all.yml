@@ -30,6 +30,9 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Install Chromium (인사이트 렌더용)
         run: python -m playwright install --with-deps chromium
+      # 다른 워크플로가 먼저 올린 status.json을 받아온 뒤 내 몫만 갱신한다.
+      # (없으면 옛 체크아웃의 status.json으로 남의 스트림 시각을 되돌린다 — 실측 사고)
+      - run: git pull --rebase --autostash origin "${{ github.ref_name }}" || true
       - name: Scrape all (채용+기사+인사이트)
         run: python -m src.export
       # ── 발송 순서 = 수집 → 커밋/배포 → (라이브 확인) → 알람 ──────────────────────────

@@ -1,148 +1,22 @@
 {
-  "generated_at": "2026-08-24T17:01:48",
+  "generated_at": "2026-08-24T17:31:38",
   "items": [
     {
-      "source": "gnews_세무",
-      "source_label": "조세금융신문",
-      "title": "[신간] 국세청 조사 베테랑이 풀어낸 ‘탈세유형과 범칙조사’ 실전 노하우",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9aT3lieC1xXzNNVzdnZUFJWEtHbkFxNC1LelZFYW81MzBIN2U1MWhIYTlUc21Xd0JFNGNTTXdralZwbkVwSlJsdExxX3JTdTV0WW03S1NkMzhya3NDUUlnZ3NsVQ?oc=5",
-      "published": "2026-08-24",
-      "published_at": "2026-08-24T07:45:20",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "애드뉴스인천",
-      "title": "거제·통영 세금 부담 완화…최대 2년 유예",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5hQXpCWHlFMXRMSWlxbVY4bGJlLVBrS2F6b0RqeTI3REJCUTYtZmVsOXU4STQxVFdGN3drMmlwaUFvR2pDcHQ4NGlEUEhwbGlBel9vYWxKVnYxMGZ3TE5sdXN0UmdmZ1dwRy00?oc=5",
-      "published": "2026-08-24",
-      "published_at": "2026-08-24T07:41:00",
-      "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "국세청, 거제·통영 호우 피해 납세자 세정지원 확대",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5fSUV4VkxXWUhjQkl1THFORmwxNGJ6YXB1RzJDSTc0bWhzV1FXbU1fVzN1ckxfa0NlV2loUFo4VWc5NUhtNFJFbDJQcWJVejQyZ0ZOZm94VUFpTThDblZmbEpTUFpJakFyOE9uejJn?oc=5",
-          "source_label": "뉴스후플러스",
-          "published": "2026-08-24"
-        },
-        {
-          "title": "국세청, 거제·통영 호우 피해 납세자 세정지원…납부기한 최대 2년 연장",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9NVnVuby1NQ1pINzljOUh3blNxN2pEMEI0R3JDbTRQd2V3VXZyR1VTb3lmbHphcUNYQjVpNDJEM3JBYWZlbHhOeGNyWGxBMGplemh1cGJwcE9lakpMOTNuMWU2MkdybzlW0gFsQVVfeXFMT29meHZmTWZyVmtQaE4xR3V6V0RaejM5cm9yQkpPYjdrc3cwYjhxVlFEejNnY0hoSmh6azBfeFFJOExLbVdscnV4a0pvN0E0UjJLakhaeUtCRk5SejlIVjgzcUJXT3RNYkp4dGpU?oc=5",
-          "source_label": "필드뉴스",
-          "published": "2026-08-24"
-        },
-        {
-          "title": "국세청, 거제·통영 피해 납세자에 세정지원 확대",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1VaDdZM0p3OGZ0RE1DN2h0Rl9DTFZBVWlEa0VidGNnZ2ZuSmxGY2M4a0lzWTBFZHFralNDRjctdUFKVExHY3AyOXdkdGdVNGFUSjc2ak53SEtpZkVfSVNVQtIBeEFVX3lxTE9QSFJORHJnYVR0eEhIYWdOX1dMSU9PR2JnQ0hMTmlEb0dJTXpUZnNrVzc5UVBKV0l0UGM3dVJlMExhd2VZdkFQMVI2OHJsbm9RNDBaMHpwNWpxY2RRcV9VTGNWYjUtOXRTSHlOS0Y1VE9pNFgzWUt6dg?oc=5",
-          "source_label": "뉴시스",
-          "published": "2026-08-24"
-        },
-        {
-          "title": "국세청, '거제·통영 특별재난지역' 소득·법인·부가세 납기 최대 2년 늦춰진다",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1yZDRGS3otbW95Umt5a3NFNE45a0NCOUpTck14em1qcTJxT3lKdERxX2RsVHR4WkpSaGg4eVlWZEY1RWRjYmtiU1M2M3FnNGh1MFhtcW83d09id0tnR3BHV2dtbXRyRk01ZjBCNw?oc=5",
-          "source_label": "ER 이코노믹리뷰",
-          "published": "2026-08-24"
-        },
-        {
-          "title": "국세청, 거제·통영 호우 피해 중소기업 법인세 납부 2개월 연장",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBFRmFZN3VOYXBxbTBJdV9kTDZaaUVfZTBHS3ZEVk1pMGhFNlkwTjc0cm5IMHphZWQ2M0RBNXJFZ3NwV0hTZmc4N1ctLVloWTV0eVRtcTZJRDZLeFpqYkRINEFCdDBDWk54NG1DVk9n?oc=5",
-          "source_label": "미디어인뉴스",
-          "published": "2026-08-24"
-        },
-        {
-          "title": "특별재난지역 거제·통영에 부가세 등 최대 2년 연장…세무조사 유예",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE91ekxZZVh2YUh6NVB6TUVRWDgtLXkybmd1NzdhbjBzMURTN1VJUDRGUWVnemRuLTZjWTZycmtXeVZOX3pZamx4bVcxZUFLT0k?oc=5",
-          "source_label": "v.daum.net",
-          "published": "2026-08-24"
-        },
-        {
-          "title": "국세청, 거제·통영 특별재난지역 납부기한 연장 등 세정지원",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFAzU3lkSUpkbmU1WklGRDY1YkhXTFpUWEVtbFpsRFF2UFlsR1AxNEdFNWVqUGxWMW1mcjB5ZXR0NW5taDNxM3hBTE9YRTBnVGZLRm96VThTNzRvc0wzVG1JVUlsTWdqdTRZNFZjNExQN183QQ?oc=5",
-          "source_label": "KB Think",
-          "published": "2026-08-24"
-        },
-        {
-          "title": "국세청, ‘특별재난지역’ 거제·통영 주민에 최대 2년 세금납부기한 연장",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPRlN1YmtNZjRfR1Q0YkdiZ1VoZ0RNMGRsUEJHTGI5dFN5Nng0UWJKNVlTcGVhTkxFTFo5UEU0STIxbjNmZVdsdU1ZREtTUm5EY1pVa29KeDVQdENtT1Y0a1o0UlNjVGlUdDNnOFRDQWxHMkNNU2JsUnJ2UnBpWFhXaw?oc=5",
-          "source_label": "edaily.co.kr",
-          "published": "2026-08-24"
-        },
-        {
-          "title": "거제·통영 호우 피해 세정지원…신고·납부기한 최대 2년 연장",
-          "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxNaDNfTlA2STUwQjhpVndLS2ptRHZDMTU2czd2TUNRR1ZYTlFmZW9zMUkwZVNaREszU2RpUl9HSHlaU3J1bUhlUTFabnpoQmpSRWJSU1kyZ3RCcUZBYkk3M28yYzhnV2lRSUI1TTBzbFlSUGVwZFB4VGxqZTBqcEVxWkhfTHFkYWs1aE1COGpLd2ZvMzNtbjU2QWhVLVRrekJPQlRvbENEQTB1ZEYyVWR5YTV1UzNNcFNCZDJWUGdzbkluMngyUmtTUW04MFRkdFZGbVVQNTI2OXFNSmlaUzlTNlBuZzRRajczbTMySHJENkE1VmdlNkp4b3NiamFwMFIxaFByVHJXM1pKNWZOQzNnVjRlNEFCdzZ3eG0yMXNIbURxOTNfRnc2LWpzNXJyQQ?oc=5",
-          "source_label": "데일리안",
-          "published": "2026-08-24"
-        },
-        {
-          "title": "국세청, 거제·통영 납세자 최장 2년까지 세금 신고·납부 연장",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE53eG1DQ2pXMXlDcmE1WlVUamRGajVIMW1ZQTkxYVdYWnRmOFNhTlhWRndkeU5KWEFaWFJlUG9FenA5RWRueFBUdGpTUUNhc1dfMWlVdl90VmpvZ0U1OGhGbDVsc1E?oc=5",
-          "source_label": "한국세정신문",
-          "published": "2026-08-24"
-        },
-        {
-          "title": "2026년 귀속 법인세 중간예납 신고분부터 적용되는 주요 개정세법",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5jaWVoWEh2NEpPSmpZM0p1WE9kVlFGWWpaOThJNXNxVE0yYWRDLU1fNGhTUFBSMDFIOFZObzl6TnRUaTh4eGQ5M0g4NFNCVzhIN3VqMEtld292V0JneDNFbXM3U1p2bV9J?oc=5",
-          "source_label": "CPA뉴스",
-          "published": "2026-08-10"
-        },
-        {
-          "title": "중소기업 4만곳 법인세 중간예납 납부기한 2개월 연장",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5RSzFhenh2R1Z5eEZlWm1uc0hqX0dvRlVfcDU0UEtCNVlnUzVrdzdKdVJ1WTYwWXFlb1EtRjI3OWRGSV9xS1pRUTRLN3R4eDdyZnNNeG4ycFNBNjg2Tmd6Q2RyYm4?oc=5",
-          "source_label": "한국세정신문",
-          "published": "2026-08-04"
-        }
-      ]
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "뉴시스",
-      "title": "\"세제개편안 따른 부가가치세 부담 4700억 달해\"",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAwcDZTREFITjJ3bl85MFlsUnQ3d3hZUlhoLUpFc0ZadGpvVEFpS2Jneks5VUp4NDhtRkdsQ3EtbHdJZW5BRGF3NUNOYVlqZnFtc0treVBFZ2Eyd2l0Nko1U9IBeEFVX3lxTFBTcXprQ1BQQ2NuaGlSRl9tbTc3c29pRVdUbGlGcjExRk9INnozN0RKQWZTNDdiNGFYSVBsM1pvX1g4VVh0alNTYjBIOU9DRXlKa1pHQXRtN1BZdGp0LUlDQTRsaDhIVzYwWjdLc3NqWjY4czNWVHZrZA?oc=5",
-      "published": "2026-08-24",
-      "published_at": "2026-08-24T07:37:26",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "법률신문",
-      "title": "제3자적립마일리지 결제액의 부가가치세 과세에 관한 대법원 전원합의체 판결",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9EanA4MWlYcG43VkNac003UVhuNlRoMk9EOTJMdUQtRHMxNXdqSU55T1NaU2ZoM1h2RHd5UEFXeDN4dXJsd3ZpQm9tRHZoa21vd05KRXFqQWRLVWNjdF9kZm4yRlFUZ3JYV0ZpX1JR0gFyQVVfeXFMTUJZTGVqdnpPY1JuMU5uQUVVWE5wcGZmVUZuUnFTUlVUM3VBVklVLUNGX0pwN1VsTV9zODByZllmOFpSaFF4UnNiSFBzWi00eGdibWtiemE2LTFKQURoWVhVdEtLZ3p6QW42QVMwNEhseTJR?oc=5",
-      "published": "2026-08-24",
-      "published_at": "2026-08-24T07:03:24",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "네이트",
-      "title": "오늘이엔엠, 부가가치세 296억 재조사서 '취소 처분'",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1ESWUzcnFqY2E4MmhDN0NuQU1HYmc1SU1xTHV5bF9KaTlFNXlqeGs0SE9YcTVPeDNOMnlCODdLcXdZUzdBUkNiUl9JZzVPS1h4dDVR?oc=5",
-      "published": "2026-08-24",
-      "published_at": "2026-08-24T06:35:00",
-      "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "오늘이엔엠, 세무조사 추징금 297억에서 '0원'…심판청구 인용",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1OcG5TVEQxOGR3Y1FjcGZfZm1QendZbzNRQ0h3YWhCTVExdU1WZzVuRjhUOEwwSWpYRE5hRm9TTnFqUWxzX3pHdkhDS1JkOEJsLWsxcWJTMUQ1Nk9uSlR4OUxQOVVfU0hsY2c?oc=5",
-          "source_label": "intn.co.kr",
-          "published": "2026-08-24"
-        }
-      ]
-    },
-    {
       "source": "gnews_감사",
-      "source_label": "뉴스투데이",
-      "title": "두나무 “美 상장 확정 아냐…회계기준 전환도 사실무근”",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1VLU5XbGN2eTYwNFI4eU9JOFBjOVZTZXd5V3dMOVBtNmFWVEJWanRXdXJLTFhCbnVDOWpfZklkcWRoY1diejE3X0ljWXA4NW9qSGNSTXh0MVpwTzhCbWc?oc=5",
+      "source_label": "네이트",
+      "title": "美 회계기준 검토에 SEC 접촉까지…두나무 '나스닥행'에 쏠린 눈",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5hM0NDWXdDWUVzWE83TndNdTRSWG4wWTVwZmZ4R2ZzUDU4QUJsT0dBMXNxM2RLRDNzd3BCcUZWZGdnaVpDWWlqT3g3WEd5TXExS2o1bFZ5aUVFNEtOUTVzNGZXQ1BCRHJheFJ0eFBaQm4xR0U5UlUtSA?oc=5",
       "published": "2026-08-24",
-      "published_at": "2026-08-24T06:16:00",
+      "published_at": "2026-08-24T08:25:00",
       "summary": "",
       "category": "감사",
       "dupes": [
+        {
+          "title": "두나무 “美 상장 확정 아냐…회계기준 전환도 사실무근”",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1VLU5XbGN2eTYwNFI4eU9JOFBjOVZTZXd5V3dMOVBtNmFWVEJWanRXdXJLTFhCbnVDOWpfZklkcWRoY1diejE3X0ljWXA4NW9qSGNSTXh0MVpwTzhCbWc?oc=5",
+          "source_label": "뉴스투데이",
+          "published": "2026-08-24"
+        },
         {
           "title": "두나무, 美 회계기준 검토…“아직 결정된 바 없어”",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5HZTFwRHZlQ19keGRBM3pQYkk2THNlZjNKRzFmRjNnMV83OFRyLUQ4elVxV2M4ZUV5eTJTSFdleEZtZUNORTVpc1NNTU1iZw?oc=5",
@@ -184,6 +58,154 @@
           "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTE5PSW1ya182NWtnSDlMTmFrSkhvVC1xUmhPNG9zb3ZDZWd2RVVGalBvSFdmT0xMYUd3bWIxbkE1TkF3YVpPTWtxdlVZTUszdGExSTBNMFhBdkZaMkV3V2JpT196UXV0aDVFMmczaWpYbU5YVXpWbDd1Q1cxVmtEMWtfdzZ5WHZydGhB?oc=5",
           "source_label": "조선일보",
           "published": "2026-08-23"
+        }
+      ]
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "헤럴드경제",
+      "title": "국세청, ‘극한 호우 피해’ 거제·통영세금 납부기한 최대 2년 연장",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBoRXN2NDFGc3ROVUhNUkhIejhhb04yenhVRElzY1h3TGxFSW1HaGkwUldmTnZybm9ERnN4Ylp6RmlRb3ZXUVBDRlpRckhRSnJRbnF4OHdn?oc=5",
+      "published": "2026-08-24",
+      "published_at": "2026-08-24T08:13:42",
+      "summary": "",
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "국세청, 거제·통영 호우 피해 납세자 세정지원…납부기한 최대 2년 연장",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9NVnVuby1NQ1pINzljOUh3blNxN2pEMEI0R3JDbTRQd2V3VXZyR1VTb3lmbHphcUNYQjVpNDJEM3JBYWZlbHhOeGNyWGxBMGplemh1cGJwcE9lakpMOTNuMWU2MkdybzlW0gFsQVVfeXFMT29meHZmTWZyVmtQaE4xR3V6V0RaejM5cm9yQkpPYjdrc3cwYjhxVlFEejNnY0hoSmh6azBfeFFJOExLbVdscnV4a0pvN0E0UjJLakhaeUtCRk5SejlIVjgzcUJXT3RNYkp4dGpU?oc=5",
+          "source_label": "필드뉴스",
+          "published": "2026-08-24"
+        },
+        {
+          "title": "거제·통영 호우 피해 세정지원…신고·납부기한 최대 2년 연장",
+          "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxNaDNfTlA2STUwQjhpVndLS2ptRHZDMTU2czd2TUNRR1ZYTlFmZW9zMUkwZVNaREszU2RpUl9HSHlaU3J1bUhlUTFabnpoQmpSRWJSU1kyZ3RCcUZBYkk3M28yYzhnV2lRSUI1TTBzbFlSUGVwZFB4VGxqZTBqcEVxWkhfTHFkYWs1aE1COGpLd2ZvMzNtbjU2QWhVLVRrekJPQlRvbENEQTB1ZEYyVWR5YTV1UzNNcFNCZDJWUGdzbkluMngyUmtTUW04MFRkdFZGbVVQNTI2OXFNSmlaUzlTNlBuZzRRajczbTMySHJENkE1VmdlNkp4b3NiamFwMFIxaFByVHJXM1pKNWZOQzNnVjRlNEFCdzZ3eG0yMXNIbURxOTNfRnc2LWpzNXJyQQ?oc=5",
+          "source_label": "데일리안",
+          "published": "2026-08-24"
+        },
+        {
+          "title": "거제·통영 세금 부담 완화…최대 2년 유예",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5hQXpCWHlFMXRMSWlxbVY4bGJlLVBrS2F6b0RqeTI3REJCUTYtZmVsOXU4STQxVFdGN3drMmlwaUFvR2pDcHQ4NGlEUEhwbGlBel9vYWxKVnYxMGZ3TE5sdXN0UmdmZ1dwRy00?oc=5",
+          "source_label": "애드뉴스인천",
+          "published": "2026-08-24"
+        },
+        {
+          "title": "국세청, 거제·통영 호우 피해 납세자 세정지원 확대",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5fSUV4VkxXWUhjQkl1THFORmwxNGJ6YXB1RzJDSTc0bWhzV1FXbU1fVzN1ckxfa0NlV2loUFo4VWc5NUhtNFJFbDJQcWJVejQyZ0ZOZm94VUFpTThDblZmbEpTUFpJakFyOE9uejJn?oc=5",
+          "source_label": "뉴스후플러스",
+          "published": "2026-08-24"
+        },
+        {
+          "title": "국세청, 거제·통영 피해 납세자에 세정지원 확대",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1VaDdZM0p3OGZ0RE1DN2h0Rl9DTFZBVWlEa0VidGNnZ2ZuSmxGY2M4a0lzWTBFZHFralNDRjctdUFKVExHY3AyOXdkdGdVNGFUSjc2ak53SEtpZkVfSVNVQtIBeEFVX3lxTE9QSFJORHJnYVR0eEhIYWdOX1dMSU9PR2JnQ0hMTmlEb0dJTXpUZnNrVzc5UVBKV0l0UGM3dVJlMExhd2VZdkFQMVI2OHJsbm9RNDBaMHpwNWpxY2RRcV9VTGNWYjUtOXRTSHlOS0Y1VE9pNFgzWUt6dg?oc=5",
+          "source_label": "뉴시스",
+          "published": "2026-08-24"
+        },
+        {
+          "title": "국세청, '거제·통영 특별재난지역' 소득·법인·부가세 납기 최대 2년 늦춰진다",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1yZDRGS3otbW95Umt5a3NFNE45a0NCOUpTck14em1qcTJxT3lKdERxX2RsVHR4WkpSaGg4eVlWZEY1RWRjYmtiU1M2M3FnNGh1MFhtcW83d09id0tnR3BHV2dtbXRyRk01ZjBCNw?oc=5",
+          "source_label": "ER 이코노믹리뷰",
+          "published": "2026-08-24"
+        },
+        {
+          "title": "국세청, 거제·통영 호우 피해 중소기업 법인세 납부 2개월 연장",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBFRmFZN3VOYXBxbTBJdV9kTDZaaUVfZTBHS3ZEVk1pMGhFNlkwTjc0cm5IMHphZWQ2M0RBNXJFZ3NwV0hTZmc4N1ctLVloWTV0eVRtcTZJRDZLeFpqYkRINEFCdDBDWk54NG1DVk9n?oc=5",
+          "source_label": "미디어인뉴스",
+          "published": "2026-08-24"
+        },
+        {
+          "title": "특별재난지역 거제·통영에 부가세 등 최대 2년 연장…세무조사 유예",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE91ekxZZVh2YUh6NVB6TUVRWDgtLXkybmd1NzdhbjBzMURTN1VJUDRGUWVnemRuLTZjWTZycmtXeVZOX3pZamx4bVcxZUFLT0k?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-08-24"
+        },
+        {
+          "title": "국세청, 거제·통영 특별재난지역 납부기한 연장 등 세정지원",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFAzU3lkSUpkbmU1WklGRDY1YkhXTFpUWEVtbFpsRFF2UFlsR1AxNEdFNWVqUGxWMW1mcjB5ZXR0NW5taDNxM3hBTE9YRTBnVGZLRm96VThTNzRvc0wzVG1JVUlsTWdqdTRZNFZjNExQN183QQ?oc=5",
+          "source_label": "KB Think",
+          "published": "2026-08-24"
+        },
+        {
+          "title": "국세청, ‘특별재난지역’ 거제·통영 주민에 최대 2년 세금납부기한 연장",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPRlN1YmtNZjRfR1Q0YkdiZ1VoZ0RNMGRsUEJHTGI5dFN5Nng0UWJKNVlTcGVhTkxFTFo5UEU0STIxbjNmZVdsdU1ZREtTUm5EY1pVa29KeDVQdENtT1Y0a1o0UlNjVGlUdDNnOFRDQWxHMkNNU2JsUnJ2UnBpWFhXaw?oc=5",
+          "source_label": "edaily.co.kr",
+          "published": "2026-08-24"
+        },
+        {
+          "title": "국세청, 거제·통영 납세자 최장 2년까지 세금 신고·납부 연장",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE53eG1DQ2pXMXlDcmE1WlVUamRGajVIMW1ZQTkxYVdYWnRmOFNhTlhWRndkeU5KWEFaWFJlUG9FenA5RWRueFBUdGpTUUNhc1dfMWlVdl90VmpvZ0U1OGhGbDVsc1E?oc=5",
+          "source_label": "한국세정신문",
+          "published": "2026-08-24"
+        },
+        {
+          "title": "2026년 귀속 법인세 중간예납 신고분부터 적용되는 주요 개정세법",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5jaWVoWEh2NEpPSmpZM0p1WE9kVlFGWWpaOThJNXNxVE0yYWRDLU1fNGhTUFBSMDFIOFZObzl6TnRUaTh4eGQ5M0g4NFNCVzhIN3VqMEtld292V0JneDNFbXM3U1p2bV9J?oc=5",
+          "source_label": "CPA뉴스",
+          "published": "2026-08-10"
+        },
+        {
+          "title": "중소기업 4만곳 법인세 중간예납 납부기한 2개월 연장",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5RSzFhenh2R1Z5eEZlWm1uc0hqX0dvRlVfcDU0UEtCNVlnUzVrdzdKdVJ1WTYwWXFlb1EtRjI3OWRGSV9xS1pRUTRLN3R4eDdyZnNNeG4ycFNBNjg2Tmd6Q2RyYm4?oc=5",
+          "source_label": "한국세정신문",
+          "published": "2026-08-04"
+        }
+      ]
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "크리스천투데이",
+      "title": "[특별기고] 해외선교비 관련 세법개정(2) 외국 기준 사례 : 선교",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9HdzVCZ2s3emJWb3k2SWdFc3g1dnp2Y2FLQS1EbG9WZF9ReFpjQ3BKZ1BDRVExM05ybVQ4REtOUDJuU09MUWxleDkzbE1Kem5yYlJNb1pOUQ?oc=5",
+      "published": "2026-08-24",
+      "published_at": "2026-08-24T08:04:16",
+      "summary": "",
+      "category": "세무"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "조세금융신문",
+      "title": "[신간] 국세청 조사 베테랑이 풀어낸 ‘탈세유형과 범칙조사’ 실전 노하우",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9aT3lieC1xXzNNVzdnZUFJWEtHbkFxNC1LelZFYW81MzBIN2U1MWhIYTlUc21Xd0JFNGNTTXdralZwbkVwSlJsdExxX3JTdTV0WW03S1NkMzhya3NDUUlnZ3NsVQ?oc=5",
+      "published": "2026-08-24",
+      "published_at": "2026-08-24T07:45:20",
+      "summary": "",
+      "category": "세무"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "뉴시스",
+      "title": "\"세제개편안 따른 부가가치세 부담 4700억 달해\"",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAwcDZTREFITjJ3bl85MFlsUnQ3d3hZUlhoLUpFc0ZadGpvVEFpS2Jneks5VUp4NDhtRkdsQ3EtbHdJZW5BRGF3NUNOYVlqZnFtc0treVBFZ2Eyd2l0Nko1U9IBeEFVX3lxTFBTcXprQ1BQQ2NuaGlSRl9tbTc3c29pRVdUbGlGcjExRk9INnozN0RKQWZTNDdiNGFYSVBsM1pvX1g4VVh0alNTYjBIOU9DRXlKa1pHQXRtN1BZdGp0LUlDQTRsaDhIVzYwWjdLc3NqWjY4czNWVHZrZA?oc=5",
+      "published": "2026-08-24",
+      "published_at": "2026-08-24T07:37:26",
+      "summary": "",
+      "category": "세무"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "법률신문",
+      "title": "제3자적립마일리지 결제액의 부가가치세 과세에 관한 대법원 전원합의체 판결",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1CWUxlanZ6T2NSbjFObkFFVVhOcHBmZlVGblJxU1JVVDN1QVZJVS1DRl9KcDdVbE1fczgwcmZZZjhaUmhReFJzYkhQc1otNHhnYm1rYnphNi0xSkFEaFlYVXRLS2d6ekFuNkFTMDRIbHkyUdIBckFVX3lxTE1CWUxlanZ6T2NSbjFObkFFVVhOcHBmZlVGblJxU1JVVDN1QVZJVS1DRl9KcDdVbE1fczgwcmZZZjhaUmhReFJzYkhQc1otNHhnYm1rYnphNi0xSkFEaFlYVXRLS2d6ekFuNkFTMDRIbHkyUQ?oc=5",
+      "published": "2026-08-24",
+      "published_at": "2026-08-24T07:03:24",
+      "summary": "",
+      "category": "세무"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "네이트",
+      "title": "오늘이엔엠, 부가가치세 296억 재조사서 '취소 처분'",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1ESWUzcnFqY2E4MmhDN0NuQU1HYmc1SU1xTHV5bF9KaTlFNXlqeGs0SE9YcTVPeDNOMnlCODdLcXdZUzdBUkNiUl9JZzVPS1h4dDVR?oc=5",
+      "published": "2026-08-24",
+      "published_at": "2026-08-24T06:35:00",
+      "summary": "",
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "오늘이엔엠, 세무조사 추징금 297억에서 '0원'…심판청구 인용",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1OcG5TVEQxOGR3Y1FjcGZfZm1QendZbzNRQ0h3YWhCTVExdU1WZzVuRjhUOEwwSWpYRE5hRm9TTnFqUWxzX3pHdkhDS1JkOEJsLWsxcWJTMUQ1Nk9uSlR4OUxQOVVfU0hsY2c?oc=5",
+          "source_label": "intn.co.kr",
+          "published": "2026-08-24"
         }
       ]
     },
@@ -256,12 +278,6 @@
           "published": "2026-08-23"
         },
         {
-          "title": "임광현 국세청장 \"고가 법인주택 42% 사주 사적 사용\"... ‘황제사택’ 법인 세무조사 착수",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1WQWxmMzFna3BLeWRha2NuYXBkWVMyWlBBS04xdVFFVFA2UTROT2k1T0d2enFCY1JNTnFtUWM2ZHZEU056YXNfakNKaFFLYW4tOW9ZcVVWb3R6SjZicnZwekR3Zkh5ZmI4eU9nRA?oc=5",
-          "source_label": "워크투데이",
-          "published": "2026-08-23"
-        },
-        {
           "title": "국세청, '황제사택' 운영 기업 고강도 세무조사 착수",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9sYTd6Z0pKQ084a0ZiNUt1ZFZqbVFHZ0xaa2didW4yVG56RjU3TWo2V0YwQ0xJQXM1MFV2MzQ4RTRZV21SaG4zSnA0eXdvYjFCN0lZSFRxNWs1N3NXSVFXNW9HZjVWS1cwaEJPRdIBb0FVX3lxTE5lMzdTLU9aWGwwLV9mSWNldXFYOVhWaEo2Unl6THg1NEs1UktoUnhlc3FQNW5seU5OTnNSVUNOdExjdENrRFZaSG5LRl9mR2JWcTk0VzQwN0FldUFhZ3liZTBDSmh0OUgyd2dWMm8tMA?oc=5",
           "source_label": "한스경제",
@@ -277,12 +293,6 @@
           "title": "임광현 국세청장, ‘법인 슈퍼카’ 이어 ‘황제사택’ 타겟 세무조사 경고",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9oUW1tcWU1a3BPenNtaFk5X1pZTE1uR3ozS1d2OU5SV2w1a2ZHYlRxU3ZkNGNCRWd6UVh5Q3VvTV9UNFdidmdpRlZ6YmJMM29wajVMSF80bFllZWJNbHRvZi00cURJNHN0Y1RXNVNn?oc=5",
           "source_label": "아시아투데이",
-          "published": "2026-08-23"
-        },
-        {
-          "title": "국세청, 법인 고가주택 42% 사주일가 사적사용…‘황제사택’ 세무조사 나선다",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9WY3ByWHVaZjRTZllFQ01ZaEdxMnhWWFlMdTlRUTEzNk5IOTlicnhWQzFLNVhWMTRqa3ZPTWxlUWE2RnRzNjBnYjVsald4Y0hDazRYeVl6dWo1MXUtWDdEeHEtSERYMzRLbjQ0cA?oc=5",
-          "source_label": "세정일보",
           "published": "2026-08-23"
         },
         {
@@ -332,24 +342,6 @@
       "published_at": "2026-08-24T02:00:00",
       "summary": "",
       "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "네이트",
-      "title": "[세종 인사이드아웃] 상속·증여세 산정 잣대 '기준시가' 두고 국세청·국토부 업무 핑퐁",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBSRjFwTHVHTkZYX25OcnZCdklpUF9EMmhDc2l3UEhsM293dHl0MGJJcVFTUHpjbUo0V0NGZVhlaTFHeWhkNlFPVFFOelNWRjJCUEVkWmxXQ0EzMGtia1JzcTU2VE1UckRhM0NVaFlIUGIzZEhQQ0Y4Qw?oc=5",
-      "published": "2026-08-24",
-      "published_at": "2026-08-24T01:08:00",
-      "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "[세종 인사이드아웃] 상속·증여세 산정 잣대 ‘기준시가’ 두고 국세청·국토부 업무 핑퐁 - 조선비즈",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZmR4TTNaZ3VSS2JNMWJ6Y3l1TGJSUmlHSm9SVFF1WjE4TEkzaVVXZmVIaDQtTTBCSHJDLXJFWUJjN3NhZEZEZFpNbTBDT2p5elY3a2tUQW9CbEdSV0hROFB4Um91SFB5Y3llTVdrLXJJX3cwelNmY0NlbTFQa2lxOFcyelN3Z9IBmgFBVV95cUxPekZ6QklkQzJ5V3JOV3Z4Y3FrbGtPSlYyV0lUdXRGdHR5ZVJFcWVDcHhIVlFCWjRjLVRWT2hOYTlJNG1GNDgzZzk0NEpvQXNFWFlyelU0S3l1ZC1DXzVrN3EzclgyTGNmS1ozNmVFcGUxUnhNemZDNjFRSDlRdVpQQVRDZlQyd1lOTUpzcjRDcldSMnRjcWVKZmp3?oc=5",
-          "source_label": "Chosunbiz",
-          "published": "2026-08-24"
-        }
-      ]
     },
     {
       "source": "gnews_감사_2",
@@ -508,14 +500,14 @@
       "category": "세무"
     },
     {
-      "source": "gnews_세무",
-      "source_label": "세무사신문",
-      "title": "중부지방세무사회, 회원희망교육 ‘세무조사에서의 핵심 대응이슈와 권리구제’ 실시",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5nV19UUm04NmxTZnhaM3doR1VXd2M5dEhZTFphNmp3T3p2WE9MX3FqUkg0Y1hiZGlFWklwd0tTZkZ4MG5TOVdrNHdYZkNvRjVUMVRyMkd3Z045ajk4MGg0dnV2UEtKYW1Yal85LUhn?oc=5",
+      "source": "gnews_감사_2",
+      "source_label": "매일경제 마켓",
+      "title": "얼라이드 골드, 감사인 KPMG서 딜로이트로 교체",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBxRF83dmJUVThZS21Qc1VCY0xMSFpYbjZsdEo5aFhkRWxVSjlTb3hWV0pQelExY0tRQ08yYWtwUDI2U24tRERzWkNLWS1RR180OEE?oc=5",
       "published": "2026-08-18",
-      "published_at": "2026-08-18T07:22:46",
+      "published_at": "2026-08-18T20:57:46",
       "summary": "",
-      "category": "세무"
+      "category": "감사"
     },
     {
       "source": "gnews_감사_2",
@@ -579,15 +571,7 @@
       "published": "2026-08-08",
       "published_at": "2026-08-08T07:00:00",
       "summary": "",
-      "category": "감사",
-      "dupes": [
-        {
-          "title": "분식회계 사례-비상장법인에 대한 자금대여·선급을 통한 횡령",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8xQmNQc2xQUG1Zdi1NMUpaRExzcWpabnZDNFIwS3V0ZnNUQldVWTdBMzFPejVWVzhkZXhmNFBLMUxUR0FDaEtRSFBUTnZUZmlkcTZfTEFlSmRXUlZDQ2Jz?oc=5",
-          "source_label": "조세일보",
-          "published": "2026-08-04"
-        }
-      ]
+      "category": "감사"
     },
     {
       "source": "gnews_세무",
@@ -604,16 +588,6 @@
       "source_label": "마켓인",
       "title": "\"새 수익기준 도입, 비회계기준 매출 공시 신뢰도 높인다\"",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9nbkpDVlo1QUxDdWttLWN5d0ZGMnlzUjJ3ZlctMHJVYUZXUHA3aE9yLUZtUEtTazEzSkN6dkd3M0pGTF94SGhiWVEyT1BoQWdWNWkxdUVERWN3RnVSV1lRcjBpamxsSnF6cFZ5UTVUNHFJS1U?oc=5",
-      "published": "2026-08-03",
-      "published_at": "2026-08-03T07:00:00",
-      "summary": "",
-      "category": "감사"
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "대한경제",
-      "title": "리츠협회, 상장리츠 외부감사인 지정제도 개선 요청",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA5YjhNb29mczlTVUJiczF5ZFgzclotZXdOd1laZDRGRzZlSFVkUTVJcUljeHhOTTQ4eEpEYVhIXzZIbzdUT0gwYTVRaGlBX00zck5TRzJ3UjdRcjEzaU0yWTM3VDJtbTJSUU9MYm5uY19PTG5G?oc=5",
       "published": "2026-08-03",
       "published_at": "2026-08-03T07:00:00",
       "summary": "",

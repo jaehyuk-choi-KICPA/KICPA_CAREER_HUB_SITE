@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-24T16:31:38",
+  "generated_at": "2026-08-24T17:01:45",
   "soon_days": 7,
   "counts": {
-    "total": 56,
-    "open": 39,
+    "total": 57,
+    "open": 40,
     "closed": 17,
-    "new": 4,
+    "new": 5,
     "soon": 16,
     "by_firm": {
       "삼일": 13,
       "삼정": 1,
       "안진": 4,
       "한영": 17,
-      "로컬": 18,
+      "로컬": 19,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 24,
+      "수습CPA": 25,
       "자격무관": 32
     },
     "by_emp_kind": {
       "인턴": 19,
-      "정규직": 30,
+      "정규직": 31,
       "계약직": 5,
       "파트타임": 2
     }
@@ -330,6 +330,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1786096758441",
       "dday": 7,
       "first_seen": "2026-08-24T15:02:00"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[BDO성현회계법인] 2026 신입 공인회계사 공채",
+      "company": "성현회계법인",
+      "deadline": "2026-09-04",
+      "posted_date": "2026-08-24",
+      "location": "지역무관 지역무관",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1787557874237",
+      "dday": 11,
+      "first_seen": "2026-08-24T17:01:45"
     },
     {
       "source": "kicpa_cpa",

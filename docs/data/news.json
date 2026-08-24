@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T21:01:42",
+  "generated_at": "2026-08-24T21:31:40",
   "items": [
     {
       "source": "gnews_세무",
@@ -489,7 +489,15 @@
       "published": "2026-08-08",
       "published_at": "2026-08-08T07:00:00",
       "summary": "",
-      "category": "감사"
+      "category": "감사",
+      "dupes": [
+        {
+          "title": "분식회계 사례-비상장법인에 대한 자금대여·선급을 통한 횡령",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8xQmNQc2xQUG1Zdi1NMUpaRExzcWpabnZDNFIwS3V0ZnNUQldVWTdBMzFPejVWVzhkZXhmNFBLMUxUR0FDaEtRSFBUTnZUZmlkcTZfTEFlSmRXUlZDQ2Jz?oc=5",
+          "source_label": "조세일보",
+          "published": "2026-08-04"
+        }
+      ]
     },
     {
       "source": "gnews_세무",

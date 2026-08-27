@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-27T09:02:34",
+  "generated_at": "2026-08-27T09:31:34",
   "soon_days": 7,
   "counts": {
-    "total": 56,
-    "open": 40,
+    "total": 57,
+    "open": 41,
     "closed": 16,
-    "new": 3,
+    "new": 4,
     "soon": 13,
     "by_firm": {
       "삼일": 13,
-      "삼정": 2,
+      "삼정": 3,
       "안진": 4,
       "한영": 14,
       "로컬": 20,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 27,
-      "자격무관": 29
+      "자격무관": 30
     },
     "by_emp_kind": {
-      "인턴": 16,
+      "인턴": 17,
       "정규직": 32,
       "계약직": 6,
       "파트타임": 2
@@ -349,6 +349,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/125812",
       "dday": 10,
       "first_seen": "2026-08-21T18:01:38"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "[Audit] 감사방법론 참고자료 및 교재 번역 인턴 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-09-06",
+      "posted_date": "2026-08-27",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000939&receive_div_cd=N",
+      "dday": 10,
+      "first_seen": "2026-08-27T09:31:34"
     },
     {
       "source": "samjong",

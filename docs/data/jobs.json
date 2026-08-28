@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-08-28T10:31:43",
+  "generated_at": "2026-08-28T11:01:50",
   "soon_days": 7,
   "counts": {
-    "total": 59,
+    "total": 58,
     "open": 41,
-    "closed": 18,
-    "new": 4,
+    "closed": 17,
+    "new": 3,
     "soon": 14,
     "by_firm": {
-      "삼일": 13,
+      "삼일": 12,
       "삼정": 3,
       "안진": 4,
       "한영": 15,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 27,
-      "자격무관": 32
+      "자격무관": 31
     },
     "by_emp_kind": {
-      "인턴": 18,
+      "인턴": 17,
       "정규직": 33,
       "계약직": 6,
       "파트타임": 2
@@ -510,7 +510,7 @@
       "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "회계감사부문 보험 IFRS17·K-ICS·계리/재무통합 컨설팅 인력 채용",
       "company": "딜로이트 안진",
       "deadline": "2026-09-23",
@@ -1108,25 +1108,6 @@
       "emp_type": "신입",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/125505",
       "dday": -2,
-      "first_seen": ""
-    },
-    {
-      "source": "samil",
-      "source_label": "삼일PwC",
-      "firm": "삼일",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "Public Service팀 내 의료헬스케어 분야 RA 인턴 채용",
-      "company": "삼일PwC",
-      "deadline": "2026-08-27",
-      "posted_date": "",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://www.pwc.com/kr/ko/career/experienced/r260810.html",
-      "dday": -1,
       "first_seen": ""
     },
     {

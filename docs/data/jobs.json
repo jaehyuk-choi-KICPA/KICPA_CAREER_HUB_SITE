@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-28T09:01:51",
+  "generated_at": "2026-08-28T09:31:56",
   "soon_days": 7,
   "counts": {
-    "total": 58,
-    "open": 40,
+    "total": 59,
+    "open": 41,
     "closed": 18,
     "new": 4,
     "soon": 14,
@@ -12,16 +12,16 @@
       "삼정": 3,
       "안진": 4,
       "한영": 15,
-      "로컬": 20,
+      "로컬": 21,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 26,
+      "수습CPA": 27,
       "자격무관": 32
     },
     "by_emp_kind": {
       "인턴": 18,
-      "정규직": 32,
+      "정규직": 33,
       "계약직": 6,
       "파트타임": 2
     }
@@ -320,7 +320,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[Audit] 감사방법론 참고자료 및 교재 번역 인턴 채용",
       "company": "삼정KPMG",
       "deadline": "2026-09-06",
@@ -330,6 +330,25 @@
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000939&receive_div_cd=N",
       "dday": 9,
       "first_seen": "2026-08-27T09:31:34"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[Forvis Mazars 새빛회계법인] 2026년 신입 공인회계사 모집",
+      "company": "새빛회계법인",
+      "deadline": "2026-09-06",
+      "posted_date": "2026-08-28",
+      "location": "서울 용산구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1787875764397",
+      "dday": 9,
+      "first_seen": "2026-08-28T09:31:56"
     },
     {
       "source": "samjong",

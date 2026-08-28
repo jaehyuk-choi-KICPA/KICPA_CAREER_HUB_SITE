@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-08-28T16:31:48",
+  "generated_at": "2026-08-28T17:01:49",
   "soon_days": 7,
   "counts": {
-    "total": 62,
-    "open": 45,
+    "total": 63,
+    "open": 46,
     "closed": 17,
-    "new": 7,
+    "new": 8,
     "soon": 15,
     "by_firm": {
       "삼일": 12,
-      "삼정": 3,
+      "삼정": 4,
       "안진": 6,
       "한영": 16,
       "로컬": 22,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 28,
-      "자격무관": 34
+      "자격무관": 35
     },
     "by_emp_kind": {
-      "인턴": 19,
+      "인턴": 20,
       "정규직": 34,
       "계약직": 7,
       "파트타임": 2
@@ -368,6 +368,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1787875764397",
       "dday": 9,
       "first_seen": "2026-08-28T09:31:56"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "[인턴] SG본부 ESG＆Strategy팀 인턴 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-09-06",
+      "posted_date": "2026-08-28",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000941&receive_div_cd=N",
+      "dday": 9,
+      "first_seen": "2026-08-28T17:01:49"
     },
     {
       "source": "hanyoung",

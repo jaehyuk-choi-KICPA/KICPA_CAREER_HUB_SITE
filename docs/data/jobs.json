@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-08-28T19:01:52",
+  "generated_at": "2026-08-28T19:31:46",
   "soon_days": 7,
   "counts": {
     "total": 64,
     "open": 47,
     "closed": 17,
-    "new": 8,
+    "new": 7,
     "soon": 15,
     "by_firm": {
       "삼일": 12,
@@ -225,7 +225,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "금융컨설팅본부 금융 플랫폼 기획 인턴",
       "company": "EY한영",
       "deadline": "2026-09-02",

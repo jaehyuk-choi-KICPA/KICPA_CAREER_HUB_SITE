@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-08-28T15:31:40",
+  "generated_at": "2026-08-28T16:01:52",
   "soon_days": 7,
   "counts": {
-    "total": 59,
-    "open": 42,
+    "total": 60,
+    "open": 43,
     "closed": 17,
-    "new": 4,
+    "new": 5,
     "soon": 15,
     "by_firm": {
       "삼일": 12,
       "삼정": 3,
-      "안진": 4,
+      "안진": 5,
       "한영": 15,
       "로컬": 22,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 28,
-      "자격무관": 31
+      "자격무관": 32
     },
     "by_emp_kind": {
-      "인턴": 17,
+      "인턴": 18,
       "정규직": 34,
       "계약직": 6,
       "파트타임": 2
@@ -539,6 +539,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5180",
       "dday": 26,
       "first_seen": "2026-08-27T11:01:49"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "택스",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "세무자문부문 Global Employer Services 인턴",
+      "company": "딜로이트 안진",
+      "deadline": "2026-09-23",
+      "posted_date": "2026-08-28",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5181",
+      "dday": 26,
+      "first_seen": "2026-08-28T16:01:52"
     },
     {
       "source": "anjin",

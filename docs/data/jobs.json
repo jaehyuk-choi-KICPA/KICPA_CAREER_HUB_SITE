@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-08-28T17:31:39",
+  "generated_at": "2026-08-28T18:01:52",
   "soon_days": 7,
   "counts": {
-    "total": 63,
-    "open": 46,
+    "total": 64,
+    "open": 47,
     "closed": 17,
-    "new": 7,
+    "new": 8,
     "soon": 15,
     "by_firm": {
       "삼일": 12,
       "삼정": 4,
       "안진": 6,
-      "한영": 16,
+      "한영": 17,
       "로컬": 22,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 28,
-      "자격무관": 35
+      "자격무관": 36
     },
     "by_emp_kind": {
-      "인턴": 20,
+      "인턴": 21,
       "정규직": 34,
       "계약직": 7,
       "파트타임": 2
@@ -406,6 +406,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/126718",
       "dday": 9,
       "first_seen": "2026-08-28T16:26:54"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "컨설팅부문 SAP SuccessFactors 컨설턴트 인턴",
+      "company": "EY한영",
+      "deadline": "2026-09-06",
+      "posted_date": "2026-08-28",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/126753",
+      "dday": 9,
+      "first_seen": "2026-08-28T18:01:52"
     },
     {
       "source": "samjong",

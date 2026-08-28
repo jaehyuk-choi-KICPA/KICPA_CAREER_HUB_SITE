@@ -585,35 +585,47 @@ function spreadCategories(items, maxRun) {
   return out;
 }
 
-function initSub(prefix, data, chipRowId, chipKey, fixed, cardFn, colors) {
-  const renderCard = cardFn || newsCard;
-  const items = (data && data.items) || [];
-  if (!items.length) { $(prefix+"-empty").hidden = false; return; }
-  let selected = null;  // 단일선택: null=전체
-  const values = fixed || [...new Set(items.map((i)=>i[chipKey]).filter(Boolean))];
-  const chips = [];
-  const render = () => {
-    const list = selected ? items.filter((i)=>i[chipKey]===selected)
-                          : (chipKey === "category" ? spreadCategories(items, 2) : items);
-    $(prefix+"-list").replaceChildren(...list.map(renderCard));
-    $(prefix+"-empty").hidden = list.length > 0;
-    chips.forEach((c)=> c.classList.toggle("on", c.dataset.v === (selected || "")));   // '전체'=빈 값
-  };
-  const mkChip = (label, val) => {
-    const chip = el("button", { type:"button", class:"chip", text:label });
-    chip.dataset.v = val;
-    chip.addEventListener("click", () => { selected = val || null; render(); });
+// ── 업계(기사) 뷰 ────────────────────────────────────────────────────────
+// 카테고리 칩과 기간 필터가 **한 상태를 공유**한다(NEWS.cat × NEWS.arch).
+// 예전엔 '최근'은 initSub이, '전체 기간'은 별도 페이저가 각각 그렸는데, 후자가 칩 줄을 숨기고
+// 아카이브 전량을 뿌려서 **감사를 보다 기간을 넓히면 필터가 풀리는** 문제가 있었다.
+// 두 축은 직교해야 한다 — 카테고리는 '무엇을', 기간은 '어디까지'를 정할 뿐이다.
+const NEWS = { data: null, arch: null, cat: null, pager: null };
+
+function newsChips() {
+  const row = $("f-newscat");
+  if (!row) return;
+  const mk = (label, val) => {
+    const chip = el("button", { type:"button", text:label,
+      class: "chip" + (val === (NEWS.cat || "") ? " on" : "") });   // '전체'=빈 값
+    chip.addEventListener("click", () => { NEWS.cat = val || null; renderNews(); });
     return chip;
   };
-  if (chipKey === "category") chips.push(mkChip("전체", ""));   // 세그먼트 첫 탭(잡코리아 스타일)
-  values.forEach((v) => chips.push(mkChip(v, v)));
-  $(chipRowId).replaceChildren(...chips);
-  render();
+  row.replaceChildren(mk("전체", ""), ...NEWS_CAT_ORDER.map((v) => mk(v, v)));
+}
+
+function renderNews() {
+  const src = NEWS.arch || ((NEWS.data && NEWS.data.items) || []);
+  const list = NEWS.cat
+    ? src.filter((i) => i.category === NEWS.cat)
+    : (NEWS.arch ? src : spreadCategories(src, 2));   // 섞기는 '최근·전체'에서만(아카이브는 시간순이 낫다)
+  // '최근'은 수십 건이라 한 화면에 다 보이는 편이 낫고, 아카이브는 수천 건이라 페이저가 필요하다.
+  NEWS.pager.set(list, NEWS.arch ? ARCH_PAGE : Infinity);
+  newsChips();
+}
+
+function initNews(news) {
+  NEWS.data = news;
+  NEWS.pager = makePager("news-list", "news-empty", "news-more", newsCard);
+  initRangeBar("range-news", "news",
+    () => { NEWS.arch = null; renderNews(); },
+    (items) => { NEWS.arch = items; renderNews(); });
+  renderNews();
 }
 
 // ===================== 산업 스트림 · 누적 아카이브 =====================
-// 산업 뷰는 initSub(기사 4칩 전용)을 확장하지 않고 따로 둔다. 칩 개수·페이지네이션·기업 축이라는
-// 전제가 달라서, 공유 함수를 건드리면 잘 돌던 기사 화면이 회귀한다.
+// 산업 뷰는 업계 기사 뷰(renderNews)와 따로 둔다. 칩 개수·기업 축이라는 전제가 달라서,
+// 한 함수로 합치면 잘 돌던 기사 화면이 회귀한다. 페이저(makePager)만 공유한다.
 
 const ARCH = { index: null, shards: new Map() };   // 아카이브는 '전체 기간'을 누를 때만 받아온다
 const ARCH_PAGE = 40;                              // 한 번에 그리는 카드 수(월 샤드는 최대 2,700건)
@@ -642,7 +654,7 @@ function mkChip2(label, count, on, onClick, cls) {
 
 // 목록 + '더보기' 페이저. 아카이브 월 샤드는 수천 건이라 한 번에 그리면 모바일이 멈춘다.
 function makePager(listId, emptyId, moreId, cardFn) {
-  const st = { items: [], shown: ARCH_PAGE };
+  const st = { items: [], shown: ARCH_PAGE, page: ARCH_PAGE };
   const draw = () => {
     const slice = st.items.slice(0, st.shown);
     // 2건 이하면 2열 그리드의 반쪽만 차서 '실패한 화면'처럼 보인다 → 1열 전폭으로
@@ -654,11 +666,12 @@ function makePager(listId, emptyId, moreId, cardFn) {
     if (st.items.length > slice.length) {
       const b = el("button", { type:"button", class:"arch-more",
         text:"더보기 (남은 " + (st.items.length - slice.length).toLocaleString() + "건)" });
-      b.addEventListener("click", () => { st.shown += ARCH_PAGE; draw(); });
+      b.addEventListener("click", () => { st.shown += st.page; draw(); });
       more.appendChild(b);
     }
   };
-  return { set(items) { st.items = items; st.shown = ARCH_PAGE; draw(); } };
+  // page=Infinity면 '더보기' 없이 전량(수십 건짜리 '최근' 화면용)
+  return { set(items, page) { st.page = page || ARCH_PAGE; st.items = items; st.shown = st.page; draw(); } };
 }
 
 // 아카이브 전 구간을 한 번에. 월 칩을 두면 상단 필터가 한 층 더 쌓이는데,
@@ -827,19 +840,6 @@ function initIndustry(data, companies) {
     () => { IND.arch = null; renderIndustry(); },
     (items) => { IND.arch = items; renderIndustry(); });
   renderIndustry();
-}
-
-// ── 업계(기사) 뷰의 기간 필터 ────────────────────────────────────────────
-// '최근'은 기존 initSub이 그대로 담당하고(회귀 0), '전체 기간'일 때만 아카이브 페이저가 화면을 넘겨받는다.
-function initNewsRange(news) {
-  const pager = makePager("news-list", "news-empty", "news-more", newsCard);
-  initRangeBar("range-news", "news",
-    () => {
-      $("f-newscat").hidden = false;
-      $("news-more").replaceChildren();
-      initSub("news", news, "f-newscat", "category", NEWS_CAT_ORDER);
-    },
-    (items) => { $("f-newscat").hidden = true; pager.set(items); });
 }
 
 // ===================== 글자수·맞춤법 도구 =====================
@@ -1079,8 +1079,7 @@ function initNewsTabs() {
 
   if (jobs) initJobs(jobs);
   else { $("jobs-empty").hidden = false; $("jobs-empty").textContent = "채용 데이터를 불러오지 못했습니다."; }
-  initSub("news", news, "f-newscat", "category", NEWS_CAT_ORDER);   // 색 없이 중립 밑줄 탭
-  initNewsRange(news);      // 업계 기사 기간 필터(최근 ↔ 전체 기간)
+  initNews(news);           // 업계 기사 — 카테고리 칩 × 기간 필터(최근 ↔ 전체 기간)
   initIndustry(industry, companies);   // 산업 뷰(산업 칩 → 기업 칩 → 감사인·재무 → DART)
   renderInsights(insights);
   initTools();          // 글자수·맞춤법 도구

@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-08-28T08:32:16",
+  "generated_at": "2026-08-28T09:01:51",
   "soon_days": 7,
   "counts": {
-    "total": 59,
+    "total": 58,
     "open": 40,
-    "closed": 19,
+    "closed": 18,
     "new": 4,
     "soon": 14,
     "by_firm": {
       "삼일": 13,
       "삼정": 3,
       "안진": 4,
-      "한영": 16,
+      "한영": 15,
       "로컬": 20,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 26,
-      "자격무관": 33
+      "자격무관": 32
     },
     "by_emp_kind": {
-      "인턴": 19,
+      "인턴": 18,
       "정규직": 32,
       "계약직": 6,
       "파트타임": 2
@@ -1126,25 +1126,6 @@
       "location": "",
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/125087",
-      "dday": -1,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "컨설팅부문 Digital & Emerging Technologies 팀 인턴",
-      "company": "EY한영",
-      "deadline": "2026-08-27",
-      "posted_date": "2026-08-20",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/125615",
       "dday": -1,
       "first_seen": ""
     }

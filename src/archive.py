@@ -27,9 +27,9 @@ from pathlib import Path
 ARCHIVE_DIR = Path("docs/data/archive")
 
 # 아카이브에 보존할 필드(화이트리스트). 이 목록에 없는 키는 저장하지 않는다.
-# `dupes`는 **일부러 뺐다** — 아래 _expand() 참조.
+# `dupes`는 **일부러 뺐다** — 아래 _expand() 참조. 대신 `gid`로 군집 관계만 남긴다.
 _KEEP = ("title", "url", "source_label", "published", "published_at",
-         "category", "companies", "first_archived")
+         "category", "companies", "first_archived", "gid")
 
 _STREAMS = ("news", "industry", "insights")
 
@@ -44,6 +44,15 @@ def norm_url(url: str) -> str:
     if "news.google.com" in u and "?" in u:
         return u.split("?", 1)[0]
     return u
+
+
+def norm_title(title: str) -> str:
+    """중복 판정용 제목 정규화 — 공백만 접고 소문자화(내용은 건드리지 않는다).
+
+    구글뉴스 RSS는 **같은 기사를 시점에 따라 다른 base64 링크로** 내보낸다. URL만 키로 쓰면
+    그때마다 새 레코드가 되어 같은 제목이 화면에 여러 장 뜬다(실측: 업계 아카이브 2,527건 중 481건 = 19%).
+    """
+    return " ".join((title or "").split()).lower()
 
 
 def month_key(item: dict, today: str) -> str:
@@ -95,7 +104,7 @@ def _merge_one(old: dict, new: dict) -> dict:
     바뀌어도 그때 화면에 떴던 모습이 보존된다). 비어 있던 값만 채운다.
     """
     out = dict(old)
-    for k in ("published", "published_at", "source_label", "companies"):
+    for k in ("published", "published_at", "source_label", "companies", "gid"):
         if not out.get(k) and new.get(k):
             out[k] = new[k]
     return out
@@ -109,8 +118,14 @@ def _expand(item: dict) -> list[dict]:
     (실측: 3,090 스냅샷 병합 시 news 아카이브가 11MB까지 부풀었다 — 레코드당 2.2KB).
     아카이브의 일은 '그때 어떤 기사가 있었나'를 평평하게 남기는 것이고, 군집화는 라이브의 관심사다.
     dupes 멤버는 category·companies를 갖고 있지 않으므로 대표에게서 상속받는다.
+
+    다만 **군집 관계까지 버리면** 라이브에서 카드 1장이던 사건이 아카이브에선 5장으로 흩어져
+    '중복이 많다'로 보인다. 그래서 배열은 펴되 `gid`(대표 URL)만 남겨, 프론트가 읽을 때
+    같은 gid끼리 다시 접어 '동일 주제 기사 N개'로 보여줄 수 있게 한다.
+    (gid는 문자열 한 개라 스냅샷마다 누적되지 않는다 — 11MB 사고의 원인은 배열 누적이었다.)
     """
-    out = [item]
+    gid = norm_url(item.get("url", ""))
+    out = [dict(item, gid=gid)]
     for d in item.get("dupes") or []:
         if not d.get("url"):
             continue
@@ -121,6 +136,7 @@ def _expand(item: dict) -> list[dict]:
             "published": d.get("published") or item.get("published", ""),
             "published_at": d.get("published_at") or "",
             "category": item.get("category", ""),      # 멤버엔 없어 대표에게서 상속
+            "gid": gid,
         })
     return out
 
@@ -149,10 +165,20 @@ def merge_items(stream: str, items: list[dict], *, since: str = "",
         path = _shard_path(stream, month)
         existing = _read_shard(path)
         by_url = {norm_url(x.get("url", "")): x for x in existing}
+        # 제목 → 이미 보유한 URL. 구글뉴스가 같은 기사를 새 링크로 다시 내보낼 때
+        # 새 레코드로 쌓이지 않도록, URL이 달라도 제목이 같으면 기존 레코드를 보강한다.
+        by_title: dict[str, str] = {}
+        for u, x in by_url.items():
+            t = norm_title(x.get("title", ""))
+            if t:
+                by_title.setdefault(t, u)
         before = len(by_url)
         changed = False
         for s in fresh:
             key = s["url"]
+            title_key = norm_title(s.get("title", ""))
+            if key not in by_url and title_key in by_title:
+                key = by_title[title_key]          # 같은 기사·다른 링크 → 기존 레코드로 흡수
             if key in by_url:
                 merged = _merge_one(by_url[key], s)
                 if merged != by_url[key]:
@@ -161,6 +187,8 @@ def merge_items(stream: str, items: list[dict], *, since: str = "",
             else:
                 by_url[key] = s
                 changed = True
+                if title_key:
+                    by_title[title_key] = key
         if changed:
             out = sorted(by_url.values(),
                          key=lambda i: (i.get("published_at") or i.get("published") or ""),

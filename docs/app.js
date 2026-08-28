@@ -676,13 +676,33 @@ function makePager(listId, emptyId, moreId, cardFn) {
 
 // 아카이브 전 구간을 한 번에. 월 칩을 두면 상단 필터가 한 층 더 쌓이는데,
 // 사용자가 '몇 월'을 고르고 싶은 경우는 드물고 '지난 것까지 다 보기'면 충분하다.
+// 아카이브는 군집을 **평면화해** 저장한다(대표의 dupes 배열을 그대로 담으면 스냅샷마다
+// 합쳐지며 무한 누적 — 실측 11MB). 대신 같은 사건에 같은 `gid`가 박혀 있으므로,
+// 읽을 때 다시 접어 라이브와 같은 '동일 주제 기사 N개' 카드로 만든다.
+function foldByGid(items) {
+  const groups = new Map();
+  for (const it of items) {
+    const g = it.gid || it.url;
+    if (!groups.has(g)) groups.set(g, []);
+    groups.get(g).push(it);
+  }
+  const out = [];
+  for (const members of groups.values()) {
+    const [rep, ...rest] = members;              // 입력이 최신순이라 앞이 대표
+    out.push(rest.length ? { ...rep, dupes: rest.map((d) => ({
+      title: d.title, url: d.url, source_label: d.source_label, published: d.published,
+    })) } : rep);
+  }
+  return out;
+}
+
 async function archAll(stream) {
   const idx = await archIndex();
   const months = ((idx.streams || {})[stream] || {}).months || [];
   const all = [];
   for (const m of months) all.push(...await archShard(stream, m.m));
   all.sort((a, b) => (b.published_at || b.published || "").localeCompare(a.published_at || a.published || ""));
-  return all;
+  return foldByGid(all);
 }
 
 // 기간 필터: [최근][전체 기간] 둘뿐. 기본 '최근'은 이미 받아둔 JSON이라 네트워크 0.

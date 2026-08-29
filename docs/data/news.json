@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T11:01:55",
+  "generated_at": "2026-08-29T11:31:41",
   "items": [
     {
       "source": "gnews_감사_2",
@@ -262,12 +262,6 @@
           "published": "2026-08-26"
         },
         {
-          "title": "소노그룹, 국세청 세무조사에 \"성실·투명하게 적극 협조할 것\"",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1UVlRwd1A3OWJmQm1ReXpINHlTQk5xdVJqamNvR0J3Y3RTNEdpMzlVZml0Zmlsc091aVdQUnBDTmJ0MURRSW5MQjFvdDhpZUZGZXRpNG5Dc0lFdEpONS1GcVFac0FfelhxNG5sTVZMakxILUZP?oc=5",
-          "source_label": "연합뉴스 한민족센터",
-          "published": "2026-08-26"
-        },
-        {
           "title": "소노그룹, 고가주택 세무조사에 “사실관계 확인 적극 협조”",
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0yRjhCOUdjaEV1VWxaTlpKaXVFMmstbU0yVk94djk2SnFCYkkwRXJwR1VkX1ozWkY4dmNMS1lHcHFOX1BxQmYzYW80S0dUNUNYRDd1aG51U1MtdXQ1YzEtWXhGamY?oc=5",
           "source_label": "서울경제TV",
@@ -421,6 +415,12 @@
           "title": "국세청, ‘법인주택 사적 유용’ 50개 업체 세무조사 착수",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBEdTc3YTVNT1lGSEpWd3RFVmpiVWpPblFSbXNIUmpjVkhXRjZfd2p5V0xfeVN5ZGkyTWtOaUxJQnRnWU94dUJsZ1dUd0dNZFE?oc=5",
           "source_label": "v.daum.net",
+          "published": "2026-08-25"
+        },
+        {
+          "title": "국세청, 소노트리니티그룹 특별세무조사…‘고가주택 사적 사용’ 의혹 - ①",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA0Wk5qdENxYmVpX2pKVGI4S2V1S1R6d2xNM0ctSGFYTFVQZFB6TlpZalE2N0kzZDFWcVRseDdlRFJyT01BWnJ3MW5VZVF1ZTJTT191cUdjN1RDa3VsUVFkLXBNLVVHc1l50gFsQVVfeXFMT3pJbE1pNzRWdDBDSFgwcUE3dDcxbnFEZTc0VGJVbGtvdHFQSjhhWVhiWk4wWUE3UmI3NXdxSWgwQ3BmTjRGY3hfaFd0eE00S3o2cGZ2dzVDVXRSemJCSDEzZTg2R0Yta2NrME5x?oc=5",
+          "source_label": "필드뉴스",
           "published": "2026-08-25"
         },
         {
@@ -719,13 +719,21 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "intn.co.kr",
-      "title": "오늘이엔엠, 세무조사 추징금 297억에서 '0원'…심판청구 인용",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1OcG5TVEQxOGR3Y1FjcGZfZm1QendZbzNRQ0h3YWhCTVExdU1WZzVuRjhUOEwwSWpYRE5hRm9TTnFqUWxzX3pHdkhDS1JkOEJsLWsxcWJTMUQ1Nk9uSlR4OUxQOVVfU0hsY2c?oc=5",
+      "source_label": "머니투데이",
+      "title": "오늘이엔엠, 부가가치세 296억 재조사서 '취소 처분' - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9hWExrdDlXaklya2xFdUlNRkxJb1hkLWJMM0VrUWctOGE3UHFxeFRjaWFWQzd1Z25OcHBMTm52WXNiZ2RyNng0YVd2amh0QWEwUGthb196NTB5WWt6bnhvQmFpY0tjYkM50gFuQVVfeXFMUDJRcHF4Y3R5bTVVUkRXNUNVMFZaQ0JmMXVEeTd2RWJVMUZheFExbWl6bFkwZTNRS3NBdmxvVk42UW44SUM1LTFhbk0wdW5sWTZyTjJaZVI1RlNra2lmc1ZUbUN1eUZXYmxtNS01eXc?oc=5",
       "published": "2026-08-24",
-      "published_at": "2026-08-24T01:19:06",
+      "published_at": "2026-08-24T06:34:19",
       "summary": "",
-      "category": "세무"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "오늘이엔엠, 세무조사 추징금 297억에서 '0원'…심판청구 인용",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1OcG5TVEQxOGR3Y1FjcGZfZm1QendZbzNRQ0h3YWhCTVExdU1WZzVuRjhUOEwwSWpYRE5hRm9TTnFqUWxzX3pHdkhDS1JkOEJsLWsxcWJTMUQ1Nk9uSlR4OUxQOVVfU0hsY2c?oc=5",
+          "source_label": "intn.co.kr",
+          "published": "2026-08-24"
+        }
+      ]
     },
     {
       "source": "gnews_감사",
@@ -736,16 +744,6 @@
       "published_at": "2026-08-23T22:01:04",
       "summary": "",
       "category": "감사"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "연합뉴스",
-      "title": "日, '투자·임금인상' 중소기업에 상속·증여세 면제 검토",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9DR09ISEJjVWRlZFlmTGtQaHJDY05xOF9sa2pCU3gxazVobDhOUzhndkFYd0lXN0tzYUVnOFkzRnlNVFNtcUFhLVFxR1NCelZVcjB3X0o5TjEzeEHSAWBBVV95cUxQXzB6QlRMdG5xT1JfR3lraVVsSTRyd3JnbWEzSXY0dXN1MVh5WG1WZWRTVmJSUTBZSnFMYXNzUDViUkhSYklsNFphbWlpY0ducnY0bmRqNDlPalYxNUNGbkc?oc=5",
-      "published": "2026-08-23",
-      "published_at": "2026-08-23T06:20:17",
-      "summary": "",
-      "category": "세무"
     },
     {
       "source": "gnews_세무",

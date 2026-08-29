@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-08-29T17:01:51",
+  "generated_at": "2026-08-29T17:31:43",
   "soon_days": 7,
   "counts": {
-    "total": 63,
-    "open": 45,
+    "total": 64,
+    "open": 46,
     "closed": 18,
-    "new": 1,
+    "new": 2,
     "soon": 14,
     "by_firm": {
       "삼일": 11,
       "삼정": 4,
       "안진": 6,
       "한영": 17,
-      "로컬": 22,
+      "로컬": 23,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 28,
+      "수습CPA": 29,
       "자격무관": 35
     },
     "by_emp_kind": {
       "인턴": 21,
-      "정규직": 33,
+      "정규직": 34,
       "계약직": 7,
       "파트타임": 2
     }
@@ -558,6 +558,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1787103650023",
       "dday": 17,
       "first_seen": "2026-08-19T11:34:24"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "기장경력(1~3년) 직원 모집",
+      "company": "회계법인브릿지",
+      "deadline": "2026-09-18",
+      "posted_date": "2026-08-27",
+      "location": "서울 용산구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1787814166295",
+      "dday": 20,
+      "first_seen": "2026-08-29T17:31:43"
     },
     {
       "source": "anjin",

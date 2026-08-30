@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T21:01:50",
+  "generated_at": "2026-08-30T21:31:46",
   "items": [
     {
       "source": "gnews_세무",
@@ -545,7 +545,15 @@
       "published": "2026-08-25",
       "published_at": "2026-08-25T14:10:00",
       "summary": "",
-      "category": "세무"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "“회삿돈으로 200억 한강뷰“…’황제사택’ 세무조사",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9nZmwyQjlTdnRxZExVNXZWMmM1RFMtSENVRzlpQzhMc042ZXZvQ0hFTWtkUFl1c2hZWWJ6RmxHOGhYZnJDNlUwdHd4bF9neUhuOUJGZjk5ZGV1b2QyRVhXR1E4SThoQjQ?oc=5",
+          "source_label": "연합뉴스TV",
+          "published": "2026-08-25"
+        }
+      ]
     },
     {
       "source": "gnews_감사",

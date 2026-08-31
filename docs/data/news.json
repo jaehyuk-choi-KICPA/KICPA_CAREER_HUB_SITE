@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T00:02:03",
+  "generated_at": "2026-09-01T00:32:35",
   "items": [
     {
       "source": "gnews_세무",
@@ -120,6 +120,12 @@
           "published": "2026-08-30"
         },
         {
+          "title": "삼성전자·SK하이닉스 법인세 11조…역대급 세수 기대",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9tOFRaNjhGRm9ROGJKbEhKS2F1VVBlWG0zaEQ3SVZrRGpGVFFYbjZQZ1VFSzlXSmhyMV9wdTN6TjFQVDFFSFIzMHQ5OGFZOE0?oc=5",
+          "source_label": "v.daum.net",
+          "published": "2026-08-30"
+        },
+        {
           "title": "삼전닉스, 상반기 법인세만 11조…법인세 ‘100조 시대’ 오나",
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4xbDZzY3ZPaWE0Tlp0ZnV4bkFLS05uX25zSlFKVFZFc0otWnZEbmFGTDV1Z0tXM29OZ3cwTzZhQUtxMjA5TTJlSThpVjh5MExuTldaNEdB?oc=5",
           "source_label": "중앙일보",
@@ -134,7 +140,7 @@
         {
           "title": "삼전닉스 올해 납부한 법인세 11.2조…역대 최고 찍나",
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5wMlFOS015WDdJRjFwem14Y2phSDZlMHd6YzdGS09nZkY3UlNOdk8tdzZaRXlpSl8zaXkxUjBkZFdyZzNlb0VHRllQZjVWYmh4SkJlLQ?oc=5",
-          "source_label": "JTBC",
+          "source_label": "JTBC뉴스",
           "published": "2026-08-30"
         },
         {
@@ -145,7 +151,7 @@
         },
         {
           "title": "‘삼전닉스’ 상반기 법인세 11.2조…반기 기준 역대 2위",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE10cENfUlJRSDRzOVRWMWdVcUFoR0hzcmZidmp6QjFlTFQ3RUY3bkZoVVg0eVNWWlFSdjFwaWk1YWV3QndIQnZDN3pVQQ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE11eDM3R2J0OWJvRk9sUnhpQ0tIREtXeG0wdDJlYTlSZVNkRzZmTzkzSUQ5QW9nN1BxRy14VDFHWmNiM0lnX0hKekhSdjlLelRfSUM5Ng?oc=5",
           "source_label": "v.daum.net",
           "published": "2026-08-30"
         },
@@ -192,6 +198,16 @@
           "published": "2026-08-29"
         }
       ]
+    },
+    {
+      "source": "gnews_감사_2",
+      "source_label": "datatooza.com",
+      "title": "오션 캐피탈 애퀴지션, 독립 감사인 YCM 해임 및 HYYH 신규 선임",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBVWnlJLV94MG1RMUtLNXRrLXV6MXRsVURPR3ZKbWVmZUJDWFJwdmh3UmtiTllXVTVrU041WXg0bDJhbUNQcVFKU1dvUXhLcEliNzh6cmpJTlI3NDVuRDNQMlMxdFdpRWFhdnhHbkpScVVrZw?oc=5",
+      "published": "2026-08-31",
+      "published_at": "2026-08-31T12:02:19",
+      "summary": "",
+      "category": "감사"
     },
     {
       "source": "gnews_세무",
@@ -269,7 +285,21 @@
       "published": "2026-08-31",
       "published_at": "2026-08-31T01:17:00",
       "summary": "",
-      "category": "세무"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "[속보] 국세청, KB국민은행 특별세무조사 착수",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53c04xUXBSdXhJYzctREoxbXkwT0VPa19qRjAxS08tY2xUMVVMWmFySGxHSTkyTXRtSTRrd2xvcHJBeFRLNmhmek85WEMtbkM2cm1DUi1Td251YjDSAWBBVV95cUxNMm9BSnhkR25id3NVS05jSDZibXl5V2xYSmt1eDBuMnRZWkR3NUtoMC1yT2FYV2JrdmRaV2tpNm0zdjJhWXRlOE5lVWM1dmNvbWk4bWNzS0p5V3IzNlFjMjM?oc=5",
+          "source_label": "연합뉴스",
+          "published": "2026-08-13"
+        },
+        {
+          "title": "국세청, KB국민은행 특별세무조사 착수…30명 투입해 자료 확보(종합)",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBwb24waEQ0OXJMb2djWXhINDZZWl9fX3NjMkhXd0xIMkxjWlNkNFA3RXBFZnF5SHpmdFZmWnZ3NXMzUVNVZGZUOTBvbUFPMWNCNHFESUFTTkpoZlHSAWBBVV95cUxONkc1SzJKbjRMMXNsMVlzOTYwaWlONGcyZDRvOUpSbTM4TDJVMUVERWF1UlcyWHAzeGJUSzVpTFl5UERQc1Z2T0N3M1FUNDcwX3RZTGtlek1LdGRWTVNxVmo?oc=5",
+          "source_label": "연합뉴스",
+          "published": "2026-08-13"
+        }
+      ]
     },
     {
       "source": "gnews_세무",
@@ -415,7 +445,7 @@
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "네이트",
+      "source_label": "news.nate.com",
       "title": "증선위 중징계 고려아연 원아시아 투자…7년간 감사위원회 반대 '0' [시그널]",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAzcTYzbjVYbFhaNkpGc3dwbUlqb00zRTFYR19zalFNZzV2a0VJeFh0dWZEcHZNWTBYa1Y4QmU3UkdBaEFrc3J0UjQ0VHRQb01hRVRz?oc=5",
       "published": "2026-08-27",
@@ -476,12 +506,6 @@
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBQTVE2d2prZGlVZU9McklHRUlDZFdjazRmYTdEOEZmZUxsTW5NR25MOWRXQno4dHRWbHZkRFVESFJDOURPcHBNMWZMX0JUdEljLVZYRWdGZ1BpVFlOUFFKVnppSXlNZE5VQlZZQl9B?oc=5",
           "source_label": "세무사신문",
           "published": "2026-08-26"
-        },
-        {
-          "title": "200억대 주택 사서 사주일가 거주…소노그룹 세무조사(종합)",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBMazNHRzVueEE4c0RLMzRzbU8wcWVLQmZxVllDUkFjX1F2ejY3THlKNmpjRXpxcWd1QVByaG9VTVBzX1c0bVpkOHdDdTBDbW04R2UxVjd1ZE9BTEHSAWBBVV95cUxOSFRKTHFJV0dsNlhtZUpJSHdqWUZ0ZjlMRGlya3hiZlpNUDJrZVdYQ2FuSG4zTkdBTUV1ZGdtQnNwbEtDZlpGUUxKN25VblV1dWtFZXhsdllVMVJ1UTR0SDI?oc=5",
-          "source_label": "연합뉴스",
-          "published": "2026-08-25"
         }
       ]
     },
@@ -654,24 +678,6 @@
       "published_at": "2026-08-14T07:00:00",
       "summary": "",
       "category": "감사"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "연합뉴스",
-      "title": "국세청, KB국민은행 특별세무조사 착수…30명 투입해 자료 확보(종합)",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBwb24waEQ0OXJMb2djWXhINDZZWl9fX3NjMkhXd0xIMkxjWlNkNFA3RXBFZnF5SHpmdFZmWnZ3NXMzUVNVZGZUOTBvbUFPMWNCNHFESUFTTkpoZlHSAWBBVV95cUxONkc1SzJKbjRMMXNsMVlzOTYwaWlONGcyZDRvOUpSbTM4TDJVMUVERWF1UlcyWHAzeGJUSzVpTFl5UERQc1Z2T0N3M1FUNDcwX3RZTGtlek1LdGRWTVNxVmo?oc=5",
-      "published": "2026-08-13",
-      "published_at": "2026-08-13T07:00:00",
-      "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "[속보] 국세청, KB국민은행 특별세무조사 착수",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE53c04xUXBSdXhJYzctREoxbXkwT0VPa19qRjAxS08tY2xUMVVMWmFySGxHSTkyTXRtSTRrd2xvcHJBeFRLNmhmek85WEMtbkM2cm1DUi1Td251YjDSAWBBVV95cUxNMm9BSnhkR25id3NVS05jSDZibXl5V2xYSmt1eDBuMnRZWkR3NUtoMC1yT2FYV2JrdmRaV2tpNm0zdjJhWXRlOE5lVWM1dmNvbWk4bWNzS0p5V3IzNlFjMjM?oc=5",
-          "source_label": "연합뉴스",
-          "published": "2026-08-13"
-        }
-      ]
     },
     {
       "source": "gnews_감사",

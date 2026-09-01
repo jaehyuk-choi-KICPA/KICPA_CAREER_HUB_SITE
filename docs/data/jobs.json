@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-01T18:01:53",
+  "generated_at": "2026-09-01T18:31:51",
   "soon_days": 7,
   "counts": {
-    "total": 66,
-    "open": 43,
+    "total": 67,
+    "open": 44,
     "closed": 23,
-    "new": 5,
-    "soon": 19,
+    "new": 6,
+    "soon": 20,
     "by_firm": {
-      "삼일": 10,
+      "삼일": 11,
       "삼정": 4,
       "안진": 6,
       "한영": 21,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 28,
-      "자격무관": 38
+      "자격무관": 39
     },
     "by_emp_kind": {
-      "인턴": 25,
+      "인턴": 26,
       "정규직": 30,
       "계약직": 7,
       "파트타임": 4
@@ -159,6 +159,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1786096758441",
       "dday": 3,
       "first_seen": "2026-09-01T16:01:51"
+    },
+    {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "Human Capital팀 채용·인사 운영 체험형 인턴 채용",
+      "company": "삼일PwC",
+      "deadline": "2026-09-06",
+      "posted_date": "",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://www.pwc.com/kr/ko/career/experienced/r260901.html",
+      "dday": 5,
+      "first_seen": "2026-09-01T18:31:51"
     },
     {
       "source": "hanyoung",

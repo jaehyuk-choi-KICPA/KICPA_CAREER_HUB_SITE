@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-01T17:32:01",
+  "generated_at": "2026-09-01T18:01:53",
   "soon_days": 7,
   "counts": {
-    "total": 65,
-    "open": 42,
+    "total": 66,
+    "open": 43,
     "closed": 23,
     "new": 5,
     "soon": 19,
@@ -12,16 +12,16 @@
       "삼정": 4,
       "안진": 6,
       "한영": 21,
-      "로컬": 21,
+      "로컬": 22,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 27,
+      "수습CPA": 28,
       "자격무관": 38
     },
     "by_emp_kind": {
       "인턴": 25,
-      "정규직": 29,
+      "정규직": 30,
       "계약직": 7,
       "파트타임": 4
     }
@@ -491,7 +491,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "전략·재무자문부문 Deal3 (M&A) 정규전환형 인턴",
       "company": "EY한영",
       "deadline": "2026-09-13",
@@ -691,6 +691,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1787192697987",
       "dday": 29,
       "first_seen": "2026-09-01T11:31:40"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[이촌회계법인] 사업부 총무 · 회계 담당 채용",
+      "company": "이촌회계법인",
+      "deadline": "2026-10-01",
+      "posted_date": "2026-09-01",
+      "location": "서울 영등포구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1788251685248",
+      "dday": 30,
+      "first_seen": "2026-09-01T18:01:53"
     },
     {
       "source": "kicpa_cpa",

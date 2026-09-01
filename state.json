@@ -920,7 +920,8 @@
     "uid": "kicpa_susup:1786096758441",
     "first_seen": "2026-09-01T16:01:51",
     "last_seen": "2026-09-01",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-09-01"
   },
   "kicpa_susup:1788244656635": {
     "source": "kicpa_susup",
@@ -938,6 +939,7 @@
     "uid": "kicpa_susup:1788244656635",
     "first_seen": "2026-09-01T16:01:51",
     "last_seen": "2026-09-01",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-09-01"
   }
 }

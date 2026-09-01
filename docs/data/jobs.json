@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-09-01T15:31:51",
+  "generated_at": "2026-09-01T16:01:51",
   "soon_days": 7,
   "counts": {
-    "total": 64,
-    "open": 40,
-    "closed": 24,
-    "new": 5,
-    "soon": 18,
+    "total": 65,
+    "open": 42,
+    "closed": 23,
+    "new": 7,
+    "soon": 19,
     "by_firm": {
       "삼일": 10,
       "삼정": 4,
       "안진": 6,
       "한영": 21,
-      "로컬": 20,
+      "로컬": 21,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 26,
+      "수습CPA": 27,
       "자격무관": 38
     },
     "by_emp_kind": {
       "인턴": 25,
       "정규직": 29,
       "계약직": 7,
-      "파트타임": 3
+      "파트타임": 4
     }
   },
   "postings": [
@@ -140,6 +140,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1787728565691",
       "dday": 3,
       "first_seen": "2026-08-27T17:02:09"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "수습회계사 모집",
+      "company": "세영회계법인",
+      "deadline": "2026-09-04",
+      "posted_date": "2026-09-01",
+      "location": "대구 전체",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1786096758441",
+      "dday": 3,
+      "first_seen": "2026-09-01T16:01:51"
     },
     {
       "source": "hanyoung",
@@ -368,6 +387,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/127054",
       "dday": 7,
       "first_seen": "2026-09-01T14:34:02"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "(광교회계법인 1본부) 2026년 신입회계사(파트)를 모집합니다.",
+      "company": "광교회계법인",
+      "deadline": "2026-09-09",
+      "posted_date": "2026-09-01",
+      "location": "서울 전체",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788244656635",
+      "dday": 8,
+      "first_seen": "2026-09-01T16:01:51"
     },
     {
       "source": "anjin",
@@ -1221,25 +1259,6 @@
       "location": "서울 강남구",
       "emp_type": "정규직",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1784108416966",
-      "dday": -1,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "파트타임",
-      "status": "closed",
-      "is_new": false,
-      "title": "수습회계사 모집",
-      "company": "세영회계법인",
-      "deadline": "2026-08-31",
-      "posted_date": "2026-08-24",
-      "location": "대구 전체",
-      "emp_type": "Part Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1786096758441",
       "dday": -1,
       "first_seen": ""
     }

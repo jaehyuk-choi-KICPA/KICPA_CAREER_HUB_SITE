@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-02T15:31:39",
+  "generated_at": "2026-09-02T16:02:06",
   "soon_days": 7,
   "counts": {
     "total": 68,
     "open": 45,
     "closed": 23,
-    "new": 7,
+    "new": 5,
     "soon": 21,
     "by_firm": {
       "삼일": 11,
@@ -149,7 +149,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "수습회계사 모집",
       "company": "세영회계법인",
       "deadline": "2026-09-04",
@@ -415,7 +415,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "(광교회계법인 1본부) 2026년 신입회계사(파트)를 모집합니다.",
       "company": "광교회계법인",
       "deadline": "2026-09-09",

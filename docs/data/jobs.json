@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-09-02T17:31:50",
+  "generated_at": "2026-09-02T18:01:56",
   "soon_days": 7,
   "counts": {
-    "total": 69,
-    "open": 46,
+    "total": 70,
+    "open": 47,
     "closed": 23,
     "new": 6,
-    "soon": 21,
+    "soon": 22,
     "by_firm": {
       "삼일": 11,
       "삼정": 4,
       "안진": 6,
       "한영": 20,
-      "로컬": 25,
+      "로컬": 26,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 31,
+      "수습CPA": 32,
       "자격무관": 38
     },
     "by_emp_kind": {
       "인턴": 25,
       "정규직": 32,
       "계약직": 7,
-      "파트타임": 5
+      "파트타임": 6
     }
   },
   "postings": [
@@ -415,6 +415,25 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
+      "is_new": true,
+      "title": "[PKF서현회계법인] 2026 신입 공인회계사 채용(정규직, 파트타임)",
+      "company": "서현회계법인",
+      "deadline": "2026-09-08",
+      "posted_date": "2026-09-02",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788339657026",
+      "dday": 6,
+      "first_seen": "2026-09-02T18:01:56"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
       "is_new": false,
       "title": "(광교회계법인 1본부) 2026년 신입회계사(파트)를 모집합니다.",
       "company": "광교회계법인",
@@ -738,7 +757,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[이촌회계법인] 사업부 총무 · 회계 담당 채용",
       "company": "이촌회계법인",
       "deadline": "2026-10-01",

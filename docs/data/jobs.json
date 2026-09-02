@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-09-02T09:02:11",
+  "generated_at": "2026-09-02T09:31:49",
   "soon_days": 7,
   "counts": {
-    "total": 67,
+    "total": 66,
     "open": 43,
-    "closed": 24,
+    "closed": 23,
     "new": 6,
     "soon": 20,
     "by_firm": {
       "삼일": 11,
       "삼정": 4,
       "안진": 6,
-      "한영": 21,
+      "한영": 20,
       "로컬": 22,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 28,
-      "자격무관": 39
+      "자격무관": 38
     },
     "by_emp_kind": {
-      "인턴": 26,
+      "인턴": 25,
       "정규직": 30,
       "계약직": 7,
       "파트타임": 4
@@ -1279,25 +1279,6 @@
       "emp_type": "정규직",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1784108416966",
       "dday": -2,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "컨설팅부문 Data Architect & Engineering 인턴",
-      "company": "EY한영",
-      "deadline": "2026-09-01",
-      "posted_date": "2026-08-20",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/125602",
-      "dday": -1,
       "first_seen": ""
     }
   ]

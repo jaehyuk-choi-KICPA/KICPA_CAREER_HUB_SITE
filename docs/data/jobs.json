@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-03T07:31:46",
+  "generated_at": "2026-09-03T08:01:54",
   "soon_days": 7,
   "counts": {
-    "total": 69,
-    "open": 44,
+    "total": 70,
+    "open": 45,
     "closed": 25,
-    "new": 4,
+    "new": 5,
     "soon": 22,
     "by_firm": {
       "삼일": 11,
@@ -13,15 +13,15 @@
       "안진": 6,
       "한영": 20,
       "로컬": 25,
-      "기타": 3
+      "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 31,
+      "수습CPA": 32,
       "자격무관": 38
     },
     "by_emp_kind": {
       "인턴": 25,
-      "정규직": 32,
+      "정규직": 33,
       "계약직": 7,
       "파트타임": 5
     }
@@ -520,6 +520,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1787814166295",
       "dday": 15,
       "first_seen": "2026-08-29T17:31:43"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "기타",
+      "field": "기타",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[에이온파트너스] 회계사 신입·경력직 채용",
+      "company": "주식회사 에이온파트너스",
+      "deadline": "2026-09-18",
+      "posted_date": "2026-09-03",
+      "location": "서울 서초구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788388870825",
+      "dday": 15,
+      "first_seen": "2026-09-03T08:01:54"
     },
     {
       "source": "anjin",

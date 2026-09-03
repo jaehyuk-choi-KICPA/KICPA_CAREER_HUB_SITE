@@ -804,7 +804,9 @@ def _update_sitemap_lastmod() -> None:
         txt = p.read_text(encoding="utf-8")
         today = _dt.date.today().isoformat()
         if "<lastmod>" in txt:
-            new = re.sub(r"<lastmod>.*?</lastmod>", f"<lastmod>{today}</lastmod>", txt)
+            # count=1 — 홈 항목만 갱신한다. 방침 페이지는 거의 안 바뀌므로 매일 오늘 날짜를
+            # 찍으면 검색엔진에 거짓 신선도 신호를 주게 된다.
+            new = re.sub(r"<lastmod>.*?</lastmod>", f"<lastmod>{today}</lastmod>", txt, count=1)
         else:
             new = txt.replace("</loc>", f"</loc>\n    <lastmod>{today}</lastmod>", 1)
         if new != txt:

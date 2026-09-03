@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-03T14:01:55",
+  "generated_at": "2026-09-03T14:31:43",
   "soon_days": 7,
   "counts": {
-    "total": 69,
-    "open": 45,
+    "total": 70,
+    "open": 46,
     "closed": 24,
-    "new": 3,
+    "new": 4,
     "soon": 22,
     "by_firm": {
       "삼일": 11,
       "삼정": 4,
       "안진": 6,
       "한영": 19,
-      "로컬": 25,
+      "로컬": 26,
       "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 32,
+      "수습CPA": 33,
       "자격무관": 37
     },
     "by_emp_kind": {
       "인턴": 24,
-      "정규직": 33,
+      "정규직": 34,
       "계약직": 7,
       "파트타임": 5
     }
@@ -520,6 +520,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1787814166295",
       "dday": 15,
       "first_seen": "2026-08-29T17:31:43"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[경복회계법인] 수습회계사(KICPA) 채용 공고",
+      "company": "경복회계법인",
+      "deadline": "2026-09-18",
+      "posted_date": "2026-09-03",
+      "location": "서울 전체",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788412571874",
+      "dday": 15,
+      "first_seen": "2026-09-03T14:31:43"
     },
     {
       "source": "kicpa_susup",

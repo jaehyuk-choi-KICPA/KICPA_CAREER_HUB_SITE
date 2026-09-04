@@ -1167,7 +1167,8 @@
     "uid": "kicpa_susup:1788488531946",
     "first_seen": "2026-09-04T11:31:46",
     "last_seen": "2026-09-04",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-09-04"
   },
   "hanyoung:127494": {
     "source": "hanyoung",
@@ -1185,7 +1186,8 @@
     "uid": "hanyoung:127494",
     "first_seen": "2026-09-04T11:31:46",
     "last_seen": "2026-09-04",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-09-04"
   },
   "hanyoung:127502": {
     "source": "hanyoung",
@@ -1203,6 +1205,7 @@
     "uid": "hanyoung:127502",
     "first_seen": "2026-09-04T11:31:46",
     "last_seen": "2026-09-04",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-09-04"
   }
 }

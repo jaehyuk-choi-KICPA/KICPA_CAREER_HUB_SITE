@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-09-04T21:02:01",
+  "generated_at": "2026-09-04T21:31:39",
   "soon_days": 7,
   "counts": {
-    "total": 76,
-    "open": 57,
+    "total": 77,
+    "open": 58,
     "closed": 19,
-    "new": 9,
+    "new": 10,
     "soon": 29,
     "by_firm": {
       "삼일": 10,
       "삼정": 5,
       "안진": 6,
       "한영": 21,
-      "로컬": 30,
+      "로컬": 31,
       "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 35,
+      "수습CPA": 36,
       "자격무관": 41
     },
     "by_emp_kind": {
       "인턴": 26,
       "정규직": 38,
       "계약직": 7,
-      "파트타임": 5
+      "파트타임": 6
     }
   },
   "postings": [
@@ -919,6 +919,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1787019076628",
       "dday": 26,
       "first_seen": "2026-09-02T13:01:48"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "대주회계법인 1사업부 파트타임 수습회계사 모집",
+      "company": "대주회계법인",
+      "deadline": "2026-09-30",
+      "posted_date": "2026-09-04",
+      "location": "지역무관 지역무관",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788524063333",
+      "dday": 26,
+      "first_seen": "2026-09-04T21:31:39"
     },
     {
       "source": "kicpa_susup",

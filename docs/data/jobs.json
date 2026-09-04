@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-04T10:31:45",
+  "generated_at": "2026-09-04T11:01:52",
   "soon_days": 7,
   "counts": {
-    "total": 69,
-    "open": 50,
+    "total": 70,
+    "open": 51,
     "closed": 19,
-    "new": 5,
-    "soon": 26,
+    "new": 6,
+    "soon": 27,
     "by_firm": {
       "삼일": 10,
-      "삼정": 4,
+      "삼정": 5,
       "안진": 6,
       "한영": 16,
       "로컬": 29,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 34,
-      "자격무관": 35
+      "자격무관": 36
     },
     "by_emp_kind": {
-      "인턴": 22,
+      "인턴": 23,
       "정규직": 35,
       "계약직": 7,
       "파트타임": 5
@@ -520,6 +520,25 @@
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000938&receive_div_cd=N",
       "dday": 7,
       "first_seen": "2026-08-26T17:31:35"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "[Audit] IM4본부 사업비 정산 보조 인턴 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-09-11",
+      "posted_date": "2026-09-04",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000943&receive_div_cd=N",
+      "dday": 7,
+      "first_seen": "2026-09-04T11:01:52"
     },
     {
       "source": "hanyoung",

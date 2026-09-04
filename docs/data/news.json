@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T00:31:43",
+  "generated_at": "2026-09-05T01:01:52",
   "items": [
     {
       "source": "gnews_감사_2",
@@ -225,7 +225,7 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "YTN 사이언스",
+      "source_label": "science.ytn.co.kr",
       "title": "'메뚜기 입찰' 산불카르텔 10곳 세무조사",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9OZ0lxQzJDR2I1TlNuOThVcHpBZmlUXzRmQ3dTeEo0TGRWN0hwSEN2aHEzZXVyRnc5VUZkWkdXSkJleUNiM184TzFzS1JiS0RDdGxCMVZ2cndtX2ZjWHQxa1FtT21jbjdJdmQ1SF9zbjVJNEQxa1pVNXNYX1lReGs?oc=5",
       "published": "2026-09-04",
@@ -272,7 +272,7 @@
         {
           "title": "국세청, ‘산불 카르텔’ 10개 업체 세무조사 거짓 세금계산서·가공원가 등 탈루 혐의액 700억원",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1pdWRGSmg1eW5VbVc2bjA5Y0ZVMHdNTERtUHpiWmFrWkFycmFxUEc0NmFGNkdUcVc4ZmZ0dkZMZGUwdVExWFYxcW5zYzE3M3NSbmoxeUNOeW5JckNBQlVwWllZYnZ4VVhGNFpObA?oc=5",
-          "source_label": "bzeronews.com",
+          "source_label": "공뉴스",
           "published": "2026-09-03"
         },
         {
@@ -284,7 +284,7 @@
         {
           "title": "“산불 복구사업 거액 탈세”…강원 산림업체 세무조사",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBYNi1BTWNjMzVyLVBZZEkwbjljeTZ6SGRxeEQ1cVpicEJQT0ZmbUViVWxIeFFIRFBQaXQtQmtVMWJIVTh6OHNkQlRSWmp6RlNkTDNpdVRPNVRLREU?oc=5",
-          "source_label": "KBS 뉴스",
+          "source_label": "news.kbs.co.kr",
           "published": "2026-09-03"
         },
         {
@@ -345,7 +345,7 @@
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "dailypop.kr",
+      "source_label": "데일리팝",
       "title": "'상폐 위기' 금양, 분식회계 혐의까지…금융당국, 검찰 고발",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9KcDhuVEtLRlRKUUZFWGNiMWN1a01RdnZHaUo2VGhUbmRGMEFWSWpHaWgxdExvMWY1dG1PTU5aREN5ZnZrcXc1cFpYTlVaaVpTdmxwMnBVWDROUmRKeGtIQXd3cnZTUk45?oc=5",
       "published": "2026-09-04",
@@ -398,7 +398,7 @@
         {
           "title": "증선위, 금양에 감사인지정·과징금 조치…\"회계기준 위반\"",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1HZnVuVndhMFdxNVVPOXhZb1dXN09IN0ctRC0tZmZYRGVBSDk4Vlo2QmZ4RU1fOEhYUVJsOGF0VEJuX2xtZ2Ftak1GQXNUTFVhWmpVcmcyVmpYbFlXN252WA?oc=5",
-          "source_label": "아시아경제",
+          "source_label": "asiae.co.kr",
           "published": "2026-09-02"
         },
         {
@@ -428,13 +428,13 @@
         {
           "title": "증선위, '회계기준 위반' 금양 제재",
           "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBLemdxMFFGQzBURWpEa2ltUF9KbXRTeWczRXdFeThqWFR5SUlBcmdQZWYxMUc1aGt6SnhGSHZFYkdPVlRqOVY2YUxfc0ZiQzQ4NnJ4SGJIT3RnYW1MMVVTMEhIMjNRUG5veS1pNGNJaGc?oc=5",
-          "source_label": "shinailbo.co.kr",
+          "source_label": "신아일보",
           "published": "2026-09-02"
         },
         {
           "title": "금양, 회계처리 위반…“행정소송 맞대응”",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8yTHV4QVF4ODRCdkZraVFaV0ljWkV1Wk5QOFVQRUF3SEZRaXhrNll0bU9ONkxuZTBzaHhNOUtLTDRXVFR5bFZMWWlTM21YSHRrOVJaTHlabWphRzg?oc=5",
-          "source_label": "KBS 뉴스",
+          "source_label": "news.kbs.co.kr",
           "published": "2026-09-02"
         },
         {
@@ -527,7 +527,15 @@
       "published": "2026-09-03",
       "published_at": "2026-09-03T07:31:14",
       "summary": "",
-      "category": "감사"
+      "category": "감사",
+      "dupes": [
+        {
+          "title": "한국 딜로이트 그룹, 이사회·감사위 전문성 강화 프로그램 성료…경제·AI·회계감독 3대 과제 제시",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9mUDhUWnVDV0RVM19Kcl84VnpWekdxdXBPQVFSNDdaNGE2WXZPZlREa1RXLW44YUdkck1LLUd1b3pPaTE4Tm9hUndRakp0LXJFTkdZag?oc=5",
+          "source_label": "이투데이",
+          "published": "2026-09-02"
+        }
+      ]
     },
     {
       "source": "gnews_감사_2",
@@ -670,7 +678,7 @@
         {
           "title": "삼전닉스 올해 납부한 법인세 11.2조…역대 최고 찍나",
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5wMlFOS015WDdJRjFwem14Y2phSDZlMHd6YzdGS09nZkY3UlNOdk8tdzZaRXlpSl8zaXkxUjBkZFdyZzNlb0VHRllQZjVWYmh4SkJlLQ?oc=5",
-          "source_label": "JTBC",
+          "source_label": "JTBC뉴스",
           "published": "2026-08-30"
         },
         {
@@ -693,7 +701,7 @@
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "아시아경제",
+      "source_label": "asiae.co.kr",
       "title": "증선위, 코스닥 IR임원 수사기관 통보…\"신약호재 내부정보로 부당이득\"",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9odXNxWnpRbXg2ME5id3JJaUYxQ0FQWUx2dmktUkdiSXBEd2w1eS1JUnd3S3BuV01FVm5WMmpjYk9EdUM3d1cyejdwOFg5NjVDN0hHMzRqVlJqZXhtMjZSNA?oc=5",
       "published": "2026-09-02",
@@ -734,7 +742,7 @@
         {
           "title": "회계기준 바꿨더니 영업익 118억 늘었다…내년 기업 실적 '착시' 주의보",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1FbHU2bnhJaFdQaG5DTXFtWXhQRFhYRExqM2xDREpzT1dYb3BUOGxId1ZKbGJ0U3B4bk1MTmdpSU5yRzNQOHNBR1ZzN3Q2TXR3U1V3SEFKU1pQdw?oc=5",
-          "source_label": "파이낸셜뉴스",
+          "source_label": "fnnews.com",
           "published": "2026-09-02"
         },
         {
@@ -784,14 +792,14 @@
         {
           "title": "\"초고액체납자는 특별 세무조사\"…국세청, 전담팀 신설해 전방위 압박 나선 국세청",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ITFlGX21PeVdxZjYtQ1pmZlhGQXpNckVVX2NiWGlpbG9DcHpESnFkWEpwUWJJdk8wdnE4WWxQU3ludlB0T0dmNndyd00yVTh2MkM1V3hKdDktM1k5U2lOTg?oc=5",
-          "source_label": "아시아경제",
+          "source_label": "asiae.co.kr",
           "published": "2026-08-15"
         }
       ]
     },
     {
       "source": "gnews_세무",
-      "source_label": "KBS 뉴스",
+      "source_label": "news.kbs.co.kr",
       "title": "청와대 “반도체 특수로 내년도 법인세 200조 이상…세수 여건 좋아”",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5RaDV5UUNoNFJZNEtRZ3dIbXZfRW1LZUNGa0Zla1A5TDg4SzFxd2JNd01BU1VabkpZQ09idU9Ob184cDktMmdONjgwS0NmQzhOcG1QQUx5OHNfdnc?oc=5",
       "published": "2026-09-02",
@@ -855,7 +863,7 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "아시아경제",
+      "source_label": "asiae.co.kr",
       "title": "'9억 축소 철회·150% 상한 유지' 등 세법 개정안 확정…주가누르기는 빠져(종합)",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBCLTZEMC1wZnJFaHNBUjQ5MjB5angyZndsa2x4VGQyVzItd0VrYXk3cW1id1pvVkJkYzctOENFLTI5S25DNzY3WTBYdGo1S3gwN1JBMDRzeDZISU5BS1NPeA?oc=5",
       "published": "2026-09-01",
@@ -993,18 +1001,18 @@
     },
     {
       "source": "gnews_감사",
-      "source_label": "아주경제",
-      "title": "두나무, 美 회계기준 검토…상장 국가는 미정",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QZmxPY1VoZDBoeVMtNUptQUU0Skkza3I3d1NISVVrWDRNWk84QklUUlFaeGRydWVRNDV2eDFTb1d4elNoRkFEOWQyUGdLbGQwYllhUFZDcm9yZ9IBWEFVX3lxTE5XNHNNNGppTzJzWG5IdjQ2eUF6OHJTT2M0T1JoTGx3ZVNmQ2FiaFY1Q05jTnFQYnl4WjZySnJGTnU3d0sxWEwyZ3l6UzJ3X1gyWFRDUm1qZUE?oc=5",
-      "published": "2026-08-24",
-      "published_at": "2026-08-24T23:57:02",
+      "source_label": "v.daum.net",
+      "title": "두나무 美 상장설 다시 고개…“회계기준·행선지 결정 안 돼”",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9lbXBOT2ZGa0hHUjhWclZ6b2pnM0s1T05iYTB5Um4xWHR3RkdNcDVCZEdGVHpVNUtqQUZTNi13M21UbHJxVk9ZV21ldXlYVEhaYnpPRQ?oc=5",
+      "published": "2026-08-25",
+      "published_at": "2026-08-25T07:00:00",
       "summary": "",
       "category": "감사",
       "dupes": [
         {
-          "title": "두나무 美 상장설 다시 고개…“회계기준·행선지 결정 안 돼”",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBhakVKdFc4a3RqTDhVdGpKLUtfUlBhUjVaQmRHZ2ZoQnFVUnp1anVUSmVsZWo4alFJWV9QWmJZOTY0eWVmU19GVHMzNA?oc=5",
-          "source_label": "v.daum.net",
+          "title": "두나무, 美 회계기준 검토…상장 국가는 미정",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QZmxPY1VoZDBoeVMtNUptQUU0Skkza3I3d1NISVVrWDRNWk84QklUUlFaeGRydWVRNDV2eDFTb1d4elNoRkFEOWQyUGdLbGQwYllhUFZDcm9yZ9IBWEFVX3lxTE5XNHNNNGppTzJzWG5IdjQ2eUF6OHJTT2M0T1JoTGx3ZVNmQ2FiaFY1Q05jTnFQYnl4WjZySnJGTnU3d0sxWEwyZ3l6UzJ3X1gyWFRDUm1qZUE?oc=5",
+          "source_label": "아주경제",
           "published": "2026-08-24"
         },
         {
@@ -1015,8 +1023,8 @@
         },
         {
           "title": "美 회계기준 문의한 두나무, 나스닥 상장說에 \"정해진 바 없어\"",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE04c2tKLU9WaTRUQ29GRmlrMGg5X2EwQlZ0bnZCc0x6RktaQU9QUG1rVGdqQTcyYmJVUnphT2tvZ0tpSGg0LXZJMVVjRlRZd1lpRmpMQg?oc=5",
-          "source_label": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB0MmlXbEZMR0dPcGJEU29yX2tSd2UyeG1zdlNHRWZwOGp6SkdDZWl2eDNBc29rQlZlOEpNMEdPVFI3QWNGNWRBZnpGQTRhQThXRW9NazdHa0VpdlI2Q1UtYg?oc=5",
+          "source_label": "asiae.co.kr",
           "published": "2026-08-24"
         },
         {
@@ -1034,13 +1042,7 @@
         {
           "title": "美 회계기준 검토에 SEC 접촉까지… 두나무 ‘나스닥행’에 쏠린 눈",
           "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1MS1Vrc0pBUkhkV2Q0ZWFJSUFMMHdzaWl2c2ZGb215TXZXQkhMbEpjX09RX0JUSk1DX3cyOHBIZ21FSkF3YkJpeFo0cEdpbGVaYm5tLS1tSGJYeXlqVFhXUkNPVXdETWRNZlNQNlJxbw?oc=5",
-          "source_label": "seoul.co.kr",
-          "published": "2026-08-24"
-        },
-        {
-          "title": "두나무, 美 회계기준 검토…주식교환 마치고 IPO 추진",
-          "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxORkhSRHFOcm5yVWpQS2ZtdDZVeU1nX2VLMmhIVDVDb1B6aHF2YW92a1g2cFNzeVF5OF9tYjdCWHBRandoVlZmd0d1UlpSRUpRTllfWENQcExENE1Ga2hsVVNEb09JUkc5SER0NXUyTTJMYWdIdHFVai1lVmZRemk4RG5zV2Q2aTBzdVpRZTFUbm9TbWxvTy16YVN1eVY3TkpOWk5CNF8tUkZZQkF3WkMxeUVwVjlTWExrSXVVWm9GRWdRNi1rT0x2UTlYN2s2RkFnb2w4N0J0eGtOQ2EzSjVWVVpnVnZvRzV5TG9LWW9neGlDUGZHSXdIb0FNOGtpaUhYUmRpcEduZDZUcG9sVFloQi1Tbm9KN2pWQWxYbHYtRk1Pa3c?oc=5",
-          "source_label": "데일리안",
+          "source_label": "서울신문",
           "published": "2026-08-24"
         },
         {

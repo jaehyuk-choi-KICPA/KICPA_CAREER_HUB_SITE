@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-04T11:01:52",
+  "generated_at": "2026-09-04T11:31:46",
   "soon_days": 7,
   "counts": {
-    "total": 70,
-    "open": 51,
+    "total": 73,
+    "open": 54,
     "closed": 19,
-    "new": 6,
-    "soon": 27,
+    "new": 9,
+    "soon": 29,
     "by_firm": {
       "삼일": 10,
       "삼정": 5,
       "안진": 6,
-      "한영": 16,
-      "로컬": 29,
+      "한영": 18,
+      "로컬": 30,
       "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 34,
-      "자격무관": 36
+      "수습CPA": 35,
+      "자격무관": 38
     },
     "by_emp_kind": {
-      "인턴": 23,
-      "정규직": 35,
+      "인턴": 24,
+      "정규직": 37,
       "계약직": 7,
       "파트타임": 5
     }
@@ -503,6 +503,25 @@
       "first_seen": "2026-09-03T17:31:45"
     },
     {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "컨설팅부문 Digital 컨설팅(AX) 인턴",
+      "company": "EY한영",
+      "deadline": "2026-09-10",
+      "posted_date": "2026-09-04",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/127502",
+      "dday": 6,
+      "first_seen": "2026-09-04T11:31:46"
+    },
+    {
       "source": "samjong",
       "source_label": "삼정KPMG",
       "firm": "삼정",
@@ -520,6 +539,25 @@
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000938&receive_div_cd=N",
       "dday": 7,
       "first_seen": "2026-08-26T17:31:35"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[안경회계법인 부산2본부] 신입회계사 구인공고",
+      "company": "안경회계법인",
+      "deadline": "2026-09-11",
+      "posted_date": "2026-09-04",
+      "location": "부산 해운대구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788488531946",
+      "dday": 7,
+      "first_seen": "2026-09-04T11:31:46"
     },
     {
       "source": "samjong",
@@ -558,6 +596,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/126973",
       "dday": 9,
       "first_seen": "2026-08-31T18:01:48"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "감사부문 PPT 디자이너 (신입/경력)",
+      "company": "EY한영",
+      "deadline": "2026-09-14",
+      "posted_date": "2026-09-04",
+      "location": "",
+      "emp_type": "신입/경력",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/127494",
+      "dday": 10,
+      "first_seen": "2026-09-04T11:31:46"
     },
     {
       "source": "kicpa_susup",

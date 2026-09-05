@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-05T14:31:47",
+  "generated_at": "2026-09-05T15:01:46",
   "soon_days": 7,
   "counts": {
     "total": 75,
     "open": 54,
     "closed": 21,
-    "new": 5,
+    "new": 3,
     "soon": 25,
     "by_firm": {
       "삼일": 10,
@@ -529,7 +529,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "컨설팅부문 수요예측 모델 고도화 인턴",
       "company": "EY한영",
       "deadline": "2026-09-13",
@@ -548,7 +548,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "컨설팅부문 고객 분석 및 추천모델 개발 인턴",
       "company": "EY한영",
       "deadline": "2026-09-13",

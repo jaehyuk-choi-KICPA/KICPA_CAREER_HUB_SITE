@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-09-07T08:01:46",
+  "generated_at": "2026-09-07T08:31:42",
   "soon_days": 7,
   "counts": {
-    "total": 70,
-    "open": 45,
+    "total": 72,
+    "open": 47,
     "closed": 25,
-    "new": 0,
+    "new": 2,
     "soon": 23,
     "by_firm": {
       "삼일": 10,
       "삼정": 3,
       "안진": 6,
       "한영": 21,
-      "로컬": 27,
+      "로컬": 29,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 32,
+      "수습CPA": 34,
       "자격무관": 38
     },
     "by_emp_kind": {
       "인턴": 24,
-      "정규직": 34,
+      "정규직": 35,
       "계약직": 6,
-      "파트타임": 6
+      "파트타임": 7
     }
   },
   "postings": [
@@ -539,6 +539,44 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788388870825",
       "dday": 11,
       "first_seen": "2026-09-03T08:01:54"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[회계법인 숲] 신입회계사 채용 공고(part-time)",
+      "company": "회계법인숲",
+      "deadline": "2026-09-18",
+      "posted_date": "2026-09-07",
+      "location": "서울 강남구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788735954498",
+      "dday": 11,
+      "first_seen": "2026-09-07T08:31:42"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[회계법인 숲] 신입회계사 채용 공고",
+      "company": "회계법인숲",
+      "deadline": "2026-09-18",
+      "posted_date": "2026-09-07",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788735856732",
+      "dday": 11,
+      "first_seen": "2026-09-07T08:31:42"
     },
     {
       "source": "anjin",

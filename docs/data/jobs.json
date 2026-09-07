@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T00:01:46",
+  "generated_at": "2026-09-08T00:31:43",
   "soon_days": 7,
   "counts": {
     "total": 75,
@@ -16,8 +16,8 @@
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 38,
-      "자격무관": 37
+      "수습CPA": 37,
+      "자격무관": 38
     },
     "by_emp_kind": {
       "인턴": 23,
@@ -1381,7 +1381,7 @@
       "source_label": "구인(CPA)",
       "firm": "로컬",
       "field": "택스",
-      "qualification": "수습CPA",
+      "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "closed",
       "is_new": false,
@@ -1389,8 +1389,8 @@
       "company": "동남회계법인",
       "deadline": "2026-09-07",
       "posted_date": "2026-08-21",
-      "location": "",
-      "emp_type": "",
+      "location": "서울 강남구",
+      "emp_type": "정규직",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1786080283368",
       "dday": -1,
       "first_seen": ""
@@ -1446,8 +1446,8 @@
       "company": "동성회계법인",
       "deadline": "2026-09-07",
       "posted_date": "2026-09-03",
-      "location": "",
-      "emp_type": "",
+      "location": "서울 서초구",
+      "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788429655386",
       "dday": -1,
       "first_seen": ""

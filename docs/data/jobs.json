@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-09-07T13:01:56",
+  "generated_at": "2026-09-07T13:31:44",
   "soon_days": 7,
   "counts": {
-    "total": 73,
-    "open": 48,
+    "total": 74,
+    "open": 49,
     "closed": 25,
-    "new": 4,
+    "new": 5,
     "soon": 23,
     "by_firm": {
       "삼일": 10,
       "삼정": 3,
       "안진": 6,
       "한영": 21,
-      "로컬": 30,
+      "로컬": 31,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 35,
-      "자격무관": 38
+      "자격무관": 39
     },
     "by_emp_kind": {
       "인턴": 24,
       "정규직": 35,
-      "계약직": 7,
+      "계약직": 8,
       "파트타임": 7
     }
   },
@@ -786,6 +786,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1788251685248",
       "dday": 24,
       "first_seen": "2026-09-01T18:01:53"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "[회계법인 상지원]출산휴가 대체 근로자 채용(약 6개월 근무)",
+      "company": "회계법인 상지원",
+      "deadline": "2026-10-01",
+      "posted_date": "2026-09-07",
+      "location": "서울 강남구",
+      "emp_type": "계약직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1788754847330",
+      "dday": 24,
+      "first_seen": "2026-09-07T13:31:44"
     },
     {
       "source": "kicpa_cpa",

@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-07T14:31:47",
+  "generated_at": "2026-09-07T15:01:49",
   "soon_days": 7,
   "counts": {
     "total": 76,
     "open": 52,
     "closed": 24,
     "new": 8,
-    "soon": 24,
+    "soon": 23,
     "by_firm": {
       "삼일": 10,
       "삼정": 3,
@@ -21,9 +21,9 @@
     },
     "by_emp_kind": {
       "인턴": 24,
-      "정규직": 38,
+      "정규직": 37,
       "계약직": 8,
-      "파트타임": 6
+      "파트타임": 7
     }
   },
   "postings": [
@@ -121,25 +121,6 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788429655386",
       "dday": 0,
       "first_seen": "2026-09-03T19:01:55"
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": true,
-      "title": "[안세회계법인] 수습회계사 모집",
-      "company": "안세회계법인",
-      "deadline": "2026-09-07",
-      "posted_date": "2026-09-07",
-      "location": "인천 연수구",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788758863033",
-      "dday": 0,
-      "first_seen": "2026-09-07T14:31:47"
     },
     {
       "source": "kicpa_susup",
@@ -786,6 +767,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788483395345",
       "dday": 23,
       "first_seen": "2026-09-04T10:01:47"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "수습회계사 모집",
+      "company": "세영회계법인",
+      "deadline": "2026-09-30",
+      "posted_date": "2026-09-07",
+      "location": "대구 전체",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1786096758441",
+      "dday": 23,
+      "first_seen": "2026-09-07T15:01:49"
     },
     {
       "source": "kicpa_cpa",

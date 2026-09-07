@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-09-07T09:31:46",
+  "generated_at": "2026-09-07T10:01:45",
   "soon_days": 7,
   "counts": {
-    "total": 72,
-    "open": 47,
+    "total": 73,
+    "open": 48,
     "closed": 25,
-    "new": 2,
+    "new": 3,
     "soon": 23,
     "by_firm": {
       "삼일": 10,
       "삼정": 3,
       "안진": 6,
       "한영": 21,
-      "로컬": 29,
+      "로컬": 30,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 34,
+      "수습CPA": 35,
       "자격무관": 38
     },
     "by_emp_kind": {
       "인턴": 24,
       "정규직": 35,
-      "계약직": 6,
+      "계약직": 7,
       "파트타임": 7
     }
   },
@@ -748,6 +748,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788483395345",
       "dday": 23,
       "first_seen": "2026-09-04T10:01:47"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "회계감사보조자를 모집합니다.(부분합격자)",
+      "company": "한길회계법인",
+      "deadline": "2026-09-30",
+      "posted_date": "2026-09-07",
+      "location": "서울 전체",
+      "emp_type": "계약직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1788742733970",
+      "dday": 23,
+      "first_seen": "2026-09-07T10:01:45"
     },
     {
       "source": "kicpa_cpa",

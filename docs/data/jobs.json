@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-07T13:31:44",
+  "generated_at": "2026-09-07T14:01:55",
   "soon_days": 7,
   "counts": {
-    "total": 74,
-    "open": 49,
+    "total": 75,
+    "open": 50,
     "closed": 25,
-    "new": 5,
+    "new": 6,
     "soon": 23,
     "by_firm": {
       "삼일": 10,
       "삼정": 3,
       "안진": 6,
       "한영": 21,
-      "로컬": 31,
+      "로컬": 32,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 35,
+      "수습CPA": 36,
       "자격무관": 39
     },
     "by_emp_kind": {
       "인턴": 24,
-      "정규직": 35,
+      "정규직": 36,
       "계약직": 8,
       "파트타임": 7
     }
@@ -482,6 +482,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1787103650023",
       "dday": 8,
       "first_seen": "2026-08-19T11:34:24"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[BNH회계법인]2026년도 신입회계사 채용",
+      "company": "보현회계법인",
+      "deadline": "2026-09-15",
+      "posted_date": "2026-09-07",
+      "location": "서울 전체",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788755968723",
+      "dday": 8,
+      "first_seen": "2026-09-07T14:01:55"
     },
     {
       "source": "kicpa_cpa",

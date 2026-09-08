@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-09-08T17:02:31",
+  "generated_at": "2026-09-08T17:31:46",
   "soon_days": 7,
   "counts": {
-    "total": 79,
-    "open": 54,
+    "total": 81,
+    "open": 56,
     "closed": 25,
-    "new": 8,
+    "new": 9,
     "soon": 23,
     "by_firm": {
       "삼일": 9,
-      "삼정": 2,
+      "삼정": 3,
       "안진": 8,
       "한영": 20,
-      "로컬": 37,
+      "로컬": 38,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 40,
-      "자격무관": 39
+      "수습CPA": 41,
+      "자격무관": 40
     },
     "by_emp_kind": {
       "인턴": 22,
-      "정규직": 40,
-      "계약직": 8,
+      "정규직": 41,
+      "계약직": 9,
       "파트타임": 9
     }
   },
@@ -465,6 +465,25 @@
       "first_seen": "2026-09-08T15:01:52"
     },
     {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": false,
+      "title": "[QRM-RM] 독립성팀 계약직 직원 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-09-16",
+      "posted_date": "2026-08-04",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000927&receive_div_cd=N",
+      "dday": 8,
+      "first_seen": "2026-09-08T17:31:46"
+    },
+    {
       "source": "kicpa_cpa",
       "source_label": "구인(CPA)",
       "firm": "로컬",
@@ -862,6 +881,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5185",
       "dday": 29,
       "first_seen": "2026-09-08T10:01:59"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "부산 수습회계사 채용",
+      "company": "이산회계법인",
+      "deadline": "2026-10-08",
+      "posted_date": "2026-09-08",
+      "location": "부산 전체",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788856019467",
+      "dday": 30,
+      "first_seen": "2026-09-08T17:31:46"
     },
     {
       "source": "kicpa_cpa",

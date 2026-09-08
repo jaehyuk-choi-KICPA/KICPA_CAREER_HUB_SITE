@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-08T17:31:46",
+  "generated_at": "2026-09-08T18:01:50",
   "soon_days": 7,
   "counts": {
-    "total": 81,
-    "open": 56,
+    "total": 82,
+    "open": 57,
     "closed": 25,
-    "new": 9,
+    "new": 10,
     "soon": 23,
     "by_firm": {
       "삼일": 9,
       "삼정": 3,
       "안진": 8,
       "한영": 20,
-      "로컬": 38,
+      "로컬": 39,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 41,
-      "자격무관": 40
+      "자격무관": 41
     },
     "by_emp_kind": {
       "인턴": 22,
-      "정규직": 41,
+      "정규직": 42,
       "계약직": 9,
       "파트타임": 9
     }
@@ -577,6 +577,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788735856732",
       "dday": 10,
       "first_seen": "2026-09-07T08:31:42"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "택스",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "삼지회계법인(서초동)에서 안정적으로 장기근무 하실 기장세무 전문가를 모집합니다.",
+      "company": "삼지회계법인",
+      "deadline": "2026-09-18",
+      "posted_date": "2026-09-08",
+      "location": "서울 서초구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1788857351032",
+      "dday": 10,
+      "first_seen": "2026-09-08T18:01:50"
     },
     {
       "source": "anjin",

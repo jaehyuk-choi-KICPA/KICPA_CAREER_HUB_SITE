@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-08T08:31:35",
+  "generated_at": "2026-09-08T09:02:06",
   "soon_days": 7,
   "counts": {
     "total": 75,
     "open": 48,
     "closed": 27,
-    "new": 9,
+    "new": 7,
     "soon": 20,
     "by_firm": {
       "삼일": 10,
@@ -472,7 +472,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[회계법인 숲] 신입회계사 채용 공고(part-time)",
       "company": "회계법인숲",
       "deadline": "2026-09-18",
@@ -491,7 +491,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[회계법인 숲] 신입회계사 채용 공고",
       "company": "회계법인숲",
       "deadline": "2026-09-18",

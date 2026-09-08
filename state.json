@@ -1262,7 +1262,8 @@
     "uid": "kicpa_susup:1788856019467",
     "first_seen": "2026-09-08T17:31:46",
     "last_seen": "2026-09-08",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-09-08"
   },
   "kicpa_susup:1788855910251": {
     "source": "kicpa_susup",
@@ -1280,7 +1281,8 @@
     "uid": "kicpa_susup:1788855910251",
     "first_seen": "2026-09-08T17:31:46",
     "last_seen": "2026-09-08",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-09-08"
   },
   "samjong:KPMG00000000000000000000000927": {
     "source": "samjong",
@@ -1298,6 +1300,6 @@
     "uid": "samjong:KPMG00000000000000000000000927",
     "first_seen": "2026-09-08T17:31:46",
     "last_seen": "2026-09-08",
-    "notified": false
+    "notified": true
   }
 }

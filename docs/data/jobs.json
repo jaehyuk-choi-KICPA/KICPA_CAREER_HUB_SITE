@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-08T18:01:50",
+  "generated_at": "2026-09-08T18:31:44",
   "soon_days": 7,
   "counts": {
-    "total": 82,
+    "total": 80,
     "open": 57,
-    "closed": 25,
+    "closed": 23,
     "new": 10,
     "soon": 23,
     "by_firm": {
-      "삼일": 9,
+      "삼일": 7,
       "삼정": 3,
       "안진": 8,
       "한영": 20,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 41,
-      "자격무관": 41
+      "자격무관": 39
     },
     "by_emp_kind": {
-      "인턴": 22,
+      "인턴": 20,
       "정규직": 42,
       "계약직": 9,
       "파트타임": 9
@@ -1043,25 +1043,6 @@
       "emp_kind": "인턴",
       "status": "open",
       "is_new": false,
-      "title": "Public Service팀 컨설팅 인턴 채용(서울, 인천, 수원, 광주, 천안, 부산, 의성)",
-      "company": "삼일PwC",
-      "deadline": "",
-      "posted_date": "",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://www.pwc.com/kr/ko/career/experienced/r260723.html",
-      "dday": null,
-      "first_seen": "2026-08-10T16:31:37"
-    },
-    {
-      "source": "samil",
-      "source_label": "삼일PwC",
-      "firm": "삼일",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "open",
-      "is_new": false,
       "title": "시스템 엔지니어 인턴 채용",
       "company": "삼일PwC",
       "deadline": "",
@@ -1090,6 +1071,25 @@
       "url": "https://www.pwc.com/kr/ko/career/experienced/r260730-1.html",
       "dday": null,
       "first_seen": "2026-07-30T16:31:37"
+    },
+    {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": false,
+      "title": "Public Service팀 컨설팅 인턴 채용(서울, 인천, 수원, 광주, 천안, 부산, 의성)",
+      "company": "삼일PwC",
+      "deadline": "",
+      "posted_date": "",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://www.pwc.com/kr/ko/career/experienced/r260723.html",
+      "dday": null,
+      "first_seen": "2026-08-10T16:31:37"
     },
     {
       "source": "hanyoung",
@@ -1279,44 +1279,6 @@
       "emp_type": "파트타임",
       "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-part-time.html",
       "dday": -26,
-      "first_seen": ""
-    },
-    {
-      "source": "samil",
-      "source_label": "삼일PwC",
-      "firm": "삼일",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "FS&RS - TS 전환형 인턴 채용",
-      "company": "삼일PwC",
-      "deadline": "2026-08-20",
-      "posted_date": "",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://www.pwc.com/kr/ko/career/experienced/r260813.html",
-      "dday": -19,
-      "first_seen": ""
-    },
-    {
-      "source": "samil",
-      "source_label": "삼일PwC",
-      "firm": "삼일",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "홍보파트(M&C) 인턴 채용",
-      "company": "삼일PwC",
-      "deadline": "2026-08-21",
-      "posted_date": "",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://www.pwc.com/kr/ko/career/experienced/r260805.html",
-      "dday": -18,
       "first_seen": ""
     },
     {

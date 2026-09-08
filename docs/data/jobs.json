@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-09-08T09:31:51",
+  "generated_at": "2026-09-08T10:01:59",
   "soon_days": 7,
   "counts": {
-    "total": 75,
-    "open": 48,
+    "total": 76,
+    "open": 49,
     "closed": 27,
     "new": 7,
     "soon": 20,
     "by_firm": {
       "삼일": 10,
       "삼정": 2,
-      "안진": 6,
+      "안진": 7,
       "한영": 20,
       "로컬": 34,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 37,
-      "자격무관": 38
+      "자격무관": 39
     },
     "by_emp_kind": {
       "인턴": 23,
       "정규직": 38,
-      "계약직": 7,
+      "계약직": 8,
       "파트타임": 7
     }
   },
@@ -700,7 +700,7 @@
       "qualification": "수습CPA",
       "emp_kind": "계약직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "회계감사보조자를 모집합니다.(부분합격자)",
       "company": "한길회계법인",
       "deadline": "2026-09-30",
@@ -731,25 +731,6 @@
       "first_seen": "2026-09-01T18:01:53"
     },
     {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": true,
-      "title": "[이정회계법인] 2026수습공인회계사 채용",
-      "company": "이정회계법인",
-      "deadline": "2026-10-01",
-      "posted_date": "2026-09-07",
-      "location": "서울 서초구",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788758572084",
-      "dday": 23,
-      "first_seen": "2026-09-07T14:31:47"
-    },
-    {
       "source": "kicpa_cpa",
       "source_label": "구인(CPA)",
       "firm": "로컬",
@@ -767,6 +748,44 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1788754847330",
       "dday": 23,
       "first_seen": "2026-09-07T13:31:44"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[이정회계법인] 2026 수습공인회계사 채용",
+      "company": "이정회계법인",
+      "deadline": "2026-10-01",
+      "posted_date": "2026-09-08",
+      "location": "서울 서초구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788758572084",
+      "dday": 23,
+      "first_seen": "2026-09-08T10:01:59"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "경영자문부문 F&R 분쟁지원 컨설턴트(건설/중공업 분야) 계약직",
+      "company": "딜로이트 안진",
+      "deadline": "2026-10-07",
+      "posted_date": "2026-09-08",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5185",
+      "dday": 29,
+      "first_seen": "2026-09-08T10:01:59"
     },
     {
       "source": "kicpa_cpa",

@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-08T14:01:55",
+  "generated_at": "2026-09-08T14:31:54",
   "soon_days": 7,
   "counts": {
-    "total": 78,
+    "total": 77,
     "open": 52,
-    "closed": 26,
-    "new": 8,
+    "closed": 25,
+    "new": 7,
     "soon": 21,
     "by_firm": {
-      "삼일": 10,
+      "삼일": 9,
       "삼정": 2,
       "안진": 8,
       "한영": 19,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 39,
-      "자격무관": 39
+      "자격무관": 38
     },
     "by_emp_kind": {
-      "인턴": 22,
+      "인턴": 21,
       "정규직": 40,
       "계약직": 8,
       "파트타임": 8
@@ -415,7 +415,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[BNH회계법인]2026년도 신입회계사 채용",
       "company": "보현회계법인",
       "deadline": "2026-09-15",
@@ -1374,25 +1374,6 @@
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1787728565691",
       "dday": -4,
-      "first_seen": ""
-    },
-    {
-      "source": "samil",
-      "source_label": "삼일PwC",
-      "firm": "삼일",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "Human Capital팀 채용·인사 운영 체험형 인턴 채용",
-      "company": "삼일PwC",
-      "deadline": "2026-09-06",
-      "posted_date": "",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://www.pwc.com/kr/ko/career/experienced/r260901.html",
-      "dday": -2,
       "first_seen": ""
     },
     {

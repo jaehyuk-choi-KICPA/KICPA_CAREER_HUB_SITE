@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-09-09T18:31:45",
+  "generated_at": "2026-09-09T19:01:55",
   "soon_days": 7,
   "counts": {
-    "total": 86,
-    "open": 62,
+    "total": 88,
+    "open": 64,
     "closed": 24,
-    "new": 10,
+    "new": 12,
     "soon": 22,
     "by_firm": {
       "삼일": 7,
       "삼정": 4,
       "안진": 8,
       "한영": 19,
-      "로컬": 45,
+      "로컬": 47,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 46,
+      "수습CPA": 48,
       "자격무관": 40
     },
     "by_emp_kind": {
       "인턴": 20,
-      "정규직": 47,
+      "정규직": 48,
       "계약직": 11,
-      "파트타임": 8
+      "파트타임": 9
     }
   },
   "postings": [
@@ -976,6 +976,44 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1787214389844",
       "dday": 52,
       "first_seen": "2026-09-08T17:02:31"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[삼도회계법인] Part-time(시즌 후 Full-time 전환협의가능)으로 근무하실 수습 공인회계사님을 모십니다.",
+      "company": "삼도회계법인",
+      "deadline": "2026-10-31",
+      "posted_date": "2026-09-09",
+      "location": "서울 강남구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788946822811",
+      "dday": 52,
+      "first_seen": "2026-09-09T19:01:55"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[삼도회계법인] Full-time 으로 근무하실 수습 공인회계사님을 모십니다.",
+      "company": "삼도회계법인",
+      "deadline": "2026-10-31",
+      "posted_date": "2026-09-09",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788946661884",
+      "dday": 52,
+      "first_seen": "2026-09-09T19:01:55"
     },
     {
       "source": "kicpa_cpa",

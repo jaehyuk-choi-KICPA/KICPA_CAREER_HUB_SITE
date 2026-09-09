@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-09-09T10:01:52",
+  "generated_at": "2026-09-09T10:31:51",
   "soon_days": 7,
   "counts": {
-    "total": 78,
-    "open": 54,
+    "total": 80,
+    "open": 56,
     "closed": 24,
-    "new": 10,
-    "soon": 21,
+    "new": 11,
+    "soon": 22,
     "by_firm": {
       "삼일": 7,
       "삼정": 3,
       "안진": 8,
       "한영": 19,
-      "로컬": 38,
+      "로컬": 40,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 40,
-      "자격무관": 38
+      "수습CPA": 41,
+      "자격무관": 39
     },
     "by_emp_kind": {
-      "인턴": 19,
+      "인턴": 20,
       "정규직": 42,
-      "계약직": 9,
+      "계약직": 10,
       "파트타임": 8
     }
   },
@@ -406,6 +406,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/127848",
       "dday": 6,
       "first_seen": "2026-09-08T15:01:52"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "택스",
+      "qualification": "수습CPA",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "해외지사 회계기장 서비스",
+      "company": "제이비씨세무회계컨설팅",
+      "deadline": "2026-09-15",
+      "posted_date": "2026-09-09",
+      "location": "지역무관 지역무관",
+      "emp_type": "인턴쉽",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788916302778",
+      "dday": 6,
+      "first_seen": "2026-09-09T10:31:51"
     },
     {
       "source": "samjong",
@@ -833,7 +852,7 @@
       "qualification": "자격무관",
       "emp_kind": "계약직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "경영자문부문 F&R 분쟁지원 컨설턴트(건설/중공업 분야) 계약직",
       "company": "딜로이트 안진",
       "deadline": "2026-10-07",
@@ -881,6 +900,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1787214389844",
       "dday": 52,
       "first_seen": "2026-09-08T17:02:31"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "출산/육아휴직 대체 근로자 채용(1년 근무)",
+      "company": "한길회계법인",
+      "deadline": "2026-10-31",
+      "posted_date": "2026-09-09",
+      "location": "서울 강남구",
+      "emp_type": "계약직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1788916981025",
+      "dday": 52,
+      "first_seen": "2026-09-09T10:31:51"
     },
     {
       "source": "kicpa_susup",

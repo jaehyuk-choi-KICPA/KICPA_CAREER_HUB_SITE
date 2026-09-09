@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-09T09:02:31",
+  "generated_at": "2026-09-09T09:31:47",
   "soon_days": 7,
   "counts": {
-    "total": 80,
+    "total": 79,
     "open": 54,
-    "closed": 26,
+    "closed": 25,
     "new": 10,
     "soon": 21,
     "by_firm": {
@@ -12,18 +12,18 @@
       "삼정": 3,
       "안진": 8,
       "한영": 20,
-      "로컬": 39,
+      "로컬": 38,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 41,
+      "수습CPA": 40,
       "자격무관": 39
     },
     "by_emp_kind": {
       "인턴": 20,
       "정규직": 42,
       "계약직": 9,
-      "파트타임": 9
+      "파트타임": 8
     }
   },
   "postings": [
@@ -799,12 +799,12 @@
       "title": "[이정회계법인] 2026 수습공인회계사 파트타임 채용",
       "company": "이정회계법인",
       "deadline": "2026-10-01",
-      "posted_date": "2026-09-08",
+      "posted_date": "2026-09-09",
       "location": "서울 서초구",
       "emp_type": "Part Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788833972532",
       "dday": 22,
-      "first_seen": "2026-09-08T11:31:44"
+      "first_seen": "2026-09-09T09:31:47"
     },
     {
       "source": "kicpa_susup",
@@ -1525,25 +1525,6 @@
       "location": "",
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/127054",
-      "dday": -1,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "파트타임",
-      "status": "closed",
-      "is_new": false,
-      "title": "[PKF서현회계법인_광주지점] 2026 신입 공인회계사 채용(정규직, 파트타임)",
-      "company": "서현회계법인",
-      "deadline": "2026-09-08",
-      "posted_date": "2026-09-02",
-      "location": "광주 서구",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788340505502",
       "dday": -1,
       "first_seen": ""
     }

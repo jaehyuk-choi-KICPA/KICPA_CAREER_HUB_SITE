@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-09T13:01:52",
+  "generated_at": "2026-09-09T13:32:00",
   "soon_days": 7,
   "counts": {
-    "total": 82,
-    "open": 58,
+    "total": 83,
+    "open": 59,
     "closed": 24,
-    "new": 11,
+    "new": 12,
     "soon": 23,
     "by_firm": {
       "삼일": 7,
       "삼정": 3,
       "안진": 8,
       "한영": 19,
-      "로컬": 42,
+      "로컬": 43,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 43,
+      "수습CPA": 44,
       "자격무관": 39
     },
     "by_emp_kind": {
       "인턴": 20,
-      "정규직": 44,
+      "정규직": 45,
       "계약직": 10,
       "파트타임": 8
     }
@@ -938,6 +938,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1788916981025",
       "dday": 52,
       "first_seen": "2026-09-09T10:31:51"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[리드넘버 회계법인] 수습 회계사 채용 (연봉 5,400 )",
+      "company": "리드넘버 회계법인",
+      "deadline": "2026-11-30",
+      "posted_date": "2026-09-09",
+      "location": "서울 구로구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788927814710",
+      "dday": 82,
+      "first_seen": "2026-09-09T13:32:00"
     },
     {
       "source": "kicpa_susup",

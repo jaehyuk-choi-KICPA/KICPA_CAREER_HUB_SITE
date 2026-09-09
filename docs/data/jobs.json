@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-09T14:01:46",
+  "generated_at": "2026-09-09T14:31:50",
   "soon_days": 7,
   "counts": {
-    "total": 83,
-    "open": 59,
+    "total": 84,
+    "open": 60,
     "closed": 24,
-    "new": 12,
+    "new": 13,
     "soon": 22,
     "by_firm": {
       "삼일": 7,
       "삼정": 3,
       "안진": 8,
       "한영": 19,
-      "로컬": 43,
+      "로컬": 44,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 44,
+      "수습CPA": 45,
       "자격무관": 39
     },
     "by_emp_kind": {
       "인턴": 20,
-      "정규직": 45,
+      "정규직": 46,
       "계약직": 10,
       "파트타임": 8
     }
@@ -672,6 +672,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788334900143",
       "dday": 16,
       "first_seen": "2026-09-02T17:01:55"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[정동회계법인] 2026년 공인회계사 채용공고 (수습CPA)",
+      "company": "정동회계법인",
+      "deadline": "2026-09-27",
+      "posted_date": "2026-09-09",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788931589242",
+      "dday": 18,
+      "first_seen": "2026-09-09T14:31:50"
     },
     {
       "source": "kicpa_cpa",

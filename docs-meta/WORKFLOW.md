@@ -415,7 +415,7 @@ flowchart LR
 | Headers | `Authorization: Bearer <PAT>` · `Accept: application/vnd.github+json` · `X-GitHub-Api-Version: 2022-11-28` |
 | Body | `{"event_type":"run-all"}` |
 | PAT 권한 | Contents R/W · Actions R/W |
-| PAT 종류·만료 | **fine-grained PAT**(소유자 jaehyuk-choi-KICPA). 현 토큰 만료 **2026-09-17 17:46 UTC(=09-18 02:46 KST)** → 갱신 시 아래 절차 |
+| PAT 종류·만료 | **fine-grained PAT**(소유자 jaehyuk-choi-KICPA). 현 토큰 만료 **2027-09-08 15:00 UTC(=09-09 00:00 KST, 2026-09-09 재발급)** → 갱신 시 아래 절차 |
 | 만료 확인법 | `GET https://api.github.com/user`(Bearer PAT) 응답 헤더 `github-authentication-token-expiration` (값 출력 없이 헤더만 읽기) |
 | 갱신 절차(수동 3곳) | ① GitHub → Settings → Developer settings → Fine-grained tokens → **Regenerate**(권한 Contents R/W·Actions R/W 유지, 만료 최대) → ② **cron-job.org 잡 → Advanced → Headers의 Bearer 값 교체 → Execute now** → ③ 로컬 `~/.claude/settings.json` MCP `GITHUB_PERSONAL_ACCESS_TOKEN` 교체. **cron-job.org는 자동 갱신 없음**(헤더에 문자열 저장) |
 | 영향 범위 | 만료 시 핑거 401 → run-all 미실행 = **수집·푸시알림 정지**(freshness 1h가 이슈로 감지). Actions 안의 `auto:` 커밋은 `secrets.GITHUB_TOKEN`(자동 발급)이라 **무관** |

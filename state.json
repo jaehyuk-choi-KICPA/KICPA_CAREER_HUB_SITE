@@ -1375,7 +1375,8 @@
     "uid": "kicpa_cpa:1788939850161",
     "first_seen": "2026-09-09T17:01:57",
     "last_seen": "2026-09-09",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-09-09"
   },
   "kicpa_cpa:1788939833618": {
     "source": "kicpa_cpa",
@@ -1393,6 +1394,7 @@
     "uid": "kicpa_cpa:1788939833618",
     "first_seen": "2026-09-09T17:01:57",
     "last_seen": "2026-09-09",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-09-09"
   }
 }

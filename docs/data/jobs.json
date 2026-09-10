@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-10T15:31:47",
+  "generated_at": "2026-09-10T16:01:59",
   "soon_days": 7,
   "counts": {
-    "total": 90,
-    "open": 67,
+    "total": 91,
+    "open": 68,
     "closed": 23,
-    "new": 12,
-    "soon": 23,
+    "new": 13,
+    "soon": 24,
     "by_firm": {
-      "삼일": 5,
+      "삼일": 6,
       "삼정": 4,
       "안진": 9,
       "한영": 21,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 49,
-      "자격무관": 41
+      "자격무관": 42
     },
     "by_emp_kind": {
-      "인턴": 20,
+      "인턴": 21,
       "정규직": 49,
       "계약직": 12,
       "파트타임": 9
@@ -292,6 +292,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/127544",
       "dday": 3,
       "first_seen": "2026-09-04T14:32:17"
+    },
+    {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "Public Sector 대학 컨설팅 인턴 채용",
+      "company": "삼일PwC",
+      "deadline": "2026-09-14",
+      "posted_date": "",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://www.pwc.com/kr/ko/career/experienced/r260909.html",
+      "dday": 4,
+      "first_seen": "2026-09-10T16:01:59"
     },
     {
       "source": "hanyoung",

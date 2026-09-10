@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-10T17:31:44",
+  "generated_at": "2026-09-10T18:01:51",
   "soon_days": 7,
   "counts": {
-    "total": 91,
-    "open": 68,
+    "total": 92,
+    "open": 69,
     "closed": 23,
     "new": 11,
     "soon": 24,
     "by_firm": {
       "삼일": 6,
       "삼정": 4,
-      "안진": 9,
+      "안진": 10,
       "한영": 21,
       "로컬": 48,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 49,
-      "자격무관": 42
+      "자격무관": 43
     },
     "by_emp_kind": {
       "인턴": 21,
-      "정규직": 49,
+      "정규직": 50,
       "계약직": 12,
       "파트타임": 9
     }
@@ -634,6 +634,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789003869019",
       "dday": 8,
       "first_seen": "2026-09-10T10:31:41"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": false,
+      "title": "회계감사부문 품질관리실 GAAS팀 admin",
+      "company": "딜로이트 안진",
+      "deadline": "2026-09-23",
+      "posted_date": "2026-08-07",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5166",
+      "dday": 13,
+      "first_seen": "2026-09-10T18:01:51"
     },
     {
       "source": "anjin",

@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-09-10T20:31:46",
+  "generated_at": "2026-09-10T21:02:07",
   "soon_days": 7,
   "counts": {
-    "total": 92,
-    "open": 69,
+    "total": 93,
+    "open": 70,
     "closed": 23,
-    "new": 8,
-    "soon": 24,
+    "new": 9,
+    "soon": 25,
     "by_firm": {
       "삼일": 6,
       "삼정": 4,
       "안진": 10,
       "한영": 21,
-      "로컬": 48,
+      "로컬": 49,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 49,
+      "수습CPA": 50,
       "자격무관": 43
     },
     "by_emp_kind": {
       "인턴": 21,
       "정규직": 50,
       "계약직": 12,
-      "파트타임": 9
+      "파트타임": 10
     }
   },
   "postings": [
@@ -482,6 +482,25 @@
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000927&receive_div_cd=N",
       "dday": 6,
       "first_seen": "2026-09-08T17:31:46"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[현대회계법인] 감사부문 신입(파트타임) 공인회계사 채용",
+      "company": "현대회계법인",
+      "deadline": "2026-09-17",
+      "posted_date": "2026-09-10",
+      "location": "서울 전체",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789040406185",
+      "dday": 7,
+      "first_seen": "2026-09-10T21:02:07"
     },
     {
       "source": "kicpa_cpa",

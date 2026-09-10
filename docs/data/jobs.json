@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-09-10T10:31:41",
+  "generated_at": "2026-09-10T11:01:56",
   "soon_days": 7,
   "counts": {
-    "total": 87,
-    "open": 63,
+    "total": 88,
+    "open": 64,
     "closed": 24,
-    "new": 14,
+    "new": 13,
     "soon": 21,
     "by_firm": {
       "삼일": 5,
       "삼정": 4,
-      "안진": 8,
+      "안진": 9,
       "한영": 19,
       "로컬": 48,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 49,
-      "자격무관": 38
+      "자격무관": 39
     },
     "by_emp_kind": {
       "인턴": 18,
       "정규직": 49,
-      "계약직": 11,
+      "계약직": 12,
       "파트타임": 9
     }
   },
@@ -396,7 +396,7 @@
       "qualification": "수습CPA",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "해외지사 회계기장 서비스",
       "company": "제이비씨세무회계컨설팅",
       "deadline": "2026-09-15",
@@ -978,6 +978,25 @@
       "first_seen": "2026-09-08T17:31:46"
     },
     {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "Digital Assurance IT Specialist 경력/신입 계약직(정규직 전환형)",
+      "company": "딜로이트 안진",
+      "deadline": "2026-10-08",
+      "posted_date": "2026-09-10",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5189",
+      "dday": 28,
+      "first_seen": "2026-09-10T11:01:56"
+    },
+    {
       "source": "kicpa_cpa",
       "source_label": "구인(CPA)",
       "firm": "로컬",
@@ -1042,7 +1061,7 @@
       "qualification": "자격무관",
       "emp_kind": "계약직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "출산/육아휴직 대체 근로자 채용(1년 근무)",
       "company": "한길회계법인",
       "deadline": "2026-10-31",

@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-09-10T10:01:47",
+  "generated_at": "2026-09-10T10:31:41",
   "soon_days": 7,
   "counts": {
-    "total": 86,
-    "open": 62,
+    "total": 87,
+    "open": 63,
     "closed": 24,
-    "new": 13,
+    "new": 14,
     "soon": 21,
     "by_firm": {
       "삼일": 5,
       "삼정": 4,
       "안진": 8,
       "한영": 19,
-      "로컬": 47,
+      "로컬": 48,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 48,
+      "수습CPA": 49,
       "자격무관": 38
     },
     "by_emp_kind": {
       "인턴": 18,
       "정규직": 49,
       "계약직": 11,
-      "파트타임": 8
+      "파트타임": 9
     }
   },
   "postings": [
@@ -558,6 +558,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1788939850161",
       "dday": 8,
       "first_seen": "2026-09-09T17:01:57"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "파트타임수습회계사 모집",
+      "company": "신한회계법인",
+      "deadline": "2026-09-18",
+      "posted_date": "2026-09-10",
+      "location": "경기 안산시 단원구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789003869019",
+      "dday": 8,
+      "first_seen": "2026-09-10T10:31:41"
     },
     {
       "source": "anjin",

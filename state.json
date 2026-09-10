@@ -352,7 +352,8 @@
     "uid": "kicpa_cpa:1787214389844",
     "first_seen": "2026-09-10T15:31:47",
     "last_seen": "2026-09-10",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-09-10"
   },
   "kicpa_susup:1787472623099": {
     "source": "kicpa_susup",
@@ -1525,6 +1526,7 @@
     "uid": "hanyoung:128101",
     "first_seen": "2026-09-10T15:31:47",
     "last_seen": "2026-09-10",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-09-10"
   }
 }

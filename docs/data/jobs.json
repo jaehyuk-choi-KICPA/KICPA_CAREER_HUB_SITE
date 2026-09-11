@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-09-11T15:01:50",
+  "generated_at": "2026-09-11T15:31:58",
   "soon_days": 7,
   "counts": {
-    "total": 93,
-    "open": 65,
+    "total": 94,
+    "open": 66,
     "closed": 28,
-    "new": 9,
-    "soon": 26,
+    "new": 8,
+    "soon": 27,
     "by_firm": {
       "삼일": 5,
       "삼정": 4,
       "안진": 10,
       "한영": 20,
-      "로컬": 51,
+      "로컬": 52,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 52,
+      "수습CPA": 53,
       "자격무관": 41
     },
     "by_emp_kind": {
       "인턴": 19,
       "정규직": 50,
       "계약직": 13,
-      "파트타임": 11
+      "파트타임": 12
     }
   },
   "postings": [
@@ -206,7 +206,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "감사부문 디지털 감사 AI 리스크 분석 인턴 (전환형)",
       "company": "EY한영",
       "deadline": "2026-09-14",
@@ -501,6 +501,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789003869019",
       "dday": 7,
       "first_seen": "2026-09-10T10:31:41"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[삼덕회계법인] 수습공인회계사(파트타임 또는 풀타임) 모집의 건",
+      "company": "삼덕회계법인",
+      "deadline": "2026-09-18",
+      "posted_date": "2026-09-11",
+      "location": "서울 전체",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789106953898",
+      "dday": 7,
+      "first_seen": "2026-09-11T15:31:58"
     },
     {
       "source": "kicpa_cpa",
@@ -1099,7 +1118,7 @@
       "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[BDO성현회계법인] 외국계회사 아웃소싱 직원 채용",
       "company": "성현회계법인",
       "deadline": "2026-10-31",

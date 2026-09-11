@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T09:02:01",
+  "generated_at": "2026-09-11T09:31:40",
   "items": [
     {
       "source": "gnews_감사_2",
@@ -88,8 +88,18 @@
       ]
     },
     {
+      "source": "gnews_세무",
+      "source_label": "realty.chosun.com",
+      "title": "오너일가 법인명의 '황제 사택' 사용했다간…법인세·종소세·가산세 '3중 폭탄'",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1SdkRXQlc0T294UTU1Z2oyQVZmLUl1WVlPQ0dsYm16dFh3U2dLcnZvNUp1dEZ6TV80NmtFQWhnZnQ5UEVubjdQZnFFUVloMU1FVUNLdnQ4OEl4U2h0d1ZHb3AwdTN0cW1GNEJQZWpkc0xMT3A2UXcxbW9LbVJHeFnSAXNBVV95cUxOX3ZzSUd3YnFjcUkwLUlLSElVbmtzOGFiclhuSnM1dUU1cGtTYmdfMVpvRHFFbkkxMk82MUY1SVgyZGFDYm01T1F1ZVJqNVROZldEal9TZU5MU2hKbWpFR1FwNTNYNkpxclJxcURoNnk1QVdr?oc=5",
+      "published": "2026-09-10",
+      "published_at": "2026-09-10T21:00:00",
+      "summary": "",
+      "category": "세무"
+    },
+    {
       "source": "gnews_감사_2",
-      "source_label": "KBS 뉴스",
+      "source_label": "news.kbs.co.kr",
       "title": "잦은 사업 이월, ‘회계처리 부적정’ 도마",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9oVGJPNWEyS3AyUE1VckNQY1I0cWF6dGxRQ0szdjIzc2doUV8wLUc5YXlFdGhObUpxMlB5RnlnWC1LWmtvLWZ2NlZ1aElhb2d6aXdZTmo5NDlTODZNLUg3czlXeTFRdw?oc=5",
       "published": "2026-09-10",
@@ -298,16 +308,6 @@
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1JS0wtUWRIZFdTd0RTblc5RmNZZ0FPZVBmR01XYllOUi1iM3hEVm1uaFozTTF3ZnFSSDI0MGVMd21NQTBnZERVdjRWdFpJS2Q2YUZSQmpJckJMTklLaXZDTTFyLVM2Nk9GUS1iNTVJZw?oc=5",
       "published": "2026-09-09",
       "published_at": "2026-09-09T22:00:00",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "elderlypress.co.kr",
-      "title": "[박효정 회계사의 숫자로 읽는 정비사업] 1. 왜 조합원 지분 초과분은 부가가치세를 안 낼까?",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5Hc0dJUVRwblByVGVjRmFJaFU3V1J1Q0FXNnRMaWhLMm5iazVpaDE3M3ZVQVRCUTNyOHZLbFU1b21ySHF3SnV4MUpraXIxTzF4YllPOHA1UjlhdzVYVlFXSUNPVzh1Nmk0OU9FNmcwLVFBUQ?oc=5",
-      "published": "2026-09-09",
-      "published_at": "2026-09-09T21:00:00",
       "summary": "",
       "category": "세무"
     },
@@ -555,7 +555,7 @@
     },
     {
       "source": "gnews_감사",
-      "source_label": "mk.co.kr",
+      "source_label": "매일경제",
       "title": "한국회계기준원 “지속가능성 공시 이행지원 강화”…2028년 법정공시 논의",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0ySnFheVdTSjNBbDdVQWpuMG15czR2THlscVd2NWRSSERyVmp5MHYyU0NTd1QwTTdlVTJvSmxyWldSM1J2TU0zSEhpM0tMRGxNOVE?oc=5",
       "published": "2026-09-07",
@@ -635,7 +635,7 @@
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "KBS 뉴스",
+      "source_label": "news.kbs.co.kr",
       "title": "강원경제진흥원 “기업 회계 처리상의 부채”",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1Cb1B6ZG1seW1YTVNNZzdiQ2IyV3VyckVGVGpicE5VNXNjNk9VUGlPVk5DTUtKUU9rNEhpZGNwcTRYaVJseHNDT1FWcHhNV3A4RGZxMkp2MWZUbVE?oc=5",
       "published": "2026-09-07",
@@ -700,7 +700,7 @@
         {
           "title": "회계기준 바꿨더니 영업익 118억 늘었다…내년 기업 실적 '착시' 주의보",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1FbHU2bnhJaFdQaG5DTXFtWXhQRFhYRExqM2xDREpzT1dYb3BUOGxId1ZKbGJ0U3B4bk1MTmdpSU5yRzNQOHNBR1ZzN3Q2TXR3U1V3SEFKU1pQdw?oc=5",
-          "source_label": "fnnews.com",
+          "source_label": "파이낸셜뉴스",
           "published": "2026-09-02"
         },
         {
@@ -864,7 +864,7 @@
         {
           "title": "증선위, 금양 '회계기준 위반' 판단…과징금 부과·檢 고발",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE94ZVBfN3dVRTVjRVpIWktUSG9xTFF1Q0RLc3hlTXZsSjdtcWFhdlExVDVERHU1MnBDYVFNWGQxa29CdXlzUDBpTjRieVZxb0kzT0xxVVN5Qno1OFRfR2cw0gFkQVVfeXFMTUpPYndDWUM3aWU4WUtDNmI2bk82VHE2S3I2ckpYYzAwdnJkVFNvQXdNYlFXNy1uN2tvbTZndDRvaHFzTE83SW5lNVpNRHRVNnZQdEMxTG9QcU5YOVFLSjUzN3BKaA?oc=5",
-          "source_label": "뉴스1",
+          "source_label": "news1.kr",
           "published": "2026-09-02"
         },
         {
@@ -877,9 +877,9 @@
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "KBS 뉴스",
+      "source_label": "news.kbs.co.kr",
       "title": "금양, 회계처리 위반…“행정소송 맞대응”",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8yTHV4QVF4ODRCdkZraVFaV0ljWkV1Wk5QOFVQRUF3SEZRaXhrNll0bU9ONkxuZTBzaHhNOUtLTDRXVFR5bFZMWWlTM21YSHRrOVJaTHlabWphRzg?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5ETE5UZmF4MGRmWncyaWdsV1NWX3VmRXk4TXhMNVd4NmEwWnVQWmhaU0hrUWtmMmF6TmpIZmIxTUpNWnVNdzhXdVJqRnF3N2JKaVJNaURjbTNIMTZMajh1WmpVc0NlZw?oc=5",
       "published": "2026-09-02",
       "published_at": "2026-09-02T12:59:00",
       "summary": "",

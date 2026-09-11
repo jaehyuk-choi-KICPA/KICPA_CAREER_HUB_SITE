@@ -1091,7 +1091,8 @@
     "uid": "kicpa_cpa:1788857351032",
     "first_seen": "2026-09-11T11:01:45",
     "last_seen": "2026-09-11",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-09-11"
   },
   "kicpa_susup:1788916302778": {
     "source": "kicpa_susup",
@@ -1469,6 +1470,6 @@
     "uid": "anjin:5145",
     "first_seen": "2026-09-11T11:01:45",
     "last_seen": "2026-09-11",
-    "notified": false
+    "notified": true
   }
 }

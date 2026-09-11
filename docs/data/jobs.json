@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-09-11T17:01:58",
+  "generated_at": "2026-09-11T17:31:52",
   "soon_days": 7,
   "counts": {
-    "total": 94,
-    "open": 66,
+    "total": 95,
+    "open": 67,
     "closed": 28,
-    "new": 7,
+    "new": 8,
     "soon": 27,
     "by_firm": {
       "삼일": 5,
       "삼정": 4,
       "안진": 10,
       "한영": 20,
-      "로컬": 52,
+      "로컬": 53,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 53,
-      "자격무관": 41
+      "자격무관": 42
     },
     "by_emp_kind": {
       "인턴": 19,
       "정규직": 50,
-      "계약직": 13,
+      "계약직": 14,
       "파트타임": 12
     }
   },
@@ -919,6 +919,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789009011835",
       "dday": 19,
       "first_seen": "2026-09-10T12:01:53"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "기장 사무장 초빙",
+      "company": "삼지회계법인 전주지점",
+      "deadline": "2026-09-30",
+      "posted_date": "2026-09-11",
+      "location": "전북 전주시 완산구",
+      "emp_type": "계약직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1789114069179",
+      "dday": 19,
+      "first_seen": "2026-09-11T17:31:52"
     },
     {
       "source": "kicpa_cpa",

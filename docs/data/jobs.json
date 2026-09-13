@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-13T17:31:42",
+  "generated_at": "2026-09-13T18:31:46",
   "soon_days": 7,
   "counts": {
-    "total": 89,
-    "open": 63,
+    "total": 90,
+    "open": 64,
     "closed": 26,
-    "new": 0,
+    "new": 1,
     "soon": 25,
     "by_firm": {
       "삼일": 5,
       "삼정": 3,
       "안진": 10,
       "한영": 20,
-      "로컬": 48,
+      "로컬": 49,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 49,
+      "수습CPA": 50,
       "자격무관": 40
     },
     "by_emp_kind": {
       "인턴": 19,
-      "정규직": 47,
+      "정규직": 48,
       "계약직": 12,
       "파트타임": 11
     }
@@ -862,6 +862,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1789114069179",
       "dday": 17,
       "first_seen": "2026-09-11T17:31:52"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "도담회계법인 강남지점 수습회계사",
+      "company": "도담회계법인",
+      "deadline": "2026-09-30",
+      "posted_date": "2026-09-13",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789290537041",
+      "dday": 17,
+      "first_seen": "2026-09-13T18:31:46"
     },
     {
       "source": "kicpa_cpa",

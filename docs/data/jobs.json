@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-09-14T10:01:44",
+  "generated_at": "2026-09-14T10:31:52",
   "soon_days": 7,
   "counts": {
-    "total": 88,
-    "open": 61,
+    "total": 90,
+    "open": 63,
     "closed": 27,
-    "new": 3,
-    "soon": 22,
+    "new": 5,
+    "soon": 24,
     "by_firm": {
       "삼일": 5,
       "삼정": 3,
       "안진": 10,
       "한영": 19,
-      "로컬": 49,
+      "로컬": 51,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 49,
+      "수습CPA": 51,
       "자격무관": 39
     },
     "by_emp_kind": {
       "인턴": 17,
-      "정규직": 48,
+      "정규직": 49,
       "계약직": 12,
-      "파트타임": 11
+      "파트타임": 12
     }
   },
   "postings": [
@@ -102,6 +102,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/128101",
       "dday": 0,
       "first_seen": "2026-09-10T15:31:47"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[율성회계법인] 수습회계사님 모십니다.",
+      "company": "율성회계법인",
+      "deadline": "2026-09-14",
+      "posted_date": "2026-09-14",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789348672745",
+      "dday": 0,
+      "first_seen": "2026-09-14T10:31:52"
     },
     {
       "source": "kicpa_susup",
@@ -444,6 +463,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1788857351032",
       "dday": 4,
       "first_seen": "2026-09-11T11:01:45"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[미래회계법인] ACS본부 신입공인회계사[part time] 채용",
+      "company": "미래회계법인",
+      "deadline": "2026-09-18",
+      "posted_date": "2026-09-14",
+      "location": "경기 수원시 영통구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789347732531",
+      "dday": 4,
+      "first_seen": "2026-09-14T10:31:52"
     },
     {
       "source": "anjin",

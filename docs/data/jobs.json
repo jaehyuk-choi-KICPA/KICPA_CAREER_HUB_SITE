@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-14T14:31:44",
+  "generated_at": "2026-09-14T15:01:51",
   "soon_days": 7,
   "counts": {
-    "total": 91,
-    "open": 65,
+    "total": 92,
+    "open": 66,
     "closed": 26,
-    "new": 7,
+    "new": 8,
     "soon": 24,
     "by_firm": {
-      "삼일": 5,
+      "삼일": 6,
       "삼정": 3,
       "안진": 10,
       "한영": 19,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 52,
-      "자격무관": 39
+      "자격무관": 40
     },
     "by_emp_kind": {
-      "인턴": 17,
+      "인턴": 18,
       "정규직": 50,
       "계약직": 12,
       "파트타임": 12
@@ -596,6 +596,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788334900143",
       "dday": 11,
       "first_seen": "2026-09-02T17:01:55"
+    },
+    {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "Sustainability team RA(Research Assistant) 모집",
+      "company": "삼일PwC",
+      "deadline": "2026-09-27",
+      "posted_date": "",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://www.pwc.com/kr/ko/career/experienced/r260911.html",
+      "dday": 13,
+      "first_seen": "2026-09-14T15:01:51"
     },
     {
       "source": "kicpa_susup",

@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-09-14T15:01:51",
+  "generated_at": "2026-09-14T15:31:47",
   "soon_days": 7,
   "counts": {
-    "total": 92,
-    "open": 66,
+    "total": 93,
+    "open": 67,
     "closed": 26,
-    "new": 8,
+    "new": 9,
     "soon": 24,
     "by_firm": {
       "삼일": 6,
       "삼정": 3,
       "안진": 10,
       "한영": 19,
-      "로컬": 52,
+      "로컬": 53,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 52,
+      "수습CPA": 53,
       "자격무관": 40
     },
     "by_emp_kind": {
       "인턴": 18,
       "정규직": 50,
       "계약직": 12,
-      "파트타임": 12
+      "파트타임": 13
     }
   },
   "postings": [
@@ -902,6 +902,25 @@
       "first_seen": "2026-09-13T18:31:46"
     },
     {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[대현회계법인] 신입회계사 모집공고",
+      "company": "대현회계법인",
+      "deadline": "2026-09-30",
+      "posted_date": "2026-09-14",
+      "location": "서울 광진구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789366052335",
+      "dday": 16,
+      "first_seen": "2026-09-14T15:31:47"
+    },
+    {
       "source": "kicpa_cpa",
       "source_label": "구인(CPA)",
       "firm": "로컬",
@@ -1040,18 +1059,18 @@
       "firm": "로컬",
       "field": "감사",
       "qualification": "수습CPA",
-      "emp_kind": "정규직",
+      "emp_kind": "파트타임",
       "status": "open",
       "is_new": true,
-      "title": "[대경회계법인] 신입회계사 모집공고",
-      "company": "대경회계법인",
+      "title": "[삼덕회계법인][송파지점] 파트타임 수습회계사 채용 공고",
+      "company": "삼덕회계법인",
       "deadline": "2026-10-30",
       "posted_date": "2026-09-14",
-      "location": "대구 전체",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789361360239",
+      "location": "서울 송파구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789365819572",
       "dday": 46,
-      "first_seen": "2026-09-14T14:01:51"
+      "first_seen": "2026-09-14T15:31:47"
     },
     {
       "source": "kicpa_susup",

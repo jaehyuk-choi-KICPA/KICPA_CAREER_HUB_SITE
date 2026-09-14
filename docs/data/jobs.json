@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-14T17:31:49",
+  "generated_at": "2026-09-14T18:01:50",
   "soon_days": 7,
   "counts": {
-    "total": 93,
-    "open": 67,
+    "total": 94,
+    "open": 68,
     "closed": 26,
-    "new": 9,
+    "new": 10,
     "soon": 25,
     "by_firm": {
       "삼일": 6,
       "삼정": 3,
       "안진": 10,
-      "한영": 19,
+      "한영": 20,
       "로컬": 53,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 53,
-      "자격무관": 40
+      "자격무관": 41
     },
     "by_emp_kind": {
       "인턴": 18,
-      "정규직": 50,
+      "정규직": 51,
       "계약직": 12,
       "파트타임": 13
     }
@@ -634,6 +634,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788931589242",
       "dday": 13,
       "first_seen": "2026-09-09T14:31:50"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "EY-Parthenon Strategy 팀 신입/경력직 컨설턴트",
+      "company": "EY한영",
+      "deadline": "2026-09-27",
+      "posted_date": "2026-09-14",
+      "location": "",
+      "emp_type": "분야별 상이",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/128418",
+      "dday": 13,
+      "first_seen": "2026-09-14T18:01:50"
     },
     {
       "source": "kicpa_susup",

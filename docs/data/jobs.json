@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-15T18:01:48",
+  "generated_at": "2026-09-15T18:31:45",
   "soon_days": 7,
   "counts": {
-    "total": 93,
-    "open": 70,
+    "total": 94,
+    "open": 71,
     "closed": 23,
     "new": 12,
     "soon": 21,
@@ -12,18 +12,18 @@
       "삼정": 3,
       "안진": 9,
       "한영": 14,
-      "로컬": 60,
+      "로컬": 61,
       "기타": 1
     },
     "by_qualification": {
-      "수습CPA": 56,
+      "수습CPA": 57,
       "자격무관": 37
     },
     "by_emp_kind": {
       "인턴": 14,
       "정규직": 53,
       "계약직": 11,
-      "파트타임": 15
+      "파트타임": 16
     }
   },
   "postings": [
@@ -586,7 +586,7 @@
       "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "EY-Parthenon Strategy 팀 신입/경력직 컨설턴트",
       "company": "EY한영",
       "deadline": "2026-09-27",
@@ -862,6 +862,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789366052335",
       "dday": 15,
       "first_seen": "2026-09-14T15:31:47"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[회계법인 아성] 2026년 수습공인회계사 Part-time 채용",
+      "company": "회계법인 아성",
+      "deadline": "2026-09-30",
+      "posted_date": "2026-09-15",
+      "location": "서울 강남구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789463128930",
+      "dday": 15,
+      "first_seen": "2026-09-15T18:31:45"
     },
     {
       "source": "kicpa_susup",

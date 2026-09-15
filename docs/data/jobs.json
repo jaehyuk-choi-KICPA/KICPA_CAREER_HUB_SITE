@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-15T15:31:46",
+  "generated_at": "2026-09-15T16:01:46",
   "soon_days": 7,
   "counts": {
     "total": 92,
     "open": 68,
     "closed": 24,
-    "new": 11,
+    "new": 9,
     "soon": 21,
     "by_firm": {
       "삼일": 6,
@@ -852,7 +852,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[대현회계법인] 신입회계사 모집공고",
       "company": "대현회계법인",
       "deadline": "2026-09-30",
@@ -1080,7 +1080,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[삼덕회계법인][송파지점] 파트타임 수습회계사 채용 공고",
       "company": "삼덕회계법인",
       "deadline": "2026-10-30",

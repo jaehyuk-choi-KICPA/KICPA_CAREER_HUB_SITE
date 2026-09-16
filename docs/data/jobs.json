@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-09-16T14:02:09",
+  "generated_at": "2026-09-16T14:31:44",
   "soon_days": 7,
   "counts": {
-    "total": 92,
-    "open": 67,
+    "total": 93,
+    "open": 68,
     "closed": 25,
-    "new": 9,
+    "new": 10,
     "soon": 20,
     "by_firm": {
       "삼일": 6,
       "삼정": 3,
       "안진": 8,
       "한영": 13,
-      "로컬": 61,
+      "로컬": 62,
       "기타": 1
     },
     "by_qualification": {
-      "수습CPA": 57,
+      "수습CPA": 58,
       "자격무관": 35
     },
     "by_emp_kind": {
       "인턴": 13,
       "정규직": 52,
       "계약직": 11,
-      "파트타임": 16
+      "파트타임": 17
     }
   },
   "postings": [
@@ -558,6 +558,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789360325910",
       "dday": 12,
       "first_seen": "2026-09-14T14:01:51"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[예일회계법인] 감사부문 신입회계사(BU4) 채용",
+      "company": "예일회계법인",
+      "deadline": "2026-09-29",
+      "posted_date": "2026-09-16",
+      "location": "서울 서초구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789535291465",
+      "dday": 13,
+      "first_seen": "2026-09-16T14:31:44"
     },
     {
       "source": "anjin",

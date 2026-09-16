@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-09-16T09:31:36",
+  "generated_at": "2026-09-16T10:02:10",
   "soon_days": 7,
   "counts": {
-    "total": 91,
+    "total": 90,
     "open": 65,
-    "closed": 26,
+    "closed": 25,
     "new": 12,
     "soon": 19,
     "by_firm": {
       "삼일": 6,
       "삼정": 3,
       "안진": 8,
-      "한영": 14,
+      "한영": 13,
       "로컬": 59,
       "기타": 1
     },
     "by_qualification": {
       "수습CPA": 55,
-      "자격무관": 36
+      "자격무관": 35
     },
     "by_emp_kind": {
-      "인턴": 14,
+      "인턴": 13,
       "정규직": 50,
       "계약직": 11,
       "파트타임": 16
@@ -1735,25 +1735,6 @@
       "emp_type": "Part Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789348672745",
       "dday": -2,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "컨설팅부문 커머스 데이터 분석 업무 지원 인턴",
-      "company": "EY한영",
-      "deadline": "2026-09-15",
-      "posted_date": "2026-09-08",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/127848",
-      "dday": -1,
       "first_seen": ""
     }
   ]

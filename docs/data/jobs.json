@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-16T15:31:39",
+  "generated_at": "2026-09-16T16:01:49",
   "soon_days": 7,
   "counts": {
-    "total": 93,
-    "open": 68,
+    "total": 94,
+    "open": 69,
     "closed": 25,
-    "new": 9,
+    "new": 10,
     "soon": 20,
     "by_firm": {
       "삼일": 6,
       "삼정": 3,
-      "안진": 8,
+      "안진": 9,
       "한영": 13,
       "로컬": 62,
       "기타": 1
     },
     "by_qualification": {
       "수습CPA": 58,
-      "자격무관": 35
+      "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 13,
-      "정규직": 52,
+      "정규직": 53,
       "계약직": 11,
       "파트타임": 17
     }
@@ -1033,6 +1033,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5189",
       "dday": 22,
       "first_seen": "2026-09-10T11:01:56"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "딜",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "경영자문부문 M&A2 그룹 생명과학 및 헬스케어팀 정규직",
+      "company": "딜로이트 안진",
+      "deadline": "2026-10-15",
+      "posted_date": "2026-09-16",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5191",
+      "dday": 29,
+      "first_seen": "2026-09-16T16:01:49"
     },
     {
       "source": "kicpa_cpa",

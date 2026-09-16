@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-17T00:02:01",
+  "generated_at": "2026-09-17T00:31:48",
   "soon_days": 7,
   "counts": {
-    "total": 92,
-    "open": 67,
+    "total": 93,
+    "open": 68,
     "closed": 25,
-    "new": 6,
-    "soon": 19,
+    "new": 7,
+    "soon": 20,
     "by_firm": {
       "삼일": 6,
       "삼정": 2,
       "안진": 9,
       "한영": 13,
-      "로컬": 61,
+      "로컬": 62,
       "기타": 1
     },
     "by_qualification": {
-      "수습CPA": 57,
+      "수습CPA": 58,
       "자격무관": 35
     },
     "by_emp_kind": {
       "인턴": 13,
-      "정규직": 52,
+      "정규직": 53,
       "계약직": 10,
       "파트타임": 17
     }
@@ -64,6 +64,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/128280",
       "dday": 0,
       "first_seen": "2026-09-11T18:01:55"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[영우회계법인] 2026년 수습회계사 채용 공고",
+      "company": "영우회계법인",
+      "deadline": "2026-09-17",
+      "posted_date": "2026-09-17",
+      "location": "지역무관 지역무관",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789571488112",
+      "dday": 0,
+      "first_seen": "2026-09-17T00:31:48"
     },
     {
       "source": "samil",

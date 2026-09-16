@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-16T13:31:44",
+  "generated_at": "2026-09-16T14:02:09",
   "soon_days": 7,
   "counts": {
-    "total": 91,
-    "open": 66,
+    "total": 92,
+    "open": 67,
     "closed": 25,
-    "new": 11,
+    "new": 9,
     "soon": 20,
     "by_firm": {
       "삼일": 6,
       "삼정": 3,
       "안진": 8,
       "한영": 13,
-      "로컬": 60,
+      "로컬": 61,
       "기타": 1
     },
     "by_qualification": {
-      "수습CPA": 56,
+      "수습CPA": 57,
       "자격무관": 35
     },
     "by_emp_kind": {
       "인턴": 13,
-      "정규직": 51,
+      "정규직": 52,
       "계약직": 11,
       "파트타임": 16
     }
@@ -320,7 +320,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[동성회계법인]수습회계사 풀타임 채용공고 입니다.",
       "company": "동성회계법인",
       "deadline": "2026-09-18",
@@ -795,7 +795,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[새두레회계법인] 수습 공인회계사 채용 공고",
       "company": "새두레회계법인",
       "deadline": "2026-09-30",
@@ -928,7 +928,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[선일회계법인(대구지점)]파트타임 수습회계사 모집 공고",
       "company": "선일회계법인(대구지점)",
       "deadline": "2026-10-02",
@@ -1128,6 +1128,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1787214389844",
       "dday": 45,
       "first_seen": "2026-09-10T15:31:47"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[대성회계법인] 품질관리실 직원 채용",
+      "company": "대성회계법인",
+      "deadline": "2026-10-31",
+      "posted_date": "2026-09-16",
+      "location": "서울 강남구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1789534682594",
+      "dday": 45,
+      "first_seen": "2026-09-16T14:02:09"
     },
     {
       "source": "kicpa_susup",

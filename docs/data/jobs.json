@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-16T23:01:53",
+  "generated_at": "2026-09-16T23:32:12",
   "soon_days": 7,
   "counts": {
     "total": 94,
     "open": 69,
     "closed": 25,
-    "new": 6,
+    "new": 7,
     "soon": 20,
     "by_firm": {
       "삼일": 6,
@@ -997,25 +997,6 @@
       "first_seen": "2026-09-08T10:01:59"
     },
     {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "부산 수습회계사 채용",
-      "company": "이산회계법인",
-      "deadline": "2026-10-08",
-      "posted_date": "2026-09-08",
-      "location": "부산 전체",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788856019467",
-      "dday": 22,
-      "first_seen": "2026-09-08T17:31:46"
-    },
-    {
       "source": "anjin",
       "source_label": "딜로이트안진",
       "firm": "안진",
@@ -1033,6 +1014,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5189",
       "dday": 22,
       "first_seen": "2026-09-10T11:01:56"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "부산 주소 소재 수습회계사 채용",
+      "company": "이산회계법인",
+      "deadline": "2026-10-08",
+      "posted_date": "2026-09-16",
+      "location": "부산 전체",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788856019467",
+      "dday": 22,
+      "first_seen": "2026-09-16T23:32:12"
     },
     {
       "source": "anjin",

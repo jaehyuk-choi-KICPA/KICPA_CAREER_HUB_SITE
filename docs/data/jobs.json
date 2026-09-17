@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-17T13:31:52",
+  "generated_at": "2026-09-17T14:02:25",
   "soon_days": 7,
   "counts": {
-    "total": 97,
-    "open": 72,
+    "total": 98,
+    "open": 73,
     "closed": 25,
     "new": 11,
-    "soon": 22,
+    "soon": 23,
     "by_firm": {
       "삼일": 6,
       "삼정": 2,
       "안진": 10,
       "한영": 13,
-      "로컬": 65,
+      "로컬": 66,
       "기타": 1
     },
     "by_qualification": {
-      "수습CPA": 61,
+      "수습CPA": 62,
       "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 13,
-      "정규직": 56,
+      "정규직": 57,
       "계약직": 10,
       "파트타임": 18
     }
@@ -354,25 +354,6 @@
       "source": "anjin",
       "source_label": "딜로이트안진",
       "firm": "안진",
-      "field": "감사",
-      "qualification": "자격무관",
-      "emp_kind": "계약직",
-      "status": "open",
-      "is_new": false,
-      "title": "회계감사부문 AI Asset & Analytics 개발 직무 계약직 (정규직 전환형)",
-      "company": "딜로이트 안진",
-      "deadline": "2026-09-23",
-      "posted_date": "2026-08-28",
-      "location": "",
-      "emp_type": "",
-      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5182",
-      "dday": 6,
-      "first_seen": "2026-08-28T16:26:54"
-    },
-    {
-      "source": "anjin",
-      "source_label": "딜로이트안진",
-      "firm": "안진",
       "field": "택스",
       "qualification": "자격무관",
       "emp_kind": "인턴",
@@ -387,6 +368,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5181",
       "dday": 6,
       "first_seen": "2026-08-28T16:01:52"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": false,
+      "title": "회계감사부문 AI Asset & Analytics 개발 직무 계약직 (정규직 전환형)",
+      "company": "딜로이트 안진",
+      "deadline": "2026-09-23",
+      "posted_date": "2026-08-28",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5182",
+      "dday": 6,
+      "first_seen": "2026-08-28T16:26:54"
     },
     {
       "source": "kicpa_cpa",
@@ -406,6 +406,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1789457349526",
       "dday": 6,
       "first_seen": "2026-09-15T16:31:39"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[삼덕회계법인] 수습공인회계사를 모집합니다.",
+      "company": "삼덕회계법인",
+      "deadline": "2026-09-23",
+      "posted_date": "2026-09-17",
+      "location": "서울 전체",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789620417054",
+      "dday": 6,
+      "first_seen": "2026-09-17T14:02:25"
     },
     {
       "source": "kicpa_susup",
@@ -1232,7 +1251,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[대성회계법인] 품질관리실 직원 채용",
       "company": "대성회계법인",
       "deadline": "2026-10-31",

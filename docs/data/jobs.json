@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-17T16:31:48",
+  "generated_at": "2026-09-17T17:01:48",
   "soon_days": 7,
   "counts": {
-    "total": 99,
-    "open": 73,
+    "total": 100,
+    "open": 74,
     "closed": 26,
-    "new": 10,
+    "new": 11,
     "soon": 23,
     "by_firm": {
       "삼일": 6,
       "삼정": 2,
       "안진": 11,
       "한영": 13,
-      "로컬": 66,
+      "로컬": 67,
       "기타": 1
     },
     "by_qualification": {
-      "수습CPA": 62,
+      "수습CPA": 63,
       "자격무관": 37
     },
     "by_emp_kind": {
       "인턴": 14,
-      "정규직": 58,
+      "정규직": 59,
       "계약직": 10,
       "파트타임": 17
     }
@@ -1147,6 +1147,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789365819572",
       "dday": 43,
       "first_seen": "2026-09-14T15:31:47"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[이촌회계법인 대전지점] 공인회계사 채용",
+      "company": "이촌회계법인 대전지점",
+      "deadline": "2026-10-30",
+      "posted_date": "2026-09-17",
+      "location": "대전 전체",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789630541529",
+      "dday": 43,
+      "first_seen": "2026-09-17T17:01:48"
     },
     {
       "source": "kicpa_susup",

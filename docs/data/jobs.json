@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-17T18:31:44",
+  "generated_at": "2026-09-17T19:02:22",
   "soon_days": 7,
   "counts": {
-    "total": 100,
-    "open": 74,
+    "total": 101,
+    "open": 75,
     "closed": 26,
-    "new": 11,
+    "new": 12,
     "soon": 22,
     "by_firm": {
       "삼일": 6,
@@ -13,15 +13,15 @@
       "안진": 11,
       "한영": 13,
       "로컬": 67,
-      "기타": 1
+      "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 63,
+      "수습CPA": 64,
       "자격무관": 37
     },
     "by_emp_kind": {
       "인턴": 14,
-      "정규직": 59,
+      "정규직": 60,
       "계약직": 10,
       "파트타임": 17
     }
@@ -1394,6 +1394,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5187",
       "dday": 105,
       "first_seen": "2026-09-08T11:31:44"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "기타",
+      "field": "기타",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[포항공과대학교] 2026 수습회계사 상시채용 공고",
+      "company": "포항공과대학교(POSTECH)",
+      "deadline": "2027-02-28",
+      "posted_date": "2026-09-17",
+      "location": "경북 포항시 남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789638394502",
+      "dday": 164,
+      "first_seen": "2026-09-17T19:02:22"
     },
     {
       "source": "samil",

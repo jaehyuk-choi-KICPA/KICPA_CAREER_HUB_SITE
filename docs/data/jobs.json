@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-17T21:31:41",
+  "generated_at": "2026-09-17T22:01:53",
   "soon_days": 7,
   "counts": {
-    "total": 101,
-    "open": 75,
+    "total": 102,
+    "open": 76,
     "closed": 26,
-    "new": 12,
+    "new": 13,
     "soon": 22,
     "by_firm": {
       "삼일": 6,
       "삼정": 2,
       "안진": 11,
       "한영": 13,
-      "로컬": 67,
+      "로컬": 68,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 64,
-      "자격무관": 37
+      "자격무관": 38
     },
     "by_emp_kind": {
       "인턴": 14,
-      "정규직": 60,
+      "정규직": 61,
       "계약직": 10,
       "파트타임": 17
     }
@@ -1280,6 +1280,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1789534682594",
       "dday": 44,
       "first_seen": "2026-09-16T14:02:09"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "대현회계법인 국제부에서 외국법인 컨설팅 및 장부기장 아우소싱 담당 전문가를 모십니다",
+      "company": "대현회계법인",
+      "deadline": "2026-10-31",
+      "posted_date": "2026-09-17",
+      "location": "서울 전체",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1789649414033",
+      "dday": 44,
+      "first_seen": "2026-09-17T22:01:53"
     },
     {
       "source": "kicpa_susup",

@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-09-17T16:01:48",
+  "generated_at": "2026-09-17T16:31:48",
   "soon_days": 7,
   "counts": {
-    "total": 98,
+    "total": 99,
     "open": 73,
-    "closed": 25,
+    "closed": 26,
     "new": 10,
     "soon": 23,
     "by_firm": {
       "삼일": 6,
       "삼정": 2,
-      "안진": 10,
+      "안진": 11,
       "한영": 13,
       "로컬": 66,
       "기타": 1
     },
     "by_qualification": {
       "수습CPA": 62,
-      "자격무관": 36
+      "자격무관": 37
     },
     "by_emp_kind": {
-      "인턴": 13,
-      "정규직": 57,
+      "인턴": 14,
+      "정규직": 58,
       "계약직": 10,
-      "파트타임": 18
+      "파트타임": 17
     }
   },
   "postings": [
@@ -717,25 +717,6 @@
       "firm": "로컬",
       "field": "감사",
       "qualification": "수습CPA",
-      "emp_kind": "파트타임",
-      "status": "open",
-      "is_new": false,
-      "title": "수습회계사 모집",
-      "company": "세영회계법인",
-      "deadline": "2026-09-30",
-      "posted_date": "2026-09-07",
-      "location": "대구 전체",
-      "emp_type": "Part Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1786096758441",
-      "dday": 13,
-      "first_seen": "2026-09-07T15:01:49"
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
       "is_new": false,
@@ -1099,7 +1080,7 @@
       "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "경영자문부문 M&A2 그룹 생명과학 및 헬스케어팀 정규직",
       "company": "딜로이트 안진",
       "deadline": "2026-10-15",
@@ -1109,6 +1090,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5191",
       "dday": 28,
       "first_seen": "2026-09-16T16:01:49"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "딜",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "경영자문부문 M&A3 인턴십(정규직 전환형)",
+      "company": "딜로이트 안진",
+      "deadline": "2026-10-15",
+      "posted_date": "2026-09-17",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5195",
+      "dday": 28,
+      "first_seen": "2026-09-17T16:31:48"
     },
     {
       "source": "kicpa_cpa",
@@ -1772,6 +1772,25 @@
       "location": "서울 서초구",
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788429655386",
+      "dday": -10,
+      "first_seen": ""
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "closed",
+      "is_new": false,
+      "title": "[안세회계법인] 수습회계사 모집",
+      "company": "안세회계법인",
+      "deadline": "2026-09-07",
+      "posted_date": "2026-09-07",
+      "location": "인천 연수구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788758863033",
       "dday": -10,
       "first_seen": ""
     },

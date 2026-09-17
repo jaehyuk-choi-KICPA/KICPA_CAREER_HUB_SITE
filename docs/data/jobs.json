@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-09-17T10:31:38",
+  "generated_at": "2026-09-17T11:01:46",
   "soon_days": 7,
   "counts": {
-    "total": 94,
-    "open": 69,
+    "total": 96,
+    "open": 71,
     "closed": 25,
-    "new": 8,
-    "soon": 21,
+    "new": 10,
+    "soon": 22,
     "by_firm": {
       "삼일": 6,
       "삼정": 2,
       "안진": 9,
       "한영": 13,
-      "로컬": 63,
+      "로컬": 65,
       "기타": 1
     },
     "by_qualification": {
-      "수습CPA": 59,
+      "수습CPA": 61,
       "자격무관": 35
     },
     "by_emp_kind": {
       "인턴": 13,
-      "정규직": 54,
+      "정규직": 55,
       "계약직": 10,
-      "파트타임": 17
+      "파트타임": 18
     }
   },
   "postings": [
@@ -64,6 +64,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/128280",
       "dday": 0,
       "first_seen": "2026-09-11T18:01:55"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[삼도회계법인] 수습공인회계사(Part Time) 채용",
+      "company": "삼도회계법인",
+      "deadline": "2026-09-17",
+      "posted_date": "2026-09-17",
+      "location": "서울 전체",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789609754165",
+      "dday": 0,
+      "first_seen": "2026-09-17T11:01:46"
     },
     {
       "source": "kicpa_susup",
@@ -1090,6 +1109,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789365819572",
       "dday": 43,
       "first_seen": "2026-09-14T15:31:47"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[이촌회계법인 부산지점] 2026년 신입공인회계사 채용 공고",
+      "company": "이촌회계법인(부산지점)",
+      "deadline": "2026-10-30",
+      "posted_date": "2026-09-17",
+      "location": "부산 해운대구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789609640738",
+      "dday": 43,
+      "first_seen": "2026-09-17T11:01:46"
     },
     {
       "source": "kicpa_susup",

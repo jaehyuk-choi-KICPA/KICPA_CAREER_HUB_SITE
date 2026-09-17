@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-17T17:31:45",
+  "generated_at": "2026-09-17T18:01:46",
   "soon_days": 7,
   "counts": {
     "total": 100,
     "open": 74,
     "closed": 26,
     "new": 11,
-    "soon": 23,
+    "soon": 22,
     "by_firm": {
       "삼일": 6,
       "삼정": 2,
@@ -83,25 +83,6 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789571488112",
       "dday": 0,
       "first_seen": "2026-09-17T00:31:48"
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "파트타임",
-      "status": "open",
-      "is_new": true,
-      "title": "[삼도회계법인] 수습공인회계사(Part Time) 채용",
-      "company": "삼도회계법인",
-      "deadline": "2026-09-17",
-      "posted_date": "2026-09-17",
-      "location": "서울 전체",
-      "emp_type": "Part Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789609754165",
-      "dday": 0,
-      "first_seen": "2026-09-17T11:01:46"
     },
     {
       "source": "samil",
@@ -1014,6 +995,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1789457810457",
       "dday": 17,
       "first_seen": "2026-09-15T17:01:48"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[선영회계법인] 수습공인회계사(Part-time) 채용",
+      "company": "선영회계법인",
+      "deadline": "2026-10-05",
+      "posted_date": "2026-09-17",
+      "location": "서울 전체",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789633976267",
+      "dday": 18,
+      "first_seen": "2026-09-17T18:01:46"
     },
     {
       "source": "anjin",

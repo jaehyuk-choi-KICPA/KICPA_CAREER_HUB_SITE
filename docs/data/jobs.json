@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-18T18:01:52",
+  "generated_at": "2026-09-18T18:31:47",
   "soon_days": 7,
   "counts": {
-    "total": 103,
-    "open": 74,
+    "total": 104,
+    "open": 75,
     "closed": 29,
-    "new": 11,
+    "new": 12,
     "soon": 18,
     "by_firm": {
-      "삼일": 6,
+      "삼일": 7,
       "삼정": 2,
       "안진": 11,
       "한영": 13,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 66,
-      "자격무관": 37
+      "자격무관": 38
     },
     "by_emp_kind": {
-      "인턴": 14,
+      "인턴": 15,
       "정규직": 64,
       "계약직": 9,
       "파트타임": 16
@@ -368,6 +368,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788334900143",
       "dday": 7,
       "first_seen": "2026-09-02T17:01:55"
+    },
+    {
+      "source": "samil",
+      "source_label": "삼일PwC",
+      "firm": "삼일",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "조직문화 데이터 & 소통 플랫폼 지원 인턴 채용",
+      "company": "삼일PwC",
+      "deadline": "2026-09-27",
+      "posted_date": "",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://www.pwc.com/kr/ko/career/experienced/r260918.html",
+      "dday": 9,
+      "first_seen": "2026-09-18T18:31:47"
     },
     {
       "source": "samil",

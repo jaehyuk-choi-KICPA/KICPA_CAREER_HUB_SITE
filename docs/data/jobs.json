@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-18T11:01:50",
+  "generated_at": "2026-09-18T11:31:39",
   "soon_days": 7,
   "counts": {
-    "total": 101,
-    "open": 72,
+    "total": 102,
+    "open": 73,
     "closed": 29,
-    "new": 12,
+    "new": 13,
     "soon": 19,
     "by_firm": {
       "삼일": 6,
       "삼정": 2,
       "안진": 11,
       "한영": 13,
-      "로컬": 67,
+      "로컬": 68,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 64,
+      "수습CPA": 65,
       "자격무관": 37
     },
     "by_emp_kind": {
       "인턴": 14,
-      "정규직": 61,
+      "정규직": 62,
       "계약직": 10,
       "파트타임": 16
     }
@@ -1337,6 +1337,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5187",
       "dday": 104,
       "first_seen": "2026-09-08T11:31:44"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[회계법인 베율] 6본부 수습 공인회계사 채용",
+      "company": "회계법인 베율",
+      "deadline": "2027-01-31",
+      "posted_date": "2026-09-18",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789697446761",
+      "dday": 135,
+      "first_seen": "2026-09-18T11:31:39"
     },
     {
       "source": "kicpa_susup",

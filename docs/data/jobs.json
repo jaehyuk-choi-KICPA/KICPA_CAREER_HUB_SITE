@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-18T14:31:48",
+  "generated_at": "2026-09-18T15:01:51",
   "soon_days": 7,
   "counts": {
-    "total": 102,
-    "open": 73,
+    "total": 103,
+    "open": 74,
     "closed": 29,
-    "new": 11,
+    "new": 12,
     "soon": 19,
     "by_firm": {
       "삼일": 6,
       "삼정": 2,
       "안진": 11,
       "한영": 13,
-      "로컬": 68,
+      "로컬": 69,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 65,
+      "수습CPA": 66,
       "자격무관": 37
     },
     "by_emp_kind": {
       "인턴": 14,
-      "정규직": 62,
+      "정규직": 63,
       "계약직": 10,
       "파트타임": 16
     }
@@ -900,6 +900,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789447555850",
       "dday": 14,
       "first_seen": "2026-09-18T09:31:44"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[예지회계법인] 신규 컨설턴트 채용",
+      "company": "예지회계법인",
+      "deadline": "2026-10-02",
+      "posted_date": "2026-09-18",
+      "location": "서울 강남구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1789710061010",
+      "dday": 14,
+      "first_seen": "2026-09-18T15:01:51"
     },
     {
       "source": "kicpa_cpa",

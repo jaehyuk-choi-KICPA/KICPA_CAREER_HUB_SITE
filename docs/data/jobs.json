@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-18T09:02:02",
+  "generated_at": "2026-09-18T09:31:44",
   "soon_days": 7,
   "counts": {
-    "total": 100,
-    "open": 71,
+    "total": 101,
+    "open": 72,
     "closed": 29,
-    "new": 12,
-    "soon": 19,
+    "new": 14,
+    "soon": 20,
     "by_firm": {
       "삼일": 6,
       "삼정": 2,
       "안진": 11,
       "한영": 13,
-      "로컬": 66,
+      "로컬": 67,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 63,
+      "수습CPA": 64,
       "자격무관": 37
     },
     "by_emp_kind": {
       "인턴": 14,
-      "정규직": 60,
+      "정규직": 61,
       "계약직": 10,
       "파트타임": 16
     }
@@ -235,6 +235,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789447506733",
       "dday": 0,
       "first_seen": "2026-09-15T14:01:46"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "(동남회계법인) 2026년 신입 수습회계사 모집의 건",
+      "company": "동남회계법인",
+      "deadline": "2026-09-18",
+      "posted_date": "2026-09-18",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789691431445",
+      "dday": 0,
+      "first_seen": "2026-09-18T09:31:44"
     },
     {
       "source": "anjin",
@@ -837,12 +856,12 @@
       "title": "[이정회계법인] 2026 수습공인회계사 파트타임 채용",
       "company": "이정회계법인",
       "deadline": "2026-10-01",
-      "posted_date": "2026-09-17",
+      "posted_date": "2026-09-18",
       "location": "서울 서초구",
       "emp_type": "Part Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788833972532",
       "dday": 13,
-      "first_seen": "2026-09-17T10:01:50"
+      "first_seen": "2026-09-18T09:31:44"
     },
     {
       "source": "kicpa_susup",
@@ -856,31 +875,12 @@
       "title": "[이정회계법인] 2026 수습공인회계사 풀타임 채용",
       "company": "이정회계법인",
       "deadline": "2026-10-01",
-      "posted_date": "2026-09-17",
+      "posted_date": "2026-09-18",
       "location": "서울 서초구",
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788758572084",
       "dday": 13,
-      "first_seen": "2026-09-17T10:01:50"
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "파트타임",
-      "status": "open",
-      "is_new": false,
-      "title": "[선일회계법인(대구지점)]파트타임 수습회계사 모집 공고",
-      "company": "선일회계법인(대구지점)",
-      "deadline": "2026-10-02",
-      "posted_date": "2026-09-15",
-      "location": "대구 달서구",
-      "emp_type": "Part Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789447555850",
-      "dday": 14,
-      "first_seen": "2026-09-15T14:01:46"
+      "first_seen": "2026-09-18T09:31:44"
     },
     {
       "source": "anjin",
@@ -900,6 +900,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5193",
       "dday": 14,
       "first_seen": "2026-09-17T13:31:52"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[선일회계법인(대구지점)]파트타임 수습회계사 모집 공고",
+      "company": "선일회계법인(대구지점)",
+      "deadline": "2026-10-02",
+      "posted_date": "2026-09-18",
+      "location": "대구 달서구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789447555850",
+      "dday": 14,
+      "first_seen": "2026-09-18T09:31:44"
     },
     {
       "source": "kicpa_cpa",

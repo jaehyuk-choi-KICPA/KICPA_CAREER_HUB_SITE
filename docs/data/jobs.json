@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-18T17:32:46",
+  "generated_at": "2026-09-18T18:01:52",
   "soon_days": 7,
   "counts": {
     "total": 103,
     "open": 74,
     "closed": 29,
     "new": 11,
-    "soon": 19,
+    "soon": 18,
     "by_firm": {
       "삼일": 6,
       "삼정": 2,
@@ -21,8 +21,8 @@
     },
     "by_emp_kind": {
       "인턴": 14,
-      "정규직": 63,
-      "계약직": 10,
+      "정규직": 64,
+      "계약직": 9,
       "파트타임": 16
     }
   },
@@ -140,25 +140,6 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788735856732",
       "dday": 0,
       "first_seen": "2026-09-07T08:31:42"
-    },
-    {
-      "source": "kicpa_cpa",
-      "source_label": "구인(CPA)",
-      "firm": "삼정",
-      "field": "택스",
-      "qualification": "자격무관",
-      "emp_kind": "계약직",
-      "status": "open",
-      "is_new": false,
-      "title": "[삼정KPMG] Tax 5(AAS Fund Service) 신입 및 경력사원 채용",
-      "company": "삼정KPMG",
-      "deadline": "2026-09-18",
-      "posted_date": "2026-09-09",
-      "location": "서울 강남구",
-      "emp_type": "계약직",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1788939850161",
-      "dday": 0,
-      "first_seen": "2026-09-09T17:01:57"
     },
     {
       "source": "kicpa_susup",
@@ -828,6 +809,25 @@
     {
       "source": "kicpa_cpa",
       "source_label": "구인(CPA)",
+      "firm": "삼정",
+      "field": "택스",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[삼정KPMG] Tax 5(AAS Fund Service) 신입 및 경력사원 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-09-30",
+      "posted_date": "2026-09-18",
+      "location": "서울 전체",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1789721388341",
+      "dday": 12,
+      "first_seen": "2026-09-18T18:01:52"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
       "firm": "로컬",
       "field": "감사",
       "qualification": "수습CPA",
@@ -947,7 +947,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[선영회계법인] 수습공인회계사(Part-time) 채용",
       "company": "선영회계법인",
       "deadline": "2026-10-05",

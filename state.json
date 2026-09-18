@@ -656,7 +656,8 @@
     "uid": "kicpa_susup:1788758572084",
     "first_seen": "2026-09-18T09:31:44",
     "last_seen": "2026-09-18",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-09-18"
   },
   "kicpa_susup:1786096758441": {
     "source": "kicpa_susup",
@@ -731,7 +732,8 @@
     "uid": "kicpa_susup:1788833972532",
     "first_seen": "2026-09-18T09:31:44",
     "last_seen": "2026-09-18",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-09-18"
   },
   "anjin:5187": {
     "source": "anjin",
@@ -1356,7 +1358,8 @@
     "uid": "kicpa_susup:1789447555850",
     "first_seen": "2026-09-18T09:31:44",
     "last_seen": "2026-09-18",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-09-18"
   },
   "kicpa_susup:1789447506733": {
     "source": "kicpa_susup",
@@ -1697,6 +1700,7 @@
     "uid": "kicpa_susup:1789691431445",
     "first_seen": "2026-09-18T09:31:44",
     "last_seen": "2026-09-18",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-09-18"
   }
 }

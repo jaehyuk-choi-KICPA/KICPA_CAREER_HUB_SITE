@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-19T14:31:41",
+  "generated_at": "2026-09-19T15:02:02",
   "soon_days": 7,
   "counts": {
     "total": 100,
     "open": 62,
     "closed": 38,
-    "new": 7,
+    "new": 6,
     "soon": 7,
     "by_firm": {
       "삼일": 7,
@@ -700,7 +700,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[예지회계법인] 신규 컨설턴트 채용",
       "company": "예지회계법인",
       "deadline": "2026-10-02",

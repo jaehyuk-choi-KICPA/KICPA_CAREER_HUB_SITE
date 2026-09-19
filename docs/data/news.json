@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T21:31:55",
+  "generated_at": "2026-09-19T22:02:26",
   "items": [
     {
       "source": "gnews_세무",
@@ -146,7 +146,7 @@
         {
           "title": "메리츠증권, 발행어음 9부 능선 넘어…증선위 통과",
           "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE85d3d5SmRZNVBDMGVsSktUM19hNWFkSWdScEt5Vk43Y2lZbGZGS3l4UVlyQ01KN2VDeURMTEl4azJac195WGJjUUgxbkhCTFAwRmlsNGRQZHZXdkZVcFlncU16MFBOaTZLUFNqWXk4VmZZX0FMNUVVdUFYT28?oc=5",
-          "source_label": "fntimes.com",
+          "source_label": "한국금융신문",
           "published": "2026-09-17"
         },
         {
@@ -278,7 +278,7 @@
         {
           "title": "[THE COMPASS] ‘회계처리 위반’ 해태제과식품, 자본시장 왜곡에 시장조달 불안",
           "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFAxeEJFSDRmOGg1VlAxR2pDTndWZDFkaERyMmQ0NGoyRGx0WGthSDFxQ0ZkTGw5TWhYTWFTejlFMkhzYXdEdVJlWWJTRTRfbzdDZU1RenR1TDN5d0o1X0g3OVU2cDczUVBILWFWWWppWTFMZGZzamVPck80NWE?oc=5",
-          "source_label": "fntimes.com",
+          "source_label": "한국금융신문",
           "published": "2026-09-17"
         },
         {
@@ -440,7 +440,7 @@
         {
           "title": "금융당국, 금양 '분식회계 혐의'로 검찰 고발조치",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE4xU3NaZ1RMZTFiVXlKQ0hMM2V6OVBXSEI5ZG0wb0tYZFlEdXhyUGVCSXdTVXlMbWxnN1RyWV9zVm1ULVlaUDdQZDE4TTFTTkxsQ3gxUXJ4NkhFUQ?oc=5",
-          "source_label": "한국경제",
+          "source_label": "hankyung.com",
           "published": "2026-09-02"
         }
       ]
@@ -661,7 +661,7 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "한국경제",
+      "source_label": "hankyung.com",
       "title": "'법인세 0원' 텍사스로…월가 지고 '욜가' 뜬다",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE91MjNnRjExdkRsbHhuV25MSklJWHlyc0dQUEdDSkh4US10dnFDdHo0d1lkMk1ldFlTUVBYaTJ4cTdhWkhrTzdvYzBTU1V2SXdEVDlnRVRleVZzUQ?oc=5",
       "published": "2026-09-16",
@@ -776,7 +776,7 @@
         {
           "title": "법인세 1000억 안 낸 혐의 ‘배민’, 풀무원 등 세무조사",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBPNkU3RkIxc0htcjJ0OG1hckJsV01ibjQyU3hSWnZMRVl3Rkw3SkhCZk1kN2h2WmFCZmpZQ1pkR0d5Szk3Z0tQb0lSeXlMb1VybnRmUFlKbkFhQQ?oc=5",
-          "source_label": "viva100.com",
+          "source_label": "브릿지경제",
           "published": "2026-09-14"
         },
         {
@@ -999,7 +999,15 @@
       "published": "2026-09-04",
       "published_at": "2026-09-04T07:00:00",
       "summary": "",
-      "category": "세무"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "위법한 세무조사에서 파생된 자료, 법적 근거 없다",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9nblMtUVRHRHBFUHNPUXk2d1doMVprQWNnR3k4ODVZai0tZlRnZS1RdGFyWEhyLXkwTFhvS0ZKaDhiXzhPTEczM0dSRTN3UVJWTTc0a0dnOWRPbkUxOW9jQzFMRTk?oc=5",
+          "source_label": "한국세정신문",
+          "published": "2026-09-04"
+        }
+      ]
     },
     {
       "source": "gnews_감사",

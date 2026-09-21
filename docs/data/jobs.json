@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-22T05:31:42",
+  "generated_at": "2026-09-22T06:01:44",
   "soon_days": 7,
   "counts": {
-    "total": 93,
+    "total": 92,
     "open": 60,
-    "closed": 33,
+    "closed": 32,
     "new": 5,
     "soon": 15,
     "by_firm": {
-      "삼일": 7,
+      "삼일": 6,
       "삼정": 2,
       "안진": 10,
       "한영": 12,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 58,
-      "자격무관": 35
+      "자격무관": 34
     },
     "by_emp_kind": {
-      "인턴": 14,
+      "인턴": 13,
       "정규직": 59,
       "계약직": 7,
       "파트타임": 13
@@ -169,15 +169,15 @@
       "emp_kind": "인턴",
       "status": "open",
       "is_new": false,
-      "title": "조직문화 데이터 & 소통 플랫폼 지원 인턴 채용",
+      "title": "Sustainability team RA(Research Assistant) 모집",
       "company": "삼일PwC",
       "deadline": "2026-09-27",
       "posted_date": "",
       "location": "",
       "emp_type": "인턴",
-      "url": "https://www.pwc.com/kr/ko/career/experienced/r260918.html",
+      "url": "https://www.pwc.com/kr/ko/career/experienced/r260911.html",
       "dday": 5,
-      "first_seen": "2026-09-18T18:31:47"
+      "first_seen": "2026-09-14T15:01:51"
     },
     {
       "source": "samil",
@@ -188,15 +188,15 @@
       "emp_kind": "인턴",
       "status": "open",
       "is_new": false,
-      "title": "Sustainability team RA(Research Assistant) 모집",
+      "title": "조직문화 데이터 & 소통 플랫폼 지원 인턴 채용",
       "company": "삼일PwC",
       "deadline": "2026-09-27",
       "posted_date": "",
       "location": "",
       "emp_type": "인턴",
-      "url": "https://www.pwc.com/kr/ko/career/experienced/r260911.html",
+      "url": "https://www.pwc.com/kr/ko/career/experienced/r260918.html",
       "dday": 5,
-      "first_seen": "2026-09-14T15:01:51"
+      "first_seen": "2026-09-18T18:31:47"
     },
     {
       "source": "kicpa_susup",
@@ -1583,25 +1583,6 @@
       "emp_type": "Part Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789348672745",
       "dday": -8,
-      "first_seen": ""
-    },
-    {
-      "source": "samil",
-      "source_label": "삼일PwC",
-      "firm": "삼일",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "Public Sector 대학 컨설팅 인턴 채용",
-      "company": "삼일PwC",
-      "deadline": "2026-09-18",
-      "posted_date": "",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://www.pwc.com/kr/ko/career/experienced/r260909.html",
-      "dday": -4,
       "first_seen": ""
     },
     {

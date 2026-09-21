@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-09-21T16:31:49",
+  "generated_at": "2026-09-21T17:01:54",
   "soon_days": 7,
   "counts": {
-    "total": 96,
+    "total": 95,
     "open": 62,
-    "closed": 34,
+    "closed": 33,
     "new": 5,
-    "soon": 16,
+    "soon": 15,
     "by_firm": {
       "삼일": 7,
       "삼정": 2,
       "안진": 10,
       "한영": 12,
-      "로컬": 63,
+      "로컬": 62,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 60,
+      "수습CPA": 59,
       "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 14,
       "정규직": 60,
-      "계약직": 8,
+      "계약직": 7,
       "파트타임": 14
     }
   },
@@ -159,25 +159,6 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789571488112",
       "dday": 2,
       "first_seen": "2026-09-20T14:01:48"
-    },
-    {
-      "source": "anjin",
-      "source_label": "딜로이트안진",
-      "firm": "안진",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "경영자문부문 I&G 그룹 인프라팀 정규직(Consultant)",
-      "company": "딜로이트 안진",
-      "deadline": "2026-09-24",
-      "posted_date": "2026-07-23",
-      "location": "",
-      "emp_type": "",
-      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5153",
-      "dday": 3,
-      "first_seen": "2026-07-23T16:42:09"
     },
     {
       "source": "kicpa_susup",
@@ -767,6 +748,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5185",
       "dday": 16,
       "first_seen": "2026-09-08T10:01:59"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": false,
+      "title": "경영자문부문 I&G 그룹 인프라팀 정규직(Consultant)",
+      "company": "딜로이트 안진",
+      "deadline": "2026-10-08",
+      "posted_date": "2026-07-23",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5153",
+      "dday": 17,
+      "first_seen": "2026-07-23T16:42:09"
     },
     {
       "source": "anjin",
@@ -1374,25 +1374,6 @@
       "emp_type": "파트타임",
       "url": "https://www.pwc.com/kr/ko/career/2026-kicpa-part-time.html",
       "dday": -39,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "계약직",
-      "status": "closed",
-      "is_new": false,
-      "title": "(대현회계법인)--수습회계사파트타임 모집(계약직)",
-      "company": "대현회게법인",
-      "deadline": "2026-08-31",
-      "posted_date": "2026-09-18",
-      "location": "서울 강남구",
-      "emp_type": "Part Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1786416716338",
-      "dday": -21,
       "first_seen": ""
     },
     {

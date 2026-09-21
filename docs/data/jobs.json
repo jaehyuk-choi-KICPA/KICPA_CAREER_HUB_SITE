@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-21T13:01:47",
+  "generated_at": "2026-09-21T13:32:12",
   "soon_days": 7,
   "counts": {
     "total": 97,
     "open": 62,
     "closed": 35,
-    "new": 5,
+    "new": 6,
     "soon": 16,
     "by_firm": {
       "삼일": 7,
@@ -562,25 +562,6 @@
     {
       "source": "kicpa_cpa",
       "source_label": "구인(CPA)",
-      "firm": "로컬",
-      "field": "택스",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "사생활을 중요시하며 혼밥을 좋아하는 세무대리인을 구인합니다.",
-      "company": "회계법인 리안",
-      "deadline": "2026-09-30",
-      "posted_date": "2026-09-15",
-      "location": "서울 서초구",
-      "emp_type": "정규직",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1788939833618",
-      "dday": 9,
-      "first_seen": "2026-09-15T18:01:48"
-    },
-    {
-      "source": "kicpa_cpa",
-      "source_label": "구인(CPA)",
       "firm": "삼정",
       "field": "택스",
       "qualification": "자격무관",
@@ -596,6 +577,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1789721388341",
       "dday": 9,
       "first_seen": "2026-09-18T18:01:52"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "택스",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "사생활을 중요시하며 혼밥을 좋아하는 세무대리인을 구인합니다.",
+      "company": "회계법인 리안",
+      "deadline": "2026-09-30",
+      "posted_date": "2026-09-21",
+      "location": "서울 서초구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1788939833618",
+      "dday": 9,
+      "first_seen": "2026-09-21T13:32:12"
     },
     {
       "source": "kicpa_cpa",

@@ -1,32 +1,51 @@
 {
-  "generated_at": "2026-09-21T09:31:41",
+  "generated_at": "2026-09-21T10:01:46",
   "soon_days": 7,
   "counts": {
-    "total": 96,
-    "open": 61,
+    "total": 97,
+    "open": 62,
     "closed": 35,
-    "new": 3,
-    "soon": 15,
+    "new": 5,
+    "soon": 16,
     "by_firm": {
       "삼일": 7,
       "삼정": 2,
       "안진": 10,
       "한영": 13,
-      "로컬": 62,
+      "로컬": 63,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 59,
+      "수습CPA": 60,
       "자격무관": 37
     },
     "by_emp_kind": {
       "인턴": 15,
-      "정규직": 59,
+      "정규직": 60,
       "계약직": 8,
       "파트타임": 14
     }
   },
   "postings": [
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[도원회계법인] 파트타임 수습회계사 모집 공고",
+      "company": "도원회계법인",
+      "deadline": "2026-09-21",
+      "posted_date": "2026-09-21",
+      "location": "서울 강남구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789952010420",
+      "dday": 0,
+      "first_seen": "2026-09-21T10:01:46"
+    },
     {
       "source": "anjin",
       "source_label": "딜로이트안진",
@@ -674,25 +693,6 @@
       "first_seen": "2026-09-17T13:31:52"
     },
     {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "파트타임",
-      "status": "open",
-      "is_new": false,
-      "title": "[선일회계법인(대구지점)]파트타임 수습회계사 모집 공고",
-      "company": "선일회계법인(대구지점)",
-      "deadline": "2026-10-02",
-      "posted_date": "2026-09-18",
-      "location": "대구 달서구",
-      "emp_type": "Part Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789447555850",
-      "dday": 11,
-      "first_seen": "2026-09-18T09:31:44"
-    },
-    {
       "source": "kicpa_cpa",
       "source_label": "구인(CPA)",
       "firm": "로컬",
@@ -843,6 +843,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5195",
       "dday": 24,
       "first_seen": "2026-09-17T16:31:48"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[도원회계법인] 풀타임 수습회계사 모집 공고",
+      "company": "도원회계법인",
+      "deadline": "2026-10-21",
+      "posted_date": "2026-09-21",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789951797989",
+      "dday": 30,
+      "first_seen": "2026-09-21T10:01:46"
     },
     {
       "source": "anjin",

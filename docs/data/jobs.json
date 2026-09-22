@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-22T17:31:38",
+  "generated_at": "2026-09-22T18:01:50",
   "soon_days": 7,
   "counts": {
-    "total": 95,
-    "open": 63,
+    "total": 96,
+    "open": 64,
     "closed": 32,
-    "new": 7,
+    "new": 8,
     "soon": 16,
     "by_firm": {
       "삼일": 6,
       "삼정": 2,
       "안진": 11,
       "한영": 13,
-      "로컬": 61,
+      "로컬": 62,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 59,
+      "수습CPA": 60,
       "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 14,
-      "정규직": 60,
+      "정규직": 61,
       "계약직": 7,
       "파트타임": 14
     }
@@ -1052,6 +1052,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1789534682594",
       "dday": 39,
       "first_seen": "2026-09-18T16:31:52"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[태성회계법인] 수습 회계사님들의 열정과 도전을 응원합니다.",
+      "company": "태성회계법인",
+      "deadline": "2026-10-31",
+      "posted_date": "2026-09-22",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790066285388",
+      "dday": 39,
+      "first_seen": "2026-09-22T18:01:50"
     },
     {
       "source": "kicpa_susup",

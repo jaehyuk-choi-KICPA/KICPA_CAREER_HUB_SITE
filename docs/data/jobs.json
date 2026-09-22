@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-09-22T11:01:48",
+  "generated_at": "2026-09-22T11:31:43",
   "soon_days": 7,
   "counts": {
-    "total": 93,
-    "open": 61,
+    "total": 95,
+    "open": 63,
     "closed": 32,
-    "new": 4,
+    "new": 6,
     "soon": 16,
     "by_firm": {
       "삼일": 6,
       "삼정": 2,
-      "안진": 10,
+      "안진": 11,
       "한영": 13,
-      "로컬": 60,
+      "로컬": 61,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 58,
-      "자격무관": 35
+      "수습CPA": 59,
+      "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 14,
-      "정규직": 59,
+      "정규직": 60,
       "계약직": 7,
-      "파트타임": 13
+      "파트타임": 14
     }
   },
   "postings": [
@@ -579,6 +579,25 @@
       "first_seen": "2026-09-22T10:31:41"
     },
     {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "인재부 Talent-Acquisition(채용팀) 대리/과장급 채용",
+      "company": "딜로이트 안진",
+      "deadline": "2026-09-30",
+      "posted_date": "2026-09-22",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5200",
+      "dday": 8,
+      "first_seen": "2026-09-22T11:31:43"
+    },
+    {
       "source": "kicpa_cpa",
       "source_label": "구인(CPA)",
       "firm": "로컬",
@@ -919,6 +938,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789609640738",
       "dday": 38,
       "first_seen": "2026-09-17T11:01:46"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[한미회계법인] CM본부 2026 수습공인회계사 파트타임 채용",
+      "company": "한미회계법인",
+      "deadline": "2026-10-30",
+      "posted_date": "2026-09-22",
+      "location": "서울 강남구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790043577604",
+      "dday": 38,
+      "first_seen": "2026-09-22T11:31:43"
     },
     {
       "source": "kicpa_cpa",

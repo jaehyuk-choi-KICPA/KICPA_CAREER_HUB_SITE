@@ -1643,7 +1643,8 @@
     "uid": "kicpa_susup:1790043577604",
     "first_seen": "2026-09-22T11:31:43",
     "last_seen": "2026-09-22",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-09-22"
   },
   "anjin:5200": {
     "source": "anjin",
@@ -1661,6 +1662,7 @@
     "uid": "anjin:5200",
     "first_seen": "2026-09-22T11:31:43",
     "last_seen": "2026-09-22",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-09-22"
   }
 }

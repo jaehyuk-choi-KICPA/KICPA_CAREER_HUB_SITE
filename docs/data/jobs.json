@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-22T10:02:24",
+  "generated_at": "2026-09-22T10:31:41",
   "soon_days": 7,
   "counts": {
     "total": 93,
     "open": 61,
     "closed": 32,
-    "new": 3,
+    "new": 4,
     "soon": 16,
     "by_firm": {
       "삼일": 6,
@@ -332,25 +332,6 @@
       "first_seen": "2026-09-16T14:31:44"
     },
     {
-      "source": "kicpa_cpa",
-      "source_label": "구인(CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "[한경회계법인]경력자 채용(하반기단축근무시행)",
-      "company": "한경회계법인",
-      "deadline": "2026-09-30",
-      "posted_date": "2026-09-01",
-      "location": "서울 강남구",
-      "emp_type": "정규직",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1787192697987",
-      "dday": 8,
-      "first_seen": "2026-09-01T11:31:40"
-    },
-    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "로컬",
@@ -577,6 +558,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1788939833618",
       "dday": 8,
       "first_seen": "2026-09-21T13:32:12"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[한경회계법인]경력자 채용(하반기단축근무시행)",
+      "company": "한경회계법인",
+      "deadline": "2026-09-30",
+      "posted_date": "2026-09-22",
+      "location": "서울 강남구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1787192697987",
+      "dday": 8,
+      "first_seen": "2026-09-22T10:31:41"
     },
     {
       "source": "kicpa_cpa",

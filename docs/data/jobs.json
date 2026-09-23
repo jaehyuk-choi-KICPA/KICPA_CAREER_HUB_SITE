@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-23T22:01:52",
+  "generated_at": "2026-09-23T22:32:06",
   "soon_days": 7,
   "counts": {
-    "total": 100,
+    "total": 99,
     "open": 68,
-    "closed": 32,
+    "closed": 31,
     "new": 4,
     "soon": 32,
     "by_firm": {
@@ -12,18 +12,18 @@
       "삼정": 3,
       "안진": 12,
       "한영": 14,
-      "로컬": 63,
+      "로컬": 62,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 62,
+      "수습CPA": 61,
       "자격무관": 38
     },
     "by_emp_kind": {
       "인턴": 15,
       "정규직": 62,
       "계약직": 8,
-      "파트타임": 15
+      "파트타임": 14
     }
   },
   "postings": [
@@ -1848,25 +1848,6 @@
       "location": "경기 안산시 단원구",
       "emp_type": "Part Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789003869019",
-      "dday": -5,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "파트타임",
-      "status": "closed",
-      "is_new": false,
-      "title": "[삼덕회계법인] 수습공인회계사(파트타임 또는 풀타임) 모집의 건",
-      "company": "삼덕회계법인",
-      "deadline": "2026-09-18",
-      "posted_date": "2026-09-11",
-      "location": "서울 전체",
-      "emp_type": "Part Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789106953898",
       "dday": -5,
       "first_seen": ""
     },

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-23T11:31:31",
+  "generated_at": "2026-09-23T12:01:45",
   "soon_days": 7,
   "counts": {
     "total": 98,
     "open": 66,
     "closed": 32,
-    "new": 5,
+    "new": 3,
     "soon": 33,
     "by_firm": {
       "삼일": 6,
@@ -643,7 +643,7 @@
       "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "인재부 Talent-Acquisition(채용팀) 대리/과장급 채용",
       "company": "딜로이트 안진",
       "deadline": "2026-09-30",
@@ -966,7 +966,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[한미회계법인] CM본부 2026 수습공인회계사 파트타임 채용",
       "company": "한미회계법인",
       "deadline": "2026-10-30",

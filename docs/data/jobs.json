@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-23T17:32:30",
+  "generated_at": "2026-09-23T18:01:52",
   "soon_days": 7,
   "counts": {
-    "total": 99,
-    "open": 67,
+    "total": 100,
+    "open": 68,
     "closed": 32,
     "new": 4,
     "soon": 32,
     "by_firm": {
       "삼일": 6,
-      "삼정": 2,
+      "삼정": 3,
       "안진": 12,
       "한영": 14,
       "로컬": 63,
@@ -17,12 +17,12 @@
     },
     "by_qualification": {
       "수습CPA": 62,
-      "자격무관": 37
+      "자격무관": 38
     },
     "by_emp_kind": {
       "인턴": 15,
       "정규직": 62,
-      "계약직": 7,
+      "계약직": 8,
       "파트타임": 15
     }
   },
@@ -731,6 +731,25 @@
       "first_seen": "2026-09-15T17:01:48"
     },
     {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "삼정",
+      "field": "택스",
+      "qualification": "자격무관",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "[삼정KPMG] Tax Centralized Team 준전문직 신입 및 경력직 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-10-04",
+      "posted_date": "2026-09-23",
+      "location": "서울 강남구",
+      "emp_type": "계약직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1790153896556",
+      "dday": 11,
+      "first_seen": "2026-09-23T18:01:52"
+    },
+    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "로컬",
@@ -1099,7 +1118,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[태성회계법인] 수습 회계사님들의 열정과 도전을 응원합니다.",
       "company": "태성회계법인",
       "deadline": "2026-10-31",

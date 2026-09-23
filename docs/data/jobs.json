@@ -1,51 +1,32 @@
 {
-  "generated_at": "2026-09-23T15:32:30",
+  "generated_at": "2026-09-23T16:02:00",
   "soon_days": 7,
   "counts": {
-    "total": 98,
-    "open": 66,
+    "total": 99,
+    "open": 67,
     "closed": 32,
-    "new": 4,
+    "new": 5,
     "soon": 32,
     "by_firm": {
       "삼일": 6,
       "삼정": 2,
       "안진": 12,
       "한영": 14,
-      "로컬": 62,
+      "로컬": 63,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 61,
+      "수습CPA": 62,
       "자격무관": 37
     },
     "by_emp_kind": {
       "인턴": 15,
       "정규직": 62,
       "계약직": 7,
-      "파트타임": 14
+      "파트타임": 15
     }
   },
   "postings": [
-    {
-      "source": "anjin",
-      "source_label": "딜로이트안진",
-      "firm": "안진",
-      "field": "감사",
-      "qualification": "자격무관",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "회계감사부문 보험 IFRS17·K-ICS·계리/재무통합 컨설팅 인력 채용",
-      "company": "딜로이트 안진",
-      "deadline": "2026-09-23",
-      "posted_date": "2026-08-27",
-      "location": "",
-      "emp_type": "",
-      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5180",
-      "dday": 0,
-      "first_seen": "2026-08-27T11:01:49"
-    },
     {
       "source": "anjin",
       "source_label": "딜로이트안진",
@@ -368,6 +349,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789535291465",
       "dday": 6,
       "first_seen": "2026-09-16T14:31:44"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[신한회계법인] 수습 공인회계사 Part-time",
+      "company": "신한회계법인",
+      "deadline": "2026-09-29",
+      "posted_date": "2026-09-23",
+      "location": "지역무관 지역무관",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790145276032",
+      "dday": 6,
+      "first_seen": "2026-09-23T16:02:00"
     },
     {
       "source": "kicpa_susup",
@@ -881,6 +881,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789951797989",
       "dday": 28,
       "first_seen": "2026-09-21T10:01:46"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": false,
+      "title": "회계감사부문 보험 IFRS17·K-ICS·계리/재무통합 컨설팅 인력 채용",
+      "company": "딜로이트 안진",
+      "deadline": "2026-10-23",
+      "posted_date": "2026-08-27",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5180",
+      "dday": 30,
+      "first_seen": "2026-08-27T11:01:49"
     },
     {
       "source": "anjin",

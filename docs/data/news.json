@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T11:31:57",
+  "generated_at": "2026-09-24T12:01:53",
   "items": [
     {
       "source": "gnews_감사_2",
@@ -37,7 +37,7 @@
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "tokenpost.kr",
+      "source_label": "토큰포스트",
       "title": "홍콩 증선위, 무허가 의혹 Vebit 지정",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9FSkRhdUVmd1FZUHFnM1pHR3NkbFJSVXZVRVQ2SDJBd1dCYmxFWGgwVTZWWE9aYklSRlhNREJyREhJc18ybmlfQ3ROVjRsa0hMb0VsY3hSRWM?oc=5",
       "published": "2026-09-23",
@@ -81,7 +81,15 @@
       "published": "2026-09-23",
       "published_at": "2026-09-23T01:00:00",
       "summary": "",
-      "category": "세무"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "한·멕시코 첫 국세청장 회의…부가세 환급 지연·이중과세 해소 협력",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5OaWFVcnl2VDJ1aU5DREJ4UjUtODNTSm9tWUlQVDRBZXJUTVZmSXIzVmJ5azJUOThYVUdOaklMaDRrR1hRZV9fdjBQT18xaHY5ejBDa2RWX0dIUdIBWEFVX3lxTFBFSFF5MGJEOEtaT2FubGJjcHAxVEpzTU5WWk1mNm1ST1gzTk5BWFNyeDU5ejI1clBtS2l3ZllYdEY4NC01d0ZUVno4V1g5R0g2UmNZWWxVU18?oc=5",
+          "source_label": "아주경제",
+          "published": "2026-09-23"
+        }
+      ]
     },
     {
       "source": "gnews_세무",
@@ -95,7 +103,7 @@
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "unite.ai",
+      "source_label": "Unite.AI",
       "title": "CIO는 AI 작업을 IT에서 회계 처리하기 위한 더 나은 방법이 필요합니다",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE43bTZfSVZTS0hWakJSTENEaWx4NlM5NEw0WWpFWTZQWm03Q0ZKYTRsZFRoc0ZYR2VFUUJ2UExhd2w2T1BxQk9XR0h3R2w1OVktZ2s0OGhjX3ZuZ0RTNkZ6SUdjUTBBOG9pNFcyUUJiSTcxRE0?oc=5",
       "published": "2026-09-22",
@@ -131,8 +139,8 @@
         },
         {
           "title": "도입 3개월 남은 새 회계기준…\"준비 완료 기업은 16%뿐\"",
-          "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBLMldEXy1nTzByeHdRcThqSnJSa1BfSnFuMWtIdVdRQ1otVUFCcVBxTEVGSjgzam9QTTZfTXVHRmVvVXFuUGc?oc=5",
-          "source_label": "v.daum.net",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBlcWpwU18tMDNVTGkwaTJxY1JZQkRCTEpYUnFGcG9uZEw0ZWNCdEUzcXA2UW9mTnZWU0Jid25LRXNOTFR1bWMxeFBlQngybUpxNGZFUHo3UWJPdnEzLWxn0gFkQVVfeXFMTjIxVUJKYjVGQjNFdmVQZm90WjI1YkVGZ1NPSGZFM0dXV3g5WnNlcEZnWWdjQ3RwNUh0aUpVdm9Fa0I3bWpqb09jQ3ZuYUlXU0YtRThfY193TXNlRFFWTjh1QWtkTg?oc=5",
+          "source_label": "news1.kr",
           "published": "2026-09-17"
         },
         {
@@ -162,7 +170,7 @@
         {
           "title": "새 회계기준 도입 3개월 남았는데…준비 끝낸 기업 16%에 그쳐",
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE94Q2FvX2hIVFFVWXFKY253bTZwUHNIUnlkbkpMUDZXOHlmLWNyWlVBeXFLN25tZk1rMHZWbEk3dFNlTXNnWEdUakg5ZllnSklndHVJTQ?oc=5",
-          "source_label": "etoday.co.kr",
+          "source_label": "이투데이",
           "published": "2026-09-17"
         },
         {
@@ -244,14 +252,14 @@
         {
           "title": "[특별기고] 해외선교비 세법개정(3) 선교사 종교인소득 과세 신고 : 선교",
           "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1uREFDa3AzaVVxdlBlb0kwM1N1aGVESDBaNnFqUkRQS3FqVXUwckZmYzROMmVreHN2eW1veHJGVU93d29qMVVvMkFRX3pqRnFDYl9jNmtHOA?oc=5",
-          "source_label": "크리스천투데이",
+          "source_label": "christiantoday.co.kr",
           "published": "2026-09-21"
         }
       ]
     },
     {
       "source": "gnews_세무",
-      "source_label": "hankyung.com",
+      "source_label": "한국경제",
       "title": "\"세금 깎아준다는데 낼 세금이 없다\"…적자 늪에서 '비명'",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE43Z01iUllmY1gwLVgyVzNfWGNLY0FKTF85SVZzdDU3c2RoZ0tDekhwN0x3ckxKaldfV09ZZEZrVEhLYnMxZjBRLXlOUmxqMGhlX1FtZ0s1YUJQQQ?oc=5",
       "published": "2026-09-21",
@@ -371,9 +379,9 @@
       "source": "gnews_감사_2",
       "source_label": "v.daum.net",
       "title": "메리츠증권, 발행어음 사업 '9부 능선'…증선위 통과",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE03Zjh6MGs4SUJnT3cweGtuV29qWEYzNWNHUnhxZkNxT3RTcEltWnJzLTNjazczbGJiakhDX0F5cENFNmFubC14UHd0NjRtODg?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1iZFNjaUd6UVFsX2VEWjRqekJNeFpzOHhTQW5YTUQtT2ZMTXhRUElXZEdrSTlXeXZnZnRfOE16OTA1QUNzOHFlZ2pob3BQTVB6cjc2ZQ?oc=5",
       "published": "2026-09-18",
-      "published_at": "2026-09-18T02:31:57",
+      "published_at": "2026-09-18T02:31:00",
       "summary": "",
       "category": "감사",
       "dupes": [
@@ -506,7 +514,7 @@
         {
           "title": "증선위, 회계처리 위반 해태제과에 감사인 지정 3년···재무부서장 검찰 통보",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBIMWFaUFg0OEMwaDVsR3BVck55a1FWY0ZOd0NpUHA3MFlJZF85MkVMQVgwMWk4bFNTOXV0QTlTalhzdlJVczZ2VzRDT2RibGhxdzJVYjJLaEZYNThiSDJNVWpQYjJVYlFPWFE?oc=5",
-          "source_label": "뉴스웨이",
+          "source_label": "newsway.co.kr",
           "published": "2026-09-16"
         },
         {
@@ -639,6 +647,16 @@
     },
     {
       "source": "gnews_감사",
+      "source_label": "매일경제 마켓",
+      "title": "트립닷컴 그룹, US GAAP·IFRS 회계기준 차이로 순이익 25억 위안 증가",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9lWktaN3g3SXlNOU9qcUlfVXRGUzNfRG14N0Z6R3JKR0xwMUJPN05VR1NQb3hqQ2VLZHNwSEN4UmVEMGs4MnB0SUcyeV9DQk1WS1E?oc=5",
+      "published": "2026-09-16",
+      "published_at": "2026-09-16T10:09:17",
+      "summary": "",
+      "category": "감사"
+    },
+    {
+      "source": "gnews_감사",
       "source_label": "연합뉴스",
       "title": "[게시판] 상장협, 코스피 상장사 내부회계 실무자 워크숍 진행",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBZcVZxdnFGWnF6MDc5QkQyMUViamdBcmZaTE9HdThHbzJGSjJza1l6Tk5IMkp1cUVZWVZhNkRFeEpWWUl1WlY0OXhGRXRZRXlwLXFuSV82dE41WHPSAWBBVV95cUxOU0VwLW81Z0ZxMnJwMmU3UHBDRGVYTWFPMGJJdTRSTExaWVRqWTFFWWRnMEdFclAzUjFOZEtUR3V1eWlZSGFQS2ZjUHl1V251RWlTNkJuaUZzbGlxSkZpZVQ?oc=5",
@@ -659,7 +677,7 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "JTBC",
+      "source_label": "JTBC뉴스",
       "title": "‘물가 불안 조장’ 41곳 세무조사…국세청, 배민·무신사·풀무원 등 정조준",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5LblB4N3BOZlF2OUh6aW4ySDJtY2hwRmIxOHgzU0E4SVBiQXcxeWNDTTFwcFJ6NUZ6aTlpUklpcmZ0YlVtbnNkZmpGNDE1aWUzNHFlbA?oc=5",
       "published": "2026-09-15",
@@ -700,7 +718,7 @@
         {
           "title": "물가 올려놓고 탈세까지‥배민·풀무원·무신사 줄줄이 세무조사",
           "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBlN1QwYkJDM1FJQWJVeWZSS01mVW5rTUFpdUxNMzN6bnRKcW16WUl1YlNkcndEU1BNa2FrbmQ5bzN4U0hMeERIRkVCQ1JQcmhYRThoWFNQOWQwTmtGTmd0M2pVdUpoTWswLUFoZ3FXVFRyeWpfUGFyadIBeEFVX3lxTE8wdktkTU9LYUZZeXNEVk1lM29vT3Q2NjdTZ18wSUdGNWFpQlo3UHp2SHVpLXZTOE9kX2ZOVm54dTZ1QzgtUndoTV9ZcVA1c0h1d2pvRk4wb3ZKSWlKaHdnZUpZOXNmb0wzeUlyemVIVzY0NHFUdXd5eA?oc=5",
-          "source_label": "MBC 뉴스",
+          "source_label": "imnews.imbc.com",
           "published": "2026-09-14"
         },
         {
@@ -716,6 +734,12 @@
           "published": "2026-09-14"
         },
         {
+          "title": "내년 법인세 200조 돌파 예상…소득세 추월 전망",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB4S1Roel83dHNPZVh6cnJNYnhSQU9ERGMwSEFRT3pTWmYxTVhzc0I5UW9JMU5SVjMwOFhnTVdEMGxQSUl2eWVtdUNMTG85LWhsejBLSDY1WHJWeHdfLXhCb2N0RjFpbEk?oc=5",
+          "source_label": "연합뉴스TV",
+          "published": "2026-09-14"
+        },
+        {
           "title": "국세청, 배민·무신사·풀무원 등 41개 업체 세무조사…탈루액 1조(종합)",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1YUTVRUkQzWWpyWHZzWWtIOXFCUHVtcjQyVEdfMkNVcS1tSGs3bEhLU29XbzlQTFAyWXBOWDNCd0ZiMFAyd05NQWJ2bzMwT1k?oc=5",
           "source_label": "v.daum.net",
@@ -724,7 +748,13 @@
         {
           "title": "한국서 돈 벌고 세금은 탈루? 배달의민족 등 41개 업체 세무조사",
           "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1DbEpXLWZrZ2tYcGlaSE5Tb1pNaG41SmNqRURoOWx0M1IwVmh2elhSNVpYZXBlclI0RW9odUhTLTI5RHBFM0xmbzg2RVBhd0FNNE5JQnJsbWhwaV80Zzd6ZG1UMDk3M29WaWNvbWlSZ1RhZm9Y0gF0QVVfeXFMUEtxY19JTVhBdThOdmdTMHVCOGhsZkp6N1VNOGpXZDRSajlQTG9rYnlkaDJEb2FxNzE5Qjd6dEx6VHNUUmw3ZDRJalBLRjhPTlAwQ3lSMEluY0tBZ2gwbzIzQk5tQWJvTTJ6WkRGWEw4M0xYcjI?oc=5",
-          "source_label": "MBC 뉴스",
+          "source_label": "imnews.imbc.com",
+          "published": "2026-09-14"
+        },
+        {
+          "title": "15년 만에 소득세 넘어선다…법인세 200조 원 '훌쩍'",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE91U3ZScmlmZFQ4WjRkd2JaSjZXWFJIT0dYSGZFZVNWOUFfWHkwcXFKYmx3d2VSYmp5Qm4xWkl1blg3R3ZFcGcwcTFUdHJoRGNqSUp2Tw?oc=5",
+          "source_label": "v.daum.net",
           "published": "2026-09-14"
         },
         {
@@ -756,16 +786,6 @@
       "published_at": "2026-09-14T07:00:00",
       "summary": "",
       "category": "채용·시험"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "연합뉴스TV",
-      "title": "내년 법인세 200조 돌파 예상…소득세 추월 전망",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFB4S1Roel83dHNPZVh6cnJNYnhSQU9ERGMwSEFRT3pTWmYxTVhzc0I5UW9JMU5SVjMwOFhnTVdEMGxQSUl2eWVtdUNMTG85LWhsejBLSDY1WHJWeHdfLXhCb2N0RjFpbEk?oc=5",
-      "published": "2026-09-14",
-      "published_at": "2026-09-14T07:00:00",
-      "summary": "",
-      "category": "세무"
     },
     {
       "source": "gnews_감사_2",
@@ -832,6 +852,16 @@
       "source_label": "연합뉴스TV",
       "title": "감사원 \"장애인고용부담금, 벌금 성격 아냐…법인세 손금 인정\"",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5YQmg0Vm92OEVFdVYtRnF3WlFPUUNxaGVZTTRxSUxhYWF5Yk9tQXlLd3RLNWdobU5NcEN1Y3ZwbHVUNEo5NGhFQzZQQVpuU1VMSTZpLVdTMWVKeE9mT2FVWGdfMWFVYWM?oc=5",
+      "published": "2026-09-08",
+      "published_at": "2026-09-08T07:00:00",
+      "summary": "",
+      "category": "세무"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "인베스트조선",
+      "title": "마침내 IPO 나선 무신사…몸값·정체성·세무조사 '시험대'",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbHpqank5RjloeFpkdkZuOWlKZWZ3VGZKY3lqZWlKRGk3ZVpkWWwwaEtVd0dwYnJRdFItc0FaaUIwVDYxNmlVTkxvZW5rUjlpUVhwRXNabFNnTjlQWTlKMnZGa29Kb25vTGVNdkUxQlJJdUZIOVVEd0RWUjA5N29Za2VfMA?oc=5",
       "published": "2026-09-08",
       "published_at": "2026-09-08T07:00:00",
       "summary": "",

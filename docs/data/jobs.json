@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-24T16:01:52",
+  "generated_at": "2026-09-24T16:31:42",
   "soon_days": 7,
   "counts": {
-    "total": 94,
-    "open": 60,
+    "total": 95,
+    "open": 61,
     "closed": 34,
     "new": 3,
     "soon": 28,
@@ -12,16 +12,16 @@
       "삼정": 3,
       "안진": 11,
       "한영": 14,
-      "로컬": 58,
+      "로컬": 59,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 58,
+      "수습CPA": 59,
       "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 14,
-      "정규직": 59,
+      "정규직": 60,
       "계약직": 8,
       "파트타임": 13
     }
@@ -263,7 +263,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[신한회계법인] (마감)수습 공인회계사 Part-time",
       "company": "신한회계법인",
       "deadline": "2026-09-29",
@@ -843,6 +843,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5182",
       "dday": 29,
       "first_seen": "2026-08-28T16:26:54"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[삼덕회계법인] 수습회계사님 채용공고",
+      "company": "삼덕회계법인",
+      "deadline": "2026-10-23",
+      "posted_date": "2026-09-24",
+      "location": "지역무관 지역무관",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790234075624",
+      "dday": 29,
+      "first_seen": "2026-09-24T16:31:42"
     },
     {
       "source": "kicpa_susup",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T10:02:00",
+  "generated_at": "2026-09-24T10:31:40",
   "items": [
     {
       "source": "gnews_감사_2",
@@ -30,14 +30,14 @@
         {
           "title": "기업 토지 '공시지가' 주석 공시 의무화…기업회계기준서 개정",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1jejhQT0JLVmpmV1dmeW84YVdnMllKbTZSbV8wS0lERTBMWnJsV3VKYmdWSUpoYnI4UmdIdThOcHFFZURGUFF6bEF2YVpEMHdwSXUtd1ctTXdmRG9XWFVIWtIBYEFVX3lxTE1jejhQT0JLVmpmV1dmeW84YVdnMllKbTZSbV8wS0lERTBMWnJsV3VKYmdWSUpoYnI4UmdIdThOcHFFZURGUFF6bEF2YVpEMHdwSXUtd1ctTXdmRG9XWFVIWg?oc=5",
-          "source_label": "연합뉴스",
+          "source_label": "yna.co.kr",
           "published": "2026-09-23"
         }
       ]
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "tokenpost.kr",
+      "source_label": "토큰포스트",
       "title": "홍콩 증선위, 무허가 의혹 Vebit 지정",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9FSkRhdUVmd1FZUHFnM1pHR3NkbFJSVXZVRVQ2SDJBd1dCYmxFWGgwVTZWWE9aYklSRlhNREJyREhJc18ybmlfQ3ROVjRsa0hMb0VsY3hSRWM?oc=5",
       "published": "2026-09-23",
@@ -81,7 +81,15 @@
       "published": "2026-09-23",
       "published_at": "2026-09-23T01:00:00",
       "summary": "",
-      "category": "세무"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "한·멕시코 첫 국세청장 회의…부가세 환급 지연·이중과세 해소 협력",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5OaWFVcnl2VDJ1aU5DREJ4UjUtODNTSm9tWUlQVDRBZXJUTVZmSXIzVmJ5azJUOThYVUdOaklMaDRrR1hRZV9fdjBQT18xaHY5ejBDa2RWX0dIUdIBWEFVX3lxTFBFSFF5MGJEOEtaT2FubGJjcHAxVEpzTU5WWk1mNm1ST1gzTk5BWFNyeDU5ejI1clBtS2l3ZllYdEY4NC01d0ZUVno4V1g5R0g2UmNZWWxVU18?oc=5",
+          "source_label": "아주경제",
+          "published": "2026-09-23"
+        }
+      ]
     },
     {
       "source": "gnews_세무",
@@ -233,7 +241,7 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "newspower.co.kr",
+      "source_label": "뉴스파워",
       "title": "“해외선교비 세법 개정, 선교활동에 미치는 영향 생각보다 작을 수도”",
       "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE4xWDhUclJKMk1aakw4M2VoY1FjeHpPYW5PUGI2S3ExZFR4U1ZTU0ROV1BObUptenMwTHM5amhkWFo1eW9BVWFF?oc=5",
       "published": "2026-09-21",
@@ -244,7 +252,7 @@
         {
           "title": "[특별기고] 해외선교비 세법개정(3) 선교사 종교인소득 과세 신고 : 선교",
           "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1uREFDa3AzaVVxdlBlb0kwM1N1aGVESDBaNnFqUkRQS3FqVXUwckZmYzROMmVreHN2eW1veHJGVU93d29qMVVvMkFRX3pqRnFDYl9jNmtHOA?oc=5",
-          "source_label": "크리스천투데이",
+          "source_label": "christiantoday.co.kr",
           "published": "2026-09-21"
         }
       ]
@@ -321,7 +329,7 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "mk.co.kr",
+      "source_label": "매일경제",
       "title": "[기고] 납세자 배려하는 … 세무조사의 품격 있는 진화",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9PVHRjU1NoZldvUVlPbElkS29ib1JUM0hVSnlmYzVLdmFLaEJ1eFBWRFBfWXZsN2VFSUVnZVpCVHdBYUREQW10YUl3LVZibEZmMFJkTElza1BvSk0?oc=5",
       "published": "2026-09-20",
@@ -331,7 +339,7 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "mk.co.kr",
+      "source_label": "매일경제",
       "title": "“삼전닉스가 나라살림 결정, 이게 맞나”…법인세만 216조 걷힌다",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE54dVNWYVFwOTlWWC12UE5DUUN5MUtOc21faTJ3NWx0WldXNG5Pck42TnJsSlAyal9ZWllRV25TT2JlNDRyV1M1d2FkNmd4ZnJZaWNrdw?oc=5",
       "published": "2026-09-20",
@@ -341,7 +349,7 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "newsfield.net",
+      "source_label": "뉴스필드",
       "title": "세무조사 받는 배민, 2년 순이익보다 896억 더 해외로…네이버는 인수 철회",
       "url": "https://news.google.com/rss/articles/CBMirgJBVV95cUxOSWx3T2ZaVURlTnEyaW5TYjMzVi1EZ2xrTXMyM09FUVFlS19DNW83V3lBc0hmcVEzSVlFaWQ3OGZMeERNOExUSE9pZmd6aXk3Qk9FUUNVNXpRd0h6eVlEU05nano2YzcxRTBEcFNtR2JaRlFsY1NDckRybkJtTE56OE5td21xRDd2azl2c1BaXy1BVmVQaE8tM3VDbkdUa3BkUGJ3Zm5VUWYzU2V2Ri1BUXpfXy1oUFRFeTRYQm1maktwdzlBOEdGSFdxbkxTLTBmMUFPRlBVcUplTUVveWc3TEVnVkYtb0NtanMxbEdkS3BLNWpRTHBYeTBVUzBMcnR2QU9UMEdTb0VrYnAxUGQ0NGMtQzlzSUx5SFBtYUxESEEtbHJFTzdrSlVrRmpIQQ?oc=5",
       "published": "2026-09-18",
@@ -371,9 +379,9 @@
       "source": "gnews_감사_2",
       "source_label": "v.daum.net",
       "title": "메리츠증권, 발행어음 사업 '9부 능선'…증선위 통과",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE03Zjh6MGs4SUJnT3cweGtuV29qWEYzNWNHUnhxZkNxT3RTcEltWnJzLTNjazczbGJiakhDX0F5cENFNmFubC14UHd0NjRtODg?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1iZFNjaUd6UVFsX2VEWjRqekJNeFpzOHhTQW5YTUQtT2ZMTXhRUElXZEdrSTlXeXZnZnRfOE16OTA1QUNzOHFlZ2pob3BQTVB6cjc2ZQ?oc=5",
       "published": "2026-09-18",
-      "published_at": "2026-09-18T02:31:57",
+      "published_at": "2026-09-18T02:31:00",
       "summary": "",
       "category": "감사",
       "dupes": [
@@ -398,14 +406,8 @@
         {
           "title": "메리츠증권 '발행어음 인가안' 증선위 통과",
           "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5hT1F2S3JfUGozWm1scGlYSElobDJCamFLcnlHcFNSbmdIalZaVFU1Uno1SDh6WEN3eDFfQzhZT2g2M1BHNkZIU2VjUFFBVXB4M3djVHBuOUNaUTF3UGlaVC1rUnBnZXcx?oc=5",
-          "source_label": "fr.tradingview.com",
+          "source_label": "TradingView",
           "published": "2026-09-17"
-        },
-        {
-          "title": "메리츠증권 발행어음 인가 증선위 통과…23일 금융위 최종 심의",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9OWk9Ka01UQnFaSWp3X1RiWlhvVURqS0t5ZENjZU12d2N1OTZpSTk1NTdHUk1Md1B6NnB5WE5rOUtwNWl0QUhLRmNHWnpMbTZYdTA3bmRoLU5BQjZoMnM2eFJLLTg0YVRaUkVJ?oc=5",
-          "source_label": "뉴스저널리즘",
-          "published": "2026-09-18"
         },
         {
           "title": "메리츠증권 발행어음 인가 증선위 통과… 23일 최종 심의",
@@ -417,12 +419,6 @@
           "title": "메리츠증권 발행어음 인가안 증선위 통과…23일 금융위 최종 심사",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE52dUdNUDlQNUVKYXZlY185RzF2b2hGOU1ybHNDVjRQb2drcWZCaGNKUDRnaHR5NGZ1dGVoUVpOSExoWW5tRlVxZHRpZmNaRzFzVC13SkduMnRIeGhJczh0bjRVM1g2UXNpMU1DSA?oc=5",
           "source_label": "ER 이코노믹리뷰",
-          "published": "2026-09-17"
-        },
-        {
-          "title": "메리츠증권 '발행어음 인가안' 증선위 통과…23일 금융위 앞둬",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9QWjJaVF80QVhoTFV2N1ptV1JPRlN4cnhlODBXZ0dKeUYzWG5WYkRHZlZIaHU1azZPejJ2T1JXUmRxS1BxcEdBRXNNVmsxY1VOVVY0c2ZnVzM5dXdGV3pzQg?oc=5",
-          "source_label": "아시아경제",
           "published": "2026-09-17"
         },
         {
@@ -438,6 +434,12 @@
           "published": "2026-09-17"
         },
         {
+          "title": "메리츠증권 '발행어음 인가안' 증선위 통과…23일 금융위 앞둬",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9QWjJaVF80QVhoTFV2N1ptV1JPRlN4cnhlODBXZ0dKeUYzWG5WYkRHZlZIaHU1azZPejJ2T1JXUmRxS1BxcEdBRXNNVmsxY1VOVVY0c2ZnVzM5dXdGV3pzQg?oc=5",
+          "source_label": "아시아경제",
+          "published": "2026-09-17"
+        },
+        {
           "title": "메리츠證, 발행어음 인가안 증선위 통과",
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0tQkNNZHp5Y2toUTVOU3lwNERLX1I2Mm9vYlVsZUFBMHhGMlprUVU0UkFQaXlkdzA2X292SU1VYTJCNmFkM3YwUWdtX3JCMkhEX2VYNzVSZ0Y3VEVKOXdraEktZmI?oc=5",
           "source_label": "MTN 머니투데이방송",
@@ -445,14 +447,14 @@
         },
         {
           "title": "메리츠, 발행어음 인가 눈앞 … 증선위 문턱 5개월만에 넘어",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBRQkRPVVAzbU1RWU42RWRQUlM3UHV3YUlPR1FyNWtCaUJqMVJZQmZhMUwwYkxSTEtoNzFsYlR6TWRBclNyblBRbll5bHZIc1ozX3c?oc=5",
-          "source_label": "mk.co.kr",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE81bDJLdVI1WWNkQ0x6T3AweHoyNGpoenN5S0M0Vk9aTENCVFFFTk5QT1ZGcFlhUHZkXzN1TE1PZ3VUdEJpaE1IXzNSOG9oVl8tREE?oc=5",
+          "source_label": "매일경제 마켓",
           "published": "2026-09-17"
         },
         {
           "title": "메리츠증권, 발행어음 사업자 획득 초읽기...증선위 통과",
           "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE92VkJxODgydVZ5ZVpObFBpYmxiWm9NNVlXX05CYThDMEFFVDJEdEUxdDROWVk4akpxaWxqMmhzbjBaZHhkdDd4Y0gzNk4tRklDNkxtNWZkcjFPX3FjSXVJ?oc=5",
-          "source_label": "스마트투데이",
+          "source_label": "smarttoday.co.kr",
           "published": "2026-09-17"
         },
         {
@@ -476,7 +478,7 @@
         {
           "title": "해태제과, 주식 거래정지…\"회계처리기준 위반\"",
           "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE8xS3BnZk56R1hyU3NlM1ctYW9NempNYVFodnZuaXJTS2FvUjVQM1A3Z0ZfZWtYTVg4WWlRR0N0WmZhd1VYX01zTUF5elpTRG0wQV9NUjJB?oc=5",
-          "source_label": "지디넷코리아",
+          "source_label": "zdnet.co.kr",
           "published": "2026-09-17"
         },
         {
@@ -488,7 +490,7 @@
         {
           "title": "해태제과, 증선위 회계위반 제재에 “내부통제·윤리교육 강화”",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1XbUh3c0ZURC1aU1Etd0xkanJJMXJaU2lEWklkeXB1N1ZNRkxlNTRNRmp5alFlV3B5STJXVDFPcllqNnZ6d2pGOV9QRV9MT29SeGowVGJONk9KUmM?oc=5",
-          "source_label": "에너지경제신문",
+          "source_label": "ekn.kr",
           "published": "2026-09-17"
         },
         {
@@ -536,7 +538,7 @@
         {
           "title": "증선위, 해태제과에 감사인지정 등 조치…회계처리 위반",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9VYm1UdW9mM2l1SG84VFJPSnBhSHNGa1dpUzJobWpjNnJ1aXliX2RGMkhNR3FPM09rYjQtREI1d0hBTHU3V2V5aGcwRzJfUEpvaFdvc1V3WENNeVHSAWBBVV95cUxQT2JUYXQzVE5hTGZwR0dROTBxLU93YWYyUDdjMkVxbjBtaEFMYzltaWNJRzRKLVh1OG1ZLWx1ZEJTOWktcHZFRmNOR1lfZzdjZG5wdnB5YzM0M3dra0hXaDU?oc=5",
-          "source_label": "연합뉴스",
+          "source_label": "yna.co.kr",
           "published": "2026-09-16"
         },
         {
@@ -579,12 +581,6 @@
           "title": "증선위, 금양 '회계기준 위반' 판단…과징금 부과·檢 고발",
           "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB6VERaSHIxZGxFbWhfYTlNd0hHY3BpdDhucFdzVGFEaXktTGV4S1FlTXFHZVBYYXhQMTBWUUtDUmRNZE9IQkxQUFdtQ3l6MFU?oc=5",
           "source_label": "v.daum.net",
-          "published": "2026-09-03"
-        },
-        {
-          "title": "증선위, ‘허위매출·재고 조작’ (주)금양 검찰고발…대표이사 등 해임권고",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9YVmMyamlReGlTb3FrRDZud3BEb0lMb1RuLURicnJoRXk5blFOQzdQVDBudjlSNG8zU2RwOHNTWjIwcnZBTHZVMkRGTzRhMmFFTmg2eHNoZ0JKbktFdUZpNHppY0xyQjF6R0E?oc=5",
-          "source_label": "intn.co.kr",
           "published": "2026-09-03"
         }
       ]
@@ -632,7 +628,7 @@
         {
           "title": "증선위, 공개매수·양수도 미공개정보 이용 4건 檢 고발·통보",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5lOE5YUmdUVlBsYVN2RkJ1amZkS3V0eG9GOVdWZGRFM0VFN1Y2YndUT0ZaYjJyZmJNRU5tbU9pV0VPWUk3UThpLXhYSHpTc0xIYmN1NWI0ci1CNlnSAWBBVV95cUxNNTR2VU1Hb1VGOTJVWWs1a085RGV4ejJWZ19CUTlKb3J0RFRkNVhNT09adUlQMndXSm1LUVcwX0pHVEZiYzRMdlNiZWNpcHkwQk82NGxSd2NELTViUmNnOVY?oc=5",
-          "source_label": "연합뉴스",
+          "source_label": "yna.co.kr",
           "published": "2026-09-16"
         },
         {
@@ -649,7 +645,7 @@
         },
         {
           "title": "증선위, 공개매수 미공개정보 이용 불공정거래 4건 조치",
-          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE15SlRlcERvNXlSaHg2VEI5U0phSlJCZUpoZzlYaFhBWVMxazQ2bHMyUlI1SkhQUEJhOG5lZWNaLUJON1IxMHpaUWcwcWpFdjg?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE94UXdlUGMxQVJhaU1UUkI4OVpHWmxOSjdRaUhQSU1xRm1DRDVZcHpuUUV1Q0xMQzlWVndvYVFYdklrQVZMZXN6Ym1lTQ?oc=5",
           "source_label": "v.daum.net",
           "published": "2026-09-16"
         }
@@ -657,7 +653,17 @@
     },
     {
       "source": "gnews_감사",
-      "source_label": "연합뉴스",
+      "source_label": "매일경제 마켓",
+      "title": "트립닷컴 그룹, US GAAP·IFRS 회계기준 차이로 순이익 25억 위안 증가",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9lWktaN3g3SXlNOU9qcUlfVXRGUzNfRG14N0Z6R3JKR0xwMUJPN05VR1NQb3hqQ2VLZHNwSEN4UmVEMGs4MnB0SUcyeV9DQk1WS1E?oc=5",
+      "published": "2026-09-16",
+      "published_at": "2026-09-16T10:09:17",
+      "summary": "",
+      "category": "감사"
+    },
+    {
+      "source": "gnews_감사",
+      "source_label": "yna.co.kr",
       "title": "[게시판] 상장협, 코스피 상장사 내부회계 실무자 워크숍 진행",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBZcVZxdnFGWnF6MDc5QkQyMUViamdBcmZaTE9HdThHbzJGSjJza1l6Tk5IMkp1cUVZWVZhNkRFeEpWWUl1WlY0OXhGRXRZRXlwLXFuSV82dE41WHPSAWBBVV95cUxOU0VwLW81Z0ZxMnJwMmU3UHBDRGVYTWFPMGJJdTRSTExaWVRqWTFFWWRnMEdFclAzUjFOZEtUR3V1eWlZSGFQS2ZjUHl1V251RWlTNkJuaUZzbGlxSkZpZVQ?oc=5",
       "published": "2026-09-16",
@@ -706,7 +712,7 @@
         {
           "title": "법인세 1000억 안 낸 혐의 ‘배민’, 풀무원 등 세무조사",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBPNkU3RkIxc0htcjJ0OG1hckJsV01ibjQyU3hSWnZMRVl3Rkw3SkhCZk1kN2h2WmFCZmpZQ1pkR0d5Szk3Z0tQb0lSeXlMb1VybnRmUFlKbkFhQQ?oc=5",
-          "source_label": "viva100.com",
+          "source_label": "브릿지경제",
           "published": "2026-09-14"
         },
         {
@@ -858,6 +864,16 @@
       "category": "세무"
     },
     {
+      "source": "gnews_세무",
+      "source_label": "인베스트조선",
+      "title": "마침내 IPO 나선 무신사…몸값·정체성·세무조사 '시험대'",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbHpqank5RjloeFpkdkZuOWlKZWZ3VGZKY3lqZWlKRGk3ZVpkWWwwaEtVd0dwYnJRdFItc0FaaUIwVDYxNmlVTkxvZW5rUjlpUVhwRXNabFNnTjlQWTlKMnZGa29Kb25vTGVNdkUxQlJJdUZIOVVEd0RWUjA5N29Za2VfMA?oc=5",
+      "published": "2026-09-08",
+      "published_at": "2026-09-08T07:00:00",
+      "summary": "",
+      "category": "세무"
+    },
+    {
       "source": "gnews_감사_2",
       "source_label": "KBS 뉴스",
       "title": "강원경제진흥원 “기업 회계 처리상의 부채”",
@@ -919,7 +935,7 @@
     },
     {
       "source": "gnews_채용·시험",
-      "source_label": "news.kicpa.or.kr",
+      "source_label": "CPA뉴스",
       "title": "AI로 인한 회계업계 변화 반영한 공인회계사 선발 제도 개선 연구 착수",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5wRG5kNWVocGtXd2s5VFpoWUpCbHhUcE1uRWkzSFBXUmhscFY1VDRESkdOekNjLS1WSVNaajJmUll5aVJoeHZSY2VQa0YzSjZOd2RQRnF6MjZHaXVyTjdRZVNIMlJvUFAy?oc=5",
       "published": "2026-07-31",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T23:01:57",
+  "generated_at": "2026-09-25T23:31:45",
   "items": [
     {
       "source": "gnews_세무",
@@ -62,6 +62,16 @@
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5WWHZxbW13dGcyTHcydjdfWlhOOVFPNTUzR3ZTeUtSVExvcEdkaE56Nm05a0pfV0xKX3NIQnFSX1VOeHREZUgyREJWVURwc0x5VVRTWlRPYmI1QQ?oc=5",
       "published": "2026-09-24",
       "published_at": "2026-09-24T23:00:09",
+      "summary": "",
+      "category": "감사"
+    },
+    {
+      "source": "gnews_감사_2",
+      "source_label": "datatooza.com",
+      "title": "베니텍 바이오파머, 새 감사인에 'EY' 선임…기존 베이커 틸리와 결별",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9GSi1TT0hvVUU0MmxsOEVLdlktdTFmZUFESmk2WnBGSVpERTIxQUZaMTdla09HQjJ1YVRKalpBWW80M1E5Qzc3cmVUbEtBaDhsSE53YkhNOVluYmNkQVJ1Y05URHhkYl9MR09RdjZkenlsaXc?oc=5",
+      "published": "2026-09-24",
+      "published_at": "2026-09-24T20:40:03",
       "summary": "",
       "category": "감사"
     },
@@ -149,13 +159,21 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "newsis.com",
+      "source_label": "뉴시스",
       "title": "한·멕시코 국세청장회의 첫 개최…韓 기업 세정지원 요청",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1US1Npc0owZUxMSGwydWZjbmVldng2LVc0TXZUU3BNUXVTUWw4X1plQnpPYlRZV09BN3V4WDhtRXN6NWVSajZXWnFicElid0xSa1N0UUJkUWZ1Mi01NzJSadIBeEFVX3lxTE82bWxJdzk1amFKbU8tc09TUUpReTFBZk5nSFVodXJEVkFtbW5LZlZ2ZF9ORk1JeUhySHlkSWFnUlZlSk14d0tEaWVIQ3ZES3dHMC1FZ0Zha3RNRkxYa3prcjg1TUNqeWxmWk1TaUVsOS1JMVFDc21wTQ?oc=5",
       "published": "2026-09-23",
       "published_at": "2026-09-23T01:00:00",
       "summary": "",
-      "category": "세무"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "한·멕시코 첫 국세청장 회의…부가세 환급 지연·이중과세 해소 협력",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5OaWFVcnl2VDJ1aU5DREJ4UjUtODNTSm9tWUlQVDRBZXJUTVZmSXIzVmJ5azJUOThYVUdOaklMaDRrR1hRZV9fdjBQT18xaHY5ejBDa2RWX0dIUdIBWEFVX3lxTFBFSFF5MGJEOEtaT2FubGJjcHAxVEpzTU5WWk1mNm1ST1gzTk5BWFNyeDU5ejI1clBtS2l3ZllYdEY4NC01d0ZUVno4V1g5R0g2UmNZWWxVU18?oc=5",
+          "source_label": "아주경제",
+          "published": "2026-09-23"
+        }
+      ]
     },
     {
       "source": "gnews_세무",
@@ -186,7 +204,7 @@
         {
           "title": "\"내년 도입 새 회계기준, 준비 완료기업은 16% 불과\"",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5yeTFOS0NKR1pjUzRNc3A2WnlmS1NEODI0QkcwYlc3d2FoZHBVYXVWTEpEX3BCSkRYYzFvZDE2RGVLNW9MS2l6ampLaVRoMkNOTjJDWkdFY3llb0c0WkdMY9IBeEFVX3lxTFBPNS1OdmFGTTYtdHFfUjhvSk1uelZVaGNXS0JXeHVhWV9XbC1Rc0dHM2pqWDU3a3FJUkVGWnp2cVk5Um9fd2o2bFo2WmdPZHBHb2wtQllkc3hmczlXR3JhNjFrcEc0SkFYb1ZGT2pvN3lXN2g2QUtGUw?oc=5",
-          "source_label": "newsis.com",
+          "source_label": "뉴시스",
           "published": "2026-09-17"
         },
         {
@@ -210,7 +228,7 @@
         {
           "title": "새 회계기준 시행 코앞인데…준비 끝낸 기업 16%뿐",
           "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBwTm9yemFHVDdMS3BYbWFNS0o1ejlhTHBaaXN0MmhBX25RUW5Ya2p5VGhOM1BEVGszSllBMEhRc2NTRUNiQVJrbEVYdlhpMjl6OHB1cUU5ZXNmcFVTT200UUVHQk1vZjct?oc=5",
-          "source_label": "magazine.hankyung.com",
+          "source_label": "한경매거진&북",
           "published": "2026-09-17"
         },
         {
@@ -356,7 +374,7 @@
         {
           "title": "메리츠증권 발행어음 ‘9부 능선’…증선위 통과",
           "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNei1PYnV4b3lnLWlkZFFwUHhvVFE4THNwdGZSd2VEVXVXRGpHdzBFaWFIbmZHaFBjeVZPdndGTUdnNHZzNVVmMndkbnZvOUhYY3hDbUFMLUNRTTEzZDFKdnBDR0VkNm1vYXVuaHM3d3c5dzJXdDdTbUNxNWNteGoybWw1NkZIWlpv?oc=5",
-          "source_label": "글로벌이코노믹",
+          "source_label": "g-enews.com",
           "published": "2026-09-17"
         },
         {
@@ -423,7 +441,7 @@
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "뉴스워치",
+      "source_label": "newswatch.kr",
       "title": "[핫이슈] 해태제과, '530억 뻥튀기' 분식회계 덜미…감사인 지정·검찰 통보 '철퇴'",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1FU21HZlpyM0lvQ1hTS1NXLXBfVTBub0FqZEM3VUZCSWl5alZGTUNwX3UzbWx2QzZ4MnUxSmpqcmR4ekpuOTlFcndLaDg3cWUtMjA2VkxCNEhENThQVU9WU2VyYy1KQVRzRkE?oc=5",
       "published": "2026-09-18",
@@ -488,7 +506,7 @@
         {
           "title": "증선위, '회계처리 위반' 해태제과에 감사인 지정·檢통보 조치…530억 과대계상",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9aZlY4MFNSdF9QTWRuN2YtLXZRTHJUOV9LWjFJNE5SYmx2MVlTdVd5MmYyUGItaXg0S3NHU2lvdEpmcDd1WlNmUUFWWTdINE0zc3JhbjhnNWVTdFpfWkRhR9IBeEFVX3lxTE9uY2ZGdWdZZHJWRU53Tk11MHVuaXZkdmFWalRYTndSbmNWQWZoZ1lxcUk3WGV2eEJLOUVUMmNPczBJWkh5MHFCYWduV0N3MktJbUFXaFlWeWNxa3BHc0VRaUdMM2E2QUxEMC15RUZEUlNtNWNaekQweQ?oc=5",
-          "source_label": "newsis.com",
+          "source_label": "뉴시스",
           "published": "2026-09-16"
         },
         {
@@ -500,7 +518,7 @@
         {
           "title": "증선위, '회계처리 위반' 해태제과에 감사인 지정 조치",
           "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBzREN4d0RmcDJBMXFhZ3BfZVVTRXJOalhqNmNYYVRoUFNzQmJoNHdqb3pmaXVqX3RGTlpMbGVYUGh1dGNHbEpBbXBmQkE3cEI0dVFMS05DaHdjUkswWTk3Vy1qam5vYXhpckdud2xoX1k?oc=5",
-          "source_label": "연합인포맥스",
+          "source_label": "news.einfomax.co.kr",
           "published": "2026-09-16"
         },
         {
@@ -525,7 +543,7 @@
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "newsis.com",
+      "source_label": "뉴시스",
       "title": "[울산소식]시설공단, 2026~2028사업연도 회계감사인 공모 등",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE43NElBOTRvdktiaWsyLTJZd3JwUzFPNzVLMGhEOUR2Q2RrakNZdWhXV0FoQnk2cC1wSnlWYmJ1VEhZVjJyR29lWEstQU1TVW1vaFNPeWdWTnZqbE45dmlhT9IBeEFVX3lxTE9XbEZhQ0djQVNhMzhSbVliQmtCeDZJUUczRHU0WjNGRW5Ya0ZxSUZ0dXk1SWZBOUZyVUVNU3YyUC1zWEh6bUZsTHlvQWlmS01mSTF5cDhqWVlidnBBbXhpRGxwZUFlU1p0WHhVNndkX3ZidVJ5WGZZbw?oc=5",
       "published": "2026-09-17",
@@ -535,7 +553,7 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "한국세정신문",
+      "source_label": "taxtimes.co.kr",
       "title": "[초점]사전 경고했는데…사주·대주주로 직접 향하는 국세청 세무조사",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9VMnNkbkVBWm5jREJJV2otUmRab0ZtNHpDYnJIelcxV0ZMa2VJeU13a09KNG9PYURDTTNfM0NkdHBjZVY4YjZpVUpyX2Z0eEthdjV6V180WWV3Yk8yd0RNSWpyZkI?oc=5",
       "published": "2026-09-17",
@@ -562,7 +580,7 @@
         {
           "title": "공개매수·인수 미공개정보 이용해 ‘수억 꿀꺽’ … 증선위, 내부자 등 검찰 고발",
           "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5mUXpjZ21EUHAtdHZQbUpMTG1TWkZaVHYtSGVyQzZ0eXR5UFQ1Rzh3ZGJiZHBFMDlqSUlCQzN5Y2lnX3ExSlJXM0FFUEJMQkdabnNlU1NOTmM3TmxCUUM1cmZrOENodXdPTDh2R3NlQ2NDOFNORncwOUJRb9IBgAFBVV95cUxQQ010azlCNXBDUE9NSFVtR3luZU5wTU5rQm1tc213YjhRRlFQZmp2OVlnUnQ2VWdEZHM1VEVaYmFkWTRpdmNYZVRMN0ZNbHEwNGpvMXg2Zm5wRlZYdWhGcEJ6dG5idkx2S0JCVThVbUtrTmJ0QUJJU1dFYjRZYVNkSw?oc=5",
-          "source_label": "뉴데일리",
+          "source_label": "biz.newdaily.co.kr",
           "published": "2026-09-16"
         },
         {
@@ -580,7 +598,7 @@
         {
           "title": "지인의 지인까지 샜다…증선위, 미공개정보로 수억 꿀꺽한 일당 적발",
           "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9icWhLY2wtbzdVZU5nRUtrMEhBZWp0WUR5ZTBpeGltZjJBdFZTSkNhaWpQWU1Tdi1scDlHdlFuZi11ajc4dnBaaEVIUEdKbHR3Y21HeE9VVjBRUTZrQVhpTDRkVkpsS1h4M196akptTEg?oc=5",
-          "source_label": "연합인포맥스",
+          "source_label": "news.einfomax.co.kr",
           "published": "2026-09-16"
         }
       ]
@@ -644,13 +662,13 @@
         {
           "title": "물가 올려놓고 탈세까지‥배민·풀무원·무신사 줄줄이 세무조사",
           "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBlN1QwYkJDM1FJQWJVeWZSS01mVW5rTUFpdUxNMzN6bnRKcW16WUl1YlNkcndEU1BNa2FrbmQ5bzN4U0hMeERIRkVCQ1JQcmhYRThoWFNQOWQwTmtGTmd0M2pVdUpoTWswLUFoZ3FXVFRyeWpfUGFyadIBeEFVX3lxTE8wdktkTU9LYUZZeXNEVk1lM29vT3Q2NjdTZ18wSUdGNWFpQlo3UHp2SHVpLXZTOE9kX2ZOVm54dTZ1QzgtUndoTV9ZcVA1c0h1d2pvRk4wb3ZKSWlKaHdnZUpZOXNmb0wzeUlyemVIVzY0NHFUdXd5eA?oc=5",
-          "source_label": "imnews.imbc.com",
+          "source_label": "MBC 뉴스",
           "published": "2026-09-14"
         },
         {
           "title": "'물가 불안' 부추긴 배민 등 41곳 세무조사…1조 탈루 혐의(종합)",
           "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBIWjRiTFF6dThQYl93X1lJdHBBVEVFZFkyYU95cTBLM2JmdVlOVWVwZ0tCaDdiZXhkb0JZZEctUjNXM3F6Q1FOVjVTeTV4R1FReFpxN0lPZC1JaHc0c3hoZEdWU0d6U3laWDhMektvUkQ?oc=5",
-          "source_label": "연합인포맥스",
+          "source_label": "news.einfomax.co.kr",
           "published": "2026-09-14"
         },
         {
@@ -674,7 +692,7 @@
         {
           "title": "한국서 돈 벌고 세금은 탈루? 배달의민족 등 41개 업체 세무조사",
           "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1DbEpXLWZrZ2tYcGlaSE5Tb1pNaG41SmNqRURoOWx0M1IwVmh2elhSNVpYZXBlclI0RW9odUhTLTI5RHBFM0xmbzg2RVBhd0FNNE5JQnJsbWhwaV80Zzd6ZG1UMDk3M29WaWNvbWlSZ1RhZm9Y0gF0QVVfeXFMUEtxY19JTVhBdThOdmdTMHVCOGhsZkp6N1VNOGpXZDRSajlQTG9rYnlkaDJEb2FxNzE5Qjd6dEx6VHNUUmw3ZDRJalBLRjhPTlAwQ3lSMEluY0tBZ2gwbzIzQk5tQWJvTTJ6WkRGWEw4M0xYcjI?oc=5",
-          "source_label": "imnews.imbc.com",
+          "source_label": "MBC 뉴스",
           "published": "2026-09-14"
         },
         {
@@ -758,7 +776,7 @@
         {
           "title": "금융위, '회계기준 위반' 덱스터스튜디오 9.5억 과징금 부과",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE01SGl2QmNlNDVKc2dRejRSejAxUzl3ZEdTaUtSbG5DalhjbDJ2ZzJqOEpZcDB1dGpTZm9vLUdCSG83VGVCVi05dTM3N29JdnFvVXhnS2VtMjNFcGpfS3BzYtIBeEFVX3lxTE1QbkdORkYxMnVXTWs0VHlsczZiZmR2T3NSbTNuUGthRjdyT2JRbVZKVUdwaDYzYXM0aDZMczhTZkhIQ3gyeFJZbXNNRTNiU2FJdTNocEFCN2xOZDBOQ25wRS1vcUNBZTFNNnVRdllIdzctZXdKVldqeA?oc=5",
-          "source_label": "newsis.com",
+          "source_label": "뉴시스",
           "published": "2026-09-09"
         },
         {
@@ -791,7 +809,7 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "인베스트조선",
+      "source_label": "investchosun.com",
       "title": "마침내 IPO 나선 무신사…몸값·정체성·세무조사 '시험대'",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbHpqank5RjloeFpkdkZuOWlKZWZ3VGZKY3lqZWlKRGk3ZVpkWWwwaEtVd0dwYnJRdFItc0FaaUIwVDYxNmlVTkxvZW5rUjlpUVhwRXNabFNnTjlQWTlKMnZGa29Kb25vTGVNdkUxQlJJdUZIOVVEd0RWUjA5N29Za2VfMA?oc=5",
       "published": "2026-09-08",
@@ -821,7 +839,7 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "mt.co.kr",
+      "source_label": "머니투데이",
       "title": "국세청, 상반기 세무조사 '공표' 전년比 4배 급증…조세불복도 ↑ - 머니투데이",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9Ebzc2cTQyQW44bjgzX2hELVdEWjkxM3BfU3B2dFg2dXJVbDRVNmpJSkQwcHlOODVGQTVWblY2LUFDblVHaTdvYnA1TnRHQWQ3OVM1NzZGcVhxcVNuUVhkT0Nud1BPa3lHVjlB0gFwQVVfeXFMTjRZcUJXcWk3TzlnVXFXVG9YUDRmZ2syNy1TME04Q1FMZzJkLWNfYklUdHpwUjZRbHFwR1BwSC1iN3lBVl8xaVo4dmh1d29sSmk0R1N4elQ4a1lPUVo0WTBUbGp4WEpxNG1jSnBvbEREYg?oc=5",
       "published": "2026-09-06",
@@ -869,7 +887,7 @@
     },
     {
       "source": "gnews_채용·시험",
-      "source_label": "CPA뉴스",
+      "source_label": "news.kicpa.or.kr",
       "title": "AI로 인한 회계업계 변화 반영한 공인회계사 선발 제도 개선 연구 착수",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5wRG5kNWVocGtXd2s5VFpoWUpCbHhUcE1uRWkzSFBXUmhscFY1VDRESkdOekNjLS1WSVNaajJmUll5aVJoeHZSY2VQa0YzSjZOd2RQRnF6MjZHaXVyTjdRZVNIMlJvUFAy?oc=5",
       "published": "2026-07-31",

@@ -535,6 +535,40 @@ a { color:var(--accent); text-decoration:none; } a:hover { text-decoration:under
 .feedback { display:inline-block; font-weight:700; padding:9px 16px; border:1px solid var(--accent); border-radius:10px; background:var(--accent); color:#fff; }
 .feedback:hover { text-decoration:none; opacity:.92; }
 
+/* 이용 설문 안내 팝업 — 사이트 언어 그대로(Jua 브랜드 워드마크·카드 좌측 액센트 바·알림패널식 가로 행). PC 가운데 카드 / 모바일 하단 시트.
+   열고 닫기는 app.js initSurveyPrompt (z-index는 헤더 30 위) */
+.survey-modal { position:fixed; inset:0; z-index:100; display:flex; align-items:center; justify-content:center; padding:16px; }
+.survey-modal[hidden] { display:none; }
+.survey-backdrop { position:absolute; inset:0; background:rgba(22,32,44,.35); }
+[data-theme="dark"] .survey-backdrop { background:rgba(0,0,0,.55); }
+.survey-card { position:relative; width:100%; max-width:440px; background:var(--card); border:1px solid var(--line); border-left:5px solid var(--accent);
+  border-radius:14px; padding:16px 18px 16px 20px; box-shadow:var(--shadow), 0 12px 32px rgba(16,32,56,.14); animation:survey-pop .2s ease-out; }
+.survey-card:focus { outline:none; }   /* 열릴 때 카드 자체에 포커스(ESC·탭 이동용) — 링 노출 없음 */
+.survey-cta:focus-visible, .survey-x:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+.survey-head { display:flex; align-items:baseline; gap:8px; margin-bottom:8px; }
+.survey-brand { font-family:"Jua","Pretendard",sans-serif; font-size:22px; color:var(--accent); line-height:1.1; }   /* 헤더 워드마크와 동일 */
+.survey-title { font-size:14.5px; font-weight:700; color:var(--muted); }
+.survey-x { margin-left:auto; align-self:center; width:28px; height:28px; border:0; border-radius:8px; background:transparent; color:var(--muted); font-size:14px; cursor:pointer; line-height:1; }
+.survey-x:hover { background:var(--seg-bg); color:var(--ink); }
+.survey-desc { margin:0 0 14px; font-size:14px; color:var(--ink); line-height:1.6; }
+.survey-row { display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap; }   /* 알림패널(.alert-note PC)과 같은 한 줄 배치 */
+.survey-cta { display:inline-flex; align-items:center; gap:4px; padding:9px 16px; border:1px solid var(--accent); border-radius:10px;
+  background:var(--accent); color:#fff; font-size:13.5px; font-weight:700; white-space:nowrap; }   /* 푸터 .feedback과 동일 톤 */
+.survey-cta em { font-style:normal; font-weight:500; opacity:.8; }
+.survey-cta:hover { text-decoration:none; opacity:.92; }
+.survey-opt { display:inline-flex; align-items:center; gap:6px; font-size:12.5px; color:var(--muted); cursor:pointer; user-select:none; white-space:nowrap; }
+.survey-opt input { width:14px; height:14px; margin:0; accent-color:var(--accent); cursor:pointer; }
+@keyframes survey-pop { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
+@keyframes survey-up { from { transform:translateY(100%); } to { transform:none; } }
+@media (max-width:640px) {
+  .survey-modal { align-items:flex-end; padding:0; }
+  .survey-desc br { display:none; }   /* 좁은 폭에선 줄바꿈 강제 해제(고아 줄 방지) */
+  .survey-card { max-width:none; border-radius:16px 16px 0 0; border-left-width:1px; border-bottom:0;
+    padding:16px 18px calc(16px + env(safe-area-inset-bottom)); animation:survey-up .24s cubic-bezier(.2,.8,.3,1); }
+  .survey-cta { flex:1 1 100%; justify-content:center; padding:11px 16px; font-size:14.5px; }   /* 모바일은 버튼 전체폭, 체크는 아래 줄 */
+}
+@media (prefers-reduced-motion: reduce) { .survey-card { animation:none; } }
+
 /* 글자수·맞춤법 도구 */
 .tools-wrap { max-width:760px; }
 .tools-head { margin-bottom:14px; }

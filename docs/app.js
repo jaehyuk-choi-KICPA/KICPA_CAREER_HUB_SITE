@@ -9,6 +9,10 @@ const EMPKIND_ORDER = ["인턴", "정규직", "계약직", "파트타임"];   //
 // 카드 태그 표시 약칭(필터·데이터·분류는 풀네임 그대로) — 모바일 2열 카드 첫 줄 줄바꿈 방지
 const EMPKIND_SHORT = { 정규직:"정규", 계약직:"계약", 파트타임:"파트", 인턴:"인턴" };
 const NEWS_CAT_ORDER = ["채용·시험", "감사", "세무"];  // 기사 카테고리 필터 순서
+// 이용 설문 안내 팝업 캠페인(프론트 전용). 시즌마다 id·until만 갱신 — until이 지나면 자동 중단(마크업 제거 불필요). 설문 URL은 index.html #survey-cta.
+//   표시 규칙은 initSurveyPrompt: X/배경/ESC=이 탭만(sessionStorage) · 체크박스=7일 · 설문 클릭=30일(localStorage survey_hide)
+//   자동점검(sitecheck·Playwright)은 navigator.webdriver라 미표시. 강제 미리보기 ?survey=1(저장 안 함).
+const SURVEY = { id: "2026-09-reopen", until: "2026-11-30", delayMs: 2000, snoozeDays: 7, doneDays: 30 };
 // 딜·M&A는 2026-08-22 폐지 — 부동산·해외 소형딜 노이즈가 심하고 다른 카테고리를 시각적으로 묻어버렸다.
 
 // 빅4 신입 공채 특집: 상태 표시(접수중/업로드 예정/마감/미정)
@@ -62,6 +66,49 @@ function dismissNews(url, dotEl){ markSeenNews(url); if (dotEl && dotEl.remove) 
 // '새로 올라온 공고' 방문 표시 — 사용자가 누른 공고만 흐리게(브라우저별 기억). 정렬은 최신순이라 날짜 흐림은 불필요.
 function isVisitedJob(url){ return _seenGet("visited_jobs").includes(url); }
 function markVisitedJob(url){ const s = _seenGet("visited_jobs"); if (!s.includes(url)) { s.push(url); _seenSet("visited_jobs", s); } }
+
+// ---- 이용 설문 안내 팝업 ----
+function _ssGet(k){ try { return sessionStorage.getItem(k); } catch { return null; } }
+function _ssSet(k, v){ try { sessionStorage.setItem(k, v); } catch (e) {} }
+function _surveyTrack(action){ try { if (typeof gtag === "function") gtag("event", "survey_popup", { action, campaign: SURVEY.id }); } catch (e) {} }
+function initSurveyPrompt() {
+  const modal = $("survey-modal"); if (!modal) return;
+  const force = new URLSearchParams(location.search).get("survey") === "1";
+  if (!force) {
+    if (Date.now() > new Date(SURVEY.until + "T23:59:59").getTime()) return;   // 캠페인 종료
+    if (navigator.webdriver) return;                                            // 자동점검(sitecheck) 보호
+    if (_ssGet("survey_closed") === "1") return;                                // 이 탭에서 이미 닫음
+    const hide = _seenGet("survey_hide");                                       // {id, until(ms)} — try/catch 헬퍼 재사용(객체도 그대로 반환)
+    if (hide && hide.id === SURVEY.id && Date.now() < (hide.until || 0)) return;
+  }
+  const cta = $("survey-cta"), snooze = $("survey-snooze");
+  let lastFocus = null;
+  const hideFor = (days) => { if (!force) _seenSet("survey_hide", { id: SURVEY.id, until: Date.now() + days * 864e5 }); };
+  const close = (reason) => {
+    if (modal.hidden) return;
+    modal.hidden = true;
+    document.body.style.overflow = "";
+    document.removeEventListener("keydown", onKey);
+    if (reason === "done") hideFor(SURVEY.doneDays);
+    else if (snooze && snooze.checked) { hideFor(SURVEY.snoozeDays); reason = "snooze7d"; }
+    else if (!force) _ssSet("survey_closed", "1");
+    _surveyTrack(reason);
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  };
+  const onKey = (e) => { if (e.key === "Escape") close("close"); };
+  const open = () => {
+    lastFocus = document.activeElement;
+    modal.hidden = false;
+    document.body.style.overflow = "hidden";
+    document.addEventListener("keydown", onKey);
+    $("survey-card")?.focus({ preventScroll: true });   // 카드에 포커스(버튼 포커스링이 첫인상을 해치지 않게)
+    _surveyTrack("show");
+  };
+  $("survey-x")?.addEventListener("click", () => close("close"));
+  $("survey-backdrop")?.addEventListener("click", () => close("close"));
+  cta?.addEventListener("click", () => close("done"));   // 새 탭으로 열리므로 여기선 숨김 기한만 기록하고 닫는다
+  setTimeout(open, force ? 0 : SURVEY.delayMs);
+}
 
 // ---- 테마(다크모드) ----
 function applyTheme(t) {
@@ -1133,4 +1180,6 @@ function initNewsTabs() {
       if (ind || co) renderIndustry();
     }
   }
+
+  initSurveyPrompt();   // 이용 설문 안내 팝업 — 딥링크 자동 이동이 끝난 뒤 2초 후 표시(조건은 함수 참조)
 })();

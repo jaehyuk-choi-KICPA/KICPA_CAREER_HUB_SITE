@@ -64,7 +64,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&display=swap" />
   <!-- ?v= 캐시 토큰: 표시 버전(.ver)과 별개로 CSS/JS 수정 시마다 올려 캐시 갱신(버전 동결 중엔 접미사 a,b…) -->
-  <link rel="stylesheet" href="style.css?v=1.16c" />
+  <link rel="stylesheet" href="style.css?v=1.17" />
 </head>
 <body>
   <header class="site-header">
@@ -72,7 +72,7 @@
     <div class="wrap header-row">
       <div class="brand">
         <div class="brand-top">
-          <h1 title="채용공고 처음으로">회법몬<span class="ver">ver1.20</span></h1>
+          <h1 title="채용공고 처음으로">회법몬<span class="ver">ver1.21</span></h1>
           <button id="theme-toggle" class="theme-btn" aria-label="다크모드 전환" title="다크모드 전환">🌙</button>
         </div>
       </div>
@@ -265,13 +265,14 @@
       </div>
       <div class="about-card">
         <details class="updates-acc" open>
-          <summary>📢 최근 업데이트 <span class="upd-ver">v1.20</span></summary>
+          <summary>📢 최근 업데이트 <span class="upd-ver">v1.21</span></summary>
           <ul class="upd-list">
-            <li><b>v1.20</b> — 신규공채 탭 다듬기: 섹션 이름을 <b>빅4/로컬 신입 회계사 공채</b>로 통일, 풀·파트 탭을 <b>반반 폭</b>으로, PC에서 오른쪽 패널이 <b>자체 스크롤</b>되도록 개선(본문을 다 내려야 보이던 문제 해소).</li>
+            <li><b>v1.21</b> — <b>이용 설문 안내</b> 신설: 시즌 마무리 개편을 앞두고 접속 시 설문 참여 안내창이 한 번 뜹니다(<b>X</b>로 닫거나 <b>‘1주일간 보지 않기’</b> 선택 가능). 남겨 주신 의견은 개편에 반영합니다.</li>
           </ul>
           <details class="upd-more">
             <summary class="upd-more-toggle">이전 업데이트</summary>
             <ul class="upd-list">
+              <li><b>v1.20</b> — 신규공채 탭 다듬기: 섹션 이름을 <b>빅4/로컬 신입 회계사 공채</b>로 통일, 풀·파트 탭을 <b>반반 폭</b>으로, PC에서 오른쪽 패널이 <b>자체 스크롤</b>되도록 개선(본문을 다 내려야 보이던 문제 해소).</li>
               <li><b>v1.19</b> — 책갈피가 <b>‘2026 신규공채’</b>로 확장 — 빅4 공채(접이식)에 더해 <b>로컬 신규공채</b>를 풀타임/파트타임으로 자동 표시(마감 임박순).</li>
               <li><b>v1.18</b> — 이 탭 상단 <b>목차를 버튼(칩)형</b>으로 개선 — 누를 수 있는 곳이 한눈에 보이게.</li>
               <li><b>v1.17</b> — 채용알림에 <b>‘빅4 인턴만’</b> 옵션 추가, 글자수 탭에 <b>바이트 기준(2/3byte) 선택</b>(삼정=3byte), 이 <b>업데이트 소식</b> 신설·이용안내 간소화, PC 검색창 정렬 정리.</li>
@@ -365,6 +366,23 @@
 
   </main>
 
+  <!-- ===== 이용 설문 안내 팝업(프론트 전용, 캠페인 상수 app.js SURVEY · 표시 규칙 initSurveyPrompt · 강제 미리보기 ?survey=1) ===== -->
+  <div class="survey-modal" id="survey-modal" hidden>
+    <div class="survey-backdrop" id="survey-backdrop"></div>
+    <div class="survey-card" id="survey-card" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="survey-title" aria-describedby="survey-desc">
+      <div class="survey-head">
+        <span class="survey-brand">회법몬</span><span class="survey-title" id="survey-title">이용 설문</span>
+        <button class="survey-x" id="survey-x" type="button" aria-label="닫기" title="닫기">✕</button>
+      </div>
+      <p class="survey-desc" id="survey-desc">사이트 전반에 대한 의견을 듣고 있어요.<br />
+        좋았던 점, 불편한 점, 있었으면 하는 기능을 편하게 적어 주세요.</p>
+      <div class="survey-row">
+        <a class="survey-cta" id="survey-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSc1r182psbkU8jLWn8x13TdORSa63NEYoo_i3AQYs1d4BeESA/viewform" target="_blank" rel="noopener">📝 설문 참여하기 <em>· 2분</em></a>
+        <label class="survey-opt"><input type="checkbox" id="survey-snooze" /> 1주일간 보지 않기</label>
+      </div>
+    </div>
+  </div>
+
   <footer class="site-footer">
     <div class="wrap">
       <p class="thanks">이용해 주셔서 감사합니다. 더 나은 서비스를 위해 의견을 들려주세요.</p>
@@ -376,6 +394,6 @@
     </div>
   </footer>
 
-  <script src="app.js?v=1.19a"></script>
+  <script src="app.js?v=1.20"></script>
 </body>
 </html>

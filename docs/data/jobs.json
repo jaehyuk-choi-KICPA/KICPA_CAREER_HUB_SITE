@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-09-28T10:31:35",
+  "generated_at": "2026-09-28T11:01:46",
   "soon_days": 7,
   "counts": {
-    "total": 88,
-    "open": 51,
+    "total": 89,
+    "open": 52,
     "closed": 37,
-    "new": 4,
+    "new": 5,
     "soon": 26,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
       "안진": 10,
       "한영": 14,
-      "로컬": 56,
+      "로컬": 57,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 56,
+      "수습CPA": 57,
       "자격무관": 32
     },
     "by_emp_kind": {
       "인턴": 12,
       "정규직": 56,
       "계약직": 8,
-      "파트타임": 12
+      "파트타임": 13
     }
   },
   "postings": [
@@ -748,6 +748,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790043577604",
       "dday": 32,
       "first_seen": "2026-09-22T11:31:43"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[회계법인 예광] 파트타임 회계사님 채용의 건(감사경력자 Staff2)",
+      "company": "회계법인 예광",
+      "deadline": "2026-10-30",
+      "posted_date": "2026-09-28",
+      "location": "서울 전체",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790559892591",
+      "dday": 32,
+      "first_seen": "2026-09-28T11:01:46"
     },
     {
       "source": "kicpa_cpa",

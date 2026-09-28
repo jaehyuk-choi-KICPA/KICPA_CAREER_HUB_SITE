@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-28T09:31:40",
+  "generated_at": "2026-09-28T10:01:50",
   "soon_days": 7,
   "counts": {
-    "total": 87,
-    "open": 50,
+    "total": 88,
+    "open": 51,
     "closed": 37,
-    "new": 3,
+    "new": 4,
     "soon": 26,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
       "안진": 10,
       "한영": 14,
-      "로컬": 55,
+      "로컬": 56,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 55,
+      "수습CPA": 56,
       "자격무관": 32
     },
     "by_emp_kind": {
       "인턴": 12,
-      "정규직": 55,
+      "정규직": 56,
       "계약직": 8,
       "파트타임": 12
     }
@@ -957,6 +957,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789638394502",
       "dday": 153,
       "first_seen": "2026-09-17T19:02:22"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[대주회계법인 5사업부] 경력회계사 채용 공고",
+      "company": "대주회계법인",
+      "deadline": "2027-02-28",
+      "posted_date": "2026-09-28",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790557053119",
+      "dday": 153,
+      "first_seen": "2026-09-28T10:01:50"
     },
     {
       "source": "hanyoung",

@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-28T14:02:27",
+  "generated_at": "2026-09-28T14:31:43",
   "soon_days": 7,
   "counts": {
-    "total": 87,
+    "total": 86,
     "open": 53,
-    "closed": 34,
+    "closed": 33,
     "new": 6,
     "soon": 27,
     "by_firm": {
@@ -12,16 +12,16 @@
       "삼정": 3,
       "안진": 10,
       "한영": 12,
-      "로컬": 57,
+      "로컬": 56,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 57,
+      "수습CPA": 56,
       "자격무관": 30
     },
     "by_emp_kind": {
       "인턴": 11,
-      "정규직": 55,
+      "정규직": 54,
       "계약직": 8,
       "파트타임": 13
     }
@@ -1621,25 +1621,6 @@
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789571488112",
       "dday": -5,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "[회계법인 공명] 수습회계사(풀타임) 채용",
-      "company": "회계법인 공명",
-      "deadline": "2026-09-25",
-      "posted_date": "2026-09-02",
-      "location": "서울 전체",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788334900143",
-      "dday": -3,
       "first_seen": ""
     },
     {

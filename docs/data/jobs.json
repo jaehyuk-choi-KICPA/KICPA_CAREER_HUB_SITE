@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-09-28T17:31:43",
+  "generated_at": "2026-09-28T18:01:57",
   "soon_days": 7,
   "counts": {
-    "total": 87,
-    "open": 56,
+    "total": 88,
+    "open": 57,
     "closed": 31,
     "new": 9,
-    "soon": 28,
+    "soon": 29,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
       "안진": 10,
-      "한영": 11,
+      "한영": 12,
       "로컬": 58,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 58,
-      "자격무관": 29
+      "자격무관": 30
     },
     "by_emp_kind": {
-      "인턴": 10,
+      "인턴": 11,
       "정규직": 55,
       "계약직": 9,
       "파트타임": 13
@@ -121,6 +121,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789535291465",
       "dday": 1,
       "first_seen": "2026-09-16T14:31:44"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": false,
+      "title": "금융컨설팅본부 리스크 컨설팅 인턴",
+      "company": "EY한영",
+      "deadline": "2026-09-29",
+      "posted_date": "2026-09-22",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/129197",
+      "dday": 1,
+      "first_seen": "2026-09-28T18:01:57"
     },
     {
       "source": "kicpa_susup",

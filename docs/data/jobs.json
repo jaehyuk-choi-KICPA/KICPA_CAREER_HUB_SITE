@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T00:01:49",
+  "generated_at": "2026-09-30T00:31:41",
   "soon_days": 7,
   "counts": {
     "total": 87,
@@ -21,9 +21,9 @@
     },
     "by_emp_kind": {
       "인턴": 12,
-      "정규직": 53,
+      "정규직": 52,
       "계약직": 9,
-      "파트타임": 13
+      "파트타임": 14
     }
   },
   "postings": [
@@ -1648,15 +1648,15 @@
       "firm": "로컬",
       "field": "감사",
       "qualification": "수습CPA",
-      "emp_kind": "정규직",
+      "emp_kind": "파트타임",
       "status": "closed",
       "is_new": false,
       "title": "[예일회계법인] 감사부문 신입회계사(BU4) 채용",
       "company": "예일회계법인",
       "deadline": "2026-09-29",
       "posted_date": "2026-09-16",
-      "location": "",
-      "emp_type": "",
+      "location": "서울 서초구",
+      "emp_type": "Part Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789535291465",
       "dday": -1,
       "first_seen": ""

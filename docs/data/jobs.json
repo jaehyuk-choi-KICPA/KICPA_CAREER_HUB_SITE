@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-29T09:32:21",
+  "generated_at": "2026-09-29T10:01:46",
   "soon_days": 7,
   "counts": {
-    "total": 83,
-    "open": 53,
+    "total": 84,
+    "open": 54,
     "closed": 30,
-    "new": 7,
+    "new": 8,
     "soon": 26,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
       "안진": 9,
       "한영": 12,
-      "로컬": 54,
+      "로컬": 55,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 53,
+      "수습CPA": 54,
       "자격무관": 30
     },
     "by_emp_kind": {
       "인턴": 11,
-      "정규직": 50,
+      "정규직": 51,
       "계약직": 9,
       "파트타임": 13
     }
@@ -294,25 +294,6 @@
       "first_seen": "2026-09-22T10:31:41"
     },
     {
-      "source": "anjin",
-      "source_label": "딜로이트안진",
-      "firm": "안진",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "인재부 Talent-Acquisition(채용팀) 대리/과장급 채용",
-      "company": "딜로이트 안진",
-      "deadline": "2026-09-30",
-      "posted_date": "2026-09-22",
-      "location": "",
-      "emp_type": "",
-      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5200",
-      "dday": 1,
-      "first_seen": "2026-09-22T11:31:43"
-    },
-    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "로컬",
@@ -503,6 +484,25 @@
       "first_seen": "2026-09-17T18:01:46"
     },
     {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": false,
+      "title": "인재부 Talent-Acquisition(채용팀) 대리/과장급 채용",
+      "company": "딜로이트 안진",
+      "deadline": "2026-10-05",
+      "posted_date": "2026-09-22",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5200",
+      "dday": 6,
+      "first_seen": "2026-09-22T11:31:43"
+    },
+    {
       "source": "hanyoung",
       "source_label": "EY한영",
       "firm": "한영",
@@ -577,6 +577,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788856019467",
       "dday": 9,
       "first_seen": "2026-09-27T14:31:49"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "안경회계법인 경남본부(창원) 수습회계사 채용공고",
+      "company": "안경회계법인",
+      "deadline": "2026-10-09",
+      "posted_date": "2026-09-29",
+      "location": "경남 창원시 성산구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790643611798",
+      "dday": 10,
+      "first_seen": "2026-09-29T10:01:46"
     },
     {
       "source": "anjin",

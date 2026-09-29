@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-29T14:01:48",
+  "generated_at": "2026-09-29T14:31:36",
   "soon_days": 7,
   "counts": {
     "total": 84,
     "open": 55,
     "closed": 29,
     "new": 7,
-    "soon": 26,
+    "soon": 25,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
@@ -294,25 +294,6 @@
       "first_seen": "2026-09-22T10:31:41"
     },
     {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "파트타임",
-      "status": "open",
-      "is_new": true,
-      "title": "[율성회계법인] 수습회계사님 모십니다.",
-      "company": "율성회계법인",
-      "deadline": "2026-09-30",
-      "posted_date": "2026-09-28",
-      "location": "서울 강남구",
-      "emp_type": "Part Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789348672745",
-      "dday": 1,
-      "first_seen": "2026-09-28T14:02:27"
-    },
-    {
       "source": "kicpa_cpa",
       "source_label": "구인(CPA)",
       "firm": "로컬",
@@ -577,6 +558,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1788856019467",
       "dday": 9,
       "first_seen": "2026-09-27T14:31:49"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[대주회계법인 경남지사] 수습회계사님 모십니다.",
+      "company": "대주회계법인 경남지사",
+      "deadline": "2026-10-09",
+      "posted_date": "2026-09-29",
+      "location": "경남 창원시 성산구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790658211907",
+      "dday": 10,
+      "first_seen": "2026-09-29T14:31:36"
     },
     {
       "source": "kicpa_susup",

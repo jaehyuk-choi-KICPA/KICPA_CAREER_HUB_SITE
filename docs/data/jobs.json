@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-09-29T20:31:40",
+  "generated_at": "2026-09-29T21:01:47",
   "soon_days": 7,
   "counts": {
     "total": 87,
     "open": 58,
     "closed": 29,
-    "new": 6,
-    "soon": 26,
+    "new": 7,
+    "soon": 27,
     "by_firm": {
       "삼일": 3,
       "삼정": 4,
@@ -406,6 +406,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790553557080",
       "dday": 3,
       "first_seen": "2026-09-28T09:01:52"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[진성회계법인 선정릉지점] 수습회계사 채용공고",
+      "company": "진성회계법인",
+      "deadline": "2026-10-02",
+      "posted_date": "2026-09-29",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790682497082",
+      "dday": 3,
+      "first_seen": "2026-09-29T21:01:47"
     },
     {
       "source": "kicpa_cpa",
@@ -1052,25 +1071,6 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5187",
       "dday": 93,
       "first_seen": "2026-09-08T11:31:44"
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "[태성회계법인] 수습회계사 채용공고",
-      "company": "태성회계법인",
-      "deadline": "2026-12-31",
-      "posted_date": "2026-09-28",
-      "location": "서울 전체",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790576284962",
-      "dday": 93,
-      "first_seen": "2026-09-28T15:31:50"
     },
     {
       "source": "kicpa_susup",

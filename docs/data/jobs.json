@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-29T16:31:37",
+  "generated_at": "2026-09-29T17:01:47",
   "soon_days": 7,
   "counts": {
     "total": 86,
     "open": 57,
     "closed": 29,
-    "new": 7,
+    "new": 5,
     "soon": 25,
     "by_firm": {
       "삼일": 3,
@@ -700,7 +700,7 @@
       "qualification": "수습CPA",
       "emp_kind": "계약직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[이촌회계법인] 품질관리실 담당인력 채용 공고안내",
       "company": "이촌회계법인",
       "deadline": "2026-10-28",
@@ -928,7 +928,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[대성회계법인] 품질관리실 직원 채용",
       "company": "대성회계법인",
       "deadline": "2026-10-31",

@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-29T10:01:46",
+  "generated_at": "2026-09-29T10:31:45",
   "soon_days": 7,
   "counts": {
-    "total": 84,
-    "open": 54,
+    "total": 85,
+    "open": 55,
     "closed": 30,
     "new": 8,
     "soon": 26,
@@ -12,18 +12,18 @@
       "삼정": 3,
       "안진": 9,
       "한영": 12,
-      "로컬": 55,
+      "로컬": 56,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 54,
+      "수습CPA": 55,
       "자격무관": 30
     },
     "by_emp_kind": {
       "인턴": 11,
       "정규직": 51,
       "계약직": 9,
-      "파트타임": 13
+      "파트타임": 14
     }
   },
   "postings": [
@@ -788,6 +788,25 @@
       "first_seen": "2026-09-28T11:01:46"
     },
     {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[해림회계법인] 공인회계사 파트타임 채용",
+      "company": "해림회계법인",
+      "deadline": "2026-10-30",
+      "posted_date": "2026-09-29",
+      "location": "서울 전체",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790644778592",
+      "dday": 31,
+      "first_seen": "2026-09-29T10:31:45"
+    },
+    {
       "source": "kicpa_cpa",
       "source_label": "구인(CPA)",
       "firm": "로컬",
@@ -1023,7 +1042,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[대주회계법인 5사업부] 경력회계사 채용 공고",
       "company": "대주회계법인",
       "deadline": "2027-02-28",

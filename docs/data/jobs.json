@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-09-29T19:02:18",
+  "generated_at": "2026-09-29T19:31:37",
   "soon_days": 7,
   "counts": {
-    "total": 86,
-    "open": 57,
+    "total": 87,
+    "open": 58,
     "closed": 29,
-    "new": 5,
-    "soon": 25,
+    "new": 6,
+    "soon": 26,
     "by_firm": {
       "삼일": 3,
-      "삼정": 3,
+      "삼정": 4,
       "안진": 9,
       "한영": 12,
       "로컬": 57,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 56,
-      "자격무관": 30
+      "자격무관": 31
     },
     "by_emp_kind": {
-      "인턴": 11,
+      "인턴": 12,
       "정규직": 52,
       "계약직": 9,
       "파트타임": 14
@@ -330,6 +330,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1788754847330",
       "dday": 2,
       "first_seen": "2026-09-07T13:31:44"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "[Audit] ADC 감사 및 용역 업무 지원 인턴",
+      "company": "삼정KPMG",
+      "deadline": "2026-10-01",
+      "posted_date": "2026-09-29",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000963&receive_div_cd=N",
+      "dday": 2,
+      "first_seen": "2026-09-29T19:31:37"
     },
     {
       "source": "anjin",

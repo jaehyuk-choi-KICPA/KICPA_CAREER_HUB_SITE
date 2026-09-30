@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-09-30T08:31:28",
+  "generated_at": "2026-09-30T09:02:03",
   "soon_days": 7,
   "counts": {
-    "total": 87,
-    "open": 56,
+    "total": 88,
+    "open": 57,
     "closed": 31,
-    "new": 7,
+    "new": 8,
     "soon": 27,
     "by_firm": {
       "삼일": 3,
       "삼정": 4,
       "안진": 9,
-      "한영": 12,
+      "한영": 13,
       "로컬": 57,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 56,
-      "자격무관": 31
+      "자격무관": 32
     },
     "by_emp_kind": {
-      "인턴": 12,
+      "인턴": 13,
       "정규직": 52,
       "계약직": 9,
       "파트타임": 14
@@ -615,6 +615,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790643611798",
       "dday": 9,
       "first_seen": "2026-09-29T10:01:46"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "딜",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "전략·재무자문본부 Infrastructure Deal Advisory Service 인턴",
+      "company": "EY한영",
+      "deadline": "2026-10-11",
+      "posted_date": "2026-09-30",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/129926",
+      "dday": 11,
+      "first_seen": "2026-09-30T09:02:03"
     },
     {
       "source": "anjin",

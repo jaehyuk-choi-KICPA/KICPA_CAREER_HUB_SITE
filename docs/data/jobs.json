@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-30T13:01:48",
+  "generated_at": "2026-09-30T13:32:26",
   "soon_days": 7,
   "counts": {
     "total": 90,
     "open": 59,
     "closed": 31,
-    "new": 9,
+    "new": 10,
     "soon": 28,
     "by_firm": {
       "삼일": 3,
@@ -997,25 +997,6 @@
       "first_seen": "2026-09-28T09:31:40"
     },
     {
-      "source": "kicpa_cpa",
-      "source_label": "구인(CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "[대성회계법인] 품질관리실 직원 채용",
-      "company": "대성회계법인",
-      "deadline": "2026-10-31",
-      "posted_date": "2026-09-28",
-      "location": "서울 강남구",
-      "emp_type": "정규직",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1789534682594",
-      "dday": 31,
-      "first_seen": "2026-09-28T16:31:41"
-    },
-    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "로컬",
@@ -1033,6 +1014,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790660830177",
       "dday": 31,
       "first_seen": "2026-09-29T15:01:44"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[대성회계법인] 품질관리실 직원 채용",
+      "company": "대성회계법인",
+      "deadline": "2026-10-31",
+      "posted_date": "2026-09-30",
+      "location": "서울 강남구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1789534682594",
+      "dday": 31,
+      "first_seen": "2026-09-30T13:32:26"
     },
     {
       "source": "kicpa_susup",

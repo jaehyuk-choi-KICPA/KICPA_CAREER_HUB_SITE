@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T21:31:58",
+  "generated_at": "2026-09-30T22:02:10",
   "items": [
     {
       "source": "gnews_감사_2",
@@ -20,7 +20,7 @@
         {
           "title": "증선위, 미공개정보 이용·NXT 시세조종…불공정거래 3건 적발",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA2ZG5CQUxqQjJDTG1CMW1wcHdBeW9TQnZZOXdPVEtLMzIzWWdzRzhadGd5eWE5RndXWm8xU1ExWjVWLThVQ1VMSkc4dTlzSnlaY0ZYUDZtN0UwVWc?oc=5",
-          "source_label": "news.kbs.co.kr",
+          "source_label": "KBS 뉴스",
           "published": "2026-09-30"
         },
         {
@@ -32,7 +32,7 @@
         {
           "title": "[핫이슈] 해태제과, '530억 뻥튀기' 분식회계 덜미…감사인 지정·검찰 통보 '철퇴'",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1FU21HZlpyM0lvQ1hTS1NXLXBfVTBub0FqZEM3VUZCSWl5alZGTUNwX3UzbWx2QzZ4MnUxSmpqcmR4ekpuOTlFcndLaDg3cWUtMjA2VkxCNEhENThQVU9WU2VyYy1KQVRzRkE?oc=5",
-          "source_label": "newswatch.kr",
+          "source_label": "뉴스워치",
           "published": "2026-09-18"
         },
         {
@@ -185,7 +185,7 @@
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "데일리연합",
+      "source_label": "dailyan.com",
       "title": "케이알엠, 1000억 CB 발행에도 손실 지속…자산 손상 및 회계처리 불확실성 증폭",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5rWE9uWEV5eGxPVkVzV1hLNE5PaVJmVVV4MzdwTS1BaTdTRW8xV2hRYm5uR2VtQkNGUkVlTUZjSGFxZ092ZEdFUGZBWE03cktyUVVNb0U3RmF5Zw?oc=5",
       "published": "2026-09-30",
@@ -205,7 +205,7 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "파이낸셜뉴스",
+      "source_label": "fnnews.com",
       "title": "반도체 호황에 법인세 60% 증가... 성과급·특별배당에 소득세 17%↑",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAzbXpzWVJ4UjJTbXVnLVFKWjdVMHZoNWc4WXBWV3d2MjNESS04ei1qNlkyZE9YdElqblNTb09yUTZIQjdpTkswYUk1YjJ2UmRoZEFaUnBMLUtvQQ?oc=5",
       "published": "2026-09-30",
@@ -213,6 +213,12 @@
       "summary": "",
       "category": "세무",
       "dupes": [
+        {
+          "title": "반도체·증시 호황에 국세 478.6兆 `최고`…추경 전망보다 63조 더(종합)",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB0X2ZwOGxPT1EwV0pYa01tSVZkdmQzZWtHWTZzUmZ5Z3BOcENlSk42VmU5Wm5GYXpxYWswVjI0aTlDWWYtVnlpanE5YnEyd3hPMGpLY01VMXY2cHAtQjhlUkh3?oc=5",
+          "source_label": "imaeil.com",
+          "published": "2026-09-30"
+        },
         {
           "title": "올 국세수입 478.6조 전망…반도체 호황에 법인세 136.4조 예상",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1XYlp0OGpwdW5UaF9FeEkxUGxCaHktWFF2RTB2MlUyc1hFSHh4aEpIeUpoem9iRUo1ZGp1c3VOSVdpejQ4cGhWR1F5dGhFZTRUVzhyWk1sZm1kbWgxcVRwN0hHM0ZFYkFmQVE?oc=5",
@@ -288,7 +294,13 @@
         {
           "title": "반도체가 끌어올린 세수…법인세 60% 넘게 늘었다",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1XZ3llV1otSEl3V29URVhYY2pONFFCbzFWSEpqMHMxUzYzWkx5MkZoVU9oNTVMcmFLMFNRVW5TTW1uNFI1WElMc3FpRV9BWXluQUxIczVxRnM5QQ?oc=5",
-          "source_label": "파이낸셜뉴스",
+          "source_label": "fnnews.com",
+          "published": "2026-09-30"
+        },
+        {
+          "title": "올해 국세 478조6천억원 걷힌다…추경 전망보다 63조 더",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5WdzRyMTNtclBCdGh5eWNrcXUycEQ1d2dnMHhmMDVVV1I5bVpaX05DMXI1dlpKQy1zc2Z2bWthbHlHdDVfcDYxaXJwbDE5ZjQtYzhCS2tnWk5IWFJ3azRweFh3?oc=5",
+          "source_label": "imaeil.com",
           "published": "2026-09-30"
         },
         {
@@ -349,7 +361,7 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "경향신문",
+      "source_label": "khan.co.kr",
       "title": "[단독]5000억도 넘게 버는 제조대기업 세금은 왜 더 적을까···법인세 실효세율 5년 중 4년 ‘역전’",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBBd01pYVpIWDZhNU14NzlMbFZMZEFDcFdfa1JYZlN2M3RDNGlKdTNLUkVzeWZOdWVkTXl4bGtDZ3hoTnV2NThTTTVwN2lZNUNDdEMtUmZkU0FRd9IBX0FVX3lxTE9qU3Y5OG4xbTFzUm1pTlM4azhBOHlLWHhaVVYwdXgtTG9CV3kwWUtOaDc2WkUxLUdEc05GSDBFMXZBZUFvamNCa1F3Q1MyWDRBa2dVOHc4RllmdzFRQmdz?oc=5",
       "published": "2026-09-29",
@@ -389,7 +401,7 @@
     },
     {
       "source": "gnews_감사",
-      "source_label": "crowe.com",
+      "source_label": "Crowe",
       "title": "K-IFRS 제1118호 영향 관련 사전 주석공시 모범사례 마련",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE13d18yem9ReWp0R1hMQXhJaVctcGpyTzgxRm9XSXBNOXZxcnNZaDhfZVgzajBhR0gwNm9EQnBmZElrWWhsQ01mbE05dzc5NmVWbksxVVE5STk?oc=5",
       "published": "2026-09-29",
@@ -442,15 +454,21 @@
           "published": "2026-09-28"
         },
         {
+          "title": "국세행정개혁위 “세무조사, 현장 상주 최소화해달라” 국세청에 주문",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5EY0hFeXp3R1JWRHZLVktBTDZ5U1lSQnFCRk1NVXd6T1o4elBScmczeVJXeWdrRTlZdHpVbzFzZEhHdGdjTXBCRjhaaktZMnpwN19rTEZTM0s0dlg2TEJwOFA5RHFvZk1xZElQeWZERmd1N2JQ?oc=5",
+          "source_label": "busan.com",
+          "published": "2026-09-28"
+        },
+        {
           "title": "“세무조사, 납세자 관점에서”... 2026 국세행정개혁위 개최",
           "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1pNUNtRmkweVo2V2xOcWRJTElyak9FVml0ZlFjU2JUSUJpRm8zcDc5YlpRUm5LRWlkSmVINzNQT3BvZXZ0SGt1VGJwNWREQ0hX?oc=5",
-          "source_label": "munhwa.com",
+          "source_label": "문화일보",
           "published": "2026-09-28"
         },
         {
           "title": "국세청, 세무조사·체납추적 연계 전담팀 설치 추진",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE94MVhCRlZaNVpsYWNwQnpyZktxS1c0alhfSDJYZG5zakQ3LS1oVjVnRzFZVVl3a1FoM0ZoS0ZxX1NZWjgyTW1KQkxjRW90eW5HY2lvckgtZkFRZw?oc=5",
-          "source_label": "파이낸셜뉴스",
+          "source_label": "fnnews.com",
           "published": "2026-09-28"
         },
         {
@@ -468,7 +486,7 @@
         {
           "title": "국세청, 세무조사 부담 낮추고 악성 체납은 끝까지 추적…‘통합 재정수입기관’ 전환 시동",
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9vTUpORUFvaXhMeXhmVWpNMmIwdXpHUUh3VlluVlY5RHhfWlRobEU1TWhpc1FIUzc0dk9RSEFrNEhYaFFKdmlpSE1sdWw5eEYzVHJONmFTZkRER3ZJenR1TFdtU3VCMU16aWlF?oc=5",
-          "source_label": "웹플러스뉴스",
+          "source_label": "webplusnews.kr",
           "published": "2026-09-28"
         },
         {
@@ -480,7 +498,7 @@
         {
           "title": "국세청, 소상공인 세무조사 유예 12월 말까지 연장",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBwLUxUVmZUSFF4VFh2LUROb3cxc2ZCUlpvMlN6clM1Q2dYTlRnb1RKaGZ3WmJoT2QyT3V3WkJLeDFRSHdCV0RRRHFjRVM2aWxEc3RsZjdQTXhoMU0?oc=5",
-          "source_label": "news.kbs.co.kr",
+          "source_label": "KBS 뉴스",
           "published": "2026-09-28"
         },
         {
@@ -595,11 +613,11 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "v.daum.net",
+      "source_label": "매일경제",
       "title": "“비수도권 차등 법인세 도입해야”…부산상의, 세정 개선 건의",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1tdjQxNGl2WEVzaEZTbllyMkluajVUbUJpa1FmVlpoQnoxRXdPSGJaNlRSaXk0dUtKQlhhOFV0Q1pFZFVReUdEMjBIcmN3RHp3Wm5OeQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1mQk5PVUt1RlBXdGo5WXBIUlBRWk1TcmRQaVNWOGlVeHFoTGtTMUlSSVpKRnBSX2lURldpbWdocUhkNHVKQndmWDVLdG9TUXNvczljaQ?oc=5",
       "published": "2026-09-28",
-      "published_at": "2026-09-28T06:30:00",
+      "published_at": "2026-09-28T06:27:02",
       "summary": "",
       "category": "세무"
     },
@@ -849,7 +867,7 @@
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "news.kbs.co.kr",
+      "source_label": "KBS 뉴스",
       "title": "잦은 사업 이월, ‘회계처리 부적정’ 도마",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1waW5qQW1YOXhwYmFLQk1JR2VfajhXSWptWWd4SUxEYXF2bFI4cE5WTlFUX3VnVWRmdVBpcXE4YlhMUndRUXMwLTFqRGdEMjl5aHJkTjJpbzhEZXc?oc=5",
       "published": "2026-09-11",

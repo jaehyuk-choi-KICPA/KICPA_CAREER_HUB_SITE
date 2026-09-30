@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-09-30T10:01:48",
+  "generated_at": "2026-09-30T10:31:48",
   "soon_days": 7,
   "counts": {
     "total": 88,
     "open": 57,
     "closed": 31,
-    "new": 7,
+    "new": 6,
     "soon": 27,
     "by_firm": {
       "삼일": 3,
@@ -852,7 +852,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[해림회계법인] 공인회계사 경력직 파트타임 채용",
       "company": "해림회계법인",
       "deadline": "2026-10-30",

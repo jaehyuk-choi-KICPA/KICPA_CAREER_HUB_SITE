@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-09-30T16:02:08",
+  "generated_at": "2026-09-30T16:31:42",
   "soon_days": 7,
   "counts": {
-    "total": 90,
-    "open": 60,
+    "total": 92,
+    "open": 62,
     "closed": 30,
-    "new": 9,
-    "soon": 27,
+    "new": 10,
+    "soon": 28,
     "by_firm": {
       "삼일": 3,
       "삼정": 4,
-      "안진": 9,
+      "안진": 11,
       "한영": 14,
       "로컬": 58,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 59,
-      "자격무관": 31
+      "자격무관": 33
     },
     "by_emp_kind": {
-      "인턴": 13,
+      "인턴": 15,
       "정규직": 51,
       "계약직": 9,
       "파트타임": 17
@@ -506,6 +506,25 @@
       "source": "anjin",
       "source_label": "딜로이트안진",
       "firm": "안진",
+      "field": "택스",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": false,
+      "title": "세무자문부문 Global Employer Services 인턴",
+      "company": "딜로이트 안진",
+      "deadline": "2026-10-06",
+      "posted_date": "2026-08-28",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5181",
+      "dday": 6,
+      "first_seen": "2026-09-30T16:31:42"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
       "field": "기타",
       "qualification": "자격무관",
       "emp_kind": "계약직",
@@ -653,6 +672,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/129926",
       "dday": 11,
       "first_seen": "2026-09-30T09:02:03"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "택스",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "세무자문부문 이전가격그룹(Transfer Pricing 2팀) 인턴직 (정규직 전환형)",
+      "company": "딜로이트 안진",
+      "deadline": "2026-10-12",
+      "posted_date": "2026-09-30",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5207",
+      "dday": 12,
+      "first_seen": "2026-09-30T16:31:42"
     },
     {
       "source": "anjin",

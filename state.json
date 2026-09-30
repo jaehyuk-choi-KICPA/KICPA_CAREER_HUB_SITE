@@ -1908,7 +1908,8 @@
     "uid": "kicpa_susup:1790759512265",
     "first_seen": "2026-09-30T18:32:04",
     "last_seen": "2026-09-30",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-09-30"
   },
   "anjin:5213": {
     "source": "anjin",
@@ -1926,7 +1927,8 @@
     "uid": "anjin:5213",
     "first_seen": "2026-09-30T18:32:04",
     "last_seen": "2026-09-30",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-09-30"
   },
   "anjin:5211": {
     "source": "anjin",
@@ -1944,6 +1946,7 @@
     "uid": "anjin:5211",
     "first_seen": "2026-09-30T18:32:04",
     "last_seen": "2026-09-30",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-09-30"
   }
 }

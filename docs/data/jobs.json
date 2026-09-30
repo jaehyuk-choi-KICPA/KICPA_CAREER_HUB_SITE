@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-30T22:02:07",
+  "generated_at": "2026-09-30T22:32:08",
   "soon_days": 7,
   "counts": {
-    "total": 96,
-    "open": 65,
+    "total": 97,
+    "open": 66,
     "closed": 31,
-    "new": 11,
+    "new": 12,
     "soon": 28,
     "by_firm": {
       "삼일": 3,
       "삼정": 4,
       "안진": 13,
       "한영": 15,
-      "로컬": 59,
+      "로컬": 60,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 60,
+      "수습CPA": 61,
       "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 17,
-      "정규직": 52,
+      "정규직": 53,
       "계약직": 10,
       "파트타임": 17
     }
@@ -748,6 +748,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790747897176",
       "dday": 15,
       "first_seen": "2026-09-30T15:01:43"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[안세회계법인 신사분점] 수습공인회계사 채용",
+      "company": "안세회계법인",
+      "deadline": "2026-10-16",
+      "posted_date": "2026-09-30",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790773990786",
+      "dday": 16,
+      "first_seen": "2026-09-30T22:32:08"
     },
     {
       "source": "kicpa_susup",

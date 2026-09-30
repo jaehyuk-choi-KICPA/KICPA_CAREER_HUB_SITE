@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-09-30T14:01:49",
+  "generated_at": "2026-09-30T14:31:44",
   "soon_days": 7,
   "counts": {
-    "total": 90,
+    "total": 89,
     "open": 59,
-    "closed": 31,
-    "new": 10,
+    "closed": 30,
+    "new": 9,
     "soon": 27,
     "by_firm": {
       "삼일": 3,
       "삼정": 4,
       "안진": 9,
       "한영": 14,
-      "로컬": 58,
+      "로컬": 57,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 58,
-      "자격무관": 32
+      "자격무관": 31
     },
     "by_emp_kind": {
       "인턴": 13,
-      "정규직": 52,
+      "정규직": 51,
       "계약직": 9,
       "파트타임": 16
     }
@@ -605,7 +605,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[대주회계법인 경남지사] 수습회계사님 모십니다.",
       "company": "대주회계법인 경남지사",
       "deadline": "2026-10-09",
@@ -1563,25 +1563,6 @@
       "location": "경기 안산시 단원구",
       "emp_type": "Part Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789003869019",
-      "dday": -12,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_cpa",
-      "source_label": "구인(CPA)",
-      "firm": "로컬",
-      "field": "택스",
-      "qualification": "자격무관",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "삼지회계법인(서초동)에서 안정적으로 장기근무 하실 기장세무 전문가를 모집합니다.",
-      "company": "삼지회계법인",
-      "deadline": "2026-09-18",
-      "posted_date": "2026-09-11",
-      "location": "서울 서초구",
-      "emp_type": "정규직",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1788857351032",
       "dday": -12,
       "first_seen": ""
     },

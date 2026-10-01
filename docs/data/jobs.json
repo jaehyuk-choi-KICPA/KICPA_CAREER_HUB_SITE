@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-01T14:02:05",
+  "generated_at": "2026-10-01T14:31:59",
   "soon_days": 7,
   "counts": {
-    "total": 95,
-    "open": 53,
+    "total": 96,
+    "open": 54,
     "closed": 42,
-    "new": 7,
-    "soon": 18,
+    "new": 8,
+    "soon": 19,
     "by_firm": {
       "삼일": 3,
       "삼정": 4,
       "안진": 13,
       "한영": 15,
-      "로컬": 58,
+      "로컬": 59,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 59,
+      "수습CPA": 60,
       "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 17,
-      "정규직": 51,
+      "정규직": 52,
       "계약직": 10,
       "파트타임": 17
     }
@@ -83,6 +83,25 @@
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000963&receive_div_cd=N",
       "dday": 0,
       "first_seen": "2026-09-29T19:31:37"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "<총무부 직원 모집 ( 신입 및 2년 이내 경력)>",
+      "company": "대명회계법인",
+      "deadline": "2026-10-01",
+      "posted_date": "2026-10-01",
+      "location": "지역무관 지역무관",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1790831315950",
+      "dday": 0,
+      "first_seen": "2026-10-01T14:31:59"
     },
     {
       "source": "anjin",

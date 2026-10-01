@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T00:02:15",
+  "generated_at": "2026-10-02T00:36:23",
   "soon_days": 7,
   "counts": {
     "total": 96,
@@ -21,8 +21,8 @@
     },
     "by_emp_kind": {
       "인턴": 17,
-      "정규직": 53,
-      "계약직": 9,
+      "정규직": 52,
+      "계약직": 10,
       "파트타임": 17
     }
   },
@@ -1819,15 +1819,15 @@
       "firm": "로컬",
       "field": "감사",
       "qualification": "자격무관",
-      "emp_kind": "정규직",
+      "emp_kind": "계약직",
       "status": "closed",
       "is_new": false,
       "title": "[회계법인 상지원]출산휴가 대체 근로자 채용(약 6개월 근무)",
       "company": "회계법인 상지원",
       "deadline": "2026-10-01",
       "posted_date": "2026-09-07",
-      "location": "",
-      "emp_type": "",
+      "location": "서울 강남구",
+      "emp_type": "계약직",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1788754847330",
       "dday": -1,
       "first_seen": ""
@@ -1845,8 +1845,8 @@
       "company": "대명회계법인",
       "deadline": "2026-10-01",
       "posted_date": "2026-10-01",
-      "location": "",
-      "emp_type": "",
+      "location": "지역무관 지역무관",
+      "emp_type": "정규직",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1790831315950",
       "dday": -1,
       "first_seen": ""

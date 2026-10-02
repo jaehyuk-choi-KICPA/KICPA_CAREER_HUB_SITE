@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-10-02T20:01:47",
+  "generated_at": "2026-10-02T20:31:40",
   "soon_days": 7,
   "counts": {
-    "total": 100,
-    "open": 57,
+    "total": 101,
+    "open": 58,
     "closed": 43,
-    "new": 7,
+    "new": 8,
     "soon": 20,
     "by_firm": {
       "삼일": 3,
       "삼정": 4,
       "안진": 16,
       "한영": 16,
-      "로컬": 59,
+      "로컬": 60,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 61,
+      "수습CPA": 62,
       "자격무관": 39
     },
     "by_emp_kind": {
       "인턴": 19,
       "정규직": 53,
       "계약직": 10,
-      "파트타임": 18
+      "파트타임": 19
     }
   },
   "postings": [
@@ -710,6 +710,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790759512265",
       "dday": 28,
       "first_seen": "2026-09-30T18:32:04"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[참회계법인] 수습공인회계사 채용모집 공고",
+      "company": "참회계법인",
+      "deadline": "2026-10-30",
+      "posted_date": "2026-10-02",
+      "location": "서울 전체",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790938953585",
+      "dday": 28,
+      "first_seen": "2026-10-02T20:31:40"
     },
     {
       "source": "kicpa_susup",

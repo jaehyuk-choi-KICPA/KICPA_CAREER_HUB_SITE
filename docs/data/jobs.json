@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-10-02T15:01:47",
+  "generated_at": "2026-10-02T15:31:59",
   "soon_days": 7,
   "counts": {
-    "total": 96,
-    "open": 53,
+    "total": 97,
+    "open": 54,
     "closed": 43,
     "new": 5,
-    "soon": 18,
+    "soon": 19,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
-      "안진": 14,
+      "안진": 15,
       "한영": 15,
       "로컬": 59,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 60,
-      "자격무관": 36
+      "자격무관": 37
     },
     "by_emp_kind": {
       "인턴": 17,
       "정규직": 52,
       "계약직": 10,
-      "파트타임": 17
+      "파트타임": 18
     }
   },
   "postings": [
@@ -92,7 +92,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[예지회계법인] 신규 컨설턴트 채용",
       "company": "예지회계법인",
       "deadline": "2026-10-02",
@@ -330,6 +330,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790737795150",
       "dday": 6,
       "first_seen": "2026-09-30T12:31:34"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "택스",
+      "qualification": "자격무관",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "세무자문부문 서류 검토 아르바이트",
+      "company": "딜로이트 안진",
+      "deadline": "2026-10-08",
+      "posted_date": "2026-10-02",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5216",
+      "dday": 6,
+      "first_seen": "2026-10-02T15:31:59"
     },
     {
       "source": "kicpa_susup",

@@ -1530,7 +1530,8 @@
     "uid": "samjong:KPMG00000000000000000000000967",
     "first_seen": "2026-10-02T17:31:35",
     "last_seen": "2026-10-02",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-10-02"
   },
   "anjin:5217": {
     "source": "anjin",
@@ -1548,7 +1549,8 @@
     "uid": "anjin:5217",
     "first_seen": "2026-10-02T17:31:35",
     "last_seen": "2026-10-02",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-10-02"
   },
   "hanyoung:130307": {
     "source": "hanyoung",
@@ -1566,6 +1568,7 @@
     "uid": "hanyoung:130307",
     "first_seen": "2026-10-02T17:31:35",
     "last_seen": "2026-10-02",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-10-02"
   }
 }

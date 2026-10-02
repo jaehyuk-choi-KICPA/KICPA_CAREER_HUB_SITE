@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T18:31:43",
+  "generated_at": "2026-10-02T19:01:43",
   "soon_days": 7,
   "counts": {
     "total": 100,
@@ -332,25 +332,6 @@
       "first_seen": "2026-09-30T12:31:34"
     },
     {
-      "source": "samjong",
-      "source_label": "삼정KPMG",
-      "firm": "삼정",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "open",
-      "is_new": true,
-      "title": "[인사팀] 인턴 채용",
-      "company": "삼정KPMG",
-      "deadline": "2026-10-08",
-      "posted_date": "2026-10-02",
-      "location": "",
-      "emp_type": "신입",
-      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000967&receive_div_cd=N",
-      "dday": 6,
-      "first_seen": "2026-10-02T17:31:35"
-    },
-    {
       "source": "anjin",
       "source_label": "딜로이트안진",
       "firm": "안진",
@@ -368,6 +349,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5216",
       "dday": 6,
       "first_seen": "2026-10-02T15:31:59"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "[인사팀] 인턴 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-10-08",
+      "posted_date": "2026-10-02",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000967&receive_div_cd=N",
+      "dday": 6,
+      "first_seen": "2026-10-02T17:31:35"
     },
     {
       "source": "kicpa_susup",

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-02T16:31:28",
+  "generated_at": "2026-10-02T17:01:49",
   "soon_days": 7,
   "counts": {
     "total": 97,
     "open": 54,
     "closed": 43,
-    "new": 6,
+    "new": 4,
     "soon": 19,
     "by_firm": {
       "삼일": 3,
@@ -73,7 +73,7 @@
       "qualification": "수습CPA",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "신입 공인회계사 채용공고",
       "company": "동성회계법인",
       "deadline": "2026-10-02",
@@ -833,7 +833,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[삼덕회계법인부산]수습회계사 모집",
       "company": "삼덕회계법인",
       "deadline": "2026-10-31",

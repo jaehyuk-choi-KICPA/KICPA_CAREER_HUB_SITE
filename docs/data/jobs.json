@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-03T00:01:54",
+  "generated_at": "2026-10-03T00:36:57",
   "soon_days": 7,
   "counts": {
     "total": 94,
-    "open": 48,
-    "closed": 46,
-    "new": 8,
+    "open": 49,
+    "closed": 45,
+    "new": 9,
     "soon": 14,
     "by_firm": {
       "삼일": 3,
@@ -20,8 +20,8 @@
       "자격무관": 34
     },
     "by_emp_kind": {
-      "인턴": 17,
-      "정규직": 52,
+      "인턴": 18,
+      "정규직": 51,
       "계약직": 8,
       "파트타임": 17
     }
@@ -539,6 +539,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790759512265",
       "dday": 27,
       "first_seen": "2026-09-30T18:32:04"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[예지회계법인] 신규 컨설턴트 채용",
+      "company": "예지회계법인",
+      "deadline": "2026-10-30",
+      "posted_date": "2026-10-01",
+      "location": "서울 강남구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1789710061010",
+      "dday": 27,
+      "first_seen": "2026-10-03T00:36:57"
     },
     {
       "source": "kicpa_susup",
@@ -1769,8 +1788,8 @@
       "company": "진성회계법인",
       "deadline": "2026-10-02",
       "posted_date": "2026-09-29",
-      "location": "",
-      "emp_type": "",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790682497082",
       "dday": -1,
       "first_seen": ""
@@ -1781,35 +1800,16 @@
       "firm": "로컬",
       "field": "감사",
       "qualification": "수습CPA",
-      "emp_kind": "정규직",
+      "emp_kind": "인턴",
       "status": "closed",
       "is_new": false,
       "title": "신입 공인회계사 채용공고",
       "company": "동성회계법인",
       "deadline": "2026-10-02",
       "posted_date": "2026-10-01",
-      "location": "",
-      "emp_type": "",
+      "location": "지역무관 지역무관",
+      "emp_type": "인턴쉽",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790839457914",
-      "dday": -1,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_cpa",
-      "source_label": "구인(CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "[예지회계법인] 신규 컨설턴트 채용",
-      "company": "예지회계법인",
-      "deadline": "2026-10-02",
-      "posted_date": "2026-10-01",
-      "location": "",
-      "emp_type": "",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1789710061010",
       "dday": -1,
       "first_seen": ""
     }

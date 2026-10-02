@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-02T17:01:49",
+  "generated_at": "2026-10-02T17:31:35",
   "soon_days": 7,
   "counts": {
-    "total": 97,
-    "open": 54,
+    "total": 100,
+    "open": 57,
     "closed": 43,
-    "new": 4,
-    "soon": 19,
+    "new": 6,
+    "soon": 20,
     "by_firm": {
       "삼일": 3,
-      "삼정": 3,
-      "안진": 15,
-      "한영": 15,
+      "삼정": 4,
+      "안진": 16,
+      "한영": 16,
       "로컬": 59,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 60,
-      "자격무관": 37
+      "수습CPA": 61,
+      "자격무관": 39
     },
     "by_emp_kind": {
-      "인턴": 17,
-      "정규직": 52,
+      "인턴": 19,
+      "정규직": 53,
       "계약직": 10,
       "파트타임": 18
     }
@@ -332,6 +332,25 @@
       "first_seen": "2026-09-30T12:31:34"
     },
     {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "[인사팀] 인턴 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-10-08",
+      "posted_date": "2026-10-02",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000967&receive_div_cd=N",
+      "dday": 6,
+      "first_seen": "2026-10-02T17:31:35"
+    },
+    {
       "source": "anjin",
       "source_label": "딜로이트안진",
       "firm": "안진",
@@ -406,6 +425,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/129926",
       "dday": 9,
       "first_seen": "2026-09-30T09:02:03"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "컨설팅부문 EMP팀 AI 인턴",
+      "company": "EY한영",
+      "deadline": "2026-10-11",
+      "posted_date": "2026-10-02",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/130307",
+      "dday": 9,
+      "first_seen": "2026-10-02T17:31:35"
     },
     {
       "source": "anjin",
@@ -712,6 +750,25 @@
       "first_seen": "2026-10-02T16:02:15"
     },
     {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "택스",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "세무자문부문 지방세 분야 전문가 신입 & 경력직 회계사",
+      "company": "딜로이트 안진",
+      "deadline": "2026-10-30",
+      "posted_date": "2026-10-02",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5217",
+      "dday": 28,
+      "first_seen": "2026-10-02T17:31:35"
+    },
+    {
       "source": "kicpa_cpa",
       "source_label": "구인(CPA)",
       "firm": "로컬",
@@ -928,7 +985,7 @@
       "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "회계감사부문 기업 전략기획 및 경영관리(성과관리, 원가/수익성분석(관리회계))컨설턴트 채용",
       "company": "딜로이트 안진",
       "deadline": "2026-12-29",

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-02T19:01:43",
+  "generated_at": "2026-10-02T19:31:37",
   "soon_days": 7,
   "counts": {
     "total": 100,
     "open": 57,
     "closed": 43,
-    "new": 6,
+    "new": 7,
     "soon": 20,
     "by_firm": {
       "삼일": 3,
@@ -541,25 +541,6 @@
       "first_seen": "2026-09-30T22:32:08"
     },
     {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "[도원회계법인] 풀타임 수습회계사 모집 공고",
-      "company": "도원회계법인",
-      "deadline": "2026-10-21",
-      "posted_date": "2026-09-21",
-      "location": "서울 강남구",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789951797989",
-      "dday": 19,
-      "first_seen": "2026-09-21T10:01:46"
-    },
-    {
       "source": "anjin",
       "source_label": "딜로이트안진",
       "firm": "안진",
@@ -729,6 +710,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790759512265",
       "dday": 28,
       "first_seen": "2026-09-30T18:32:04"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[신한회계법인] 풀타임 수습회계사 모집 공고",
+      "company": "신한회계법인",
+      "deadline": "2026-10-30",
+      "posted_date": "2026-10-02",
+      "location": "서울 영등포구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790936462380",
+      "dday": 28,
+      "first_seen": "2026-10-02T19:31:37"
     },
     {
       "source": "kicpa_susup",

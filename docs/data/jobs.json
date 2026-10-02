@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T22:31:48",
+  "generated_at": "2026-10-02T23:01:53",
   "soon_days": 7,
   "counts": {
     "total": 101,
@@ -717,25 +717,6 @@
       "firm": "로컬",
       "field": "감사",
       "qualification": "수습CPA",
-      "emp_kind": "파트타임",
-      "status": "open",
-      "is_new": true,
-      "title": "[참회계법인] 수습공인회계사 채용모집 공고",
-      "company": "참회계법인",
-      "deadline": "2026-10-30",
-      "posted_date": "2026-10-02",
-      "location": "서울 전체",
-      "emp_type": "Part Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790938953585",
-      "dday": 28,
-      "first_seen": "2026-10-02T20:31:40"
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
       "is_new": true,
@@ -786,6 +767,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5217",
       "dday": 28,
       "first_seen": "2026-10-02T17:31:35"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[참회계법인] 수습공인회계사 채용모집 공고",
+      "company": "참회계법인",
+      "deadline": "2026-10-30",
+      "posted_date": "2026-10-02",
+      "location": "서울 전체",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790938953585",
+      "dday": 28,
+      "first_seen": "2026-10-02T20:31:40"
     },
     {
       "source": "kicpa_cpa",

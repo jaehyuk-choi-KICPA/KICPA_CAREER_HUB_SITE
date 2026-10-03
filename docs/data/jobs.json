@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-03T14:31:38",
+  "generated_at": "2026-10-03T15:01:50",
   "soon_days": 7,
   "counts": {
-    "total": 95,
-    "open": 50,
+    "total": 96,
+    "open": 51,
     "closed": 45,
-    "new": 9,
+    "new": 10,
     "soon": 14,
     "by_firm": {
       "삼일": 3,
       "삼정": 4,
       "안진": 11,
       "한영": 16,
-      "로컬": 59,
+      "로컬": 60,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 61,
+      "수습CPA": 62,
       "자격무관": 34
     },
     "by_emp_kind": {
       "인턴": 18,
-      "정규직": 52,
+      "정규직": 53,
       "계약직": 8,
       "파트타임": 17
     }
@@ -767,6 +767,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790555391000",
       "dday": 28,
       "first_seen": "2026-10-02T10:01:45"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "택스",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "외부감사·자문·연구 통합형 수습공인회계사 채용",
+      "company": "가람세무회계",
+      "deadline": "2026-10-31",
+      "posted_date": "2026-10-03",
+      "location": "서울 서초구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791006403069",
+      "dday": 28,
+      "first_seen": "2026-10-03T15:01:50"
     },
     {
       "source": "kicpa_susup",

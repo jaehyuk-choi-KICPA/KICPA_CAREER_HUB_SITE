@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-03T15:31:38",
+  "generated_at": "2026-10-03T16:02:31",
   "soon_days": 7,
   "counts": {
     "total": 96,
     "open": 51,
     "closed": 45,
-    "new": 10,
+    "new": 8,
     "soon": 14,
     "by_firm": {
       "삼일": 3,
@@ -225,7 +225,7 @@
       "qualification": "자격무관",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "세무자문부문 서류 검토 아르바이트",
       "company": "딜로이트 안진",
       "deadline": "2026-10-08",
@@ -586,7 +586,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[다산회계법인] 수습 공인회계사 초빙",
       "company": "다산회계법인",
       "deadline": "2026-10-30",

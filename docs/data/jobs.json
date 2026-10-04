@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-10-04T19:31:36",
+  "generated_at": "2026-10-04T20:01:46",
   "soon_days": 7,
   "counts": {
-    "total": 92,
-    "open": 50,
+    "total": 93,
+    "open": 51,
     "closed": 42,
-    "new": 0,
+    "new": 1,
     "soon": 16,
     "by_firm": {
       "삼일": 3,
       "삼정": 4,
       "안진": 10,
       "한영": 16,
-      "로컬": 58,
+      "로컬": 59,
       "기타": 1
     },
     "by_qualification": {
-      "수습CPA": 59,
+      "수습CPA": 60,
       "자격무관": 33
     },
     "by_emp_kind": {
       "인턴": 18,
       "정규직": 49,
       "계약직": 8,
-      "파트타임": 17
+      "파트타임": 18
     }
   },
   "postings": [
@@ -805,6 +805,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790958019410",
       "dday": 27,
       "first_seen": "2026-10-03T01:31:50"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "이롬회계법인 수습공인회계사 채용(파트타임)",
+      "company": "이롬회계법인",
+      "deadline": "2026-10-31",
+      "posted_date": "2026-10-04",
+      "location": "경남 전체",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791111293518",
+      "dday": 27,
+      "first_seen": "2026-10-04T20:01:46"
     },
     {
       "source": "kicpa_susup",

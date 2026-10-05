@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-05T17:01:40",
+  "generated_at": "2026-10-05T17:31:37",
   "soon_days": 7,
   "counts": {
-    "total": 84,
-    "open": 42,
+    "total": 85,
+    "open": 43,
     "closed": 42,
-    "new": 1,
+    "new": 2,
     "soon": 12,
     "by_firm": {
       "삼일": 3,
       "삼정": 2,
       "안진": 9,
       "한영": 16,
-      "로컬": 53,
+      "로컬": 54,
       "기타": 1
     },
     "by_qualification": {
-      "수습CPA": 54,
+      "수습CPA": 55,
       "자격무관": 30
     },
     "by_emp_kind": {
       "인턴": 16,
-      "정규직": 45,
+      "정규직": 46,
       "계약직": 7,
       "파트타임": 16
     }
@@ -520,6 +520,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5217",
       "dday": 25,
       "first_seen": "2026-10-02T17:31:35"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[대경회계법인] 수습공인회계사 모집공고",
+      "company": "대경회계법인",
+      "deadline": "2026-10-30",
+      "posted_date": "2026-10-05",
+      "location": "대구 전체",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791188007710",
+      "dday": 25,
+      "first_seen": "2026-10-05T17:31:37"
     },
     {
       "source": "kicpa_cpa",

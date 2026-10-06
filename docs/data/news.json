@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T15:32:18",
+  "generated_at": "2026-10-06T16:01:49",
   "items": [
     {
       "source": "gnews_감사",
@@ -87,7 +87,7 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "한국경제",
+      "source_label": "hankyung.com",
       "title": "\"누군 0원인데 삼전닉스는…\" 상위 1%가 법인세 78% 냈다 [김익환의 부처 핸즈업]",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE14SlRYb0xIQjVPa3g3NFBTbDBZeDExMnpaWGtrNnA2V1NNMEpuT05IS0RsaC14cTh6S01jdmJLY0k3ZDVyZFFMWjFMSHM2MnppcUdNWlZ1ZEJ0UQ?oc=5",
       "published": "2026-10-05",
@@ -103,21 +103,7 @@
       "published": "2026-10-05",
       "published_at": "2026-10-05T13:12:00",
       "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "3분기 부가세 26일까지 신고·납부…호우·홈플러스 피해업체는 2개월 연장",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9ObkwtWXJVX0xXakNONWJKcF9WSGpkVmhwaVRaOFUxMFhWWklpUXJKTUhUMXNQcmlGVDdjUFVEZmFlRGl1M2RqenV5bHZTZmlVZE5n?oc=5",
-          "source_label": "네이트",
-          "published": "2026-10-05"
-        },
-        {
-          "title": "부가세 26일까지 예정신고…홈플러스‧호우피해 2개월 직권연장",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB3T0RwN0xPZm5PY1MycUVwMzBlQmJteG9GSXowVHBVR0xQTzAtZ1VCV0Y0RVM2Y29WaHVXX2lSZWNyWXhQTmxSelplVzduQ1c2NWRhMlVMRmg0RWFOb0NJWGxOSQ?oc=5",
-          "source_label": "조세금융신문",
-          "published": "2026-10-05"
-        }
-      ]
+      "category": "세무"
     },
     {
       "source": "gnews_감사",
@@ -136,6 +122,16 @@
       "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9uWjloenRITnVST1A5dkhnczlaMEtEc1g3OW9qNFhDb0hHdEJyamJtOU9Oa3hhRS1RTjNobDcyS1Zva0dPZlE?oc=5",
       "published": "2026-10-05",
       "published_at": "2026-10-05T04:49:45",
+      "summary": "",
+      "category": "세무"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "조세금융신문",
+      "title": "부가세 26일까지 예정신고…홈플러스‧호우피해 2개월 직권연장",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB3T0RwN0xPZm5PY1MycUVwMzBlQmJteG9GSXowVHBVR0xQTzAtZ1VCV0Y0RVM2Y29WaHVXX2lSZWNyWXhQTmxSelplVzduQ1c2NWRhMlVMRmg0RWFOb0NJWGxOSQ?oc=5",
+      "published": "2026-10-05",
+      "published_at": "2026-10-05T03:00:00",
       "summary": "",
       "category": "세무"
     },
@@ -180,13 +176,13 @@
         {
           "title": "증선위, 법인 대표 시세조종 등 3건 조치",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBaUlpUcU9QV052YzY4RktCSWdmZV96Y25CbjYxV1RrYVV1SDgyNlRDc0toNV9pSjduVUxzLTg1b0twejB0cnFwQ0M5ZWp6bHJDY0VUMndJVXczMG9k?oc=5",
-          "source_label": "뉴스핌",
+          "source_label": "newspim.com",
           "published": "2026-09-30"
         },
         {
           "title": "증선위, 미공개정보 이용·NXT 시세조종…불공정거래 3건 적발",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA2ZG5CQUxqQjJDTG1CMW1wcHdBeW9TQnZZOXdPVEtLMzIzWWdzRzhadGd5eWE5RndXWm8xU1ExWjVWLThVQ1VMSkc4dTlzSnlaY0ZYUDZtN0UwVWc?oc=5",
-          "source_label": "news.kbs.co.kr",
+          "source_label": "KBS 뉴스",
           "published": "2026-09-30"
         },
         {
@@ -204,7 +200,7 @@
         {
           "title": "증선위, 회계처리 위반 해태제과에 감사인 지정 3년···재무부서장 검찰 통보",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBIMWFaUFg0OEMwaDVsR3BVck55a1FWY0ZOd0NpUHA3MFlJZF85MkVMQVgwMWk4bFNTOXV0QTlTalhzdlJVczZ2VzRDT2RibGhxdzJVYjJLaEZYNThiSDJNVWpQYjJVYlFPWFE?oc=5",
-          "source_label": "뉴스웨이",
+          "source_label": "newsway.co.kr",
           "published": "2026-09-16"
         },
         {
@@ -215,7 +211,7 @@
         },
         {
           "title": "증선위, 해태제과 회계처리 위반에 감사인 지정 등 조치",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5KM2hyc1g4RnJUbVR0TGtKb29rOGpJcXRzblNzOGp1VGFtbFVQYlhrX0R5djl5MWc3aUFQamFQLWotcjFUYjlTZFkzYw?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9rSkMzNnZpT0hiak5Kb0xPQlptOWlFTXkxU2FobWdpOXhEeEZ1MFFkdWpMTjFaWEVxNnZVMmx4ajhsYXJvRmhoUktYUjl2a09aYmN2WQ?oc=5",
           "source_label": "v.daum.net",
           "published": "2026-09-16"
         },
@@ -252,13 +248,13 @@
         {
           "title": "증선위, 해태제과식품 회계위반 제재",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9NeTlqVkZnTW5KT0E1VG4tSEhfdlhaTGJWZTg4LTg1NE5BV0tZWlp3Y2pPSHUyeFFOX2FKNExGekZROFcyTWpwQW9DRkpUTkdzMENaVlJVZ2NhU3ZY?oc=5",
-          "source_label": "뉴스핌",
+          "source_label": "newspim.com",
           "published": "2026-09-17"
         },
         {
           "title": "증선위, 미공개정보 이용 4건 고발·과징금 부과",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE80WkZmMGNRZUQ5YzhlcHFUYXFPcUYzZ0FvbkJQVU41NUtaNXdGRlN0alcwS0VwNllCWU52MWpSdGlrM2NBRXRUaW1XNGlLOFRuT0w3Ulc3VXNEMS1Y?oc=5",
-          "source_label": "뉴스핌",
+          "source_label": "newspim.com",
           "published": "2026-09-17"
         },
         {
@@ -318,7 +314,7 @@
         {
           "title": "공개매수부터 경영권 인수까지⋯증선위, 미공개정보 이용자 검찰 고발",
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1ONGpjczFuU3NaZXBLdGFVeG5yN1pySlEycF9QdzBhdm53NkpmSmxXeVdwMlNMcXR4dGgtY242enVaclpCdTcyYjExOGxlQ2J0ejl3NA?oc=5",
-          "source_label": "etoday.co.kr",
+          "source_label": "이투데이",
           "published": "2026-09-16"
         }
       ]
@@ -340,16 +336,6 @@
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9TQkxqbmhydkJEc3RRZS16cEptWnJvVFNheXJDY1ZlYWU3ZUhZTGlQd1hpLTdtb1F4TDJyd3FSd2NKRndGcXdjLUFYRlBLNFNOdkszZzNxVW1aN0pzRTRpbEdOaTFIZ3ZkUUlkU1hmWE1BQQ?oc=5",
       "published": "2026-10-02",
       "published_at": "2026-10-02T05:06:11",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "월드장애인사랑뉴스",
-      "title": "추미애표 지방세제 구조개편 국회 입법 돌입…지방소비세 인상·법인세 5% 이양, 경기도 “4년간 14조1천억 재원 효과”",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5DR1BZdEsxUTNKMV9DV2N5RURHLW52VWpxRzdveEtOWVRfN2lGckdOS1h3RkRkd3VIbHB0WVduS2E5ZlNZSk8yMndfZ0Z5ZUpCb25wT3lIc09ESU9mbVh0cGg2Ny1jRGNVTWk2QzFWZw?oc=5",
-      "published": "2026-10-01",
-      "published_at": "2026-10-01T10:40:50",
       "summary": "",
       "category": "세무"
     },
@@ -465,7 +451,7 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "nts.go.kr",
+      "source_label": "국세청",
       "title": "제911호 '세금 늦게 내도 된다구?' 부가가치세 세정지원 받기",
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBNNU5TQXdBc2taa096UjJnQTJTZ1EyZ0xYTVFOWGNJTEp0amZMRXFiVl9zUUZLcC13eE5kVU5TWEhVMzFDcWI5dHFwWG5md2xfV1dqRHRDQnozSDlGNm9UN2hJX0ZHdm05bnhQR3d4ci1pbUcwR0E?oc=5",
       "published": "2026-09-30",
@@ -482,16 +468,6 @@
       "published_at": "2026-09-30T11:56:00",
       "summary": "",
       "category": "감사"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "fnnews.com",
-      "title": "반도체 호황에 법인세 60% 증가... 성과급·특별배당에 소득세 17%↑",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAzbXpzWVJ4UjJTbXVnLVFKWjdVMHZoNWc4WXBWV3d2MjNESS04ei1qNlkyZE9YdElqblNTb09yUTZIQjdpTkswYUk1YjJ2UmRoZEFaUnBMLUtvQQ?oc=5",
-      "published": "2026-09-30",
-      "published_at": "2026-09-30T09:11:54",
-      "summary": "",
-      "category": "세무"
     },
     {
       "source": "gnews_세무",
@@ -512,7 +488,7 @@
         {
           "title": "추경 법인세 90% 벌써 걷혔다…반도체 호황에 연간 136.4조 전망",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4wSnB4OEJhSkk5cGRNWkRaV2dRTEoyU2VwemJGNUZ5NWhWMnRETTZPTmVwMzRNYVh2UFhWR3doOVFjVGctNDhBT0hVRE5RTzlKd19LUGlocVpWNEJB?oc=5",
-          "source_label": "뉴스핌",
+          "source_label": "newspim.com",
           "published": "2026-09-30"
         },
         {
@@ -565,7 +541,7 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "경향신문",
+      "source_label": "khan.co.kr",
       "title": "[단독]5000억도 넘게 버는 제조대기업 세금은 왜 더 적을까···법인세 실효세율 5년 중 4년 ‘역전’",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBBd01pYVpIWDZhNU14NzlMbFZMZEFDcFdfa1JYZlN2M3RDNGlKdTNLUkVzeWZOdWVkTXl4bGtDZ3hoTnV2NThTTTVwN2lZNUNDdEMtUmZkU0FRd9IBX0FVX3lxTE9qU3Y5OG4xbTFzUm1pTlM4azhBOHlLWHhaVVYwdXgtTG9CV3kwWUtOaDc2WkUxLUdEc05GSDBFMXZBZUFvamNCa1F3Q1MyWDRBa2dVOHc4RllmdzFRQmdz?oc=5",
       "published": "2026-09-29",
@@ -592,16 +568,6 @@
       "published_at": "2026-09-28T09:10:00",
       "summary": "",
       "category": "채용·시험"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "v.daum.net",
-      "title": "“비수도권 차등 법인세 도입해야”…부산상의, 세정 개선 건의",
-      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE51b2dOR1JpX1VkOXJKajM5alk0a0llRW5la2k4OG5UTTdsSDBRaFV1T3FveWMwM3owNG51a0lzMUJDaXFKdlE?oc=5",
-      "published": "2026-09-28",
-      "published_at": "2026-09-28T06:30:00",
-      "summary": "",
-      "category": "세무"
     },
     {
       "source": "gnews_채용·시험",
@@ -636,14 +602,14 @@
         {
           "title": "정기 세무조사와 비정기 세무조사는 어떻게 구분될까",
           "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4xQktKRFhQYmRoOUc0b1o5UTlsRFFJcjM3M2U1d0pNeTRXaENwbTRuUERueE9PdlhPaDI3ei0xdmxyTGtmd3AwaVgtUlg0MjNOWVU2M0FXUS0yMUVVS2MyV3JEdTMxNy1PY3NabQ?oc=5",
-          "source_label": "약사공론",
+          "source_label": "kpanews.co.kr",
           "published": "2026-09-22"
         }
       ]
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "한국경제",
+      "source_label": "hankyung.com",
       "title": "미래에셋 실적 ‘나비효과’ 된 2022년 스페이스X 회계처리",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5WWHZxbW13dGcyTHcydjdfWlhOOVFPNTUzR3ZTeUtSVExvcEdkaE56Nm05a0pfV0xKX3NIQnFSX1VOeHREZUgyREJWVURwc0x5VVRTWlRPYmI1QQ?oc=5",
       "published": "2026-09-25",
@@ -726,7 +692,7 @@
         {
           "title": "메리츠증권 발행어음 인가 증선위 통과… 23일 최종 심의",
           "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9IQ3JiNS1Vb2k4eE4xdmMtUzJLaU1YSXY1cWNZUzNTUEpmdEtuc0RIOGpuRXRCRW5nOF84QUk5TkJuNTVPeXVTQXlJcXU5T0RfUS0zcUpxd284WXppVG02TGRMdXprcUNvTXVsU2ZuaGHSAXRBVV95cUxOSUU5aWJrQ2swaGhRSlVvcV9LQXNfU01abkpvVERXMWRwdjNiNTFhUF90bTUwUDRNV1FTSUk4b2JrRGx3XzFOQXlWYlFqZFFzOFV2V25vQXpVbWsyMXhyUlpYMlpYclVuSmh0c0dkaTFGaXZnaQ?oc=5",
-          "source_label": "IT조선",
+          "source_label": "it.chosun.com",
           "published": "2026-09-18"
         },
         {
@@ -756,7 +722,7 @@
         {
           "title": "메리츠증권, 발행어음 9부 능선 넘어…증선위 통과",
           "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE85d3d5SmRZNVBDMGVsSktUM19hNWFkSWdScEt5Vk43Y2lZbGZGS3l4UVlyQ01KN2VDeURMTEl4azJac195WGJjUUgxbkhCTFAwRmlsNGRQZHZXdkZVcFlncU16MFBOaTZLUFNqWXk4VmZZX0FMNUVVdUFYT28?oc=5",
-          "source_label": "한국금융신문",
+          "source_label": "fntimes.com",
           "published": "2026-09-17"
         },
         {
@@ -766,16 +732,6 @@
           "published": "2026-09-17"
         }
       ]
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "아파트관리신문",
-      "title": "감사인의 감사결과 제출 및 공개 기한에 대한 논란",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9LYkp2b1N0bkxsT2c4ZUZnMTJ2dTdfTG1pTFFUUDlnZzctNEt0bHpGUm8xWHBYZGx1QkZVbUlBcHptRkFKZ2pjbnFCci12M0Y5VXRaWUpGOV9HQWg5eWotRXpVWExhSWfSAWtBVV95cUxQcV9UTXJRYmM5VHlaUy0zTGMtVHV4d3ZoblptN3BEdXViWld1amIyU0k5ZjdQZk9IUFphOUg0ckVmUzVJY2pKbkJIcWNhdnBNamxWU3Ryb0o0WTBvSjRPQUFpVUJzeUN1TnR1NA?oc=5",
-      "published": "2026-09-18",
-      "published_at": "2026-09-18T07:00:00",
-      "summary": "",
-      "category": "감사"
     },
     {
       "source": "gnews_감사",
@@ -802,7 +758,7 @@
         {
           "title": "새 회계기준 도입 3개월 남았는데…준비 끝낸 기업 16%에 그쳐",
           "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE94Q2FvX2hIVFFVWXFKY253bTZwUHNIUnlkbkpMUDZXOHlmLWNyWlVBeXFLN25tZk1rMHZWbEk3dFNlTXNnWEdUakg5ZllnSklndHVJTQ?oc=5",
-          "source_label": "etoday.co.kr",
+          "source_label": "이투데이",
           "published": "2026-09-17"
         }
       ]
@@ -829,7 +785,7 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "news.kbs.co.kr",
+      "source_label": "KBS 뉴스",
       "title": "‘지방 몫’ 떼어 미래대응기금?…교부세법 개정 논란",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5hc2c0OThjVFFHMWtRVlhKdnc0ZlNBdExZVk5seFdDTHZmeG1kWmlxbVZ0WjVGRVNZQWliZWV2YUNZYm4tMUVsUjhLZTl0eENpeE5vN1hETjB6ZU0?oc=5",
       "published": "2026-09-16",
@@ -859,7 +815,7 @@
     },
     {
       "source": "gnews_채용·시험",
-      "source_label": "네이트",
+      "source_label": "news.nate.com",
       "title": "회계사 시험 붙고도 '쉬었음'…전문직도 못 피한 한파",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1hRnFnVWRmdm15VG1yMkM4OVZ3NDBjU1I0WnQyV2V4N2RZcW5wckgwOXBob3lsV05FbVBYa1g3OGpQdUVTNjgwc3hUelVSeGVlSnlJ?oc=5",
       "published": "2026-08-24",

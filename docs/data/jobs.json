@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-06T10:02:01",
+  "generated_at": "2026-10-06T10:31:35",
   "soon_days": 7,
   "counts": {
     "total": 86,
-    "open": 42,
-    "closed": 44,
-    "new": 2,
+    "open": 43,
+    "closed": 43,
+    "new": 3,
     "soon": 11,
     "by_firm": {
       "삼일": 3,
@@ -21,9 +21,9 @@
     },
     "by_emp_kind": {
       "인턴": 17,
-      "정규직": 45,
+      "정규직": 44,
       "계약직": 8,
-      "파트타임": 16
+      "파트타임": 17
     }
   },
   "postings": [
@@ -691,6 +691,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791111293518",
       "dday": 25,
       "first_seen": "2026-10-04T20:01:46"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[정인회계법인] 수습공인회계사(파트타임)를 모십니다(1본부)",
+      "company": "정인회계법인",
+      "deadline": "2026-10-31",
+      "posted_date": "2026-10-06",
+      "location": "서울 강남구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791248623075",
+      "dday": 25,
+      "first_seen": "2026-10-06T10:31:35"
     },
     {
       "source": "kicpa_susup",
@@ -1392,25 +1411,6 @@
       "location": "서울 강남구",
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789290537041",
-      "dday": -6,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "[대현회계법인] 신입회계사 모집공고",
-      "company": "대현회계법인",
-      "deadline": "2026-09-30",
-      "posted_date": "2026-09-14",
-      "location": "서울 광진구",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789366052335",
       "dday": -6,
       "first_seen": ""
     },

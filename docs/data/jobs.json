@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-06T14:31:41",
+  "generated_at": "2026-10-06T15:01:31",
   "soon_days": 7,
   "counts": {
-    "total": 86,
+    "total": 85,
     "open": 45,
-    "closed": 41,
+    "closed": 40,
     "new": 5,
     "soon": 12,
     "by_firm": {
@@ -12,16 +12,16 @@
       "삼정": 3,
       "안진": 9,
       "한영": 16,
-      "로컬": 54,
+      "로컬": 53,
       "기타": 1
     },
     "by_qualification": {
-      "수습CPA": 55,
+      "수습CPA": 54,
       "자격무관": 31
     },
     "by_emp_kind": {
       "인턴": 17,
-      "정규직": 44,
+      "정규직": 43,
       "계약직": 8,
       "파트타임": 17
     }
@@ -1316,25 +1316,6 @@
       "location": "대전 유성구",
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789360325910",
-      "dday": -8,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "[삼화회계법인] 2026 수습공인회계사 풀타임 채용",
-      "company": "삼화회계법인",
-      "deadline": "2026-09-28",
-      "posted_date": "2026-09-18",
-      "location": "서울 전체",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1789715749068",
       "dday": -8,
       "first_seen": ""
     },

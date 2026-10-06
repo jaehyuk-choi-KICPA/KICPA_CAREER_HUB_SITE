@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-06T09:31:37",
+  "generated_at": "2026-10-06T10:02:01",
   "soon_days": 7,
   "counts": {
-    "total": 85,
-    "open": 41,
+    "total": 86,
+    "open": 42,
     "closed": 44,
-    "new": 1,
-    "soon": 10,
+    "new": 2,
+    "soon": 11,
     "by_firm": {
       "삼일": 3,
-      "삼정": 2,
+      "삼정": 3,
       "안진": 9,
       "한영": 16,
       "로컬": 54,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 55,
-      "자격무관": 30
+      "자격무관": 31
     },
     "by_emp_kind": {
-      "인턴": 16,
+      "인턴": 17,
       "정규직": 45,
       "계약직": 8,
       "파트타임": 16
@@ -121,6 +121,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5216",
       "dday": 2,
       "first_seen": "2026-10-02T15:31:59"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "[인사팀] 인턴 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-10-08",
+      "posted_date": "2026-10-06",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000967&receive_div_cd=N",
+      "dday": 2,
+      "first_seen": "2026-10-06T10:02:01"
     },
     {
       "source": "kicpa_susup",

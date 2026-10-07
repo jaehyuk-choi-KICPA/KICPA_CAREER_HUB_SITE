@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-10-08T01:31:41",
+  "generated_at": "2026-10-08T02:05:28",
   "soon_days": 7,
   "counts": {
-    "total": 84,
-    "open": 45,
+    "total": 85,
+    "open": 46,
     "closed": 39,
-    "new": 6,
+    "new": 7,
     "soon": 12,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
       "안진": 10,
       "한영": 16,
-      "로컬": 51,
+      "로컬": 52,
       "기타": 1
     },
     "by_qualification": {
-      "수습CPA": 53,
+      "수습CPA": 54,
       "자격무관": 31
     },
     "by_emp_kind": {
       "인턴": 18,
       "정규직": 42,
       "계약직": 7,
-      "파트타임": 17
+      "파트타임": 18
     }
   },
   "postings": [
@@ -311,6 +311,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791365212127",
       "dday": 8,
       "first_seen": "2026-10-07T18:31:38"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[신한회계법인] 파트타임 회계사",
+      "company": "신한회계법인",
+      "deadline": "2026-10-16",
+      "posted_date": "2026-10-08",
+      "location": "지역무관 지역무관",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791391153203",
+      "dday": 8,
+      "first_seen": "2026-10-08T02:05:28"
     },
     {
       "source": "kicpa_cpa",

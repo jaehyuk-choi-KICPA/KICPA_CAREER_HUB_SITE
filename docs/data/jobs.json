@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-10-07T10:03:11",
+  "generated_at": "2026-10-07T10:31:39",
   "soon_days": 7,
   "counts": {
-    "total": 85,
-    "open": 44,
+    "total": 86,
+    "open": 45,
     "closed": 41,
     "new": 4,
-    "soon": 10,
+    "soon": 11,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
-      "안진": 9,
+      "안진": 10,
       "한영": 16,
       "로컬": 53,
       "기타": 1
     },
     "by_qualification": {
       "수습CPA": 54,
-      "자격무관": 31
+      "자격무관": 32
     },
     "by_emp_kind": {
-      "인턴": 17,
+      "인턴": 18,
       "정규직": 43,
       "계약직": 8,
       "파트타임": 17
@@ -216,6 +216,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5207",
       "dday": 5,
       "first_seen": "2026-09-30T16:31:42"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "딜로이트컨설팅 금융 공공기관 중장기 로드맵 수립 프로젝트 사업관리 인턴",
+      "company": "딜로이트 안진",
+      "deadline": "2026-10-14",
+      "posted_date": "2026-10-07",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5219",
+      "dday": 7,
+      "first_seen": "2026-10-07T10:31:39"
     },
     {
       "source": "anjin",
@@ -719,7 +738,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[정인회계법인] 수습공인회계사(파트타임)를 모십니다(1본부)",
       "company": "정인회계법인",
       "deadline": "2026-10-31",

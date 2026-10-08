@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-10-08T13:31:38",
+  "generated_at": "2026-10-08T14:01:39",
   "soon_days": 7,
   "counts": {
-    "total": 88,
-    "open": 50,
+    "total": 89,
+    "open": 51,
     "closed": 38,
-    "new": 9,
-    "soon": 12,
+    "new": 10,
+    "soon": 13,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
       "안진": 10,
       "한영": 16,
-      "로컬": 54,
+      "로컬": 55,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 56,
+      "수습CPA": 57,
       "자격무관": 32
     },
     "by_emp_kind": {
       "인턴": 18,
       "정규직": 44,
       "계약직": 7,
-      "파트타임": 19
+      "파트타임": 20
     }
   },
   "postings": [
@@ -216,6 +216,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5219",
       "dday": 6,
       "first_seen": "2026-10-07T10:31:39"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[광교회계법인 수습회계사(파트타임) 채용]",
+      "company": "광교회계법인",
+      "deadline": "2026-10-14",
+      "posted_date": "2026-10-08",
+      "location": "서울 서초구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791435641253",
+      "dday": 6,
+      "first_seen": "2026-10-08T14:01:39"
     },
     {
       "source": "anjin",

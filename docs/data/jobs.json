@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-10-08T09:31:49",
+  "generated_at": "2026-10-08T10:01:43",
   "soon_days": 7,
   "counts": {
-    "total": 84,
-    "open": 46,
+    "total": 86,
+    "open": 48,
     "closed": 38,
-    "new": 8,
+    "new": 10,
     "soon": 12,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
       "안진": 10,
       "한영": 15,
-      "로컬": 52,
-      "기타": 1
+      "로컬": 53,
+      "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 53,
+      "수습CPA": 55,
       "자격무관": 31
     },
     "by_emp_kind": {
       "인턴": 18,
-      "정규직": 42,
+      "정규직": 43,
       "계약직": 7,
-      "파트타임": 17
+      "파트타임": 18
     }
   },
   "postings": [
@@ -332,6 +332,25 @@
       "first_seen": "2026-10-08T02:05:28"
     },
     {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "기타",
+      "field": "기타",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[NICE피앤아이] 2026년 4분기 수습회계사 수시 채용",
+      "company": "NICE피앤아이",
+      "deadline": "2026-10-25",
+      "posted_date": "2026-10-08",
+      "location": "서울 영등포구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791419701921",
+      "dday": 17,
+      "first_seen": "2026-10-08T10:01:43"
+    },
+    {
       "source": "kicpa_cpa",
       "source_label": "구인(CPA)",
       "firm": "로컬",
@@ -558,6 +577,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790660917822",
       "dday": 22,
       "first_seen": "2026-10-07T18:01:52"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[회계법인서본] 파트타임 회계사 채용",
+      "company": "회계법인 서본",
+      "deadline": "2026-10-30",
+      "posted_date": "2026-10-08",
+      "location": "서울 전체",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791420809575",
+      "dday": 22,
+      "first_seen": "2026-10-08T10:01:43"
     },
     {
       "source": "kicpa_cpa",

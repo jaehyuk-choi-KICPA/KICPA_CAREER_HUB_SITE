@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-08T10:01:43",
+  "generated_at": "2026-10-08T10:31:41",
   "soon_days": 7,
   "counts": {
-    "total": 86,
-    "open": 48,
+    "total": 87,
+    "open": 49,
     "closed": 38,
     "new": 10,
     "soon": 12,
@@ -12,18 +12,18 @@
       "삼정": 3,
       "안진": 10,
       "한영": 15,
-      "로컬": 53,
+      "로컬": 54,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 55,
+      "수습CPA": 56,
       "자격무관": 31
     },
     "by_emp_kind": {
       "인턴": 18,
       "정규직": 43,
       "계약직": 7,
-      "파트타임": 18
+      "파트타임": 19
     }
   },
   "postings": [
@@ -206,7 +206,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "딜로이트컨설팅 금융 공공기관 중장기 로드맵 수립 프로젝트 사업관리 인턴",
       "company": "딜로이트 안진",
       "deadline": "2026-10-14",
@@ -311,6 +311,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791365212127",
       "dday": 8,
       "first_seen": "2026-10-07T18:31:38"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "회계법인 나루 [수습회계사 Part time] 채용",
+      "company": "회계법인 나루",
+      "deadline": "2026-10-16",
+      "posted_date": "2026-10-08",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791422719874",
+      "dday": 8,
+      "first_seen": "2026-10-08T10:31:41"
     },
     {
       "source": "kicpa_susup",

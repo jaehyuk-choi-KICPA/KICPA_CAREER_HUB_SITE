@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T02:31:25",
+  "generated_at": "2026-10-09T03:02:24",
   "items": [
     {
       "source": "gnews_세무",
@@ -495,7 +495,15 @@
       "published": "2026-10-01",
       "published_at": "2026-10-01T05:32:36",
       "summary": "",
-      "category": "감사"
+      "category": "감사",
+      "dupes": [
+        {
+          "title": "영림원소프트랩, 새 국제회계기준 맞춰 ERP 고도화…전국 세미나 확대",
+          "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA2LXFMaFRkUjlDUjVrVF9GMVliZk5sYUNteHo0NWxqN2Q0bzBNZHZQNnYyVU5IN3g2aHpzQ2JiX3FnVWxLTkZnQzFhYnhvTk5tUzNORi12LU1QU1poQmtQemxWX0hQclVGOVR4cWczX3VlT1RjSm9aMdIBeEFVX3lxTFA2LXFMaFRkUjlDUjVrVF9GMVliZk5sYUNteHo0NWxqN2Q0bzBNZHZQNnYyVU5IN3g2aHpzQ2JiX3FnVWxLTkZnQzFhYnhvTk5tUzNORi12LU1QU1poQmtQemxWX0hQclVGOVR4cWczX3VlT1RjSm9aMQ?oc=5",
+          "source_label": "뉴시스",
+          "published": "2026-10-01"
+        }
+      ]
     },
     {
       "source": "gnews_감사",
@@ -557,11 +565,11 @@
     },
     {
       "source": "gnews_감사",
-      "source_label": "edaily.co.kr",
+      "source_label": "이데일리",
       "title": "금감원, 회계감리 전담인력 150명 안팎으로 확대...“감리 주기 본격 단축”",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPZXNoZWZWYXJjQ0E3bkRBX2ZQbHBmdWVTc2xUUU4zbTROYVh6UkFndFRNS3BVVWpxX3lZcEVUTmo4NzF0U2JzMFdaeXBzN0pZbWJYbjJDaklncy13aWs1eDZPZU1LZ1ptcFlVbXpkTWctTk8yM0VaNVhNQWhwQW1ObQ?oc=5",
       "published": "2026-09-29",
-      "published_at": "2026-09-29T06:03:34",
+      "published_at": "2026-09-29T07:00:00",
       "summary": "",
       "category": "감사"
     },
@@ -665,13 +673,21 @@
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "MTN 머니투데이방송",
-      "title": "메리츠證, 발행어음 인가안 증선위 통과",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0tQkNNZHp5Y2toUTVOU3lwNERLX1I2Mm9vYlVsZUFBMHhGMlprUVU0UkFQaXlkdzA2X292SU1VYTJCNmFkM3YwUWdtX3JCMkhEX2VYNzVSZ0Y3VEVKOXdraEktZmI?oc=5",
+      "source_label": "매일경제 마켓",
+      "title": "메리츠, 발행어음 인가 눈앞 … 증선위 문턱 5개월만에 넘어",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE81bDJLdVI1WWNkQ0x6T3AweHoyNGpoenN5S0M0Vk9aTENCVFFFTk5QT1ZGcFlhUHZkXzN1TE1PZ3VUdEJpaE1IXzNSOG9oVl8tREE?oc=5",
       "published": "2026-09-18",
       "published_at": "2026-09-18T07:00:00",
       "summary": "",
-      "category": "감사"
+      "category": "감사",
+      "dupes": [
+        {
+          "title": "메리츠證, 발행어음 인가안 증선위 통과",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0tQkNNZHp5Y2toUTVOU3lwNERLX1I2Mm9vYlVsZUFBMHhGMlprUVU0UkFQaXlkdzA2X292SU1VYTJCNmFkM3YwUWdtX3JCMkhEX2VYNzVSZ0Y3VEVKOXdraEktZmI?oc=5",
+          "source_label": "MTN 머니투데이방송",
+          "published": "2026-09-18"
+        }
+      ]
     },
     {
       "source": "gnews_채용·시험",

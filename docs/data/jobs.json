@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-08T10:31:41",
+  "generated_at": "2026-10-08T11:01:45",
   "soon_days": 7,
   "counts": {
-    "total": 87,
-    "open": 49,
+    "total": 88,
+    "open": 50,
     "closed": 38,
-    "new": 10,
+    "new": 11,
     "soon": 12,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
       "안진": 10,
-      "한영": 15,
+      "한영": 16,
       "로컬": 54,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 56,
-      "자격무관": 31
+      "자격무관": 32
     },
     "by_emp_kind": {
       "인턴": 18,
-      "정규직": 43,
+      "정규직": 44,
       "계약직": 7,
       "파트타임": 19
     }
@@ -349,6 +349,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791391153203",
       "dday": 8,
       "first_seen": "2026-10-08T02:05:28"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "택스",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "세무부문 통합세무팀",
+      "company": "EY한영",
+      "deadline": "2026-10-19",
+      "posted_date": "2026-10-07",
+      "location": "",
+      "emp_type": "전체",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/130610",
+      "dday": 11,
+      "first_seen": "2026-10-08T11:01:45"
     },
     {
       "source": "kicpa_susup",

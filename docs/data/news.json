@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T17:01:43",
+  "generated_at": "2026-10-09T17:32:29",
   "items": [
     {
       "source": "gnews_세무",
@@ -38,16 +38,6 @@
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1uZ0FqRXkydXVvdzNtUG1BSmF3MnFJcmhhZXhTTVVpMmhZRjRIZFlWXzRjUFJzeEhnTVphR0p3bHdEb0JIZ2tRTTJYcFlXNm50WmgwU0ItS1M4SHJodkNlbkxPcw?oc=5",
       "published": "2026-10-08",
       "published_at": "2026-10-08T11:21:24",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "IndexBox",
-      "title": "부가가치세 환급 중단: 기업, 라다 재정위원회에 호소 - 뉴스 및 통계",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUm5sWHpReWdsRmJrS3BjVnpsaHZwNk5Qb2lRZW1ZUXFwaEFtZERSRllmdXAtZVF6akFjN3hUclNCQWhZU0QtZ2pXZjlodXQ5cnV3aDhfbGhVTGxfQkhZVmJCdFo1SDg1aWRMMXl1MVRCdmpmZ1VDMFkwYm5ZSWhMUEJIb1JUTDhNM2N0aWhyNzRVSXNqbHVCcWJMT0xUN2xYZE95UnloMVZuMkxO?oc=5",
-      "published": "2026-10-08",
-      "published_at": "2026-10-08T10:21:03",
       "summary": "",
       "category": "세무"
     },
@@ -507,7 +497,15 @@
       "published": "2026-09-30",
       "published_at": "2026-09-30T05:26:00",
       "summary": "",
-      "category": "감사"
+      "category": "감사",
+      "dupes": [
+        {
+          "title": "한국회계기준원, EFRAG과 ‘ESRS-40a 공개초안’ 실무 쟁점 논의",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1hOThTbnJjOFRsTFROUGdEWmh0TXZKWDN0RmU3enNON1FjRklFbzVGOHNiU1hjQ25hREItUUt6MVZiLUFYN2NVUWhWdUgxMUZGUlFubHlMMlI?oc=5",
+          "source_label": "조세플러스",
+          "published": "2026-09-18"
+        }
+      ]
     },
     {
       "source": "gnews_감사",

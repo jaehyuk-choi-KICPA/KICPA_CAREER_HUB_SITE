@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T20:31:41",
+  "generated_at": "2026-10-09T23:32:04",
   "categories": [
     "반도체·전자",
     "자동차·모빌리티",
@@ -255,13 +255,51 @@
   "dart_url": "https://dart.fss.or.kr/dsab007/main.do?textCrpNm={q}",
   "items": [
     {
-      "source": "gnews_ind_유통·소비재",
-      "source_label": "한국경제",
-      "title": "쌀쌀해지자 핫팩 매출 10배로",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBwWTRxOUd1dFROY085NngyNnNRT1ZaNWtlSUVtaXhaM2ZoTk9jRXFFWTJlSU1rMm9fZ3VrQi1wcGUzOGZwNFZqY041LThZaVRlWExpZVJab3N6Zw?oc=5",
+      "source": "gnews_ind_금융·보험",
+      "source_label": "녹색경제신문",
+      "title": "OK금융 예별손보 인수, 남은 건 승인만?…예보 지원·자본 여력 검증대",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1sTmtmczc5TjI4Vl95cXo0ZTdNcU93ZlZQdUM3aG1xck1aY0twS1FZOTZGMVRMMHhxR1lGWHp1NE9BY1JKZnZKWmdXbGZ5T0hpWHNlaGlOMjB4M25yWFU5WEowNThMcDZH?oc=5",
       "published": "2026-10-09",
-      "published_at": "2026-10-09T08:35:47",
-      "category": "유통·소비재",
+      "published_at": "2026-10-09T13:06:52",
+      "category": "금융·보험",
+      "companies": []
+    },
+    {
+      "source": "gnews_ind_철강·소재",
+      "source_label": "KBS 뉴스",
+      "title": "인천 남항 시멘트부두 사일로 증설 추진",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9ZTGZoVzZiNER6ZGxnMFhmbnZ3SUpLSWFaUzRRUmpEM0JWNl9iZVFkcHBQaWR3aDZxMjBKcWlzamd3TUNQay1yemJoM2FSaHQ1MWJ2RTBlZkpFX1E?oc=5",
+      "published": "2026-10-09",
+      "published_at": "2026-10-09T12:34:00",
+      "category": "철강·소재",
+      "companies": [],
+      "dupes": [
+        {
+          "title": "인천 남항 시멘트부두 사일로 증설 추진…인천해수청, 사업 허가",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBRUC1oVEdkUXRNRTJqeV9NTkQyNGlDTUc0RTdRRnUyVUEyd194RWJHeFZ6RWpmeENzb2dxUFNGYlg5U09PQUJFanpCamotQUVXNkxxZDlTdkRscEFELV9tY9IBYEFVX3lxTFBRUC1oVEdkUXRNRTJqeV9NTkQyNGlDTUc0RTdRRnUyVUEyd194RWJHeFZ6RWpmeENzb2dxUFNGYlg5U09PQUJFanpCamotQUVXNkxxZDlTdkRscEFELV9tYw?oc=5",
+          "source_label": "연합뉴스",
+          "published": "2026-10-08"
+        }
+      ]
+    },
+    {
+      "source": "gnews_ind_철강·소재",
+      "source_label": "IndexBox",
+      "title": "Cemex 감원: 콜로라도주 라이언스 시멘트 공장에서 70명 이상 일자리 축소 - 뉴스 및 통계",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNYlZQSWREa1ZGd0tiMUM4dlNhOVlwY1pIZGtZbDlGbF9qUFZzMVV0VWlKYURoSWstWmMzaWRLWU8yUGY0Nm9DMVpob0NSdk9PN1FkZ1BPSDJrbGdzU09jb2twbzRJS084ZEt1MGZyeWtpeF9XN0xqOVltaS1CelBVNDNJS2N1dkE5dkpIemxFWFlNZDRjZmpmRWx1Y1ZRSGF0N28ycEQzQkpXelFlSXRha2JzTUhjSVZv?oc=5",
+      "published": "2026-10-09",
+      "published_at": "2026-10-09T12:00:27",
+      "category": "철강·소재",
+      "companies": []
+    },
+    {
+      "source": "gnews_ind_제약·바이오",
+      "source_label": "바이오북미디어",
+      "title": "면역질환 신약사 트렉스바이오, 1억1700만달러 IPO",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1SZGREbHdlR1NwSkt4RGxRZkZYN2tBdnIyeEZXTWlKendnUE54S1dTTUpsRVVxUU5sUmtSZlNRUHo4b1pyUnNhU0g1b1BmSVkzbldONQ?oc=5",
+      "published": "2026-10-09",
+      "published_at": "2026-10-09T11:30:00",
+      "category": "제약·바이오",
       "companies": []
     },
     {
@@ -284,7 +322,15 @@
       "published": "2026-10-09",
       "published_at": "2026-10-09T06:29:38",
       "category": "유통·소비재",
-      "companies": []
+      "companies": [],
+      "dupes": [
+        {
+          "title": "신라면세점, 화장품 매출 두 자릿수 성장…단독 뷰티 상품 확대",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBQSHNDWFREQ05jRkVUTGxMbHJ5UU5mVUptNFM5ZFgwZm5MWm1jWU43bmt4TTVrQjJKVlhQTVlxTEpxWDdxTjdUb0R5bFBxOThLaTV2TTUtajdOYnZPblNVWWQySk4?oc=5",
+          "source_label": "서울경제TV",
+          "published": "2026-10-08"
+        }
+      ]
     },
     {
       "source": "gnews_ind_유통·소비재",
@@ -327,18 +373,6 @@
       "published_at": "2026-10-09T02:00:00",
       "category": "조선·방산·기계",
       "companies": []
-    },
-    {
-      "source": "gnews_ind_제약·바이오",
-      "source_label": "바이오북미디어",
-      "title": "HLB 간암 신약 4수 도전…실사 완화에도 '불확실성' 여전",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFB6NlV5SlU3TTJjNjlRU2FVNjFVcnV1QzhfcjdodzBxNWIyMDZlbVVhWnV1SFBTOGdfRFh1a0JwcThKR0NYTU91NTgtSzNITUVfeTBQaQ?oc=5",
-      "published": "2026-10-09",
-      "published_at": "2026-10-09T01:09:00",
-      "category": "제약·바이오",
-      "companies": [
-        "HLB"
-      ]
     },
     {
       "source": "gnews_ind_금융·보험",
@@ -487,12 +521,6 @@
           "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBTbkZYNHNuTmxqQk82TnMwZjhrWTVBUzU3NW1zTy0teFJ1aGdsNkk3SWJMQ0J2NUtNU1RSR3FsTW1DYzUycmxoWlNkbks0YjhWTXItUXdvbDdOWmhiTnY0dUgwQXFfX1ZoUDJfc2Z4NkdiQQ?oc=5",
           "source_label": "KB Think",
           "published": "2026-10-02"
-        },
-        {
-          "title": "4대 금융지주 상반기 11조 벌었다···하반기 실적 가를 변수는 '증권'",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA4RmhvX3RqZGNsck1jN1RwV1hkTzBIS2lpelF2ekd4LURKUlV0STlxVXFwZUdOb0pyS01zclFhZmpoUTZQTlo1b1EtM2xqUkdTeHBXRDRPNlhJUzdmUndEVlNQLXlORjE2VUEwS3VkVXpNd9IBdkFVX3lxTE5iTlNCTkFUVzRnWTViclo5M0xpTEU1WjBHMnM1NFA2N1dvaThNNE1kYjFtbW1mSEt0d3hHRTdFRGVoZ2lvSFZDU1dEcmtFVUEtdWhxb3FrdTFmMHZ3dzBTajU5eGZ4YTkzakYwMnM0M0lQN1V6aFE?oc=5",
-          "source_label": "시사저널e",
-          "published": "2026-09-23"
         }
       ]
     },
@@ -609,16 +637,6 @@
       ]
     },
     {
-      "source": "gnews_ind_철강·소재",
-      "source_label": "연합뉴스",
-      "title": "인천 남항 시멘트부두 사일로 증설 추진…인천해수청, 사업 허가",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBRUC1oVEdkUXRNRTJqeV9NTkQyNGlDTUc0RTdRRnUyVUEyd194RWJHeFZ6RWpmeENzb2dxUFNGYlg5U09PQUJFanpCamotQUVXNkxxZDlTdkRscEFELV9tY9IBYEFVX3lxTFBRUC1oVEdkUXRNRTJqeV9NTkQyNGlDTUc0RTdRRnUyVUEyd194RWJHeFZ6RWpmeENzb2dxUFNGYlg5U09PQUJFanpCamotQUVXNkxxZDlTdkRscEFELV9tYw?oc=5",
-      "published": "2026-10-08",
-      "published_at": "2026-10-08T22:17:00",
-      "category": "철강·소재",
-      "companies": []
-    },
-    {
       "source": "gnews_ind_제약·바이오",
       "source_label": "연합인포맥스",
       "title": "삼성바이오, 3Q 영업익 3%대 감소 전망…\"수주 회복세는 기대\"",
@@ -668,16 +686,6 @@
       "published": "2026-10-08",
       "published_at": "2026-10-08T20:59:17",
       "category": "자동차·모빌리티",
-      "companies": []
-    },
-    {
-      "source": "gnews_ind_에너지·화학",
-      "source_label": "기후에너지데이터뱅크",
-      "title": "한국가스기술공사, 세네갈 LNG 시운전 사업 수주",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE05b0xmRXg3amE1anpZOTZsR2hnU2FkSkZCeUYwS1hRVFh2a0MxTmo4NGk0dzBTOGE2TE5pcmc4bFVsZHpWOFVuUHJSSV9FZ285Wi1GdVg4M2tuazRYeFE?oc=5",
-      "published": "2026-10-08",
-      "published_at": "2026-10-08T12:10:03",
-      "category": "에너지·화학",
       "companies": []
     },
     {
@@ -843,6 +851,26 @@
       "companies": []
     },
     {
+      "source": "gnews_ind_금융·보험",
+      "source_label": "인더스트리뉴스",
+      "title": "OK금융그룹, 예별손해보험 인수 본계약…종합금융그룹 도약 시동",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1BYkJSOERxV1FfR1ctMlVuT25iUUhqeDE0QmNKbTRVSktPVHF0clhoM2wzeExTQTJES19ybVhDZWpqUklQZnpZdTM2cHgtMGR5Zm0tUWlBemY4Rlc1VENVMmlMZDNjaVlEaHlWZjgtLV9jZw?oc=5",
+      "published": "2026-10-08",
+      "published_at": "2026-10-08T02:12:59",
+      "category": "금융·보험",
+      "companies": []
+    },
+    {
+      "source": "gnews_ind_제약·바이오",
+      "source_label": "매경헬스",
+      "title": "K-바이오 실적 밀어준 '고환율' 끝나간다…이젠 본업이 '승부처'",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9wN3NUU1hESWVoNmNGZjN4Uk8zNWFNeDZuZnBuNmdNc0J5N2E1RkF1WERhOW1WNmxfb0pEaUZwMkwyenpITEFvVVZzc3dYV1ZGa3dERWNwbUxkdDRNQklhNENvYkVwUU1LamtrSA?oc=5",
+      "published": "2026-10-08",
+      "published_at": "2026-10-08T01:37:33",
+      "category": "제약·바이오",
+      "companies": []
+    },
+    {
       "source": "gnews_ind_금융·보험_3",
       "source_label": "조세금융신문",
       "title": "은행 덜 벌었는데 금융지주는 역대급 실적…달라진 수익 지형",
@@ -879,6 +907,16 @@
           "published": "2026-10-07"
         }
       ]
+    },
+    {
+      "source": "gnews_ind_철강·소재",
+      "source_label": "뉴스핌",
+      "title": "포스코그룹, 정부 K-GX 참여…2028년 수소환원제철 실증설비 구축",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBTZzZUd0tJT1NURUNvZzVOcm1TMTNtVHRGZTY0MkstSDJ5RGM4UnRJMFZPaDVJWFpXb3dIbDJBc3FCRW1IWWtOV3VZekxqeXVIb2JBRFp5Y1BpbDBh?oc=5",
+      "published": "2026-10-08",
+      "published_at": "2026-10-08T00:42:00",
+      "category": "철강·소재",
+      "companies": []
     },
     {
       "source": "gnews_ind_금융·보험",
@@ -968,8 +1006,8 @@
         },
         {
           "title": "韓 조선, 9월 수주 127% 급증…점유율 21%로 반등",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1WMk15SHUxRkNlTFBYQVo3X0VCQmtfR2pUbE5MV0tJTzB5MUZVZFpKQ1RaMERUQ25GeWt3QVJLMUNXY2JTYW5SNWJtajZUYW9FZ1M1UnZYNUxOS1N5UFJjU0pIaU1QbW9qZUZ5YWRsWm9vR0k?oc=5",
-          "source_label": "마켓인",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQ3pDUmRIQXlsU0ZES1BYMXNxU01LWXNZNVNZZzdIUGNNa3I5RE5oZTVjSVpCZTZ1dTdXR2o0WURwTF9aNk1QbHBDbGpETDRYREZ6Y3gybHdBdXFJbEpLSmZ3Tjd3THVoLUdxaVNKQl9DZS0yZ2xGYVJQc2N0YnluUg?oc=5",
+          "source_label": "이데일리",
           "published": "2026-10-07"
         },
         {
@@ -1070,9 +1108,9 @@
       "source": "gnews_ind_IT·플랫폼·게임",
       "source_label": "더바이오",
       "title": "인체조직 기반 재생의료 플랫폼 기업 ‘엠에스바이오’, 공모가 7800원 확정",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ZWUJvNHdDUFVzUUtldXFwTnNvSjEwNkFfMFJrYUVDSkVCaVd0X1VLM1pzY1Nka2JCQURPbXRXd2N5UERXc1Z6MlhOYUt0Wk9SRUdMQjE1dUFvaE1tVHBjSVQwM2JqcllZdlVROdIBcEFVX3lxTE5GbDRzMkF6TWhKekVGc1UtNmhtMjE4YzRqRFN5bUpLVzdOak1mQzhkOEgtcjJHMTl6RC11WENxVC0tTUZTdXItVXU3UnJiaFVVYUNFa21LSzMxbVI0T0FvR25RY1BfaWRIQ2ZVal9tby0?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5GbDRzMkF6TWhKekVGc1UtNmhtMjE4YzRqRFN5bUpLVzdOak1mQzhkOEgtcjJHMTl6RC11WENxVC0tTUZTdXItVXU3UnJiaFVVYUNFa21LSzMxbVI0T0FvR25RY1BfaWRIQ2ZVal9tby3SAXBBVV95cUxORmw0czJBek1oSnpFRnNVLTZobTIxOGM0akRTeW1KS1c3TmpNZkM4ZDhILXIyRzE5ekQtdVhDcVQtLU1GU3VyLVV1N1JyYmhVVWFDRWttS0szMW1SNE9Bb0duUWNQX2lkSENmVWpfbW8t?oc=5",
       "published": "2026-10-07",
-      "published_at": "2026-10-07T08:18:11",
+      "published_at": "2026-10-07T08:50:49",
       "category": "IT·플랫폼·게임",
       "companies": []
     },
@@ -1102,9 +1140,9 @@
       "source": "gnews_ind_에너지·화학_2",
       "source_label": "핀포인트뉴스",
       "title": "진양화학·와이엠티 주가 신바람… 화학株 실적 따라 희비",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8yMF9fWXJVbWxJT1dEa3l6VHgtUUdNeWE0dnVrT1M0X3lLSlBOaHpJOGs0NDBXN3hkaFZOY3o5VVk4VjYtemVHTUhmbWYxR0wzeGxTcEJ2UTZnVW5ETG1idU45WGdQR0F2TXlfc0lZdld2Z0hRRDFF0gF3QVVfeXFMTzIwX19ZclVtbElPV0RreXpUeC1RR015YTR2dWtPUzRfeUtKUE5oekk4azQ0MFc3eGRoVk5jejlVWThWNi16ZUdNSGZtZjFHTDN4bFNwQnZRNmdVbkRMbWJ1TjlYZ1BHQXZNeV9zSVl2V3ZnSFFEMUU?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE11UXA5NTBuQmUtWHpiWXhvT0d5WndLNExPdEozdW1JTTItN2k1cEFOQUk1LWpScGZvWkt6TXkwWjhhSTNVeGFCY1NlXzVpXzMtTVUtS2xSZzhyQ1FneFJNSkdDWWtZZ1UyN01OT0Z1ZHUzX03SAXdBVV95cUxPMjBfX1lyVW1sSU9XRGt5elR4LVFHTXlhNHZ1a09TNF95S0pQTmh6SThrNDQwVzd4ZGhWTmN6OVVZOFY2LXplR01IZm1mMUdMM3hsU3BCdlE2Z1VuRExtYnVOOVhnUEdBdk15X3NJWXZXdmdIUUQxRQ?oc=5",
       "published": "2026-10-07",
-      "published_at": "2026-10-07T06:42:57",
+      "published_at": "2026-10-07T06:40:03",
       "category": "에너지·화학",
       "companies": []
     },
@@ -1137,18 +1175,6 @@
       "published_at": "2026-10-07T05:27:48",
       "category": "반도체·전자",
       "companies": []
-    },
-    {
-      "source": "gnews_ind_금융·보험_3",
-      "source_label": "경제타임스",
-      "title": "금리·환율 쌍끌이 수혜…하나금융, 4분기 실적 반등",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1TWXJ3ZEF1c0pWS2RPTmJpcXlhX0pvU3ZzRDFjdXdiNFZlXzdPWFJ0MGIxWm5mYlVQWDVSbG9EVjNCeFFGVm45OFBoX2F0TklNVEpsRzZWLWk?oc=5",
-      "published": "2026-10-07",
-      "published_at": "2026-10-07T01:02:00",
-      "category": "금융·보험",
-      "companies": [
-        "하나금융지주"
-      ]
     },
     {
       "source": "gnews_ind_철강·소재_2",
@@ -1195,6 +1221,16 @@
       ]
     },
     {
+      "source": "gnews_ind_제약·바이오",
+      "source_label": "연합인포맥스",
+      "title": "롯데바이오, 알보텍과 원료의약품 생산 수주 계약 체결",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBhNTBrWURJWGhEaHA0NU9OMndLNF9YQnlTTDVleG1Kel9WRUdiT1JkRENGVm1mSmV5Q2dGbkRlbW1yZG91M3BndmI1dFg3cWtyTkVwUHBJOTZJcE9wWjdDWlZzY01FWFhmbFlUZkVBUGk?oc=5",
+      "published": "2026-10-06",
+      "published_at": "2026-10-06T23:16:11",
+      "category": "제약·바이오",
+      "companies": []
+    },
+    {
       "source": "gnews_ind_에너지·화학_2",
       "source_label": "뉴스핌",
       "title": "[모닝 리포트] 금호석유화학, 톱글로브 호실적에 NB라텍스 회복 기대",
@@ -1205,16 +1241,6 @@
       "companies": [
         "금호석유화학"
       ]
-    },
-    {
-      "source": "gnews_ind_제약·바이오",
-      "source_label": "연합뉴스",
-      "title": "롯데바이오, 알보텍과 생산 수주 계약 체결",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1iR3Bwd043VElGT0hDYzVob3R6d3NLVGtzb2VaZHNaNy1Wd0tlNXFZd1hWQ2pjN0Znc1owVkpwLWM2ZjhyLXNTTEFfYkt2VHdzZkVvQXRIaklBY3VCMGFjLdIBYEFVX3lxTE1iR3Bwd043VElGT0hDYzVob3R6d3NLVGtzb2VaZHNaNy1Wd0tlNXFZd1hWQ2pjN0Znc1owVkpwLWM2ZjhyLXNTTEFfYkt2VHdzZkVvQXRIaklBY3VCMGFjLQ?oc=5",
-      "published": "2026-10-06",
-      "published_at": "2026-10-06T22:53:28",
-      "category": "제약·바이오",
-      "companies": []
     },
     {
       "source": "gnews_ind_건설·부동산",
@@ -1299,18 +1325,6 @@
       "published_at": "2026-10-06T08:08:36",
       "category": "금융·보험",
       "companies": []
-    },
-    {
-      "source": "gnews_ind_IT·플랫폼·게임",
-      "source_label": "머니투데이",
-      "title": "신세계, 콘텐츠 기업으로 키운다...워너브라더스 인수 1.4조 투자 - 머니투데이",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB1TDY0dDlaWXJOT1NLVFU1WGREMDF1bzJnbXcwaTFqVGp3X0c0d2tIYkhsYjZvSkc2czBjSm5XYmUteWVORGFYV3Y5YlVJMEp3TlJxbWtrZlJGVWtQVERMRHAwT3UweEdhTUHSAW9BVV95cUxQZkR1aTBLZE5MM3VudUVHaW9lNFlOWTNNeDdMOEtVMEFDWUZPclQ2ZGUxdnFyaS1sWmI0ZFphT3Q3Qk5pd1NUa3Z2VzROUFdjcUh2QVV5OHBNODJWNzNtaEpzOHVtT0xVdjU0dTkwQU0?oc=5",
-      "published": "2026-10-06",
-      "published_at": "2026-10-06T07:35:31",
-      "category": "IT·플랫폼·게임",
-      "companies": [
-        "신세계"
-      ]
     },
     {
       "source": "gnews_ind_조선·방산·기계_2",
@@ -1604,16 +1618,6 @@
       "companies": []
     },
     {
-      "source": "gnews_ind_제약·바이오_2",
-      "source_label": "시사저널e",
-      "title": "김민영 동아제약 대표, 백상환 공백 메우고 사업 실적 낼까",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE13UXBERkM1OS1iNFpVcmt6c3k3MF9MdVdiS1VDZmZ2S19CTks2VWxfSC1fR3BHVXg0QXpPTXlqRWJCQkFwUUdrVThHUkpqR0F4OExDdWx0RUxGemlqNmtsVjQ2Q09IQjAwMm9BREs1UzJZd9IBdkFVX3lxTE5ua1RjU1UwVXdqVFlwcXRoTGc5anNOaGVWc2Faa05ZNWxwUi01SV9iZ0g4cTF2SUJrcVpRaWIwbFNoQ2hyQ0pfYVc4UlpnSHF4Y2hwSFdsS1V0b3NOZUQ5eEMzS2dYdEtKWFRHXzBYTFBlb25XdFE?oc=5",
-      "published": "2026-10-02",
-      "published_at": "2026-10-02T07:31:37",
-      "category": "제약·바이오",
-      "companies": []
-    },
-    {
       "source": "gnews_ind_자동차·모빌리티_2",
       "source_label": "비즈월드",
       "title": "[기업 리포트] ‘내수 10만대’ 무너진 한국 자동차…수출 착시 속 4분기 실적 먹구름 전망",
@@ -1702,8 +1706,8 @@
           "published": "2026-09-27"
         },
         {
-          "title": "배터리 3사, ESS 수주 3차전… 생산능력 확충 승부수 - 조선비즈",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMHhXaWVWdGV6ODdMUVlEX01BUzZLRDF2LUVtMzdoR0lTZzlUYl93ZnNHNGM1UDdTTFVPNlpiREVmSXpRMnZWdllmQ3pKTGM0WEZkVFhTVk1oRnU5MVVSaWxtZUVDVUdjdWt2X1RVc1VZYmQ0X0g4M2V1bkplQzVORjBkbXDSAZgBQVVfeXFMUDU0cmFFdWZWcjVubVJiRnhfNUFpVk10LWlYZWc3dkh6VTJEbXlyTmUxc19Gay12cjRFVTJvZXFMT09NSjNmWTRTNG45VkJqcnpKMEY1SGFmek5sS1gwMHRwUHJCWUdkUHdXeEJuaVZjV2s0UFc5V3dGamt0TlBTTjctWUkxTl9EY3NKTXJkQjRkTmtmanp3djQ?oc=5",
+          "title": "배터리 3사, ESS 수주 3차전… 생산능력 확충 승부수",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNMHhXaWVWdGV6ODdMUVlEX01BUzZLRDF2LUVtMzdoR0lTZzlUYl93ZnNHNGM1UDdTTFVPNlpiREVmSXpRMnZWdllmQ3pKTGM0WEZkVFhTVk1oRnU5MVVSaWxtZUVDVUdjdWt2X1RVc1VZYmQ0X0g4M2V1bkplQzVORjBkbXA?oc=5",
           "source_label": "Chosunbiz",
           "published": "2026-09-22"
         },
@@ -1742,6 +1746,16 @@
           "published": "2026-10-01"
         }
       ]
+    },
+    {
+      "source": "gnews_ind_조선·방산·기계_2",
+      "source_label": "ebn.co.kr",
+      "title": "상반기 달리던 K조선, 3분기 수주는 숨고르기...연말 LNG가 변수",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBLMGRjZ2FIYkR0VDZDMDhjQjZIUXpFUWx5TnFKX09WT1BaWkVBY2hGTEpmbUZ2Vm0yenpmSzZhODA2akQwdUtBRjBnYl9PZkxYLVFheGIzUkszMGh0bnJabC1tbWptT21p?oc=5",
+      "published": "2026-10-01",
+      "published_at": "2026-10-01T04:45:49",
+      "category": "조선·방산·기계",
+      "companies": []
     },
     {
       "source": "gnews_ind_IT·플랫폼·게임",
@@ -2001,9 +2015,9 @@
       "dupes": [
         {
           "title": "호르무즈 봉쇄에 가스선 운임↑…한국 조선 수주 전망은 '맑음'",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9oSkhkbzBrTGh6a3gweS1xWDRnZThRWlVfSC1qdEd4b3FhdXFUVnc0QkRJOVJRYlM1am1nblMydHJaWGxpS2t2dHNmX0cyM1pNZThSSjRIUzNEWHPSAWBBVV95cUxPa1JLc1NvR2k0M0piNktzYXhHYkZZay1HVE1XdTc4Q01KR2VvY09tV29fWnM0QmJlM2lOUTdpRlZwSUFIb1NlcHRjb0xOSmhRN1ZTLUd1bW9pdExoeVZlSXc?oc=5",
-          "source_label": "연합뉴스",
-          "published": "2026-09-26"
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9OQTlod3BJSExzVmRzTTR6dUpmVU5ncHloOUY4aTZJaHZXRXpaMjJYSlE4RDRaT29jYUxydEhPY2NSUm1pM0VzTEE5S1RYNFhpaF9fYQ?oc=5",
+          "source_label": "Daum",
+          "published": "2026-09-25"
         },
         {
           "title": "중동 전쟁에 가스선 운임↑…K조선 수주 기회 확대",

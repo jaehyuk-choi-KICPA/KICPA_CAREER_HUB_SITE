@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T13:31:28",
+  "generated_at": "2026-10-09T14:01:37",
   "items": [
     {
       "source": "gnews_세무",
@@ -261,7 +261,7 @@
         },
         {
           "title": "올해 초과세수 63.2조 원 전망...법인세 35조·소득세 15.6조 더 걷혀",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBVU2l0b0d2eEFqd0FSdG1pYW9vTDlBcHplS3owcjlkQUtHdk5lZTJnS3NIdzNDTUNzQjR0SWtLX0JhNjYwS3VpNjROVDhYZTNvOTdKaXI5cTBMdENrQXc?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA3Q1ZZRENqY0RCckN0Yzc4aDBpSUNLMWtpTmp5aGN0aFFHam9Dc05ZNTlTU1FLc21NTlJ2c1NNVFFzVVBrUWFldWZxSk5lYldhVy1lNHh3X1A4OVJZTmFDX1dZSFNGSkRIQi1TWkFpdw?oc=5",
           "source_label": "YTN",
           "published": "2026-09-30"
         }
@@ -296,16 +296,6 @@
       "published_at": "2026-10-07T02:36:58",
       "summary": "",
       "category": "채용·시험"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "세정일보",
-      "title": "[세무행정의 허술한 민낯-④ 법인세분야] 결손금 두 번 빼주고 세금까지 돌려줬다",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE41WWVtMlpYdkc0dUV4REtKcHVBQjBMSGtWZ18yclpDVXJULUFlVlNiUExJTVhtd0Fod2Qxd283WXhvVGRTbjVfZ1F4R2VWeFB5YTNtTWVRcC03VzVTd0d3VVplc1MzQUJNUmpaSQ?oc=5",
-      "published": "2026-10-06",
-      "published_at": "2026-10-06T23:27:43",
-      "summary": "",
-      "category": "세무"
     },
     {
       "source": "gnews_감사_2",
@@ -507,7 +497,15 @@
       "published": "2026-09-30",
       "published_at": "2026-09-30T05:26:00",
       "summary": "",
-      "category": "감사"
+      "category": "감사",
+      "dupes": [
+        {
+          "title": "한국회계기준원, EFRAG과 ‘ESRS-40a 공개초안’ 실무 쟁점 논의",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1hOThTbnJjOFRsTFROUGdEWmh0TXZKWDN0RmU3enNON1FjRklFbzVGOHNiU1hjQ25hREItUUt6MVZiLUFYN2NVUWhWdUgxMUZGUlFubHlMMlI?oc=5",
+          "source_label": "조세플러스",
+          "published": "2026-09-18"
+        }
+      ]
     },
     {
       "source": "gnews_감사",

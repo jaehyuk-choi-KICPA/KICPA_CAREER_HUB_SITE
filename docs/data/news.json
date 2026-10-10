@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T04:31:47",
+  "generated_at": "2026-10-11T05:01:40",
   "items": [
     {
       "source": "gnews_세무",
@@ -55,13 +55,21 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "뉴스앤넷",
-      "title": "부부 상속·증여세 폐지 추진",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5CQWlweXRacUpqV21zVHNhdHYxNW1QUkU4V2ctSjJZdmtPYUxacktlaThRSzA2SVBxdnUyMlFYLTMxOUFNZEFhdVdTanpEakZlLVNsWHU3blZGcGdTSXRzZHQ2UTNMQ3FkY0E?oc=5",
+      "source_label": "재경일보",
+      "title": "부부 간 상속·증여세 전면 폐지 제안…증여세 6억원 공제는 유지 : 경제",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1lam5CRWcwVng3UVJkWEJ6ems5RkZjRXJSc05KUTBYcXAwa0pJOC1ScHh3MWp3QkREYWptZ0Y2U09sQWlYX2xxS3ZXSQ?oc=5",
       "published": "2026-10-09",
-      "published_at": "2026-10-09T06:46:40",
+      "published_at": "2026-10-09T07:41:00",
       "summary": "",
-      "category": "세무"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "부부 상속·증여세 폐지 추진",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5CQWlweXRacUpqV21zVHNhdHYxNW1QUkU4V2ctSjJZdmtPYUxacktlaThRSzA2SVBxdnUyMlFYLTMxOUFNZEFhdVdTanpEakZlLVNsWHU3blZGcGdTSXRzZHQ2UTNMQ3FkY0E?oc=5",
+          "source_label": "뉴스앤넷",
+          "published": "2026-10-09"
+        }
+      ]
     },
     {
       "source": "gnews_세무",
@@ -105,13 +113,31 @@
     },
     {
       "source": "gnews_채용·시험",
-      "source_label": "이데일리",
+      "source_label": "마켓인",
       "title": "\"회계사 선발인원 정상화\"…청년 회계사들, 국회 앞 1인 시위",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbjBpS016ek9zSmtUWEI5NUFtSWpmcWNwTFFreWV3MHBCZk9sNmV3UGx3b0M4THppVFJlTzc5cDhwbHprMHY1OWdMUy15d2hnY3RuenBXRmpINVBPVGdNbzd3RTR1RFlHdDRXQ0ZwUDVQWTZQN1ZDck45cnF4NEZwcg?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5IVHBiaW9WOWlPVV9kVDJ1N1QxNWMxZzNrLXRNcm1nRklIYTBfUkdOS1BxZGVSWFlyN2ZBa1FScTA3QXBpaVdXNzNOMUhUZXYyYU9aUm9qZFpmNERONEpoZFQ1aHpuVzVhOE1jTWtQZUprNUU?oc=5",
       "published": "2026-10-08",
       "published_at": "2026-10-08T00:12:18",
       "summary": "",
-      "category": "채용·시험"
+      "category": "채용·시험",
+      "dupes": [
+        {
+          "title": "[단독] '취직 못한 회계사' 문제 심각…“신입 더 뽑아달라” 절박한 호소",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQa2tNb3p4ZkZPdk43dUQtWE85aDl4ZGFVRkFJaFVrdG9NeXBUc1BHbUFtMHZLRjJlSjFjRmtHaURTY0kyRmFmZTN1VWlXN2lmZFZSM1Nua2VuQkd1MVJnVmduZjcyakQ1dFMzVFA2Q0xacU14MThSTTJPLTUwNDZoQw?oc=5",
+          "source_label": "이데일리",
+          "published": "2026-09-28"
+        }
+      ]
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "월드장애인사랑뉴스",
+      "title": "수원특례시, 공공시설 부가가치세 18억3860만원 환급…감사관 선제 점검 성과",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1TUDlKbUJsVzJQSGRpYkFEc3JwOGg4Mm4zRzNHNHFKZHhRc2tMb19LcGlaYm1rejB0WjVyTTc0ckZldUg1RnRNUWlwZWh2NTlRMnJaUXNSeUpjMFUyNF9hMWhEOEhuT0Z5eGhhM19Jdw?oc=5",
+      "published": "2026-10-07",
+      "published_at": "2026-10-07T23:27:52",
+      "summary": "",
+      "category": "세무"
     },
     {
       "source": "gnews_세무",
@@ -240,16 +266,6 @@
       "category": "세무"
     },
     {
-      "source": "gnews_세무",
-      "source_label": "데일리안",
-      "title": "세무조사·재산추적 못 버텼나…‘선박왕’ 권혁, 3938억원 완납 약속",
-      "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxORjg2Vk1Ya0dKVldneGtlTklWemZ2aTRBUnVpVUVZVXlVUlpheHlGeHB0dUo3TTFERTBTZ0RUa3lXZnhidHQ4SWNKSkY3RmVmMEN6N29IVTJPTXA0OG5DNzFianUzR0hkeVZhQ09fYkFXNTNpbkg3N2hER21qN1hVTG13N1FCRlFQTGU4ZEZ6b3dBQndVQlZvSUNnU2lqdEZyLXViRW1FZmtlOUxQQlcyMmVKbTZzdGVINHJjMnIyWThuakhFQ0RqcGJjcTIxc1VxYnZkaUhyaEpJdThXcVVPTDhXYXFaTHlXMnNXS1RjdmVPTF84RHNmU0ozZ0h3TV93UFFzQ0VQNFBYU3QySWpLdklUU0t1R2ZtUU5ZUjhLNUt3ZlBUdjU4d2hOMms?oc=5",
-      "published": "2026-10-07",
-      "published_at": "2026-10-07T03:01:00",
-      "summary": "",
-      "category": "세무"
-    },
-    {
       "source": "gnews_채용·시험",
       "source_label": "한국세정신문",
       "title": "청년공인회계사들 \"자본시장에 필요한 만큼만 선발하라\"",
@@ -343,9 +359,19 @@
       "source": "gnews_세무",
       "source_label": "Daum",
       "title": "국세청, ‘한눈에 보는 10월 부가가치세 신고’ 안내",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5qazFfOVJzTFkxV1Nnamg5YUR4QldjZXQxbFduT2YwRU5MaWtuUENmVmdKSEs2TVFaZXdHcDFSU1dPVUx1RTVKVVN4NA?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9uWjloenRITnVST1A5dkhnczlaMEtEc1g3OW9qNFhDb0hHdEJyamJtOU9Oa3hhRS1RTjNobDcyS1Zva0dPZlE?oc=5",
       "published": "2026-10-05",
       "published_at": "2026-10-05T04:49:45",
+      "summary": "",
+      "category": "세무"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "조세금융신문",
+      "title": "부가세 26일까지 예정신고…홈플러스‧호우피해 2개월 직권연장",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB3T0RwN0xPZm5PY1MycUVwMzBlQmJteG9GSXowVHBVR0xQTzAtZ1VCV0Y0RVM2Y29WaHVXX2lSZWNyWXhQTmxSelplVzduQ1c2NWRhMlVMRmg0RWFOb0NJWGxOSQ?oc=5",
+      "published": "2026-10-05",
+      "published_at": "2026-10-05T03:00:00",
       "summary": "",
       "category": "세무"
     },
@@ -470,16 +496,6 @@
       "category": "채용·시험"
     },
     {
-      "source": "gnews_채용·시험",
-      "source_label": "이데일리",
-      "title": "[단독] '취직 못한 회계사' 문제 심각…“신입 더 뽑아달라” 절박한 호소",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQa2tNb3p4ZkZPdk43dUQtWE85aDl4ZGFVRkFJaFVrdG9NeXBUc1BHbUFtMHZLRjJlSjFjRmtHaURTY0kyRmFmZTN1VWlXN2lmZFZSM1Nua2VuQkd1MVJnVmduZjcyakQ1dFMzVFA2Q0xacU14MThSTTJPLTUwNDZoQw?oc=5",
-      "published": "2026-09-28",
-      "published_at": "2026-09-28T07:00:00",
-      "summary": "",
-      "category": "채용·시험"
-    },
-    {
       "source": "gnews_세무",
       "source_label": "한국세정신문",
       "title": "매출 10억 미만 소상공인 세무조사 유예 연말까지 연장",
@@ -508,16 +524,6 @@
       ]
     },
     {
-      "source": "gnews_세무",
-      "source_label": "Daum",
-      "title": "“비수도권 차등 법인세 도입해야”…부산상의, 세정 개선 건의",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFB4X282cVMtTjRIcFBUUzRJSDl2NFZ5SThoczQtTjRFTnk5TTQtNDdiX3ZHSEtnWXhyYVlmM3N2dHYybmZDd0Q3WFg2dw?oc=5",
-      "published": "2026-09-28",
-      "published_at": "2026-09-28T06:30:00",
-      "summary": "",
-      "category": "세무"
-    },
-    {
       "source": "gnews_감사_2",
       "source_label": "한국경제",
       "title": "미래에셋 실적 ‘나비효과’ 된 2022년 스페이스X 회계처리",
@@ -526,16 +532,6 @@
       "published_at": "2026-09-25T07:00:00",
       "summary": "",
       "category": "감사"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "한국경제",
-      "title": "\"혹시 나도 더 냈나\"…국세청 조세불복, 6건 중 1건은 '인용'",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE8xRzRILVJ4cDJ4Zm1xQTM4VHhaVVU0S3k3dFlHOUZoeHVFaDNFVDMxclJEV0x0ZTJuWF9KUF9oUUdYazF6a3JuWGExem5qdjlWODJaVXo4bUdYQQ?oc=5",
-      "published": "2026-09-24",
-      "published_at": "2026-09-24T07:00:00",
-      "summary": "",
-      "category": "세무"
     },
     {
       "source": "gnews_세무",

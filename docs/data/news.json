@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T03:01:39",
+  "generated_at": "2026-10-12T03:31:30",
   "items": [
     {
       "source": "gnews_세무",
@@ -106,12 +106,6 @@
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5wTlBLbDlsYzdvZ1RmZHRsNkdwNWFDZUFvcGN0Ty1uUWZUQVJTZzQzQzJRM3JlT29WRFRCamRNZG4zNVJnMFBfY0k4d3BXVHR6WmctclFONGxobDZXMV9MREdvTUlCb2kyTWc?oc=5",
           "source_label": "Daily NTN",
           "published": "2026-09-28"
-        },
-        {
-          "title": "정기 세무조사와 비정기 세무조사는 어떻게 구분될까",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4xQktKRFhQYmRoOUc0b1o5UTlsRFFJcjM3M2U1d0pNeTRXaENwbTRuUERueE9PdlhPaDI3ei0xdmxyTGtmd3AwaVgtUlg0MjNOWVU2M0FXUS0yMUVVS2MyV3JEdTMxNy1PY3NabQ?oc=5",
-          "source_label": "약사공론",
-          "published": "2026-09-22"
         }
       ]
     },
@@ -148,12 +142,6 @@
           "published": "2026-10-10"
         },
         {
-          "title": "\"국세청 세법 개정 건의에 재경부 80% 퇴짜…재탕 174건\"(종합)",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE54OWtNYkwtUUVQd1F0YUpKdlh6dXZRaXZSdnFNS3JqYThhQ19KNV9LM0djZTh4RDVfT3pEZzZoT0E3d0xQaWdoTno3UjZzZzRuRmRVNHRrWUlHWlRBbFRIadIBYEFVX3lxTE54OWtNYkwtUUVQd1F0YUpKdlh6dXZRaXZSdnFNS3JqYThhQ19KNV9LM0djZTh4RDVfT3pEZzZoT0E3d0xQaWdoTno3UjZzZzRuRmRVNHRrWUlHWlRBbFRIaQ?oc=5",
-          "source_label": "연합뉴스",
-          "published": "2026-10-10"
-        },
-        {
           "title": "국세청 세법 개정건의 10건 중 8건 반영 못 해…'실적 쌓기' 지적",
           "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE0wYjVGQjdSbkZCY2RpRjFvUjNyX0tpSFFDazNZVnFkcHdXY2hCd1Z5MUJKbmdNVG56NGdRc2trbnQzYXVoSUhGM25DRy05anRvNnhPYnlOYWdDSjdKOV9wSFgtbjgyaFBo?oc=5",
           "source_label": "매일경제TV",
@@ -179,13 +167,21 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "뉴스앤넷",
-      "title": "부부 상속·증여세 폐지 추진",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5CQWlweXRacUpqV21zVHNhdHYxNW1QUkU4V2ctSjJZdmtPYUxacktlaThRSzA2SVBxdnUyMlFYLTMxOUFNZEFhdVdTanpEakZlLVNsWHU3blZGcGdTSXRzZHQ2UTNMQ3FkY0E?oc=5",
+      "source_label": "재경일보",
+      "title": "부부 간 상속·증여세 전면 폐지 제안…증여세 6억원 공제는 유지 : 경제",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1lam5CRWcwVng3UVJkWEJ6ems5RkZjRXJSc05KUTBYcXAwa0pJOC1ScHh3MWp3QkREYWptZ0Y2U09sQWlYX2xxS3ZXSQ?oc=5",
       "published": "2026-10-09",
-      "published_at": "2026-10-09T06:46:40",
+      "published_at": "2026-10-09T07:41:00",
       "summary": "",
-      "category": "세무"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "부부 상속·증여세 폐지 추진",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5CQWlweXRacUpqV21zVHNhdHYxNW1QUkU4V2ctSjJZdmtPYUxacktlaThRSzA2SVBxdnUyMlFYLTMxOUFNZEFhdVdTanpEakZlLVNsWHU3blZGcGdTSXRzZHQ2UTNMQ3FkY0E?oc=5",
+          "source_label": "뉴스앤넷",
+          "published": "2026-10-09"
+        }
+      ]
     },
     {
       "source": "gnews_세무",
@@ -362,6 +358,16 @@
       "published_at": "2026-10-07T02:36:58",
       "summary": "",
       "category": "채용·시험"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "와이드경제",
+      "title": "국세 10원 중 4원이 법인세…'AI 예측' 비웃은 반도체 호황에 세수 전망 요동",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5Jb19TaTB4YkxGbXdYSXlQR3RUY0pRc0RNZHAzTnJGYk9FOEpQNUN4S0trR21oRjVYd01OVkQ5QkY2WXJOc3JMMGxzeFBWNmZGR05DRG9CdlIwWjV3eUlJemYzTUlVaHk5Z0lyYg?oc=5",
+      "published": "2026-10-07",
+      "published_at": "2026-10-07T00:36:25",
+      "summary": "",
+      "category": "세무"
     },
     {
       "source": "gnews_세무",

@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-12T14:01:33",
+  "generated_at": "2026-10-12T14:31:34",
   "soon_days": 7,
   "counts": {
-    "total": 76,
-    "open": 40,
+    "total": 77,
+    "open": 41,
     "closed": 36,
-    "new": 2,
-    "soon": 11,
+    "new": 3,
+    "soon": 12,
     "by_firm": {
       "삼일": 3,
       "삼정": 2,
       "안진": 11,
       "한영": 15,
-      "로컬": 43,
+      "로컬": 44,
       "기타": 2
     },
     "by_qualification": {
-      "수습CPA": 48,
+      "수습CPA": 49,
       "자격무관": 28
     },
     "by_emp_kind": {
       "인턴": 16,
-      "정규직": 41,
+      "정규직": 42,
       "계약직": 4,
       "파트타임": 15
     }
@@ -140,6 +140,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5195",
       "dday": 3,
       "first_seen": "2026-09-17T16:31:48"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[인성회계법인] 수습회계사 채용",
+      "company": "인성회계법인",
+      "deadline": "2026-10-15",
+      "posted_date": "2026-10-12",
+      "location": "서울 영등포구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791782000286",
+      "dday": 3,
+      "first_seen": "2026-10-12T14:31:34"
     },
     {
       "source": "kicpa_susup",

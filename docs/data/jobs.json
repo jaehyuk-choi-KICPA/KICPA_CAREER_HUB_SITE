@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-12T10:01:34",
+  "generated_at": "2026-10-12T10:32:20",
   "soon_days": 7,
   "counts": {
-    "total": 74,
-    "open": 37,
+    "total": 76,
+    "open": 39,
     "closed": 37,
-    "new": 0,
+    "new": 1,
     "soon": 11,
     "by_firm": {
       "삼일": 3,
       "삼정": 2,
-      "안진": 9,
+      "안진": 11,
       "한영": 16,
       "로컬": 42,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 47,
-      "자격무관": 27
+      "자격무관": 29
     },
     "by_emp_kind": {
-      "인턴": 16,
-      "정규직": 39,
+      "인턴": 17,
+      "정규직": 40,
       "계약직": 4,
       "파트타임": 15
     }
@@ -615,6 +615,44 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791336777913",
       "dday": 19,
       "first_seen": "2026-10-07T11:01:48"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": false,
+      "title": "회계감사부문 AI Asset & Analytics그룹 인턴 채용",
+      "company": "딜로이트 안진",
+      "deadline": "2026-11-02",
+      "posted_date": "2026-10-09",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5220",
+      "dday": 21,
+      "first_seen": "2026-10-12T10:32:20"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "딜",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "경영자문부문 Valuation 정규직",
+      "company": "딜로이트 안진",
+      "deadline": "2026-11-05",
+      "posted_date": "2026-10-12",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5221",
+      "dday": 24,
+      "first_seen": "2026-10-12T10:32:20"
     },
     {
       "source": "kicpa_susup",

@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-10-13T17:31:30",
+  "generated_at": "2026-10-13T18:01:33",
   "soon_days": 7,
   "counts": {
-    "total": 78,
-    "open": 43,
+    "total": 80,
+    "open": 45,
     "closed": 35,
-    "new": 6,
-    "soon": 11,
+    "new": 7,
+    "soon": 12,
     "by_firm": {
       "삼일": 3,
-      "삼정": 2,
+      "삼정": 3,
       "안진": 9,
-      "한영": 17,
+      "한영": 18,
       "로컬": 45,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 50,
-      "자격무관": 28
+      "자격무관": 30
     },
     "by_emp_kind": {
-      "인턴": 15,
+      "인턴": 17,
       "정규직": 43,
       "계약직": 4,
       "파트타임": 16
@@ -225,7 +225,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "컨설팅부문 업무 혁신 프로젝트 인턴",
       "company": "EY한영",
       "deadline": "2026-10-19",
@@ -235,6 +235,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/130990",
       "dday": 6,
       "first_seen": "2026-10-12T17:31:30"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "감사부문 포렌식팀 인턴(전환형)",
+      "company": "EY한영",
+      "deadline": "2026-10-19",
+      "posted_date": "2026-10-13",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131142",
+      "dday": 6,
+      "first_seen": "2026-10-13T18:01:33"
     },
     {
       "source": "kicpa_susup",
@@ -501,6 +520,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790936462380",
       "dday": 17,
       "first_seen": "2026-10-13T17:01:36"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "딜",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "[인턴] Deal Advisory 1본부 Valuation팀 업무 지원 인턴 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-10-30",
+      "posted_date": "2026-10-13",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000971&receive_div_cd=N",
+      "dday": 17,
+      "first_seen": "2026-10-13T18:01:33"
     },
     {
       "source": "kicpa_cpa",

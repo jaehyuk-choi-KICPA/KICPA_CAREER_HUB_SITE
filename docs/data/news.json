@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T03:31:40",
+  "generated_at": "2026-10-14T04:01:49",
   "items": [
     {
       "source": "gnews_감사",
@@ -327,7 +327,15 @@
       "published": "2026-10-13",
       "published_at": "2026-10-13T01:00:07",
       "summary": "",
-      "category": "세무"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "[단독]국세청 비정기 세무조사 70% 이상 ‘탈루 혐의’…선정사유 첫 공개",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE03X0Z2SmZTYTAtSmIyR0M4Z2pBaXNxZzh0NGt6NnJtX2FNb2JIX05BRk9XZG9HOHhBT0N5ZTZMX0tFR09EOEtrWkZwNFFSSll4S2M4Sk42bFdFZ9IBX0FVX3lxTFB1aUx4T2E1d3d1NXFITEluVlpkaDFxVC1pWEh3STQ3RktUc0wwMjk1d29FQ2ZFM1JNREtCeGd1RW9IQW5FM09LZDhEeEpXWEhLMzhHRC01ZDYzU0huUmhN?oc=5",
+          "source_label": "경향신문",
+          "published": "2026-10-11"
+        }
+      ]
     },
     {
       "source": "gnews_세무",
@@ -480,22 +488,14 @@
       "category": "세무"
     },
     {
-      "source": "gnews_세무",
-      "source_label": "경향신문",
-      "title": "비정기 세무조사 70%는 ‘탈루’ 때문",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1GcWN5Tm1mWExmbHVkOC14cUJCdFdUQWxPMXFjcV94aW1NekVEWS1OTy1vMFpRZllMQnI0TEwyYm9ESzNiTS1NTS05MzhJZFpZcGZrcTdpU3lZUdIBX0FVX3lxTE1Sb1pnNVp1NHRrdmxMcXpLTFViSkZadklFN1hEcmRVXzQ4UnRiWWdkckpOeTItUEZQekllU2dxbElyUm1ORjJFSFZmd0dMLVY3bXpCUW9VUG1jYUZ4aHJj?oc=5",
+      "source": "gnews_감사",
+      "source_label": "https://www.kmjournal.net/",
+      "title": "오픈AI 매출 700억→500억달러, 앤스로픽 회계기준 차이였다",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1GRWphT3NYVkF4MDFjUk5TVlJLQUMyeUhCeEhtd1BIdUpuY3hEXzRWbEhqWmNiTVFNOTNDMFJyQUJoazdQMU5tR1QwanhIQ3NZWXZ3dTZSWnVJYk1Gb0ZLZjhacERmN1oxVmVv?oc=5",
       "published": "2026-10-11",
-      "published_at": "2026-10-11T11:08:00",
+      "published_at": "2026-10-11T22:15:47",
       "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "정기 세무조사 88% 납세자가 시기 선택...조사요원 현장 상주 52일 → 33일",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5wTlBLbDlsYzdvZ1RmZHRsNkdwNWFDZUFvcGN0Ty1uUWZUQVJTZzQzQzJRM3JlT29WRFRCamRNZG4zNVJnMFBfY0k4d3BXVHR6WmctclFONGxobDZXMV9MREdvTUlCb2kyTWc?oc=5",
-          "source_label": "Daily NTN",
-          "published": "2026-09-28"
-        }
-      ]
+      "category": "감사"
     },
     {
       "source": "gnews_세무",
@@ -621,7 +621,7 @@
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "Daily NTN",
+      "source_label": "intn.co.kr",
       "title": "대체거래소 허점 노린 신종 주가조작 적발…증선위, 불공정거래 3건 고발",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE51QkU2N3ZmUUdwVlpzYmRaVExZSVZmYi1wM2hPS1hMaVhkMlJCdEw2clAwUGoya2ZKZDJZNHB3N3ppT2N0d3pFLXdhNGJ1UFZtNmZoZ1k4Wk13RnpNdU5RdzFiakFielNieXc?oc=5",
       "published": "2026-10-01",
@@ -718,6 +718,16 @@
       "published_at": "2026-09-28T07:00:00",
       "summary": "",
       "category": "채용·시험"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "Daily NTN",
+      "title": "정기 세무조사 88% 납세자가 시기 선택...조사요원 현장 상주 52일 → 33일",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5wTlBLbDlsYzdvZ1RmZHRsNkdwNWFDZUFvcGN0Ty1uUWZUQVJTZzQzQzJRM3JlT29WRFRCamRNZG4zNVJnMFBfY0k4d3BXVHR6WmctclFONGxobDZXMV9MREdvTUlCb2kyTWc?oc=5",
+      "published": "2026-09-28",
+      "published_at": "2026-09-28T07:00:00",
+      "summary": "",
+      "category": "세무"
     },
     {
       "source": "gnews_감사",

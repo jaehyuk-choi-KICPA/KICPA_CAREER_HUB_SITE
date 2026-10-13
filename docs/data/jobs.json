@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-13T10:01:42",
+  "generated_at": "2026-10-13T10:32:35",
   "soon_days": 7,
   "counts": {
     "total": 77,
     "open": 41,
     "closed": 36,
-    "new": 8,
+    "new": 7,
     "soon": 11,
     "by_firm": {
       "삼일": 3,
@@ -662,7 +662,7 @@
       "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "경영자문부문 Valuation 정규직",
       "company": "딜로이트 안진",
       "deadline": "2026-11-05",

@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-14T17:01:34",
+  "generated_at": "2026-10-14T17:31:38",
   "soon_days": 7,
   "counts": {
-    "total": 85,
-    "open": 51,
+    "total": 86,
+    "open": 52,
     "closed": 34,
-    "new": 9,
+    "new": 8,
     "soon": 13,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
-      "안진": 9,
+      "안진": 10,
       "한영": 20,
       "로컬": 47,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 53,
-      "자격무관": 32
+      "자격무관": 33
     },
     "by_emp_kind": {
       "인턴": 20,
-      "정규직": 43,
+      "정규직": 44,
       "계약직": 4,
       "파트타임": 18
     }
@@ -586,7 +586,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[신한회계법인] 풀타임 수습회계사 모집 공고",
       "company": "신한회계법인",
       "deadline": "2026-10-30",
@@ -957,6 +957,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5211",
       "dday": 78,
       "first_seen": "2026-09-30T18:32:04"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": false,
+      "title": "딜로이트컨설팅 전략, Operation PI/ISP 전문가",
+      "company": "딜로이트 안진",
+      "deadline": "2026-12-31",
+      "posted_date": "2026-10-01",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5214",
+      "dday": 78,
+      "first_seen": "2026-10-14T17:31:38"
     },
     {
       "source": "kicpa_susup",

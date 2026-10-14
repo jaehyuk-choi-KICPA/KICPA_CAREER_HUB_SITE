@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-14T15:01:37",
+  "generated_at": "2026-10-14T15:31:21",
   "soon_days": 7,
   "counts": {
     "total": 85,
     "open": 51,
     "closed": 34,
-    "new": 11,
+    "new": 9,
     "soon": 13,
     "by_firm": {
       "삼일": 3,
@@ -377,7 +377,7 @@
       "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "EY한영 산업연구원(EY Insight Center) (경력)",
       "company": "EY한영",
       "deadline": "2026-10-26",
@@ -814,7 +814,7 @@
       "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "EY한영 AI Center - Physical AI Consultant (경력)",
       "company": "EY한영",
       "deadline": "2026-10-31",

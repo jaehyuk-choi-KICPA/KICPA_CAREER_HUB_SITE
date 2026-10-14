@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-10-14T09:01:44",
+  "generated_at": "2026-10-14T09:31:33",
   "soon_days": 7,
   "counts": {
-    "total": 81,
-    "open": 47,
+    "total": 82,
+    "open": 48,
     "closed": 34,
-    "new": 7,
-    "soon": 12,
+    "new": 8,
+    "soon": 13,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
       "안진": 9,
       "한영": 18,
-      "로컬": 45,
+      "로컬": 46,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 51,
+      "수습CPA": 52,
       "자격무관": 30
     },
     "by_emp_kind": {
       "인턴": 18,
       "정규직": 42,
       "계약직": 4,
-      "파트타임": 17
+      "파트타임": 18
     }
   },
   "postings": [
@@ -254,6 +254,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131142",
       "dday": 5,
       "first_seen": "2026-10-13T18:01:33"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[회계법인 베율] 2026년 파트타임 수습공인회계사 채용",
+      "company": "회계법인 베율",
+      "deadline": "2026-10-20",
+      "posted_date": "2026-10-14",
+      "location": "서울 강남구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791936343213",
+      "dday": 6,
+      "first_seen": "2026-10-14T09:31:33"
     },
     {
       "source": "kicpa_susup",

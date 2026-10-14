@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-14T13:31:35",
+  "generated_at": "2026-10-14T14:01:39",
   "soon_days": 7,
   "counts": {
-    "total": 83,
-    "open": 49,
+    "total": 84,
+    "open": 50,
     "closed": 34,
-    "new": 9,
+    "new": 10,
     "soon": 13,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
       "안진": 9,
       "한영": 19,
-      "로컬": 46,
+      "로컬": 47,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 52,
+      "수습CPA": 53,
       "자격무관": 31
     },
     "by_emp_kind": {
       "인턴": 19,
-      "정규직": 42,
+      "정규직": 43,
       "계약직": 4,
       "파트타임": 18
     }
@@ -596,6 +596,25 @@
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000971&receive_div_cd=N",
       "dday": 16,
       "first_seen": "2026-10-13T18:01:33"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[다산회계법인] 국가 R&D 분야 위탁정산 수습 공인회계사 초빙",
+      "company": "다산회계법인",
+      "deadline": "2026-10-30",
+      "posted_date": "2026-10-14",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791953060879",
+      "dday": 16,
+      "first_seen": "2026-10-14T14:01:39"
     },
     {
       "source": "kicpa_cpa",

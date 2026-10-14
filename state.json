@@ -1587,7 +1587,8 @@
     "uid": "kicpa_cpa:1791808931336",
     "first_seen": "2026-10-14T18:01:44",
     "last_seen": "2026-10-14",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-10-14"
   },
   "hanyoung:131058": {
     "source": "hanyoung",
@@ -1813,7 +1814,8 @@
     "uid": "kicpa_susup:1791967955925",
     "first_seen": "2026-10-14T18:01:44",
     "last_seen": "2026-10-14",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-10-14"
   },
   "hanyoung:131287": {
     "source": "hanyoung",
@@ -1831,6 +1833,7 @@
     "uid": "hanyoung:131287",
     "first_seen": "2026-10-14T18:01:44",
     "last_seen": "2026-10-14",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-10-14"
   }
 }

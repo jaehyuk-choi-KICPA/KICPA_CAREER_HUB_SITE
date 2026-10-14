@@ -1,15 +1,29 @@
 {
-  "generated_at": "2026-10-14T18:01:46",
+  "generated_at": "2026-10-14T18:31:37",
   "items": [
     {
-      "source": "gnews_감사",
-      "source_label": "뉴시스",
-      "title": "증선위, '회계기준 위반' 한주에이알티 감사인 지정 3년 조치",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBUamNsTFdxZ3QwRml0LWotVFNFc0JGR2UtMlJyMWNnRUgxTmJSV01zUlhBZ3lESlprOE9hdkJlM3JKQ1dDekhLYXJtMTZIempnU19ZQTFKcUZEZ2FxTmt3UtIBeEFVX3lxTFBEbE5SUExyRlB0R2RQNkNLUmpRYWU4V2w2UGluU2Vqa05jOVVDRWxkMFlPSXNIeVNJdVdJZ25icXF6UGdCVnZWenVUNC1yWnZkcllDTGpZNWNQd3ZkNWJ5aS0xRHd1aHk5TWg5MHY1UlpNWXJRSE1Hbw?oc=5",
+      "source": "gnews_감사_2",
+      "source_label": "파이낸셜뉴스",
+      "title": "한주에이알티 회계처리 위반…금융위 \"매출 부풀려\"",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE40ZEk5bF9DbjNNNDFXbmlnX05mT1RGdFk0THJHdjVMa3RVaVRraS1hd0NkOVVvUEZ6WTRGX19paTlfLWdCdUtXM3hDd2hRd1RWRkhRMlFwY2YxQQ?oc=5",
       "published": "2026-10-14",
-      "published_at": "2026-10-14T08:55:43",
+      "published_at": "2026-10-14T09:16:35",
       "summary": "",
-      "category": "감사"
+      "category": "감사",
+      "dupes": [
+        {
+          "title": "증선위, '3년간 매출 부풀리기' 한주에이알티에 감사인지정 조치",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8weGFCXzBqdkNwTHBlaEdkRGpYOFF6cnJxSW5rQTl3UGpBUHVVbGZzNmphRUx4eDlEalBNRlFKRVhtczhOYVlsRm9fX19lQi1nX0xXQkNuQURLM2JqWTB0U2pR?oc=5",
+          "source_label": "아시아경제",
+          "published": "2026-10-14"
+        },
+        {
+          "title": "증선위, '회계기준 위반' 한주에이알티 감사인 지정 3년 조치",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBUamNsTFdxZ3QwRml0LWotVFNFc0JGR2UtMlJyMWNnRUgxTmJSV01zUlhBZ3lESlprOE9hdkJlM3JKQ1dDekhLYXJtMTZIempnU19ZQTFKcUZEZ2FxTmt3UtIBeEFVX3lxTFBEbE5SUExyRlB0R2RQNkNLUmpRYWU4V2w2UGluU2Vqa05jOVVDRWxkMFlPSXNIeVNJdVdJZ25icXF6UGdCVnZWenVUNC1yWnZkcllDTGpZNWNQd3ZkNWJ5aS0xRHd1aHk5TWg5MHY1UlpNWXJRSE1Hbw?oc=5",
+          "source_label": "뉴시스",
+          "published": "2026-10-14"
+        }
+      ]
     },
     {
       "source": "gnews_세무",
@@ -591,6 +605,12 @@
       "summary": "",
       "category": "감사",
       "dupes": [
+        {
+          "title": "금융위, 회계기준 위반 금양에 76억 과징금 부과",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAzLWs4VldaXzgtcnV2dWVDMnFyVEVMRkxkUTZiSHhNS2dfWTJpcW14MVM5bGVFUl8xTTlMWlQ3T1FZRVFxNUtyUV8zQnZwWEFmVmxpZ1N4clNld9IBWEFVX3lxTE5rUWFsX3pSLXgxZTNKWEhYOXQ3NDR3aWtnbGtZNU5nV3NCSTF4RDlEbjBELVNYeGUxbXV0WnlwTmkxd19fVUhwLVZ0ZG8xNHktVk8yNEhtZHY?oc=5",
+          "source_label": "아주경제",
+          "published": "2026-10-07"
+        },
         {
           "title": "금융위, '회계처리기준 위반' 금양에 과징금 76억원",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8teDVTVFFGcExHbG5QekVJcDJNbkxQNVVOamZvdmpheXlIQ2E2WndnOHR2RVA1YnQxZ1JXek5RcW1DZXJrWW9vWE9oblVUZjFxQUFKeWJEeVEwSlc0ZS1MSw?oc=5",

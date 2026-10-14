@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-14T17:31:38",
+  "generated_at": "2026-10-14T18:01:44",
   "soon_days": 7,
   "counts": {
-    "total": 86,
-    "open": 52,
+    "total": 88,
+    "open": 54,
     "closed": 34,
-    "new": 8,
+    "new": 9,
     "soon": 13,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
       "안진": 10,
-      "한영": 20,
+      "한영": 22,
       "로컬": 47,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 53,
-      "자격무관": 33
+      "수습CPA": 54,
+      "자격무관": 34
     },
     "by_emp_kind": {
-      "인턴": 20,
-      "정규직": 44,
+      "인턴": 21,
+      "정규직": 45,
       "계약직": 4,
       "파트타임": 18
     }
@@ -244,7 +244,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "감사부문 포렌식팀 인턴(전환형)",
       "company": "EY한영",
       "deadline": "2026-10-19",
@@ -273,6 +273,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791936343213",
       "dday": 6,
       "first_seen": "2026-10-14T09:31:33"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "한영",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "[EY한영] 감사부문 Data Analytics - IT Specialist 인턴",
+      "company": "한영회계법인",
+      "deadline": "2026-10-22",
+      "posted_date": "2026-10-14",
+      "location": "서울 강남구",
+      "emp_type": "인턴쉽",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791967955925",
+      "dday": 8,
+      "first_seen": "2026-10-14T18:01:44"
     },
     {
       "source": "hanyoung",
@@ -425,6 +444,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1790579405306",
       "dday": 14,
       "first_seen": "2026-10-07T12:01:46"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "금융컨설팅본부 Digital Platforms팀 컨설턴트 (신입/경력)",
+      "company": "EY한영",
+      "deadline": "2026-10-29",
+      "posted_date": "2026-10-14",
+      "location": "",
+      "emp_type": "신입/경력",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131287",
+      "dday": 15,
+      "first_seen": "2026-10-14T18:01:44"
     },
     {
       "source": "kicpa_susup",
@@ -605,7 +643,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[인턴] Deal Advisory 1본부 Valuation팀 업무 지원 인턴 채용",
       "company": "삼정KPMG",
       "deadline": "2026-10-30",
@@ -871,16 +909,16 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": false,
+      "is_new": true,
       "title": "[현대회계법인] 3본부(신입~1년경력)",
       "company": "현대회계법인",
       "deadline": "2026-11-12",
-      "posted_date": "2026-10-12",
+      "posted_date": "2026-10-14",
       "location": "서울 전체",
       "emp_type": "정규직",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1791808931336",
       "dday": 29,
-      "first_seen": "2026-10-12T22:01:51"
+      "first_seen": "2026-10-14T18:01:44"
     },
     {
       "source": "kicpa_susup",

@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-10-14T09:31:33",
+  "generated_at": "2026-10-14T10:01:38",
   "soon_days": 7,
   "counts": {
-    "total": 82,
-    "open": 48,
+    "total": 83,
+    "open": 49,
     "closed": 34,
-    "new": 8,
+    "new": 9,
     "soon": 13,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
       "안진": 9,
-      "한영": 18,
+      "한영": 19,
       "로컬": 46,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 52,
-      "자격무관": 30
+      "자격무관": 31
     },
     "by_emp_kind": {
-      "인턴": 18,
+      "인턴": 19,
       "정규직": 42,
       "계약직": 4,
       "파트타임": 18
@@ -368,6 +368,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131058",
       "dday": 12,
       "first_seen": "2026-10-13T15:01:38"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "RM(Risk Management) 부문 독립성팀 인턴",
+      "company": "EY한영",
+      "deadline": "2026-10-26",
+      "posted_date": "2026-10-14",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131191",
+      "dday": 12,
+      "first_seen": "2026-10-14T10:01:38"
     },
     {
       "source": "kicpa_cpa",

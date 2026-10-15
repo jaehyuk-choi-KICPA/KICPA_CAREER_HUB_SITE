@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T00:01:49",
+  "generated_at": "2026-10-16T00:31:35",
   "items": [
     {
       "source": "gnews_세무",
@@ -444,6 +444,12 @@
           "published": "2026-10-12"
         },
         {
+          "title": "내년부터 손익계산서 확 바뀐다…금감원 “사전 점검 철저히”",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5VSGp6NzNrVXNlSzhQUmdvbkZtNGppNmN0SFhYSW9YYTZWTk9JZHVtSms0YmZNa0VwVXZCQ0lieFVIY09PdG5Td3JXNXhROVJ3QjZYRF9B?oc=5",
+          "source_label": "헤럴드경제",
+          "published": "2026-10-12"
+        },
+        {
           "title": "금융감독원, 내년 도입 ‘새 회계기준’ 점검 촉구…“재무제표 전면 개편 앞둬”",
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1JOXBuRTB3T2hxQTdIUExacklCbzVBU2xZajBPOXdpWnZUcHEwaDFuZkZTclMzLWdmUUtDdUJQeXVMc1dIU2w3c2lISGxGNVFQZTVnNml4OXFDOUhpWEJiZ3ltc3U?oc=5",
           "source_label": "https://www.ppss.kr/",
@@ -555,7 +561,15 @@
       "published": "2026-10-13",
       "published_at": "2026-10-13T01:00:07",
       "summary": "",
-      "category": "세무"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "[단독]국세청 비정기 세무조사 70% 이상 ‘탈루 혐의’…선정사유 첫 공개",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE03X0Z2SmZTYTAtSmIyR0M4Z2pBaXNxZzh0NGt6NnJtX2FNb2JIX05BRk9XZG9HOHhBT0N5ZTZMX0tFR09EOEtrWkZwNFFSSll4S2M4Sk42bFdFZ9IBX0FVX3lxTFB1aUx4T2E1d3d1NXFITEluVlpkaDFxVC1pWEh3STQ3RktUc0wwMjk1d29FQ2ZFM1JNREtCeGd1RW9IQW5FM09LZDhEeEpXWEhLMzhHRC01ZDYzU0huUmhN?oc=5",
+          "source_label": "경향신문",
+          "published": "2026-10-11"
+        }
+      ]
     },
     {
       "source": "gnews_세무",

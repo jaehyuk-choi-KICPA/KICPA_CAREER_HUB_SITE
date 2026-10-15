@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-10-15T14:01:35",
+  "generated_at": "2026-10-15T14:31:47",
   "soon_days": 7,
   "counts": {
-    "total": 85,
-    "open": 51,
+    "total": 86,
+    "open": 52,
     "closed": 34,
-    "new": 7,
+    "new": 6,
     "soon": 13,
     "by_firm": {
       "삼일": 3,
       "삼정": 5,
       "안진": 7,
       "한영": 22,
-      "로컬": 45,
+      "로컬": 46,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 52,
+      "수습CPA": 53,
       "자격무관": 33
     },
     "by_emp_kind": {
       "인턴": 21,
       "정규직": 43,
       "계약직": 4,
-      "파트타임": 17
+      "파트타임": 18
     }
   },
   "postings": [
@@ -263,7 +263,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "감사부문 Data Analytics – IT Specialist 인턴",
       "company": "EY한영",
       "deadline": "2026-10-22",
@@ -425,6 +425,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131287",
       "dday": 14,
       "first_seen": "2026-10-14T18:01:44"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[한미회계법인 4본부] 수습회계사(파트타임) 채용",
+      "company": "한미회계법",
+      "deadline": "2026-10-29",
+      "posted_date": "2026-10-15",
+      "location": "서울 강남구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792040523504",
+      "dday": 14,
+      "first_seen": "2026-10-15T14:31:47"
     },
     {
       "source": "kicpa_susup",
@@ -605,7 +624,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[다산회계법인] 국가 R&D 분야 위탁정산 수습 공인회계사 초빙",
       "company": "다산회계법인",
       "deadline": "2026-10-30",

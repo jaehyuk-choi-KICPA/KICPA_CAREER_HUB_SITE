@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-16T12:31:19",
+  "generated_at": "2026-10-16T13:01:32",
   "soon_days": 7,
   "counts": {
     "total": 83,
     "open": 51,
     "closed": 32,
-    "new": 8,
+    "new": 7,
     "soon": 16,
     "by_firm": {
       "삼일": 3,
@@ -187,7 +187,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[인턴] 회계팀 인턴 채용",
       "company": "삼정KPMG",
       "deadline": "2026-10-19",

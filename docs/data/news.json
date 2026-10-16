@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T09:01:42",
+  "generated_at": "2026-10-16T09:31:31",
   "items": [
     {
       "source": "gnews_세무",
@@ -38,6 +38,12 @@
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE03X0Z2SmZTYTAtSmIyR0M4Z2pBaXNxZzh0NGt6NnJtX2FNb2JIX05BRk9XZG9HOHhBT0N5ZTZMX0tFR09EOEtrWkZwNFFSSll4S2M4Sk42bFdFZ9IBX0FVX3lxTFB1aUx4T2E1d3d1NXFITEluVlpkaDFxVC1pWEh3STQ3RktUc0wwMjk1d29FQ2ZFM1JNREtCeGd1RW9IQW5FM09LZDhEeEpXWEhLMzhHRC01ZDYzU0huUmhN?oc=5",
           "source_label": "경향신문",
           "published": "2026-10-11"
+        },
+        {
+          "title": "국세청, 최근 7년간 FIU정보 세무조사 활용 14조1254억 추징",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5IYkVadWgxblN5WmxveXN1Qjd6X0lFcnB0QWsxVGNHbHZuaW8yMC1CZUJ0VVJfYnAwZjI5ZDNBT2hwTTdJRzM4ZXp3SHRaeHlrUWFqYXJfSEoxNVE2SFZNZmtWVC1USFh4anc?oc=5",
+          "source_label": "Daily NTN",
+          "published": "2026-10-02"
         }
       ]
     },
@@ -266,21 +272,35 @@
       "category": "감사"
     },
     {
+      "source": "gnews_세무",
+      "source_label": "의학신문",
+      "title": "의약품유통업계, 2026 세법 개정에 '승계 비상'",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ZM2RvNnVmSHlnV1lsM3YybGZiM29HS2tEd2d3LUoyaUFlZHNGSGVTazk5eE1EVnowQ1ZGLWxfdk9fcU0tQV84aHZQN0FpYmVna1BuUzBDdEF0MkVyTVcxNmZXOUY1VGF6TUE?oc=5",
+      "published": "2026-10-13",
+      "published_at": "2026-10-13T21:00:00",
+      "summary": "",
+      "category": "세무"
+    },
+    {
       "source": "gnews_감사",
-      "source_label": "조세금융신문",
-      "title": "회계기준원, 내년 K-IFRS 제1118호 시행…투자자들에 주요이슈 설명",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9nRjdudGFRU2U4Ung3OGVXVWFnQ0xuLWFpZjhQVWxVbV9iZWwtNURvem1KX3EzbWttUnRRYVpXZC1sZW5iLXNWdGdwSGZZbjVwODUyRFpiQnZZbkQzRjFDcHNGUQ?oc=5",
-      "published": "2026-10-14",
-      "published_at": "2026-10-14T01:03:46",
+      "source_label": "중앙일보",
+      "title": "기준 바꾸니 27조 흑자가 적자로…새 회계기준에 지주사 ‘비상’",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4ybk5IZk1jY3dMRTE3a21sWnlBZ0RYcVpPYnduMW56UzJhek1fellTTEdkMmJSelc1LVBIME55clJXYko5Z0lnbkpEakVFbmVkdmdzbHB3?oc=5",
+      "published": "2026-10-13",
+      "published_at": "2026-10-13T09:48:54",
+      "summary": "",
+      "category": "감사"
+    },
+    {
+      "source": "gnews_감사",
+      "source_label": "Daily NTN",
+      "title": "한국회계기준원, IASB 위원 초청 K-IFRS 제1118호 ‘재무제표 표시와 공시’ 투자자 세미나 개최",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE43SzV1ZWNkVHBRQzZUUkJ4OW5zQWoyekgtQ2pvZ0FJTXQ4NHVLNjYwa0lPa1RqVHpMemJzRUNxLUJyeXpuT29LWGVJbFNLMWZtelJseHBfNWNoVTBuVVJtb2xoWlpEQ1oyY3c?oc=5",
+      "published": "2026-10-13",
+      "published_at": "2026-10-13T09:16:04",
       "summary": "",
       "category": "감사",
       "dupes": [
-        {
-          "title": "한국회계기준원, IASB 위원 초청 K-IFRS 제1118호 ‘재무제표 표시와 공시’ 투자자 세미나 개최",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE43SzV1ZWNkVHBRQzZUUkJ4OW5zQWoyekgtQ2pvZ0FJTXQ4NHVLNjYwa0lPa1RqVHpMemJzRUNxLUJyeXpuT29LWGVJbFNLMWZtelJseHBfNWNoVTBuVVJtb2xoWlpEQ1oyY3c?oc=5",
-          "source_label": "Daily NTN",
-          "published": "2026-10-13"
-        },
         {
           "title": "내년부터 새 손익 회계기준 도입…시장서는 \"당분간 혼란 불가피\"",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE40V0JQQWRydWxYMXVnaFdnSUNCTjNYOWItbkFHbEs0MDExb2g3bUY1SmlCckNzUUtYcmxxNEplSFpNSVJQYlREdzg5VHExY0FqR3ZKRXJzbUtpUQ?oc=5",
@@ -393,26 +413,6 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "의학신문",
-      "title": "의약품유통업계, 2026 세법 개정에 '승계 비상'",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ZM2RvNnVmSHlnV1lsM3YybGZiM29HS2tEd2d3LUoyaUFlZHNGSGVTazk5eE1EVnowQ1ZGLWxfdk9fcU0tQV84aHZQN0FpYmVna1BuUzBDdEF0MkVyTVcxNmZXOUY1VGF6TUE?oc=5",
-      "published": "2026-10-13",
-      "published_at": "2026-10-13T21:00:00",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_감사",
-      "source_label": "중앙일보",
-      "title": "기준 바꾸니 27조 흑자가 적자로…새 회계기준에 지주사 ‘비상’",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4ybk5IZk1jY3dMRTE3a21sWnlBZ0RYcVpPYnduMW56UzJhek1fellTTEdkMmJSelc1LVBIME55clJXYko5Z0lnbkpEakVFbmVkdmdzbHB3?oc=5",
-      "published": "2026-10-13",
-      "published_at": "2026-10-13T09:48:54",
-      "summary": "",
-      "category": "감사"
-    },
-    {
-      "source": "gnews_세무",
       "source_label": "뉴스1",
       "title": "임광현, '하명 세무조사' 논란에 \"청와대 요청 없어…외압 있을 수 없다\"(종합)",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5WU2Z4SGRMY0JGZEVueXQtdnpfMjVGYWdiM3dNNm1rem8wajBPM1RJaXZINXVCMmZCOTRIWE5HS1FNa3VGekVCWDRxZG9DWUIyRG5XYg?oc=5",
@@ -464,16 +464,6 @@
           "published": "2026-10-13"
         }
       ]
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "정책브리핑",
-      "title": "8월 31일까지 법인세 중간예납 신고·납부하세요 - 카드/한컷 | 멀티미디어",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQa0ZqQjI0TnNRNnBRUXVEdVZza3ZJcW1oUnFIRUhIc3NpeDYyc0pFMHVQSVhLdmxvU2ZtYnhzZU9US2U3d054N2dYai1VaFFXUzRSckN3NVNHeTFiNkh4MFd2ZXdicDNrc0JyMlhjTlQ1WDJIak9kOVRERUFXd1lLTGhFdk9qcXZVLVE?oc=5",
-      "published": "2026-10-12",
-      "published_at": "2026-10-12T16:18:46",
-      "summary": "",
-      "category": "세무"
     },
     {
       "source": "gnews_감사",
@@ -646,12 +636,6 @@
       "category": "감사",
       "dupes": [
         {
-          "title": "증선위, 법인 대표 시세조종 등 3건 조치",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBaUlpUcU9QV052YzY4RktCSWdmZV96Y25CbjYxV1RrYVV1SDgyNlRDc0toNV9pSjduVUxzLTg1b0twejB0cnFwQ0M5ZWp6bHJDY0VUMndJVXczMG9k?oc=5",
-          "source_label": "뉴스핌",
-          "published": "2026-09-30"
-        },
-        {
           "title": "증선위, 대표 시세조종행위 등 불공정거래 3건 檢 고발·통보",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1LSXo2bU1xeWttY2daXy1MOUlWMy1JaWdEUWpmWE9QQXRDdUV5UXRhRGJQdlVQRG0wWGhZaEo0SjV0Tl9hQkppRURDc1RxUXpzVEFEMlVUeGxyZ1XSAWBBVV95cUxOTTgwdUZURFMyQ2pGOGFJaHotUnE4MGdlZXZhS3ctWFhkSHZFOXZsMDdGbV9aalN3djEyRkJkOGRpWlVHNWJ1UUhROHpCUHFKdFhIMG9nMU1Uek5WUnpkemI?oc=5",
           "source_label": "연합뉴스",
@@ -661,6 +645,12 @@
           "title": "증선위, 미공개정보 이용·시세조종 행위자 검찰 고발·통보",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE0xMEx0X2F0MWJ5SGxnSGgtMVFCUmJ4MmNKNWNsdkViRUR3REI4RGdsOW5MT3RxZUl4VWJGSTJZSmRtSXplN0h6b1hPakVQOVRLMXVqWGNUaVVrT2dLcXAzRg?oc=5",
           "source_label": "아시아경제",
+          "published": "2026-09-30"
+        },
+        {
+          "title": "증선위, 법인 대표 시세조종 등 3건 조치",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBaUlpUcU9QV052YzY4RktCSWdmZV96Y25CbjYxV1RrYVV1SDgyNlRDc0toNV9pSjduVUxzLTg1b0twejB0cnFwQ0M5ZWp6bHJDY0VUMndJVXczMG9k?oc=5",
+          "source_label": "뉴스핌",
           "published": "2026-09-30"
         }
       ]

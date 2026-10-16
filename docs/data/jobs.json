@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-16T08:31:29",
+  "generated_at": "2026-10-16T09:01:40",
   "soon_days": 7,
   "counts": {
-    "total": 84,
-    "open": 52,
+    "total": 83,
+    "open": 51,
     "closed": 32,
-    "new": 6,
-    "soon": 16,
+    "new": 7,
+    "soon": 15,
     "by_firm": {
       "삼일": 3,
       "삼정": 5,
       "안진": 7,
       "한영": 22,
-      "로컬": 44,
+      "로컬": 43,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 52,
+      "수습CPA": 51,
       "자격무관": 32
     },
     "by_emp_kind": {
       "인턴": 21,
-      "정규직": 41,
+      "정규직": 40,
       "계약직": 4,
       "파트타임": 18
     }
@@ -280,25 +280,6 @@
       "firm": "로컬",
       "field": "감사",
       "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "[선영회계법인] 수습공인회계사 채용",
-      "company": "선영회계법인",
-      "deadline": "2026-10-23",
-      "posted_date": "2026-10-12",
-      "location": "서울 강남구",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791784904743",
-      "dday": 7,
-      "first_seen": "2026-10-12T15:31:31"
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
       "is_new": false,
@@ -503,25 +484,6 @@
       "first_seen": "2026-09-17T11:01:46"
     },
     {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "파트타임",
-      "status": "open",
-      "is_new": false,
-      "title": "[해림회계법인] 공인회계사 경력직 파트타임 채용",
-      "company": "해림회계법인",
-      "deadline": "2026-10-30",
-      "posted_date": "2026-09-29",
-      "location": "서울 전체",
-      "emp_type": "Part Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790644778592",
-      "dday": 14,
-      "first_seen": "2026-09-29T10:31:45"
-    },
-    {
       "source": "kicpa_cpa",
       "source_label": "구인(CPA)",
       "firm": "로컬",
@@ -615,6 +577,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791953060879",
       "dday": 14,
       "first_seen": "2026-10-14T14:01:39"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[해림회계법인] 수습공인회계사 채용",
+      "company": "해림회계법인",
+      "deadline": "2026-10-30",
+      "posted_date": "2026-10-16",
+      "location": "서울 전체",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790644778592",
+      "dday": 14,
+      "first_seen": "2026-10-16T09:01:40"
     },
     {
       "source": "kicpa_cpa",

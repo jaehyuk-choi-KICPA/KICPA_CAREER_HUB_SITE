@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T00:02:30",
+  "generated_at": "2026-10-17T00:32:21",
   "soon_days": 7,
   "counts": {
     "total": 83,
@@ -21,9 +21,9 @@
     },
     "by_emp_kind": {
       "인턴": 22,
-      "정규직": 41,
+      "정규직": 40,
       "계약직": 4,
-      "파트타임": 16
+      "파트타임": 17
     }
   },
   "postings": [
@@ -1534,6 +1534,25 @@
       "firm": "로컬",
       "field": "감사",
       "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "closed",
+      "is_new": false,
+      "title": "[이촌회계법인 수습회계사(파트타임) 채용]",
+      "company": "이촌회계법인",
+      "deadline": "2026-10-14",
+      "posted_date": "2026-10-12",
+      "location": "서울 영등포구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791787017119",
+      "dday": -3,
+      "first_seen": ""
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "closed",
       "is_new": false,
@@ -1560,28 +1579,9 @@
       "company": "대주회계법인",
       "deadline": "2026-10-16",
       "posted_date": "2026-10-06",
-      "location": "",
-      "emp_type": "",
+      "location": "서울 전체",
+      "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791251485763",
-      "dday": -1,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "가율회계법인 천안지점 수습회계사 채용",
-      "company": "가율회계법인",
-      "deadline": "2026-10-16",
-      "posted_date": "2026-10-07",
-      "location": "",
-      "emp_type": "",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791365212127",
       "dday": -1,
       "first_seen": ""
     },
@@ -1594,13 +1594,13 @@
       "emp_kind": "파트타임",
       "status": "closed",
       "is_new": false,
-      "title": "[이촌회계법인 수습회계사(파트타임) 채용]",
-      "company": "이촌회계법인",
+      "title": "가율회계법인 천안지점 수습회계사 채용",
+      "company": "가율회계법인",
       "deadline": "2026-10-16",
-      "posted_date": "2026-10-12",
-      "location": "",
-      "emp_type": "",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791787017119",
+      "posted_date": "2026-10-07",
+      "location": "지역무관 지역무관",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791365212127",
       "dday": -1,
       "first_seen": ""
     }

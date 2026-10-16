@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-16T10:31:22",
+  "generated_at": "2026-10-16T11:01:36",
   "soon_days": 7,
   "counts": {
     "total": 83,
     "open": 51,
     "closed": 32,
-    "new": 7,
-    "soon": 15,
+    "new": 9,
+    "soon": 16,
     "by_firm": {
       "삼일": 3,
       "삼정": 5,
@@ -235,6 +235,25 @@
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000972&receive_div_cd=N",
       "dday": 4,
       "first_seen": "2026-10-15T12:01:37"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "기타",
+      "field": "기타",
+      "qualification": "수습CPA",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "[엔엑스브이피] 수습회계사 인턴 채용",
+      "company": "엔엑스브이피",
+      "deadline": "2026-10-20",
+      "posted_date": "2026-10-16",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792115941704",
+      "dday": 4,
+      "first_seen": "2026-10-16T11:01:36"
     },
     {
       "source": "kicpa_susup",
@@ -567,16 +586,16 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": false,
+      "is_new": true,
       "title": "[다산회계법인] 국가 R&D 분야 위탁정산 수습 공인회계사 초빙",
       "company": "다산회계법인",
       "deadline": "2026-10-30",
-      "posted_date": "2026-10-14",
+      "posted_date": "2026-10-16",
       "location": "서울 강남구",
       "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791953060879",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792114285617",
       "dday": 14,
-      "first_seen": "2026-10-14T14:01:39"
+      "first_seen": "2026-10-16T11:01:36"
     },
     {
       "source": "kicpa_susup",
@@ -767,25 +786,6 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131066",
       "dday": 15,
       "first_seen": "2026-10-13T15:01:38"
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "기타",
-      "field": "기타",
-      "qualification": "수습CPA",
-      "emp_kind": "인턴",
-      "status": "open",
-      "is_new": false,
-      "title": "[엔엑스브이피] 수습회계사 인턴 채용",
-      "company": "엔엑스브이피",
-      "deadline": "2026-10-31",
-      "posted_date": "2026-10-13",
-      "location": "서울 전체",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791884431952",
-      "dday": 15,
-      "first_seen": "2026-10-13T19:01:36"
     },
     {
       "source": "anjin",

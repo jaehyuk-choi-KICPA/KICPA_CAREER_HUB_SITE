@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T22:31:27",
+  "generated_at": "2026-10-17T23:01:52",
   "items": [
     {
       "source": "gnews_세무",
@@ -119,12 +119,6 @@
       "summary": "",
       "category": "세무",
       "dupes": [
-        {
-          "title": "이택스코리아, ‘Deeptax AI’ 출시 기념 전국 5개 도시 무료 세무특강",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA3Tnh1R19haEVYQ3JMZm8wTGNZVTBHLWNrekxGcF9zWnhSMVJGSlNiem1Vc2YxM1VFeU1VOFhRZzVaMmNjM2Z6SFFyeVlsei0xcnVzdzdnWUk5TW83MFBuSWxYT0Q1T002TE1BNA?oc=5",
-          "source_label": "세정일보",
-          "published": "2026-10-15"
-        },
         {
           "title": "이택스코리아, Deeptax AI 출시 기념 세무사 대상 전국 무료특강",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1EZ3VLQXY3OHlHcVRxaEk1YUVYN0lGU2JNUmFFWm5wWlpJaWhZZFRhX21ZbHBZSGhvWEdYTExDZGs4VEt0ZG84RV9LNVRTMnBsUVF6Nk5nWHJZMnRPSlk2UDVIcTdGX2hUR2c?oc=5",
@@ -404,6 +398,16 @@
       "category": "세무"
     },
     {
+      "source": "gnews_세무",
+      "source_label": "법률방송뉴스",
+      "title": "1조원 매출과 66억원 법인세... 넷플릭스 숫자에 숨겨진 비용구조",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAycUJLMkJMdWpsNmNPMkMzNU41Sm91M2thU0d5Ylp0Zi1jZ2k5YVdNMjBpT0w2YkY0bEFVNjFuV2lrZnpqWm5UR29CMThLeThXUjRQOVVfMzdYQm05RC1pMkg4ajc?oc=5",
+      "published": "2026-10-14",
+      "published_at": "2026-10-14T05:53:47",
+      "summary": "",
+      "category": "세무"
+    },
+    {
       "source": "gnews_감사",
       "source_label": "비즈니스포스트",
       "title": "NH투자 \"에이피알 목표주가 하향, 새 회계기준에 3분기 영업이익 감소 효과\"",
@@ -431,7 +435,15 @@
       "published": "2026-10-13",
       "published_at": "2026-10-13T09:16:04",
       "summary": "",
-      "category": "감사"
+      "category": "감사",
+      "dupes": [
+        {
+          "title": "K-IFRS 제1118호 영향 관련 사전 주석공시 모범사례 마련",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE13d18yem9ReWp0R1hMQXhJaVctcGpyTzgxRm9XSXBNOXZxcnNZaDhfZVgzajBhR0gwNm9EQnBmZElrWWhsQ01mbE05dzc5NmVWbksxVVE5STk?oc=5",
+          "source_label": "Crowe",
+          "published": "2026-09-29"
+        }
+      ]
     },
     {
       "source": "gnews_감사",
@@ -715,6 +727,12 @@
           "title": "증선위, 대표 시세조종행위 등 불공정거래 3건 檢 고발·통보",
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1LSXo2bU1xeWttY2daXy1MOUlWMy1JaWdEUWpmWE9QQXRDdUV5UXRhRGJQdlVQRG0wWGhZaEo0SjV0Tl9hQkppRURDc1RxUXpzVEFEMlVUeGxyZ1XSAWBBVV95cUxOTTgwdUZURFMyQ2pGOGFJaHotUnE4MGdlZXZhS3ctWFhkSHZFOXZsMDdGbV9aalN3djEyRkJkOGRpWlVHNWJ1UUhROHpCUHFKdFhIMG9nMU1Uek5WUnpkemI?oc=5",
           "source_label": "연합뉴스",
+          "published": "2026-09-30"
+        },
+        {
+          "title": "증선위, 미공개정보 이용·NXT 시세조종…불공정거래 3건 적발",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA2ZG5CQUxqQjJDTG1CMW1wcHdBeW9TQnZZOXdPVEtLMzIzWWdzRzhadGd5eWE5RndXWm8xU1ExWjVWLThVQ1VMSkc4dTlzSnlaY0ZYUDZtN0UwVWc?oc=5",
+          "source_label": "KBS 뉴스",
           "published": "2026-09-30"
         },
         {

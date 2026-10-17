@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T16:31:31",
+  "generated_at": "2026-10-17T17:02:25",
   "items": [
     {
       "source": "gnews_세무",
@@ -104,12 +104,6 @@
           "published": "2026-10-12"
         },
         {
-          "title": "구글코리아, '1,540억 법인세' 안 낸다...대법, 법인세 취소 확정",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE94UEswWktTd2NFMjNIb2R6R3RrTkJOQXFmTDN0SGlUWG85WGt2NVpvcDdHQzI3WTd0cUxsMmREdHdCYVhrYUlZdmZ5U3pETlBSelRFMVVyOGRtZ3lLeFBoSA?oc=5",
-          "source_label": "KBC광주방송",
-          "published": "2026-10-12"
-        },
-        {
           "title": "국세청, 구글코리아 1540억원대 법인세 취소소송에서 패소",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1ORVhicDBCUGdxYk1Ec2JCYlhsbmZQQVhUOTRWSWZ3QzZucHdQTzc0czJJMzNJcWJ1MzdDVFVRb3ZXTkNkNU50YUZrOUs4QQ?oc=5",
           "source_label": "전자신문",
@@ -119,12 +113,6 @@
           "title": "구글코리아, 1500억대 법인세 취소소송 승소 확정",
           "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5aUFdjdWg3RENkSU1Xd3lIRmRsT2xsQ1czbVdmUlJpQmpkakVXODhmaDA5SzJPaXpBQ0VQNFBrNkp0dUdKa1ZMMTkyME93OGlMenpVbXlOVTFUNldLdWJYd2JqTlZieVJZaVJNb19nQnBhYjg?oc=5",
           "source_label": "대한경제",
-          "published": "2026-10-12"
-        },
-        {
-          "title": "구글코리아, 1540억원대 법인세 안 낸다…대법원서 최종 승소",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5fZ1hMT0o0bTZJOFY5b3J4N2dkUzRQM2EzT2liNFItSjJKQXJBWGhYMTZfRUxibEloMm5ETU5MYWMwVWlwWEZJeXJyRUlIejg4OTFuVGhR?oc=5",
-          "source_label": "중앙일보",
           "published": "2026-10-12"
         },
         {
@@ -201,21 +189,41 @@
     },
     {
       "source": "gnews_세무",
+      "source_label": "산학뉴스",
+      "title": "AI 중소기업 2,559곳에 세정지원 연계…창업 5년 이내 기업은 정기 세무조사 제외",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE8yaG5oUDdjMFZqRTdheU15NTJaUFIyMmZSZ2VwVkd1SEhFRV94TzkxS21JaS15eWgwMmNTVEhQZWEtU0t6UzZHZWxSUzdRTmRwSUN1TUZ6ZHZUMWEzU0NPVWZyZHBUN0U1YTQw?oc=5",
+      "published": "2026-10-16",
+      "published_at": "2026-10-16T02:41:57",
+      "summary": "",
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "창업 5년 이내 AI 스타트업 세무조사 면제한다",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5IdGdndkNCYkJMd2tReDhKbEM3cy1LYXJ1Ujl4Y0xpY0d5ZTZtakJkaFJiR2dVcmFJMzh4QU84dW1DaGVyaElNWUNvaWl5QkZhSkR4cWUtWExITWpxYjFlWkRPNjlrUQ?oc=5",
+          "source_label": "벤처타임즈",
+          "published": "2026-10-12"
+        },
+        {
+          "title": "[이봉구의 세무맛집] AI 기업은 정기 세무조사 제외, 일반 중소기업은 왜 안 되는가",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9YcHBCb1VZbTdDVHpXd3RWbkVWMTNTRXJ2b0hCbDhpNmg4TmJOczhDbC1Gb3d5ZGVMVlFkTnFoOHFIeW1TeUZLdU5xTWoxNldOV0lIcTNMUDdPRE9wNlFaanZGaw?oc=5",
+          "source_label": "조세금융신문",
+          "published": "2026-10-13"
+        },
+        {
+          "title": "AI 기업이면 세무조사도 덜 받는다?…2559개사에 붙는 ‘세정지원’",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBBUHlNSDZOOXBUZmwyVWFDcVdrNU52OTJPWjFZcmI0a3REUXVtR1NKZWtPV1FGSld6Z0wzS3FXWmliVGFoRWV1d3ZaS29UaEVSWW1XcUhFcFdQWDJoeEtnX3BXekgzeUdSSDVF?oc=5",
+          "source_label": "산학뉴스",
+          "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "source": "gnews_세무",
       "source_label": "세무사신문",
       "title": "군산시, 세무조사로 지방세 11억원 추징…자신 신고·납부 유도",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9scmNvTHB4VFVaME00dWV5a3NnZTRmZXNrQnhvalpLWU5BMWlZdFJodGdlQTlieDhoUk5uVXMtLWNnMllvVDB3bk9NYXpMQnVxNllZaVZhNE9wWnFVRE9yYXFNZ2NBLXA2OHN3bTV3?oc=5",
       "published": "2026-10-16",
       "published_at": "2026-10-16T02:38:05",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "한국세정신문",
-      "title": "국세청, 싹쓸이 현장조사 '일시보관'…전체 조사건수의 10% 달해",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9UeVZjc2lRd3RrdnM2ck1hSkNRa0xRNkhCNnR0VFFQSXF6T3ZkRHNSemZCV1UyX3hsS2JUT1Q1dnVmMHk4aFFhdjFRVllOX0dRWERobzhPZllnVkxXa3BHMWJZSHE?oc=5",
-      "published": "2026-10-16",
-      "published_at": "2026-10-16T02:11:30",
       "summary": "",
       "category": "세무"
     },
@@ -228,24 +236,6 @@
       "published_at": "2026-10-15T23:40:31",
       "summary": "",
       "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "세정일보",
-      "title": "국세청 세무조사 많이 받은 업종은?…법인 ‘제조업’·개인 ‘기타업종’",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1OUHkydUtxNlNzYk1EOTdJOENWenVLT2lZUS1kNm1ETVU1SW5QTC1zenhoeXBQaUpIZ1BiNXJwQVFBRGZobVVUVC03YTZCVnA3d1ZkLUxwcTRuTDJmd3JGY0lBdkVJZV9SNnhobw?oc=5",
-      "published": "2026-10-15",
-      "published_at": "2026-10-15T23:12:43",
-      "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "[단독]국세청 비정기 세무조사 70% 이상 ‘탈루 혐의’…선정사유 첫 공개",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE03X0Z2SmZTYTAtSmIyR0M4Z2pBaXNxZzh0NGt6NnJtX2FNb2JIX05BRk9XZG9HOHhBT0N5ZTZMX0tFR09EOEtrWkZwNFFSSll4S2M4Sk42bFdFZ9IBX0FVX3lxTFB1aUx4T2E1d3d1NXFITEluVlpkaDFxVC1pWEh3STQ3RktUc0wwMjk1d29FQ2ZFM1JNREtCeGd1RW9IQW5FM09LZDhEeEpXWEhLMzhHRC01ZDYzU0huUmhN?oc=5",
-          "source_label": "경향신문",
-          "published": "2026-10-11"
-        }
-      ]
     },
     {
       "source": "gnews_감사",
@@ -346,6 +336,16 @@
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5tTDhOR3Y3b0t3MXUwd24zSllRUlFQSVhSZ1hmUm9SLWpIeDdXZ19MVWllSVI2ZXlaejNzeFpmenJNN01lMy16eTJSeVFXUkkxc1lySzVGb0g2bHVYdmtUVw?oc=5",
       "published": "2026-10-15",
       "published_at": "2026-10-15T01:00:00",
+      "summary": "",
+      "category": "세무"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "마켓인",
+      "title": "삼정KPMG, 日 기업 대상 회계·세무 및 경영자문 세미나",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5nU2VBMnF6dWF2Wlk3aXdwSlBpTnBwRjdfZmJ5RWpYTmkwSUtaenNNUnQ3UHRxVEs0T2xnLVBKRFIyMHY1UjliNkVxTDFlUkh2dmVYVW1UR1VzY1pPcnp4V1FUR2lzcUJ1TVVPSkozQUs1S3M?oc=5",
+      "published": "2026-10-15",
+      "published_at": "2026-10-15T00:00:17",
       "summary": "",
       "category": "세무"
     },
@@ -565,34 +565,6 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "정책브리핑",
-      "title": "생활비 물가 불안 조장 탈세 혐의자, 세무조사 실시",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9NVXNJU2doSko2c0VxT3FLbUJfaF83WGFZZ1l0VjhOUXZnRUF0Tjh3ZFlGb2w2TkVPSFZISW5RWkhVU2RZRnZKMHFYbjNYQnRBaFJlb0ZOcndsam5FbHFDZ1Njd2g1aS1XRks2dQ?oc=5",
-      "published": "2026-10-13",
-      "published_at": "2026-10-13T03:34:57",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "조세금융신문",
-      "title": "[이봉구의 세무맛집] AI 기업은 정기 세무조사 제외, 일반 중소기업은 왜 안 되는가",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9YcHBCb1VZbTdDVHpXd3RWbkVWMTNTRXJ2b0hCbDhpNmg4TmJOczhDbC1Gb3d5ZGVMVlFkTnFoOHFIeW1TeUZLdU5xTWoxNldOV0lIcTNMUDdPRE9wNlFaanZGaw?oc=5",
-      "published": "2026-10-13",
-      "published_at": "2026-10-13T02:39:54",
-      "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "AI 기업이면 세무조사도 덜 받는다?…2559개사에 붙는 ‘세정지원’",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBBUHlNSDZOOXBUZmwyVWFDcVdrNU52OTJPWjFZcmI0a3REUXVtR1NKZWtPV1FGSld6Z0wzS3FXWmliVGFoRWV1d3ZaS29UaEVSWW1XcUhFcFdQWDJoeEtnX3BXekgzeUdSSDVF?oc=5",
-          "source_label": "산학뉴스",
-          "published": "2026-10-13"
-        }
-      ]
-    },
-    {
-      "source": "gnews_세무",
       "source_label": "세정일보",
       "title": "[절세가인] 자사주 소각 의무화, 2027년 세법 개정에 대비해야",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBHVHlrTHZnWlRLS045VkpRMzI5eWNuQkVmV0xYcl82LVIxaF9IWGNuWEVyN0FsdDgzTGVNWGl1QXlzZVR4SkZUU3lNbldidW1OUTZibWhrOWtHSzU1RFZ2VGp3NzF1ckxoOFJKbg?oc=5",
@@ -633,21 +605,21 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "벤처타임즈",
-      "title": "창업 5년 이내 AI 스타트업 세무조사 면제한다",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5IdGdndkNCYkJMd2tReDhKbEM3cy1LYXJ1Ujl4Y0xpY0d5ZTZtakJkaFJiR2dVcmFJMzh4QU84dW1DaGVyaElNWUNvaWl5QkZhSkR4cWUtWExITWpxYjFlWkRPNjlrUQ?oc=5",
-      "published": "2026-10-12",
-      "published_at": "2026-10-12T00:00:00",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
       "source_label": "MBC 뉴스",
       "title": "\"국세 체납 116조 이상‥법인세 등 지연 가산세 5년여 간 22조\"",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1GVEljeXRSdTZidWZ1Rmt5OW1KeTU5Qi0wbDF4cWFuZ3oxcy1tZFZ4R0owV3YzWXRJd2U2ek1iZ0pGMkRvcm1xcjdTN0FlUlBrcFp5NEdUNW5YdnQ4ZFR5SDRHNXlUMEd3QjlveUZRRmRUalFG0gF0QVVfeXFMUFNCNTRPNy1YRnlYXzJHUEZOQ0N0b3RvVVF6cEwzZHZhTE52TVVqVkd0bzFudldNZUp2Y2RyNGZjOTdDRUFId3NrU2hpdS1mZGtaOVJfNXRyb2NVbVJoNkg5NTBYcUdnQTVJVUtYdWFpYWFrd0E?oc=5",
       "published": "2026-10-11",
       "published_at": "2026-10-11T08:23:19",
+      "summary": "",
+      "category": "세무"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "경향신문",
+      "title": "[단독]국세청 비정기 세무조사 70% 이상 ‘탈루 혐의’…선정사유 첫 공개",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE03X0Z2SmZTYTAtSmIyR0M4Z2pBaXNxZzh0NGt6NnJtX2FNb2JIX05BRk9XZG9HOHhBT0N5ZTZMX0tFR09EOEtrWkZwNFFSSll4S2M4Sk42bFdFZ9IBX0FVX3lxTFB1aUx4T2E1d3d1NXFITEluVlpkaDFxVC1pWEh3STQ3RktUc0wwMjk1d29FQ2ZFM1JNREtCeGd1RW9IQW5FM09LZDhEeEpXWEhLMzhHRC01ZDYzU0huUmhN?oc=5",
+      "published": "2026-10-11",
+      "published_at": "2026-10-11T05:57:00",
       "summary": "",
       "category": "세무"
     },
@@ -681,12 +653,6 @@
       "summary": "",
       "category": "감사",
       "dupes": [
-        {
-          "title": "금융위 '회계처리 위반' 금양에 과징금 76억",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE85NENZdTJ1VVl2Zl85aFlqUnVCa2tuZ19BWk1BRWpOUkhrQXZVVzNIR1djeEh1YkVBY0hld1FkOGtiTEtlS3lUd29DcVNDdF9XSGVKMUxLeUc5RlQwUXpwbkRkWjFDNWNqb3Q4RzJKa9IBc0FVX3lxTE1MdWw3dTRUX2o2eEtKNFg1Wlgyb2tSY193eml3cUJ6M2ZoZDNRNFVoLXgxRWZZblBJN2xqZklteFExdDEtaEppU0RvZ1I1ZFFUYTExaGVteUxxSkxhOVJQMzhqTlluMGs0MFpGLVdNQ2lpQjQ?oc=5",
-          "source_label": "세이프타임즈",
-          "published": "2026-10-07"
-        },
         {
           "title": "금융위, '회계처리기준 위반' 금양에 과징금 76억원",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE8teDVTVFFGcExHbG5QekVJcDJNbkxQNVVOamZvdmpheXlIQ2E2WndnOHR2RVA1YnQxZ1JXek5RcW1DZXJrWW9vWE9oblVUZjFxQUFKeWJEeVEwSlc0ZS1MSw?oc=5",
@@ -804,6 +770,16 @@
       "source_label": "경향신문",
       "title": "[단독]5000억도 넘게 버는 제조대기업 세금은 왜 더 적을까···법인세 실효세율 5년 중 4년 ‘역전’",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBBd01pYVpIWDZhNU14NzlMbFZMZEFDcFdfa1JYZlN2M3RDNGlKdTNLUkVzeWZOdWVkTXl4bGtDZ3hoTnV2NThTTTVwN2lZNUNDdEMtUmZkU0FRd9IBX0FVX3lxTE9qU3Y5OG4xbTFzUm1pTlM4azhBOHlLWHhaVVYwdXgtTG9CV3kwWUtOaDc2WkUxLUdEc05GSDBFMXZBZUFvamNCa1F3Q1MyWDRBa2dVOHc4RllmdzFRQmdz?oc=5",
+      "published": "2026-09-30",
+      "published_at": "2026-09-30T07:00:00",
+      "summary": "",
+      "category": "세무"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "YTN",
+      "title": "올해 초과세수 63.2조 원 전망...법인세 35조·소득세 15.6조 더 걷혀",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBkMVNTLTRTVGRCNnVnYW9ZYVNCWjlLUkFKam82Z0pMdENGSUFHc0Z2LVF6b19yOTFQNk5hNi1xQ2VmRXBhN3Q5TmFNQnFLdE54ZmJETFVRLTYzNXZ2SFE?oc=5",
       "published": "2026-09-30",
       "published_at": "2026-09-30T07:00:00",
       "summary": "",

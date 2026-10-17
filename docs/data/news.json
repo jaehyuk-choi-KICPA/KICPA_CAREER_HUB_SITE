@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T21:31:33",
+  "generated_at": "2026-10-17T22:01:41",
   "items": [
     {
       "source": "gnews_세무",
@@ -84,12 +84,6 @@
           "published": "2026-10-12"
         },
         {
-          "title": "구글코리아, 1540억원대 법인세 소송 최종 승소",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9xTWFIV0dkdjlFaklEOXlsS3dGaWRMY2ZpamY2N2tBMktENUlKaGt1OFVkS2wwQVVfZTNucXlfOTR5M1ZhVmpReHRsQkRaYV9zMEMtVEYwbVZqNU1wVFpWTHpOMXUtY1ZTN0ZwZ3pFTFZ0WURvdmfSAWZBVV95cUxNMWRsTm9WYmNGdXdJanFONWFoZzlscGg2UEhvck1lN3VUeUpMUXNvb1FNem9MTFNuMWpmRVB0NzRob1A5OVF4WWtLQ1RYTk9wYzhjemE3Wms4eUl3LS1fRzZkb0FUeGc?oc=5",
-          "source_label": "동아일보",
-          "published": "2026-10-12"
-        },
-        {
           "title": "국세청, 구글코리아 1540억원대 법인세 취소소송에서 패소",
           "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1ORVhicDBCUGdxYk1Ec2JCYlhsbmZQQVhUOTRWSWZ3QzZucHdQTzc0czJJMzNJcWJ1MzdDVFVRb3ZXTkNkNU50YUZrOUs4QQ?oc=5",
           "source_label": "전자신문",
@@ -99,6 +93,12 @@
           "title": "구글코리아, 1500억대 법인세 취소소송 승소 확정",
           "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5aUFdjdWg3RENkSU1Xd3lIRmRsT2xsQ1czbVdmUlJpQmpkakVXODhmaDA5SzJPaXpBQ0VQNFBrNkp0dUdKa1ZMMTkyME93OGlMenpVbXlOVTFUNldLdWJYd2JqTlZieVJZaVJNb19nQnBhYjg?oc=5",
           "source_label": "대한경제",
+          "published": "2026-10-12"
+        },
+        {
+          "title": "구글코리아, 1540억대 법인세 안 낸다… 대법원서 승소 확정 - 조선비즈",
+          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQQ1ZYYl9PMEgwdlluRnV5cllreXo2Nk4zY3Ixanp0d1NycHNvbDFNZ1lTVTJIcU85SFgtSFdvRGxPandna3lCMTVqdWVqWTdtUHR2eUhHaFVYbjc2VmhfekRubm8yM0FLQ1hMcnJBYXNTREIxdzRvZ04xWGFGRFJxcDhRUdIBlwFBVV95cUxPdF81M0J4bnI2dE9rYmlieDRrWEdfUnNRbnRyUGdNTVVEOW5xZ29HeFdtOFZ5NmpGUGVnaWhpcWc1R0NoOGxUblFMcTVxa2YtUFRrSWNYUUs3YS1nOHc1RWR4dVVFNklRcnFGNWFjaU52LXNBdl91VW11ZzctX1ZWVlFndDlreS1vVjRfSHJjTjE3REpfUEVn?oc=5",
+          "source_label": "Chosunbiz",
           "published": "2026-10-12"
         },
         {
@@ -251,7 +251,39 @@
       "published": "2026-10-15",
       "published_at": "2026-10-15T07:34:16",
       "summary": "",
-      "category": "세무"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "국세청 세무조사 추징액 10원 중 7원은 ‘비정기조사’…정기조사 압도했다",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1xTFAxaG9qa1ZubDBaWVNuelNnbWhHSDJLcUJRZ3lHdmRxQ0wyMWVfU0FXbEhKWEFTS3Qta2psS2pDSUVmS3BXWWRWeEl0SXNZaVdWRjdMTUs3d29KWTVvWGxMeU1MMTVfRGo1UA?oc=5",
+          "source_label": "세정일보",
+          "published": "2026-10-12"
+        },
+        {
+          "title": "[단독]국세청 비정기 세무조사 70% 이상 ‘탈루 혐의’…선정사유 첫 공개",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE03X0Z2SmZTYTAtSmIyR0M4Z2pBaXNxZzh0NGt6NnJtX2FNb2JIX05BRk9XZG9HOHhBT0N5ZTZMX0tFR09EOEtrWkZwNFFSSll4S2M4Sk42bFdFZ9IBX0FVX3lxTFB1aUx4T2E1d3d1NXFITEluVlpkaDFxVC1pWEh3STQ3RktUc0wwMjk1d29FQ2ZFM1JNREtCeGd1RW9IQW5FM09LZDhEeEpXWEhLMzhHRC01ZDYzU0huUmhN?oc=5",
+          "source_label": "경향신문",
+          "published": "2026-10-11"
+        },
+        {
+          "title": "국세청, 최근 7년간 FIU정보 세무조사 활용 14조1254억 추징",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5IYkVadWgxblN5WmxveXN1Qjd6X0lFcnB0QWsxVGNHbHZuaW8yMC1CZUJ0VVJfYnAwZjI5ZDNBT2hwTTdJRzM4ZXp3SHRaeHlrUWFqYXJfSEoxNVE2SFZNZmtWVC1USFh4anc?oc=5",
+          "source_label": "Daily NTN",
+          "published": "2026-10-02"
+        },
+        {
+          "title": "정기 세무조사 88% 납세자가 시기 선택...조사요원 현장 상주 52일 → 33일",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5wTlBLbDlsYzdvZ1RmZHRsNkdwNWFDZUFvcGN0Ty1uUWZUQVJTZzQzQzJRM3JlT29WRFRCamRNZG4zNVJnMFBfY0k4d3BXVHR6WmctclFONGxobDZXMV9MREdvTUlCb2kyTWc?oc=5",
+          "source_label": "Daily NTN",
+          "published": "2026-09-28"
+        },
+        {
+          "title": "[영상] 세무조사 나오며 어떻게? 국세청 35년 경력 세무사의 해답",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1LbGdOQUdUUlJtVmtBQ1lKdHRxenFMaG0wTkQwSVVOdy0zdUd6dHpwQjc5cndZU1BaYzNpQ1pLbkZwTFdQYjZWS1dkS2Q3a3dIYXNfSmFLMUJwM0RtemVkcW5laGnSAWhBVV95cUxPd0h6Y25fZml3RXhLVnZMdlZUR1Q4Y0NlMkJDU1lhZjg1ZXNWZzcxVXAxNE9udjFZSHJ4ZVQ5dzI0MW5IOEFIUUFNTjA3eGo2VWs2enF5dGlna3NHRjVQV2RHb1E3VnRvLQ?oc=5",
+          "source_label": "경인방송 뉴스",
+          "published": "2026-09-27"
+        }
+      ]
     },
     {
       "source": "gnews_세무",
@@ -309,8 +341,8 @@
       "dupes": [
         {
           "title": "전주시, 부가가치세 환급으로 숨은 재원 확보 나서",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5pd1FaUmdQamI2Rk9Oa1FQa0o0QkIyQ202cmhvZ0NDd1VQU0pVSk9xeVNJTkRUSHRNZUNsanktTmxVRlZDMTZOS0x2dVNncG9rYU9yd3BzNUhXNUpxQWNBbFBZX3ljOE5SclE?oc=5",
-          "source_label": "인사이드피플",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9aSTNXNFE3RlQwajk1b2ZRMTctUmxYNTg4Ymh2d1RrYVduQmxrQldLbmF4eTc2TVhzQ3M2cURtSldXX3dPcDM2Zm9IX3ZaUEhienBiU2hJVHdjQTFEMk96TGpNMUVQRDRLbnc?oc=5",
+          "source_label": "코리아타임뉴스",
           "published": "2026-10-15"
         }
       ]
@@ -572,36 +604,6 @@
       "published_at": "2026-10-12T23:00:14",
       "summary": "",
       "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "세정일보",
-      "title": "국세청 세무조사 추징액 10원 중 7원은 ‘비정기조사’…정기조사 압도했다",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1xTFAxaG9qa1ZubDBaWVNuelNnbWhHSDJLcUJRZ3lHdmRxQ0wyMWVfU0FXbEhKWEFTS3Qta2psS2pDSUVmS3BXWWRWeEl0SXNZaVdWRjdMTUs3d29KWTVvWGxMeU1MMTVfRGo1UA?oc=5",
-      "published": "2026-10-12",
-      "published_at": "2026-10-12T08:08:45",
-      "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "[단독]국세청 비정기 세무조사 70% 이상 ‘탈루 혐의’…선정사유 첫 공개",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE03X0Z2SmZTYTAtSmIyR0M4Z2pBaXNxZzh0NGt6NnJtX2FNb2JIX05BRk9XZG9HOHhBT0N5ZTZMX0tFR09EOEtrWkZwNFFSSll4S2M4Sk42bFdFZ9IBX0FVX3lxTFB1aUx4T2E1d3d1NXFITEluVlpkaDFxVC1pWEh3STQ3RktUc0wwMjk1d29FQ2ZFM1JNREtCeGd1RW9IQW5FM09LZDhEeEpXWEhLMzhHRC01ZDYzU0huUmhN?oc=5",
-          "source_label": "경향신문",
-          "published": "2026-10-11"
-        },
-        {
-          "title": "국세청, 최근 7년간 FIU정보 세무조사 활용 14조1254억 추징",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5IYkVadWgxblN5WmxveXN1Qjd6X0lFcnB0QWsxVGNHbHZuaW8yMC1CZUJ0VVJfYnAwZjI5ZDNBT2hwTTdJRzM4ZXp3SHRaeHlrUWFqYXJfSEoxNVE2SFZNZmtWVC1USFh4anc?oc=5",
-          "source_label": "Daily NTN",
-          "published": "2026-10-02"
-        },
-        {
-          "title": "정기 세무조사 88% 납세자가 시기 선택...조사요원 현장 상주 52일 → 33일",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5wTlBLbDlsYzdvZ1RmZHRsNkdwNWFDZUFvcGN0Ty1uUWZUQVJTZzQzQzJRM3JlT29WRFRCamRNZG4zNVJnMFBfY0k4d3BXVHR6WmctclFONGxobDZXMV9MREdvTUlCb2kyTWc?oc=5",
-          "source_label": "Daily NTN",
-          "published": "2026-09-28"
-        }
-      ]
     },
     {
       "source": "gnews_세무",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T22:02:01",
+  "generated_at": "2026-10-19T01:01:53",
   "categories": [
     "반도체·전자",
     "자동차·모빌리티",
@@ -255,16 +255,90 @@
   "dart_url": "https://dart.fss.or.kr/dsab007/main.do?textCrpNm={q}",
   "items": [
     {
-      "source": "gnews_ind_반도체·전자",
-      "source_label": "한겨레",
-      "title": "‘중복상장’ 셈법 복잡한 솔리다임…미·중 갈등에 하이닉스 주주가치 논란까지",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBrOEh6OWwxU3BRTVZ4SmlGay1qY0gxQmFlZG9aaWdiZE9uYmJSVjhUU0dESTFMNThzUWI2d0FkM0xCT05oamYwZG5vSWVYbDNFYUltM25TQVlOY2UwYlVvQktlR0JXc01hOGc?oc=5",
+      "source": "gnews_ind_제약·바이오",
+      "source_label": "한국금융신문",
+      "title": "‘지분싸움·기술반환’ 이중고 한미약품…반등 키는 ‘후속 비만 신약’",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBZeWlXT0llS0E5NVZVNHFWRmhjMnJrbC1XVkxQRmJRNjVad1FoQ0VqcFdwU3ZheDV2MGxaYUZYZGgwRUw5WkctWDJPdXllOHBtYnVhendteGhNTmRxdmE1VnBwcVNRdm83Mk1QcG5ndUFtNEd2NE5XNC1ZcHI?oc=5",
       "published": "2026-10-18",
-      "published_at": "2026-10-18T12:53:00",
-      "category": "반도체·전자",
+      "published_at": "2026-10-18T15:00:00",
+      "category": "제약·바이오",
       "companies": [
-        "SK하이닉스"
+        "한미약품"
       ]
+    },
+    {
+      "source": "gnews_ind_금융·보험",
+      "source_label": "한국금융신문",
+      "title": "양동원號 하나저축銀, ‘빅배스ʼ 대신 선별적 부실채권 매각 [지주계 저축은행 하반기 건전성 전략 ③]",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE0tZG9xYzk5b0VPR1lLNUxXbFZFT3BGYlZ3Rjd1blNkTThzSk84TkhncFFQbWhjanYwNlpNTjd1aXRVbXAtTGlucXcwQ1d0OVdQUjhWbFJMcU9IaHNUS1JlOHJVMEVIMzk5YndjWDM0VFh3SDZESGQ4X2M2Y2M?oc=5",
+      "published": "2026-10-18",
+      "published_at": "2026-10-18T15:00:00",
+      "category": "금융·보험",
+      "companies": []
+    },
+    {
+      "source": "gnews_ind_건설·부동산",
+      "source_label": "www.ebn.co.kr",
+      "title": "삼성물산, 2조 규모 '여의도 시범' 재건축 수주",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9oLU5WVWc1U1liWGxjQXhhSk1XcVBiUlZKTHRqZm5STEs5WGZSaE56S3MtRzdwZ3VrZktxTG41UFJCb3NVWVlzSHo5VTZWbHNMRlNDT1pSRWVMSF80N0VqMnE4QzRhWWxl?oc=5",
+      "published": "2026-10-18",
+      "published_at": "2026-10-18T13:39:31",
+      "category": "건설·부동산",
+      "companies": [
+        "삼성물산"
+      ],
+      "dupes": [
+        {
+          "title": "여의도 시범에 래미안 깃발 … 삼성물산 2.2조 재건축 수주",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE04NnRKWEhhRkNIcnA4czhwNU82TXZVbmp3UjdDazdzbjBQalVWNUhXdUI5Vkd0Z2cyd01DTzB3bVIteVRpaDRZOGVtdmV3TWcwLXlwRkpaeG8?oc=5",
+          "source_label": "매일경제",
+          "published": "2026-10-18"
+        },
+        {
+          "title": "삼성물산, 2조원 규모 여의도 시범아파트 재건축 수주",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5FMXF4bEYxTktuaE45X185ektWUEcxRDFSNlA1QjhJTUtyOGkzdnZHdlExdFlwR1ViRk9PQUhxLWNVYm9NMEl6LXNTampaWmxGZ2VNWTlvUW4wTEF5UUtPdzg5WXVMcXNS?oc=5",
+          "source_label": "SR타임스",
+          "published": "2026-10-18"
+        },
+        {
+          "title": "삼성물산, '2조' 여의도 시범 품었다…정비사업 수주 성과 '10조' 눈앞 - 머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBtME1vaHhKaHMtcU1fbWhtT1RFeUsyRHRFS2ZhMl9icVVqZUpGYUxFY0NmdmNRdVBrdkdvTnlyemZtN1Brd2J3bVhLN3JZMWFoVW81WWtEcmpXeGxZbEd6S1NSYlF3OUY2RFE1OHNCTEtTRHFxejZj0gF8QVVfeXFMTWNlVEdqRzI4R09jSW9uWjd4NkFuZVNfZWFxNlIwN1pVRjFyT0dMb25DOTk0eENkV1VIaVZhejNKRy1fbE9OSExxVVl2azk2SUhJM24tMEdYU0VmbTZfU3BmOW92Y0gzaVpPbzhRbV9RZzBwdkFIRnh6dEN1Qg?oc=5",
+          "source_label": "머니투데이",
+          "published": "2026-10-18"
+        },
+        {
+          "title": "삼성물산, 2조원 ‘여의도 시범’ 재건축 수주…도시정비 누적액 10조 ‘눈앞’",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9JZldGTnRvUTF4WXlQLTV1ZEJuUjRGdTN2WWwycERPNUNxMGZNaVFpdlBpZVdOVlV2M25XT0E1SmJFaWRjNk9jSVlaaXZXWTdqMFpEN3hvMk5jSk11R1hHMmZwdlN5MUg3N204UjNn?oc=5",
+          "source_label": "아시아투데이",
+          "published": "2026-10-18"
+        },
+        {
+          "title": "삼성물산, 2조원 여의도 시범 재건축 수주… 2491가구로 탈바꿈 - 조선비즈",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQaUhSb3dLSk5NSERqV3c2ek9tM2lsSnFId0xVNUY4V3hwUWdieDl1NWJHR2xTVm9mWUVRalVLWXgyTlhqUmowTlRCcjBqa29IU0Zra2JYcUoyUmtLQTBBcHFEdFNYbmE2QUFZbDJ5NThJWThyMFpndVZvSnVrejJHV09qbXl6cks3bUJlWkE0QXNjSDRKa2tyX9IBrAFBVV95cUxPWVFZNlJDaVVtUzZFNV80czJuazhNSEpKVHh6NWpzSEdYUnJqRU5vVGhURWc0MmpkQ1hWV0ZVekhYNEUwRkpxek5aQkFXNERiWkdSQlVNRC1YeDBhWUZYSU0ycDNNV2ZVdE04enp5RXNKanM2bFZhdWx3SXJtYkFvbHVsa29TV1lVUENndThnaG04dnF1TjFJQnZxYnRzYVEzOGxhZndZMHB5SUFP?oc=5",
+          "source_label": "Chosunbiz",
+          "published": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "source": "gnews_ind_조선·방산·기계",
+      "source_label": "https://www.sisaworld.kr/",
+      "title": "[심층분석] 시장 논리에 갇힌 방산 M&A, ‘안보 빗장’ 채운다… 방위사업법 개정안의 함의",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ocGViaUVxbEh5RlhsYUthaE9rWndnaXZLQTRIR3pMY25ydGpaQ0pEZkwzQ3JDQnZuUHhUaUVTTFlnZnYwMGo1WTFfclVXOUJpSENkdDRJLTNEMmM5c1oyb0VDV2NOZXRJVGc?oc=5",
+      "published": "2026-10-18",
+      "published_at": "2026-10-18T12:56:35",
+      "category": "조선·방산·기계",
+      "companies": []
+    },
+    {
+      "source": "gnews_ind_반도체·전자",
+      "source_label": "산경e뉴스",
+      "title": "[산업이슈] 미 ‘세미콘 웨스트 2026’ 흔든 K-소부장...코스닥 반도체주, '탈중국·공급망 재편' 타고 북미 수주 가시화",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1zTzA3RkRrRWVMVXFacXkwdThTSW5mRlhXb3FtX3dxWlYwa0RJU0tlYkIyQnVwTFZBYWEydHMya0dHbTFlTFpZLVRGbl8tZXdZMHZhbGxJUUNCNDVYaVNIMXM4N1RWMnc?oc=5",
+      "published": "2026-10-18",
+      "published_at": "2026-10-18T12:52:32",
+      "category": "반도체·전자",
+      "companies": []
     },
     {
       "source": "gnews_ind_자동차·모빌리티",
@@ -317,7 +391,7 @@
       ]
     },
     {
-      "source": "gnews_ind_반도체·전자",
+      "source": "gnews_ind_반도체·전자_2",
       "source_label": "파이낸셜뉴스",
       "title": "AI 반도체 흔들리자 '최대실적' 뷰티株 부상…하이드로겔 마스크 공급 부족",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBrMkVNel84VzdzYzQxbUJZTFAxT2lITUlySW1VZWQydmFHV2g3WGRJOXRqZV9idXRFV1JVWFZnRVpmUllLaXdUc1V1OHlUNzJoVWlwNWJxU05xZw?oc=5",
@@ -365,44 +439,6 @@
       "published_at": "2026-10-18T08:43:08",
       "category": "건설·부동산",
       "companies": []
-    },
-    {
-      "source": "gnews_ind_건설·부동산",
-      "source_label": "매일경제",
-      "title": "여의도 시범에 래미안 깃발 … 삼성물산 2.2조 재건축 수주",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE04NnRKWEhhRkNIcnA4czhwNU82TXZVbmp3UjdDazdzbjBQalVWNUhXdUI5Vkd0Z2cyd01DTzB3bVIteVRpaDRZOGVtdmV3TWcwLXlwRkpaeG8?oc=5",
-      "published": "2026-10-18",
-      "published_at": "2026-10-18T08:21:39",
-      "category": "건설·부동산",
-      "companies": [
-        "삼성물산"
-      ],
-      "dupes": [
-        {
-          "title": "삼성물산, 2조원 규모 여의도 시범아파트 재건축 수주",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5FMXF4bEYxTktuaE45X185ektWUEcxRDFSNlA1QjhJTUtyOGkzdnZHdlExdFlwR1ViRk9PQUhxLWNVYm9NMEl6LXNTampaWmxGZ2VNWTlvUW4wTEF5UUtPdzg5WXVMcXNS?oc=5",
-          "source_label": "SR타임스",
-          "published": "2026-10-18"
-        },
-        {
-          "title": "삼성물산, 2조원 ‘여의도 시범’ 재건축 수주…도시정비 누적액 10조 ‘눈앞’",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9JZldGTnRvUTF4WXlQLTV1ZEJuUjRGdTN2WWwycERPNUNxMGZNaVFpdlBpZVdOVlV2M25XT0E1SmJFaWRjNk9jSVlaaXZXWTdqMFpEN3hvMk5jSk11R1hHMmZwdlN5MUg3N204UjNn?oc=5",
-          "source_label": "아시아투데이",
-          "published": "2026-10-18"
-        },
-        {
-          "title": "삼성물산, 2조원 여의도 시범 재건축 수주… 2491가구로 탈바꿈 - 조선비즈",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQaUhSb3dLSk5NSERqV3c2ek9tM2lsSnFId0xVNUY4V3hwUWdieDl1NWJHR2xTVm9mWUVRalVLWXgyTlhqUmowTlRCcjBqa29IU0Zra2JYcUoyUmtLQTBBcHFEdFNYbmE2QUFZbDJ5NThJWThyMFpndVZvSnVrejJHV09qbXl6cks3bUJlWkE0QXNjSDRKa2tyX9IBrAFBVV95cUxPWVFZNlJDaVVtUzZFNV80czJuazhNSEpKVHh6NWpzSEdYUnJqRU5vVGhURWc0MmpkQ1hWV0ZVekhYNEUwRkpxek5aQkFXNERiWkdSQlVNRC1YeDBhWUZYSU0ycDNNV2ZVdE04enp5RXNKanM2bFZhdWx3SXJtYkFvbHVsa29TV1lVUENndThnaG04dnF1TjFJQnZxYnRzYVEzOGxhZndZMHB5SUFP?oc=5",
-          "source_label": "Chosunbiz",
-          "published": "2026-10-18"
-        },
-        {
-          "title": "삼성물산, '2조' 여의도 시범 품었다…정비사업 수주 성과 '10조' 눈앞 - 머니투데이",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBtME1vaHhKaHMtcU1fbWhtT1RFeUsyRHRFS2ZhMl9icVVqZUpGYUxFY0NmdmNRdVBrdkdvTnlyemZtN1Brd2J3bVhLN3JZMWFoVW81WWtEcmpXeGxZbEd6S1NSYlF3OUY2RFE1OHNCTEtTRHFxejZj0gF8QVVfeXFMTWNlVEdqRzI4R09jSW9uWjd4NkFuZVNfZWFxNlIwN1pVRjFyT0dMb25DOTk0eENkV1VIaVZhejNKRy1fbE9OSExxVVl2azk2SUhJM24tMEdYU0VmbTZfU3BmOW92Y0gzaVpPbzhRbV9RZzBwdkFIRnh6dEN1Qg?oc=5",
-          "source_label": "머니투데이",
-          "published": "2026-10-18"
-        }
-      ]
     },
     {
       "source": "gnews_ind_유통·소비재",
@@ -513,16 +549,6 @@
       "companies": []
     },
     {
-      "source": "gnews_ind_금융·보험",
-      "source_label": "매일일보",
-      "title": "[기획] 카드·캐피탈은 '조달 비상' 수익성 악화",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1XU3hNbDlrTVlOQ2l6LWVtY3d4YXR6OHhwZExLR3FWVi1FZzZFZFc0NTh4di14Q2M5WHpEYWQ1VzZ4aUdaa2FoZmRwSDFlN1o5d0NHRVd0cmNoX1RZUGlYZk9jMkM?oc=5",
-      "published": "2026-10-18",
-      "published_at": "2026-10-18T01:00:00",
-      "category": "금융·보험",
-      "companies": []
-    },
-    {
       "source": "gnews_ind_건설·부동산",
       "source_label": "아시아에이",
       "title": "지방선 분양가, 서울선 대형사...중견 건설사 ‘수주 딜레마’",
@@ -571,16 +597,6 @@
           "published": "2026-09-30"
         }
       ]
-    },
-    {
-      "source": "gnews_ind_건설·부동산",
-      "source_label": "비건뉴스",
-      "title": "신한글로벌액티브리츠 1주당 34원 배당 결의",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5Xekk0SGJzS0JCMWJsRU9VaWhCaVh6ZUNmZ3NybGt3Z0dZT1FDQkpCN2duZDduRl9zcTJvVlI0ZFFWUkh2SGVLbm5rVXVNTkFYWDJXemc2WUFQUjJDNk53dXNFU1ctdw?oc=5",
-      "published": "2026-10-17",
-      "published_at": "2026-10-17T22:26:50",
-      "category": "건설·부동산",
-      "companies": []
     },
     {
       "source": "gnews_ind_유통·소비재",
@@ -741,16 +757,6 @@
       "companies": []
     },
     {
-      "source": "gnews_ind_제약·바이오",
-      "source_label": "비즈워치",
-      "title": "[바이오 문해력]신약기업 공모가, 왜 유한·한미와 비교할까",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE51TEhSWG9Kcmt0M2EwRmpfRFVyb0x4TnBmZ0czRG0wc2NFbmg3cjFvblFCekstaG9DYjdJOWlJZjJIeTBxOFZJd2V3MVRoUTJIcmJFUGdjYnFLMEMza1lTbTJPa1ZjWldla0xTdl92QQ?oc=5",
-      "published": "2026-10-17",
-      "published_at": "2026-10-17T01:00:03",
-      "category": "제약·바이오",
-      "companies": []
-    },
-    {
       "source": "gnews_ind_금융·보험_3",
       "source_label": "조세금융신문",
       "title": "[N위크] 기준금리 3연속 인상할까…4대 금융지주 3분기 실적은?",
@@ -791,70 +797,10 @@
           "published": "2026-10-16"
         },
         {
-          "title": "금리 올라도 금융지주 순익 6.5%↓…'고금리=호실적' 공식 깨졌다",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1lcFpPTjFUektYd1gzbGQ1RFV6NGIweEN6N2xJelVrX3FHcTJPREhiQ0hZcjR0OGY1bS14TXE3Y3BqMUw5UGxpR2RqaFFRbVM0TU42WGlwWVdEbUI4WTA5TVVENXlLMld6ZF9FUUdB0gFzQVVfeXFMTkF2S2Rra3FDTkJqNHJJbGoydzJ5WTkwYWl4TkF6U09zOGVMeUJHNXUyT0QwZXJqaGtEWUo1Z2owMmwwbkRpd3VwWVRsV0h1LUpxUy1yQlNNa3JTbzNqemllMWVoekV2MVBkbFhzMFdWeExDYw?oc=5",
-          "source_label": "한국일보",
-          "published": "2026-10-14"
-        },
-        {
           "title": "\"은행권 3분기 실적 기대치 웃돌 듯…주주환원 확대 주목\"",
           "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE85OUdSQS02eFVYRFNSeU1aZ1RLSlpOcF9LV21pdkNuVmZic1lIRGY3c3lRUWpVVFA3VFVKV1R5UGpDVWE4R3plWHVLeVQ4MkZfUjA1a1ZWU283RzJBeFE?oc=5",
           "source_label": "뉴스투데이",
           "published": "2026-10-14"
-        },
-        {
-          "title": "우리금융지주, 3분기 순익 1조 눈앞…실적 성장 지속될까",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9JcjVYRW52WTVLMzJGZkhtWjRsSEd5SHpIdWNfZkRuYkJoYThld3I1MEt4VnpwNThVNmtkTTNpX2ZuZDhNWXNTbXZIZ3RKZU5fNkRRREh1ZmhMcTl1WW1GLXl2WlU?oc=5",
-          "source_label": "PRESS9",
-          "published": "2026-10-12"
-        },
-        {
-          "title": "[MD포커스] 금융지주 순익 17.6조 ‘최대 실적’…은행 이익 비중 47%로 ‘뚝’",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBzWFg5UmhadVRydmQ4dzh0bFlwdHRtZmZycHJfWG9QZmNfZVd6LTh3dzJaZjJQek11SnZLdWp4OWFFZkZMaUpQT2RqWk1Cc2s2NUMzandWMGpLR0JSb1F0Vg?oc=5",
-          "source_label": "마이데일리",
-          "published": "2026-10-12"
-        },
-        {
-          "title": "은행 이익 감소에도 금융지주 순익 17.6조…증권이 실적 견인",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAzMmhWWjJtSktKRzkxOXg2Um1VNlFaZGxIOUJuOFptUUpFMDRaMUkxVVYwWVgtNEV1aGpDNDRqOEZIZE1haHg5NVFCbHM5OVFiaVZKOWJrNHZWUE5ONUxzT21LVnBJQ2RrbVHSAW5BVV95cUxOenFINi1PcmotelUzS1pMYklyM1VTWF8zdlVsSHBnOF9HRWtYU3lYb2tmSW9QWWpKTDdoOGdaVkRSbDZHYzlPZHpyX3lsNGhrWjAySWwxTWR5X2wwQ0lSMWZGQmx0eGVBQjJYb1owdw?oc=5",
-          "source_label": "파이낸셜투데이",
-          "published": "2026-10-08"
-        },
-        {
-          "title": "은행 이익 줄었는데 금융지주 '역대급'…증권이 상반기 실적 끌었다",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBPQTNGeXg2Y2trUG13TjJhYTllRGxtZWFMdHV1VGtEV09reHBtTno0bFFDbWhua2R1bmtRUmdhR3hDenpZazJocExETFQxa2NlSjVLNjNsREVSWjdMTjZGbTlYYUZ1Smg1RVZocg?oc=5",
-          "source_label": "미래경제",
-          "published": "2026-10-11"
-        },
-        {
-          "title": "10대 금융지주 상반기 '역대 최대' 실적, 증시 호황에 금융투자 이익 73% 급증",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9FeDVOWm83NTEyakczZ2RFWjNPTkItTWtnaU9BQTZFY3FQaUhFRUp5RXNWdERVd1RGNWZ5VXBaQzJvMm5pNzdoczJFcTFIbUVuN2VRbVZBeThMVV8xT1BRdjUwYjdXZEs3cTRFMUpqLUdSbWc?oc=5",
-          "source_label": "비즈니스포스트",
-          "published": "2026-10-08"
-        },
-        {
-          "title": "증권이 끌어올린 금융지주 실적…상반기 순익 17.6조원",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1DSzB3VTFLMXIzR2FRc0p3UFhkeEVRakNwckZ1a1JuX1lzWWJHbnhFZ0FfekxXUXhkb0ZVVFA5MHJRMUNDNHBPbDdUVmFRWjk1bnFNdktpVDdhRFFieGtubGNLVlZzSHlkLXJham1saXVYQWvSAXdBVV95cUxQQ3FybFVIVnU0T0x4OXFQUmlqNHZIUkVZeFJpNWtpTVRGNWhqd201V0lJZ3ZUcmxiSTN6SVRYMW9KT1NtWGVzLTV4YWliMWU2RE9rNzZjLTlHVDV6eHliakdENkVfa0ZQUlpxTXdrR0w4bUdreG00QQ?oc=5",
-          "source_label": "스트레이트뉴스",
-          "published": "2026-10-08"
-        },
-        {
-          "title": "금융지주 순이익 또 '역대 최대'…올해 상반기 17.6조원",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9PbDIyS2o0cmQ0eGJSYWJ5bFlhRXoxLUozUEtDdlpjd0lfdjJBUlNmQ0NFOTZ3eHY0ZVd2ZWtZT2d6dVBZSXpCaDNSUjhyeWRySWRBd2pzLUMtdUXSAWBBVV95cUxOS2plZ1F1SVRkT3BDQlRldHpyZzh2czBWM1FXbk5PM1I2TEhXTHdiUld2T2JBXzZCSjlGUDh2dU9VaWZLR1RjVnBYZExVZExXZ0k4ejVBUlY3SzVVRW9pOHE?oc=5",
-          "source_label": "연합뉴스",
-          "published": "2026-10-08"
-        },
-        {
-          "title": "금융지주 상반기 순익 17.6조 훌쩍… 보험계열사 순익 6.5% 늘며 실적 방어 톡톡",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBaT1Z6anpBYU5NTHlwUFlmSFMxRmY3WUlVUnNCY2VZLTB0VnQ3NGJTWHcyV0pTOE1OQXJXZ1Vrek9LZ2sxbmhVVVhnREdNNTdoeUtxNkUyemxCWkZ4aDhrUTlMbUt4a1VidllRTml2SQ?oc=5",
-          "source_label": "보험저널",
-          "published": "2026-10-08"
-        },
-        {
-          "title": "KB금융지주, 3분기 금융지주 중 실적 가장 양호…“일회성 이익 없이도 컨센서스 상회”",
-          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE13RktacXNwRjRKTEpEUThLVFBRNTMxOVNjbDlOa19VWUM1SkVNdjJYekVMZy11U2JvSm1ubXdyaWtkc2RCVWVGdEtBakdOYzE3bk1WWFhwczJmQ002X1QwazIxQ18?oc=5",
-          "source_label": "PRESS9",
-          "published": "2026-10-07"
         },
         {
           "title": "가계대출 늘고 환차익까지 … 4대금융 3분기 실적 신기록",
@@ -939,12 +885,6 @@
           "published": "2026-09-26"
         },
         {
-          "title": "호르무즈 봉쇄에 치솟은 가스선 운임…K조선 수주 기대감 커져",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9ldURFQUdtd1VLUm5rM0RKdDlxNm1jUFYtUjR2YkR1Q0tPalhuZ3dvaWI2ODRGSGtuZUI0N19GWkJ3NFM1TUVhZm5zb3FPa1NKY18yZ1dOV1RvU3Bjd0pDby1oS21fWGd0?oc=5",
-          "source_label": "www.ebn.co.kr",
-          "published": "2026-09-26"
-        },
-        {
           "title": "중동 전쟁에 가스선 운임↑…K조선 수주 기회 확대",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBGbkFmaERwYjFpY3E2Z24xcnNCckhDV3I4VE5vNENwTUhkYS0wY1NpOFR4MGZzbUttYmFEYlpTZG9GS2Z1a0lkbDhrOUctOThlTlpST01vRHYzbTBfc3UzdQ?oc=5",
           "source_label": "뉴스토마토",
@@ -954,12 +894,6 @@
           "title": "중동 사태 장기화에 가스선 운임 고공행진…K-조선 수주 훈풍",
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE51MEd3c2Z4YUxrV2RWZjZ4elBjeFp6aDhJM1JyMHB4SkpFeXZ6MDJmdFUtYzJBenZTR2M2NUZuYzhZWFR2U3VnR0xiY3ZzNW9GcV93YXduWjNnU3Ntc1lfeHNZdHk?oc=5",
           "source_label": "매일일보",
-          "published": "2026-09-26"
-        },
-        {
-          "title": "중동 사태 장기화에 가스선 운임 '껑충'…K-조선 수주 기대↑",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE8zTklfSXdZU0NWekpLQW9PajJPMG1Gd3dlb2JYeVhacXlEcXBTZWFHNkg1a3dwYXBZcGpfYWFDZmpPVEhOTUlIRms4WkV0UDIzMWdjR2R0eEQ1VFFwcXd5eHdR?oc=5",
-          "source_label": "디지털데일리",
           "published": "2026-09-26"
         }
       ]
@@ -971,6 +905,16 @@
       "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE13VEMzVUJhZ2NXZXJYYzFHT1VObFFrMzhQUnBVeDR2czNZNk1mdzRkbjdGRi0tSFhyS3ZiVmxxejRzUnZ0X0NQM3l2U0E1T2hXTXRseElCbEozRjhSYkw0cThKczduelBIOS1zeFZIMUgtcllqelHSAXpBVV95cUxOdGlSRWNJanN6RjlsRmFBVzZSUG11STVBcFI3YWU1NVJ1ZkFwbUZUWEo5ZVZuU2FfZEFVRmVfQ00tdVRkWlVBVVZ4bDlUdkhmNkVsbGFHU3pIWk5Bb2tXY0s1Z01pSERVRnh0RDNoVVI4djdTS2VBMFpjZw?oc=5",
       "published": "2026-10-16",
       "published_at": "2026-10-16T07:55:48",
+      "category": "반도체·전자",
+      "companies": []
+    },
+    {
+      "source": "gnews_ind_반도체·전자_2",
+      "source_label": "머니투데이",
+      "title": "폭락 하루 만에 반등했지만…\"빅테크 실적 확인하고 들어가라\" - 머니투데이",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE8ycmM2N0xUVmpfbnhiYlVNYXhsTXFUUzNoWTQ5b2FWSm1XNkR5dGZHanQwZGkwMmhSMmY4SjI0TmRlWmtjdnd0aUg2UWpZbHJoMVFmMFhRdk1NZ0RkbUswNS1fcXhuWGhET2pEVUpB0gFuQVVfeXFMTzJyYzY3TFRWal9ueGJiVU1heGxNcVRTM2hZNDlvYVZKbVc2RHl0ZkdqdDBkaTAyaFIyZjhKMjROZGVaa2N2d3RpSDZRallscmgxUWYwWFF2TU1nRGRtSzA1LV9xeG5YaERPakRVSkE?oc=5",
+      "published": "2026-10-16",
+      "published_at": "2026-10-16T07:38:11",
       "category": "반도체·전자",
       "companies": []
     },
@@ -1037,14 +981,6 @@
       "category": "조선·방산·기계",
       "companies": [
         "HD현대"
-      ],
-      "dupes": [
-        {
-          "title": "HJ중공업, 1만100TEU급 컨테이너선 4척 수주 - 조선비즈",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNlgycGRxZFBwdzhfbGdrLWN6Y0N2czk0SkpYRDNubi1JZDZXc0Nwd2xuSmRsX3ZqSDZhXzlOdHdWc0NtQXNyTjhqd0lEdmlxZ21hR05nOFhIOUw3TGozYl93VTFGZUNiZG5oWU14alJYZmpTQTkzMy1iNlBOQWdMdC03RE7SAZgBQVVfeXFMTUpXMjdUSFVzSHhkT2t6M0FyTjVzZlp2ZDRzVWpfQVNwTG9hc1dWN1BZbUZfUTVNaDBJSmhRRHptWFFPNUZSUUJNTUlVNjNKTFM4UWxneVZ6TVVSMENlSC1vbkUxMWg4Q2tmN05QZDdmT1RkdlRhUU9GR2ZRT2RsVGpxZk5acW16ZnVCMV9FQ3o1VmYxZW9Mbmg?oc=5",
-          "source_label": "Chosunbiz",
-          "published": "2026-09-23"
-        }
       ]
     },
     {
@@ -1084,16 +1020,6 @@
           "published": "2026-10-04"
         }
       ]
-    },
-    {
-      "source": "gnews_ind_반도체·전자_2",
-      "source_label": "한국경제",
-      "title": "\"카지노 도박 같아\"…삼전닉스 역대급 실적에도 '서늘한 경고' [테크로그]",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE05eTBKdXlydVJnY3BSSkQtN1RYODBhMDd4eGJJX0gtSGUyaVFXTzkyTFdBd1NMMFpLdUdPNE9rckNGSjJzX2ZaS0d6dUVrdDNDRzJoOGxyUTdHZw?oc=5",
-      "published": "2026-10-16",
-      "published_at": "2026-10-16T00:00:10",
-      "category": "반도체·전자",
-      "companies": []
     },
     {
       "source": "gnews_ind_조선·방산·기계_2",
@@ -1265,12 +1191,6 @@
           "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFAtWTdKTWtjSmxNcDhVZ04xdDVLdUVPVnpVZEZCZjFNNnBiYl9mek5fdFJMeC1aZ3l0LWJGY0lQRS1WT2g3THJ5Y1FOcmxzSjlKdnNNSXdWaGttTEtwSkYySE1aT0FzSWhD?oc=5",
           "source_label": "매일경제TV",
           "published": "2026-10-12"
-        },
-        {
-          "title": "반도체 실적·수출에 살아난 투자심리…소부장 중심 매수세 확대",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3aDI1S1F6Rjd0MVQtOHlqYkhITU4wZWp4VTdCWnRlSWRkUVVIa05MSlpNcWhNbDgyUDhCZXdjLUZ4d1BPQVFfR0YyTE9pWlVZeDB2bm5iaGtjYjBNd01GMA?oc=5",
-          "source_label": "아시아경제",
-          "published": "2026-10-02"
         }
       ]
     },
@@ -1337,6 +1257,66 @@
           "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE00bzlOVVBSdkx1NVVsSXJFbkJQcDFmRUlBRG43NVlidlVuR2FNcFpSUUx2blpqbnUwM3pZdmp5YnJsemFsblh3OFRObjFKcXd3STZ4VUZ0c1hUT1V6SlJnTXItQmZaTWxkc0wzUklDaw?oc=5",
           "source_label": "뉴스퀘스트",
           "published": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "source": "gnews_ind_금융·보험_3",
+      "source_label": "한국일보",
+      "title": "금리 올라도 금융지주 순익 6.5%↓…'고금리=호실적' 공식 깨졌다",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1lcFpPTjFUektYd1gzbGQ1RFV6NGIweEN6N2xJelVrX3FHcTJPREhiQ0hZcjR0OGY1bS14TXE3Y3BqMUw5UGxpR2RqaFFRbVM0TU42WGlwWVdEbUI4WTA5TVVENXlLMld6ZF9FUUdB0gFzQVVfeXFMTkF2S2Rra3FDTkJqNHJJbGoydzJ5WTkwYWl4TkF6U09zOGVMeUJHNXUyT0QwZXJqaGtEWUo1Z2owMmwwbkRpd3VwWVRsV0h1LUpxUy1yQlNNa3JTbzNqemllMWVoekV2MVBkbFhzMFdWeExDYw?oc=5",
+      "published": "2026-10-14",
+      "published_at": "2026-10-14T07:08:00",
+      "category": "금융·보험",
+      "companies": [],
+      "dupes": [
+        {
+          "title": "[MD포커스] 금융지주 순익 17.6조 ‘최대 실적’…은행 이익 비중 47%로 ‘뚝’",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBzWFg5UmhadVRydmQ4dzh0bFlwdHRtZmZycHJfWG9QZmNfZVd6LTh3dzJaZjJQek11SnZLdWp4OWFFZkZMaUpQT2RqWk1Cc2s2NUMzandWMGpLR0JSb1F0Vg?oc=5",
+          "source_label": "마이데일리",
+          "published": "2026-10-12"
+        },
+        {
+          "title": "은행 이익 감소에도 금융지주 순익 17.6조…증권이 실적 견인",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAzMmhWWjJtSktKRzkxOXg2Um1VNlFaZGxIOUJuOFptUUpFMDRaMUkxVVYwWVgtNEV1aGpDNDRqOEZIZE1haHg5NVFCbHM5OVFiaVZKOWJrNHZWUE5ONUxzT21LVnBJQ2RrbVHSAW5BVV95cUxOenFINi1PcmotelUzS1pMYklyM1VTWF8zdlVsSHBnOF9HRWtYU3lYb2tmSW9QWWpKTDdoOGdaVkRSbDZHYzlPZHpyX3lsNGhrWjAySWwxTWR5X2wwQ0lSMWZGQmx0eGVBQjJYb1owdw?oc=5",
+          "source_label": "파이낸셜투데이",
+          "published": "2026-10-08"
+        },
+        {
+          "title": "은행 이익 줄었는데 금융지주 '역대급'…증권이 상반기 실적 끌었다",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBPQTNGeXg2Y2trUG13TjJhYTllRGxtZWFMdHV1VGtEV09reHBtTno0bFFDbWhua2R1bmtRUmdhR3hDenpZazJocExETFQxa2NlSjVLNjNsREVSWjdMTjZGbTlYYUZ1Smg1RVZocg?oc=5",
+          "source_label": "미래경제",
+          "published": "2026-10-11"
+        },
+        {
+          "title": "10대 금융지주 상반기 '역대 최대' 실적, 증시 호황에 금융투자 이익 73% 급증",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9FeDVOWm83NTEyakczZ2RFWjNPTkItTWtnaU9BQTZFY3FQaUhFRUp5RXNWdERVd1RGNWZ5VXBaQzJvMm5pNzdoczJFcTFIbUVuN2VRbVZBeThMVV8xT1BRdjUwYjdXZEs3cTRFMUpqLUdSbWc?oc=5",
+          "source_label": "비즈니스포스트",
+          "published": "2026-10-08"
+        },
+        {
+          "title": "증권이 끌어올린 금융지주 실적…상반기 순익 17.6조원",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1DSzB3VTFLMXIzR2FRc0p3UFhkeEVRakNwckZ1a1JuX1lzWWJHbnhFZ0FfekxXUXhkb0ZVVFA5MHJRMUNDNHBPbDdUVmFRWjk1bnFNdktpVDdhRFFieGtubGNLVlZzSHlkLXJham1saXVYQWvSAXdBVV95cUxQQ3FybFVIVnU0T0x4OXFQUmlqNHZIUkVZeFJpNWtpTVRGNWhqd201V0lJZ3ZUcmxiSTN6SVRYMW9KT1NtWGVzLTV4YWliMWU2RE9rNzZjLTlHVDV6eHliakdENkVfa0ZQUlpxTXdrR0w4bUdreG00QQ?oc=5",
+          "source_label": "스트레이트뉴스",
+          "published": "2026-10-08"
+        },
+        {
+          "title": "금융지주 순이익 또 '역대 최대'…올해 상반기 17.6조원",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9PbDIyS2o0cmQ0eGJSYWJ5bFlhRXoxLUozUEtDdlpjd0lfdjJBUlNmQ0NFOTZ3eHY0ZVd2ZWtZT2d6dVBZSXpCaDNSUjhyeWRySWRBd2pzLUMtdUXSAWBBVV95cUxOS2plZ1F1SVRkT3BDQlRldHpyZzh2czBWM1FXbk5PM1I2TEhXTHdiUld2T2JBXzZCSjlGUDh2dU9VaWZLR1RjVnBYZExVZExXZ0k4ejVBUlY3SzVVRW9pOHE?oc=5",
+          "source_label": "연합뉴스",
+          "published": "2026-10-08"
+        },
+        {
+          "title": "금융지주 상반기 순익 17.6조 훌쩍… 보험계열사 순익 6.5% 늘며 실적 방어 톡톡",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBaT1Z6anpBYU5NTHlwUFlmSFMxRmY3WUlVUnNCY2VZLTB0VnQ3NGJTWHcyV0pTOE1OQXJXZ1Vrek9LZ2sxbmhVVVhnREdNNTdoeUtxNkUyemxCWkZ4aDhrUTlMbUt4a1VidllRTml2SQ?oc=5",
+          "source_label": "보험저널",
+          "published": "2026-10-08"
+        },
+        {
+          "title": "KB금융지주, 3분기 금융지주 중 실적 가장 양호…“일회성 이익 없이도 컨센서스 상회”",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE13RktacXNwRjRKTEpEUThLVFBRNTMxOVNjbDlOa19VWUM1SkVNdjJYekVMZy11U2JvSm1ubXdyaWtkc2RCVWVGdEtBakdOYzE3bk1WWFhwczJmQ002X1QwazIxQ18?oc=5",
+          "source_label": "PRESS9",
+          "published": "2026-10-07"
         }
       ]
     },
@@ -1423,16 +1403,6 @@
           "published": "2026-10-01"
         }
       ]
-    },
-    {
-      "source": "gnews_ind_금융·보험_3",
-      "source_label": "PRESS9",
-      "title": "신한금융지주, 롯데손보에 3000억 출자…실적 회복 못하면 추가 증자 부담",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5vdllOSDZlODE0cHliek1PSHRoT3JySkNFWFRIZjZMTG5lamxYTElVRWRfczFuSHB6eWdTUzFGNzZyRGtPZVlXQ1JFV0piQk1XeURFaWtnN3RxM3N5bU44aUI1YUwxQQ?oc=5",
-      "published": "2026-10-14",
-      "published_at": "2026-10-14T01:15:01",
-      "category": "금융·보험",
-      "companies": []
     },
     {
       "source": "gnews_ind_제약·바이오_2",
@@ -1591,6 +1561,28 @@
       "companies": []
     },
     {
+      "source": "gnews_ind_반도체·전자_2",
+      "source_label": "매일경제 마켓",
+      "title": "“주식 도대체 왜 떨어지는데요”…삼성전자 100조 실적도 못살리네",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9SVW1zVThqQmxGMTZLOVNzemgtbE8tVXBpV3ZJVHZUQzlYbjRCN2h1R0VlbkdOVEJKd1NydVhVMGk0VjBRUl81cHZYMFpuYk1lTmc?oc=5",
+      "published": "2026-10-12",
+      "published_at": "2026-10-12T10:05:38",
+      "category": "반도체·전자",
+      "companies": [
+        "삼성전자"
+      ]
+    },
+    {
+      "source": "gnews_ind_반도체·전자_2",
+      "source_label": "티제이비",
+      "title": "[T나는 경제] 역대급 실적에도 올해 외국인 200조 이탈…언제 돌아오나",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5oUmRtcWdvRU1feVV3MVpXVXZucmc2NjNEOU1xVzZIR2V5MkVGanZMcWJFZ3BmdXpyMFBscEhHYzhseDRMZnppWkRzYXNFdGZybnNxVzE3Tl85T1VB?oc=5",
+      "published": "2026-10-12",
+      "published_at": "2026-10-12T09:37:28",
+      "category": "반도체·전자",
+      "companies": []
+    },
+    {
       "source": "gnews_ind_자동차·모빌리티_3",
       "source_label": "한국경제",
       "title": "ESS 수주·중국산 규제…배터리의 시간 오나",
@@ -1683,6 +1675,16 @@
       ]
     },
     {
+      "source": "gnews_ind_반도체·전자_2",
+      "source_label": "매일경제 마켓",
+      "title": "삼전 ‘실적 대박’에도 돌아오지 않는 외국인…올 코스피서 224조 순매도",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBzYU5pSUpqRWZUbjVTV0VSUnotTTF2M2tIZUF4UkdfWU5jRUNiU1VLbFhOU0gydGZUcnN6TXlCWUExSzh4Wnh1OTFWcHJFU1NDeUE?oc=5",
+      "published": "2026-10-12",
+      "published_at": "2026-10-12T07:15:09",
+      "category": "반도체·전자",
+      "companies": []
+    },
+    {
       "source": "gnews_ind_조선·방산·기계_2",
       "source_label": "파이낸셜뉴스",
       "title": "VLCC 발주 역대 최대, K조선 '고수익 수주' 노린다",
@@ -1691,18 +1693,6 @@
       "published_at": "2026-10-12T07:00:00",
       "category": "조선·방산·기계",
       "companies": []
-    },
-    {
-      "source": "gnews_ind_금융·보험_3",
-      "source_label": "뉴데일리",
-      "title": "지분 줄이던 美 캐피털 그룹, 하나금융에 유턴 … 실적·주주환원 기대",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBDTWxiRjJfRTlET1J6Rnc2QWZVcndkbzZERzdtXzhpSVM1cE1jVHFLd1dMSzhjbWFzVnQ5Q0pZdFVvNEZXUnpSTURNMlVRZ2x5VGVvZXdMTzVUd2c5MUp6NWRFdms5MjJjNnBuaWVzVi1NLW15NjAtQjhaUdIBgAFBVV95cUxPNjVYOUp3UGZod1M5QWJwVW9LekpsLXZjVmk4Rk1PaDhiY2ZrUXdqQUxxRUlXMXQ1b21lRllXQV84a2VKcnZ0SE90QUFIMmU3UkFGX0FmVDJJNkpPdEJrbmk5NWhBNzcwdGhqTjduSHdIejJkemEydGUyYk0tMVdMZw?oc=5",
-      "published": "2026-10-12",
-      "published_at": "2026-10-12T02:36:44",
-      "category": "금융·보험",
-      "companies": [
-        "하나금융지주"
-      ]
     },
     {
       "source": "gnews_ind_자동차·모빌리티_2",
@@ -1733,18 +1723,6 @@
       "published_at": "2026-10-10T21:00:00",
       "category": "제약·바이오",
       "companies": []
-    },
-    {
-      "source": "gnews_ind_반도체·전자_2",
-      "source_label": "더구루",
-      "title": "삼성전자 실적이 쏘아올릴 반도체株…'50만 전자·328만 닉스' 현실될까",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE03dndaV0x4ckQ4eUdnTV9SR2JEVGM4Q0pBMW8yZnFPX0tHdVM1MVUxcDBPYjJIN2NUa1poeUZocjFydExCRnRMVnk4VnVYNlFxUndxRloxb21kNXlvMDRDelJJZw?oc=5",
-      "published": "2026-10-09",
-      "published_at": "2026-10-09T15:00:18",
-      "category": "반도체·전자",
-      "companies": [
-        "삼성전자"
-      ]
     },
     {
       "source": "gnews_ind_자동차·모빌리티_3",
@@ -2055,6 +2033,12 @@
           "published": "2026-10-02"
         },
         {
+          "title": "완성차 5사, 수출에 9월 실적 '희비'…기아, 3분기 역대 최다 판매",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBFLTUwVjIxMU5nYUZRb1hQWGpOOTM1azd4d2dFWnFTTlVLRkVEMV9WQTR5TzllZEZVV3ZwdkxfZXlQZzhjdHJTdFc3Y25zQUFGSjRlQnNTY1NheVU4TnJLSHNWUkd5bDJYdEpubTUySXktM2hWcFZOalVqQzQ?oc=5",
+          "source_label": "디지틀조선TV",
+          "published": "2026-10-01"
+        },
+        {
           "title": "[분석] 9월 완성차 실적 양극화…현대차 17%↓·한국GM 73%↑",
           "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBpamlQdGtqbzZBVEFKVEN4ZGppOF9fSU13bXpWLXJxRU5aWnAxbl9uWjkteTVNVmV5U0hRMkg5c1h5NkluTWdxTU8tbjdpcWtheGg4T0NBZmZqSUFROTlhZ3p5NVBtd3JRUDR6QUpIcw?oc=5",
           "source_label": "시사포커스",
@@ -2125,16 +2109,6 @@
       "companies": []
     },
     {
-      "source": "gnews_ind_조선·방산·기계_2",
-      "source_label": "중소기업신문",
-      "title": "삼성重, 올해 LNG운반선 20척 수주 달성",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1kQV9BTURib0tZWjlJQXFHSmZrem1LeVRDYUhGMlItTFNuRFVKc3BFenFZbXM4cGg0SlN0UlZQR2R5TTAwZmo4Qk9qSUh0ekJ4dm4yVTdtWHowc0lEb3didFBjNXVHT3ZaZHdRbg?oc=5",
-      "published": "2026-10-02",
-      "published_at": "2026-10-02T06:55:05",
-      "category": "조선·방산·기계",
-      "companies": []
-    },
-    {
       "source": "gnews_ind_자동차·모빌리티_3",
       "source_label": "위키리크스한국",
       "title": "LG엔솔, 3차 ESS 수주전서 배터리 4대 핵심 소재 국산화…중국 의존도 '제로' 만든다",
@@ -2159,16 +2133,6 @@
           "published": "2026-09-22"
         }
       ]
-    },
-    {
-      "source": "gnews_ind_반도체·전자_2",
-      "source_label": "파이낸셜뉴스",
-      "title": "자사주 다 샀고 외국인 떠나고… 반도체 실적만 보는 코스피",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE95ZW1WbTBBSmRBeUVjUjA4bC1IbnBVcUQzNXpxT205bW9fUWN4a3VSYXN6WVZMdGx5VUxBZ3kxcDJSazhrejRiTl9qMTBWM3kwZHJLbkhXdmtYZw?oc=5",
-      "published": "2026-10-01",
-      "published_at": "2026-10-01T07:00:00",
-      "category": "반도체·전자",
-      "companies": []
     },
     {
       "source": "gnews_ind_자동차·모빌리티_3",
@@ -2278,25 +2242,7 @@
       "category": "조선·방산·기계",
       "companies": [
         "삼성중공업"
-      ],
-      "dupes": [
-        {
-          "title": "삼성중공업, 가스 운반선 2척 수주… 상선 목표치 132% 채워 - 조선비즈",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSS03MWY0MDY0bGdUaDlKazc1eXNmSjZhOU5iYURBOHpPUVhDOFhDbUJPSFI2VHEwc1dkT1JELUU5R0ppcWNaVzE5ZmpweV9nQzZEV2s5eWJVWVpjcUljakRsdU1zaGUwNzJIYWdiRTN0WHFuLU1veUVucXU3b29iaGdhd1rSAZgBQVVfeXFMUHlPOEtPMWN6VVFiZlBVdHR1U25JcGpVZzFIdnJQN2M2R3kyOUlpaVZPWEhGd0NEUlcwSlNOWlNVS0JhMmlGWGl2TnJ3MVJiR1N0NHhiS2FOVUk4bEtrZjV3MDRKM3VjTzZQdThtTTdQdlZNc1E2MFRlTEZQVXZ5UXkzTkpfcXM3c1FUOXB3SzF1bGJBY0hQMkw?oc=5",
-          "source_label": "Chosunbiz",
-          "published": "2026-09-30"
-        }
       ]
-    },
-    {
-      "source": "gnews_ind_조선·방산·기계_2",
-      "source_label": "ebn.co.kr",
-      "title": "[차이나 풍향계] \"물량보다 마진\"...도크 꽉 찬 中조선, '선별수주' 시작됐다",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1IemowSUxzZ2pOdkNJNUJJWk9mZ1dRb1hfVmxvZVNoNS1YbGNBTDdHazlvX0dQSlJYV0hLR1RzR1oxbEVGSkJZQy0wOXVDMFdYWXpfSU5sN05MSXJCNHYwYmhTYjVzRF9q?oc=5",
-      "published": "2026-09-30",
-      "published_at": "2026-09-30T07:00:00",
-      "category": "조선·방산·기계",
-      "companies": []
     },
     {
       "source": "gnews_ind_건설·부동산",
@@ -2333,10 +2279,28 @@
       "companies": [],
       "dupes": [
         {
+          "title": "DL그룹, 석유화학·건설 수익성 개선…에너지도 성장",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ya05qQWtpQTVfWXpHSXVLeEltcncwekRyRUhVa3FwQUFiV0tWeEtYY1l1d1k0Y0locFdYM3NVbVRRTVBzV3Z5bHNHaHFEbk9EX2FocTV4Wk85cDNRdTFlQlJjVDBmYjhrM212Qw?oc=5",
+          "source_label": "스페셜경제",
+          "published": "2026-09-28"
+        },
+        {
+          "title": "DL그룹, 사업 체질 개선 성과…석유화학·에너지·건설 실적 '호조'",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5KekRNM0syWHlpLXljZkpQdkxRZ1RxNDZRbG9kQjJsS19UeHFkRnN1d3FXVFE0QThmTlJrRjRwTm42NzN0Uy00RWZpTU80LXNOQ0Y3M3Y3VUtFUEU3ckhHatIBeEFVX3lxTE85d2dJNk9RWTI4N2YyLXNTMlhobTN1SXJGU2lNQzg0b3MxMnA3RjBJTGwxeExQSG9uZEQ4bDhDSXVkTEJSTHJ0V0hoTzcxRjVwRjlmMmlSdzNzemlhNkp0eXNlc2pCdDFOYWhqVHZKaEctbkV3a0RRSQ?oc=5",
+          "source_label": "뉴시스",
+          "published": "2026-09-28"
+        },
+        {
           "title": "DL그룹, 석유화학·에너지·건설 등 동반 '호실적'",
           "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE02OThmcHZLT2hQUzB6Z0NRZU44UUc3aGFLNFVPSFYyQ2ZvUmdDcldSX3RfUW13eXdVTlRyckQteGZIdThrSnBtcnRlZEdKTlkyOVFuMlRaY1R2OU5Na1dGTjF6OTJSWDNFUG1rZ0ZvQkpldW_SAXdBVV95cUxQYTdLZGhIaVJ4dm5lWVV1RzEwSHNmX0pKRlgtV2JveFk4cUxyb0RTSk5FcHUzVnJkMHk2blc1ZHlLdk5NQWhUcHA2dWxqOGt3YWtudGpBQndJSU9TczdfRmdreDhPLXdoaXdPSUtIZ3FCekRjdVNUUQ?oc=5",
           "source_label": "스트레이트뉴스",
           "published": "2026-09-23"
+        },
+        {
+          "title": "DL그룹, 2분기 매출·영업익 역대 최대… ‘석유화학·에너지·건설’ 나란히 날았다",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPYzB2c3JYTjdSWmc1Z0hLemY0WHZHZmpwUXR0UGlic0w5NmhYMlJmeUd3THlUc3hWOFVRVWRVNktURWxZeXlyZlN1bXBpV2hkR1NUNXpsMjR3cXZLai1uVEhfUjdDUER0VDlIUFN0UEpEeTJzVE1pUURmNU91WER3M2dBdFhUakM5WUZaekJ3?oc=5",
+          "source_label": "조선일보",
+          "published": "2026-09-21"
         }
       ]
     },
@@ -2358,16 +2322,6 @@
       "published": "2026-09-28",
       "published_at": "2026-09-28T09:36:23",
       "category": "유통·소비재",
-      "companies": []
-    },
-    {
-      "source": "gnews_ind_반도체·전자_2",
-      "source_label": "뉴스핌",
-      "title": "[미리보는 증시재료] 미중회담 이후 증시…물가·반도체 실적 시험대",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9aTktEazJrMk5jQUZIcUJ4SDl3bkFLNkJhOHVER3g5YUZfZDZmZU5xTERGZWhuZUNuQUc1T1lXcThiNzVSQzhqQlh6YXRCakJDckl6QjBHemV4akxY?oc=5",
-      "published": "2026-09-28",
-      "published_at": "2026-09-28T07:00:00",
-      "category": "반도체·전자",
       "companies": []
     },
     {
@@ -2419,6 +2373,16 @@
       ]
     },
     {
+      "source": "gnews_ind_유통·소비재_2",
+      "source_label": "더트래커",
+      "title": "추석 매출 당겨진 유통업계…10월 실적에 시선",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAwRW9oZDBCeE1kRjBKTDhYWU1oLWJvY2N2SnRxTWgwTS1HR0RFd1I3T2VuSFdMdU4xRV82VVhoMkhUODdEcndhdGFQQlAyeFd0YWVpbjNTVW4?oc=5",
+      "published": "2026-09-28",
+      "published_at": "2026-09-28T05:27:31",
+      "category": "유통·소비재",
+      "companies": []
+    },
+    {
       "source": "gnews_ind_자동차·모빌리티_2",
       "source_label": "청년일보",
       "title": "“반도체 웃고 자동차·바이오 울고”...3분기 실적 전망 '희비'",
@@ -2437,13 +2401,13 @@
       ]
     },
     {
-      "source": "gnews_ind_조선·방산·기계_2",
-      "source_label": "매일경제",
-      "title": "올해 수주액 50조 돌파…K조선 3사, 고부가 선별 수주로 이익 ‘확대’",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB0d3A2eWJ5R2NxaFVpTFpLNU1jVDVteUNNWVh3RFRWYzZuODZRamNULWpDaEY3QjJnX0VwVVVqWFVFbDJTR01LUWtJVHY4cmpGYl9ZcjR3?oc=5",
-      "published": "2026-09-25",
-      "published_at": "2026-09-25T07:00:00",
-      "category": "조선·방산·기계",
+      "source": "gnews_ind_에너지·화학_2",
+      "source_label": "뉴스1",
+      "title": "\"라면부터 미사일까지\"…50돌 현대코퍼, 사상 최대 실적 향해 순항",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA2eEpFM21lWWE2eEpqRVozSEJNQWozWDJjTWN2VlRkLS1feDNQUkdGYlJSQ2xId0Iwd2xiX3otUUhzT2J4bXQ0a0JMOEJEQ1V1R09GYzBYWmpNUTJUUkxsdnBmMWQ?oc=5",
+      "published": "2026-09-26",
+      "published_at": "2026-09-26T07:00:00",
+      "category": "에너지·화학",
       "companies": []
     },
     {
@@ -2503,6 +2467,16 @@
       ]
     },
     {
+      "source": "gnews_ind_금융·보험_3",
+      "source_label": "시사저널e",
+      "title": "4대 금융지주 상반기 11조 벌었다···하반기 실적 가를 변수는 '증권'",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA4RmhvX3RqZGNsck1jN1RwV1hkTzBIS2lpelF2ekd4LURKUlV0STlxVXFwZUdOb0pyS01zclFhZmpoUTZQTlo1b1EtM2xqUkdTeHBXRDRPNlhJUzdmUndEVlNQLXlORjE2VUEwS3VkVXpNd9IBdkFVX3lxTE5iTlNCTkFUVzRnWTViclo5M0xpTEU1WjBHMnM1NFA2N1dvaThNNE1kYjFtbW1mSEt0d3hHRTdFRGVoZ2lvSFZDU1dEcmtFVUEtdWhxb3FrdTFmMHZ3dzBTajU5eGZ4YTkzakYwMnM0M0lQN1V6aFE?oc=5",
+      "published": "2026-09-23",
+      "published_at": "2026-09-23T07:00:00",
+      "category": "금융·보험",
+      "companies": []
+    },
+    {
       "source": "gnews_ind_조선·방산·기계_2",
       "source_label": "글로벌이코노믹",
       "title": "HD한국조선해양, 로로선 2척 3362억원에 수주…지난해 연간 실적 넘어",
@@ -2523,14 +2497,16 @@
       ]
     },
     {
-      "source": "gnews_ind_조선·방산·기계_2",
-      "source_label": "뉴스핌",
-      "title": "고부가 수주 실적화 '갈림길'…조선 빅3, 추석 뒤 생산 안정 시험대",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1EMkpMLUxqbXZWbGR5QlRmZy13NFg0UzNEakxZUFJOTXAxV05heDhzWmtLU3hRcFg2Z2N4VHJPa0pwLW1pVHpfX1FFalJBVjRKOTd2RWVLYjBxaXIx?oc=5",
+      "source": "gnews_ind_에너지·화학_2",
+      "source_label": "https://www.theconnectmoney.com/",
+      "title": "\"같은 롯데 화학주인데 적자 9436억 vs 흑자 47%↑\"…롯데케미칼·정밀화학의 엇갈린 운명",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAteEdKVzE1cGdKSjRZLWRTT1p2M1lqY0ROR09TdzRDaG52ODlYQ2VQN1JpeG5mZjJId1Rya0x4X3pQLXJPZ2VLdm1hMk93Y1p5UFpkSVA2T1l2ZmNlTnIySw?oc=5",
       "published": "2026-09-22",
       "published_at": "2026-09-22T07:00:00",
-      "category": "조선·방산·기계",
-      "companies": []
+      "category": "에너지·화학",
+      "companies": [
+        "롯데케미칼"
+      ]
     },
     {
       "source": "gnews_ind_유통·소비재_2",
@@ -2544,6 +2520,16 @@
     },
     {
       "source": "gnews_ind_건설·부동산_2",
+      "source_label": "뉴스로드",
+      "title": "10대 건설사 하자판정률 최대 29배 격차… 보수 이행 실적도 공개해야",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9YdEpsOENmbG5PM1lKQlp6djd4QmhOakhtbUUwNDZ3RkJsQ1FUczYzT2kxc3Y2NWlyTjVPODNTWUo3VDUxQ2ZBeUEtTGhnWkxMQmVSZ2RXVG1xMkVKQ2czX2dmMGRiVGJsQ1NR0gFvQVVfeXFMUHBBY0pIZW13b29jdU42QkpUdGw3MGNJbnpyS1VCdkZnVnAzZHJGR2hOR3NQaGh4cmM4OFVyeFZ4RnR1NXJDQ0pGSHNWUGIyNmVHOWRiQzB5QXdqYjhqZTlFR1NJN0lGNGdFekJtNHZZ?oc=5",
+      "published": "2026-09-21",
+      "published_at": "2026-09-21T12:19:22",
+      "category": "건설·부동산",
+      "companies": []
+    },
+    {
+      "source": "gnews_ind_건설·부동산_2",
       "source_label": "미래경제",
       "title": "도시정비 수주 '역대급'…10대 건설사 사상 최대 실적 눈앞",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBwWkZydzJqSkJSSVgzZWNQRmFITHFnblhwNm0yekN3UkpxRHI2UkstQ1VBRmRaSkNLaTFkdXJaTVB5S3BfcjJKMTFSQ1VSTmhpdFBXd0JGdzRKYkdoUnk1V3YxLUFZY0RNVG9KWg?oc=5",
@@ -2551,6 +2537,18 @@
       "published_at": "2026-09-21T07:00:00",
       "category": "건설·부동산",
       "companies": []
+    },
+    {
+      "source": "gnews_ind_에너지·화학_2",
+      "source_label": "여성소비자신문",
+      "title": "[산업계 8월 동향] 금호석유화학, 2분기 실적 공개·‘케이앤에이치특수가스’ 흡수 합병 결정· 중증장애인 대상 맞춤형 보장구 지원·中 웨이하이시와 파트너십 강화",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE83dEI2dW1tb1VmM0FXdUR6SFFVRXZwY0lwLVVUUmhRLWxWb1hiTzI5RWV6ZGdXYTF4R2ZMOUZ6S25JMVNyM3RqS3o1Unp6MzVVVU83ZndZVGRVbjlaVjluU0szMA?oc=5",
+      "published": "2026-09-21",
+      "published_at": "2026-09-21T07:00:00",
+      "category": "에너지·화학",
+      "companies": [
+        "금호석유화학"
+      ]
     },
     {
       "source": "gnews_ind_제약·바이오_2",
@@ -2570,16 +2568,6 @@
       "published": "2026-09-20",
       "published_at": "2026-09-20T06:17:38",
       "category": "통신·미디어·엔터",
-      "companies": []
-    },
-    {
-      "source": "gnews_ind_유통·소비재_2",
-      "source_label": "투데이신문",
-      "title": "무신사 IPO 시동...유통업계 상장 움직임 이어질까",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE50OVBSeG1tRnZRLUxYRUJ4Uk9GRnE2dGlnLW52SEh2V25ZR2xicVhmQ0FaeERrN2NBRXgzcERPTGJiNER2ZWFqNWMySnFMcDVIM1Z0ZWhnWmVVcXBERXRoNG5rcFNjTVhPOS1F0gFvQVVfeXFMUERMSDlkam45cElHSjBwcHhkQVE3SVVXc2FHclpRb0V3OVRPQVh4aTZKVXZjcE1LVUdWV2ttMktwMEVpbU01SzdiWEV2R1BOLVEwOHRGUWNabVp0TmwyY3FrV0daU3VkZjI2ZTlRN1hR?oc=5",
-      "published": "2026-09-18",
-      "published_at": "2026-09-18T07:00:00",
-      "category": "유통·소비재",
       "companies": []
     }
   ]

@@ -1,6 +1,96 @@
 {
-  "generated_at": "2026-10-19T05:31:28",
+  "generated_at": "2026-10-19T06:01:39",
   "items": [
+    {
+      "source": "gnews_감사_2",
+      "source_label": "아시아경제",
+      "title": "금감원, 내년 감사인 지정 1193개사 사전통지",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE84cGVfR011aGlEX3JJN1NCQXZsVTZrTHJoZ09COWlZWUxnVjRqVzFYdlJHeWRRNmdxT2hIZUpzeWItdmJSVzZrRTY0a0w3VHFWY284YWNGd0wzcTZVU0JnTQ?oc=5",
+      "published": "2026-10-18",
+      "published_at": "2026-10-18T21:00:00",
+      "summary": "",
+      "category": "감사",
+      "dupes": [
+        {
+          "title": "내년부터 새 손익 회계기준 도입…시장서는 \"당분간 혼란 불가피\"",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE40V0JQQWRydWxYMXVnaFdnSUNCTjNYOWItbkFHbEs0MDExb2g3bUY1SmlCckNzUUtYcmxxNEplSFpNSVJQYlREdzg5VHExY0FqR3ZKRXJzbUtpUQ?oc=5",
+          "source_label": "한국경제",
+          "published": "2026-10-13"
+        },
+        {
+          "title": "내년부터 바뀌는 기업 영업이익 기준에 투자자 혼란 커질라…금감원, 사전검증 주문",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1XbEZYTE0xMXk5NmdzaTRnR0h3MkFfNU9IQXVoMkozdFdQVUgteGQxeW1jQTZNQWdQZlRvSG5QdFR1d3ItSi1yU2tlOGJrQ1I1SkE?oc=5",
+          "source_label": "매일경제 마켓",
+          "published": "2026-10-13"
+        },
+        {
+          "title": "기업 손익계산서 확 바뀐다…금감원, 새 회계기준 대비 주문",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9yVmNycGpmZGRGMVJBWktSWEZEUDZMZ1RHUFhfSGlqSkg5c2ZQWF8wcTJlZkxRUkR3VUM3ZUlzb3hCd2hIdVVRdjlBMkZsYVpOUmg4VEs3OG11WnhQdUVPYnVLRW1QWk9I?oc=5",
+          "source_label": "더쎈뉴스",
+          "published": "2026-10-13"
+        },
+        {
+          "title": "내년부터 기업 손익계산서 바뀐다⋯금감원 \"새 회계기준 대비해야\"",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5vbWtNd2xlMWZDeGdsX1BKWU5PSVAycU5qX2tqYXRGRV9hWXMzMTM2RUViZW1JYTh1TktzSXlQaVY3NDZWYy00aTRadmR1QlFwZnZJNQ?oc=5",
+          "source_label": "이투데이",
+          "published": "2026-10-12"
+        },
+        {
+          "title": "내년 새 회계기준 시행…금감원, 기업에 사전 준비 당부",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1DVjBKVS1Bai03amhmX0k4Zlg1X29uN1RWQjFRNElnYzBDX3JsZHIxVldxTUYzY21EZElaRlJ4eTlYYUdrb3BIWnlTbjZ0T095ZzNMMWlRTEtfeG1QcG9NYnctNXV4SXJodVBZNjJR?oc=5",
+          "source_label": "알파경제",
+          "published": "2026-10-13"
+        },
+        {
+          "title": "금감원, 내년 새 회계기준 시행… 기업 준비상황 점검 당부",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5PTnlLYzlLQklteE1MaW50MjZwRV9RQkRtZDAyal9rdVpCc1pvNXk0M2tCS2hLOVpFa18tVDFmd0VQTDh6bmVBZGR3dkdIU1VFR0ZrWWFrOFpRRkZ1a0Z1eUxsNG9UOG5ncjZF0gFvQVVfeXFMT3dydTBxd2xRSzI3ekVzdF9GVEdtakV1TURuT0VTOEFSbkloTURQV0UzX0F2NWk2MVFqYVBFaDdZN0M2V2xTOGhwR3N1RTB6QnNWUlhNLU9RNkVEbUpmZk12cXlUb3NXUmJJc2dWcFFn?oc=5",
+          "source_label": "한국보험신문",
+          "published": "2026-10-13"
+        },
+        {
+          "title": "내년 새 회계기준 도입…금감원 \"기업 준비상황 점검해야\"",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9HdzNlalNOQ0Z1V1Bvc3htT0dPUTdRUG9xQWtTZmx4Ty1YdGRVNHEwZHM1RmZnMDNNYy1ta3k4Rkp4c1c5ak5abFRaemlkMVJxSndadFVYbXBWV2PSAWBBVV95cUxNMmJYczY2eWxWNlcybDIyMGlQbFJleWNWRUZJMi1Sb0V5d2EyTzlWcm5mbER2WXdzOGpRQ0JHREtubElCVl9PV3ZtN1I0N0JYTmpfY19YYjhPZkQxelRwM0o?oc=5",
+          "source_label": "연합뉴스",
+          "published": "2026-10-12"
+        },
+        {
+          "title": "금감원, 새 회계기준 도입 준비 점검 당부",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE02Nk9mc3hILTlXeDBVVnpHN3JWckZfLWw1M1JCNFhDQk91TjFEcFhSNnZUWWt1dWtFRFdqT3ZRX3FqYkNTOTdYcHViU2U3VEZyY2ZpUDJjMlNzdG5w?oc=5",
+          "source_label": "뉴스핌",
+          "published": "2026-10-13"
+        },
+        {
+          "title": "기업 영업이익 계산법 바뀐다…금감원, 회계기준 전환 점검 당부",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE00LVhEUkZvUjFNMkdmeWNWUTVCWk82cDVtWW8wRmVsaE0xT1J4UU56VHRZVXpCZ3RqTUNpc2g2MEdPeWNub3U1SUw4aGFSTnZiRWtwMzFaN0Z0OUIwb2FHbnF2bXpFY2N2LWFxYzkxUEw0aU1a?oc=5",
+          "source_label": "파이낸셜포스트",
+          "published": "2026-10-12"
+        },
+        {
+          "title": "내년부터 새 회계기준 시행…기업 재무제표 세분화",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8yZ0pyNE1LMGprTTZkN3NfdmFabXRETUxaenRMcjdhVFVJWEFsRTlmNU9Kd0VjWktOeGF4cWgxY1J0QTBURmJrZngwbUh3bzVQQnhzYzNReDJidThrbFE?oc=5",
+          "source_label": "아시아타임즈",
+          "published": "2026-10-12"
+        },
+        {
+          "title": "내년 도입 新회계기준, 주요 변경사항은",
+          "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPM0dZeGJkUHNOMjdEM1dGTFI5SGUwTWNZdjBoeXR6aGphVUVRTGlid3pDWTg0eUxKMkFUMUpmUGlMMmZIOXA3SXVPSVVJVUFBeU9oam1hYW5xbHdydWs2TjZmMldfVllXdUZTMXlhUUNzd1FIVTFVTDAzSk9DUlNQR3l3QlJyTnN3MHk0V3ZibU02TjBpcmZpMzVicGVEeVBmZEgxVEpCYlZiSHRiOWZWTExtWExSLUVMN00xT0ZwbFZqYWpJWEhtcEdxNlZUNUNib0Z2aTV6TkRnQnJuTkxWaFhjanlUcWFOX19tVVR2TzVMSjQyNHc3cHUtUHp1TFJ4cTBzZTlyNkVuS3ZUcmVJdGhuM2FOOFU?oc=5",
+          "source_label": "데일리안",
+          "published": "2026-10-12"
+        },
+        {
+          "title": "내년 K-IFRS 제1118호 의무 적용…금감원 \"기업들, 도입 준비 철저히 해야\"",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ld2NBM0dGUjlxX25jVjFiQmV3cVdPQ0FLYzFUQU8yX2lqUEItQ0JJZ0hEdVBVai1rNmlrZXc5b2stUHhoYWdkdDZpQTAyTWdBM3ZnQUNYX3ZMMjI0cXNKUjBRcjN0UjJXYWNkYkdvSzNOT2c?oc=5",
+          "source_label": "마켓인",
+          "published": "2026-10-12"
+        },
+        {
+          "title": "[진단] 제각각 회계기준, '회계기본법'으로 통일되나",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1iZExnWDViSmtJa1VsVmpUS3MtTHpYcDNDQU1iWkFWMlBkYi1QMjljcW9za0MwUjE5Vmg4V2dkdDg5blhYZjFrNkhDRmRkbnZ2bjVla0pOR2xMenlvUEc4?oc=5",
+          "source_label": "조세일보",
+          "published": "2026-09-30"
+        }
+      ]
+    },
     {
       "source": "gnews_세무",
       "source_label": "연합뉴스TV",
@@ -110,24 +200,6 @@
       "category": "세무"
     },
     {
-      "source": "gnews_세무",
-      "source_label": "IT조선",
-      "title": "넷플릭스, 700억대 법인세 불복 소송 2심… 12월 18일 첫 변론",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5NUTBpX3pQVjcyZjY5QUZVeVZNMVd0RERSNkl4QmlhVXpONVBFWGlVOTV0WkpyLUdsemkxRlJBSlJaRVF5OV9FVVRhckp0RlJrZ2dEYTEtLUE2bm5Za2JlVHN0SFNVd04xR0dUOGZxQmktRmhf0gF0QVVfeXFMTk1RMGlfelBWNzJmNjlBRlV5Vk0xV3RERFI2SXhCaWFVek41UEVYaVU5NXRaSnItR2x6aTFGUkFKUlpFUXk5X0VVVGFySnRGUmtnZ0RhMS0tQTZubllrYmVUc3RIU1V3TjFHR1Q4ZnFCaS1GaF8?oc=5",
-      "published": "2026-10-16",
-      "published_at": "2026-10-16T09:18:48",
-      "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "[심층] 넷플릭스, 1조 벌어 세금 66억…'이전가격 반환'은 1600억 쌓았다",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBrb2xrYWJMNUhVVm9CX1ctU182V2x2NHFKNUkwZG5KUlZub2NUYmEwOE9mSzk5YzMzLXF1aktHUGVibkNlTlZmaENGS3hEMDRSSG56ME5FcE9pbkRmQW0xVkVGbmQ4dEY0YnhoSXZR?oc=5",
-          "source_label": "알파경제",
-          "published": "2026-10-15"
-        }
-      ]
-    },
-    {
       "source": "gnews_감사_2",
       "source_label": "에너지경제신문",
       "title": "법원 “증선위, 시타델 HFT의 무엇이 문제란거냐?”…118억 과징금 항소심 첫 변론",
@@ -202,6 +274,16 @@
           "published": "2026-10-02"
         }
       ]
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "알파경제",
+      "title": "[심층] 넷플릭스, 1조 벌어 세금 66억…'이전가격 반환'은 1600억 쌓았다",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBrb2xrYWJMNUhVVm9CX1ctU182V2x2NHFKNUkwZG5KUlZub2NUYmEwOE9mSzk5YzMzLXF1aktHUGVibkNlTlZmaENGS3hEMDRSSG56ME5FcE9pbkRmQW0xVkVGbmQ4dEY0YnhoSXZR?oc=5",
+      "published": "2026-10-15",
+      "published_at": "2026-10-15T23:08:33",
+      "summary": "",
+      "category": "세무"
     },
     {
       "source": "gnews_세무",
@@ -456,90 +538,6 @@
           "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9oYXdlQktIOUxlc2FVcXJzczZ1ZzZBV0hzZWF6V094QmFoZ1VQSTZOVzBfaW9CbHlNV2ZjZ1VVZ21iTG13QW5Vd21jOVNxODdXZFZ3OXktVFFFVzZ5TlF2N1k2N2NsejlyNDV4VDYxVmQ?oc=5",
           "source_label": "연합인포맥스",
           "published": "2026-10-13"
-        }
-      ]
-    },
-    {
-      "source": "gnews_감사",
-      "source_label": "한국경제",
-      "title": "내년부터 새 손익 회계기준 도입…시장서는 \"당분간 혼란 불가피\"",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE40V0JQQWRydWxYMXVnaFdnSUNCTjNYOWItbkFHbEs0MDExb2g3bUY1SmlCckNzUUtYcmxxNEplSFpNSVJQYlREdzg5VHExY0FqR3ZKRXJzbUtpUQ?oc=5",
-      "published": "2026-10-13",
-      "published_at": "2026-10-13T07:41:52",
-      "summary": "",
-      "category": "감사",
-      "dupes": [
-        {
-          "title": "내년부터 바뀌는 기업 영업이익 기준에 투자자 혼란 커질라…금감원, 사전검증 주문",
-          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1XbEZYTE0xMXk5NmdzaTRnR0h3MkFfNU9IQXVoMkozdFdQVUgteGQxeW1jQTZNQWdQZlRvSG5QdFR1d3ItSi1yU2tlOGJrQ1I1SkE?oc=5",
-          "source_label": "매일경제 마켓",
-          "published": "2026-10-13"
-        },
-        {
-          "title": "기업 손익계산서 확 바뀐다…금감원, 새 회계기준 대비 주문",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9yVmNycGpmZGRGMVJBWktSWEZEUDZMZ1RHUFhfSGlqSkg5c2ZQWF8wcTJlZkxRUkR3VUM3ZUlzb3hCd2hIdVVRdjlBMkZsYVpOUmg4VEs3OG11WnhQdUVPYnVLRW1QWk9I?oc=5",
-          "source_label": "더쎈뉴스",
-          "published": "2026-10-13"
-        },
-        {
-          "title": "내년부터 기업 손익계산서 바뀐다⋯금감원 \"새 회계기준 대비해야\"",
-          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5vbWtNd2xlMWZDeGdsX1BKWU5PSVAycU5qX2tqYXRGRV9hWXMzMTM2RUViZW1JYTh1TktzSXlQaVY3NDZWYy00aTRadmR1QlFwZnZJNQ?oc=5",
-          "source_label": "이투데이",
-          "published": "2026-10-12"
-        },
-        {
-          "title": "내년 새 회계기준 시행…금감원, 기업에 사전 준비 당부",
-          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1DVjBKVS1Bai03amhmX0k4Zlg1X29uN1RWQjFRNElnYzBDX3JsZHIxVldxTUYzY21EZElaRlJ4eTlYYUdrb3BIWnlTbjZ0T095ZzNMMWlRTEtfeG1QcG9NYnctNXV4SXJodVBZNjJR?oc=5",
-          "source_label": "알파경제",
-          "published": "2026-10-13"
-        },
-        {
-          "title": "금감원, 내년 새 회계기준 시행… 기업 준비상황 점검 당부",
-          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5PTnlLYzlLQklteE1MaW50MjZwRV9RQkRtZDAyal9rdVpCc1pvNXk0M2tCS2hLOVpFa18tVDFmd0VQTDh6bmVBZGR3dkdIU1VFR0ZrWWFrOFpRRkZ1a0Z1eUxsNG9UOG5ncjZF0gFvQVVfeXFMT3dydTBxd2xRSzI3ekVzdF9GVEdtakV1TURuT0VTOEFSbkloTURQV0UzX0F2NWk2MVFqYVBFaDdZN0M2V2xTOGhwR3N1RTB6QnNWUlhNLU9RNkVEbUpmZk12cXlUb3NXUmJJc2dWcFFn?oc=5",
-          "source_label": "한국보험신문",
-          "published": "2026-10-13"
-        },
-        {
-          "title": "내년 새 회계기준 도입…금감원 \"기업 준비상황 점검해야\"",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9HdzNlalNOQ0Z1V1Bvc3htT0dPUTdRUG9xQWtTZmx4Ty1YdGRVNHEwZHM1RmZnMDNNYy1ta3k4Rkp4c1c5ak5abFRaemlkMVJxSndadFVYbXBWV2PSAWBBVV95cUxNMmJYczY2eWxWNlcybDIyMGlQbFJleWNWRUZJMi1Sb0V5d2EyTzlWcm5mbER2WXdzOGpRQ0JHREtubElCVl9PV3ZtN1I0N0JYTmpfY19YYjhPZkQxelRwM0o?oc=5",
-          "source_label": "연합뉴스",
-          "published": "2026-10-12"
-        },
-        {
-          "title": "금감원, 새 회계기준 도입 준비 점검 당부",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE02Nk9mc3hILTlXeDBVVnpHN3JWckZfLWw1M1JCNFhDQk91TjFEcFhSNnZUWWt1dWtFRFdqT3ZRX3FqYkNTOTdYcHViU2U3VEZyY2ZpUDJjMlNzdG5w?oc=5",
-          "source_label": "뉴스핌",
-          "published": "2026-10-13"
-        },
-        {
-          "title": "기업 영업이익 계산법 바뀐다…금감원, 회계기준 전환 점검 당부",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE00LVhEUkZvUjFNMkdmeWNWUTVCWk82cDVtWW8wRmVsaE0xT1J4UU56VHRZVXpCZ3RqTUNpc2g2MEdPeWNub3U1SUw4aGFSTnZiRWtwMzFaN0Z0OUIwb2FHbnF2bXpFY2N2LWFxYzkxUEw0aU1a?oc=5",
-          "source_label": "파이낸셜포스트",
-          "published": "2026-10-12"
-        },
-        {
-          "title": "내년부터 새 회계기준 시행…기업 재무제표 세분화",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8yZ0pyNE1LMGprTTZkN3NfdmFabXRETUxaenRMcjdhVFVJWEFsRTlmNU9Kd0VjWktOeGF4cWgxY1J0QTBURmJrZngwbUh3bzVQQnhzYzNReDJidThrbFE?oc=5",
-          "source_label": "아시아타임즈",
-          "published": "2026-10-12"
-        },
-        {
-          "title": "내년 도입 新회계기준, 주요 변경사항은",
-          "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPM0dZeGJkUHNOMjdEM1dGTFI5SGUwTWNZdjBoeXR6aGphVUVRTGlid3pDWTg0eUxKMkFUMUpmUGlMMmZIOXA3SXVPSVVJVUFBeU9oam1hYW5xbHdydWs2TjZmMldfVllXdUZTMXlhUUNzd1FIVTFVTDAzSk9DUlNQR3l3QlJyTnN3MHk0V3ZibU02TjBpcmZpMzVicGVEeVBmZEgxVEpCYlZiSHRiOWZWTExtWExSLUVMN00xT0ZwbFZqYWpJWEhtcEdxNlZUNUNib0Z2aTV6TkRnQnJuTkxWaFhjanlUcWFOX19tVVR2TzVMSjQyNHc3cHUtUHp1TFJ4cTBzZTlyNkVuS3ZUcmVJdGhuM2FOOFU?oc=5",
-          "source_label": "데일리안",
-          "published": "2026-10-12"
-        },
-        {
-          "title": "내년 K-IFRS 제1118호 의무 적용…금감원 \"기업들, 도입 준비 철저히 해야\"",
-          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ld2NBM0dGUjlxX25jVjFiQmV3cVdPQ0FLYzFUQU8yX2lqUEItQ0JJZ0hEdVBVai1rNmlrZXc5b2stUHhoYWdkdDZpQTAyTWdBM3ZnQUNYX3ZMMjI0cXNKUjBRcjN0UjJXYWNkYkdvSzNOT2c?oc=5",
-          "source_label": "마켓인",
-          "published": "2026-10-12"
-        },
-        {
-          "title": "[진단] 제각각 회계기준, '회계기본법'으로 통일되나",
-          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1iZExnWDViSmtJa1VsVmpUS3MtTHpYcDNDQU1iWkFWMlBkYi1QMjljcW9za0MwUjE5Vmg4V2dkdDg5blhYZjFrNkhDRmRkbnZ2bjVla0pOR2xMenlvUEc4?oc=5",
-          "source_label": "조세일보",
-          "published": "2026-09-30"
         }
       ]
     },
@@ -827,11 +825,11 @@
     },
     {
       "source": "gnews_채용·시험",
-      "source_label": "이데일리",
+      "source_label": "Nate News",
       "title": "회계사 시험 붙고도 '쉬었음'…전문직도 못 피한 한파",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQX0xZMllQczR0d2U0MkZHdDFDd0s5ZzFyc3RwZVNhYTJuejg4S3RBMmt0QjlOMjlmX2ZFV2xsbjJFckNKY3ZJMjdCUy1XbGxiQ1prOWRrOEUydnZWQ2VnNmlqTmduOG9XV1I5bjJ3XzJqNGFKMlRHS2F4anp2bjRWYQ?oc=5",
-      "published": "2026-08-25",
-      "published_at": "2026-08-25T07:00:00",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1hRnFnVWRmdm15VG1yMkM4OVZ3NDBjU1I0WnQyV2V4N2RZcW5wckgwOXBob3lsV05FbVBYa1g3OGpQdUVTNjgwc3hUelVSeGVlSnlJ?oc=5",
+      "published": "2026-08-24",
+      "published_at": "2026-08-24T20:05:00",
       "summary": "",
       "category": "채용·시험"
     }

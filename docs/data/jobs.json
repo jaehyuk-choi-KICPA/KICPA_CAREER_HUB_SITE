@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-19T11:31:29",
+  "generated_at": "2026-10-19T12:01:38",
   "soon_days": 7,
   "counts": {
     "total": 80,
-    "open": 51,
-    "closed": 29,
-    "new": 4,
-    "soon": 18,
+    "open": 52,
+    "closed": 28,
+    "new": 5,
+    "soon": 19,
     "by_firm": {
       "삼일": 3,
       "삼정": 4,
@@ -21,9 +21,9 @@
     },
     "by_emp_kind": {
       "인턴": 23,
-      "정규직": 37,
+      "정규직": 36,
       "계약직": 3,
-      "파트타임": 17
+      "파트타임": 18
     }
   },
   "postings": [
@@ -254,6 +254,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792048096032",
       "dday": 4,
       "first_seen": "2026-10-15T16:31:23"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[우리회계법인] 수습공인회계사 채용 공고",
+      "company": "우리회계법인",
+      "deadline": "2026-10-23",
+      "posted_date": "2026-10-19",
+      "location": "서울 강남구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792377522642",
+      "dday": 4,
+      "first_seen": "2026-10-19T12:01:38"
     },
     {
       "source": "kicpa_susup",
@@ -1392,25 +1411,6 @@
       "location": "서울 강남구",
       "emp_type": "계약직",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1790153896556",
-      "dday": -15,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "[태경회계법인] 수습공인회계사 채용 공고",
-      "company": "태경회계법인",
-      "deadline": "2026-10-04",
-      "posted_date": "2026-09-24",
-      "location": "서울 강남구",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790176935201",
       "dday": -15,
       "first_seen": ""
     },

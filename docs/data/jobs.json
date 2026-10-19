@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-19T14:01:32",
+  "generated_at": "2026-10-19T14:31:30",
   "soon_days": 7,
   "counts": {
     "total": 81,
     "open": 53,
     "closed": 28,
     "new": 7,
-    "soon": 19,
+    "soon": 20,
     "by_firm": {
       "삼일": 3,
       "삼정": 4,
@@ -21,9 +21,9 @@
     },
     "by_emp_kind": {
       "인턴": 24,
-      "정규직": 36,
+      "정규직": 37,
       "계약직": 3,
-      "파트타임": 18
+      "파트타임": 17
     }
   },
   "postings": [
@@ -216,6 +216,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131232",
       "dday": 3,
       "first_seen": "2026-10-14T14:31:19"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": false,
+      "title": "[선영회계법인] 수습공인회계사 채용",
+      "company": "선영회계법인",
+      "deadline": "2026-10-23",
+      "posted_date": "2026-10-12",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791784904743",
+      "dday": 4,
+      "first_seen": "2026-10-12T15:31:31"
     },
     {
       "source": "kicpa_susup",
@@ -558,25 +577,6 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792114285617",
       "dday": 11,
       "first_seen": "2026-10-16T11:01:36"
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "파트타임",
-      "status": "open",
-      "is_new": false,
-      "title": "[해림회계법인] 수습공인회계사 채용",
-      "company": "해림회계법인",
-      "deadline": "2026-10-30",
-      "posted_date": "2026-10-16",
-      "location": "서울 전체",
-      "emp_type": "Part Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790644778592",
-      "dday": 11,
-      "first_seen": "2026-10-16T09:01:40"
     },
     {
       "source": "kicpa_susup",

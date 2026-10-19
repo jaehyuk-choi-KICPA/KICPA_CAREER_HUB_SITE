@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-10-19T13:01:34",
+  "generated_at": "2026-10-19T13:31:25",
   "soon_days": 7,
   "counts": {
-    "total": 80,
-    "open": 52,
+    "total": 81,
+    "open": 53,
     "closed": 28,
-    "new": 6,
+    "new": 7,
     "soon": 19,
     "by_firm": {
       "삼일": 3,
       "삼정": 4,
-      "안진": 6,
+      "안진": 7,
       "한영": 24,
       "로컬": 40,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 47,
-      "자격무관": 33
+      "자격무관": 34
     },
     "by_emp_kind": {
-      "인턴": 23,
+      "인턴": 24,
       "정규직": 36,
       "계약직": 3,
       "파트타임": 18
@@ -843,6 +843,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5221",
       "dday": 17,
       "first_seen": "2026-10-12T10:32:20"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "택스",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "세무자문부문 인턴 채용",
+      "company": "딜로이트 안진",
+      "deadline": "2026-11-06",
+      "posted_date": "2026-10-19",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5228",
+      "dday": 18,
+      "first_seen": "2026-10-19T13:31:25"
     },
     {
       "source": "kicpa_cpa",

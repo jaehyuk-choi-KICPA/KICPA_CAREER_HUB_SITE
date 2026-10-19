@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-20T08:01:36",
+  "generated_at": "2026-10-20T08:31:31",
   "soon_days": 7,
   "counts": {
     "total": 80,
     "open": 50,
     "closed": 30,
-    "new": 12,
+    "new": 11,
     "soon": 16,
     "by_firm": {
       "삼일": 3,
@@ -358,7 +358,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "파트타임 공인회계사 시보 모집",
       "company": "참회계법인",
       "deadline": "2026-10-28",

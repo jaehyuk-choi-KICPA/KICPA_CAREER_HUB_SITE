@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-19T10:31:27",
+  "generated_at": "2026-10-19T11:02:04",
   "soon_days": 7,
   "counts": {
     "total": 80,
     "open": 51,
     "closed": 29,
-    "new": 3,
-    "soon": 19,
+    "new": 4,
+    "soon": 18,
     "by_firm": {
       "삼일": 3,
       "삼정": 4,
@@ -254,25 +254,6 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792048096032",
       "dday": 4,
       "first_seen": "2026-10-15T16:31:23"
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "파트타임",
-      "status": "open",
-      "is_new": false,
-      "title": "[신한회계법인] 파트타임 수습회계사 모집 공고",
-      "company": "신한회계법인",
-      "deadline": "2026-10-23",
-      "posted_date": "2026-10-16",
-      "location": "서울 영등포구",
-      "emp_type": "Part Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792156516815",
-      "dday": 4,
-      "first_seen": "2026-10-16T22:31:31"
     },
     {
       "source": "kicpa_susup",
@@ -805,6 +786,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5220",
       "dday": 14,
       "first_seen": "2026-10-12T10:32:20"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[선일회계법인(광주지점)]파트타임 수습회계사 모집 공고",
+      "company": "선일회계법인",
+      "deadline": "2026-11-02",
+      "posted_date": "2026-10-19",
+      "location": "광주 전체",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792374050295",
+      "dday": 14,
+      "first_seen": "2026-10-19T11:02:04"
     },
     {
       "source": "anjin",

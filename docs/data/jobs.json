@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-10-20T17:31:46",
+  "generated_at": "2026-10-20T18:01:42",
   "soon_days": 7,
   "counts": {
-    "total": 86,
-    "open": 57,
+    "total": 87,
+    "open": 58,
     "closed": 29,
-    "new": 9,
-    "soon": 19,
+    "new": 10,
+    "soon": 20,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
       "안진": 8,
-      "한영": 27,
+      "한영": 28,
       "로컬": 43,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 49,
-      "자격무관": 37
+      "자격무관": 38
     },
     "by_emp_kind": {
-      "인턴": 25,
+      "인턴": 26,
       "정규직": 41,
       "계약직": 3,
       "파트타임": 17
@@ -387,6 +387,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131784",
       "dday": 6,
       "first_seen": "2026-10-20T15:31:26"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "감사부문 리스크관리 지원 단기 인턴(3개월)",
+      "company": "EY한영",
+      "deadline": "2026-10-26",
+      "posted_date": "2026-10-20",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131812",
+      "dday": 6,
+      "first_seen": "2026-10-20T18:01:42"
     },
     {
       "source": "hanyoung",

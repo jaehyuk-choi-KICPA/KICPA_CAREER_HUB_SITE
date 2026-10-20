@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-20T13:01:28",
+  "generated_at": "2026-10-20T13:31:32",
   "soon_days": 7,
   "counts": {
     "total": 82,
     "open": 52,
     "closed": 30,
-    "new": 10,
+    "new": 9,
     "soon": 16,
     "by_firm": {
       "삼일": 3,
@@ -814,7 +814,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "세무자문부문 인턴 채용",
       "company": "딜로이트 안진",
       "deadline": "2026-11-06",

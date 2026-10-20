@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-20T10:01:53",
+  "generated_at": "2026-10-20T10:31:31",
   "soon_days": 7,
   "counts": {
-    "total": 80,
-    "open": 50,
+    "total": 81,
+    "open": 51,
     "closed": 30,
     "new": 11,
-    "soon": 15,
+    "soon": 16,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
       "안진": 8,
-      "한영": 25,
+      "한영": 26,
       "로컬": 39,
       "기타": 2
     },
     "by_qualification": {
       "수습CPA": 45,
-      "자격무관": 35
+      "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 24,
-      "정규직": 36,
+      "정규직": 37,
       "계약직": 3,
       "파트타임": 17
     }
@@ -235,6 +235,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131665",
       "dday": 5,
       "first_seen": "2026-10-19T15:31:28"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "FP&A (Financial Planning & Analysis) [경력/리더급]",
+      "company": "EY한영",
+      "deadline": "2026-10-25",
+      "posted_date": "2026-10-20",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131744",
+      "dday": 5,
+      "first_seen": "2026-10-20T10:31:31"
     },
     {
       "source": "kicpa_susup",
@@ -795,7 +814,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[현대회계법인] 3본부(신입~1년경력)",
       "company": "현대회계법인",
       "deadline": "2026-11-12",

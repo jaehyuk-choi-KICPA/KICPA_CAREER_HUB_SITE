@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T19:31:34",
+  "generated_at": "2026-10-20T20:01:43",
   "items": [
     {
       "source": "gnews_감사_2",
@@ -784,6 +784,16 @@
       "category": "감사"
     },
     {
+      "source": "gnews_감사",
+      "source_label": "이데일리",
+      "title": "금감원 임원 정원 27년 만에 확대 추진…부원장보 9→10명",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOdnhSMU9tSUQ2TjRXV2F3Q2l5LS1TNXd4RkY3UW9PY3hsQ0V6M3I5RUUtcjh5eUplam5FQ2lyNHQ5dVpOODdoY0wxV3FyZlpmSEFiTGdnakJhMU1mUlQ5U085WjJlU2o2NTU2U1djc0J4cTlRVV92VmdmZ1BrVURwTA?oc=5",
+      "published": "2026-10-05",
+      "published_at": "2026-10-05T07:00:00",
+      "summary": "",
+      "category": "감사"
+    },
+    {
       "source": "gnews_세무",
       "source_label": "Daily NTN",
       "title": "국세청, 최근 7년간 FIU정보 세무조사 활용 14조1254억 추징",
@@ -795,13 +805,21 @@
     },
     {
       "source": "gnews_감사",
-      "source_label": "지디넷코리아",
-      "title": "영림원소프트랩, IFRS 18 대응 ERP 고도화…천안·수원서 고객 세미나 개최",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB1VEh0SFRMMkIxOFdsSVpKWWZyMkZOdE1VTERIV2xVMHpVN3Z4YjMwR2dmVERPc2ZUTk1XMmpSWFVnM05PeC03Y3VIeXJHTDJIVEQ3NlRB?oc=5",
+      "source_label": "뉴시스",
+      "title": "영림원소프트랩, 새 국제회계기준 맞춰 ERP 고도화…전국 세미나 확대",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5ZMHp3YWx6TzQ5dnBKS184cmdTb1VoSV82WVNKejdQaE00VEdWWTVDcm96R3ZnUnpoSGQ5RFFkVVd1ckV1QzhieWRrNXU3SzBNSjR5YkJWbnVYaWZvZDczR9IBeEFVX3lxTFA2LXFMaFRkUjlDUjVrVF9GMVliZk5sYUNteHo0NWxqN2Q0bzBNZHZQNnYyVU5IN3g2aHpzQ2JiX3FnVWxLTkZnQzFhYnhvTk5tUzNORi12LU1QU1poQmtQemxWX0hQclVGOVR4cWczX3VlT1RjSm9aMQ?oc=5",
       "published": "2026-10-01",
       "published_at": "2026-10-01T07:00:00",
       "summary": "",
-      "category": "감사"
+      "category": "감사",
+      "dupes": [
+        {
+          "title": "영림원소프트랩, IFRS 18 대응 ERP 고도화…천안·수원서 고객 세미나 개최",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFB1VEh0SFRMMkIxOFdsSVpKWWZyMkZOdE1VTERIV2xVMHpVN3Z4YjMwR2dmVERPc2ZUTk1XMmpSWFVnM05PeC03Y3VIeXJHTDJIVEQ3NlRB?oc=5",
+          "source_label": "지디넷코리아",
+          "published": "2026-10-01"
+        }
+      ]
     },
     {
       "source": "gnews_감사_2",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T09:01:48",
+  "generated_at": "2026-10-20T09:31:26",
   "items": [
     {
       "source": "gnews_세무",
@@ -272,12 +272,6 @@
           "published": "2026-10-12"
         },
         {
-          "title": "내년부터 손익계산서 확 바뀐다…금감원 “사전 점검 철저히”",
-          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5VSGp6NzNrVXNlSzhQUmdvbkZtNGppNmN0SFhYSW9YYTZWTk9JZHVtSms0YmZNa0VwVXZCQ0lieFVIY09PdG5Td3JXNXhROVJ3QjZYRF9B?oc=5",
-          "source_label": "헤럴드경제",
-          "published": "2026-10-12"
-        },
-        {
           "title": "내년 도입 新회계기준, 주요 변경사항은",
           "url": "https://news.google.com/rss/articles/CBMilwJBVV95cUxPM0dZeGJkUHNOMjdEM1dGTFI5SGUwTWNZdjBoeXR6aGphVUVRTGlid3pDWTg0eUxKMkFUMUpmUGlMMmZIOXA3SXVPSVVJVUFBeU9oam1hYW5xbHdydWs2TjZmMldfVllXdUZTMXlhUUNzd1FIVTFVTDAzSk9DUlNQR3l3QlJyTnN3MHk0V3ZibU02TjBpcmZpMzVicGVEeVBmZEgxVEpCYlZiSHRiOWZWTExtWExSLUVMN00xT0ZwbFZqYWpJWEhtcEdxNlZUNUNib0Z2aTV6TkRnQnJuTkxWaFhjanlUcWFOX19tVVR2TzVMSjQyNHc3cHUtUHp1TFJ4cTBzZTlyNkVuS3ZUcmVJdGhuM2FOOFU?oc=5",
           "source_label": "데일리안",
@@ -517,7 +511,21 @@
       "published": "2026-10-16",
       "published_at": "2026-10-16T01:08:47",
       "summary": "",
-      "category": "세무"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "국세청, 최근 5년간 법인 특별세무조사로 11조4670억 부과",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1LMEpLa3dZQjhyd29FVXl2TmFJVWFVelF2U0VxejZRN3I4a3I5cF9CNzFibW9fNEFiTGcxU3FEM1Y2Y1VVR1IybDA4emtheUV1aFB6YWdtNzMydkpabXNkdEoySjhWZDVMc1E?oc=5",
+          "source_label": "Daily NTN",
+          "published": "2026-10-14"
+        },
+        {
+          "title": "국세청, 최근 7년간 FIU정보 세무조사 활용 14조1254억 추징",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5IYkVadWgxblN5WmxveXN1Qjd6X0lFcnB0QWsxVGNHbHZuaW8yMC1CZUJ0VVJfYnAwZjI5ZDNBT2hwTTdJRzM4ZXp3SHRaeHlrUWFqYXJfSEoxNVE2SFZNZmtWVC1USFh4anc?oc=5",
+          "source_label": "Daily NTN",
+          "published": "2026-10-02"
+        }
+      ]
     },
     {
       "source": "gnews_세무",
@@ -531,21 +539,11 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "메트로신문",
-      "title": "반도체·법인세 덕 나라살림적자 8년래 최소",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5pbldQYVB1cGZtZThnaDJfQWdIRWVHb1RaYnQ5and2UTFKTjFNR05HZS1NblFYdXVRNEhqeS0tRWZVLWJfSDkxMFUwQUNiSFBBUVZkcWVTYkFOWE5kemkwXw?oc=5",
+      "source_label": "택스워치",
+      "title": "[정보보고]이게 비공개 맞나?…세무조사 발표때 남은 '흔적'",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE8xbG1hci1Ddm1YUnc0cXMxMGQ4YmxHQk41SnF4SEluYVZlamF3Mkp0TU9zUlpxRjFacjJDZnFwbkR5emdVdEs0eEpxMm9ZNGJQbEVMcExWRFo2ekpmcEI4VWdsTTM?oc=5",
       "published": "2026-10-15",
-      "published_at": "2026-10-15T06:11:57",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "문화일보",
-      "title": "‘정부, 반도체 너만 믿는다!’…법인세 28조 늘었지만 ‘피크아웃’ 우려 커져",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE90MndwOXNJUmVFN1YtNFhCYV9PNUVsUVllNjdDWWtfRjRMOFBKeGh4T3Y2OVJEUzBRNS1PemR4T09POVpGM0lNekhHY3hlTThF?oc=5",
-      "published": "2026-10-15",
-      "published_at": "2026-10-15T03:16:05",
+      "published_at": "2026-10-15T05:13:01",
       "summary": "",
       "category": "세무"
     },
@@ -752,16 +750,6 @@
       "published_at": "2026-10-06T07:00:00",
       "summary": "",
       "category": "감사"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "Daily NTN",
-      "title": "국세청, 최근 7년간 FIU정보 세무조사 활용 14조1254억 추징",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5IYkVadWgxblN5WmxveXN1Qjd6X0lFcnB0QWsxVGNHbHZuaW8yMC1CZUJ0VVJfYnAwZjI5ZDNBT2hwTTdJRzM4ZXp3SHRaeHlrUWFqYXJfSEoxNVE2SFZNZmtWVC1USFh4anc?oc=5",
-      "published": "2026-10-02",
-      "published_at": "2026-10-02T07:00:00",
-      "summary": "",
-      "category": "세무"
     },
     {
       "source": "gnews_감사",

@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-20T09:01:45",
+  "generated_at": "2026-10-20T09:31:23",
   "soon_days": 7,
   "counts": {
     "total": 80,
     "open": 50,
     "closed": 30,
     "new": 12,
-    "soon": 16,
+    "soon": 15,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
-      "안진": 7,
-      "한영": 26,
+      "안진": 8,
+      "한영": 25,
       "로컬": 39,
       "기타": 2
     },
@@ -20,10 +20,10 @@
       "자격무관": 35
     },
     "by_emp_kind": {
-      "인턴": 25,
-      "정규직": 34,
+      "인턴": 24,
+      "정규직": 36,
       "계약직": 3,
-      "파트타임": 18
+      "파트타임": 17
     }
   },
   "postings": [
@@ -178,25 +178,6 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792048096032",
       "dday": 3,
       "first_seen": "2026-10-15T16:31:23"
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "파트타임",
-      "status": "open",
-      "is_new": true,
-      "title": "[우리회계법인] 수습공인회계사 채용 공고",
-      "company": "우리회계법인",
-      "deadline": "2026-10-23",
-      "posted_date": "2026-10-19",
-      "location": "서울 강남구",
-      "emp_type": "Part Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792377522642",
-      "dday": 3,
-      "first_seen": "2026-10-19T12:01:38"
     },
     {
       "source": "kicpa_susup",
@@ -845,6 +826,25 @@
       "first_seen": "2026-10-15T15:31:30"
     },
     {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "경영지원부문 IT AI 엔지니어 채용",
+      "company": "딜로이트 안진",
+      "deadline": "2026-11-19",
+      "posted_date": "2026-10-19",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5231",
+      "dday": 30,
+      "first_seen": "2026-10-20T09:31:23"
+    },
+    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "로컬",
@@ -1377,6 +1377,25 @@
       "first_seen": ""
     },
     {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "closed",
+      "is_new": false,
+      "title": "[태경회계법인] 수습공인회계사 채용 공고",
+      "company": "태경회계법인",
+      "deadline": "2026-10-04",
+      "posted_date": "2026-09-24",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1790176935201",
+      "dday": -16,
+      "first_seen": ""
+    },
+    {
       "source": "hanyoung",
       "source_label": "EY한영",
       "firm": "한영",
@@ -1506,25 +1525,6 @@
       "location": "",
       "emp_type": "전체",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/130610",
-      "dday": -1,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "컨설팅부문 업무 혁신 프로젝트 인턴",
-      "company": "EY한영",
-      "deadline": "2026-10-19",
-      "posted_date": "2026-10-12",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/130990",
       "dday": -1,
       "first_seen": ""
     },

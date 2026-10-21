@@ -1,15 +1,23 @@
 {
-  "generated_at": "2026-10-22T06:31:41",
+  "generated_at": "2026-10-22T07:01:42",
   "items": [
     {
       "source": "gnews_세무",
-      "source_label": "연합뉴스",
-      "title": "\"법인세 5년 증가분 90%가 수도권 집중…서울 특히 쏠려\"",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1iV2RnOHBCTFFWeDlCa0x1dG4tQ2xzTnY0NnBUemRDVHVSTk9MQzBsWDhmeWoyWVNOUjdIUWJibGdCY05XdlZ1Z1dGV091R1BfQ3BTYTEzVVdNejg?oc=5",
+      "source_label": "핀포인트뉴스",
+      "title": "최근 5년 법인세 증가분 89.5% 수도권 몫…서울이 절반 넘어",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB3RlZ1bjJMTmJtY3Q4bkh0QVBEamY2dHNWVVBwNkhJMkJuQnZaaTJkV2NwQlIwYk1VWFpxMWZPWXN1eHBybEZHc0hIYk1vbTl2WWNaMk9GZDRlUExWTmFlQlk5T1poVWdJYUk0bnkwbUdULUXSAXdBVV95cUxNWnNyYl9XZHZQMk93TnVNbnluQVVQdVJ5ZmRoMkoxMjB6eUZ6MG5ObG83dnNrNnJDZ1hndU15QXlucTVCMDBMZ2FpOXY0ZUNQZVRJTlJ5cUk0YnRoMlpOejR3X0M5NmdNSjJDQlUycFdlWEpjUkpUOA?oc=5",
       "published": "2026-10-21",
-      "published_at": "2026-10-21T20:55:12",
+      "published_at": "2026-10-21T21:33:54",
       "summary": "",
-      "category": "세무"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "\"법인세 5년 증가분 90%가 수도권 집중…서울 특히 쏠려\"",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1iV2RnOHBCTFFWeDlCa0x1dG4tQ2xzTnY0NnBUemRDVHVSTk9MQzBsWDhmeWoyWVNOUjdIUWJibGdCY05XdlZ1Z1dGV091R1BfQ3BTYTEzVVdNejg?oc=5",
+          "source_label": "연합뉴스",
+          "published": "2026-10-21"
+        }
+      ]
     },
     {
       "source": "gnews_감사_2",
@@ -21,18 +29,6 @@
       "summary": "",
       "category": "감사",
       "dupes": [
-        {
-          "title": "금융위, '회계처리 위반' 해태제과에 9억 과징금·감사인지정 3년",
-          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1nVW9jUjhaYTVIc1p6ZjFubzYwSEFsUDl4Zkw3dkpKN2hoeHJoUHFBVDFVa3kwZm5XSEpwM0lXcUd3ZjRiZkhVcThYYlNRa0dfOFZCdUFENUpLVGFWclp2UTNvcw?oc=5",
-          "source_label": "조세금융신문",
-          "published": "2026-10-21"
-        },
-        {
-          "title": "금융위, '회계처리기준 위반' 해태제과식품에 9억 과징금·감사인지정 3년",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE51NzR2NVdEeWlqZ2NCM1llbXpDdF9kV0IwSmQzUTI2RVR4SFY0dEN0RmFpWEY5cFMwQnNWSnRPeVlJLWY0M25kcHZMT1kxZ0lqekJJeFd1eDRIVEVhNjVhUl9B?oc=5",
-          "source_label": "아시아경제",
-          "published": "2026-10-21"
-        },
         {
           "title": "금융위원회, '회계부정 드러난 해태제과' 등에 13억대 과징금…경영진 조치 병행",
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1pX2JaN1I2aElNM2Q5MmF2UnJzUzNRN05GX3BwY0pRSnhjQmtuVUN4N1NQSGNia1BMZGNFYUU5bTltdFdaVVQzeWdqOURyM19FdVZycndQem5ybl9Na2Zrdks1SFI?oc=5",
@@ -50,6 +46,18 @@
           "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBWaTRGZl9ncHJaNnNyVVJYa2tNLVZ1WU5uTG1iMjNfZzVOTFZPM19BamE2RHIyalNKMFdrcnZRbWh1amNza0JGUmxVdDg5NjdMTWdsSlpnQ3BwbE0?oc=5",
           "source_label": "KBS 뉴스",
           "published": "2026-10-07"
+        },
+        {
+          "title": "금융위, '회계처리기준 위반' 해태제과식품에 9억 과징금·감사인지정 3년",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE51NzR2NVdEeWlqZ2NCM1llbXpDdF9kV0IwSmQzUTI2RVR4SFY0dEN0RmFpWEY5cFMwQnNWSnRPeVlJLWY0M25kcHZMT1kxZ0lqekJJeFd1eDRIVEVhNjVhUl9B?oc=5",
+          "source_label": "아시아경제",
+          "published": "2026-10-21"
+        },
+        {
+          "title": "금융위, '회계처리 위반' 해태제과에 9억 과징금·감사인지정 3년",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1nVW9jUjhaYTVIc1p6ZjFubzYwSEFsUDl4Zkw3dkpKN2hoeHJoUHFBVDFVa3kwZm5XSEpwM0lXcUd3ZjRiZkhVcThYYlNRa0dfOFZCdUFENUpLVGFWclp2UTNvcw?oc=5",
+          "source_label": "조세금융신문",
+          "published": "2026-10-21"
         },
         {
           "title": "금융위, '회계처리 위반' 해태제과·관계자들에 13억 과징금",
@@ -139,12 +147,6 @@
           "title": "‘뇌물 8000만원 받고 파면’ 국세청, 최근 5년간 세무조사 관련 징계 31명",
           "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5OUWg4Uzk5WE1MczVBbno2UVU1SThtZXA5bjhuLTZDTGVtcnVfRGdZNDBfa1JFZThKbXhnSGJEU3VFRUJpTDFLYkFGV08xcmh3blpGVl8zYmgyWnpuY240S1FJUQ?oc=5",
           "source_label": "조세금융신문",
-          "published": "2026-10-21"
-        },
-        {
-          "title": "'세무조사 때 뒷돈' 국세청 조사원 5년 간 30명 넘어",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1hbEt0eHRsOWFnTmJaOVRiaHVwY2twTUZuRHhuV3BYdTVPV28tLTUtV01DdWhqNnN4M0txYzRQZnU2MmxWUlV0eENyUERXdmRTZTlBazdvXzhWTEs1dW1MOE5RTG5GY28ycVVyTw?oc=5",
-          "source_label": "한경매거진",
           "published": "2026-10-21"
         },
         {
@@ -824,16 +826,6 @@
       "category": "감사"
     },
     {
-      "source": "gnews_채용·시험",
-      "source_label": "이데일리",
-      "title": "\"회계사 선발인원 정상화\"…청년 회계사들, 국회 앞 1인 시위",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbjBpS016ek9zSmtUWEI5NUFtSWpmcWNwTFFreWV3MHBCZk9sNmV3UGx3b0M4THppVFJlTzc5cDhwbHprMHY1OWdMUy15d2hnY3RuenBXRmpINVBPVGdNbzd3RTR1RFlHdDRXQ0ZwUDVQWTZQN1ZDck45cnF4NEZwcg?oc=5",
-      "published": "2026-10-08",
-      "published_at": "2026-10-08T07:00:00",
-      "summary": "",
-      "category": "채용·시험"
-    },
-    {
       "source": "gnews_감사_2",
       "source_label": "한겨레",
       "title": "수출입은행, 회계처리 위반 기업에 여신 54조…“심사·관리 강화해야”",
@@ -921,41 +913,11 @@
     },
     {
       "source": "gnews_채용·시험",
-      "source_label": "Chosunbiz",
-      "title": "최운열 한공회장, 회계법인에 “신입 더 뽑아달라” 서신 - 조선비즈",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSmMtNlNkTklxWGtkbE14M1VrajJfOFdOMGRKN3RGclRJY1JHaUlYTEF2VVFHTGNtakJ5Q2tsQnYzLXpwOHdBS01qcUFXcjRHdkRRblU2R2g4TTVYaUJMcmRfY3N4WF8yOHFXekFXWFBoWDRXNC1TSjYtLW5mS3NTeUNHSUlQMGRN0gGcAUFVX3lxTE9RcHdsTDg5VjVaQ1BNYmprQl81RENaWlpqNFczdXRMR3M5T2ItSFlOZFpDZ1FBNkxYMHZUUFF5QzhBdUFKa1Nob2ttNEkxa3h6UlZXVE1IbGV6SDFLZXhMRndKZmd0ZnJOUVMxZGVBRUFlYUdaSl9tS3ZxSlJDNlpaMC05Tm9OcFlBM3JMcXRLMTdXUVBKQS1jcXNxOA?oc=5",
-      "published": "2026-09-28",
-      "published_at": "2026-09-28T07:00:00",
-      "summary": "",
-      "category": "채용·시험"
-    },
-    {
-      "source": "gnews_채용·시험",
-      "source_label": "이데일리TV",
-      "title": "[단독] '취직 못한 회계사' 문제 심각…“신입 더 뽑아달라” 절박한 호소",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE8tY2MyU292TkRZeURFSDE4WjVZMzZVN1RDcEpUZ08zSC03SmpCakpHOXhkdXZjdjBDcFBmMDlmcXBXZTRTZERvdWVaQlFoMTJwNWJzZUtSQzRUbkJLZHVTMDV0bXpnQ2s3OHZUenJDb1RneW5TZmZ2eFlyZw?oc=5",
-      "published": "2026-09-28",
-      "published_at": "2026-09-28T07:00:00",
-      "summary": "",
-      "category": "채용·시험"
-    },
-    {
-      "source": "gnews_채용·시험",
       "source_label": "이데일리",
-      "title": "\"회계사 합격 청년 넷 중 셋집에서 놀았다… 선발인원 200명 줄이자\"[만났습니다①]",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOTk1GcTdXcGJrVTNwNFpqLUFHbXBBVXhEeS10WnV2VHg4aXFfVzRQeXotZVdNVi1mUUJZQmRQQWNnVnBOQnR3aGNyY1g1dXVDSjhuNEVGX3BVcDBfU2pjSG5vQXo2T2p1ZHV1Q3l6YlhFdGtxbEt3clZNMDVOcVVqOA?oc=5",
-      "published": "2026-09-14",
-      "published_at": "2026-09-14T07:00:00",
-      "summary": "",
-      "category": "채용·시험"
-    },
-    {
-      "source": "gnews_채용·시험",
-      "source_label": "Nate News",
-      "title": "회계사 시험 붙고도 '쉬었음'…전문직도 못 피한 한파",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1hRnFnVWRmdm15VG1yMkM4OVZ3NDBjU1I0WnQyV2V4N2RZcW5wckgwOXBob3lsV05FbVBYa1g3OGpQdUVTNjgwc3hUelVSeGVlSnlJ?oc=5",
-      "published": "2026-08-24",
-      "published_at": "2026-08-24T20:05:00",
+      "title": "[단독] '취직 못한 회계사' 문제 심각…“신입 더 뽑아달라” 절박한 호소",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQa2tNb3p4ZkZPdk43dUQtWE85aDl4ZGFVRkFJaFVrdG9NeXBUc1BHbUFtMHZLRjJlSjFjRmtHaURTY0kyRmFmZTN1VWlXN2lmZFZSM1Nua2VuQkd1MVJnVmduZjcyakQ1dFMzVFA2Q0xacU14MThSTTJPLTUwNDZoQw?oc=5",
+      "published": "2026-09-28",
+      "published_at": "2026-09-28T07:00:00",
       "summary": "",
       "category": "채용·시험"
     }

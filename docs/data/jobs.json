@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-23T11:01:37",
+  "generated_at": "2026-10-23T11:40:26",
   "soon_days": 7,
   "counts": {
-    "total": 84,
+    "total": 83,
     "open": 59,
-    "closed": 25,
-    "new": 5,
+    "closed": 24,
+    "new": 4,
     "soon": 29,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
       "안진": 10,
-      "한영": 24,
+      "한영": 23,
       "로컬": 41,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 49,
-      "자격무관": 35
+      "자격무관": 34
     },
     "by_emp_kind": {
       "인턴": 22,
-      "정규직": 41,
+      "정규직": 40,
       "계약직": 3,
       "파트타임": 18
     }
@@ -947,7 +947,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "M&A딜과 기장,용역,감사,절세관련한 개업형 협업 파트너 모집",
       "company": "하나회계법인 프랜차이즈M&A거래소",
       "deadline": "2026-11-14",
@@ -1545,25 +1545,6 @@
       "emp_type": "Part Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1791365212127",
       "dday": -7,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "택스",
-      "qualification": "자격무관",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "세무부문 통합세무팀",
-      "company": "EY한영",
-      "deadline": "2026-10-19",
-      "posted_date": "2026-10-07",
-      "location": "",
-      "emp_type": "전체",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/130610",
-      "dday": -4,
       "first_seen": ""
     },
     {

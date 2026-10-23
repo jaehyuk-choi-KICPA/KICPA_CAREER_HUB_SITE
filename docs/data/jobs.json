@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-23T09:31:24",
+  "generated_at": "2026-10-23T10:07:45",
   "soon_days": 7,
   "counts": {
-    "total": 83,
-    "open": 58,
+    "total": 84,
+    "open": 59,
     "closed": 25,
     "new": 6,
-    "soon": 28,
+    "soon": 29,
     "by_firm": {
       "삼일": 3,
-      "삼정": 2,
+      "삼정": 3,
       "안진": 10,
       "한영": 24,
       "로컬": 41,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 49,
-      "자격무관": 34
+      "자격무관": 35
     },
     "by_emp_kind": {
-      "인턴": 21,
+      "인턴": 22,
       "정규직": 41,
       "계약직": 3,
       "파트타임": 18
@@ -235,6 +235,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131191",
       "dday": 3,
       "first_seen": "2026-10-14T10:01:38"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": false,
+      "title": "[인턴] ITS 업무 지원 인턴",
+      "company": "삼정KPMG",
+      "deadline": "2026-10-26",
+      "posted_date": "2026-10-15",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000972&receive_div_cd=N",
+      "dday": 3,
+      "first_seen": "2026-10-23T10:07:45"
     },
     {
       "source": "kicpa_susup",
@@ -552,12 +571,12 @@
       "title": "[이정회계법인] 파트 수습공인회계사 모집",
       "company": "이정회계법인",
       "deadline": "2026-10-30",
-      "posted_date": "2026-10-22",
+      "posted_date": "2026-10-23",
       "location": "서울 서초구",
       "emp_type": "Part Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792559405874",
       "dday": 7,
-      "first_seen": "2026-10-22T10:31:29"
+      "first_seen": "2026-10-23T10:07:45"
     },
     {
       "source": "kicpa_susup",

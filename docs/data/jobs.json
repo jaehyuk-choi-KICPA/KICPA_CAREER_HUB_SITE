@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-10-23T13:01:35",
+  "generated_at": "2026-10-23T13:31:33",
   "soon_days": 7,
   "counts": {
-    "total": 83,
-    "open": 59,
+    "total": 85,
+    "open": 61,
     "closed": 24,
-    "new": 4,
-    "soon": 29,
+    "new": 6,
+    "soon": 30,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
       "안진": 10,
-      "한영": 23,
+      "한영": 25,
       "로컬": 41,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 49,
-      "자격무관": 34
+      "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 22,
-      "정규직": 40,
-      "계약직": 3,
+      "정규직": 41,
+      "계약직": 4,
       "파트타임": 18
     }
   },
@@ -425,6 +425,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792040523504",
       "dday": 6,
       "first_seen": "2026-10-15T14:31:47"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "택스",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "세무IT Project Leader 경력",
+      "company": "EY한영",
+      "deadline": "2026-10-29",
+      "posted_date": "2026-10-23",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/132176",
+      "dday": 6,
+      "first_seen": "2026-10-23T13:31:33"
     },
     {
       "source": "kicpa_cpa",
@@ -843,6 +862,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5229",
       "dday": 13,
       "first_seen": "2026-10-21T09:31:28"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "BMC(Brand, Marketing and Communications) 글로벌 사회공헌 프로그램 담당 계약직 [경력]",
+      "company": "EY한영",
+      "deadline": "2026-11-05",
+      "posted_date": "2026-10-23",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/132178",
+      "dday": 13,
+      "first_seen": "2026-10-23T13:31:33"
     },
     {
       "source": "anjin",

@@ -2041,7 +2041,8 @@
     "uid": "kicpa_susup:1792559405874",
     "first_seen": "2026-10-23T10:07:45",
     "last_seen": "2026-10-23",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-10-23"
   },
   "kicpa_susup:1792565134496": {
     "source": "kicpa_susup",
@@ -2173,6 +2174,6 @@
     "uid": "samjong:KPMG00000000000000000000000972",
     "first_seen": "2026-10-23T10:07:45",
     "last_seen": "2026-10-23",
-    "notified": false
+    "notified": true
   }
 }

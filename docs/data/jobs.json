@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-24T14:31:25",
+  "generated_at": "2026-10-24T15:01:38",
   "soon_days": 7,
   "counts": {
-    "total": 87,
+    "total": 86,
     "open": 61,
-    "closed": 26,
+    "closed": 25,
     "new": 3,
     "soon": 37,
     "by_firm": {
@@ -12,16 +12,16 @@
       "삼정": 2,
       "안진": 10,
       "한영": 26,
-      "로컬": 43,
+      "로컬": 42,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 51,
+      "수습CPA": 50,
       "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 23,
-      "정규직": 42,
+      "정규직": 41,
       "계약직": 3,
       "파트타임": 19
     }
@@ -1582,25 +1582,6 @@
       "location": "서울 강남구",
       "emp_type": "Full Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792115941704",
-      "dday": -4,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "택스",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "[진형세무회계] 신입 공인회계사 채용",
-      "company": "진형세무회계",
-      "deadline": "2026-10-20",
-      "posted_date": "2026-10-20",
-      "location": "서울 전체",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792477088879",
       "dday": -4,
       "first_seen": ""
     },

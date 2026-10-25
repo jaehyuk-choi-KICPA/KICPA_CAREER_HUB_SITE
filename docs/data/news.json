@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T06:31:27",
+  "generated_at": "2026-10-26T07:01:41",
   "items": [
     {
       "source": "gnews_세무",
@@ -490,12 +490,20 @@
     {
       "source": "gnews_감사_2",
       "source_label": "파이낸셜뉴스",
-      "title": "[단독] 감사보수 '덤핑 경쟁'에 칼 빼든 한공회…금감원 특별감리 요청 추진 [fn마켓워치]",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBxdkpjbElucXlKVUNDUG9USDV6dzlTUnI3c1V3THMxUkdEVmJTeFk1RmszR2U2ZGMxY2RCREhoMTZMelVMcFRWcVNua1FFS2FCRHhBRmxTbHFwQQ?oc=5",
+      "title": "감사보수 덤핑 '제동'… 한공회, 금감원에 감리 요청 검토",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE55cGYtT3ZiU0tlZ3V1aVRoRWczb1Bwa25obG5GSko0MmplbWY1LUdFU3VnLWFyWEdab2p5UkJNTVNZR0s0aUVzN2JNMUFjeDRzZXRYZWREZ1Ftdw?oc=5",
       "published": "2026-10-20",
-      "published_at": "2026-10-20T05:22:13",
+      "published_at": "2026-10-20T09:18:30",
       "summary": "",
-      "category": "채용·시험"
+      "category": "채용·시험",
+      "dupes": [
+        {
+          "title": "[단독] 감사보수 '덤핑 경쟁'에 칼 빼든 한공회…금감원 특별감리 요청 추진 [fn마켓워치]",
+          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBxdkpjbElucXlKVUNDUG9USDV6dzlTUnI3c1V3THMxUkdEVmJTeFk1RmszR2U2ZGMxY2RCREhoMTZMelVMcFRWcVNua1FFS2FCRHhBRmxTbHFwQQ?oc=5",
+          "source_label": "파이낸셜뉴스",
+          "published": "2026-10-20"
+        }
+      ]
     },
     {
       "source": "gnews_감사_2",
@@ -835,9 +843,9 @@
     },
     {
       "source": "gnews_감사",
-      "source_label": "중앙일보",
-      "title": "기준 바꾸니 27조 흑자가 적자로…새 회계기준에 지주사 ‘비상’",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4ybk5IZk1jY3dMRTE3a21sWnlBZ0RYcVpPYnduMW56UzJhek1fellTTEdkMmJSelc1LVBIME55clJXYko5Z0lnbkpEakVFbmVkdmdzbHB3?oc=5",
+      "source_label": "Daily NTN",
+      "title": "한국회계기준원, IASB 위원 초청 K-IFRS 제1118호 ‘재무제표 표시와 공시’ 투자자 세미나 개최",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE43SzV1ZWNkVHBRQzZUUkJ4OW5zQWoyekgtQ2pvZ0FJTXQ4NHVLNjYwa0lPa1RqVHpMemJzRUNxLUJyeXpuT29LWGVJbFNLMWZtelJseHBfNWNoVTBuVVJtb2xoWlpEQ1oyY3c?oc=5",
       "published": "2026-10-13",
       "published_at": "2026-10-13T07:00:00",
       "summary": "",
@@ -845,9 +853,9 @@
     },
     {
       "source": "gnews_감사",
-      "source_label": "Daily NTN",
-      "title": "한국회계기준원, IASB 위원 초청 K-IFRS 제1118호 ‘재무제표 표시와 공시’ 투자자 세미나 개최",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE43SzV1ZWNkVHBRQzZUUkJ4OW5zQWoyekgtQ2pvZ0FJTXQ4NHVLNjYwa0lPa1RqVHpMemJzRUNxLUJyeXpuT29LWGVJbFNLMWZtelJseHBfNWNoVTBuVVJtb2xoWlpEQ1oyY3c?oc=5",
+      "source_label": "중앙일보",
+      "title": "기준 바꾸니 27조 흑자가 적자로…새 회계기준에 지주사 ‘비상’",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE4ybk5IZk1jY3dMRTE3a21sWnlBZ0RYcVpPYnduMW56UzJhek1fellTTEdkMmJSelc1LVBIME55clJXYko5Z0lnbkpEakVFbmVkdmdzbHB3?oc=5",
       "published": "2026-10-13",
       "published_at": "2026-10-13T07:00:00",
       "summary": "",

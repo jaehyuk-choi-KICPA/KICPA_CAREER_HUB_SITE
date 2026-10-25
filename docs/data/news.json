@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T19:31:29",
+  "generated_at": "2026-10-25T20:01:42",
   "items": [
     {
       "source": "gnews_세무",
@@ -31,12 +31,6 @@
           "title": "신세계 계열사 세무조사···친인척 여행사 특혜 의혹 주목",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9FMlFZbzA4TkUzdElHbUZuaG5hX1F1eENmbHNTTElKVjZPZk9Fc0diM09YSjg4Y2hDM0ZOWUd1Z2xrWEIxczhtSDFYeWx5eU5hSnhRajk5SzZrTElJbmh5RWRyUGtmOTlDSHc?oc=5",
           "source_label": "서울파이낸스",
-          "published": "2026-10-23"
-        },
-        {
-          "title": "국세청, 지난해 개인사업자 특별 세무조사로 5869억 부과…서울청 40%",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9vVzdadFR1UEpCaGlPVFVseTJDWjF0bkl1TlVqdVAwaXl2ekQwcVU5b1YtN2xKMnlSQjhiZURCWktCdlduamFiMlZ0enVtLWhYRmQ1aWZHU1FsUmtxb0VLSFdGbkNYTDlENVE?oc=5",
-          "source_label": "Daily NTN",
           "published": "2026-10-23"
         },
         {
@@ -154,22 +148,28 @@
           "published": "2026-10-22"
         },
         {
-          "title": "최근 5년간 국세청 자금출처 세무조사로 7297억 부과…서울청, 전체의 40%",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5rUDFjRmw2QlMzazBGQkttOFBhd2F5bTU1ZEZQalBoSFBicUhGQmJ4aWF5blhsd2lzRjRaUVVTeWhSMEdReFNhT1I3bER6eU9VSHhYaV9NZm5PNktORW5hTTI5OHBWMDVQUEE?oc=5",
-          "source_label": "Daily NTN",
-          "published": "2026-10-16"
-        },
-        {
-          "title": "국세청, 최근 5년간 법인 특별세무조사로 11조4670억 부과",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1LMEpLa3dZQjhyd29FVXl2TmFJVWFVelF2U0VxejZRN3I4a3I5cF9CNzFibW9fNEFiTGcxU3FEM1Y2Y1VVR1IybDA4emtheUV1aFB6YWdtNzMydkpabXNkdEoySjhWZDVMc1E?oc=5",
-          "source_label": "Daily NTN",
-          "published": "2026-10-14"
-        },
-        {
           "title": "[단독]국세청 비정기 세무조사 70% 이상 ‘탈루 혐의’…선정사유 첫 공개",
           "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE03X0Z2SmZTYTAtSmIyR0M4Z2pBaXNxZzh0NGt6NnJtX2FNb2JIX05BRk9XZG9HOHhBT0N5ZTZMX0tFR09EOEtrWkZwNFFSSll4S2M4Sk42bFdFZ9IBX0FVX3lxTFB1aUx4T2E1d3d1NXFITEluVlpkaDFxVC1pWEh3STQ3RktUc0wwMjk1d29FQ2ZFM1JNREtCeGd1RW9IQW5FM09LZDhEeEpXWEhLMzhHRC01ZDYzU0huUmhN?oc=5",
           "source_label": "경향신문",
           "published": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "Daily NTN",
+      "title": "국세청, 지난해 개인사업자 특별 세무조사로 5869억 부과…서울청 40%",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9vVzdadFR1UEpCaGlPVFVseTJDWjF0bkl1TlVqdVAwaXl2ekQwcVU5b1YtN2xKMnlSQjhiZURCWktCdlduamFiMlZ0enVtLWhYRmQ1aWZHU1FsUmtxb0VLSFdGbkNYTDlENVE?oc=5",
+      "published": "2026-10-23",
+      "published_at": "2026-10-23T02:11:00",
+      "summary": "",
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "최근 5년간 국세청 자금출처 세무조사로 7297억 부과…서울청, 전체의 40%",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5rUDFjRmw2QlMzazBGQkttOFBhd2F5bTU1ZEZQalBoSFBicUhGQmJ4aWF5blhsd2lzRjRaUVVTeWhSMEdReFNhT1I3bER6eU9VSHhYaV9NZm5PNktORW5hTTI5OHBWMDVQUEE?oc=5",
+          "source_label": "Daily NTN",
+          "published": "2026-10-16"
         }
       ]
     },
@@ -842,16 +842,6 @@
       "published_at": "2026-10-12T07:00:00",
       "summary": "",
       "category": "세무"
-    },
-    {
-      "source": "gnews_감사",
-      "source_label": "한국경제",
-      "title": "보험사 '이익 부풀리기'에 칼 빼든 금감원",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFA1SWJZNHVhNG4xZnhHd2ZWZFBfeGdXdndqbjlNMlJOdnVBQ2JTWjIweld4ZG9VNzBTdC1QaHJ5S00waDRSUFlsVDJzQXMwbU15elZOOFVpSW04dw?oc=5",
-      "published": "2026-10-12",
-      "published_at": "2026-10-12T07:00:00",
-      "summary": "",
-      "category": "감사"
     },
     {
       "source": "gnews_채용·시험",

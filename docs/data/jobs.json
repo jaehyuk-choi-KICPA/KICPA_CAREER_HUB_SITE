@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-26T17:01:36",
+  "generated_at": "2026-10-26T17:32:16",
   "soon_days": 7,
   "counts": {
-    "total": 89,
-    "open": 60,
+    "total": 90,
+    "open": 61,
     "closed": 29,
-    "new": 5,
+    "new": 6,
     "soon": 35,
     "by_firm": {
       "삼일": 3,
-      "삼정": 3,
+      "삼정": 4,
       "안진": 10,
       "한영": 26,
       "로컬": 44,
@@ -17,11 +17,11 @@
     },
     "by_qualification": {
       "수습CPA": 51,
-      "자격무관": 38
+      "자격무관": 39
     },
     "by_emp_kind": {
       "인턴": 23,
-      "정규직": 42,
+      "정규직": 43,
       "계약직": 4,
       "파트타임": 20
     }
@@ -824,6 +824,25 @@
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000998&receive_div_cd=N",
       "dday": 11,
       "first_seen": "2026-10-26T02:01:39"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[Audit] IT Audit 본부 IT감사·컨설팅 신입 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-11-06",
+      "posted_date": "2026-10-26",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000999&receive_div_cd=N",
+      "dday": 11,
+      "first_seen": "2026-10-26T17:32:16"
     },
     {
       "source": "hanyoung",

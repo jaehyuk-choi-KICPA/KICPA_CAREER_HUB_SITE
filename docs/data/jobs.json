@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-27T07:35:13",
+  "generated_at": "2026-10-27T08:10:56",
   "soon_days": 7,
   "counts": {
-    "total": 88,
+    "total": 87,
     "open": 54,
-    "closed": 34,
+    "closed": 33,
     "new": 6,
     "soon": 28,
     "by_firm": {
@@ -12,18 +12,18 @@
       "삼정": 4,
       "안진": 10,
       "한영": 24,
-      "로컬": 44,
+      "로컬": 43,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 51,
+      "수습CPA": 50,
       "자격무관": 37
     },
     "by_emp_kind": {
       "인턴": 21,
       "정규직": 43,
       "계약직": 4,
-      "파트타임": 20
+      "파트타임": 19
     }
   },
   "postings": [
@@ -1677,25 +1677,6 @@
       "location": "",
       "emp_type": "신입",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131784",
-      "dday": -1,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "파트타임",
-      "status": "closed",
-      "is_new": false,
-      "title": "[정진세림회계법인] (최초게시) 파트타임 신입회계사 모집",
-      "company": "정진세림회계법인",
-      "deadline": "2026-10-26",
-      "posted_date": "2026-10-21",
-      "location": "서울 강남구",
-      "emp_type": "Part Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792568368410",
       "dday": -1,
       "first_seen": ""
     }

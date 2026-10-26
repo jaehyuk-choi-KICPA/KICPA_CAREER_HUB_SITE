@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T18:01:39",
+  "generated_at": "2026-10-26T18:31:29",
   "soon_days": 7,
   "counts": {
     "total": 90,
@@ -83,25 +83,6 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131191",
       "dday": 0,
       "first_seen": "2026-10-14T10:01:38"
-    },
-    {
-      "source": "samjong",
-      "source_label": "삼정KPMG",
-      "firm": "삼정",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "open",
-      "is_new": false,
-      "title": "[인턴] ITS 업무 지원 인턴",
-      "company": "삼정KPMG",
-      "deadline": "2026-10-26",
-      "posted_date": "2026-10-15",
-      "location": "",
-      "emp_type": "신입",
-      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000972&receive_div_cd=N",
-      "dday": 0,
-      "first_seen": "2026-10-23T10:07:45"
     },
     {
       "source": "kicpa_susup",
@@ -406,6 +387,25 @@
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000971&receive_div_cd=N",
       "dday": 4,
       "first_seen": "2026-10-13T18:01:33"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": false,
+      "title": "[인턴] ITS 업무 지원 인턴",
+      "company": "삼정KPMG",
+      "deadline": "2026-10-30",
+      "posted_date": "2026-10-15",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000972&receive_div_cd=N",
+      "dday": 4,
+      "first_seen": "2026-10-23T10:07:45"
     },
     {
       "source": "kicpa_susup",

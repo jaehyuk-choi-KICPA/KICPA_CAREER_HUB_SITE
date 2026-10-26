@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-26T13:31:53",
+  "generated_at": "2026-10-26T14:01:42",
   "soon_days": 7,
   "counts": {
-    "total": 87,
-    "open": 58,
+    "total": 88,
+    "open": 59,
     "closed": 29,
-    "new": 3,
+    "new": 4,
     "soon": 35,
     "by_firm": {
       "삼일": 3,
       "삼정": 3,
       "안진": 10,
       "한영": 26,
-      "로컬": 42,
+      "로컬": 43,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 50,
+      "수습CPA": 51,
       "자격무관": 37
     },
     "by_emp_kind": {
       "인턴": 23,
-      "정규직": 40,
+      "정규직": 41,
       "계약직": 4,
       "파트타임": 20
     }
@@ -862,6 +862,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1791808931336",
       "dday": 17,
       "first_seen": "2026-10-19T10:31:27"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[회계법인 올빛] 신입 회계사 모집합니다.",
+      "company": "회계법인 올빛",
+      "deadline": "2026-11-13",
+      "posted_date": "2026-10-26",
+      "location": "서울 전체",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792989548754",
+      "dday": 18,
+      "first_seen": "2026-10-26T14:01:42"
     },
     {
       "source": "kicpa_susup",

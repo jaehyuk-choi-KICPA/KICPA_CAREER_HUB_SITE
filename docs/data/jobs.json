@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-27T12:31:38",
+  "generated_at": "2026-10-27T13:01:33",
   "soon_days": 7,
   "counts": {
-    "total": 86,
-    "open": 55,
+    "total": 87,
+    "open": 56,
     "closed": 31,
-    "new": 6,
+    "new": 7,
     "soon": 27,
     "by_firm": {
       "삼일": 3,
       "삼정": 4,
       "안진": 10,
       "한영": 22,
-      "로컬": 44,
+      "로컬": 45,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 51,
-      "자격무관": 35
+      "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 19,
-      "정규직": 43,
+      "정규직": 44,
       "계약직": 4,
       "파트타임": 20
     }
@@ -748,6 +748,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792657707757",
       "dday": 12,
       "first_seen": "2026-10-22T17:31:29"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "정부보조금 사업 정산요원을 모집합니다.",
+      "company": "일신회계법인",
+      "deadline": "2026-11-11",
+      "posted_date": "2026-10-27",
+      "location": "지역무관 지역무관",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1793073091876",
+      "dday": 15,
+      "first_seen": "2026-10-27T13:01:33"
     },
     {
       "source": "kicpa_cpa",

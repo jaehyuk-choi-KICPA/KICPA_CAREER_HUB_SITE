@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-28T12:31:21",
+  "generated_at": "2026-10-28T13:01:37",
   "soon_days": 7,
   "counts": {
-    "total": 87,
-    "open": 57,
+    "total": 88,
+    "open": 58,
     "closed": 30,
     "new": 5,
     "soon": 27,
@@ -12,16 +12,16 @@
       "삼정": 4,
       "안진": 10,
       "한영": 22,
-      "로컬": 45,
+      "로컬": 46,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 51,
+      "수습CPA": 52,
       "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 19,
-      "정규직": 43,
+      "정규직": 44,
       "계약직": 4,
       "파트타임": 21
     }
@@ -712,6 +712,25 @@
       "first_seen": "2026-10-27T08:31:29"
     },
     {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[삼덕회계법인]_수습회계사 채용 공고",
+      "company": "삼덕회계법인",
+      "deadline": "2026-11-06",
+      "posted_date": "2026-10-28",
+      "location": "지역무관 지역무관",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1793159078986",
+      "dday": 9,
+      "first_seen": "2026-10-28T13:01:37"
+    },
+    {
       "source": "hanyoung",
       "source_label": "EY한영",
       "firm": "한영",
@@ -757,7 +776,7 @@
       "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "정부보조금 사업 정산요원을 모집합니다.",
       "company": "일신회계법인",
       "deadline": "2026-11-11",

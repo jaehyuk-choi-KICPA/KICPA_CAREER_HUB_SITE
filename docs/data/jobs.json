@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-28T18:31:37",
+  "generated_at": "2026-10-28T19:01:44",
   "soon_days": 7,
   "counts": {
     "total": 90,
     "open": 60,
     "closed": 30,
-    "new": 7,
+    "new": 5,
     "soon": 29,
     "by_firm": {
       "삼일": 3,
@@ -852,7 +852,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[광교회계법인] 파트타임 수습공인회계사 채용공고",
       "company": "광교회계법인",
       "deadline": "2026-11-13",
@@ -1137,7 +1137,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[리드넘버 회계법인] 수습 회계사 채용 (5,400)",
       "company": "리드넘버 회계법인",
       "deadline": "2026-12-31",

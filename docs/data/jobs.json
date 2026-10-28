@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-28T11:31:31",
+  "generated_at": "2026-10-28T12:01:40",
   "soon_days": 7,
   "counts": {
     "total": 87,
     "open": 57,
     "closed": 30,
-    "new": 6,
+    "new": 5,
     "soon": 27,
     "by_firm": {
       "삼일": 3,
@@ -871,7 +871,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "도담회계법인 수습회계사 (파트)",
       "company": "도담회계법인",
       "deadline": "2026-11-14",

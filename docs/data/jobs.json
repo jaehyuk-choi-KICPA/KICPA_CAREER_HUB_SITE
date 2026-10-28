@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-28T14:01:45",
+  "generated_at": "2026-10-28T14:31:30",
   "soon_days": 7,
   "counts": {
     "total": 89,
     "open": 59,
     "closed": 30,
-    "new": 5,
-    "soon": 27,
+    "new": 6,
+    "soon": 28,
     "by_firm": {
       "삼일": 3,
       "삼정": 4,
@@ -330,6 +330,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792742505700",
       "dday": 2,
       "first_seen": "2026-10-23T17:31:30"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[이정회계법인] 파트 수습공인회계사 모집",
+      "company": "이정회계법인",
+      "deadline": "2026-10-30",
+      "posted_date": "2026-10-28",
+      "location": "서울 서초구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792559405874",
+      "dday": 2,
+      "first_seen": "2026-10-28T14:31:30"
     },
     {
       "source": "kicpa_susup",
@@ -691,25 +710,6 @@
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000000999&receive_div_cd=N",
       "dday": 9,
       "first_seen": "2026-10-26T17:32:16"
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "파트타임",
-      "status": "open",
-      "is_new": false,
-      "title": "[회계법인오현] 파트 수습공인회계사 모집",
-      "company": "회계법인오현",
-      "deadline": "2026-11-06",
-      "posted_date": "2026-10-27",
-      "location": "서울 전체",
-      "emp_type": "Part Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1793057094982",
-      "dday": 9,
-      "first_seen": "2026-10-27T08:31:29"
     },
     {
       "source": "kicpa_susup",

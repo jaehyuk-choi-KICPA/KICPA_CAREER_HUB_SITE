@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-10-29T12:31:37",
+  "generated_at": "2026-10-29T13:01:34",
   "soon_days": 7,
   "counts": {
-    "total": 88,
-    "open": 56,
+    "total": 90,
+    "open": 58,
     "closed": 32,
-    "new": 5,
+    "new": 7,
     "soon": 30,
     "by_firm": {
       "삼일": 3,
-      "삼정": 4,
+      "삼정": 6,
       "안진": 10,
       "한영": 22,
       "로컬": 45,
       "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 52,
+      "수습CPA": 54,
       "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 19,
-      "정규직": 44,
-      "계약직": 5,
+      "정규직": 45,
+      "계약직": 6,
       "파트타임": 20
     }
   },
@@ -710,6 +710,44 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792657707757",
       "dday": 10,
       "first_seen": "2026-10-22T17:31:29"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "삼정",
+      "field": "택스",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[삼정KPMG] Tax 5본부 GMS팀 외국인·해외주재원 세무업무 경력·신입 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-11-08",
+      "posted_date": "2026-10-29",
+      "location": "서울 강남구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1793245856357",
+      "dday": 10,
+      "first_seen": "2026-10-29T13:01:34"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "삼정",
+      "field": "택스",
+      "qualification": "수습CPA",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "[삼정KPMG] Tax Centralized Team 준전문직 경력 및 신입 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-11-08",
+      "posted_date": "2026-10-29",
+      "location": "서울 강남구",
+      "emp_type": "계약직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1793245664359",
+      "dday": 10,
+      "first_seen": "2026-10-29T13:01:34"
     },
     {
       "source": "kicpa_susup",

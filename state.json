@@ -2021,7 +2021,8 @@
     "uid": "kicpa_cpa:1793245856357",
     "first_seen": "2026-10-29T13:01:34",
     "last_seen": "2026-10-29",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-10-29"
   },
   "kicpa_cpa:1793245664359": {
     "source": "kicpa_cpa",
@@ -2039,6 +2040,7 @@
     "uid": "kicpa_cpa:1793245664359",
     "first_seen": "2026-10-29T13:01:34",
     "last_seen": "2026-10-29",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-10-29"
   }
 }

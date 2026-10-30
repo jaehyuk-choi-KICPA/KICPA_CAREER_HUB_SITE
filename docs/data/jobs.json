@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-10-30T16:31:29",
+  "generated_at": "2026-10-30T17:01:39",
   "soon_days": 7,
   "counts": {
-    "total": 96,
+    "total": 95,
     "open": 63,
-    "closed": 33,
+    "closed": 32,
     "new": 9,
     "soon": 36,
     "by_firm": {
       "삼일": 3,
       "삼정": 6,
       "안진": 13,
-      "한영": 26,
+      "한영": 25,
       "로컬": 43,
       "기타": 5
     },
     "by_qualification": {
       "수습CPA": 54,
-      "자격무관": 42
+      "자격무관": 41
     },
     "by_emp_kind": {
       "인턴": 24,
-      "정규직": 46,
+      "정규직": 45,
       "계약직": 6,
       "파트타임": 20
     }
@@ -1829,25 +1829,6 @@
       "location": "",
       "emp_type": "신입/경력",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131287",
-      "dday": -1,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "택스",
-      "qualification": "자격무관",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "세무IT Project Leader 경력",
-      "company": "EY한영",
-      "deadline": "2026-10-29",
-      "posted_date": "2026-10-23",
-      "location": "",
-      "emp_type": "신입",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/132176",
       "dday": -1,
       "first_seen": ""
     }

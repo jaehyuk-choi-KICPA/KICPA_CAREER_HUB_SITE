@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-30T14:01:31",
+  "generated_at": "2026-10-30T14:31:49",
   "soon_days": 7,
   "counts": {
-    "total": 96,
-    "open": 62,
+    "total": 97,
+    "open": 63,
     "closed": 34,
-    "new": 8,
+    "new": 9,
     "soon": 36,
     "by_firm": {
       "삼일": 3,
@@ -13,15 +13,15 @@
       "안진": 13,
       "한영": 26,
       "로컬": 44,
-      "기타": 4
+      "기타": 5
     },
     "by_qualification": {
-      "수습CPA": 54,
+      "수습CPA": 55,
       "자격무관": 42
     },
     "by_emp_kind": {
       "인턴": 24,
-      "정규직": 46,
+      "정규직": 47,
       "계약직": 6,
       "파트타임": 20
     }
@@ -805,6 +805,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1793237501785",
       "dday": 10,
       "first_seen": "2026-10-29T10:34:07"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "기타",
+      "field": "기타",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[KDI] 2026년 4분기 한국개발연구원(KDI) 직원 채용 공고(연구직 / 회계.재무분야)",
+      "company": "한국개발연구원(KDI)",
+      "deadline": "2026-11-10",
+      "posted_date": "2026-10-30",
+      "location": "세종 전체",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1793338215340",
+      "dday": 11,
+      "first_seen": "2026-10-30T14:31:49"
     },
     {
       "source": "kicpa_cpa",

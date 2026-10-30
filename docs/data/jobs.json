@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-10-30T13:31:27",
+  "generated_at": "2026-10-30T14:01:31",
   "soon_days": 7,
   "counts": {
-    "total": 94,
-    "open": 60,
+    "total": 96,
+    "open": 62,
     "closed": 34,
-    "new": 7,
+    "new": 8,
     "soon": 36,
     "by_firm": {
       "삼일": 3,
       "삼정": 6,
-      "안진": 12,
+      "안진": 13,
       "한영": 26,
-      "로컬": 43,
+      "로컬": 44,
       "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 52,
+      "수습CPA": 54,
       "자격무관": 42
     },
     "by_emp_kind": {
       "인턴": 24,
-      "정규직": 45,
+      "정규직": 46,
       "계약직": 6,
-      "파트타임": 19
+      "파트타임": 20
     }
   },
   "postings": [
@@ -1016,6 +1016,25 @@
       "first_seen": "2026-10-08T09:31:49"
     },
     {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": false,
+      "title": "Digital Assurance SAP 컨설턴트 / 경영기획·관리회계 전문가 / 공인회계사",
+      "company": "딜로이트 안진",
+      "deadline": "2026-11-30",
+      "posted_date": "2026-10-09",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5224",
+      "dday": 31,
+      "first_seen": "2026-10-30T14:01:31"
+    },
+    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "로컬",
@@ -1052,6 +1071,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1793161043692",
       "dday": 31,
       "first_seen": "2026-10-28T13:31:32"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[BDO성현회계법인] 수습회계사 파트타임 채용",
+      "company": "BDO 성현회계법인",
+      "deadline": "2026-11-30",
+      "posted_date": "2026-10-30",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1793335683302",
+      "dday": 31,
+      "first_seen": "2026-10-30T14:01:31"
     },
     {
       "source": "anjin",

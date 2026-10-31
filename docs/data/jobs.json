@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-31T17:31:22",
+  "generated_at": "2026-10-31T18:01:33",
   "soon_days": 7,
   "counts": {
     "total": 93,
     "open": 55,
     "closed": 38,
-    "new": 2,
+    "new": 1,
     "soon": 26,
     "by_firm": {
       "삼일": 3,
@@ -643,7 +643,7 @@
       "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "세무부문 통합세무팀",
       "company": "EY한영",
       "deadline": "2026-11-09",

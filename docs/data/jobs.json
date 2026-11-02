@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-02T17:32:08",
+  "generated_at": "2026-11-02T18:01:35",
   "soon_days": 7,
   "counts": {
-    "total": 92,
-    "open": 48,
+    "total": 93,
+    "open": 49,
     "closed": 44,
-    "new": 3,
-    "soon": 25,
+    "new": 4,
+    "soon": 26,
     "by_firm": {
       "삼일": 3,
-      "삼정": 4,
+      "삼정": 5,
       "안진": 13,
       "한영": 26,
       "로컬": 41,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 52,
-      "자격무관": 40
+      "자격무관": 41
     },
     "by_emp_kind": {
-      "인턴": 20,
+      "인턴": 21,
       "정규직": 47,
       "계약직": 6,
       "파트타임": 19
@@ -235,6 +235,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/132870",
       "dday": 3,
       "first_seen": "2026-10-30T10:31:19"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "[인턴] ITS 업무 지원 인턴",
+      "company": "삼정KPMG",
+      "deadline": "2026-11-05",
+      "posted_date": "2026-11-02",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000001007&receive_div_cd=N",
+      "dday": 3,
+      "first_seen": "2026-11-02T18:01:35"
     },
     {
       "source": "anjin",

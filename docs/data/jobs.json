@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-03T18:01:33",
+  "generated_at": "2026-11-03T18:31:22",
   "soon_days": 7,
   "counts": {
     "total": 97,
     "open": 54,
     "closed": 43,
-    "new": 10,
+    "new": 9,
     "soon": 29,
     "by_firm": {
       "삼일": 3,
@@ -225,7 +225,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[인턴] ITS 업무 지원 인턴",
       "company": "삼정KPMG",
       "deadline": "2026-11-05",

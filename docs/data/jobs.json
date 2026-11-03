@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-03T14:31:29",
+  "generated_at": "2026-11-03T15:01:23",
   "soon_days": 7,
   "counts": {
     "total": 95,
     "open": 52,
     "closed": 43,
-    "new": 9,
+    "new": 8,
     "soon": 28,
     "by_firm": {
       "삼일": 3,
@@ -985,7 +985,7 @@
       "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "SAP 모듈 유지보수 (Application Management Service) 전문인력",
       "company": "딜로이트 안진",
       "deadline": "2026-12-31",

@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-11-04T15:01:36",
+  "generated_at": "2026-11-04T15:32:43",
   "soon_days": 7,
   "counts": {
     "total": 95,
-    "open": 56,
-    "closed": 39,
+    "open": 57,
+    "closed": 38,
     "new": 8,
     "soon": 31,
     "by_firm": {
       "삼일": 3,
       "삼정": 5,
       "안진": 11,
-      "한영": 25,
-      "로컬": 46,
+      "한영": 24,
+      "로컬": 47,
       "기타": 5
     },
     "by_qualification": {
-      "수습CPA": 55,
-      "자격무관": 40
+      "수습CPA": 56,
+      "자격무관": 39
     },
     "by_emp_kind": {
       "인턴": 21,
-      "정규직": 44,
-      "계약직": 6,
+      "정규직": 45,
+      "계약직": 5,
       "파트타임": 24
     }
   },
@@ -947,7 +947,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[성문회계법인 대명지점] 신입 및 경력 직원 채용 공고",
       "company": "성문회계법인",
       "deadline": "2026-11-30",
@@ -976,6 +976,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1793677805444",
       "dday": 26,
       "first_seen": "2026-11-03T13:01:43"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[이촌회계법인] 품질관리실 일반직원 정규직 채용공고안내",
+      "company": "이촌회계법인",
+      "deadline": "2026-11-30",
+      "posted_date": "2026-11-04",
+      "location": "서울 전체",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1793773585392",
+      "dday": 26,
+      "first_seen": "2026-11-04T15:32:43"
     },
     {
       "source": "anjin",
@@ -1108,25 +1127,6 @@
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/114543",
       "dday": -154,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "감사",
-      "qualification": "자격무관",
-      "emp_kind": "계약직",
-      "status": "closed",
-      "is_new": false,
-      "title": "감사부문 RPM(Resource Planning Management)팀 운영관리 계약직 (신입/경력)",
-      "company": "EY한영",
-      "deadline": "2026-06-23",
-      "posted_date": "2026-06-10",
-      "location": "",
-      "emp_type": "신입/경력",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/118434",
-      "dday": -134,
       "first_seen": ""
     },
     {

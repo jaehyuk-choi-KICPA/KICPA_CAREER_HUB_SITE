@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-04T09:01:37",
+  "generated_at": "2026-11-04T09:31:19",
   "soon_days": 7,
   "counts": {
-    "total": 95,
+    "total": 92,
     "open": 52,
-    "closed": 43,
+    "closed": 40,
     "new": 6,
     "soon": 28,
     "by_firm": {
       "삼일": 3,
       "삼정": 5,
       "안진": 11,
-      "한영": 26,
+      "한영": 23,
       "로컬": 45,
       "기타": 5
     },
     "by_qualification": {
       "수습CPA": 54,
-      "자격무관": 41
+      "자격무관": 38
     },
     "by_emp_kind": {
-      "인턴": 20,
-      "정규직": 47,
+      "인턴": 19,
+      "정규직": 45,
       "계약직": 6,
       "파트타임": 22
     }
@@ -1057,25 +1057,6 @@
       "source": "hanyoung",
       "source_label": "EY한영",
       "firm": "한영",
-      "field": "택스",
-      "qualification": "자격무관",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "[장애인 채용] 세무부문 행정지원",
-      "company": "EY한영",
-      "deadline": "2026-06-30",
-      "posted_date": "2026-06-19",
-      "location": "",
-      "emp_type": "신입/경력",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/117226",
-      "dday": -127,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
       "field": "기타",
       "qualification": "자격무관",
       "emp_kind": "인턴",
@@ -1548,25 +1529,6 @@
       "first_seen": ""
     },
     {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "금융컨설팅본부 Digital Platforms팀 컨설턴트 (신입/경력)",
-      "company": "EY한영",
-      "deadline": "2026-10-29",
-      "posted_date": "2026-10-14",
-      "location": "",
-      "emp_type": "신입/경력",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131287",
-      "dday": -6,
-      "first_seen": ""
-    },
-    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "로컬",
@@ -1753,25 +1715,6 @@
       "location": "",
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131708",
-      "dday": -3,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "컨설팅부문 Digital 컨설팅 단기 인턴",
-      "company": "EY한영",
-      "deadline": "2026-11-01",
-      "posted_date": "2026-10-27",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/132480",
       "dday": -3,
       "first_seen": ""
     },

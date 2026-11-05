@@ -1662,5 +1662,41 @@
     "last_seen": "2026-11-05",
     "notified": true,
     "notified_date": "2026-11-05"
+  },
+  "samjong:KPMG00000000000000000000001011": {
+    "source": "samjong",
+    "source_label": "삼정KPMG",
+    "title": "[인턴] Deal Adv 3본부 인턴 채용",
+    "company": "삼정KPMG",
+    "deadline": "2026-11-20",
+    "posted_date": "2026-11-05",
+    "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000001011&receive_div_cd=N",
+    "body_excerpt": "",
+    "category": "신입",
+    "location": "",
+    "emp_type": "",
+    "native_id": "KPMG00000000000000000000001011",
+    "uid": "samjong:KPMG00000000000000000000001011",
+    "first_seen": "2026-11-05T18:31:16",
+    "last_seen": "2026-11-05",
+    "notified": false
+  },
+  "anjin:5242": {
+    "source": "anjin",
+    "source_label": "딜로이트안진",
+    "title": "세무자문부문 서류 검토 아르바이트",
+    "company": "딜로이트 안진",
+    "deadline": "2026-11-20",
+    "posted_date": "2026-11-05",
+    "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5242",
+    "body_excerpt": "",
+    "category": "",
+    "location": "",
+    "emp_type": "",
+    "native_id": "5242",
+    "uid": "anjin:5242",
+    "first_seen": "2026-11-05T18:31:16",
+    "last_seen": "2026-11-05",
+    "notified": false
   }
 }

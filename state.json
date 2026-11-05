@@ -1565,7 +1565,8 @@
     "uid": "samjong:KPMG00000000000000000000000995",
     "first_seen": "2026-11-05T11:02:44",
     "last_seen": "2026-11-05",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-11-05"
   },
   "hanyoung:132176": {
     "source": "hanyoung",
@@ -1583,6 +1584,7 @@
     "uid": "hanyoung:132176",
     "first_seen": "2026-11-05T11:02:44",
     "last_seen": "2026-11-05",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-11-05"
   }
 }

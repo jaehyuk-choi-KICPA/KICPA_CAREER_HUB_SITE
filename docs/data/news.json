@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-06T05:02:23",
+  "generated_at": "2026-11-06T05:31:31",
   "items": [
     {
       "source": "gnews_세무",
@@ -234,12 +234,6 @@
           "published": "2026-11-04"
         },
         {
-          "title": "국세청, 주식 양도세 4687명에 21억원 직권 환급",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9kZlpTdklpY2NOVlpVQ1hyT2FIYU52YjFMd2NsUDVSRUJoZy1kSUpNd1JpeXFCX0JBRHRYTnBwZ0ZndGVVU0pFQ0dkeFo5bGp3MS1jLVZjcFVrYVZOOWY1c3JiZUVTVDBM0gFsQVVfeXFMT3UteFBrdHZxY1JPdTU2SkVmLXh0dGdMb0VwVzF6UGV1dDltUGRnaFJUdElELV9sZWVHVWpiWnZIVlB0Sjhzd1pmbEs3bVFHV3M0VVNwOC01TkJHYk54MlJwYl9ocXJkR19rTnZ5?oc=5",
-          "source_label": "필드뉴스",
-          "published": "2026-11-03"
-        },
-        {
           "title": "국세청 주식 양도소득세 21억 환급…4687명 대상 : 정책.지표",
           "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5COWgxb1luNlUzQ2w2YjVmZE1Xd1BEVDZEcTVaTG56dkFJZkQxa09FR1ZnRDd2SEw3YVRjcFV2Q1pwOGJCUG9QMHA3WQ?oc=5",
           "source_label": "재경일보",
@@ -382,6 +376,24 @@
       ]
     },
     {
+      "source": "gnews_세무",
+      "source_label": "뉴스핌",
+      "title": "[리포트 브리핑]키움증권, '거래대금 하락에 법인세를 싸서 드셔보세요' 목표가 294,000원 - iM증권",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5yR1hiR29ybmQ1bXJVaFVxOWFLWWtOOS1QX0d5dVVQSGZ5RURkX2ppcFBqdl9BeDlVX1llRE5uTmJfbUV3UG5WeVh0ckU0b0k1UEhWSEU4YTU3Rkk4?oc=5",
+      "published": "2026-11-02",
+      "published_at": "2026-11-02T06:15:00",
+      "summary": "",
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "[리포트 브리핑]키움증권, '법인세 부담과 연결 수익증권 평가손실로 전망치 하회' 목표가 320,000원 - KB증권",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBaSjN1cm9mM3pPMm5jaXhudXdaY0JtdUd5eV9hel9YdVczX3VWNDk3Y2JUc1VjdzRxa0M1VjBkOFFDZUU0Q01xQUUtT1Nia3JrbkdZWG9vTm5EZk4x?oc=5",
+          "source_label": "뉴스핌",
+          "published": "2026-11-02"
+        }
+      ]
+    },
+    {
       "source": "gnews_감사_2",
       "source_label": "토큰포스트",
       "title": "홍콩 증선위, 고위험 인가기관 보안 기준 강화 추진",
@@ -398,16 +410,6 @@
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBxenJPdm9fMC16SlRMal9pemQwUGtjYjBRMDl6Sll6UU15dy1ONEQ4TlpUektKcjk3WjJFUHlsbk1SZkxjQWFuMzcxRnI0d1lld2g5UU5pbF9Nd2cyQnpLakZhR05wOFZI?oc=5",
       "published": "2026-11-02",
       "published_at": "2026-11-02T01:00:00",
-      "summary": "",
-      "category": "감사"
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "조세금융신문",
-      "title": "이억원, 회계의 날 맞아 '부실감사' 정조준…연내 심사 착수",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1PbFBENVZCdEJjb1JyQmJ0RkJjajBnZXBBOXJYQTZpUVZGOFFSRmpqc3JpWVljU0ZlUW84UXRDOGt1R2I5aUdqdzNwT2ZaSnFKZjB1SUdMV1F2ejFPQ0xCdkVubw?oc=5",
-      "published": "2026-10-30",
-      "published_at": "2026-10-30T05:55:12",
       "summary": "",
       "category": "감사"
     },

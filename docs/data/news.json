@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T12:31:20",
+  "generated_at": "2026-11-05T13:02:08",
   "items": [
     {
       "source": "gnews_세무",
@@ -345,13 +345,21 @@
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "매일경제 마켓",
-      "title": "이억원 “韓 회계 국가경쟁력 55위…회계기본법 제정 적극 추진”",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBHRjU4VVRleFV6R09neTJQdzJGS1I1a3IwdHpZTk11ZzFraGRFbElGRlROY3hCQzBpdXZZeGliQVZWMUZaalJrOWgxaERCQzBmb1E?oc=5",
-      "published": "2026-10-30",
-      "published_at": "2026-10-30T06:48:56",
+      "source_label": "신아일보",
+      "title": "[금융권 말말말] 이억원 \"회계 투명성 끌어올릴 것\"",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBDNHl5WFk5ZjRZWVB6Wm5iU001TkhiZ3FnYW93Yk92OFI3bkVDLVZXdlg5dEcwMl9PNmh5Q1MyRHZxcm4ybGpsSzN1aTAtc0MxYjJiOWI3b0pZSDBBSFhlS1VqbERDX2tTTkptNUd4ZXc?oc=5",
+      "published": "2026-11-01",
+      "published_at": "2026-11-01T02:10:49",
       "summary": "",
-      "category": "감사"
+      "category": "감사",
+      "dupes": [
+        {
+          "title": "이억원 “韓 회계 국가경쟁력 55위…회계기본법 제정 적극 추진”",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBHRjU4VVRleFV6R09neTJQdzJGS1I1a3IwdHpZTk11ZzFraGRFbElGRlROY3hCQzBpdXZZeGliQVZWMUZaalJrOWgxaERCQzBmb1E?oc=5",
+          "source_label": "매일경제 마켓",
+          "published": "2026-10-30"
+        }
+      ]
     },
     {
       "source": "gnews_감사_2",

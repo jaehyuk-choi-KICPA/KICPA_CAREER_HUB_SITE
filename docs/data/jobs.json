@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-05T16:31:33",
+  "generated_at": "2026-11-05T17:01:31",
   "soon_days": 7,
   "counts": {
-    "total": 99,
-    "open": 63,
+    "total": 100,
+    "open": 64,
     "closed": 36,
     "new": 7,
     "soon": 31,
@@ -12,16 +12,16 @@
       "삼정": 6,
       "안진": 13,
       "한영": 24,
-      "로컬": 48,
+      "로컬": 49,
       "기타": 5
     },
     "by_qualification": {
-      "수습CPA": 57,
+      "수습CPA": 58,
       "자격무관": 42
     },
     "by_emp_kind": {
       "인턴": 23,
-      "정규직": 46,
+      "정규직": 47,
       "계약직": 5,
       "파트타임": 25
     }
@@ -69,25 +69,6 @@
       "source": "hanyoung",
       "source_label": "EY한영",
       "firm": "한영",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "계약직",
-      "status": "open",
-      "is_new": false,
-      "title": "마켓부문 BMC 글로벌 사회공헌 프로그램 담당 계약직 [경력]",
-      "company": "EY한영",
-      "deadline": "2026-11-05",
-      "posted_date": "2026-10-23",
-      "location": "",
-      "emp_type": "신입",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/132178",
-      "dday": 0,
-      "first_seen": "2026-10-23T13:31:33"
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
       "field": "감사",
       "qualification": "자격무관",
       "emp_kind": "인턴",
@@ -102,6 +83,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/132216",
       "dday": 0,
       "first_seen": "2026-10-29T14:31:52"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": false,
+      "title": "마켓부문 BMC 글로벌 사회공헌 프로그램 담당 계약직 [경력]",
+      "company": "EY한영",
+      "deadline": "2026-11-05",
+      "posted_date": "2026-10-23",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/132178",
+      "dday": 0,
+      "first_seen": "2026-10-23T13:31:33"
     },
     {
       "source": "kicpa_cpa",
@@ -510,7 +510,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "이촌회계법인 수습회계사(파트타임) 채용",
       "company": "이촌회계법",
       "deadline": "2026-11-09",
@@ -1109,6 +1109,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1793773585392",
       "dday": 25,
       "first_seen": "2026-11-04T15:32:43"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "택스",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[선영회계법인] 수습공인회계사(택스본부 파트장 트랙) 채용",
+      "company": "선영회계법인",
+      "deadline": "2026-11-30",
+      "posted_date": "2026-11-05",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1793864828909",
+      "dday": 25,
+      "first_seen": "2026-11-05T17:01:31"
     },
     {
       "source": "anjin",

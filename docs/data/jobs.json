@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-05T11:02:44",
+  "generated_at": "2026-11-05T11:31:26",
   "soon_days": 7,
   "counts": {
-    "total": 97,
+    "total": 96,
     "open": 60,
-    "closed": 37,
+    "closed": 36,
     "new": 7,
     "soon": 31,
     "by_firm": {
@@ -12,18 +12,18 @@
       "삼정": 6,
       "안진": 11,
       "한영": 24,
-      "로컬": 48,
+      "로컬": 47,
       "기타": 5
     },
     "by_qualification": {
-      "수습CPA": 57,
+      "수습CPA": 56,
       "자격무관": 40
     },
     "by_emp_kind": {
       "인턴": 21,
       "정규직": 46,
       "계약직": 5,
-      "파트타임": 25
+      "파트타임": 24
     }
   },
   "postings": [
@@ -1849,25 +1849,6 @@
       "emp_type": "정규직",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1793700386478",
       "dday": -2,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "파트타임",
-      "status": "closed",
-      "is_new": false,
-      "title": "[신우회계법인] 2본부 5팀 수습 공인회계사(Part-time) 채용",
-      "company": "신우회계법인",
-      "deadline": "2026-11-04",
-      "posted_date": "2026-11-03",
-      "location": "서울 강남구",
-      "emp_type": "Part Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792048096032",
-      "dday": -1,
       "first_seen": ""
     }
   ]

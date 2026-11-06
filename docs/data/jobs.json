@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-11-06T11:31:23",
+  "generated_at": "2026-11-06T12:10:02",
   "soon_days": 7,
   "counts": {
-    "total": 96,
-    "open": 56,
+    "total": 99,
+    "open": 59,
     "closed": 40,
-    "new": 7,
-    "soon": 25,
+    "new": 9,
+    "soon": 27,
     "by_firm": {
       "삼일": 3,
       "삼정": 6,
       "안진": 12,
-      "한영": 23,
-      "로컬": 47,
+      "한영": 24,
+      "로컬": 49,
       "기타": 5
     },
     "by_qualification": {
-      "수습CPA": 56,
-      "자격무관": 40
+      "수습CPA": 58,
+      "자격무관": 41
     },
     "by_emp_kind": {
-      "인턴": 22,
-      "정규직": 45,
+      "인턴": 23,
+      "정규직": 46,
       "계약직": 5,
-      "파트타임": 24
+      "파트타임": 25
     }
   },
   "postings": [
@@ -427,6 +427,25 @@
       "first_seen": "2026-11-04T13:31:47"
     },
     {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "경영지원본부 Talent 채용팀 인턴",
+      "company": "EY한영",
+      "deadline": "2026-11-12",
+      "posted_date": "2026-11-06",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/133659",
+      "dday": 6,
+      "first_seen": "2026-11-06T12:10:02"
+    },
+    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "로컬",
@@ -491,7 +510,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[동현회계법인] 파트타임 신입 수습회계사 선발",
       "company": "동현회계법인",
       "deadline": "2026-11-13",
@@ -501,6 +520,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1793845917508",
       "dday": 7,
       "first_seen": "2026-11-05T12:01:30"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[대주] 청주지점 파트(수습) 회계사 모집",
+      "company": "대주회계법인 청주지점",
+      "deadline": "2026-11-13",
+      "posted_date": "2026-11-06",
+      "location": "충북 전체",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1793933365069",
+      "dday": 7,
+      "first_seen": "2026-11-06T12:10:02"
     },
     {
       "source": "kicpa_susup",
@@ -976,6 +1014,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1793864828909",
       "dday": 24,
       "first_seen": "2026-11-05T17:01:31"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "회계법인 경력 직원 모집 - 주4일, 단축근무, 중식제공",
+      "company": "회계법인 리안",
+      "deadline": "2026-11-30",
+      "posted_date": "2026-11-06",
+      "location": "서울 서초구",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1793933808882",
+      "dday": 24,
+      "first_seen": "2026-11-06T12:10:02"
     },
     {
       "source": "anjin",

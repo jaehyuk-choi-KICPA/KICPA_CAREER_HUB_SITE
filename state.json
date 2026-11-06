@@ -1623,7 +1623,7 @@
     "uid": "hanyoung:132216",
     "first_seen": "2026-11-06T17:01:25",
     "last_seen": "2026-11-06",
-    "notified": false
+    "notified": true
   },
   "hanyoung:133715": {
     "source": "hanyoung",
@@ -1641,6 +1641,7 @@
     "uid": "hanyoung:133715",
     "first_seen": "2026-11-06T17:01:25",
     "last_seen": "2026-11-06",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-11-06"
   }
 }

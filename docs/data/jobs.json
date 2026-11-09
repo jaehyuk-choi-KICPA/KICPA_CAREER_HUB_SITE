@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-09T10:31:25",
+  "generated_at": "2026-11-09T11:01:40",
   "soon_days": 7,
   "counts": {
-    "total": 88,
-    "open": 51,
+    "total": 89,
+    "open": 52,
     "closed": 37,
-    "new": 2,
+    "new": 3,
     "soon": 22,
     "by_firm": {
       "삼일": 3,
-      "삼정": 4,
+      "삼정": 5,
       "안진": 12,
       "한영": 21,
       "로컬": 44,
@@ -17,11 +17,11 @@
     },
     "by_qualification": {
       "수습CPA": 52,
-      "자격무관": 36
+      "자격무관": 37
     },
     "by_emp_kind": {
       "인턴": 23,
-      "정규직": 41,
+      "정규직": 42,
       "계약직": 4,
       "파트타임": 20
     }
@@ -577,6 +577,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5242",
       "dday": 11,
       "first_seen": "2026-11-05T18:31:16"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "택스",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[케이피엠지 관세법인] Tax 6 신입 관세사 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-11-23",
+      "posted_date": "2026-11-09",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000001012&receive_div_cd=N",
+      "dday": 14,
+      "first_seen": "2026-11-09T11:01:40"
     },
     {
       "source": "anjin",

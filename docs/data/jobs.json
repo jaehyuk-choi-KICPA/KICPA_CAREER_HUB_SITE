@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-10T11:02:33",
+  "generated_at": "2026-11-10T11:31:26",
   "soon_days": 7,
   "counts": {
-    "total": 89,
-    "open": 48,
+    "total": 90,
+    "open": 49,
     "closed": 41,
-    "new": 2,
-    "soon": 18,
+    "new": 3,
+    "soon": 19,
     "by_firm": {
       "삼일": 3,
       "삼정": 5,
       "안진": 12,
-      "한영": 21,
+      "한영": 22,
       "로컬": 44,
       "기타": 4
     },
     "by_qualification": {
       "수습CPA": 52,
-      "자격무관": 37
+      "자격무관": 38
     },
     "by_emp_kind": {
-      "인턴": 23,
+      "인턴": 24,
       "정규직": 42,
       "계약직": 4,
       "파트타임": 20
@@ -330,6 +330,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/133752",
       "dday": 5,
       "first_seen": "2026-11-08T17:31:26"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "딜",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "전략·재무자문부문 TRS(Turnaround & Restructuring Services)팀 단기인턴",
+      "company": "EY한영",
+      "deadline": "2026-11-15",
+      "posted_date": "2026-11-10",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/133980",
+      "dday": 5,
+      "first_seen": "2026-11-10T11:31:26"
     },
     {
       "source": "hanyoung",

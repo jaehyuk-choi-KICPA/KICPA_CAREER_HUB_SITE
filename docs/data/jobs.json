@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-10T13:01:38",
+  "generated_at": "2026-11-10T13:36:22",
   "soon_days": 7,
   "counts": {
-    "total": 90,
-    "open": 49,
+    "total": 91,
+    "open": 50,
     "closed": 41,
-    "new": 4,
-    "soon": 19,
+    "new": 5,
+    "soon": 20,
     "by_firm": {
       "삼일": 3,
       "삼정": 5,
-      "안진": 12,
+      "안진": 13,
       "한영": 22,
       "로컬": 44,
       "기타": 4
     },
     "by_qualification": {
       "수습CPA": 52,
-      "자격무관": 38
+      "자격무관": 39
     },
     "by_emp_kind": {
-      "인턴": 24,
+      "인턴": 25,
       "정규직": 42,
       "계약직": 4,
       "파트타임": 20
@@ -235,6 +235,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1793933365069",
       "dday": 3,
       "first_seen": "2026-11-06T12:10:02"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "딜",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "세무자문부문 M&A Tax 인턴",
+      "company": "딜로이트 안진",
+      "deadline": "2026-11-13",
+      "posted_date": "2026-11-10",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5245",
+      "dday": 3,
+      "first_seen": "2026-11-10T13:36:22"
     },
     {
       "source": "kicpa_susup",

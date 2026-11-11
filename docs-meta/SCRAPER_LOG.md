@@ -20,6 +20,18 @@
 
 ---
 
+## 2026-11-12 (31) — run-all: Chromium 설치 실패가 전체 수집을 막지 않게
+
+- **증상/계기:** 2026-11-11 14:00Z부터 run-all 연속 6회 실패(13:30Z까지 정상, 러너 이미지·playwright 버전 동일).
+  로그상 `playwright install --with-deps chromium`의 apt가 `Temporary failure resolving 'archive.ubuntu.com'`로
+  10분 재시도 후 실패 = GitHub 러너 DNS/미러 장애. 인사이트 전용 의존성 하나 때문에 채용·뉴스·푸시가 통째로 멈췄다.
+- **무엇을:** Chromium 설치 단계를 `continue-on-error` + deps 설치 300초 제한 → 실패 시 `playwright install chromium`(deps 없이) 폴백.
+- **어디에:** `.github/workflows/run-all.yml` 'Install Chromium' 스텝. 브라우저가 없어도 `render.render_html`이 None을 돌려주고
+  `export._write_guarded`가 빈 insights로 덮어쓰지 않으므로 기존 인사이트가 유지된다(`safe_fetch` 원칙의 워크플로 레벨 확장).
+- **효과/검증:** apt 장애 시에도 채용·뉴스 수집·커밋·푸시는 진행, 인사이트만 이전 데이터 유지.
+
+---
+
 ## 2026-08-28 (30) — 아카이브 중복 정리: 제목 재유입 차단 + 군집 id(gid) 보존
 
 - **증상/계기:** '전체 기간' 화면에 같은 기사가 여러 장 떴다. 사용자가 "Voyage가 업계 기사에도

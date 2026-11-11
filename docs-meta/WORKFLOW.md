@@ -291,6 +291,7 @@ flowchart LR
 ```
 
 **순차 이유**: Playwright sync API는 스레드 비안전.
+**설치 실패 격리**: run-all의 Chromium 설치는 `continue-on-error`(deps 300초 제한 → deps 없이 폴백). apt 미러 장애로 브라우저가 없어도 채용·뉴스는 진행되고 insights.json은 `_write_guarded`로 이전 값 유지.
 
 ---
 

@@ -28,8 +28,13 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.11", cache: pip }
       - run: pip install -r requirements.txt
+      # 인사이트 전용 의존성이 채용·뉴스·푸시까지 막지 않게 한다(전체실패 금지).
+      # 2026-11-11 실측: 러너가 apt 미러 DNS를 못 풀어 --with-deps가 10분 재시도 후 실패 → run-all 연속 실패.
+      # 실패 시 deps 없이 브라우저만 받고, 그래도 안 되면 render_html이 None → _write_guarded가 기존 insights 유지.
       - name: Install Chromium (인사이트 렌더용)
-        run: python -m playwright install --with-deps chromium
+        continue-on-error: true
+        timeout-minutes: 10
+        run: timeout 300 python -m playwright install --with-deps chromium || python -m playwright install chromium
       # 다른 워크플로가 먼저 올린 status.json을 받아온 뒤 내 몫만 갱신한다.
       # (없으면 옛 체크아웃의 status.json으로 남의 스트림 시각을 되돌린다 — 실측 사고)
       - run: git pull --rebase --autostash origin "${{ github.ref_name }}" || true

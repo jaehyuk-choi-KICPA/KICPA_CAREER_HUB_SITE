@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-11-11T15:01:31",
+  "generated_at": "2026-11-11T15:31:39",
   "soon_days": 7,
   "counts": {
-    "total": 90,
-    "open": 51,
+    "total": 91,
+    "open": 52,
     "closed": 39,
-    "new": 3,
-    "soon": 21,
+    "new": 4,
+    "soon": 22,
     "by_firm": {
       "삼일": 3,
       "삼정": 5,
       "안진": 13,
       "한영": 20,
-      "로컬": 45,
+      "로컬": 46,
       "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 53,
+      "수습CPA": 54,
       "자격무관": 37
     },
     "by_emp_kind": {
       "인턴": 24,
       "정규직": 40,
       "계약직": 4,
-      "파트타임": 22
+      "파트타임": 23
     }
   },
   "postings": [
@@ -235,6 +235,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5245",
       "dday": 2,
       "first_seen": "2026-11-10T13:36:22"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[한길회계법인] 5본부 수습공인회계사 채용",
+      "company": "한길회계법인",
+      "deadline": "2026-11-13",
+      "posted_date": "2026-11-11",
+      "location": "서울 전체",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1794377470730",
+      "dday": 2,
+      "first_seen": "2026-11-11T15:31:39"
     },
     {
       "source": "kicpa_susup",

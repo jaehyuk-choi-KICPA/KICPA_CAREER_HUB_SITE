@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T20:01:29",
+  "generated_at": "2026-11-12T20:31:34",
   "items": [
     {
       "source": "gnews_감사_2",
@@ -343,16 +343,6 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "OBC 뉴스",
-      "title": "세금 폭탄 터진 뒤 조사하나…AI 시대, 국세청의 낡은 계산법",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9uMGhlNk1sY3gzRlVmVUdEMnFpTzZkUWZyRXd1dklPc1dlRkZhWnNNSFdnd1U2ZGFDTGVtYkxPdmdjSm80aWdpbU1Db2JHZkFTUlktQTVrcTNXRWloUE1VRGVrRmtPZ1FJVXc?oc=5",
-      "published": "2026-11-11",
-      "published_at": "2026-11-11T08:00:02",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
       "source_label": "Daily NTN",
       "title": "이종탁 서울회장 “확신으로 준비하면 세무조사 두려움 없어져\"",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5OWmMxa0JnVnFOTGpkMFd4SnFPdEp6UjZzUE5mNl9tZkFDZGhVb2pCX3pndlBTTDlQY2p2YVY1Sk1GMDh6WDBwZFJ2YmVXSUR1RjBQWW9LSjd1MU5wM2hMb3d6TWlES0c4LUE?oc=5",
@@ -368,6 +358,16 @@
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBQc2R3amFpYVJ4QTlOMTgtTElhY1EzZUx5ZFl0VkRmT3ZLTU9pN0dYZGh2b3NxLUdFY040azNKeUNwVm1jenNJTFU3dmxRYUF0bHVrYVNGWFJXYXd6VUFGQnZ5cHI?oc=5",
       "published": "2026-11-11",
       "published_at": "2026-11-11T06:33:57",
+      "summary": "",
+      "category": "세무"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "SBS Biz",
+      "title": "[집중진단] 주가 누르기 '방지법'인가 '방치법'인가…상속·증여세 매길 '주식값' 놓고 격돌",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBwWDEyTmVyUHJmNjltRTBkZHVCYkxweEJmbVpRYVc0MTFQRjEySXpXQ0RlREhBN0NPaDhnN2hMelN6U3l2VkhiUlUxRkx6cmJaMnIw0gFYQVVfeXFMTXh5Um8tOHJydzJRQ0EwWEF2b0I2NnRzcG1UaTJTQ3hocm1BR3lhWHp6Q0Q5R2ttRk53SDlFS2dvOURwM3Z4dEtIaEs0R0I5MWR4TE04Um5kbA?oc=5",
+      "published": "2026-11-11",
+      "published_at": "2026-11-11T04:34:00",
       "summary": "",
       "category": "세무"
     },
@@ -711,6 +711,12 @@
       "summary": "",
       "category": "세무",
       "dupes": [
+        {
+          "title": "조정식 의장 '경제 선순환 복원이 조세정책 역할' : 정치",
+          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE1tMzl0SXZfY1hrcDI5TTJrZnc4ck14eUFHUEpyd0hXNFFzc1p6SVIzMjB0TEFoQUxJSmZoWGdHSEdmbXZSYjFGczdWcw?oc=5",
+          "source_label": "재경일보",
+          "published": "2026-11-09"
+        },
         {
           "title": "조정식 \"체감경기 회복 더뎌…경제 선순환 복원이 조세정책 역할\"",
           "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1YMXhZOXlxQVZ3emRxdnEtREllbGZxY2o3LXFJQzZHOXdSaEJqMXhiT05Uc2c3VHRnYUZlQ3hZMHZGU0lpcGdLcjlCTkdwT3ZsaE9uSVFVRUZtLVdsUHhwaw?oc=5",

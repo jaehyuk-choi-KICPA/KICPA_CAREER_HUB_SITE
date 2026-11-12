@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-12T16:01:25",
+  "generated_at": "2026-11-12T16:31:34",
   "soon_days": 7,
   "counts": {
-    "total": 93,
-    "open": 50,
+    "total": 94,
+    "open": 51,
     "closed": 43,
-    "new": 3,
+    "new": 4,
     "soon": 22,
     "by_firm": {
       "삼일": 3,
-      "삼정": 5,
+      "삼정": 6,
       "안진": 13,
       "한영": 20,
       "로컬": 48,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 56,
-      "자격무관": 37
+      "자격무관": 38
     },
     "by_emp_kind": {
-      "인턴": 24,
+      "인턴": 25,
       "정규직": 43,
       "계약직": 4,
       "파트타임": 22
@@ -957,6 +957,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792479235002",
       "dday": 49,
       "first_seen": "2026-11-10T12:31:25"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "[인턴] 전략 컨설팅 프로젝트 RA인턴 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-12-31",
+      "posted_date": "2026-11-12",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000001014&receive_div_cd=N",
+      "dday": 49,
+      "first_seen": "2026-11-12T16:31:34"
     },
     {
       "source": "hanyoung",

@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-12T17:31:31",
+  "generated_at": "2026-11-12T18:01:37",
   "soon_days": 7,
   "counts": {
-    "total": 94,
-    "open": 51,
+    "total": 95,
+    "open": 52,
     "closed": 43,
-    "new": 4,
+    "new": 5,
     "soon": 22,
     "by_firm": {
       "삼일": 3,
       "삼정": 6,
       "안진": 13,
       "한영": 20,
-      "로컬": 48,
+      "로컬": 49,
       "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 56,
+      "수습CPA": 57,
       "자격무관": 38
     },
     "by_emp_kind": {
       "인턴": 25,
-      "정규직": 43,
+      "정규직": 44,
       "계약직": 4,
       "파트타임": 22
     }
@@ -843,6 +843,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1794458031279",
       "dday": 18,
       "first_seen": "2026-11-12T14:01:44"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[현대회계법인] 품질관리실 운영,관리 담당직원",
+      "company": "현대회계법인",
+      "deadline": "2026-12-04",
+      "posted_date": "2026-11-12",
+      "location": "서울 전체",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1794472757733",
+      "dday": 22,
+      "first_seen": "2026-11-12T18:01:37"
     },
     {
       "source": "anjin",

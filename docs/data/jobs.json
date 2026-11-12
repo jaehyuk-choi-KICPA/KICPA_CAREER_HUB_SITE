@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-12T18:31:26",
+  "generated_at": "2026-11-12T19:01:47",
   "soon_days": 7,
   "counts": {
-    "total": 95,
-    "open": 52,
+    "total": 96,
+    "open": 53,
     "closed": 43,
-    "new": 5,
-    "soon": 22,
+    "new": 6,
+    "soon": 23,
     "by_firm": {
       "삼일": 3,
       "삼정": 6,
       "안진": 13,
       "한영": 20,
-      "로컬": 49,
+      "로컬": 50,
       "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 57,
+      "수습CPA": 58,
       "자격무관": 38
     },
     "by_emp_kind": {
       "인턴": 25,
-      "정규직": 44,
+      "정규직": 45,
       "계약직": 4,
       "파트타임": 22
     }
@@ -349,6 +349,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/134111",
       "dday": 5,
       "first_seen": "2026-11-11T10:01:31"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "도영회계법인 수습회계사 모집",
+      "company": "도영회계법인",
+      "deadline": "2026-11-18",
+      "posted_date": "2026-11-12",
+      "location": "서울 강남구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1794476815427",
+      "dday": 6,
+      "first_seen": "2026-11-12T19:01:47"
     },
     {
       "source": "kicpa_susup",

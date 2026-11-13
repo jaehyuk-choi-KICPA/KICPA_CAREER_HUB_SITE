@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-11-13T17:01:37",
+  "generated_at": "2026-11-13T17:31:43",
   "soon_days": 7,
   "counts": {
-    "total": 91,
-    "open": 51,
+    "total": 92,
+    "open": 52,
     "closed": 40,
-    "new": 4,
-    "soon": 23,
+    "new": 5,
+    "soon": 24,
     "by_firm": {
       "삼일": 3,
       "삼정": 6,
       "안진": 11,
       "한영": 21,
-      "로컬": 46,
+      "로컬": 47,
       "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 54,
+      "수습CPA": 55,
       "자격무관": 37
     },
     "by_emp_kind": {
       "인턴": 23,
       "정규직": 42,
       "계약직": 4,
-      "파트타임": 22
+      "파트타임": 23
     }
   },
   "postings": [
@@ -330,6 +330,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1794458786016",
       "dday": 5,
       "first_seen": "2026-11-12T14:01:44"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[이정회계법인] 2026 수습공인회계사 풀타임 채용",
+      "company": "이정회계법인",
+      "deadline": "2026-11-18",
+      "posted_date": "2026-11-13",
+      "location": "서울 서초구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1794557551825",
+      "dday": 5,
+      "first_seen": "2026-11-13T17:31:43"
     },
     {
       "source": "anjin",

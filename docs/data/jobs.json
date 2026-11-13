@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-13T16:01:45",
+  "generated_at": "2026-11-13T16:31:41",
   "soon_days": 7,
   "counts": {
     "total": 91,
     "open": 51,
     "closed": 40,
-    "new": 5,
+    "new": 4,
     "soon": 23,
     "by_firm": {
       "삼일": 3,
@@ -966,7 +966,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[인턴] 전략 컨설팅 프로젝트 RA인턴 채용",
       "company": "삼정KPMG",
       "deadline": "2026-12-31",

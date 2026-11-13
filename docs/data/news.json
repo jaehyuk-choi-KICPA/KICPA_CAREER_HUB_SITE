@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T07:31:27",
+  "generated_at": "2026-11-14T08:01:45",
   "items": [
     {
       "source": "gnews_감사_2",
@@ -222,66 +222,6 @@
       ]
     },
     {
-      "source": "gnews_감사_2",
-      "source_label": "뉴스후플러스",
-      "title": "무상증자 공시 전 법인계좌로 매수 지시 혐의…증선위, 고발·통보 의결",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBqLWVlem85Q3RtcWV5QWdUVlF0emFwYko3U2E5UlhsMVdSekZqZDJ2WGxKZFRDdHBNSDY0NzY3bWlucEJwTjhWdXd4bVZucUFPR05lVy1PaHJPaW04bjdaN1Z0ZDFzRmNrZ0FpNUhn?oc=5",
-      "published": "2026-11-12",
-      "published_at": "2026-11-12T04:48:00",
-      "summary": "",
-      "category": "감사",
-      "dupes": [
-        {
-          "title": "무상증자 공시 전 주식 매수…증선위, 벤처투자사 대표 고발",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9QdkZHWFpySzM1SGlFOGM2TXhwcnBtN2ZCWFZjTmxLVk1jY08xaGg5TUtBc0RyRWNVUWo1QWNEUF9RSlVqdUt1MEdnZGRNV0RKaXMtM2FGRlhzTlU5?oc=5",
-          "source_label": "뉴스핌",
-          "published": "2026-11-11"
-        },
-        {
-          "title": "무상증자 정보로 주식 매매…증선위, 내부자 2명 고발 : 금융",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBoMGVFQVZaSlp4MHNhNXdXTWdJM1VRWVg1bFFTUUJNZkZfNE9LY3p2WjVwVWNTVXVlc2R4RXBGMHl1V2l3bUJwSEh4UQ?oc=5",
-          "source_label": "재경일보",
-          "published": "2026-11-11"
-        },
-        {
-          "title": "미공개정보 이용해 수십억 부당이득…증선위, 중수청 고발·통보",
-          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4wSlJ5ZTRtNHRoU0N5Rldzci1JdFVRVlhacm9nUS1ISGNoaHhQcmdDemVVd1gtZ2VNbnlDVUhoRE5rVkNQbDk0OTBlclkwZUtSdVdJ0gFYQVVfeXFMTUVyOGdrV2hwTEVjRkZmUFdCU3FZcGZob2tIQ3c1REx4YTdzSHRXaTdmaWtEWUNwNjNCNWdPXzRjekN1bkppYUgwbmxMVW9fcFBPbkItSXlTXw?oc=5",
-          "source_label": "SBS Biz",
-          "published": "2026-11-11"
-        },
-        {
-          "title": "미공개정보 이용해 부당이득 취득…증선위, 중수청 고발·통보",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5WUldSc2hDd2xCVVkxQkpxc0Q2X3pybTE0bjE1aWVHVXJEcnNxS0dlc1B5dGJnekw2b2o1a0VnSWxVTDNsODlXVlZ2SDc3UG96LXBJUkstZWFKLXFPT19SOW45RnAxMzUtQU1NUWVvWTBlcWl0?oc=5",
-          "source_label": "연합뉴스 한민족센터",
-          "published": "2026-11-11"
-        },
-        {
-          "title": "무상증자 미공개정보 이용해 수십억 부당이득…증선위, 벤처투자 경영진 중수청 고발",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA5OUFRR1VfdldqUURRRXpKNUpVZUM0NFdEYnZsV1pOTlYwRW10WHRXTnVGekYzOU8zcnR5VHBnWjlsLVNsTVZ4RTduRjN2YXA2d2w5aEllWHR6YnhuWGxnd2Z5UkRFaFNJQ2VUSGFDY9IBc0FVX3lxTE5wRXFpR19oLVMtRUdlZTlPTnNoMGdURUNVazNXNUhQeUFlMFQ3YWFNa1VQdXE2dy10WmVVcTlDa1pCUGxyeWdPcy1DeGQtYkE3YU5GUlBfOXpyclh1aVpxajE0Q2RWbV9SQkZxMXdyOTNnQ2c?oc=5",
-          "source_label": "뉴스웍스",
-          "published": "2026-11-11"
-        },
-        {
-          "title": "\"무상증자정보 이용해 수십억 꿀꺽\" 증선위, 벤처투자사 대표 고발 - 머니투데이",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5vb2RhZFlscjE1WXg3RUZWUFdlVXFZdlF3cXFDbFlDUFRkQTh6TGVoUE1zOEZ6THYtNngtanJ0S1V1QlVOSGVyLXNYMzhHbmlweGowQlNvcnVPNlNRUjkzVnh6bXZ4amMz0gFuQVVfeXFMT2c4Z2lvWkFLRjBBak5CRmN0OFlFLWdzV19qcl9sVFZXazlYRGQ2TDVrcFF6eWlheUJVektTa2ZnRURHVGpPQnhmTk14czVjbkl0Zm5POUtrMnNXczFOTldqZHgtcktRcENqZDJyQ0E?oc=5",
-          "source_label": "머니투데이",
-          "published": "2026-11-11"
-        },
-        {
-          "title": "무상증자 정보로 수십억 부당이득…증선위, 벤처투자사 대표 등 고발",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUm94TVkxd0x1dDFKY2dzbE1XX2FuWExUbGhIaExCanR0aG5IWFRndkNNblM1TTN5RmExdWZoSl91aThDT1ZBMUVNWUJRSFlBaGVNcnhlM2p5elVYZGxZRzVsWlA2c1ZDTVlOd25pSmhaanY0aVdKaE11MGRsd1pVOQ?oc=5",
-          "source_label": "이데일리",
-          "published": "2026-11-11"
-        },
-        {
-          "title": "증선위, '무상증자 미공개 정보 이용' VC 대표 등 중수청 고발",
-          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1udlhKUXkxNGxhMDBlRXdqQ2NFTUdDUkMyQkNXUFpXQm4yU0p4UDFjcVh3OFhRaEFkZnZ6OU9tV3hIeUxMbkotSWhhbjF5RkUyVVd1RHlXY3FsaV8yYkF1ZFl6UE9iZzV6SVJzd0hpeVY?oc=5",
-          "source_label": "연합인포맥스",
-          "published": "2026-11-11"
-        }
-      ]
-    },
-    {
       "source": "gnews_세무",
       "source_label": "유스연합",
       "title": "고대원 세무사, CEO 40여 명 대상 상속·증여 특강",
@@ -370,6 +310,24 @@
           "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5MeUJOTzljMi01QnZuN21tdnNiSmNIMUplbGFpUzZBb1hfOHAwc3BtZE80MXVLSFpfNkRKRDlIQVdDUldDa01mbERQcFZFTFE0a0hnLThvbDZiYy1UWTBWajFhaHcxRnFQTkd3?oc=5",
           "source_label": "청주일보",
           "published": "2026-11-10"
+        }
+      ]
+    },
+    {
+      "source": "gnews_감사_2",
+      "source_label": "연합뉴스",
+      "title": "미공개정보 이용해 부당이득 취득…증선위, 중수청 고발·통보",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE13RlRSWkJjVE1qeXBab0dLVjUxVExyRjUybFU5Y2F0NXNxWlFVMFdYOEk1aDJ6N1ZkeGN4akZwdUpKakh5anRfdFUwbVNCMFd1cXZlcnNEbDdfNFgwWXJpZtIBYEFVX3lxTE13RlRSWkJjVE1qeXBab0dLVjUxVExyRjUybFU5Y2F0NXNxWlFVMFdYOEk1aDJ6N1ZkeGN4akZwdUpKakh5anRfdFUwbVNCMFd1cXZlcnNEbDdfNFgwWXJpZg?oc=5",
+      "published": "2026-11-11",
+      "published_at": "2026-11-11T09:40:03",
+      "summary": "",
+      "category": "감사",
+      "dupes": [
+        {
+          "title": "무상증자 정보로 수십억 부당이득…증선위, 벤처투자사 대표 등 고발",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB1NWhRaWtKZFVMNUxpVXNzVzFqekdYZ05ZaTh4cW1KV0ZZNjk1RlVjSzhuc3dfbGtkVWVYMlVRbGlBVU9fcG14LUJ0Yng0ak1WbkVJQlFMWUY1aElyZ2RicE5sOXNwQzBmZUVkNUxwLV9DYkE?oc=5",
+          "source_label": "마켓인",
+          "published": "2026-11-11"
         }
       ]
     },

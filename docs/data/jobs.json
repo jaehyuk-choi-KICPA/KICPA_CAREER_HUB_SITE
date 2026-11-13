@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-13T10:31:50",
+  "generated_at": "2026-11-13T11:01:29",
   "soon_days": 7,
   "counts": {
-    "total": 88,
-    "open": 48,
+    "total": 89,
+    "open": 49,
     "closed": 40,
-    "new": 6,
+    "new": 7,
     "soon": 23,
     "by_firm": {
       "삼일": 3,
       "삼정": 6,
       "안진": 11,
-      "한영": 19,
+      "한영": 20,
       "로컬": 45,
       "기타": 4
     },
     "by_qualification": {
       "수습CPA": 53,
-      "자격무관": 35
+      "자격무관": 36
     },
     "by_emp_kind": {
       "인턴": 22,
-      "정규직": 41,
+      "정규직": 42,
       "계약직": 4,
       "파트타임": 21
     }
@@ -463,6 +463,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5242",
       "dday": 7,
       "first_seen": "2026-11-05T18:31:16"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "EY-Parthenon VCS Team P-part 정규직 컨설턴트 ( Strategy Consulting )",
+      "company": "EY한영",
+      "deadline": "2026-11-22",
+      "posted_date": "2026-11-13",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/134403",
+      "dday": 9,
+      "first_seen": "2026-11-13T11:01:29"
     },
     {
       "source": "samjong",

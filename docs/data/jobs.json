@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-13T10:01:28",
+  "generated_at": "2026-11-13T10:31:50",
   "soon_days": 7,
   "counts": {
-    "total": 89,
+    "total": 88,
     "open": 48,
-    "closed": 41,
+    "closed": 40,
     "new": 6,
     "soon": 23,
     "by_firm": {
@@ -12,16 +12,16 @@
       "삼정": 6,
       "안진": 11,
       "한영": 19,
-      "로컬": 46,
+      "로컬": 45,
       "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 54,
+      "수습CPA": 53,
       "자격무관": 35
     },
     "by_emp_kind": {
       "인턴": 22,
-      "정규직": 42,
+      "정규직": 41,
       "계약직": 4,
       "파트타임": 21
     }
@@ -1525,25 +1525,6 @@
       "location": "서울 강남구",
       "emp_type": "정규직",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1793245856357",
-      "dday": -5,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_cpa",
-      "source_label": "구인(CPA)",
-      "firm": "로컬",
-      "field": "딜",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "[우리회계법인] Risk Advisory팀 Valuation 담당 신입/경력 채용 공고",
-      "company": "우리회계법인",
-      "deadline": "2026-11-08",
-      "posted_date": "2026-11-02",
-      "location": "서울 강남구",
-      "emp_type": "정규직",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1793597845729",
       "dday": -5,
       "first_seen": ""
     },

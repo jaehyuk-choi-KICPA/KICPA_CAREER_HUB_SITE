@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T18:31:27",
+  "generated_at": "2026-11-15T19:01:42",
   "items": [
     {
       "source": "gnews_감사_2",
@@ -33,16 +33,6 @@
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "IndexBox",
-      "title": "카타르 상공부와 QCPA, 도하에서 두 번째 감사 포럼 개최 - 뉴스 및 통계",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUjBXcUxjaGJqX05uLW5oU3FHS1NKOTF3NEMtYlFXQjEzcGhuLXFmMVNoc045OUZ2QXBYM1VWc0RCWkhBWlVNMHRnckhrTUZkdVNVWmRxdXMtWVpSMGZWUjR4cnItQkhIVzNGV1pYRkozek5LYkFnSkRaQ0d3aDdaOHlfZXU1MVFhdUgzV2VhZkdrX1lub0E?oc=5",
-      "published": "2026-11-14",
-      "published_at": "2026-11-14T16:00:41",
-      "summary": "",
-      "category": "감사"
-    },
-    {
-      "source": "gnews_감사_2",
       "source_label": "내외뉴스통신",
       "title": "서해구, 공동주택관리 법정교육 실시...화재 대응과 관리비 회계처리 실무 중심",
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE02anQwZC13a3U5VzdTNFdTTW94UDdjMGlSaWh2NkdidHhiaS1ydmhUN3V4dFZ4cVJjMmI5aDUzcFZPajQ2WWx1aFV4cGFuLUExVDgwUmVGYlMwbEw0ekRrRTVCYVpkR29uWGJoStIBcEFVX3lxTFBya195RHJvbklBN0hvTVVZVm5Wb3BWLUIyZzlXMTcwTVVQYnJVRlJWTmo2SjVldmhMM3pXeEdGSi1tN0ZkZV9pa3pvc3NVSlNNX2dWbEJMNVdtNTBRMHFRUi0tS2R4ZThlbVUtTTdNRVg?oc=5",
@@ -62,6 +52,16 @@
       "category": "세무"
     },
     {
+      "source": "gnews_감사",
+      "source_label": "데일리메디",
+      "title": "셀바스헬스케어, 회계기준 위반…외부감사인 2년",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4xaVlFekdIcGhMSndrR09HejgtSUlJY2ZodnRYRFpUTjhZRi11Q0JSbVBnUTA4RHhFNF9BQThOQVh4b0R4VE5qUVliV3hFVmItRUJadHZnLXZfX1N1b01Xd0hfdjF3QWpI?oc=5",
+      "published": "2026-11-13",
+      "published_at": "2026-11-13T05:04:00",
+      "summary": "",
+      "category": "감사"
+    },
+    {
       "source": "gnews_세무",
       "source_label": "데일리경제",
       "title": "자본시장 간담회 개최...\"고의 주가 낮춘 기업 대주주에 상속, 증여세등 최대 40% 할증 과세 \"주장도",
@@ -70,6 +70,36 @@
       "published_at": "2026-11-13T02:47:29",
       "summary": "",
       "category": "세무"
+    },
+    {
+      "source": "gnews_감사_2",
+      "source_label": "메디컬투데이",
+      "title": "증선위, 셀바스헬스케어·대우산업개발 제재…감사인도 문책",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1ZWnFSQTFiZVQtbnZDbVpZaVF5bGhOMFJsMmdKU214MjJsSEpzZno5S2d6M2NtQm90QkYtVk90NjR3aWdLeWpYOXVqZExjNW8xUXFYSGpIM3Nkd004aVNnc0NUd0QxM3U0dnB5Mg?oc=5",
+      "published": "2026-11-12",
+      "published_at": "2026-11-12T06:23:50",
+      "summary": "",
+      "category": "감사",
+      "dupes": [
+        {
+          "title": "증선위, 셀바스헬스케어·대우산업개발 회계위반 제재",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1Pdzltb18zcWxHaVJZb3hod1dzRFZBNUdZMEJXSkZlRnltbkFEQ3Jjd3VMSlpvaWg4cGVyR2d2bGpkX01KZkpidndTX3RtU0dTUDRBV0d4a0ZzOXpSRDdReQ?oc=5",
+          "source_label": "아시아경제",
+          "published": "2026-11-11"
+        },
+        {
+          "title": "증선위, '회계처리 위반' 셀바스헬스케어·대우산업개발에 감사인지정",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNcF9OSW01OEJMZVhqOHJpSUZEcGtraFA5eWhGVnlIUFlnVnJscEpCMlJOR2MwbFNoQUNucEtHYjV1bGcxOUlZUk1aVUdJLVVIdG91RWU2NHB0RWJWaHphNnVFVlhHUmxEQ2E5VklxVXBjZWRMcDZRaHVnMzUxcU9uZA?oc=5",
+          "source_label": "이데일리",
+          "published": "2026-11-11"
+        },
+        {
+          "title": "'회계처리 위반' 셀바스헬스케어·대우산업개발에 감사인지정",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE01b2lZLWNOMXlZYjFhcXJISHY2UW5oVV91UTRLZEFVaEVTSDJrREZETnl2VHdac1dRMkJBOFUyUXRTMm1HZDRBQk93ajlzYUdDNTAtMWx0UEwycm45XzlCQtIBYEFVX3lxTE01b2lZLWNOMXlZYjFhcXJISHY2UW5oVV91UTRLZEFVaEVTSDJrREZETnl2VHdac1dRMkJBOFUyUXRTMm1HZDRBQk93ajlzYUdDNTAtMWx0UEwycm45XzlCQg?oc=5",
+          "source_label": "연합뉴스",
+          "published": "2026-11-11"
+        }
+      ]
     },
     {
       "source": "gnews_세무",
@@ -146,16 +176,6 @@
           "published": "2026-11-10"
         }
       ]
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "연합뉴스",
-      "title": "'회계처리 위반' 셀바스헬스케어·대우산업개발에 감사인지정",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE01b2lZLWNOMXlZYjFhcXJISHY2UW5oVV91UTRLZEFVaEVTSDJrREZETnl2VHdac1dRMkJBOFUyUXRTMm1HZDRBQk93ajlzYUdDNTAtMWx0UEwycm45XzlCQtIBYEFVX3lxTE01b2lZLWNOMXlZYjFhcXJISHY2UW5oVV91UTRLZEFVaEVTSDJrREZETnl2VHdac1dRMkJBOFUyUXRTMm1HZDRBQk93ajlzYUdDNTAtMWx0UEwycm45XzlCQg?oc=5",
-      "published": "2026-11-11",
-      "published_at": "2026-11-11T09:41:07",
-      "summary": "",
-      "category": "감사"
     },
     {
       "source": "gnews_감사_2",

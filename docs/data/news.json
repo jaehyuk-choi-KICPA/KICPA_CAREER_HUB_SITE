@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T06:01:34",
+  "generated_at": "2026-11-16T06:31:29",
   "items": [
     {
       "source": "gnews_감사",
@@ -59,7 +59,25 @@
       "published": "2026-11-13",
       "published_at": "2026-11-13T07:03:00",
       "summary": "",
-      "category": "감사"
+      "category": "감사",
+      "dupes": [
+        {
+          "title": "어플라이드 머티어리얼즈, 회계연도 2026년 4분기 매출 104억 달러 사상 최대",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5xdmdVWnBWWDBQaUVsVlM5QmJzbjFaUmZtUEtqdTU1dHlsdHBrQWR0NEtWOUgyeTRpc3h2ME40eUw5Nk9jRW10bDBvWUo2Z2pxZjhzR2hhTjlvLV92blRR?oc=5",
+          "source_label": "헬로티",
+          "published": "2026-11-13"
+        }
+      ]
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "넘버스",
+      "title": "[무신사 IPO]① 예심 결과 45영업일 임박…세무조사 영향은",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1BcmQ0Z1BORDZscXp1ZFczWVk5dmttZkFUX0ZKeEt3VkVNSEF6eE93TDNzblJad3NoR2JfNC1UcklhbW5veWRiNTN5NTE2b0VIT0pkYlJId0l5MVpqVEJXVkNIQ2k5M1ExbU5R?oc=5",
+      "published": "2026-11-13",
+      "published_at": "2026-11-13T05:25:18",
+      "summary": "",
+      "category": "세무"
     },
     {
       "source": "gnews_감사",
@@ -172,6 +190,16 @@
       "category": "세무"
     },
     {
+      "source": "gnews_세무",
+      "source_label": "SBS Biz",
+      "title": "[집중진단] 주가 누르기 '방지법'인가 '방치법'인가…상속·증여세 매길 '주식값' 놓고 격돌",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBwWDEyTmVyUHJmNjltRTBkZHVCYkxweEJmbVpRYVc0MTFQRjEySXpXQ0RlREhBN0NPaDhnN2hMelN6U3l2VkhiUlUxRkx6cmJaMnIw0gFYQVVfeXFMTXh5Um8tOHJydzJRQ0EwWEF2b0I2NnRzcG1UaTJTQ3hocm1BR3lhWHp6Q0Q5R2ttRk53SDlFS2dvOURwM3Z4dEtIaEs0R0I5MWR4TE04Um5kbA?oc=5",
+      "published": "2026-11-11",
+      "published_at": "2026-11-11T04:34:00",
+      "summary": "",
+      "category": "세무"
+    },
+    {
       "source": "gnews_감사",
       "source_label": "파이낸셜뉴스",
       "title": "IFRS18부터 PRS까지… 재무제표 바꿀 변수 쏟아진다",
@@ -267,6 +295,16 @@
     },
     {
       "source": "gnews_세무",
+      "source_label": "세정일보",
+      "title": "[토론회] 상장주식 상속·증여세 평가방식 놓고 당·정 ‘정면 충돌’",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE14aTQ4RWJkbVQwTWV2VHJaMWlvVTRCaUhTbDV4YldQVVhJVUYzODNmcElucUZhYVdzSjNzeEpfZ25lQXhYOXloakxWMHZjbGRybWhmWFRMcDh4TksyXzk3REFaU1RXRHhfZ1lZcw?oc=5",
+      "published": "2026-11-09",
+      "published_at": "2026-11-09T09:10:07",
+      "summary": "",
+      "category": "세무"
+    },
+    {
+      "source": "gnews_세무",
       "source_label": "조세일보",
       "title": "세법개정, 소득재분배 효과…부동산은 복잡 [토론회]",
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBsejBMUGtRV0JiMjZCb2hQTGo1WF9rRDVBdDEwVlAtNVpoRTN4YkY4bEhuS2JvTVNNbFlSX2t1ZGxoRUtKb29TYV9hSFJKLURlZEZDNVdUUEhyNW15TWFN?oc=5",
@@ -274,24 +312,6 @@
       "published_at": "2026-11-09T08:58:34",
       "summary": "",
       "category": "세무"
-    },
-    {
-      "source": "gnews_채용·시험",
-      "source_label": "마켓인",
-      "title": "'취직 못한 회계사' 문제 심각…“신입 더 뽑아달라” 절박한 호소",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1fYmwwMjJvNlg1R3c5MUxMNm12aEN0ZElfVVMwQ3pIbEVObW9vR1dMU0NfREZ5Qk13X0FZNlBoSk1NczhjU3NLSjcyamdDTjhFRVNuWlIxbVZsdlN6NDFOLV9kYlFmWEswSTNLRDU0X3dHNm8?oc=5",
-      "published": "2026-11-09",
-      "published_at": "2026-11-09T08:00:00",
-      "summary": "",
-      "category": "채용·시험",
-      "dupes": [
-        {
-          "title": "금감원·거래소 회계사 채용 3배↑…미지정 회계사 '흡수처' 부상",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5tMHhUUDM3Rll2LUI3TV96VWh3ZmRrSVgzY1BTUXVCbjU2Q3dCc0pLNVJKTERSU09hYndGYkdITU9VTk1fbUhaVnppS1lFeDE4UmxsMUxWd3hVZXM?oc=5",
-          "source_label": "연합뉴스",
-          "published": "2026-10-22"
-        }
-      ]
     },
     {
       "source": "gnews_감사_2",
@@ -322,6 +342,24 @@
       "published_at": "2026-11-05T08:00:00",
       "summary": "",
       "category": "감사"
+    },
+    {
+      "source": "gnews_채용·시험",
+      "source_label": "연합뉴스",
+      "title": "금감원·거래소 회계사 채용 3배↑…미지정 회계사 '흡수처' 부상",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5tMHhUUDM3Rll2LUI3TV96VWh3ZmRrSVgzY1BTUXVCbjU2Q3dCc0pLNVJKTERSU09hYndGYkdITU9VTk1fbUhaVnppS1lFeDE4UmxsMUxWd3hVZXM?oc=5",
+      "published": "2026-10-22",
+      "published_at": "2026-10-22T07:00:00",
+      "summary": "",
+      "category": "채용·시험",
+      "dupes": [
+        {
+          "title": "[단독] '취직 못한 회계사' 문제 심각…“신입 더 뽑아달라” 절박한 호소",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE8tY2MyU292TkRZeURFSDE4WjVZMzZVN1RDcEpUZ08zSC03SmpCakpHOXhkdXZjdjBDcFBmMDlmcXBXZTRTZERvdWVaQlFoMTJwNWJzZUtSQzRUbkJLZHVTMDV0bXpnQ2s3OHZUenJDb1RneW5TZmZ2eFlyZw?oc=5",
+          "source_label": "이데일리TV",
+          "published": "2026-09-28"
+        }
+      ]
     }
   ]
 }

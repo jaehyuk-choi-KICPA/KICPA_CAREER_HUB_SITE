@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-11-17T06:01:52",
+  "generated_at": "2026-11-17T06:31:39",
   "items": [
+    {
+      "source": "gnews_감사",
+      "source_label": "매일경제 마켓",
+      "title": "올해 두나무 흑자·빗썸 적자…\"배경엔 회계기준 차이\"",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9LX2JDMFhsRXJOQThUVDh1OTFTcl82am5FcUJ0NGQzdXZtVE5wRUNudF9qTkZHSFAtdmw3V1VIWXlwWEdZVmI5Y1hwUEx0ZFotV2c?oc=5",
+      "published": "2026-11-16",
+      "published_at": "2026-11-16T20:57:00",
+      "summary": "",
+      "category": "감사"
+    },
     {
       "source": "gnews_감사_2",
       "source_label": "아시아투데이",
@@ -356,30 +366,6 @@
       "category": "감사"
     },
     {
-      "source": "gnews_채용·시험",
-      "source_label": "마켓인",
-      "title": "'취직 못한 회계사' 문제 심각…“신입 더 뽑아달라” 절박한 호소",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1fYmwwMjJvNlg1R3c5MUxMNm12aEN0ZElfVVMwQ3pIbEVObW9vR1dMU0NfREZ5Qk13X0FZNlBoSk1NczhjU3NLSjcyamdDTjhFRVNuWlIxbVZsdlN6NDFOLV9kYlFmWEswSTNLRDU0X3dHNm8?oc=5",
-      "published": "2026-11-09",
-      "published_at": "2026-11-09T08:00:00",
-      "summary": "",
-      "category": "채용·시험",
-      "dupes": [
-        {
-          "title": "금감원·거래소 회계사 채용 3.4배 늘렸지만…실무역량은 과제",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB6dWpzSFlDeGdSNWFicVcyTVA5X0VZSTBISVVDNXJ4NzlaYTNLZE1Xdk45STRGQXlUc0pnME9WdFBaY2E4WjVGMWhuUnNHTC1RSkVoaERuYXNEckJOUHl2cUIyTHJLYllHcVE?oc=5",
-          "source_label": "금융소비자뉴스",
-          "published": "2026-10-26"
-        },
-        {
-          "title": "금감원·거래소 회계사 채용 3배↑…미지정 회계사 '흡수처' 부상",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5tMHhUUDM3Rll2LUI3TV96VWh3ZmRrSVgzY1BTUXVCbjU2Q3dCc0pLNVJKTERSU09hYndGYkdITU9VTk1fbUhaVnppS1lFeDE4UmxsMUxWd3hVZXM?oc=5",
-          "source_label": "연합뉴스",
-          "published": "2026-10-22"
-        }
-      ]
-    },
-    {
       "source": "gnews_감사_2",
       "source_label": "세정일보",
       "title": "‘분식회계 후폭풍’ 한화오션, 수천억대 세금 소송 국세청에 졌다",
@@ -398,6 +384,30 @@
       "published_at": "2026-11-05T08:00:00",
       "summary": "",
       "category": "감사"
+    },
+    {
+      "source": "gnews_채용·시험",
+      "source_label": "금융소비자뉴스",
+      "title": "금감원·거래소 회계사 채용 3.4배 늘렸지만…실무역량은 과제",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB6dWpzSFlDeGdSNWFicVcyTVA5X0VZSTBISVVDNXJ4NzlaYTNLZE1Xdk45STRGQXlUc0pnME9WdFBaY2E4WjVGMWhuUnNHTC1RSkVoaERuYXNEckJOUHl2cUIyTHJLYllHcVE?oc=5",
+      "published": "2026-10-26",
+      "published_at": "2026-10-26T07:00:00",
+      "summary": "",
+      "category": "채용·시험",
+      "dupes": [
+        {
+          "title": "금감원·거래소 회계사 채용 3배↑…미지정 회계사 '흡수처' 부상",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5tMHhUUDM3Rll2LUI3TV96VWh3ZmRrSVgzY1BTUXVCbjU2Q3dCc0pLNVJKTERSU09hYndGYkdITU9VTk1fbUhaVnppS1lFeDE4UmxsMUxWd3hVZXM?oc=5",
+          "source_label": "연합뉴스",
+          "published": "2026-10-22"
+        },
+        {
+          "title": "[단독] '취직 못한 회계사' 문제 심각…“신입 더 뽑아달라” 절박한 호소",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE8tY2MyU292TkRZeURFSDE4WjVZMzZVN1RDcEpUZ08zSC03SmpCakpHOXhkdXZjdjBDcFBmMDlmcXBXZTRTZERvdWVaQlFoMTJwNWJzZUtSQzRUbkJLZHVTMDV0bXpnQ2s3OHZUenJDb1RneW5TZmZ2eFlyZw?oc=5",
+          "source_label": "이데일리TV",
+          "published": "2026-09-28"
+        }
+      ]
     }
   ]
 }

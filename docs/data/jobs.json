@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-16T15:31:29",
+  "generated_at": "2026-11-16T16:01:53",
   "soon_days": 7,
   "counts": {
-    "total": 94,
+    "total": 93,
     "open": 47,
-    "closed": 47,
+    "closed": 46,
     "new": 5,
     "soon": 19,
     "by_firm": {
@@ -13,16 +13,16 @@
       "안진": 12,
       "한영": 21,
       "로컬": 46,
-      "기타": 5
+      "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 54,
+      "수습CPA": 53,
       "자격무관": 40
     },
     "by_emp_kind": {
       "인턴": 25,
       "정규직": 43,
-      "계약직": 5,
+      "계약직": 4,
       "파트타임": 21
     }
   },
@@ -1469,25 +1469,6 @@
       "emp_type": "정규직",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1793245856357",
       "dday": -8,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "기타",
-      "field": "택스",
-      "qualification": "수습CPA",
-      "emp_kind": "계약직",
-      "status": "closed",
-      "is_new": false,
-      "title": "[카카오뱅크] 세무 업무 담당자 (계약직) 채용",
-      "company": "카카오뱅크",
-      "deadline": "2026-11-09",
-      "posted_date": "2026-10-29",
-      "location": "지역무관 지역무관",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1793237501785",
-      "dday": -7,
       "first_seen": ""
     },
     {

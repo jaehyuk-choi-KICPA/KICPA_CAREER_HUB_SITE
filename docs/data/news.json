@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-16T22:31:33",
+  "generated_at": "2026-11-16T23:01:38",
   "items": [
     {
-      "source": "gnews_감사",
+      "source": "gnews_감사_2",
       "source_label": "아시아투데이",
       "title": "비용 반영? 우발부채?…국고채 과징금 직면한 금융권, 자의적 회계처리 논란",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5admNuOThERUZlR0JDRmtFdkJxXzRLR0doR3htVTIzcnZrbDVicTcyb0cweExNd2JQSEtGa044RkVTLVByV1hMMGJPMUZ2WjRIaVpjU1RHQUV5SThvcXdQOGE0MncyY1AwWlZmX3hn?oc=5",
@@ -112,16 +112,6 @@
       "category": "세무"
     },
     {
-      "source": "gnews_감사",
-      "source_label": "연합인포맥스",
-      "title": "금감원, 정원 200명 증원 추진…IT검사국 추가·민생특사경 신설",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9XYVhZTWlHZHdYeF9lWHZxMkVRRmdEaEZZVjBhMVV4cTRTUFU0WXl3OFhkOEFWZHBLUjhuOS1IeUFwNzU4Y0hPc1dTdVlYRzZkSUFESEd3cUg2RUdSZkExblI3WFUtdmg5UHM3YTJpMVE?oc=5",
-      "published": "2026-11-14",
-      "published_at": "2026-11-14T23:20:05",
-      "summary": "",
-      "category": "감사"
-    },
-    {
       "source": "gnews_세무",
       "source_label": "Chosunbiz",
       "title": "자사주 팔아 남겨도 법인세 안 낸다… 손실 비용처리도 폐지",
@@ -130,6 +120,30 @@
       "published_at": "2026-11-14T21:00:00",
       "summary": "",
       "category": "세무"
+    },
+    {
+      "source": "gnews_감사",
+      "source_label": "서울경제TV",
+      "title": "\"회계부정 무관용\"…금감원, 정기 심사 체계 구축 추진",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE01OVRaaGtMQXVHVHNwdV9WYmowVkk1bkU2MzZFWUNIWlpPVGJScy1uRmt6LTNKaUtvUlIxOW1QR3JZYTdxNDdSeGpucjlKcnl4S2lNOTRNZmRWZXNRcnFTLWx2Q3A?oc=5",
+      "published": "2026-11-13",
+      "published_at": "2026-11-13T23:00:07",
+      "summary": "",
+      "category": "감사",
+      "dupes": [
+        {
+          "title": "금감원, 예방적 회계감독 강화…이찬진 “심사·감리 주기 획기적 단축”",
+          "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9ldDJJUjd4VE9ZWEtZdEc0MHREMy1QQWg0NDQ3ZThoTy1wdEl5Qm1rX2Q2MWlBMFl1bXVCVS1saW9VT0lkazA3R0doV0VBbURfekE?oc=5",
+          "source_label": "매일경제 마켓",
+          "published": "2026-11-10"
+        },
+        {
+          "title": "이찬진 금감원장 \"회계 감리주기 단축 추진…고의 분식회계 무관용 제재\"",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5idmFUaEJWUEF0bEdzNWl3dDVETFREdHFUdTVkNHBYeGFiSm0xSVhQYWh6MGlzd1JtUmNsTWJfNWRnYVdMUm04aTNuZ3dHNjNWNkF4OC1MVVZ2eVBa?oc=5",
+          "source_label": "뉴스핌",
+          "published": "2026-11-10"
+        }
+      ]
     },
     {
       "source": "gnews_감사_2",
@@ -237,11 +251,11 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "유스연합",
+      "source_label": "사회적경제뉴스",
       "title": "고대원 세무사, CEO 40여 명 대상 상속·증여 특강",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9FMTRMTk0xbHM2djE5bjFKbjMxWGFiMHhfUHhybnRMZWJTdHpWazBZeGNLbWhHQms3MVFXaTd1dUJ0TG5PaVNNSUt0cURoZHZ2RUln?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE5fb0FmbzFzQ2R4bUllUXEzM3l4ZEczaGZWT3RMbnR0QlBZamg5UHBoYVdFUFlsWW42VUV1Nlplbw?oc=5",
       "published": "2026-11-12",
-      "published_at": "2026-11-12T03:49:02",
+      "published_at": "2026-11-12T03:42:00",
       "summary": "",
       "category": "세무",
       "dupes": [
@@ -344,6 +358,16 @@
       "category": "세무"
     },
     {
+      "source": "gnews_감사",
+      "source_label": "DFT 대한금융신문",
+      "title": "회계감독 ‘20년 공백’ 줄인다…부실감사 책임도 강화",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9sTUJMTllYSVBFMTB5N2lwUEVXd09wYUZrcGVWbk5uTTk1ZjJDTVRoYURSM0JIajA4NHZMUkVrTlBrQmljZnNOVmhBVXhrLWF0RHMwYXJ3ek9xRmVqT0g3OGE1ZnpDeTlyNTZJMdIBcEFVX3lxTE1qWU50NEF6dG1qZEUzbFBoaWdmcnlpLS1vb0EtRmVnQ212Y2llYWpTUXBjTWY3ZzFSbTFBVzM0TDlEUFNxRlp1MURoVThBZHlLSVZvWEFCRGJiUnlwb2hvLXk4blQ1SUR6bWNpU1V0eTE?oc=5",
+      "published": "2026-11-11",
+      "published_at": "2026-11-11T00:46:05",
+      "summary": "",
+      "category": "감사"
+    },
+    {
       "source": "gnews_세무",
       "source_label": "KB Think",
       "title": "내년부터 달라지는 종합부동산세 및 양도소득세 살펴보기",
@@ -362,6 +386,26 @@
       "published_at": "2026-11-10T04:29:00",
       "summary": "",
       "category": "세무"
+    },
+    {
+      "source": "gnews_감사",
+      "source_label": "한겨레",
+      "title": "금감원장 “회계업계도 정보보안 중요…유출 없도록 보안 재점검”",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0zX01jWld2TnY1azI1Ti1NRGlxUnFXZFVGZjlUZmhfRWRHNm5mUmpmMThWd0NUdGxJNlc2QmhIWUpTMDJCQXh3RWt1dFNTWERvNDdiUlNIb2F1RnVreEQ0czZwUHpDNXM?oc=5",
+      "published": "2026-11-10",
+      "published_at": "2026-11-10T00:44:00",
+      "summary": "",
+      "category": "감사"
+    },
+    {
+      "source": "gnews_감사",
+      "source_label": "서울경제",
+      "title": "‘20년 주기’ 회계감독 손본다…이찬진 “획기적으로 단축”",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9wRi1JVEIyaEVQbi1EdTd3YldkT3FZX1FCMGtZckdadEhfazhmSTZHM1JfS2JZVHVmcG55bjZ6R3l6SFBZQl9YX2JZeE5OZEtGNEHSAVNBVV95cUxNeEx3TW1nMl9uV045WUFFNEI4clNZdkFFZ3A5X2tLa2l2WnFfUU01VWs5VmwtOHp4Nzl2Y0dsY081YUppUkN6ZjdZRTdORmVEWmZfOA?oc=5",
+      "published": "2026-11-10",
+      "published_at": "2026-11-10T00:30:02",
+      "summary": "",
+      "category": "감사"
     },
     {
       "source": "gnews_감사_2",

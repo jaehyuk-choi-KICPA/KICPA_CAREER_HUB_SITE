@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-16T13:01:28",
+  "generated_at": "2026-11-16T13:31:23",
   "soon_days": 7,
   "counts": {
-    "total": 93,
-    "open": 46,
+    "total": 94,
+    "open": 47,
     "closed": 47,
-    "new": 4,
+    "new": 5,
     "soon": 19,
     "by_firm": {
       "삼일": 3,
-      "삼정": 6,
+      "삼정": 7,
       "안진": 12,
       "한영": 21,
       "로컬": 46,
@@ -17,12 +17,12 @@
     },
     "by_qualification": {
       "수습CPA": 54,
-      "자격무관": 39
+      "자격무관": 40
     },
     "by_emp_kind": {
       "인턴": 25,
       "정규직": 43,
-      "계약직": 4,
+      "계약직": 5,
       "파트타임": 21
     }
   },
@@ -729,6 +729,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1794472757733",
       "dday": 18,
       "first_seen": "2026-11-12T18:01:37"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "택스",
+      "qualification": "자격무관",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "[Tax] Tax 5 본부 연말정산 단기계약직 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-12-06",
+      "posted_date": "2026-11-16",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000001015&receive_div_cd=N",
+      "dday": 20,
+      "first_seen": "2026-11-16T13:31:23"
     },
     {
       "source": "kicpa_susup",

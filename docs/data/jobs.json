@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-11-16T22:02:43",
+  "generated_at": "2026-11-16T22:31:30",
   "soon_days": 7,
   "counts": {
-    "total": 94,
-    "open": 48,
+    "total": 95,
+    "open": 49,
     "closed": 46,
-    "new": 6,
-    "soon": 19,
+    "new": 7,
+    "soon": 20,
     "by_firm": {
       "삼일": 3,
       "삼정": 8,
       "안진": 12,
       "한영": 21,
-      "로컬": 46,
+      "로컬": 47,
       "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 53,
+      "수습CPA": 54,
       "자격무관": 41
     },
     "by_emp_kind": {
       "인턴": 26,
       "정규직": 43,
       "계약직": 4,
-      "파트타임": 21
+      "파트타임": 22
     }
   },
   "postings": [
@@ -292,6 +292,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1794753411069",
       "dday": 4,
       "first_seen": "2026-11-16T00:01:31"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[한미회계법인] 수습공인회계사 파트타임 채용",
+      "company": "한미회계법인",
+      "deadline": "2026-11-20",
+      "posted_date": "2026-11-16",
+      "location": "서울 강남구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1794834204296",
+      "dday": 4,
+      "first_seen": "2026-11-16T22:31:30"
     },
     {
       "source": "kicpa_susup",

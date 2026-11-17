@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-17T20:01:35",
+  "generated_at": "2026-11-17T20:31:29",
   "soon_days": 7,
   "counts": {
     "total": 95,
     "open": 52,
     "closed": 43,
-    "new": 7,
+    "new": 6,
     "soon": 20,
     "by_firm": {
       "삼일": 3,
@@ -795,7 +795,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[인턴] SA본부 연결산 컨설팅 인턴 채용",
       "company": "삼정KPMG",
       "deadline": "2026-12-06",

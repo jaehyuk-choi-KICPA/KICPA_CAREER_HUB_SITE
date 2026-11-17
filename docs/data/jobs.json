@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-17T13:01:28",
+  "generated_at": "2026-11-17T13:31:24",
   "soon_days": 7,
   "counts": {
     "total": 93,
     "open": 49,
     "closed": 44,
-    "new": 5,
+    "new": 4,
     "soon": 19,
     "by_firm": {
       "삼일": 3,
@@ -776,7 +776,7 @@
       "qualification": "자격무관",
       "emp_kind": "계약직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[Tax] Tax 5 본부 연말정산 단기계약직 채용",
       "company": "삼정KPMG",
       "deadline": "2026-12-06",

@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-17T10:31:27",
+  "generated_at": "2026-11-17T11:01:43",
   "soon_days": 7,
   "counts": {
-    "total": 94,
+    "total": 93,
     "open": 49,
-    "closed": 45,
-    "new": 8,
+    "closed": 44,
+    "new": 7,
     "soon": 19,
     "by_firm": {
       "삼일": 3,
       "삼정": 8,
       "안진": 12,
-      "한영": 22,
+      "한영": 21,
       "로컬": 46,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 52,
-      "자격무관": 42
+      "자격무관": 41
     },
     "by_emp_kind": {
       "인턴": 25,
-      "정규직": 44,
+      "정규직": 43,
       "계약직": 4,
       "파트타임": 21
     }
@@ -795,7 +795,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[AIP벤처파트너스] 펀드관리팀 모집",
       "company": "에이아이피벤처파트너스(주)",
       "deadline": "2026-12-14",
@@ -1773,25 +1773,6 @@
       "emp_type": "Part Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1794373574457",
       "dday": -2,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "택스",
-      "qualification": "자격무관",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "세무IT Project Leader 경력",
-      "company": "EY한영",
-      "deadline": "2026-11-16",
-      "posted_date": "2026-11-05",
-      "location": "",
-      "emp_type": "신입",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/132176",
-      "dday": -1,
       "first_seen": ""
     },
     {

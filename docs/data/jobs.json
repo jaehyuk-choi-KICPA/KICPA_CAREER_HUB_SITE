@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-11-17T14:01:37",
+  "generated_at": "2026-11-17T14:31:41",
   "soon_days": 7,
   "counts": {
-    "total": 93,
-    "open": 49,
+    "total": 95,
+    "open": 51,
     "closed": 44,
-    "new": 4,
+    "new": 6,
     "soon": 19,
     "by_firm": {
       "삼일": 3,
       "삼정": 8,
       "안진": 12,
       "한영": 21,
-      "로컬": 46,
-      "기타": 3
+      "로컬": 47,
+      "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 52,
-      "자격무관": 41
+      "수습CPA": 53,
+      "자격무관": 42
     },
     "by_emp_kind": {
       "인턴": 25,
-      "정규직": 43,
-      "계약직": 4,
+      "정규직": 44,
+      "계약직": 5,
       "파트타임": 21
     }
   },
@@ -387,6 +387,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131812",
       "dday": 6,
       "first_seen": "2026-11-16T12:01:40"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "기타",
+      "field": "택스",
+      "qualification": "수습CPA",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "[카카오뱅크] 세무 업무 담당자(계약직) 채용",
+      "company": "카카오뱅크",
+      "deadline": "2026-11-26",
+      "posted_date": "2026-11-17",
+      "location": "지역무관 지역무관",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1794892548831",
+      "dday": 9,
+      "first_seen": "2026-11-17T14:31:41"
     },
     {
       "source": "anjin",
@@ -938,6 +957,25 @@
       "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000001014&receive_div_cd=N",
       "dday": 44,
       "first_seen": "2026-11-12T16:31:34"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "택스",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[세무팀] 사무장님 모십니다.",
+      "company": "동성회계법인",
+      "deadline": "2026-12-31",
+      "posted_date": "2026-11-17",
+      "location": "서울 전체",
+      "emp_type": "정규직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1794891710425",
+      "dday": 44,
+      "first_seen": "2026-11-17T14:31:41"
     },
     {
       "source": "hanyoung",

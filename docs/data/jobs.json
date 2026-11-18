@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-18T10:01:39",
+  "generated_at": "2026-11-18T10:31:27",
   "soon_days": 7,
   "counts": {
-    "total": 94,
+    "total": 93,
     "open": 51,
-    "closed": 43,
+    "closed": 42,
     "new": 3,
     "soon": 19,
     "by_firm": {
@@ -12,16 +12,16 @@
       "삼정": 8,
       "안진": 12,
       "한영": 19,
-      "로컬": 48,
+      "로컬": 47,
       "기타": 4
     },
     "by_qualification": {
       "수습CPA": 54,
-      "자격무관": 40
+      "자격무관": 39
     },
     "by_emp_kind": {
       "인턴": 23,
-      "정규직": 45,
+      "정규직": 44,
       "계약직": 5,
       "파트타임": 21
     }
@@ -1354,25 +1354,6 @@
       "location": "",
       "emp_type": "신입",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/132178",
-      "dday": -13,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_cpa",
-      "source_label": "구인(CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "자격무관",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "[대주회계법인] 4사업부 - 육아휴직 대체 근무자 채용 ['26.11.02 - '27.03.31]",
-      "company": "대주회계법인",
-      "deadline": "2026-11-05",
-      "posted_date": "2026-10-26",
-      "location": "지역무관 지역무관",
-      "emp_type": "정규직",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1792996389435",
       "dday": -13,
       "first_seen": ""
     },

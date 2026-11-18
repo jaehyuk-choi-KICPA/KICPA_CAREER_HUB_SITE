@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-18T15:01:39",
+  "generated_at": "2026-11-18T15:31:43",
   "soon_days": 7,
   "counts": {
-    "total": 94,
-    "open": 52,
+    "total": 95,
+    "open": 53,
     "closed": 42,
-    "new": 2,
+    "new": 3,
     "soon": 19,
     "by_firm": {
       "삼일": 3,
       "삼정": 8,
       "안진": 12,
-      "한영": 20,
+      "한영": 21,
       "로컬": 47,
       "기타": 4
     },
     "by_qualification": {
       "수습CPA": 54,
-      "자격무관": 40
+      "자격무관": 41
     },
     "by_emp_kind": {
-      "인턴": 24,
+      "인턴": 25,
       "정규직": 44,
       "계약직": 5,
       "파트타임": 21
@@ -463,6 +463,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5237",
       "dday": 9,
       "first_seen": "2026-10-30T11:01:40"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "금융감사부문 디지털 감사 & AI 리스크 분석 인턴",
+      "company": "EY한영",
+      "deadline": "2026-11-29",
+      "posted_date": "2026-11-18",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/133364",
+      "dday": 11,
+      "first_seen": "2026-11-18T15:31:43"
     },
     {
       "source": "anjin",

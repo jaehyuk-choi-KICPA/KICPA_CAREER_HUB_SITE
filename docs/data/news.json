@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T13:31:45",
+  "generated_at": "2026-11-18T14:06:34",
   "items": [
     {
       "source": "gnews_감사",
@@ -275,6 +275,16 @@
     },
     {
       "source": "gnews_감사_2",
+      "source_label": "이데일리",
+      "title": "구로구, 19일 입주자대표회의 교육…관리비 회계·윤리 등 다뤄",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNFRiLU9vUzM5cnAtaXRoOHZBMGg1VW8zNk1CSXlFNnprR3o0amNKOTNpN3NqZ2lxT180d0V0MWpVVWUxUE9YaFZmWlRsaDFyMlVKeFNHTzNETVIyVkZkRWwxdlE1bGJ6alpQcmF1QUh5SlA0Y2hWMkdiSGp6cHl5dA?oc=5",
+      "published": "2026-11-16",
+      "published_at": "2026-11-16T23:33:03",
+      "summary": "",
+      "category": "감사"
+    },
+    {
+      "source": "gnews_감사_2",
       "source_label": "아시아투데이",
       "title": "비용 반영? 우발부채?…국고채 과징금 직면한 금융권, 자의적 회계처리 논란",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5admNuOThERUZlR0JDRmtFdkJxXzRLR0doR3htVTIzcnZrbDVicTcyb0cweExNd2JQSEtGa044RkVTLVByV1hMMGJPMUZ2WjRIaVpjU1RHQUV5SThvcXdQOGE0MncyY1AwWlZmX3hn?oc=5",
@@ -355,41 +365,11 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "소비자가 만드는 신문",
-      "title": "[데이터&뉴스] SK하이닉스 법인세 7.5조 1위, 삼성전자 4.2조 2위....현대차 한전 기아도 3조 안팎",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1BaE1OX3RDZFVpZDlxSkE0dnVEQ1hTVklpdzJJakJJUHJEbVo1OU5oTmpoVk1IVF8weDJ3eFRMeThfdzl3VV9ZdTJLTjlfR3YzQzZjVlVycjA3Y3d1SDgzUXVPbFM4cGFZblI0S0hha2JPNFk?oc=5",
-      "published": "2026-11-12",
-      "published_at": "2026-11-12T21:10:00",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "사회적경제뉴스",
-      "title": "고대원 세무사, CEO 40여 명 대상 상속·증여 특강",
-      "url": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE5fb0FmbzFzQ2R4bUllUXEzM3l4ZEczaGZWT3RMbnR0QlBZamg5UHBoYVdFUFlsWW42VUV1Nlplbw?oc=5",
-      "published": "2026-11-12",
-      "published_at": "2026-11-12T03:42:00",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
       "source_label": "히트뉴스",
       "title": "[속보] 광동제약, '콘트라브' 독점판매권 법인세 소송서 최종 승리",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1yb2s5WDZOcmZYODdINnV4cUVESDJ4TkhrYXZOYXJTZGhURkVuOUtPRG5VaC1OYWN4blZqU25CVUd2cFlUbTBlRFJtVWNMelBxUDBKWWplZFk0c2hiLXRGTExuWElWX3JGNFgw?oc=5",
       "published": "2026-11-12",
       "published_at": "2026-11-12T02:19:51",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "세정일보",
-      "title": "서울국세청, 세무조사 노하우 ‘생성형 AI’ 학습에 활용한다",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1IWVpqTzkxbVFoNVhjQmxaZU1XQ0k5WU9BUDFuRFlNSVhEMjhiNWNPYXNDRThVOG5iWnZoaEtfTFdDVWI5aXVTQ2ljMTlWeWNGaWg0TnpzNHF0aEtrQXBuMFR3Zjdfb3F1WnJ0TQ?oc=5",
-      "published": "2026-11-11",
-      "published_at": "2026-11-11T22:20:07",
       "summary": "",
       "category": "세무"
     },
@@ -410,16 +390,6 @@
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBwWDEyTmVyUHJmNjltRTBkZHVCYkxweEJmbVpRYVc0MTFQRjEySXpXQ0RlREhBN0NPaDhnN2hMelN6U3l2VkhiUlUxRkx6cmJaMnIw0gFYQVVfeXFMTXh5Um8tOHJydzJRQ0EwWEF2b0I2NnRzcG1UaTJTQ3hocm1BR3lhWHp6Q0Q5R2ttRk53SDlFS2dvOURwM3Z4dEtIaEs0R0I5MWR4TE04Um5kbA?oc=5",
       "published": "2026-11-11",
       "published_at": "2026-11-11T04:34:00",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "KB Think",
-      "title": "내년부터 달라지는 종합부동산세 및 양도소득세 살펴보기",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA3YVoyLVRQUVVWQVdQU2ZNRjdaaHJLeE5nVUZQUS05OU9xbW05RExURUVOakJ6S1BuWjYtSEx6em1LMnNjb2ppN2ZpVjN3UmtNVmpUZ3MwS2M?oc=5",
-      "published": "2026-11-10",
-      "published_at": "2026-11-10T06:01:56",
       "summary": "",
       "category": "세무"
     },

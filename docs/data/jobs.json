@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-18T16:01:29",
+  "generated_at": "2026-11-18T16:36:32",
   "soon_days": 7,
   "counts": {
     "total": 95,
     "open": 53,
     "closed": 42,
-    "new": 3,
+    "new": 4,
     "soon": 19,
     "by_firm": {
       "삼일": 3,
@@ -959,25 +959,6 @@
       "first_seen": "2026-11-02T14:31:33"
     },
     {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "open",
-      "is_new": false,
-      "title": "[리드넘버 회계법인] 수습 회계사 채용 (5,400)",
-      "company": "리드넘버 회계법인",
-      "deadline": "2026-12-31",
-      "posted_date": "2026-11-10",
-      "location": "서울 구로구",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792479235002",
-      "dday": 43,
-      "first_seen": "2026-11-10T12:31:25"
-    },
-    {
       "source": "samjong",
       "source_label": "삼정KPMG",
       "firm": "삼정",
@@ -1014,6 +995,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1794891710425",
       "dday": 43,
       "first_seen": "2026-11-17T14:31:41"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[리드넘버 회계법인] 수습 회계사 채용 (5,400)",
+      "company": "리드넘버 회계법인",
+      "deadline": "2026-12-31",
+      "posted_date": "2026-11-18",
+      "location": "서울 구로구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1792479235002",
+      "dday": 43,
+      "first_seen": "2026-11-18T16:36:32"
     },
     {
       "source": "hanyoung",

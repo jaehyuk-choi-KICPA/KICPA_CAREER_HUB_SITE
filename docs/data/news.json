@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-11-19T09:31:29",
+  "generated_at": "2026-11-19T10:01:39",
   "items": [
+    {
+      "source": "gnews_세무",
+      "source_label": "법치뉴스",
+      "title": "허위 계산서로 부가세 공제, \"세수 감소 인식 없으면 10년 추징 못 해\"",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5adFVFb1BJV1o2NE1yNjc0ZGVYVC1UQWVlei1Rb0dQbXFTZ0Y1SlN4bkFwNU5HS1VUdGxYcW5PYWtGdlpXMU1pTXpKWTEwc0diUVdZWjVwMXE2NjFKT2k0a2ZiM2c?oc=5",
+      "published": "2026-11-19",
+      "published_at": "2026-11-19T00:31:06",
+      "summary": "",
+      "category": "세무"
+    },
     {
       "source": "gnews_감사_2",
       "source_label": "CPA뉴스",
@@ -97,7 +107,15 @@
       "published": "2026-11-18",
       "published_at": "2026-11-18T07:46:29",
       "summary": "",
-      "category": "세무"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "세무사회, 홍콩 국제조세콘퍼런스 참가…AI 시대 세무사 역할 논의",
+          "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5td1lXMUhqcnl6X0V0cUItbDRVMXA1eFliSTFHeEZaYTQ1and6WnR6dW9nQ2lKVVFhQWRPTGlFeTk3RUNMUkpsVGVTX01fYXFZRXVGTzFXcXJTYXJUQTNR?oc=5",
+          "source_label": "조세일보",
+          "published": "2026-11-17"
+        }
+      ]
     },
     {
       "source": "gnews_세무",
@@ -496,6 +514,16 @@
       "published_at": "2026-11-09T08:00:00",
       "summary": "",
       "category": "채용·시험"
+    },
+    {
+      "source": "gnews_감사_2",
+      "source_label": "연합인포맥스",
+      "title": "[금융위 인사난맥②] '전성기' 맞은 자본시장…증선위원 위상 달라졌다",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE00ekJneGYyOHk0N1NqNmlGLVo2c3VQaVB4NVZTNDdvXzBrQkV6WFY2TkFFMVFBSzFUeGdCMm9iVVZwTDVvRWM4Mlk1M0xiLTBKN1F3YW5ha3hqZVZSWWtGNTZJV2o0X1lVUzZIcExocUQ?oc=5",
+      "published": "2026-11-05",
+      "published_at": "2026-11-05T08:00:00",
+      "summary": "",
+      "category": "감사"
     }
   ]
 }

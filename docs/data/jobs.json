@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-19T15:32:25",
+  "generated_at": "2026-11-19T16:06:33",
   "soon_days": 7,
   "counts": {
-    "total": 95,
-    "open": 53,
-    "closed": 42,
-    "new": 4,
-    "soon": 19,
+    "total": 97,
+    "open": 56,
+    "closed": 41,
+    "new": 7,
+    "soon": 20,
     "by_firm": {
       "삼일": 3,
       "삼정": 8,
-      "안진": 13,
+      "안진": 14,
       "한영": 19,
-      "로컬": 48,
+      "로컬": 49,
       "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 55,
-      "자격무관": 40
+      "수습CPA": 56,
+      "자격무관": 41
     },
     "by_emp_kind": {
-      "인턴": 24,
-      "정규직": 43,
+      "인턴": 25,
+      "정규직": 44,
       "계약직": 5,
       "파트타임": 23
     }
@@ -311,6 +311,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131812",
       "dday": 4,
       "first_seen": "2026-11-16T12:01:40"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "파트타임",
+      "status": "open",
+      "is_new": true,
+      "title": "[대주회계법인] 5사업부 수습회계사 파트타임 채용 공고",
+      "company": "대주회계법인",
+      "deadline": "2026-11-23",
+      "posted_date": "2026-11-19",
+      "location": "서울 강남구",
+      "emp_type": "Part Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1795071556354",
+      "dday": 4,
+      "first_seen": "2026-11-19T16:06:33"
     },
     {
       "source": "kicpa_cpa",
@@ -862,6 +881,44 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5250",
       "dday": 28,
       "first_seen": "2026-11-19T15:01:33"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[삼덕회계법인] 수습 / 경력 회계사님을 모집합니다.",
+      "company": "삼덕회계법인",
+      "deadline": "2026-12-18",
+      "posted_date": "2026-11-19",
+      "location": "서울 종로구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1795070193586",
+      "dday": 29,
+      "first_seen": "2026-11-19T16:06:33"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "경영자문부문 부동산그룹 정규직 전환형 인턴십",
+      "company": "딜로이트 안진",
+      "deadline": "2026-12-23",
+      "posted_date": "2026-11-19",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5251",
+      "dday": 34,
+      "first_seen": "2026-11-19T16:06:33"
     },
     {
       "source": "anjin",
@@ -1734,25 +1791,6 @@
       "location": "",
       "emp_type": "신입",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/133980",
-      "dday": -4,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "파트타임",
-      "status": "closed",
-      "is_new": false,
-      "title": "[대주회계법인 5사업부] 회계사 채용 공고(영어회화 가능자)",
-      "company": "대주회계법인",
-      "deadline": "2026-11-15",
-      "posted_date": "2026-11-11",
-      "location": "서울 강남구",
-      "emp_type": "Part Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1794373574457",
       "dday": -4,
       "first_seen": ""
     },

@@ -1546,7 +1546,8 @@
     "uid": "kicpa_susup:1795071556354",
     "first_seen": "2026-11-19T16:06:33",
     "last_seen": "2026-11-19",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-11-19"
   },
   "kicpa_susup:1795070193586": {
     "source": "kicpa_susup",
@@ -1564,7 +1565,8 @@
     "uid": "kicpa_susup:1795070193586",
     "first_seen": "2026-11-19T16:06:33",
     "last_seen": "2026-11-19",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-11-19"
   },
   "anjin:5251": {
     "source": "anjin",
@@ -1582,6 +1584,7 @@
     "uid": "anjin:5251",
     "first_seen": "2026-11-19T16:06:33",
     "last_seen": "2026-11-19",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-11-19"
   }
 }

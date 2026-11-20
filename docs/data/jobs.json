@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-20T15:31:23",
+  "generated_at": "2026-11-20T16:01:27",
   "soon_days": 7,
   "counts": {
-    "total": 91,
-    "open": 53,
+    "total": 94,
+    "open": 56,
     "closed": 38,
-    "new": 5,
-    "soon": 18,
+    "new": 8,
+    "soon": 21,
     "by_firm": {
       "삼일": 3,
-      "삼정": 7,
+      "삼정": 10,
       "안진": 11,
       "한영": 18,
       "로컬": 48,
@@ -17,12 +17,12 @@
     },
     "by_qualification": {
       "수습CPA": 55,
-      "자격무관": 36
+      "자격무관": 39
     },
     "by_emp_kind": {
-      "인턴": 22,
+      "인턴": 24,
       "정규직": 42,
-      "계약직": 5,
+      "계약직": 6,
       "파트타임": 22
     }
   },
@@ -254,6 +254,63 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1794906215477",
       "dday": 4,
       "first_seen": "2026-11-17T18:31:26"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "[인턴] 총무팀 우편 및 파란행복 인쇄 지원 인턴 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-11-24",
+      "posted_date": "2026-11-20",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000001023&receive_div_cd=N",
+      "dday": 4,
+      "first_seen": "2026-11-20T16:01:27"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "[총무팀] 계약직 채용 (신입 또는 경력 2년이하)",
+      "company": "삼정KPMG",
+      "deadline": "2026-11-25",
+      "posted_date": "2026-11-20",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000001024&receive_div_cd=N",
+      "dday": 5,
+      "first_seen": "2026-11-20T16:01:27"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "[인턴] ITS 업무 지원 인턴",
+      "company": "삼정KPMG",
+      "deadline": "2026-11-25",
+      "posted_date": "2026-11-20",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000001021&receive_div_cd=N",
+      "dday": 5,
+      "first_seen": "2026-11-20T16:01:27"
     },
     {
       "source": "kicpa_susup",

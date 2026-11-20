@@ -1641,7 +1641,8 @@
     "uid": "anjin:5254",
     "first_seen": "2026-11-20T16:31:23",
     "last_seen": "2026-11-20",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-11-20"
   },
   "anjin:5252": {
     "source": "anjin",
@@ -1659,6 +1660,7 @@
     "uid": "anjin:5252",
     "first_seen": "2026-11-20T16:31:23",
     "last_seen": "2026-11-20",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-11-20"
   }
 }

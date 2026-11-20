@@ -1584,7 +1584,8 @@
     "uid": "samjong:KPMG00000000000000000000001024",
     "first_seen": "2026-11-20T16:01:27",
     "last_seen": "2026-11-20",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-11-20"
   },
   "samjong:KPMG00000000000000000000001023": {
     "source": "samjong",
@@ -1602,7 +1603,8 @@
     "uid": "samjong:KPMG00000000000000000000001023",
     "first_seen": "2026-11-20T16:01:27",
     "last_seen": "2026-11-20",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-11-20"
   },
   "samjong:KPMG00000000000000000000001021": {
     "source": "samjong",
@@ -1620,6 +1622,7 @@
     "uid": "samjong:KPMG00000000000000000000001021",
     "first_seen": "2026-11-20T16:01:27",
     "last_seen": "2026-11-20",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-11-20"
   }
 }

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-20T14:31:34",
+  "generated_at": "2026-11-20T15:03:36",
   "soon_days": 7,
   "counts": {
     "total": 91,
     "open": 53,
     "closed": 38,
-    "new": 6,
+    "new": 5,
     "soon": 18,
     "by_firm": {
       "삼일": 3,
@@ -795,7 +795,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "경영자문부문 Valuation 인턴",
       "company": "딜로이트 안진",
       "deadline": "2026-12-17",

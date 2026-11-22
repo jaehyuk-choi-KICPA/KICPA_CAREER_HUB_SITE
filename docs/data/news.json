@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T07:31:47",
+  "generated_at": "2026-11-23T08:01:49",
   "items": [
     {
       "source": "gnews_세무",
@@ -29,15 +29,7 @@
       "published": "2026-11-22",
       "published_at": "2026-11-22T06:08:58",
       "summary": "",
-      "category": "감사",
-      "dupes": [
-        {
-          "title": "스마일게이트 'IPO 소송' 2심 돌입…CB 회계처리 공방",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8wR2FkT0VGYmlIWVgxQW1tYW5xQTBFd0ZXMFRsekU5Q0lPRDdLcjF0bVBDd1pITTBxNmllQUtjRmlqVEcyV005d3BKNzl1cDZiVHFSd0U4YmpPazkwNXoxRzQ0Y2F6a3gx0gFsQVVfeXFMTWtiQnFpS1ZBOHVuSWV5amI3VWRFaWdTbUZ4eU1lMWFNVXhFblI1c2U2TkFOV2dWcE5rS0VIQllrc2N1SFRPWjl2eDdOa2hvamhUeWtaVG1vTGw2b2phUWowZndzMXNTNmVBOVFU?oc=5",
-          "source_label": "블로터",
-          "published": "2026-11-20"
-        }
-      ]
+      "category": "감사"
     },
     {
       "source": "gnews_세무",
@@ -120,14 +112,18 @@
           "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5iWm9mNWpzT2hVYmR1MkVOc0tVWHBpVm5Ebllyclh6RnlzUmZHM2hDY0lSWkpDV0h4amNJUFBOdG1GWDFBNXJ2RVdsWUlVNkhWRExZ0gFYQVVfeXFMUFFiUGh0azUxYUVFeHZzS1dqT0c1bE40TEdJYkV0OENjdjFqMjF6N2pseVlxOWRyYjVfdVhselFsQzJYeThBVFRyVzF3SjdRbUdHWHZ0WGhCLQ?oc=5",
           "source_label": "SBS Biz",
           "published": "2026-11-21"
-        },
-        {
-          "title": "소식통에 따르면, 엔비디아의 회계 처리 방식이 미국 증권거래위원회(SEC)의 조사 대상이라고 한다",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBqbDhCYmRhTEJNVHNybEdwVl96RnctWmgtWTBTazRtRV9GTEVpUUdKWU9MaEFXMkc1Yy02dmRZWS1TbWpUUnB5MTVwbG4zNzlLZ09qc2c5V0cyNlRQTUpydnBoSG1YaHh1dkM0S2plaS0yb3A0dXUw?oc=5",
-          "source_label": "TradingView",
-          "published": "2026-11-20"
         }
       ]
+    },
+    {
+      "source": "gnews_감사_2",
+      "source_label": "블록미디어",
+      "title": "미 SEC, 엔비디아 회계처리 조사… AI 반도체 공룡에 규제 압박(종합)",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5rOVlzZmJuMlh0MWVseXdRaHhucVlZWC1RbmZZSjJ0X1I2Uks0TXBFSWxFRXpzTmlUbkxwUlhvLWRTdjU1VGFpNkpIZlN1QW02VXdUbExZcFg?oc=5",
+      "published": "2026-11-20",
+      "published_at": "2026-11-20T19:45:48",
+      "summary": "",
+      "category": "감사"
     },
     {
       "source": "gnews_감사_2",
@@ -177,7 +173,15 @@
       "published": "2026-11-19",
       "published_at": "2026-11-19T09:50:04",
       "summary": "",
-      "category": "채용·시험"
+      "category": "채용·시험",
+      "dupes": [
+        {
+          "title": "최운열 한공회장 “회계투명성 꼴찌에서 37위로 껑충…다음 과제는 감사품질 유지”",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE40WVhfV1hSdzhGY2g5VHZPTnJ6eEJsM2djM05XajNzSDZFV0RVbDBBRWgwVW84UXZQZXJrdmZWYVJHTkxpY1NocGhob2dBRDl2cHpFU2psVmJGTGxwN2d3akFDeGFRR0J6M1ZEYw?oc=5",
+          "source_label": "세정일보",
+          "published": "2026-11-19"
+        }
+      ]
     },
     {
       "source": "gnews_세무",
@@ -188,26 +192,6 @@
       "published_at": "2026-11-19T09:05:13",
       "summary": "",
       "category": "세무"
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "서울경제",
-      "title": "최운열 한공회장 “지정감사 끝나자 가격경쟁 재점화…품질로 경쟁해야” [시그널]",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9SRmZtMXVuS3lXSUtUWFkweGlWUHRkTmw0aHRoNzd6UVJYMXlVdld5RGNjWTM1czVrc1hqMFJYQ3ZNb2NwSjJOZnkteFF5SDlFVUHSAVNBVV95cUxOd19KUFhuZ0s1SDNGYmR1QzlPdElOYU1sMHVTaTd0ZS05ZHNzRFdmdklBbWtqQ1E4ZkozQ0dYSjJSekJXZ1M4Z3ZrYXVVQ1QyNm96OA?oc=5",
-      "published": "2026-11-19",
-      "published_at": "2026-11-19T09:04:16",
-      "summary": "",
-      "category": "채용·시험"
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "아시아경제",
-      "title": "한국만의 독특한 감사인 지정제…감사품질 높였나",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9kY2FDa1hGYkJlQjJOX0RzUmRVbTlXQnhtWXlicndWOHlXODU5aWM3bDE3aEtaNlk3cVo2UWFRM093NVBzNVllYkh0M0JJdWJwQnpOMHNlZzhabHhNVDNQRWdn?oc=5",
-      "published": "2026-11-19",
-      "published_at": "2026-11-19T06:55:00",
-      "summary": "",
-      "category": "감사"
     },
     {
       "source": "gnews_감사",
@@ -248,16 +232,6 @@
       "published_at": "2026-11-19T00:31:06",
       "summary": "",
       "category": "세무"
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "딜사이트",
-      "title": "해태제과, ESG 2년째 C등급...증선위 제재에 지배구조 발목",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE55dVFkZkVqNVpSSVNZWG10Y3VTZFljQnJGTnhvQkx5aVV5dmpQanQ5bVdPWnZuUEhtLXFxVkJVS3hyR0E1REppSEY1UFJzVUE?oc=5",
-      "published": "2026-11-18",
-      "published_at": "2026-11-18T22:00:00",
-      "summary": "",
-      "category": "감사"
     },
     {
       "source": "gnews_세무",
@@ -448,16 +422,6 @@
       "category": "감사"
     },
     {
-      "source": "gnews_감사_2",
-      "source_label": "TradingView",
-      "title": "한화오션, 분식회계로 더 낸 세금 일괄 환급 못 받는다",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBYNmRNZzNOejAtNmRmVk9EUHhYT0JaaEFtMnUwMkUzRkhUVTBLT3Y5aTNBMWo1T2lfbm10LTA1SjRtQzR0WDNnN1R3NElFcmxpZlh5MDROZmpHX2NyVXk1V25Bd0FFb2Ny?oc=5",
-      "published": "2026-11-15",
-      "published_at": "2026-11-15T09:12:20",
-      "summary": "",
-      "category": "감사"
-    },
-    {
       "source": "gnews_세무",
       "source_label": "Chosunbiz",
       "title": "자사주 팔아 남겨도 법인세 안 낸다… 손실 비용처리도 폐지",
@@ -488,92 +452,6 @@
       "category": "세무"
     },
     {
-      "source": "gnews_감사_2",
-      "source_label": "데일리메디",
-      "title": "셀바스헬스케어, 회계기준 위반…외부감사인 2년",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4xaVlFekdIcGhMSndrR09HejgtSUlJY2ZodnRYRFpUTjhZRi11Q0JSbVBnUTA4RHhFNF9BQThOQVh4b0R4VE5qUVliV3hFVmItRUJadHZnLXZfX1N1b01Xd0hfdjF3QWpI?oc=5",
-      "published": "2026-11-13",
-      "published_at": "2026-11-13T05:04:00",
-      "summary": "",
-      "category": "감사"
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "Daily NTN",
-      "title": "증선위, 셀바스헬스케어·대우산업개발 회계기준 위반 적발",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9tQmxSTkNsdGZjelBnMlcyWUpmYWszeEtOdThRZmlyeXl5cUJERjd3WEx2WGpIRWxSZEl1bXNLYTV0R0c4VnRtR0xIN2sxZTh0QzY5bVdkd2RaQnFZTzRNdmZ2RHNwZmx1WXc?oc=5",
-      "published": "2026-11-12",
-      "published_at": "2026-11-12T08:00:00",
-      "summary": "",
-      "category": "감사",
-      "dupes": [
-        {
-          "title": "증선위, '회계처리 위반' 셀바스헬스케어·대우산업개발에 감사인지정",
-          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNcF9OSW01OEJMZVhqOHJpSUZEcGtraFA5eWhGVnlIUFlnVnJscEpCMlJOR2MwbFNoQUNucEtHYjV1bGcxOUlZUk1aVUdJLVVIdG91RWU2NHB0RWJWaHphNnVFVlhHUmxEQ2E5VklxVXBjZWRMcDZRaHVnMzUxcU9uZA?oc=5",
-          "source_label": "edaily.co.kr",
-          "published": "2026-11-11"
-        },
-        {
-          "title": "'회계처리 위반' 셀바스헬스케어·대우산업개발에 감사인지정",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBlWi1sVUpRM1UyVkI4d0pnT1VOb2JFQ3V4NlE3SnExYU9DelBONXhGcHMtdUNSaklsTGs2d3Fhb3k5VmIxSlNZVFpjbUJYclJGRlhmcVREcHFlMFnSAWBBVV95cUxNNW9pWS1jTjF5WWIxYXFySEh2NlFuaFVfdVE0S2RBVWhFU0gya0RGRE55dlR3WnNXUTJCQThVMlF0UzJtR2Q0QUJPd2o5c2FHQzUwLTFsdFBMMnJuOV85QkI?oc=5",
-          "source_label": "연합뉴스",
-          "published": "2026-11-11"
-        },
-        {
-          "title": "증선위, 셀바스헬스케어·대우산업개발 회계처리 위반 제재",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5xVHFZUm5oMzU2dGxzZ1ltTnpaS0pOQl90cm9vRGh1Q0NGTzFRVVhpSVlhWkZMaGlxZ1NENzVSRkZ2Ykt5WEtzYUdmZVZ4TkFCS0Y3OHlXOG9EZWsy?oc=5",
-          "source_label": "뉴스핌",
-          "published": "2026-11-11"
-        },
-        {
-          "title": "증선위, 대우산업개발·셀바스헬스케어 감사인 지정 조치",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1pT0FqdjFhaVg5WEk5azU1a2ctWk4zYzFYQjkxa1o2UjB3QVZuQmtZb2FQQ2tiT0lPSG9zOTVtNHVsYTExMnJlNGFTZG40SlQyTGhMREp6YWlLSFR4TmZESdIBeEFVX3lxTE81N0Vxc0pmTDZ5UE1Ed2ZOemloLVNTR3VfY0FzWFhLeVlHSHEzdDNqV2d3QzRHeVRFQ2RhMldMdjRVb2U1V1lNa2NqZVpEWWVWOVhXeHh4dkh6MFpvZWVSTFFBMWs5MVpyUVowTUxpS2pBUkRvdUxqVw?oc=5",
-          "source_label": "뉴시스",
-          "published": "2026-11-11"
-        }
-      ]
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "연합인포맥스",
-      "title": "증선위, '무상증자 미공개 정보 이용' VC 대표 등 중수청 고발",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1udlhKUXkxNGxhMDBlRXdqQ2NFTUdDUkMyQkNXUFpXQm4yU0p4UDFjcVh3OFhRaEFkZnZ6OU9tV3hIeUxMbkotSWhhbjF5RkUyVVd1RHlXY3FsaV8yYkF1ZFl6UE9iZzV6SVJzd0hpeVY?oc=5",
-      "published": "2026-11-11",
-      "published_at": "2026-11-11T08:00:00",
-      "summary": "",
-      "category": "감사",
-      "dupes": [
-        {
-          "title": "미공개정보 이용해 부당이득 취득…증선위, 중수청 고발·통보",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1HSWNTa2FHU2lXejR5M2RtT3lkU1RXb1Vmekt1VHFHbFdTUFlPYlE2UEd1cVVlb3NSb3BJWkE0a0RxN1JTU1JVT0dza0NUdVc2NjJxNXg0eHhybG_SAWBBVV95cUxNd0ZUUlpCY1RNanlwWm9HS1Y1MVRMckY1MmxVOWNhdDVzcVpRVTBXWDhJNWgyejdWZHhjeGpGcHVKSmpIeWp0X3RVMG1TQjBXdXF2ZXJzRGw3XzRYMFlyaWY?oc=5",
-          "source_label": "연합뉴스",
-          "published": "2026-11-11"
-        },
-        {
-          "title": "\"무상증자정보 이용해 수십억 꿀꺽\" 증선위, 벤처투자사 대표 고발 - 머니투데이",
-          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5vb2RhZFlscjE1WXg3RUZWUFdlVXFZdlF3cXFDbFlDUFRkQTh6TGVoUE1zOEZ6THYtNngtanJ0S1V1QlVOSGVyLXNYMzhHbmlweGowQlNvcnVPNlNRUjkzVnh6bXZ4amMz0gFuQVVfeXFMT2c4Z2lvWkFLRjBBak5CRmN0OFlFLWdzV19qcl9sVFZXazlYRGQ2TDVrcFF6eWlheUJVektTa2ZnRURHVGpPQnhmTk14czVjbkl0Zm5POUtrMnNXczFOTldqZHgtcktRcENqZDJyQ0E?oc=5",
-          "source_label": "머니투데이",
-          "published": "2026-11-11"
-        },
-        {
-          "title": "무상증자 공시 전 주식 매수…증선위, 벤처투자사 대표 고발",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9QdkZHWFpySzM1SGlFOGM2TXhwcnBtN2ZCWFZjTmxLVk1jY08xaGg5TUtBc0RyRWNVUWo1QWNEUF9RSlVqdUt1MEdnZGRNV0RKaXMtM2FGRlhzTlU5?oc=5",
-          "source_label": "뉴스핌",
-          "published": "2026-11-11"
-        }
-      ]
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "금융소비자뉴스",
-      "title": "이찬진 \"회계 감리주기 단축 추진…고의 분식회계 무관용 제재\"",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBFeTBXbnppVWZjMjFvakZqTVo5QU9XTC1mU2lxaFN4RjBGX18waGhEN2swclR4SG1uenltVXBTMUt2cXZrMk4xLUxoMEVVVkpFTGs4ckhGY2lka3ZkdlhUZW94TlpCUVdpSEE?oc=5",
-      "published": "2026-11-10",
-      "published_at": "2026-11-10T02:17:54",
-      "summary": "",
-      "category": "감사"
-    },
-    {
       "source": "gnews_채용·시험",
       "source_label": "마켓인",
       "title": "AI 위협 속에도…회계업계, 올해 1300명 역대급 채용",
@@ -585,51 +463,11 @@
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "매일경제 마켓",
-      "title": "감사인 선임때 보수 가리고 품질부터 평가…한국ESG기준원 가이드라인 마련",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFB0bG9HRTkzUzVUclpqdXUzRWZYWVVEaU4xVkRoNnAwcnVZT3pTYnhBbGhjSjczZVhjb0N1ZEtNM1hnenZ4R1VpU1kza1g0cW1OaFE?oc=5",
-      "published": "2026-11-05",
-      "published_at": "2026-11-05T08:00:00",
-      "summary": "",
-      "category": "감사"
-    },
-    {
-      "source": "gnews_감사_2",
       "source_label": "연합인포맥스",
       "title": "[금융위 인사난맥②] '전성기' 맞은 자본시장…증선위원 위상 달라졌다",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE00ekJneGYyOHk0N1NqNmlGLVo2c3VQaVB4NVZTNDdvXzBrQkV6WFY2TkFFMVFBSzFUeGdCMm9iVVZwTDVvRWM4Mlk1M0xiLTBKN1F3YW5ha3hqZVZSWWtGNTZJV2o0X1lVUzZIcExocUQ?oc=5",
       "published": "2026-11-05",
       "published_at": "2026-11-05T08:00:00",
-      "summary": "",
-      "category": "감사"
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "CPA뉴스",
-      "title": "[강의 소개] 전·당기 감사인 간 의견불일치 조정 협의회 사례 해설",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9LUEVCLXJEYk01eDM5b0FFV043WXFLOVJtekIyb3ZIdHI1c2VsZGtWV29tNXBtNFZGM3Rha2pETDl1TGhpX2RJOGZodmlIMjUtRzFRNVZabUdCdXZVSnE1MmZHSXZweElw?oc=5",
-      "published": "2026-11-03",
-      "published_at": "2026-11-03T08:00:00",
-      "summary": "",
-      "category": "감사"
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "로톡",
-      "title": "회사 재무제표를 부풀렸는데 외감법 위반으로 처벌되나요",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5SNHVGNVhqcF9pRjBSSFEtUzNPWWtJQldRYVAyY1hXZW1xaFB3ZWdKd1JHcXhXQ2YwQWU4cVBnWXNPcHZwYlhmU3NMWk9fd2M?oc=5",
-      "published": "2026-11-03",
-      "published_at": "2026-11-03T07:26:31",
-      "summary": "",
-      "category": "감사"
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "로톡",
-      "title": "감사인 선임 책임은 감사인이 아닌 회사에 있습니다",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9HZ0pJdjZ0cFMzbndfQmc5Tl8yX29TVnlxcGZtcWs0NWF5blRLQlAzR3RkeHZPbXpfNUtVRVlCOUF0TjZkZXYydm50WGNlUUE?oc=5",
-      "published": "2026-11-02",
-      "published_at": "2026-11-02T22:40:01",
       "summary": "",
       "category": "감사"
     }

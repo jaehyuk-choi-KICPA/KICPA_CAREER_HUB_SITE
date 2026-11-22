@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T10:01:44",
+  "generated_at": "2026-11-22T10:31:34",
   "items": [
     {
       "source": "gnews_세무",
@@ -10,24 +10,6 @@
       "published_at": "2026-11-21T21:02:26",
       "summary": "",
       "category": "세무"
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "천지일보",
-      "title": "고려아연 “영풍·MBK, 회계 위반·홈플러스 사태부터 돌아봐야”",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9NQnhNQm9sdHNGTzhrLXFKdV9vWmZ1dnczQUN4aEljdkF0WmpxUVJSZnJpdklIWGFiZGpCcDEtaWxUQlRiR0dFSUdTYXZMa0M1STduN192UWdKZEdDOFZGanJzbW1zZGQ1OWc?oc=5",
-      "published": "2026-11-21",
-      "published_at": "2026-11-21T10:20:19",
-      "summary": "",
-      "category": "감사",
-      "dupes": [
-        {
-          "title": "고려아연, MBK·영풍 공세 반박…\"홈플러스·회계 위반 책임부터 따져야\"",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5qUmsxalY5SlJzR2lGNllYNjhLdElCQ3lwb0RkTXQxMDVNMDAyYmlpMGUyOFhfdUxPUFFtcDg1eUIwVVktUjdSanY1SC1wQkxpZEpxOWdZanZhVXZPcDM4aWZR?oc=5",
-          "source_label": "시사매거진",
-          "published": "2026-11-21"
-        }
-      ]
     },
     {
       "source": "gnews_감사_2",
@@ -58,6 +40,16 @@
           "published": "2026-11-20"
         }
       ]
+    },
+    {
+      "source": "gnews_감사_2",
+      "source_label": "시사매거진",
+      "title": "고려아연, MBK·영풍 공세 반박…\"홈플러스·회계 위반 책임부터 따져야\"",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5qUmsxalY5SlJzR2lGNllYNjhLdElCQ3lwb0RkTXQxMDVNMDAyYmlpMGUyOFhfdUxPUFFtcDg1eUIwVVktUjdSanY1SC1wQkxpZEpxOWdZanZhVXZPcDM4aWZR?oc=5",
+      "published": "2026-11-21",
+      "published_at": "2026-11-21T06:12:00",
+      "summary": "",
+      "category": "감사"
     },
     {
       "source": "gnews_감사_2",
@@ -160,6 +152,24 @@
       "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBQQkpxOUVGMHJ1TVhfTUJWaHVST2lkcFlsY1FBd3hOa0g1a1ZuTUJIZS1BVGJDazVJQkliaUtmV2Q5ak9LcjVYc01Ga3VQVDFsVFoyUXQycm93eGRDUXozdm9pbF9HSFVTMy1wMw?oc=5",
       "published": "2026-11-19",
       "published_at": "2026-11-19T09:05:13",
+      "summary": "",
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "[속보] 광동제약, '콘트라브' 독점판매권 법인세 소송서 최종 승리",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1yb2s5WDZOcmZYODdINnV4cUVESDJ4TkhrYXZOYXJTZGhURkVuOUtPRG5VaC1OYWN4blZqU25CVUd2cFlUbTBlRFJtVWNMelBxUDBKWWplZFk0c2hiLXRGTExuWElWX3JGNFgw?oc=5",
+          "source_label": "히트뉴스",
+          "published": "2026-11-12"
+        }
+      ]
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "미디어생활",
+      "title": "절세도 알아야 한다.(소득세 절세 3탄 :업무용승용차) - 세무법인세방 이성노 세무사",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4xeGVZb0lDbEhmS3JRVnNkamYzYktnMktDWGp5eDJ3NzBXek84MkJQYnZ6NURFdUNHR0ZiZ3FCVEI3SUZZUXh4U1d3RGp6VjlFcFdIbmdtSUZWaUItYVpsYjh2RS1ZeHJCZ1pFUTA0NA?oc=5",
+      "published": "2026-11-19",
+      "published_at": "2026-11-19T08:43:12",
       "summary": "",
       "category": "세무"
     },
@@ -330,15 +340,15 @@
           "published": "2026-11-17"
         },
         {
-          "title": "“회계부정, 안심하고 신고하세요”… 권익위·금감원, 신고자 보호 강화 맞손",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQUE4zSUQ2dXB1TkFjMDdkS29VV054QnBsdjhSclNDVC13QThWNTRMb0pWSllHUlFWNzBfNTFia2RwWFFKaHNlVDhBY09QUjBDQ1VkY2dFdEdXY0FLRXJRTW40cW51ODRnU2stR0cyTVphNDI5RHRSckg2MHR4aGRxeXNleHg2ZTJh0gGcAUFVX3lxTE1xQnVoVGU4US1ueTM4TVdOdXkxVXdQWVBfdXN1VmhmMG5EUnp1RnZtTGFtSlU0T1hDNGNPMERFUHB1YVAwaDZhb0xPQU1MaFR4Z0FvM0h3VTAxbUFkbGlZR3RQdDhQWENYVU9ZWVFweFJMZV8zMXBydjU3OWZKcGlmYndUVkxtTXRGMlJpMm5zRjBwQWtDQ2VNMWVaWA?oc=5",
-          "source_label": "Chosunbiz",
-          "published": "2026-11-17"
-        },
-        {
           "title": "회계부정 신고했다가 해고당하면…금감원이 직접 조사한다",
           "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1hSmNHMjRmcEFseDhiZ0hwQWtQelZzakp1MDdQYlJETEs3WThYWEpUbXBZaGNlN3VyWmJhamxMX2RhSmN3cXI5UE9nUDNreVdhLU1HWU5kNHEya3ZuZFNKazB3?oc=5",
           "source_label": "뉴스1",
+          "published": "2026-11-17"
+        },
+        {
+          "title": "“회계부정, 안심하고 신고하세요”… 권익위·금감원, 신고자 보호 강화 맞손",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQUE4zSUQ2dXB1TkFjMDdkS29VV054QnBsdjhSclNDVC13QThWNTRMb0pWSllHUlFWNzBfNTFia2RwWFFKaHNlVDhBY09QUjBDQ1VkY2dFdEdXY0FLRXJRTW40cW51ODRnU2stR0cyTVphNDI5RHRSckg2MHR4aGRxeXNleHg2ZTJh0gGcAUFVX3lxTE1xQnVoVGU4US1ueTM4TVdOdXkxVXdQWVBfdXN1VmhmMG5EUnp1RnZtTGFtSlU0T1hDNGNPMERFUHB1YVAwaDZhb0xPQU1MaFR4Z0FvM0h3VTAxbUFkbGlZR3RQdDhQWENYVU9ZWVFweFJMZV8zMXBydjU3OWZKcGlmYndUVkxtTXRGMlJpMm5zRjBwQWtDQ2VNMWVaWA?oc=5",
+          "source_label": "Chosunbiz",
           "published": "2026-11-17"
         },
         {
@@ -363,24 +373,6 @@
           "title": "'보복' 걱정 없는 신고 환경 만든다…권익위·금감원, 공조 협약",
           "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5TSDFDSXRkUDgyR1AxbF8tYmxOZWlDaWlUcTRoMnIxT1Fma3hPWktmd1g5N0phcDFKRlJ3b0JGYzNOXzhrcGVPcU9kY1E0MENfY2tIV0VUam5IUmxzWmg5U0podlFqMHJzM0E?oc=5",
           "source_label": "nbn 시사경제",
-          "published": "2026-11-17"
-        }
-      ]
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "내외뉴스통신",
-      "title": "삼성전자, 3분기 법인세 22.8조…작년의 690배 '세금 폭탄'",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9iQlZGTVl4bTZZam1JSEEtUWFHelp3ZkRGWmVtTF9RUUtudFlqVnRRRWJtbm9qNEtRaElJT2xmZERUQm8wNUpPQUgzOWRzbXNUWUNDWWt2a19EbFR0UE5rX0F2M1M3UHBud3dNRQ?oc=5",
-      "published": "2026-11-18",
-      "published_at": "2026-11-18T01:24:54",
-      "summary": "",
-      "category": "세무",
-      "dupes": [
-        {
-          "title": "삼성전자 3분기 법인세 22.8조…작년의 690배",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5Ea2I5dlFmbnZWVFZCb0dkTFhlTGsyZS1DYmNfSm9taGtLTjhKSnZITHdLcmtpNERjNVc0eFBuVnpvdWtwYWZKbG1GUjBmVUdtNDFrR2NHR0V3Z3JGY2dCUTJUU2YzUm9BZGNMcXdMc3ZhUGJBZVHSAWZBVV95cUxNLWhjc25fU3YxeDZYbjRXSDc3RGR4YWpSYVY0MGJSQWtJRkpmRjZFMGlrdm9nMlJ2SmVfWGFiNXVCd2d1VDlXd01KNUVYM0hSYTZhYXZrX3RESUVnUkZEamlvWFlJX1E?oc=5",
-          "source_label": "동아일보",
           "published": "2026-11-17"
         }
       ]
@@ -444,6 +436,16 @@
       "category": "세무"
     },
     {
+      "source": "gnews_세무",
+      "source_label": "동아일보",
+      "title": "삼성전자 3분기 법인세 22.8조…작년의 690배",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5Ea2I5dlFmbnZWVFZCb0dkTFhlTGsyZS1DYmNfSm9taGtLTjhKSnZITHdLcmtpNERjNVc0eFBuVnpvdWtwYWZKbG1GUjBmVUdtNDFrR2NHR0V3Z3JGY2dCUTJUU2YzUm9BZGNMcXdMc3ZhUGJBZVHSAWZBVV95cUxNLWhjc25fU3YxeDZYbjRXSDc3RGR4YWpSYVY0MGJSQWtJRkpmRjZFMGlrdm9nMlJ2SmVfWGFiNXVCd2d1VDlXd01KNUVYM0hSYTZhYXZrX3RESUVnUkZEamlvWFlJX1E?oc=5",
+      "published": "2026-11-17",
+      "published_at": "2026-11-17T08:40:00",
+      "summary": "",
+      "category": "세무"
+    },
+    {
       "source": "gnews_채용·시험",
       "source_label": "Chosunbiz",
       "title": "수습처 못 찾은 ‘미지정 회계사’ 쌓이는데… 금융위, 또 ‘50명 찔끔 감축’ 하나",
@@ -490,6 +492,16 @@
       "category": "감사"
     },
     {
+      "source": "gnews_세무",
+      "source_label": "약사공론",
+      "title": "약국 개국 후 첫 부가가치세 신고, 무조건 환급받을 수 있을까?",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8xMmxzZDlxRmdhV1JqWFBiSXhUYWhBU202djZ6QzZCTWhoN0JtckRabWR3QW83ajdDakxVc3U3c040YlBVWXl5M2djYzVfWXV0Y1pNQ0J5ZHk1N2dJQnVvNDAyTnVCWVhXMUNtbg?oc=5",
+      "published": "2026-11-16",
+      "published_at": "2026-11-16T03:00:00",
+      "summary": "",
+      "category": "세무"
+    },
+    {
       "source": "gnews_감사",
       "source_label": "뉴시스",
       "title": "'세무냥이'가 '회계냥이' 될 뻔…AI에 뚫린 금감원 'CPA 시험' 믿을 수 있나",
@@ -508,16 +520,6 @@
       "published_at": "2026-11-15T22:40:00",
       "summary": "",
       "category": "감사"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "Chosunbiz",
-      "title": "자사주 팔아 남겨도 법인세 안 낸다… 손실 비용처리도 폐지",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQaUx0ZUQyMUs4UUNLblNEWnJlZHc5UXZUR2hFc3NkUjZ1dDRzR05NSTgxLU9xMVFXb2UwS2xGYUZ3NHlxX3dxOWtNMlB4Ym85bC11Xy1obGc0WEZRRXR4My1kNC1NZHdSNUVfeFIxWW43anh4WS1OeXJ4NkdFTWllLTdWNkXSAZgBQVVfeXFMT0gwQTh3dHZkc3l3bkdJNXVMZnZGLVRtRFF4dmJrUElLeERUTm83dms2NW1sOFZsN1Zrb215YlhkOGNBazZpOGRSNWVQcUhnVUJFanlNaWpwUUY4RktmVnhISUtwaWdCWUY3OW5LTy1JLUVwS244R25tWDNnUzhIc0xUSlpDd2l5ZENGQmNDcnEwYkFoSlhHdTc?oc=5",
-      "published": "2026-11-14",
-      "published_at": "2026-11-14T21:00:00",
-      "summary": "",
-      "category": "세무"
     },
     {
       "source": "gnews_채용·시험",
@@ -550,6 +552,16 @@
       "category": "세무"
     },
     {
+      "source": "gnews_세무",
+      "source_label": "연합뉴스",
+      "title": "조의장 \"체감경기 회복 더뎌…선순환 회복이 조세정책 역할\"",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBwbEI2amtqbU1KY3g5bllrZkZwY19uS09HYnNSemNReDFkdFBwT0xJclBIWDFxV3pnNUdRMVI5WEVMUTlBeDBrZ1pqbHpyM3FlYlhzMkJoZVBjazTSAWBBVV95cUxNRm44REdKcFFkWURDemFDVlI2SENIZ2dBdVJpYXNjd2VSOHhoNzFLdkZVcEpZNFBkeGdRZ1lWSTBQRXV3TTBnQWFRdXVvV2p2UDJSd3BZakJOUWs4T01SOEo?oc=5",
+      "published": "2026-11-09",
+      "published_at": "2026-11-09T09:22:38",
+      "summary": "",
+      "category": "세무"
+    },
+    {
       "source": "gnews_채용·시험",
       "source_label": "마켓인",
       "title": "AI 위협 속에도…회계업계, 올해 1300명 역대급 채용",
@@ -558,6 +570,54 @@
       "published_at": "2026-11-09T08:00:00",
       "summary": "",
       "category": "채용·시험"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "연합뉴스TV",
+      "title": "세무조사 무마 로비 2억…회계사·세무공무원 기소",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE80SDhlQm1ScXRiRTFJb1FMd21YeVFvQW5QNUlXX1BJRXAzTFRwY2ZJRWpWdzR4T2NjUGFEbTdVWFZUU2FsM0FKR0NSUkdJLUFUTC1WSGlaUFdva2NIWnR0OXdwMkVXbDA?oc=5",
+      "published": "2026-11-06",
+      "published_at": "2026-11-06T08:00:00",
+      "summary": "",
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "세무조사 '출제범위' 공개…기업이 먼저 풀어야 할 숙제",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE45MHhUZlRlUzl5T3g5ejJ0NExRYmFJby13UGxuZXNwUVJJVXUyTDZHWjFiazk1MklOWWZUU2FKV2VTY3VYN3JMM3ZJS0JzWTQwcGtWaWZOc3lONTlhMGFFRWFXZw?oc=5",
+          "source_label": "택스워치",
+          "published": "2026-11-05"
+        }
+      ]
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "Daily NTN",
+      "title": "세무사, 2025년 부가가치세 납부세액 2938억… 5년 연속 1위",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0zSVVVeERTMk9INXQ3dGJORzJ2NmNjc1hKS3FzdU95Mk9IR29ZVXFPN244TmFhTzV6QkVLbXJtZFVfVnkwM3AwVkl1ZW81UWNJVWxtZmhaRGM0MDlqZ095ZkpWWmJjZ28wTHc?oc=5",
+      "published": "2026-11-05",
+      "published_at": "2026-11-05T08:00:00",
+      "summary": "",
+      "category": "세무"
+    },
+    {
+      "source": "gnews_감사_2",
+      "source_label": "연합인포맥스",
+      "title": "[금융위 인사난맥②] '전성기' 맞은 자본시장…증선위원 위상 달라졌다",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE00ekJneGYyOHk0N1NqNmlGLVo2c3VQaVB4NVZTNDdvXzBrQkV6WFY2TkFFMVFBSzFUeGdCMm9iVVZwTDVvRWM4Mlk1M0xiLTBKN1F3YW5ha3hqZVZSWWtGNTZJV2o0X1lVUzZIcExocUQ?oc=5",
+      "published": "2026-11-05",
+      "published_at": "2026-11-05T08:00:00",
+      "summary": "",
+      "category": "감사"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "연합인포맥스",
+      "title": "국세청, 주식 양도소득세 더낸 4천687명에게 21억원 환급",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1hMHl6ai1YVllEYm12R0N1Nl9CZGpIWkYzRm1aSW8yMVUwSWloczJaQ0htd3hXd0JPRUN4azB2V3gyRlZSeXJoMndBaFA0U2lHUWh2NExiZy1PRVhCNnFhMXZoTGNDa3ROZ2kzdHc3bHY?oc=5",
+      "published": "2026-11-03",
+      "published_at": "2026-11-03T08:00:00",
+      "summary": "",
+      "category": "세무"
     }
   ]
 }

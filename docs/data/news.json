@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T09:31:31",
+  "generated_at": "2026-11-22T10:01:44",
   "items": [
     {
       "source": "gnews_세무",
@@ -10,6 +10,24 @@
       "published_at": "2026-11-21T21:02:26",
       "summary": "",
       "category": "세무"
+    },
+    {
+      "source": "gnews_감사_2",
+      "source_label": "천지일보",
+      "title": "고려아연 “영풍·MBK, 회계 위반·홈플러스 사태부터 돌아봐야”",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9NQnhNQm9sdHNGTzhrLXFKdV9vWmZ1dnczQUN4aEljdkF0WmpxUVJSZnJpdklIWGFiZGpCcDEtaWxUQlRiR0dFSUdTYXZMa0M1STduN192UWdKZEdDOFZGanJzbW1zZGQ1OWc?oc=5",
+      "published": "2026-11-21",
+      "published_at": "2026-11-21T10:20:19",
+      "summary": "",
+      "category": "감사",
+      "dupes": [
+        {
+          "title": "고려아연, MBK·영풍 공세 반박…\"홈플러스·회계 위반 책임부터 따져야\"",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5qUmsxalY5SlJzR2lGNllYNjhLdElCQ3lwb0RkTXQxMDVNMDAyYmlpMGUyOFhfdUxPUFFtcDg1eUIwVVktUjdSanY1SC1wQkxpZEpxOWdZanZhVXZPcDM4aWZR?oc=5",
+          "source_label": "시사매거진",
+          "published": "2026-11-21"
+        }
+      ]
     },
     {
       "source": "gnews_감사_2",
@@ -43,30 +61,14 @@
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "시사매거진",
-      "title": "고려아연, MBK·영풍 공세 반박…\"홈플러스·회계 위반 책임부터 따져야\"",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5qUmsxalY5SlJzR2lGNllYNjhLdElCQ3lwb0RkTXQxMDVNMDAyYmlpMGUyOFhfdUxPUFFtcDg1eUIwVVktUjdSanY1SC1wQkxpZEpxOWdZanZhVXZPcDM4aWZR?oc=5",
+      "source_label": "오피니언뉴스",
+      "title": "美 증권위, 엔비디아 회계 처리 방식 조사",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9WeVlZRG8wdjhmVjFaMHYwQjNRcS1HbGhGc0RfQWF3eWJhb2FreXd2WjBtNDF6Q3pBZHdsT2Rlb1VQVWdkczF2ZDJXMkQyMzJSR0FtR1lXTkI4cmtlM090V2RMQWVBcndYX0YwcHhBb1hzQQ?oc=5",
       "published": "2026-11-21",
-      "published_at": "2026-11-21T06:12:00",
-      "summary": "",
-      "category": "감사"
-    },
-    {
-      "source": "gnews_감사_2",
-      "source_label": "GeekNews",
-      "title": "Nvidia 회계 처리, SEC가 조사 중이라고 소식통 전해",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOY0lzWk1HaXlsMG1WY1VPclRNS0lzUjRhZUFvWW44eFpuZVBRdVhvaEtWX1I5SnJ1Z1ZMNmozc1I0bUs2aERxOVFzSl80Vm9RdGtycmdwNWh3ZnRNUWdEc01DMlB4MFVRSEpvWUN1ZDRhT3JDT0tkRFY5UGo2M19HXzNWNmdqUUhrOTNTSnVTMWl5QQ?oc=5",
-      "published": "2026-11-21",
-      "published_at": "2026-11-21T00:36:41",
+      "published_at": "2026-11-21T00:17:58",
       "summary": "",
       "category": "감사",
       "dupes": [
-        {
-          "title": "美 증권위, 엔비디아 회계 처리 방식 조사",
-          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9WeVlZRG8wdjhmVjFaMHYwQjNRcS1HbGhGc0RfQWF3eWJhb2FreXd2WjBtNDF6Q3pBZHdsT2Rlb1VQVWdkczF2ZDJXMkQyMzJSR0FtR1lXTkI4cmtlM090V2RMQWVBcndYX0YwcHhBb1hzQQ?oc=5",
-          "source_label": "오피니언뉴스",
-          "published": "2026-11-21"
-        },
         {
           "title": "SEC, 엔비디아 조사 착수: 회계 처리 방식 논란 속 파장 커지나",
           "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBfTFIxN2N4MU9VcU1DMUlqRmZ1NTlyckhzRW5pUm55NUd0OFRlVFVha1lxU0ZJallETWFWYy1KX2oxVk1fdzg3NUpHMkxKWFFtM2NUUHB4MlEzSVdfSGRxLVV2TnY3Smpm?oc=5",
@@ -123,21 +125,13 @@
     },
     {
       "source": "gnews_감사",
-      "source_label": "조세일보",
-      "title": "회계기준원, 투자자 전문위원회 12인으로 확대…첫 회의 개최",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFA3ejBxbGdVV2Z0YXZMMlJkd2szZ3dNdWxONFFrWjZCaEdpWV9TbUlBM0FjQ004VXUwRTVvcGljYXA0dE5sMHVuZVlOVUxNTEFDeWFqVW1rX0xDZXEtYWt0dE9oZEZ6WmhyT2hrTXJaVQ?oc=5",
+      "source_label": "파이낸셜뉴스",
+      "title": "지속가능성 공시, 투자자 목소리 키운다…회계기준원 자문위 12명으로 확대",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBxQjVCQk9FbDQxelRQdllvd2U1N3Z2Z3dPNU1PSXpmVXl0TFhjR3lyeEU0NEFUT3J0X1MtS0ZjSENGc0Y5ckFBbTVoUmRGcFBZN2FrNWxiTS1SQQ?oc=5",
       "published": "2026-11-20",
-      "published_at": "2026-11-20T08:58:30",
+      "published_at": "2026-11-20T06:28:27",
       "summary": "",
-      "category": "감사",
-      "dupes": [
-        {
-          "title": "지속가능성 공시, 투자자 목소리 키운다…회계기준원 자문위 12명으로 확대",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBxQjVCQk9FbDQxelRQdllvd2U1N3Z2Z3dPNU1PSXpmVXl0TFhjR3lyeEU0NEFUT3J0X1MtS0ZjSENGc0Y5ckFBbTVoUmRGcFBZN2FrNWxiTS1SQQ?oc=5",
-          "source_label": "파이낸셜뉴스",
-          "published": "2026-11-20"
-        }
-      ]
+      "category": "감사"
     },
     {
       "source": "gnews_세무",
@@ -446,16 +440,6 @@
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1ZcUNxWVZ5cnJQYWk5OTd6bVh1SzBtaHRPVTIzakZZQUlGQnFIcFdTN3dLc3ZmbWxIc3BCcldMdFdaaHBFN2V2TW9VQVJ3VEZnRnVKLQ?oc=5",
       "published": "2026-11-17",
       "published_at": "2026-11-17T08:43:39",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "이코노미사이언스",
-      "title": "NH농협은행, AI로 상속·증여세 계산하고 연금 통합관리…50대 이상 디지털 금융 확대",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9RR3ZMUG9vNGdTRDUzYURoUGNHemNPNlMtc1FwckhYODBFYWJaVzZCQm9tU2ltdkF6dGltcWh0Q0tiT0ZtSGthMnQyV3NBSW9ZLW9kMjBnZElhN2dnUFh0R0pNdGM0SE5QaVhMdE54cw?oc=5",
-      "published": "2026-11-17",
-      "published_at": "2026-11-17T04:55:42",
       "summary": "",
       "category": "세무"
     },

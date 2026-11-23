@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-23T10:01:44",
+  "generated_at": "2026-11-23T10:31:29",
   "soon_days": 7,
   "counts": {
-    "total": 88,
-    "open": 50,
+    "total": 89,
+    "open": 51,
     "closed": 38,
-    "new": 0,
+    "new": 1,
     "soon": 31,
     "by_firm": {
       "삼일": 3,
       "삼정": 11,
-      "안진": 12,
+      "안진": 13,
       "한영": 18,
       "로컬": 41,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 47,
-      "자격무관": 41
+      "자격무관": 42
     },
     "by_emp_kind": {
-      "인턴": 26,
+      "인턴": 27,
       "정규직": 36,
       "계약직": 7,
       "파트타임": 19
@@ -729,6 +729,25 @@
       "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5250",
       "dday": 24,
       "first_seen": "2026-11-19T15:01:33"
+    },
+    {
+      "source": "anjin",
+      "source_label": "딜로이트안진",
+      "firm": "안진",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "Deloitte Communications 정규직 전환형 인턴십",
+      "company": "딜로이트 안진",
+      "deadline": "2026-12-17",
+      "posted_date": "2026-11-23",
+      "location": "",
+      "emp_type": "",
+      "url": "https://join.deloitte.co.kr/WiseRecruit2/User/RecruitView.aspx?ridx=5255",
+      "dday": 24,
+      "first_seen": "2026-11-23T10:31:29"
     },
     {
       "source": "kicpa_susup",

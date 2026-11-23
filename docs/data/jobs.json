@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-23T13:01:37",
+  "generated_at": "2026-11-23T13:31:46",
   "soon_days": 7,
   "counts": {
-    "total": 90,
-    "open": 52,
+    "total": 91,
+    "open": 53,
     "closed": 38,
-    "new": 2,
+    "new": 3,
     "soon": 32,
     "by_firm": {
       "삼일": 3,
-      "삼정": 11,
+      "삼정": 12,
       "안진": 13,
       "한영": 19,
       "로컬": 41,
@@ -17,12 +17,12 @@
     },
     "by_qualification": {
       "수습CPA": 47,
-      "자격무관": 43
+      "자격무관": 44
     },
     "by_emp_kind": {
       "인턴": 28,
       "정규직": 36,
-      "계약직": 7,
+      "계약직": 8,
       "파트타임": 19
     }
   },
@@ -634,6 +634,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1795006898094",
       "dday": 7,
       "first_seen": "2026-11-18T22:31:36"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "[BD＆Markets] 계약직 채용",
+      "company": "삼정KPMG",
+      "deadline": "2026-12-02",
+      "posted_date": "2026-11-23",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000001026&receive_div_cd=N",
+      "dday": 9,
+      "first_seen": "2026-11-23T13:31:46"
     },
     {
       "source": "kicpa_cpa",

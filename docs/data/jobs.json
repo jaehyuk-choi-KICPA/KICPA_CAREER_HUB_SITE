@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-23T10:31:29",
+  "generated_at": "2026-11-23T11:01:22",
   "soon_days": 7,
   "counts": {
-    "total": 89,
-    "open": 51,
+    "total": 90,
+    "open": 52,
     "closed": 38,
-    "new": 1,
-    "soon": 31,
+    "new": 2,
+    "soon": 32,
     "by_firm": {
       "삼일": 3,
       "삼정": 11,
       "안진": 13,
-      "한영": 18,
+      "한영": 19,
       "로컬": 41,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 47,
-      "자격무관": 42
+      "자격무관": 43
     },
     "by_emp_kind": {
-      "인턴": 27,
+      "인턴": 28,
       "정규직": 36,
       "계약직": 7,
       "파트타임": 19
@@ -254,6 +254,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/135187",
       "dday": 3,
       "first_seen": "2026-11-20T17:01:29"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": true,
+      "title": "AI Center 인턴 (정규전환형)",
+      "company": "EY한영",
+      "deadline": "2026-11-26",
+      "posted_date": "2026-11-23",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/135244",
+      "dday": 3,
+      "first_seen": "2026-11-23T11:01:22"
     },
     {
       "source": "anjin",

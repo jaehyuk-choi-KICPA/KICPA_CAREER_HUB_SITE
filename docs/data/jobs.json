@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-11-24T14:31:27",
+  "generated_at": "2026-11-24T15:01:37",
   "soon_days": 7,
   "counts": {
-    "total": 94,
+    "total": 91,
     "open": 57,
-    "closed": 37,
+    "closed": 34,
     "new": 6,
     "soon": 31,
     "by_firm": {
       "삼일": 3,
       "삼정": 12,
       "안진": 13,
-      "한영": 21,
+      "한영": 18,
       "로컬": 42,
       "기타": 3
     },
     "by_qualification": {
       "수습CPA": 48,
-      "자격무관": 46
+      "자격무관": 43
     },
     "by_emp_kind": {
-      "인턴": 29,
+      "인턴": 26,
       "정규직": 38,
       "계약직": 8,
       "파트타임": 19
@@ -145,25 +145,6 @@
       "source": "hanyoung",
       "source_label": "EY한영",
       "firm": "한영",
-      "field": "감사",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "open",
-      "is_new": false,
-      "title": "금융감사부문 IT 시스템 및 규제 프로젝트 인턴",
-      "company": "EY한영",
-      "deadline": "2026-11-26",
-      "posted_date": "2026-11-18",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/134830",
-      "dday": 2,
-      "first_seen": "2026-11-18T11:31:35"
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
       "field": "기타",
       "qualification": "자격무관",
       "emp_kind": "인턴",
@@ -178,6 +159,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131665",
       "dday": 2,
       "first_seen": "2026-11-18T17:31:50"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "감사",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": false,
+      "title": "금융감사부문 IT 시스템 및 규제 프로젝트 인턴",
+      "company": "EY한영",
+      "deadline": "2026-11-26",
+      "posted_date": "2026-11-18",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/134830",
+      "dday": 2,
+      "first_seen": "2026-11-18T11:31:35"
     },
     {
       "source": "hanyoung",
@@ -1301,25 +1301,6 @@
       "first_seen": ""
     },
     {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "마켓부문 BMC(Brand, Marketing and Communications) 마케팅 인턴",
-      "company": "EY한영",
-      "deadline": "2026-11-05",
-      "posted_date": "2026-10-30",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/132870",
-      "dday": -19,
-      "first_seen": ""
-    },
-    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "로컬",
@@ -1510,25 +1491,6 @@
       "first_seen": ""
     },
     {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "경영지원본부 Talent 채용팀 인턴",
-      "company": "EY한영",
-      "deadline": "2026-11-12",
-      "posted_date": "2026-11-06",
-      "location": "",
-      "emp_type": "신입",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/133659",
-      "dday": -12,
-      "first_seen": ""
-    },
-    {
       "source": "kicpa_susup",
       "source_label": "구인(수습CPA)",
       "firm": "로컬",
@@ -1640,25 +1602,6 @@
       "emp_type": "신입",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/133980",
       "dday": -9,
-      "first_seen": ""
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "closed",
-      "is_new": false,
-      "title": "마켓부문 사업지원팀(Client & Industries Growth) 전환형 인턴",
-      "company": "EY한영",
-      "deadline": "2026-11-17",
-      "posted_date": "2026-11-11",
-      "location": "",
-      "emp_type": "신입",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/134111",
-      "dday": -7,
       "first_seen": ""
     },
     {

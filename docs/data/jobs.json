@@ -1,29 +1,29 @@
 {
-  "generated_at": "2026-11-24T10:31:28",
+  "generated_at": "2026-11-24T11:01:41",
   "soon_days": 7,
   "counts": {
-    "total": 92,
+    "total": 91,
     "open": 54,
-    "closed": 38,
-    "new": 7,
+    "closed": 37,
+    "new": 5,
     "soon": 29,
     "by_firm": {
       "삼일": 3,
       "삼정": 12,
       "안진": 13,
       "한영": 18,
-      "로컬": 43,
+      "로컬": 42,
       "기타": 3
     },
     "by_qualification": {
-      "수습CPA": 49,
+      "수습CPA": 48,
       "자격무관": 43
     },
     "by_emp_kind": {
       "인턴": 27,
       "정규직": 37,
       "계약직": 8,
-      "파트타임": 20
+      "파트타임": 19
     }
   },
   "postings": [
@@ -126,25 +126,6 @@
       "source": "hanyoung",
       "source_label": "EY한영",
       "firm": "한영",
-      "field": "기타",
-      "qualification": "자격무관",
-      "emp_kind": "인턴",
-      "status": "open",
-      "is_new": false,
-      "title": "컨설팅부문 프로세스 혁신(PI) 프로젝트 인턴",
-      "company": "EY한영",
-      "deadline": "2026-11-26",
-      "posted_date": "2026-11-18",
-      "location": "",
-      "emp_type": "인턴",
-      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131665",
-      "dday": 2,
-      "first_seen": "2026-11-18T17:31:50"
-    },
-    {
-      "source": "hanyoung",
-      "source_label": "EY한영",
-      "firm": "한영",
       "field": "감사",
       "qualification": "자격무관",
       "emp_kind": "인턴",
@@ -159,6 +140,25 @@
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/134830",
       "dday": 2,
       "first_seen": "2026-11-18T11:31:35"
+    },
+    {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": false,
+      "title": "컨설팅부문 프로세스 혁신(PI) 프로젝트 인턴",
+      "company": "EY한영",
+      "deadline": "2026-11-26",
+      "posted_date": "2026-11-18",
+      "location": "",
+      "emp_type": "인턴",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131665",
+      "dday": 2,
+      "first_seen": "2026-11-18T17:31:50"
     },
     {
       "source": "hanyoung",
@@ -206,7 +206,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "AI Center 인턴 (정규전환형)",
       "company": "EY한영",
       "deadline": "2026-11-26",
@@ -776,7 +776,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "Deloitte Communications 정규직 전환형 인턴십",
       "company": "딜로이트 안진",
       "deadline": "2026-12-17",
@@ -1753,25 +1753,6 @@
       "location": "",
       "emp_type": "인턴",
       "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/131812",
-      "dday": -1,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "파트타임",
-      "status": "closed",
-      "is_new": false,
-      "title": "[대주회계법인] 5사업부 수습회계사 파트타임 채용 공고",
-      "company": "대주회계법인",
-      "deadline": "2026-11-23",
-      "posted_date": "2026-11-19",
-      "location": "서울 강남구",
-      "emp_type": "Part Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1795071556354",
       "dday": -1,
       "first_seen": ""
     }

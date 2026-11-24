@@ -1660,7 +1660,8 @@
     "uid": "anjin:5256",
     "first_seen": "2026-11-24T18:01:49",
     "last_seen": "2026-11-24",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-11-24"
   },
   "hanyoung:135489": {
     "source": "hanyoung",
@@ -1678,6 +1679,7 @@
     "uid": "hanyoung:135489",
     "first_seen": "2026-11-24T18:01:49",
     "last_seen": "2026-11-24",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-11-24"
   }
 }

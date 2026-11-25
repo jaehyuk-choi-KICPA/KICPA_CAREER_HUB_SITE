@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-25T14:31:23",
+  "generated_at": "2026-11-25T15:01:52",
   "soon_days": 7,
   "counts": {
     "total": 92,
     "open": 59,
     "closed": 33,
-    "new": 5,
+    "new": 4,
     "soon": 32,
     "by_firm": {
       "삼일": 3,
@@ -624,7 +624,7 @@
       "qualification": "자격무관",
       "emp_kind": "인턴",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "감사부문 포렌식팀 인턴(전환형)",
       "company": "EY한영",
       "deadline": "2026-12-02",

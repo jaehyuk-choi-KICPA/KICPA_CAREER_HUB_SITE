@@ -1,36 +1,6 @@
 {
-  "generated_at": "2026-11-25T20:32:18",
+  "generated_at": "2026-11-25T21:02:38",
   "items": [
-    {
-      "source": "insight_samil",
-      "source_label": "삼일PwC",
-      "title": "조건부대가의 음과 양, 그리고 디테일",
-      "url": "https://www.pwc.com/kr/ko/insights/industry-focus/deals-article-nov2026-1.html",
-      "published": "",
-      "published_at": "",
-      "summary": "",
-      "category": "인사이트"
-    },
-    {
-      "source": "insight_samil",
-      "source_label": "삼일PwC",
-      "title": "이동혁명이 바꾸는 '인간의 삶'​​​​",
-      "url": "https://www.pwc.com/kr/ko/insights/industry-focus/mobility-revolution-1.html",
-      "published": "",
-      "published_at": "",
-      "summary": "",
-      "category": "인사이트"
-    },
-    {
-      "source": "insight_samil",
-      "source_label": "삼일PwC",
-      "title": "중국 반도체 굴기의 실체",
-      "url": "https://www.pwc.com/kr/ko/insights/samil-insight/china-semiconductor.html",
-      "published": "",
-      "published_at": "",
-      "summary": "",
-      "category": "인사이트"
-    },
     {
       "source": "insight_samil",
       "source_label": "삼일PwC",
@@ -38,7 +8,7 @@
       "url": "https://www.pwc.com/kr/ko/insights/industry-focus/life-legacy.html",
       "published": "",
       "published_at": "",
-      "summary": "생애의 경험과 선택을 사후까지 잇는 ‘라이프 레거시 산업’의 현황과 전망을 살펴보았습니다.",
+      "summary": "",
       "category": "인사이트"
     },
     {
@@ -48,7 +18,7 @@
       "url": "https://www.pwc.com/kr/ko/insights/global-trends/closing-certainty-gap-epc.html",
       "published": "",
       "published_at": "",
-      "summary": "불확실성 확대에 따른 EPC 산업의 손실 요인 분석과 리스크 분담 및 선제적 리스크 관리 방안을 차례로 분석 후 글로벌 사례를 바탕으로 한국 EPC 기업에 대한 시사점과 전략적 제언을 제시합니다.",
+      "summary": "",
       "category": "인사이트"
     },
     {
@@ -58,7 +28,17 @@
       "url": "https://www.pwc.com/kr/ko/insights/industry-focus/drug-pricing-reform.html",
       "published": "",
       "published_at": "",
-      "summary": "약가제도 개편이 제네릭 중심 제약사의 수익성과 경쟁 구도에 미치는 영향을 분석하고, 경영관리 개선·혁신형 인증 대응·M&A를 중심으로 대응 전략과 실행 과제를 제시합니다.",
+      "summary": "",
+      "category": "인사이트"
+    },
+    {
+      "source": "insight_samil",
+      "source_label": "삼일PwC",
+      "title": "조건부대가의 음과 양, 그리고 디테일",
+      "url": "https://www.pwc.com/kr/ko/insights/industry-focus/deals-article-nov2026-1.html",
+      "published": "",
+      "published_at": "",
+      "summary": "M&A 거래에서 신제품 가치평가를 둘러싼 매도자와 매수자의 견해 차이를 조율하는 방안으로서 조건부대가의 활용과 주요 고려사항을 살펴봅니다.",
       "category": "인사이트"
     },
     {
@@ -84,11 +64,31 @@
     {
       "source": "insight_samil",
       "source_label": "삼일PwC",
+      "title": "이동혁명이 바꾸는 '인간의 삶'​​​​",
+      "url": "https://www.pwc.com/kr/ko/insights/industry-focus/mobility-revolution-1.html",
+      "published": "",
+      "published_at": "",
+      "summary": "이동혁명에 따른 사회·경제적 변화를 분석하고, 정부·기업의 대응 방향을 제시합니다.",
+      "category": "인사이트"
+    },
+    {
+      "source": "insight_samil",
+      "source_label": "삼일PwC",
       "title": "Physical AI, 성능 경쟁에서 현장 배치 경쟁으로​",
       "url": "https://www.pwc.com/kr/ko/insights/industry-focus/physical-ai-competition.html",
       "published": "",
       "published_at": "",
       "summary": "Physical AI의 본질과 발전 현황, 그리고 밸류체인 내에서 Physical AI의 가치가 어디로 이동하는지를 살펴보고 이에 따른 공급기업과 수요기업의 대응 방향과 실행 전략을 제시합니다.",
+      "category": "인사이트"
+    },
+    {
+      "source": "insight_samil",
+      "source_label": "삼일PwC",
+      "title": "중국 반도체 굴기의 실체 - 중국 반도체 부상이 한국에 던지는 과제",
+      "url": "https://www.pwc.com/kr/ko/insights/samil-insight/china-semiconductor.html",
+      "published": "",
+      "published_at": "",
+      "summary": "중국 반도체 굴기의 실체를 기술·공급·수요·성장 측면에서 살펴보고, 중국 반도체 산업의 부상이 한국에 던지는 과제와 이에 대한 대응 방향을 제시합니다.",
       "category": "인사이트"
     },
     {

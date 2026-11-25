@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-25T10:01:35",
+  "generated_at": "2026-11-25T10:31:47",
   "soon_days": 7,
   "counts": {
     "total": 91,
     "open": 57,
     "closed": 34,
-    "new": 6,
+    "new": 4,
     "soon": 31,
     "by_firm": {
       "삼일": 3,
@@ -719,7 +719,7 @@
       "qualification": "자격무관",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "동남회계법인 인재채용",
       "company": "동남획계법인",
       "deadline": "2026-12-11",
@@ -776,7 +776,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[PKF서현회계법인] 복합서비스사업부 감사BU 파트타임 신입회계사(KICPA) 채용",
       "company": "PKF서현회계법인",
       "deadline": "2026-12-15",

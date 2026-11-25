@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-11-25T11:01:55",
+  "generated_at": "2026-11-25T11:31:50",
   "soon_days": 7,
   "counts": {
     "total": 91,
-    "open": 57,
-    "closed": 34,
-    "new": 4,
+    "open": 58,
+    "closed": 33,
+    "new": 5,
     "soon": 31,
     "by_firm": {
       "삼일": 3,
       "삼정": 11,
       "안진": 14,
       "한영": 19,
-      "로컬": 41,
-      "기타": 3
+      "로컬": 40,
+      "기타": 4
     },
     "by_qualification": {
       "수습CPA": 47,
@@ -883,6 +883,25 @@
       "first_seen": "2026-11-20T16:31:23"
     },
     {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "기타",
+      "field": "기타",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[한국신용평가] 정규직 연구원(Analyst) 채용(수습 미수료 회계사)",
+      "company": "한국신용평가(주)",
+      "deadline": "2026-12-21",
+      "posted_date": "2026-11-25",
+      "location": "서울 영등포구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1795572934794",
+      "dday": 26,
+      "first_seen": "2026-11-25T11:31:50"
+    },
+    {
       "source": "anjin",
       "source_label": "딜로이트안진",
       "firm": "안진",
@@ -1715,25 +1734,6 @@
       "location": "서울 강남구",
       "emp_type": "Part Time",
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1794834204296",
-      "dday": -5,
-      "first_seen": ""
-    },
-    {
-      "source": "kicpa_susup",
-      "source_label": "구인(수습CPA)",
-      "firm": "로컬",
-      "field": "감사",
-      "qualification": "수습CPA",
-      "emp_kind": "정규직",
-      "status": "closed",
-      "is_new": false,
-      "title": "수습 공인회계사 초빙 - 국가 R&D 위탁정산 서비스 - 추가 공고",
-      "company": "다산회계법인",
-      "deadline": "2026-11-20",
-      "posted_date": "2026-11-16",
-      "location": "서울 강남구",
-      "emp_type": "Full Time",
-      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1794794729328",
       "dday": -5,
       "first_seen": ""
     },

@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-11-25T09:01:30",
+  "generated_at": "2026-11-25T09:31:31",
   "soon_days": 7,
   "counts": {
     "total": 91,
     "open": 57,
     "closed": 34,
-    "new": 7,
+    "new": 6,
     "soon": 31,
     "by_firm": {
       "삼일": 3,
@@ -738,7 +738,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[Tax] Tax 5(ATO) 본부 Part-time 회계사 채용",
       "company": "삼정KPMG",
       "deadline": "2026-12-13",

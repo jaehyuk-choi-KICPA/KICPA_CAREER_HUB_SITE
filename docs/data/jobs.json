@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-26T16:31:31",
+  "generated_at": "2026-11-26T17:02:05",
   "soon_days": 7,
   "counts": {
-    "total": 93,
-    "open": 61,
+    "total": 94,
+    "open": 62,
     "closed": 32,
     "new": 4,
     "soon": 33,
@@ -11,17 +11,17 @@
       "삼일": 3,
       "삼정": 10,
       "안진": 13,
-      "한영": 20,
+      "한영": 21,
       "로컬": 43,
       "기타": 4
     },
     "by_qualification": {
       "수습CPA": 50,
-      "자격무관": 43
+      "자격무관": 44
     },
     "by_emp_kind": {
       "인턴": 26,
-      "정규직": 40,
+      "정규직": 41,
       "계약직": 7,
       "파트타임": 20
     }
@@ -750,6 +750,25 @@
       "first_seen": "2026-11-24T18:01:49"
     },
     {
+      "source": "hanyoung",
+      "source_label": "EY한영",
+      "firm": "한영",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "금융컨설팅본부 Digital Platforms팀 컨설턴트",
+      "company": "EY한영",
+      "deadline": "2026-12-06",
+      "posted_date": "2026-11-26",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://eycareers-kr.recruiter.co.kr/career/jobs/135779",
+      "dday": 10,
+      "first_seen": "2026-11-26T17:02:05"
+    },
+    {
       "source": "kicpa_cpa",
       "source_label": "구인(CPA)",
       "firm": "로컬",
@@ -966,7 +985,7 @@
       "qualification": "수습CPA",
       "emp_kind": "정규직",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[회계법인 창천]수습회계사 정기 채용",
       "company": "회계법인 창천 중부지점",
       "deadline": "2026-12-25",

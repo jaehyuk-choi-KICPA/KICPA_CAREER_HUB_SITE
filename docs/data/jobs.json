@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-26T16:01:42",
+  "generated_at": "2026-11-26T16:31:31",
   "soon_days": 7,
   "counts": {
-    "total": 92,
-    "open": 60,
+    "total": 93,
+    "open": 61,
     "closed": 32,
-    "new": 5,
-    "soon": 32,
+    "new": 4,
+    "soon": 33,
     "by_firm": {
       "삼일": 3,
-      "삼정": 9,
+      "삼정": 10,
       "안진": 13,
       "한영": 20,
       "로컬": 43,
@@ -17,10 +17,10 @@
     },
     "by_qualification": {
       "수습CPA": 50,
-      "자격무관": 42
+      "자격무관": 43
     },
     "by_emp_kind": {
-      "인턴": 25,
+      "인턴": 26,
       "정규직": 40,
       "계약직": 7,
       "파트타임": 20
@@ -216,6 +216,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1794906215477",
       "dday": 1,
       "first_seen": "2026-11-25T00:31:33"
+    },
+    {
+      "source": "samjong",
+      "source_label": "삼정KPMG",
+      "firm": "삼정",
+      "field": "기타",
+      "qualification": "자격무관",
+      "emp_kind": "인턴",
+      "status": "open",
+      "is_new": false,
+      "title": "[인턴] ITS 업무 지원 인턴",
+      "company": "삼정KPMG",
+      "deadline": "2026-11-27",
+      "posted_date": "2026-11-20",
+      "location": "",
+      "emp_type": "신입",
+      "url": "https://career.kr.kpmg.com/hr/rec/recruit/jobopen/controller/candidate/JobOpen310WebController/DetailInit.hr?jobopen_id=KPMG00000000000000000000001021&receive_div_cd=N",
+      "dday": 1,
+      "first_seen": "2026-11-26T16:31:31"
     },
     {
       "source": "hanyoung",
@@ -1137,7 +1156,7 @@
       "qualification": "수습CPA",
       "emp_kind": "파트타임",
       "status": "open",
-      "is_new": true,
+      "is_new": false,
       "title": "[이촌회계법인] 수습공인회계사 파트타임 채용",
       "company": "이촌회계법인",
       "deadline": "2026-12-31",

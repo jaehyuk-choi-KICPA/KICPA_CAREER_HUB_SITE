@@ -807,7 +807,8 @@
     "uid": "kicpa_susup:1793864828909",
     "first_seen": "2026-11-26T11:01:26",
     "last_seen": "2026-11-26",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-11-26"
   },
   "kicpa_cpa:1793933808882": {
     "source": "kicpa_cpa",
@@ -1715,6 +1716,7 @@
     "uid": "hanyoung:135646",
     "first_seen": "2026-11-26T11:01:26",
     "last_seen": "2026-11-26",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-11-26"
   }
 }

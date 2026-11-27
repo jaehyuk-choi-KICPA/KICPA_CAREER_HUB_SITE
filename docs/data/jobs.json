@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-11-27T11:01:36",
+  "generated_at": "2026-11-27T11:31:36",
   "soon_days": 7,
   "counts": {
-    "total": 93,
-    "open": 55,
+    "total": 96,
+    "open": 58,
     "closed": 38,
-    "new": 2,
+    "new": 5,
     "soon": 28,
     "by_firm": {
       "삼일": 3,
       "삼정": 10,
       "안진": 13,
       "한영": 21,
-      "로컬": 42,
+      "로컬": 45,
       "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 49,
+      "수습CPA": 52,
       "자격무관": 44
     },
     "by_emp_kind": {
       "인턴": 26,
-      "정규직": 40,
-      "계약직": 7,
+      "정규직": 42,
+      "계약직": 8,
       "파트타임": 20
     }
   },
@@ -712,6 +712,25 @@
       "first_seen": "2026-11-24T10:01:38"
     },
     {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[신현회계법인] 수습회계사를 채용합니다.",
+      "company": "신현회계법인",
+      "deadline": "2026-12-15",
+      "posted_date": "2026-11-27",
+      "location": "서울 성동구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1795745262377",
+      "dday": 18,
+      "first_seen": "2026-11-27T11:31:36"
+    },
+    {
       "source": "anjin",
       "source_label": "딜로이트안진",
       "firm": "안진",
@@ -1052,6 +1071,44 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1795590166115",
       "dday": 34,
       "first_seen": "2026-11-25T16:31:29"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[회계법인 해솔] 2026년 수습공인회계사(Full-Time) 채용",
+      "company": "회계법인 해솔",
+      "deadline": "2026-12-31",
+      "posted_date": "2026-11-27",
+      "location": "서울 전체",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1795745470646",
+      "dday": 34,
+      "first_seen": "2026-11-27T11:31:36"
+    },
+    {
+      "source": "kicpa_cpa",
+      "source_label": "구인(CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "계약직",
+      "status": "open",
+      "is_new": true,
+      "title": "[예일회계법인] 감사 시즌 사무보조(조회서 업무) 단기 아르바이트 (2026.12.21~'27.2.12)",
+      "company": "예일회계법인",
+      "deadline": "2026-12-31",
+      "posted_date": "2026-12-21",
+      "location": "서울 서초구",
+      "emp_type": "계약직",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchGnrl/detail.face?ijIdNum=1795746369173",
+      "dday": 34,
+      "first_seen": "2026-11-27T11:31:36"
     },
     {
       "source": "hanyoung",

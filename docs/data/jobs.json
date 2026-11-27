@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-27T11:31:36",
+  "generated_at": "2026-11-27T12:01:42",
   "soon_days": 7,
   "counts": {
-    "total": 96,
-    "open": 58,
+    "total": 97,
+    "open": 59,
     "closed": 38,
-    "new": 5,
+    "new": 6,
     "soon": 28,
     "by_firm": {
       "삼일": 3,
       "삼정": 10,
       "안진": 13,
       "한영": 21,
-      "로컬": 45,
+      "로컬": 46,
       "기타": 4
     },
     "by_qualification": {
-      "수습CPA": 52,
+      "수습CPA": 53,
       "자격무관": 44
     },
     "by_emp_kind": {
       "인턴": 26,
-      "정규직": 42,
+      "정규직": 43,
       "계약직": 8,
       "파트타임": 20
     }
@@ -1071,6 +1071,25 @@
       "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1795590166115",
       "dday": 34,
       "first_seen": "2026-11-25T16:31:29"
+    },
+    {
+      "source": "kicpa_susup",
+      "source_label": "구인(수습CPA)",
+      "firm": "로컬",
+      "field": "감사",
+      "qualification": "수습CPA",
+      "emp_kind": "정규직",
+      "status": "open",
+      "is_new": true,
+      "title": "[예일회계법인] 신입회계사 Full Time 채용",
+      "company": "예일회계법인",
+      "deadline": "2026-12-31",
+      "posted_date": "2026-11-27",
+      "location": "서울 서초구",
+      "emp_type": "Full Time",
+      "url": "https://www.kicpa.or.kr/home/jobOffrSrchNewGnrl/detail.face?ijIdNum=1795747732156",
+      "dday": 34,
+      "first_seen": "2026-11-27T12:01:42"
     },
     {
       "source": "kicpa_susup",

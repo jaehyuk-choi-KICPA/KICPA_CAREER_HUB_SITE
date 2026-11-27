@@ -1640,7 +1640,8 @@
     "uid": "kicpa_susup:1795745470646",
     "first_seen": "2026-11-27T11:31:36",
     "last_seen": "2026-11-27",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-11-27"
   },
   "kicpa_susup:1795745262377": {
     "source": "kicpa_susup",
@@ -1658,7 +1659,8 @@
     "uid": "kicpa_susup:1795745262377",
     "first_seen": "2026-11-27T11:31:36",
     "last_seen": "2026-11-27",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-11-27"
   },
   "kicpa_cpa:1795746369173": {
     "source": "kicpa_cpa",
@@ -1676,6 +1678,7 @@
     "uid": "kicpa_cpa:1795746369173",
     "first_seen": "2026-11-27T11:31:36",
     "last_seen": "2026-11-27",
-    "notified": false
+    "notified": true,
+    "notified_date": "2026-11-27"
   }
 }

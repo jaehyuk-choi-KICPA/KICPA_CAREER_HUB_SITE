@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-28T16:01:45",
+  "generated_at": "2026-11-28T16:31:35",
   "items": [
     {
       "source": "gnews_세무",
@@ -100,16 +100,6 @@
           "published": "2026-11-27"
         }
       ]
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "자치의정브리핑",
-      "title": "세무조사로 61억 원 추징했지만 실제 징수액은 미기재…정민균 연수구의원, 재정성과 관리 강화 요구",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5UU2ZVNF9PM1BOVjZIcmtRWWtaenl6bmdTWnd6TTlwdXdFRmVSN2pmb2RYMXlWMjlyVC1hUWd2TXBFR3VDLXJ0N243NV9WWGZFYkJwdndJM25WNURJX2pJ?oc=5",
-      "published": "2026-11-27",
-      "published_at": "2026-11-27T09:03:25",
-      "summary": "",
-      "category": "세무"
     },
     {
       "source": "gnews_감사_2",
@@ -413,8 +403,8 @@
       "dupes": [
         {
           "title": "증선위, `비밀엄수 의무` 위반 공인회계사 3인 제재",
-          "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9vSndtdTlYai1naXJxSUgyWmllV19OVEtYTk9Fb1h0VG1jX0JBeDQ4N3A4Y2c3ZVAzTWtleGtCX3pqSzg4Y2tvWmdoVHhsdm1aVkdpZHlHZlJadw?oc=5",
-          "source_label": "서남투데이",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1lcFlzazRUOFlDd1Zxc1JEOGh5S0ZySjVvUVVNWUhreTIwVXMxd0FLSXNQdnNjQUdBSWxQRkIzNnZsb0xYWDlLQ28tdjAwdkRqZVBFQjU4UmYzVS00S0E?oc=5",
+          "source_label": "부산경제",
           "published": "2026-11-26"
         },
         {
@@ -446,6 +436,36 @@
           "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE95ekduMFpHQ3pvZDFnb3VseVJDWU9fbWJHZXZvOGFheThnSExWMnBYNEF6QnZROHRWVFBKMzkyNmtqWlIxZVA3ZC1mUQ?oc=5",
           "source_label": "재경일보",
           "published": "2026-11-25"
+        },
+        {
+          "title": "증선위, 셀바스헬스케어·대우산업개발 회계기준 위반 적발",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9tQmxSTkNsdGZjelBnMlcyWUpmYWszeEtOdThRZmlyeXl5cUJERjd3WEx2WGpIRWxSZEl1bXNLYTV0R0c4VnRtR0xIN2sxZTh0QzY5bVdkd2RaQnFZTzRNdmZ2RHNwZmx1WXc?oc=5",
+          "source_label": "Daily NTN",
+          "published": "2026-11-12"
+        },
+        {
+          "title": "증선위, '회계처리 위반' 셀바스헬스케어·대우산업개발에 감사인지정",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNcF9OSW01OEJMZVhqOHJpSUZEcGtraFA5eWhGVnlIUFlnVnJscEpCMlJOR2MwbFNoQUNucEtHYjV1bGcxOUlZUk1aVUdJLVVIdG91RWU2NHB0RWJWaHphNnVFVlhHUmxEQ2E5VklxVXBjZWRMcDZRaHVnMzUxcU9uZA?oc=5",
+          "source_label": "edaily.co.kr",
+          "published": "2026-11-11"
+        },
+        {
+          "title": "'회계처리 위반' 셀바스헬스케어·대우산업개발에 감사인지정",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBlWi1sVUpRM1UyVkI4d0pnT1VOb2JFQ3V4NlE3SnExYU9DelBONXhGcHMtdUNSaklsTGs2d3Fhb3k5VmIxSlNZVFpjbUJYclJGRlhmcVREcHFlMFnSAWBBVV95cUxNNW9pWS1jTjF5WWIxYXFySEh2NlFuaFVfdVE0S2RBVWhFU0gya0RGRE55dlR3WnNXUTJCQThVMlF0UzJtR2Q0QUJPd2o5c2FHQzUwLTFsdFBMMnJuOV85QkI?oc=5",
+          "source_label": "연합뉴스",
+          "published": "2026-11-11"
+        },
+        {
+          "title": "증선위, 셀바스헬스케어·대우산업개발 회계처리 위반 제재",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5xVHFZUm5oMzU2dGxzZ1ltTnpaS0pOQl90cm9vRGh1Q0NGTzFRVVhpSVlhWkZMaGlxZ1NENzVSRkZ2Ykt5WEtzYUdmZVZ4TkFCS0Y3OHlXOG9EZWsy?oc=5",
+          "source_label": "뉴스핌",
+          "published": "2026-11-11"
+        },
+        {
+          "title": "증선위, 대우산업개발·셀바스헬스케어 감사인 지정 조치",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1pT0FqdjFhaVg5WEk5azU1a2ctWk4zYzFYQjkxa1o2UjB3QVZuQmtZb2FQQ2tiT0lPSG9zOTVtNHVsYTExMnJlNGFTZG40SlQyTGhMREp6YWlLSFR4TmZESdIBeEFVX3lxTE81N0Vxc0pmTDZ5UE1Ed2ZOemloLVNTR3VfY0FzWFhLeVlHSHEzdDNqV2d3QzRHeVRFQ2RhMldMdjRVb2U1V1lNa2NqZVpEWWVWOVhXeHh4dkh6MFpvZWVSTFFBMWs5MVpyUVowTUxpS2pBUkRvdUxqVw?oc=5",
+          "source_label": "뉴시스",
+          "published": "2026-11-11"
         }
       ]
     },
@@ -466,36 +486,6 @@
           "published": "2026-11-26"
         },
         {
-          "title": "안덕수 국세청장 후보자 \"세무조사, 법과 원칙 따라…주택 논란 죄송\" - 머니투데이",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1idXpVMWwzMmpud2J2LTBpX0JBQVNZSERxSTNmQXo2c0tWclBlWnNzT2d6OTR4QXVFZmpLUkNYcXdKQWRrOExnY01OZ2FxR2pQNDhBLUViMlM1S3Z5ZFo4bVhkOFZaTU10bjJfUNIBckFVX3lxTE5ibHByTFV2VjZuWTFjak1FVDZGNEcxbEwzR3FwcUQtNFdjaDY2bGRFQ2hzQzlONTNGNk5ZY0Q3MUlVQ1dZX0g3eXFqUFhRVnhRZG9NVmJ5MVl3YWJYR3BBeXU0NGh2ckxRelRlNHBmTHJLUQ?oc=5",
-          "source_label": "머니투데이",
-          "published": "2026-11-26"
-        },
-        {
-          "title": "안덕수 국세청장 후보자 \"세무조사, 법과 원칙 따라 공정하게 운영\"",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1WRlFSTEQtZUpXeEFfZXIweVdVOExPeFMwMklLVFhvVF9nVDlSN2V1aFdRVFFHN0JuRjdZQjFYc3o4QldITGtDWGhFOXhwTWtfODlNTGZhcXJWaktna1A4NzhNVlpxWnQ0enc?oc=5",
-          "source_label": "Daily NTN",
-          "published": "2026-11-26"
-        },
-        {
-          "title": "안덕수 국세청장 후보자 “세무조사 법과 원칙 따라 공정하게...납세서비스 혁신”",
-          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE14RTlhQUNPN1d3a2VESmlua3NhR2JURjhwdDNkM1cyMmV1SEhtUThXdG1ta05QZEwxNW95dnRqS0lrRFFtTWEwZm5heklQb1BVbDNjSEZqX1hvNFJJU3RNMWRLdzlmOU0?oc=5",
-          "source_label": "M이코노미뉴스",
-          "published": "2026-11-26"
-        },
-        {
-          "title": "안덕수 \"임명된다면 세무조사 법·원칙 따라\"",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1LZWp1NkV5bThFU0J1MW5NN1E0bWZzNGlKNFB5dGpxSkhpZEdZTUhtbHRyb0RPb1JOOENueUhVdnhta1poZnNrUlVCYVlNMXdmZjBpUmJlOHV6UVY1VEo5b1RCbFlyazh3VVE?oc=5",
-          "source_label": "전파신문",
-          "published": "2026-11-26"
-        },
-        {
-          "title": "국세청장 후보자 \"임명된다면 세무조사 법·원칙 따라 공정하게\"",
-          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Ccy1GSElZRmdObHZTWWUxOGl0aFFTR056ZkNXRjVOOElPOWIzcWhtc1JFSXdBa2tMbFBLc2VoMmxOMVQxLXZ5cXhfeU5KWF96dUhUYjJqZ0JUVVHSAWBBVV95cUxPOXREaGxETFYtdl9ocFA3REl2anZkT1p6R2NycmNfS1VucHRlQkVSS0QtVVVzNDJNZERoOTFGOTVYWkxQSW4wUFM4b0VKc09jcm9YaVFCeU9NcHZPZVZkbmY?oc=5",
-          "source_label": "연합뉴스",
-          "published": "2026-11-26"
-        },
-        {
           "title": "안덕수 국세청장 후보자 “공정한 세무조사·기업 부담 완화”",
           "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5SY3BIcXY3cHkwcVRqbHp4ckR2M1I3RS1DNjdKdW1uTkNnS1Rsd3V2OE5mYW85Tmp2cVNGTFNnUXoxNGtRV2l1b0FlZGd3LVZicTJTMWpCeVQ4N2RKYld0clhteXZiNVRPTUZaR0t3?oc=5",
           "source_label": "뉴스후플러스",
@@ -505,6 +495,12 @@
           "title": "세무조사 중립성 논란에…안덕수 국세청장 후보 \"법·원칙 따라 공정 운영\" - 머니투데이",
           "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5MeTJzcXJ3UV9DeVV5R2t4QWxuaTc0WjFoMFN4MkNtbUJlVURWSUtwMzRsSnBhbnFvTS1JUTBnNFhtOWF1NERDaUR4UDU0eWVwaGJHN3ZJRFpnVVZGWjNxOG9ueElZTWE3eGNDSERXeUpEWFBlanQxU9IBfkFVX3lxTE1NdGE3Q1ZYRE5Fd2tJNXBHUG5jcm56LWd4N1FkMl8wT1RPUERsWTByRGNQY1JTZ0ItZ1c4M0w1YkNndDFzdG41emhkNXVBZUo0Z2lGNDV6blRoZE9DWEpWVFlJanhGUGQyYmx2NUhTQ2JsZF9KS2p5R0Q1WlVGUQ?oc=5",
           "source_label": "머니투데이",
+          "published": "2026-11-26"
+        },
+        {
+          "title": "안덕수 \"임명된다면 세무조사 법·원칙 따라\"",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1LZWp1NkV5bThFU0J1MW5NN1E0bWZzNGlKNFB5dGpxSkhpZEdZTUhtbHRyb0RPb1JOOENueUhVdnhta1poZnNrUlVCYVlNMXdmZjBpUmJlOHV6UVY1VEo5b1RCbFlyazh3VVE?oc=5",
+          "source_label": "전파신문",
           "published": "2026-11-26"
         },
         {
@@ -520,6 +516,24 @@
           "published": "2026-11-26"
         },
         {
+          "title": "국세청장 후보자 \"임명된다면 세무조사 법·원칙 따라 공정하게\"",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Ccy1GSElZRmdObHZTWWUxOGl0aFFTR056ZkNXRjVOOElPOWIzcWhtc1JFSXdBa2tMbFBLc2VoMmxOMVQxLXZ5cXhfeU5KWF96dUhUYjJqZ0JUVVHSAWBBVV95cUxPOXREaGxETFYtdl9ocFA3REl2anZkT1p6R2NycmNfS1VucHRlQkVSS0QtVVVzNDJNZERoOTFGOTVYWkxQSW4wUFM4b0VKc09jcm9YaVFCeU9NcHZPZVZkbmY?oc=5",
+          "source_label": "연합뉴스",
+          "published": "2026-11-26"
+        },
+        {
+          "title": "안덕수 국세청장 후보자 \"세무조사, 법과 원칙 따라 공정하게 운영\"",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1WRlFSTEQtZUpXeEFfZXIweVdVOExPeFMwMklLVFhvVF9nVDlSN2V1aFdRVFFHN0JuRjdZQjFYc3o4QldITGtDWGhFOXhwTWtfODlNTGZhcXJWaktna1A4NzhNVlpxWnQ0enc?oc=5",
+          "source_label": "Daily NTN",
+          "published": "2026-11-26"
+        },
+        {
+          "title": "안덕수 국세청장 후보자 “세무조사 법과 원칙 따라 공정하게...납세서비스 혁신”",
+          "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE14RTlhQUNPN1d3a2VESmlua3NhR2JURjhwdDNkM1cyMmV1SEhtUThXdG1ta05QZEwxNW95dnRqS0lrRFFtTWEwZm5heklQb1BVbDNjSEZqX1hvNFJJU3RNMWRLdzlmOU0?oc=5",
+          "source_label": "M이코노미뉴스",
+          "published": "2026-11-26"
+        },
+        {
           "title": "안덕수 국세청장 후보자 \"이문동 재건축 아파트, 국민 눈높이에 미흡\"",
           "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1IeFFNUHRubk8wMU9nOGJoRnFuNzdKSnVDZm9XMkVvcFhLejRyVndPNHBUaFhkcXNyYWJCTDk5WWg4bW15alpqdmZIRWlRSjRQUjBGLWRZd3BlVm1WM3lMcXUyWXI?oc=5",
           "source_label": "한국세정신문",
@@ -529,6 +543,12 @@
           "title": "기획세무조사 늘어날까…'조사통' 안덕수 답변은",
           "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE45cGRIeTR1c1J3c3lZMjVrem1obHVnbWRZNFpLeHBHTmlxZTM5Rkk4VW15R1QwQ3hKMXUtcGJGbm9YT0ZvZjVLRzJFX0ZzdVl0WnNYQWtQMHZjdkhpNldVeVNrWQ?oc=5",
           "source_label": "택스워치",
+          "published": "2026-11-26"
+        },
+        {
+          "title": "안덕수 \"세무조사 남용 우려 없도록 법·원칙에 따라 공정 운영\"",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9yczIySTY2bUZLVlMzOGwya0tBMkM3bGJYZ2NoU2xtSDRveDZCYU10Q2FhbEQwNnJNRjlYWjg5OUN5a1pRTkRlNkxKUkFvamRPY05TMg?oc=5",
+          "source_label": "뉴스1",
           "published": "2026-11-26"
         },
         {
@@ -574,12 +594,6 @@
           "published": "2026-11-26"
         },
         {
-          "title": "자기가 산 주식 기사 직접 작성…증선위, 언론사 기자 고발·과징금 50억 원",
-          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE8yYkVfSExOaXVpblZoT1J3Vm9IS25HTWdFMmdFLWwycUJ2ZXV1ei1pdjBrOXk0U0NkNkxvdm95UUN0Q0NVbW5JQkpNNE1aZWNaWUZpaGo2MjRKX18yVnVIbHlna0xrZw?oc=5",
-          "source_label": "이슈에디코",
-          "published": "2026-11-26"
-        },
-        {
           "title": "증선위, 주식 선매수 후 호재성 기사 보도한 기자 고발…과징금 50억원 부과",
           "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1pZ2ZYaTYwTnA4OTJrZi0zN3YtQ1BFWEw0Z2ZMYzZSN2R5VzdfTlg4QldqQTNwLUVZRFFPU2tKN1lSQndjMVRUSXdQRkFtM1U0NFVQTVFETl90MnBq?oc=5",
           "source_label": "뉴스핌",
@@ -598,9 +612,9 @@
           "published": "2026-11-25"
         },
         {
-          "title": "증선위, 주식 선행매매 혐의 기자 고발…과징금 50억원",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBDNTVkM0pQNXNhQm1uVEc3VTlmc0ZEQ2Y4aWlFR21nQkxWSzB2YkpueWZvX3RxN3BROFA3SG42bkZxOHpkZDZ0SzFhZ3pEQ0VfNWpZVExpN2N5RzhpdlE?oc=5",
-          "source_label": "동행미디어 시대",
+          "title": "주식 미리 사고 호재성 기사 보도…증선위, 언론사 기자 고발·과징금 50억원",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5Ud1pXZ1dxVmJGTGpGdWlSU2VBa2RvR2dqNEhNcnZZbTNBSGJ3YnI5bEtuWXpEZEtzY09lMks3U1I0R18zN0ctS3Y0bmtFZm5jN0RTMWljcHBkcEFaVHE1OdIBeEFVX3lxTE9MQWVxQklqVXpfc0c0bHYxdnY1RE1tdjJtRnF0YzVyWFhLSTZHYk4yUERMb0xfWEJwbTJ5Ry1vRHJzZHZhNXM2dzZ0M1VTM3hlY1prNUZPVE5hRVRFOXU2TDBnYUlBQVhHZy02dWg5VTAyR2tpS2RqSw?oc=5",
+          "source_label": "뉴시스",
           "published": "2026-11-25"
         },
         {
@@ -699,7 +713,15 @@
       "published": "2026-11-26",
       "published_at": "2026-11-26T00:19:06",
       "summary": "",
-      "category": "세무"
+      "category": "세무",
+      "dupes": [
+        {
+          "title": "국세청 ‘AI 대전환’에 1678억원 투입…안덕수 “AI 탈루 분석, 세무조사 선정에 활용”",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1rWGhoN1pDckE1Tkx3THduTXRrdWdmYTFxVlpmaVdjTHNkdEEzc3hISThCMFA1NE1QNUctTVBxeFF1VFgxdmlOajRodjF3UHVKS3cwZEJXZHBCZENleDR6V1RMb2ZvWlRIUWJibQ?oc=5",
+          "source_label": "세정일보",
+          "published": "2026-11-25"
+        }
+      ]
     },
     {
       "source": "gnews_감사_2",
@@ -709,7 +731,33 @@
       "published": "2026-11-25",
       "published_at": "2026-11-25T10:03:23",
       "summary": "",
-      "category": "감사"
+      "category": "감사",
+      "dupes": [
+        {
+          "title": "증선위, '무상증자 미공개 정보 이용' VC 대표 등 중수청 고발",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1udlhKUXkxNGxhMDBlRXdqQ2NFTUdDUkMyQkNXUFpXQm4yU0p4UDFjcVh3OFhRaEFkZnZ6OU9tV3hIeUxMbkotSWhhbjF5RkUyVVd1RHlXY3FsaV8yYkF1ZFl6UE9iZzV6SVJzd0hpeVY?oc=5",
+          "source_label": "연합인포맥스",
+          "published": "2026-11-11"
+        },
+        {
+          "title": "미공개정보 이용해 부당이득 취득…증선위, 중수청 고발·통보",
+          "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1HSWNTa2FHU2lXejR5M2RtT3lkU1RXb1Vmekt1VHFHbFdTUFlPYlE2UEd1cVVlb3NSb3BJWkE0a0RxN1JTU1JVT0dza0NUdVc2NjJxNXg0eHhybG_SAWBBVV95cUxNd0ZUUlpCY1RNanlwWm9HS1Y1MVRMckY1MmxVOWNhdDVzcVpRVTBXWDhJNWgyejdWZHhjeGpGcHVKSmpIeWp0X3RVMG1TQjBXdXF2ZXJzRGw3XzRYMFlyaWY?oc=5",
+          "source_label": "연합뉴스",
+          "published": "2026-11-11"
+        },
+        {
+          "title": "\"무상증자정보 이용해 수십억 꿀꺽\" 증선위, 벤처투자사 대표 고발 - 머니투데이",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5vb2RhZFlscjE1WXg3RUZWUFdlVXFZdlF3cXFDbFlDUFRkQTh6TGVoUE1zOEZ6THYtNngtanJ0S1V1QlVOSGVyLXNYMzhHbmlweGowQlNvcnVPNlNRUjkzVnh6bXZ4amMz0gFuQVVfeXFMT2c4Z2lvWkFLRjBBak5CRmN0OFlFLWdzV19qcl9sVFZXazlYRGQ2TDVrcFF6eWlheUJVektTa2ZnRURHVGpPQnhmTk14czVjbkl0Zm5POUtrMnNXczFOTldqZHgtcktRcENqZDJyQ0E?oc=5",
+          "source_label": "머니투데이",
+          "published": "2026-11-11"
+        },
+        {
+          "title": "무상증자 공시 전 주식 매수…증선위, 벤처투자사 대표 고발",
+          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9QdkZHWFpySzM1SGlFOGM2TXhwcnBtN2ZCWFZjTmxLVk1jY08xaGg5TUtBc0RyRWNVUWo1QWNEUF9RSlVqdUt1MEdnZGRNV0RKaXMtM2FGRlhzTlU5?oc=5",
+          "source_label": "뉴스핌",
+          "published": "2026-11-11"
+        }
+      ]
     },
     {
       "source": "gnews_세무",
@@ -730,16 +778,6 @@
       "published_at": "2026-11-25T03:00:00",
       "summary": "",
       "category": "감사"
-    },
-    {
-      "source": "gnews_세무",
-      "source_label": "이데일리",
-      "title": "[단독]“세무조사로 5000억 추징”…국세청 vs 농협중앙회, 막판 신경전 ‘팽팽’",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNYlcwekdpd005NDhVOGtvUGZWYXVCYnJURXkzaEc0QWVSVDk2Vmw4NXowMURBX2E5Z0FzY3NiWXkybXdoQUNITGxTMGNPdWMxUHh4YndkdExpZU41dXRRZ25zT3dQRjN6ZnpOeHRUWDl0V0RSbi1TZnVBaWFPR0hKSA?oc=5",
-      "published": "2026-11-25",
-      "published_at": "2026-11-25T01:41:18",
-      "summary": "",
-      "category": "세무"
     },
     {
       "source": "gnews_세무",
@@ -771,16 +809,6 @@
     },
     {
       "source": "gnews_세무",
-      "source_label": "매일경제 마켓",
-      "title": "내년 상반기까지 '불법사금융 특별 근절'…즉시 세무조사 시행",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBZdDdHR3VLUFlKSFBaMm5aYkl1TUJ3NFhBaE1qdm5HNmpWT1ZNTWk2eWJ0Q25LWWRNYUVFZTRReWhRRHZJdFdIa1U5VDNIN0N1?oc=5",
-      "published": "2026-11-24",
-      "published_at": "2026-11-24T02:39:30",
-      "summary": "",
-      "category": "세무"
-    },
-    {
-      "source": "gnews_세무",
       "source_label": "택스워치",
       "title": "세무조사 나와 장부 달라는데…거절해도 괜찮을까?",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE52bGZRUWtxRDFtTFNRbXFOVENXbW1xX21heDg2azIwT3hrWURoRzJpRHN2UWNiX05JUi1oeVptZXY1VlVLVzJLYlltdWlMdW5tUW9RdHAtOUZZd2tCTjVNSnZPOA?oc=5",
@@ -799,12 +827,6 @@
       "summary": "",
       "category": "감사",
       "dupes": [
-        {
-          "title": "“5765억 전액 최윤범 측 관련” vs \"사실 왜곡\"…영풍·고려아연, 증선위 '조치없음' 해석 놓고 정면충돌",
-          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE0xck9rQTV5RGQ3dHM0NVFGaFlVT25xT0NncV9HTFRrNExLdlpsaHlrWm91TEt3RzdobFJiWkNPQVk1S1VhTVpPS0xpQVYwTGtKQjFDUVhLbGNmTGdNUE5UVDJTMHRhMi1mQ2c?oc=5",
-          "source_label": "콕스뉴스",
-          "published": "2026-11-21"
-        },
         {
           "title": "고려아연 \"원아시아 펀드 의혹은 억지…영풍·MBK, 증선위·법원 판단도 외면\"",
           "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1OTUtJZjl3QngxbHRnX2VlVFFvUko2UGtNQndTcDE0dllqbFAtLXFvamphNmd6aEhCSlY5dzNXRF95MXJUTjNyQVB2cVpKRnNKOWk4bnhWbVl4dTQxOXM5WnZBRHM2NWZSMllDY3RZT1dVdTA?oc=5",
@@ -825,21 +847,61 @@
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "블록미디어",
-      "title": "미 SEC, 엔비디아 회계처리 조사… AI 반도체 공룡에 규제 압박(종합)",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5rOVlzZmJuMlh0MWVseXdRaHhucVlZWC1RbmZZSjJ0X1I2Uks0TXBFSWxFRXpzTmlUbkxwUlhvLWRTdjU1VGFpNkpIZlN1QW02VXdUbExZcFg?oc=5",
+      "source_label": "블로터",
+      "title": "스마일게이트 'IPO 소송' 2심 돌입…CB 회계처리 공방",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE8wR2FkT0VGYmlIWVgxQW1tYW5xQTBFd0ZXMFRsekU5Q0lPRDdLcjF0bVBDd1pITTBxNmllQUtjRmlqVEcyV005d3BKNzl1cDZiVHFSd0U4YmpPazkwNXoxRzQ0Y2F6a3gx0gFsQVVfeXFMTWtiQnFpS1ZBOHVuSWV5amI3VWRFaWdTbUZ4eU1lMWFNVXhFblI1c2U2TkFOV2dWcE5rS0VIQllrc2N1SFRPWjl2eDdOa2hvamhUeWtaVG1vTGw2b2phUWowZndzMXNTNmVBOVFU?oc=5",
       "published": "2026-11-20",
-      "published_at": "2026-11-20T19:45:48",
+      "published_at": "2026-11-20T12:24:15",
       "summary": "",
       "category": "감사"
     },
     {
       "source": "gnews_감사_2",
-      "source_label": "마이데일리",
-      "title": "영풍·MBK “증선위 조치없음 결정, 최윤범 배임 무혐의 판단 아냐”",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1hVU5McnJJUDU1a1JleHEyY2JWamx2WDRiRDcySWxjOFdWYmNBaDNvcFo4SjJ1OE52dU43ZGcxOGtqbFNRemJvcXdGeG5CRWM5TjE3ZEVLLV90UzJKY1A5bQ?oc=5",
-      "published": "2026-11-20",
-      "published_at": "2026-11-20T12:25:29",
+      "source_label": "뉴스1",
+      "title": "최운열 한공회장, 세계에 신외감법 성과 알려…\"韓 회계투명성 껑충\"",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9ITUEzOUMwcWJBVFF4cWRyT2NmZ2xKeHh1V2o0RVhVVmF6T3RkYUxzMGlCRFVtZ0pqNkdMV1hpUTdRaWpCOXVIc0lQY0Q2NUZCcHRoR3pCdnZNTkVyZFpR?oc=5",
+      "published": "2026-11-19",
+      "published_at": "2026-11-19T09:50:04",
+      "summary": "",
+      "category": "채용·시험"
+    },
+    {
+      "source": "gnews_감사_2",
+      "source_label": "서울경제",
+      "title": "최운열 한공회장 “지정감사 끝나자 가격경쟁 재점화…품질로 경쟁해야” [시그널]",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9SRmZtMXVuS3lXSUtUWFkweGlWUHRkTmw0aHRoNzd6UVJYMXlVdld5RGNjWTM1czVrc1hqMFJYQ3ZNb2NwSjJOZnkteFF5SDlFVUHSAVNBVV95cUxOd19KUFhuZ0s1SDNGYmR1QzlPdElOYU1sMHVTaTd0ZS05ZHNzRFdmdklBbWtqQ1E4ZkozQ0dYSjJSekJXZ1M4Z3ZrYXVVQ1QyNm96OA?oc=5",
+      "published": "2026-11-19",
+      "published_at": "2026-11-19T09:04:16",
+      "summary": "",
+      "category": "채용·시험"
+    },
+    {
+      "source": "gnews_감사_2",
+      "source_label": "아시아경제",
+      "title": "한국만의 독특한 감사인 지정제…감사품질 높였나",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9kY2FDa1hGYkJlQjJOX0RzUmRVbTlXQnhtWXlicndWOHlXODU5aWM3bDE3aEtaNlk3cVo2UWFRM093NVBzNVllYkh0M0JJdWJwQnpOMHNlZzhabHhNVDNQRWdn?oc=5",
+      "published": "2026-11-19",
+      "published_at": "2026-11-19T06:55:00",
+      "summary": "",
+      "category": "감사"
+    },
+    {
+      "source": "gnews_감사_2",
+      "source_label": "CPA뉴스",
+      "title": "신설 감사인 대상 감사인 감리 설명회 개최…설립 초기 품질관리체계 구축 당부",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1VdXZweThfR1FVUkJ5VVBPLW1xcnhJamptRllNU05lSUpEYTNMTUZGbXE2UEFfTG4yN0RHdGNMZnJqRWJMM3R5Q1lPTjRpajBuYVVQUm1ZOGFZZWoxd2RxVGM3MzlkRlVG?oc=5",
+      "published": "2026-11-19",
+      "published_at": "2026-11-19T00:00:00",
+      "summary": "",
+      "category": "감사"
+    },
+    {
+      "source": "gnews_감사_2",
+      "source_label": "딜사이트",
+      "title": "해태제과, ESG 2년째 C등급...증선위 제재에 지배구조 발목",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE55dVFkZkVqNVpSSVNZWG10Y3VTZFljQnJGTnhvQkx5aVV5dmpQanQ5bVdPWnZuUEhtLXFxVkJVS3hyR0E1REppSEY1UFJzVUE?oc=5",
+      "published": "2026-11-18",
+      "published_at": "2026-11-18T22:00:00",
       "summary": "",
       "category": "감사"
     },
@@ -852,6 +914,16 @@
       "published_at": "2026-11-15T08:00:00",
       "summary": "",
       "category": "세무"
+    },
+    {
+      "source": "gnews_감사_2",
+      "source_label": "TradingView",
+      "title": "한화오션, 분식회계로 더 낸 세금 일괄 환급 못 받는다",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBYNmRNZzNOejAtNmRmVk9EUHhYT0JaaEFtMnUwMkUzRkhUVTBLT3Y5aTNBMWo1T2lfbm10LTA1SjRtQzR0WDNnN1R3NElFcmxpZlh5MDROZmpHX2NyVXk1V25Bd0FFb2Ny?oc=5",
+      "published": "2026-11-15",
+      "published_at": "2026-11-15T08:00:00",
+      "summary": "",
+      "category": "감사"
     },
     {
       "source": "gnews_채용·시험",
@@ -874,6 +946,26 @@
       "category": "세무"
     },
     {
+      "source": "gnews_감사_2",
+      "source_label": "데일리메디",
+      "title": "셀바스헬스케어, 회계기준 위반…외부감사인 2년",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4xaVlFekdIcGhMSndrR09HejgtSUlJY2ZodnRYRFpUTjhZRi11Q0JSbVBnUTA4RHhFNF9BQThOQVh4b0R4VE5qUVliV3hFVmItRUJadHZnLXZfX1N1b01Xd0hfdjF3QWpI?oc=5",
+      "published": "2026-11-13",
+      "published_at": "2026-11-13T08:00:00",
+      "summary": "",
+      "category": "감사"
+    },
+    {
+      "source": "gnews_감사_2",
+      "source_label": "시사안성",
+      "title": "안성시시설관리공단, 2026~2028 사업연도 회계감사인 모집",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9GVGJYOXcybzJoaU0xZkpfUnoyeGxMU0tGd0tXU3hSTmNISE5SUjBaUGZjTkJ2Z21rVlZvZkRzLTV5RjV2d05YYldSNmpZWTVWXzlWZ0lRVGJfZWJ1T3hJYnRiTjVFOXNrTFJrMQ?oc=5",
+      "published": "2026-11-11",
+      "published_at": "2026-11-11T08:00:00",
+      "summary": "",
+      "category": "감사"
+    },
+    {
       "source": "gnews_세무",
       "source_label": "KB Think",
       "title": "내년부터 달라지는 종합부동산세 및 양도소득세 살펴보기",
@@ -892,6 +984,26 @@
       "published_at": "2026-11-10T08:00:00",
       "summary": "",
       "category": "감사"
+    },
+    {
+      "source": "gnews_감사_2",
+      "source_label": "금융소비자뉴스",
+      "title": "이찬진 \"회계 감리주기 단축 추진…고의 분식회계 무관용 제재\"",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBFeTBXbnppVWZjMjFvakZqTVo5QU9XTC1mU2lxaFN4RjBGX18waGhEN2swclR4SG1uenltVXBTMUt2cXZrMk4xLUxoMEVVVkpFTGs4ckhGY2lka3ZkdlhUZW94TlpCUVdpSEE?oc=5",
+      "published": "2026-11-10",
+      "published_at": "2026-11-10T08:00:00",
+      "summary": "",
+      "category": "감사"
+    },
+    {
+      "source": "gnews_세무",
+      "source_label": "Daily NTN",
+      "title": "세무조사 무마 명목 2억원 챙긴 회계사 기소…기밀 유출 세무공무원도 재판행",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1ONjFlRlJuUVJkMUMtVGhMcDRaMDdaUHlZaENhM2FCYUJzVG1xQ0paZUZWWHZOUVB5c0kwVHNUS3BWLUQ5QWxlQjlBVWZ2SWNZUmhEbDR3T185YmZHOGdpdFRnV0N3YWhTSFE?oc=5",
+      "published": "2026-11-09",
+      "published_at": "2026-11-09T08:00:00",
+      "summary": "",
+      "category": "세무"
     },
     {
       "source": "gnews_채용·시험",
